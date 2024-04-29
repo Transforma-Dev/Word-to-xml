@@ -22,7 +22,7 @@ import os
 from pa import paragraph,table   #Import Functions from 'pa.py' file
 
 # Create HTML header and body
-pre_html = """<?xml version='1.0' encoding='UTF-8'?>"""
+pre_xml = """<?xml version='1.0' encoding='UTF-8'?>"""
 
 #Separate paragraph,tables and Inline shapes
 def iter_block_items(parent):
@@ -45,15 +45,36 @@ def iter_block_items(parent):
 
 def convert(input_file_name):
     #Get the directory of the file
-    script_directory = "/home/user2/python/wordtoxml/convertion"
+    script_directory = "/home/user2/Documents"
    
     #Check command line argument was present in input folder
     input_path=script_directory+"/input/"+input_file_name
-    html = pre_html
+    xml = pre_xml
+
+    #Define the name of the output folder and Check if the output folder exists, if not, create it
+    output_folder = os.path.join(script_directory, "output")
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    #Separate the file name and extension of the document
+    filename,extension=os.path.splitext(input_file_name)
+
+    #Define the name of the Image folder and Check if the image folder exists, if not, create it
+    image_folder = os.path.join(script_directory, "image")
+
+    if not os.path.exists(image_folder):
+        os.makedirs(image_folder)
+    doc_filename=image_folder+"/"+filename
+
+    #Construct the output file in output folder in html extension
+    output_xml_name = filename + '.xml'
+    output_xml = os.path.join(output_folder, output_xml_name)
+
     #Read the Word document
     doc = Document(input_path)
     
-    html+=f"<article>"
+    xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink'>"
 
     #Check the word document and separate them in paragraph,tables and inline shapes
     for para in iter_block_items(doc):
@@ -62,40 +83,30 @@ def convert(input_file_name):
             para (object): The element (paragraph, table, or inline shape) from the Word document.
         """
         if isinstance(para, Paragraph):   #Word contain a paragraph
-            html += paragraph(para, doc)
+            xml += paragraph(para, doc,doc_filename)
             
         elif isinstance(para, Table):    #Word contain a table
-            html += table(para, doc)
+            xml += table(para, doc,doc_filename)
         
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
-            html+=image(para,doc)
+            xml+=image(para,doc)
     
-    html+=f"</article>"
+    xml+=f"</article>"
 
-    # Parse the HTML with BeautifulSoup for pretty-printing
-    soup = BeautifulSoup(html, 'xml')
-    pretty_html = soup.prettify()
+    #Parse the HTML with BeautifulSoup for pretty-printing
+    soup = BeautifulSoup(xml, 'xml')
+    pretty_xml = soup.prettify()
 
-    if '<?xml version="1.0"?>' in pretty_html:
-        pretty_html = pretty_html.replace('<?xml version="1.0"?>', '')
-
-    #Define the name of the output folder
-    output_folder = os.path.join(script_directory, "output")
-
-    #Check if the output folder exists, if not, create it
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-
-    #Construct the output file in output folder in html extension
-    output_html_name = os.path.splitext(input_file_name)[0] + '.xml'
-    output_html = os.path.join(output_folder, output_html_name)
+    #Remove the xml header in middle of the content
+    if '<?xml version="1.0"?>' in pretty_xml:
+        pretty_xml = pretty_xml.replace('<?xml version="1.0"?>', '')
 
     #Write the HTML content to a file
-    with open(output_html, 'w', encoding="utf-8") as file:
-        file.write(pretty_html)
+    with open(output_xml, 'w', encoding="utf-8") as file:
+        file.write(pretty_xml)
 
-    return output_html_name
+    return output_xml_name
 
 
-convert("EJ-EDU_652.docx")
+convert("EJ-MATH_223.docx")
 

@@ -1,4 +1,6 @@
-from docx.enum.dml import MSO_THEME_COLOR
+#Get the directory of the script file
+import sys
+import os
 
 #Import additional module
 import base64     
@@ -11,72 +13,275 @@ import subprocess
 import unicodedata
 from anyascii import anyascii
 
-previous_text = ""
-kwd=False
-end_sec=1
-end_list=1
-fig=False
-ref=False
-table_title=False
+previous_text = ""  #Stroe a previous paragraph text
+kwd=False       #Find the keyword in document
+para_count=1    #Find the heading and author in document
+table_no=1      #Find the no of table
+sec_1=1   
+sec_2=1
+sec_3=1   #Find the first section of heading 1 ,heading 2,heading 3
+inner_3_id=1    #Find no of heading 3 in one section
+sec_3_id=1
+list_end=False  #Close the list
+list_count=1
+fig=False   #Find figure caption
+ref=False   #Find the reference text
+table_title=False   #Find table title text
 table_caption=False
+aff_tag=True    #Find text between author tag and" corresponding author" text
+image_path=""   #Store the image path
+sec_1_id=1  #Find Section 1 id
+secid=0
+sec_2_id=1  #Find section 2 id
+image_next_para=False   #Fin the image next para figure caption
+back_start=""   #Start the back tag
+ref_id=1    #Put reference id
+copyright_state=""  #Find the copryrights statement
+aff_id=1    #Find number of aff tags
 
 #Define the function for convert a paragraph from word document
-def paragraph(para,doc):
-
-    # Keep track of the previous paragraph text
-    global previous_text,kwd,end_sec,end_list,ref,fig,table_title,table_caption
+def paragraph(para,doc,doc_filename):
+    
+    #Define the global variables
+    global previous_text,kwd,sec_1,list_count,ref,fig,aff_id,table_title,table_caption,ref_id,back_start,copyright_state,image_path,para_count,aff_tag,sec_1_id,sec_2_id,sec_3,inner_3_id,sec_3_id,secid,sec_2,image_next_para,list_end
+    #Store all text in xml_text
     xml_text=""
-    key_text=""
-
-    if para.text=="":
-        return xml_text
-
+    key_text="" #Store keyword text
+    author_id=1     #Find no of authors
+    #print(para.text)
+    #Split the filename in folder path
+    file_name = os.path.basename(doc_filename)
+    journal=file_name.split("_")
+    if "EJ-EDU" in journal:
+        journal_title="European Journal of Education and Pedagogy"
+        issn_no="2736-4534"
+    elif "EJ-GEO" in journal:
+        journal_title="European Journal of Environment and Earth Sciences"
+        issn_no="2684-446X"
+    elif "EJ-MATH" in journal:
+        journal_title="European Journal of Mathematics and Statistics"
+        issn_no="2736-5484"
+    elif "EJ-MED" in journal:
+        journal_title="European Journal of Medical and Health Sciences"
+        issn_no="2593-8339"
+    elif "Phyton" in journal:
+        journal_title="Phyton-International Journal of Experimental Botany"
+        issn_no="1851-5657"
+    filename = f"{file_name}.pdf"
+    
+    #Find the all bold paragraph
     all_bold = all(run.bold for run in para.runs)
 
-    """elif para.style.name.startswith("List Paragraph") and end_list==1:  
-        xml_text+=f'<list><list-item><p>'
-        end_list+=1"""
-
-    if para.style.name.startswith("Heading 2"):  
-        xml_text+=f'<title-group>'
-
-    elif para.style.name.startswith("List Paragraph"):  
-        xml_text+=f'<list-item><p>'
-
-    elif para.style.name.startswith("figure caption"):  
-        xml_text+=f'<fig>'
-        fig=True
-
-    elif para.style.name.startswith("Table Title"):  
-        xml_text+=f'<table-wrap>'
-        table_title=True
-
-    elif previous_text.lower()=="abstract" :
-        xml_text+=f'<abstract abstract-type="abstract"><p>'
-
-    elif para.text.lower()=="abstract":
+    #Find heading in word document and change the tag into title-group
+    if para_count==1 or (para_count==2 and all_bold) and len(para.text)!=0:  
+        if para_count==2:
+            #print(para.text)
+            para_count-=1
+            #print(para_count)
+        else:
+            xml_text+=f'''<front>
+                <journal-meta>
+                    <journal-id journal-id-type="pmc">{journal[0]}</journal-id>
+                    <journal-id journal-id-type="nlm-ta">{journal[0]}</journal-id>
+                    <journal-id journal-id-type="publisher-id">{journal[0]}</journal-id>
+                    <journal-title-group>
+                        <journal-title>{journal_title}</journal-title>
+                    </journal-title-group>
+                    <issn pub-type="epub">{issn_no}</issn>
+                    <publiher>
+                        <publisher-name>European Open Science</publisher-name>
+                        <publisher-loc>UK</publisher-loc>
+                    </publisher>
+                </journal-meta>
+                <article-meta>
+                    <article-id pub-id-type="publisher-id">{journal[1]}</article-id>
+                    <article-id pub-id-type="doi">10.24018/ejgeo.2024.1.1.{journal[1]}</article-id>
+                    <article-categories>
+                        <subj-group subj-group-type="heading">
+                            <subject>RESEARCH ARTICLE</subject>
+                        </subj-group>
+                    </article-categories>
+                <title-group><article-title>'''
+    #Find authors in word document and change the tag into contrib
+    elif (para.style.name.startswith("Authors") or para_count==2) and len(para.text)!=0:  
+        xml_text+=f'''</article-title>
+                        <alt-title alt-title-type="left-running-head">Amoako and Otchere</alt-title>
+                        <alt-title alt-title-type="right-running-head">Inevitability of Politics in Ghana&#x2019;s Curriculum Development</alt-title>
+                    </title-group>
+                    <contrib-group content-type="authors">'''
+    #Find List in word document and change the tag into list-item and p
+    elif para.style.name.startswith("List Paragraph") and list_count==1 and len(para.text)!=0:  
+        xml_text+=f'<list list-type="order"><list-item><p>'
+        list_count+=1
+        list_end=True
+    #Find corresponding author text in paragraph in word document and change the tag into author-notes
+    elif ("corresponding author:" in para.text.lower() or "e-mail" in para.text.lower()) and len(para.text)!=0:
+        xml_text+=f'</contrib-group><author-notes><corresp id="cor1">'
+        aff_tag=False
+    #Find the next paragraph of abstract paragraph
+    elif "abstract" in previous_text.lower()  and len(para.text)!=0:
+        xml_text+=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
+                        <day>00</day>
+                        <month>00</month>
+                        <year>2024</year>
+                    </pub-date>
+                    <volume>1</volume>
+                    <issue>1</issue>
+                    <fpage>1</fpage>
+                    <lpage>XX</lpage>
+                    <history>
+                        <date date-type="received">
+                            <day>00</day>
+                            <month>0</month>
+                            <year>2024</year>
+                        </date>
+                        <date date-type="accepted">
+                            <day>00</day>
+                            <month>0</month>
+                            <year>2024</year>
+                        </date>
+                    </history>
+                    <permissions>
+                        <copyright-statement>&#x00A9; 2024 {copyright_state[:-4]}</copyright-statement>
+                        <copyright-year>2024</copyright-year>
+                        <copyright-holder>{copyright_state[:-4]}</copyright-holder>
+                        <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+                            <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.</license-p>
+                        </license>
+                    </permissions>
+                    <self-uri content-type="pdf" xlink:href="{filename}"></self-uri><abstract abstract-type="abstract"><p>'''
+    #Find paragraph between author and mail and apply tag aff
+    elif aff_tag and para_count>2 and len(para.text)!=0:
+        xml_text+=f'<aff id="aff-{aff_id}">'
+        aff_id+=1
+    #Find abstract in word document and skip this
+    elif "abstract" in  para.text.lower() and len(para.text)!=0:
         previous_text=para.text
         return xml_text
-
-    elif para.text.lower()=="references":
-        xml_text+=f'</sec></body><back><ref-list><title>'
-        ref=True
-    
-    elif all_bold and end_sec==1:
-        xml_text+=f'<body><sec><label>1</label><title>'
-        end_sec+=1
-
-    elif all_bold:
-        xml_text+=f'</sec><sec><label>1</label><title>'
-
+    #Find keyword in word document and change the tag into kwd-group
     elif "keyword" in para.text.lower():
         xml_text+=f'<kwd-group kwd-group-type="author">'
         kwd=True
+    #Find acknowledgment paragraph in word document and change the tag into ack and p
+    elif "acknowledgment" in previous_text.lower() and len(para.text)!=0:
+        xml_text+=f'<ack><p>'
+    #Find acknowledgment in word document and skip this
+    elif "acknowledgment" in para.text.lower() and len(para.text)!=0:
+        if sec_3>1:
+            xml_text+=f'</sec></sec></sec></body><back>'
+        elif sec_2>1:
+            xml_text+=f'</sec></sec></body><back>'
+        else:
+            xml_text+=f'</sec></body><back>'
+        sec_1=1
+        back_start+="back"
+        previous_text=para.text
+        return xml_text
+    #Find references in word document and change the tag into back,ref-list,title
+    elif "references" in para.text.lower() and len(para.text)!=0:
+        if sec_3>1:
+            xml_text+=f'</sec></sec><ref-list content-type="authoryear"><title>'
+        elif sec_2>1:
+            xml_text+=f'</sec></sec><ref-list content-type="authoryear"><title>'
+        else:
+            xml_text+=f'</sec><ref-list content-type="authoryear"><title>'
+        ref=True
 
-    elif ref:
-        xml_text+=f'<ref>'
+    #Find figure caption in word document and change the tag into fig
+    elif (para.style.name.startswith("figure caption") or image_next_para) and len(para.text)!=0:
+        xml_text+=f'<fig '
+        fig=True
+        image_next_para=False
+    #Find table title in word document and change the tag into table-wrap
+    elif para.style.name.startswith("Table Title") and len(para.text)!=0:  
+        xml_text+=f'<table-wrap id="table-{table_no}">'
+        table_title=True
 
-    else:
+    #Find heading in word document and change the tags into sec
+    elif (((para.alignment==1 or para.style.name.startswith("Heading 1")) and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2")) and (sec_2==1)) or (para.style.name.startswith("Heading 3") and sec_3==1)) and len(para.text)!=0:
+        
+        if para.alignment==1 or para.style.name.startswith("Heading 1"):
+            xml_text+=f'<sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+            secid=sec_1_id
+            sec_1_id+=1
+            sec_2=1
+            sec_2_id=1
+            sec_3=1
+        elif para.style.name.startswith("Heading 3"):
+
+            xml_text+=f'<sec id="s{secid}_{sec_3_id}_{inner_3_id}"><label>{secid}.{sec_3_id}.{inner_3_id}</label><title>'
+            inner_3_id+=1
+            sec_3+=1
+        elif para.alignment==0 or para.style.name.startswith("Heading 2"):
+            xml_text+=f'<sec id="s{secid}_{sec_2_id}"><label>{secid}.{sec_2_id}</label><title>'
+            sec_3_id=sec_2_id
+            sec_2_id+=1
+            inner_3_id=1
+            sec_3=1
+            sec_2+=1
+        sec_1+=1
+        
+    #Find heading in word document and change the tags sec
+    elif ((para.alignment==1 or para.style.name.startswith("Heading 1")) or (para.alignment==0  or para.style.name.startswith("Heading 2")) or para.style.name.startswith("Heading 3")) and len(para.text)!=0:
+       
+        if para.alignment==1 or para.style.name.startswith("Heading 1"):
+            if "conflict of interest" in para.text.lower() and "back" not in back_start:
+                if sec_3>1:
+                    xml_text+=f'</sec></sec></sec></body><back><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+                elif sec_2>1:
+                    xml_text+=f'</sec></sec></body><back><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+                else:
+                    xml_text+=f'</sec></body><back><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+                secid=sec_1_id
+                sec_1_id+=1
+                sec_2_id=1
+                sec_2=1
+            else:
+                if sec_3>1:
+                    xml_text+=f'</sec></sec></sec><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+                elif sec_2>1:
+                    xml_text+=f'</sec></sec><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+                else:
+                    xml_text+=f'</sec><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
+                secid=sec_1_id
+                sec_1_id+=1
+                sec_2_id=1
+                sec_2=1
+        elif para.style.name.startswith("Heading 3"):
+            xml_text+=f'</sec><sec id="s{secid}_{sec_3_id}_{inner_3_id}"><label>{secid}.{sec_3_id}.{inner_3_id}</label><title>'
+            inner_3_id+=1
+        elif para.alignment==0 or para.style.name.startswith("Heading 2"):
+            if sec_3>1:
+                xml_text+=f'</sec></sec><sec id="s{secid}_{sec_2_id}"><label>{secid}.{sec_2_id}</label><title>'
+            else:
+                xml_text+=f'</sec><sec id="s{secid}_{sec_2_id}"><label>{secid}.{sec_2_id}</label><title>'
+            sec_3_id=sec_2_id
+            sec_2_id+=1
+            inner_3_id=1
+            sec_3=1
+
+    #Find reference paragraph in word document and change the tag into ref
+    elif ref and para.text!="":
+        #print(para.text)
+        xml_text+=f'<ref id="ref-{ref_id}">'
+        ref_id+=1
+    #Find List in word document and change the tag into list-item and p
+    elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:  
+        xml_text+=f'<list-item><p>'
+        list_count+=1
+        list_end=True
+    #Close the list
+    elif list_end:
+        if len(para.text)!=0:
+            xml_text+=f'</list><p>'
+            list_end=False
+            list_count=1
+        else:
+            xml_text+=f'</list>'
+            list_end=False
+            list_count=1
+    #Else print p tag
+    elif len(para.text)!=0:
         xml_text+=f'<p>' 
 
     eq = 2   #Initialize eq =2
@@ -95,7 +300,7 @@ def paragraph(para,doc):
         }
         values = []     #Define the empty list for store the equation paragraph
         for elem in root.iter():
-                if elem.tag.endswith("Math"):      #Find math equation text in paragraph
+                if elem.tag.endswith("Math"):     #Find math equation text in paragraph
                     text = ""
                     for t_elem in elem.findall(".//m:t", namespaces=ns): 
                         text += t_elem.text if t_elem.text else ""
@@ -115,21 +320,20 @@ def paragraph(para,doc):
                 cur_math = math_xml[math_count]
                 math_str = str(ElementTree.tostring(cur_math, method='xml', encoding="unicode"))
                 math_count = math_count + 1
+                math_count = math_count + 1
                 from lxml import etree
                 xslt_file = "config/omml2mml.xsl"
                 xslt_doc = etree.parse(xslt_file)
                 transformer = etree.XSLT(xslt_doc)
-                xml_doc = etree.fromstring(xml)
+                xml_doc = etree.fromstring(math_str)
                 transformed_tree = transformer(xml_doc)
-                #Print the math equation
                 transformed_tree = str(transformed_tree).replace("mml:", "")
-                mathml = str(transformed_tree)
-                #print(mathml)
+                mathml =f'{str(transformed_tree)}'
                 if eq!=2:
-                    xml_text+=f'<kwd-group>{mathml}</kwd-group>'
+                    xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                     eq=2
                 else:       
-                    xml_text+=f'<kwd-group>{mathml}</kwd-group>'
+                    xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
 
     #Check the paragraph to find the hyperlink
     if para.hyperlinks:
@@ -146,7 +350,6 @@ def paragraph(para,doc):
                         tex += t_elem.text if t_elem.text else ""
                 if tex!="":
                     siva.append(tex)  
-        #print(siva)
     
     #Check the paragraph contain hyperlink or not
     if para.hyperlinks :
@@ -197,12 +400,12 @@ def paragraph(para,doc):
                                 xml_doc = etree.fromstring(math_str)
                                 transformed_tree = transformer(xml_doc)
                                 transformed_tree = str(transformed_tree).replace("mml:", "")
-                                mathml = str(transformed_tree)
+                                mathml =f'{str(transformed_tree)}'
                                 if eq!=2:
-                                    xml=f'<kwd-group>{mathml}</kwd-group>'
+                                    xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                     eq=2
                                 else:       
-                                    xml=f'<kwd-group>{mathml}</kwd-group>'
+                                    xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                 stri = run.text
 
                                 if values[1]!=stri:
@@ -220,12 +423,12 @@ def paragraph(para,doc):
                                         xml_doc = etree.fromstring(math_str)
                                         transformed_tree = transformer(xml_doc)
                                         transformed_tree = str(transformed_tree).replace("mml:", "")
-                                        mathml = str(transformed_tree)
+                                        mathml =f'{str(transformed_tree)}'
                                         if eq!=2:
-                                            xml=f'<kwd-group>{mathml}</kwd-group>'
+                                            xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                             eq=2
                                         else:       
-                                            xml=f'<kwd-group>{mathml}</kwd-group>'
+                                            xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                 try:    
                                     if values[1]==stri:
                                         values=values[1:]
@@ -245,11 +448,14 @@ def paragraph(para,doc):
         xmlstr = str(run._element.xml)
         my_namespaces = dict([node for _, node in ElementTree.iterparse(StringIO(xmlstr), events=['start-ns'])])
         ro = ET.fromstring(xmlstr)
-        #print(xmlstr)
+     
         #Check if the run contain an image
         if 'pic:pic' in xmlstr:
-            print(xmlstr)
             for pic in ro.findall('.//pic:pic', my_namespaces):
+                #Find cNvPr in pic:pic for find image id
+                cNvPr = pic.find('.//pic:cNvPr',my_namespaces)
+                id_attribute = cNvPr.get("id")
+
                 #Extract the image data if it exists
                 blip_elem = pic.find(".//a:blip", my_namespaces)
                 if blip_elem is not None:
@@ -265,10 +471,17 @@ def paragraph(para,doc):
 
                     #Encode the image
                     encoded_image = base64.b64encode(image_path).decode('utf-8')
+
+                    # Save the image to a file
+                    folder = f"{doc_filename}-fig-{id_attribute}.jpg"  # You can use any folder format you prefer
+                    filenames = f"{file_name}-fig-{id_attribute}.jpg"  # You can use any filename format you prefer
+                    with open(folder, 'wb') as f:
+                        f.write(image_path)
                     
                     #Construct HTML for the image
-                    xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_413-fig-1.tif"></graphic>'
-
+                    image_path = f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
+                    image_next_para=True
+                  
         try:
             #Find the hyperlink
             a=2
@@ -282,10 +495,10 @@ def paragraph(para,doc):
         except:
             print("link")
 
-        #hyperlink
+        #hyperlink paragraph
         if a==1:   
             try:
-                # Handle superscript text
+                #Handle hyperlink in run.text
                 xml_text+=f'<link>{text[0]}</link>'
                 text=text[1:]
                 address=address[1:]
@@ -293,14 +506,14 @@ def paragraph(para,doc):
             except:
                 print("link")
 
+        run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
+
+        #If keyword text present in run.text skip this
         if "keyword" in run.text.lower():
             continue
 
-        if all_bold:
-            xml_text+=f'{run.text}</title>'
-            return xml_text
-
-        if fig:
+        #Print the figure caption text
+        if fig and len(para.text)!=0:
             figure=run.text
             fig_text=""
             figure=figure.split(".")
@@ -308,16 +521,18 @@ def paragraph(para,doc):
                 if i==0:
                     pass
                 elif i==1:
-                    fig_text=figure[0]+figure[1]
-                    xml_text+=f'<label>{fig_text}</label><caption>'
+                    fig_text=figure[0]+"."+figure[1]
+                    xml_text+=f'id="{figure[0]}-{figure[1]}"><label>{fig_text}</label><caption>'
                 elif figure[i]!="":
                     fig_text=figure[i]
                     xml_text+=f'<title>{fig_text}</title>'
             fig=False
-            xml_text+=f'</caption></fig>'
+            xml_text+=f'</caption>{image_path}</fig>'
+            image_path=""
             return xml_text
 
-        if table_title:
+        #Print the table title text
+        if table_title and len(para.text)!=0:
             table_text=run.text
             table_text=table_text.split(":")
             for i in range(len(table_text)):
@@ -328,26 +543,84 @@ def paragraph(para,doc):
             table_title=False
             table_caption=True
             continue
-            
         
-        # Check for formatting properties and create corresponding XML elements
-        if run.font.superscript:
-            # Handle superscript text
+        #Check for formatting properties and create corresponding XML elements
+        if run.font.superscript and (para.style.name.startswith("Authors") or para_count==2):
+            run.text=run.text.split(",")
+            for i in run.text:
+                xml_text+=f'<xref ref-type="aff" rid="aff-{i}">{i}</xref>'
+            xml_text+=f'</contrib>'
+        elif run.font.superscript and "corresponding author:" in para.text.lower():
+            xml_text+=f'<label>{run.text}</label>'
+        elif run.font.superscript and aff_tag and len(run.text)!=0:
+            xml_text+=f'<label>{run.text}</label>'
+        #Find superscript text
+        elif run.font.superscript and len(para.text)!=0:
             xml_text+=f'<sup>{run.text}</sup>'
-        elif run.font.subscript:
-            # Handle subscript text
+        #Find subscript text
+        elif run.font.subscript and len(para.text)!=0:
             xml_text+=f'<sub>{run.text}</sub>'
-        elif run.font.italic:
-            # Handle italic text
+        #Find bold text
+        elif run.bold and not (all_bold or para.alignment==1 or para.alignment==0) and len(run.text)!=0:
+            xml_text+=f'<bold>{run.text}</bold>'
+        #Find italic text
+        elif run.font.italic and len(para.text)!=0:
             xml_text+=f'<italic>{run.text}</italic>'
-        elif run.font.underline:
-            # Handle underlined text
+        #Find underlined text
+        elif run.font.underline and len(para.text)!=0:
             xml_text+=f'<under>{run.text}</under>'
-        elif para.style.name.startswith("Heading 2"):  
-            xml_text+=f'<article-title>{para.text}</article-title></title-group>'
-        elif kwd:
+
+        elif ("corresponding author:" in para.text.lower() or "e-mail" in para.text.lower()):
+            run_text=run.text 
+            image_next_para=False
+            if "author" in run_text.lower() and not run_text.isspace():
+                corres=run.text.split(":")
+                xml_text+=f'<bold><italic>{corres[0]} :</italic></bold>e-mail : '
+            else:
+                if ":" in run.text:
+                    corres=run.text.split(":")
+                    xml_text+=f'{corres[1]}'
+                else:
+                    xml_text+=f'{run.text}'
+
+        elif aff_tag and para_count>2 and len(para.text)!=0:
+            run_text=run.text.split(",")
+            runn=run_text
+            xml_text+=f'<institution>'
+            run_text=run_text[:-1]
+            for i in run_text:
+                xml_text+=f'{i}'
+                xml_text+=f' '
+            xml_text+=f'</institution>,<country>{runn[-1]}</country>.'
+
+        elif (para.style.name.startswith("Authors") or para_count==2)  and len(para.text)!=0:  
+            run.text=run.text.replace(",", "")
+            if not run.text.isspace() and len(run.text)!=0:
+                ad=run.text.split(" ")
+                if author_id==1:
+                    xml_text+=f'<contrib id="author-{author_id}" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{ad[-1]}</surname><given-names>'
+                else:
+                    xml_text+=f'<contrib id="author-{author_id}" contrib-type="author"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{ad[-1]}</surname><given-names>'
+                copyright_state+=ad[-1]+" and "
+                author_id+=1
+                ad=ad[:-1]
+                for i in ad:
+                    xml_text+=f'{i}'
+                    xml_text+=f' '
+                xml_text+=f'</given-names></name>'
+
+        elif para_count==1 and not run.text.isspace() and len(para.text)!=0:  
+            xml_text+=f'{run.text}'
+
+        #Print all bold text in title tag 
+        elif (para.alignment==1 or para.alignment==0) and len(para.text)!=0 and not run.text.isspace():
+            xml_text+=f'{run.text}</title>'
+            
+        elif kwd and len(para.text)!=0:
             key_text+=run.text
-                
+        elif "<" in run.text:
+            run_text=run.text.replace("<","&#60;")
+            xml_text+=f'{run_text}'
         else:
             # Default case (no special formatting)
             xml_text+=f'{run.text}'
@@ -355,7 +628,7 @@ def paragraph(para,doc):
     if table_caption:
         xml_text+=f'</title></caption>'
         table_caption=False
-
+    #Print the keyword paragraph into separate kwd tag
     if key_text:
         key=key_text.split(",")
         for a in key:
@@ -363,57 +636,70 @@ def paragraph(para,doc):
                 a=a.strip()
                 xml_text+=f'<kwd>{a}</kwd>'
 
+    #Print the link text at end of the paragraph
+    if para.hyperlinks and len(text)!=0:
+        xml_text+=f'<email>{text[0]}</email>'
 
-    """if para.hyperlinks and len(text)!=0:
-        # Handle superscript text
-        run_elem = etree.Element("email")
-        run_elem.text = text[0]
-        para_elem.append(run_elem)"""
     kwd=False
 
-    if para.style.name.startswith("Heading 2"):  
-        return xml_text
-
-    elif para.style.name.startswith("figure caption"):  
-        xml_text+=f'</fig>'
-    
-    elif previous_text.lower()=="abstract" :
+    #Close the heading tag
+    if para_count==1 and len(para.text)!=0:  
+        xml_text+=f''
+        para_count+=1
+    #Close the contrib tag
+    elif (para.style.name.startswith("Authors") or para_count==2) and len(para.text)!=0:  
+        xml_text+=f''
+        para_count+=1
+    #Close the fig tag
+    elif para.style.name.startswith("figure caption") and len(para.text)!=0:  
+        xml_text+=f''
+    #Find abstract paragraph in word document and change the tag into abstract and p
+    elif "corresponding author:" in para.text.lower() or "e-mail" in para.text.lower():
+        xml_text+=f'</corresp></author-notes>'
+    elif aff_tag and para_count>2 and len(para.text)!=0:
+        xml_text+=f'</aff>'
+    #Close the author-notes tag
+    elif "abstract" in previous_text.lower()  and len(para.text)!=0:
         xml_text+=f'</p></abstract>'
-
-    elif para.text.lower()=="abstract":
+    #End the abstract text
+    elif "abstract" in para.text.lower() and len(para.text)!=0:
         xml_text+=f''
-
-    elif para.text.lower()=="references":
+    #Close the ack tag
+    elif "acknowledgment" in previous_text.lower() and len(para.text)!=0:
+        xml_text+=f'</p></ack>'
+    elif (para.alignment==1 or para.alignment==0) and len(para.text)!=0:
+        xml_text+=f''
+    #Close the references in title tag
+    elif para.text.lower()=="references" and len(para.text)!=0:
         xml_text+=f'</title>'
-
-    elif "keyword" in para.text.lower():
-        xml_text+=f'</kwd-group>'
-
-    elif para.style.name.startswith("List Paragraph"):  
+    #Close the keyword in kwd-group tag
+    elif "keyword" in para.text.lower() and len(para.text)!=0:
+        xml_text+=f'</kwd-group></article-meta></front><body>'
+    #Close the list-item tag fr list paragraph
+    elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:  
         xml_text+=f'</p></list-item>'
-
-    elif ref:
+    #Close the ref tag for reference paragraph
+    elif ref and len(para.text)!=0:
         xml_text+=f'</ref>'
-
-    elif para.style.name.startswith("Table Title"):  
+    #End of the table title
+    elif para.style.name.startswith("Table Title") and len(para.text)!=0:  
         xml_text+=f''
 
-    else:
+    elif len(para.text)!=0:
         xml_text+=f'</p>'
 
-    #print(xml_text)
+    print(xml_text)
     if previous_text:
         if para.style.name.startswith("List Paragraph"):
             list_text=True
         previous_text = para.text
-    #print(previous_text)
 
     return xml_text
 
 
 
 
-def table(table,doc):
+def table(table,doc,doc_filename):
 
     """
     Convert a table from a Word document into HTML format.
@@ -426,28 +712,29 @@ def table(table,doc):
         str: The HTML representation of the table.
     """
 
-    #xml=table._element.xml
-    #print(xml)
+    global table_no
 
     math_count = 0
     row_count=0
     col_count=0
 
-    # Iterate through each row in the table
+    #Find the length of the row
     for r, row in enumerate(table.rows):
         row_count+=1
 
-    # Iterate through each row in the table
+    #Find the length of the row
     for r, row in enumerate(table.rows):
         for c, cell in enumerate(row.cells): 
             col_count += 1
         break
-
+    #Find the number of col tag in col-group
     colgroup_text=""
     for i in range(col_count):
         colgroup_text+="<col align='center'></col>"
-
-    xml_text=f"<alternatives><table><colgroup>{colgroup_text}</colgroup>"
+    #Split the filename in folder path
+    file_name = os.path.basename(doc_filename)
+    filename = f"{file_name}-table-{table_no}.tif"
+    xml_text=f'<alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filename}"/><table><colgroup>{colgroup_text}</colgroup>'
 
     #Store the span of merged cells
     li = []
@@ -461,6 +748,7 @@ def table(table,doc):
         else:
             h =25
 
+        #Present first row in thead tag other present in tbody tag
         if r==0:
             #Initialize table row tag
             xml_text+="<thead><tr align='center'>"
@@ -519,26 +807,31 @@ def table(table,doc):
             else:
                 w=0
             
+            #Present first row in th tag other present in td tag
             if r==0:
+                #Check the rowspan and colspan to print in output
                 if colspan==1 and rowspan==1:
-                    #Initialize table data tag
                     xml_text+=f"<th>"
+                elif colspan>1:
+                    xml_text+=f"<th colspan='{colspan}'>"
+                elif rowspan>1:
+                    xml_text+=f"<th rowspan='{rowspan}'>"
                 else:
-                    #Initialize table data tag
                     xml_text+=f"<th rowsapn='{rowspan}' colspan='{colspan}'>"
             else:
                 if colspan==1 and rowspan==1:
-                    #Initialize table data tag
                     xml_text+=f"<td>"
+                elif colspan>1:
+                    xml_text+=f"<td colspan='{colspan}'>"
+                elif rowspan>1:
+                    xml_text+=f"<td rowspan='{rowspan}'>"
                 else:
-                    #Initialize table data tag
                     xml_text+=f"<td rowsapn='{rowspan}' colspan='{colspan}'>"
            
             #Iterate through the cell text
             for paragraph in cell.paragraphs:  
 
-
-                """eq=2
+                eq=2
                 math_count = 0    #Initialize math count for math equations
 
                 #Convert the pargaraph into xml
@@ -584,10 +877,10 @@ def table(table,doc):
                             transformed_tree = str(transformed_tree).replace("mml:", "")
                             mathml = str(transformed_tree)
                             if eq!=2:
-                                xml_text += f"<span style='font-size:{eq}pt;color:{color_hex};'>{mathml}</span>"
+                                xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                 eq=2
                             else:       
-                                xml_text += f"<span style='font-size:11pt;color:black;'>{mathml}</span>" """
+                                xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
 
                 #Iterate through the run object
                 for run in paragraph.runs:
@@ -598,14 +891,14 @@ def table(table,doc):
                         i (Run): The Run object representing a portion of the cell paragraph text.
                     """
 
-                    """xml = paragraph._element.xml    
+                    xml = paragraph._element.xml    
                     #Check if the paragraph contains math equations
                     if '<m:oMath' in xml:
-                        stri = i.text
+                        stri = run.text
                         try:
                             if values[0]!=stri:
                                 #Check the length of run object equal to zero
-                                if len(i.text) != 0:
+                                if len(run.text) != 0:
                                         ns = {'m': 'http://schemas.openxmlformats.org/officeDocument/2006/math', "mml": "http://www.w3.org/1998/Math/MathML"}
                                         math_xml = paragraph._element.findall('.//m:oMath', namespaces = ns)
                                         if len(math_xml) > math_count:
@@ -622,11 +915,11 @@ def table(table,doc):
                                             transformed_tree = str(transformed_tree).replace("mml:", "")
                                             mathml = str(transformed_tree)
                                             if eq!=2:
-                                                xml_text += f"<span style='font-size:{eq}pt;color:{color_hex};'>{mathml}</span>"
+                                                xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                                 eq=2
                                             else:       
-                                                xml_text += f"<span style='font-size:11pt;color:black;'>{mathml}</span>"
-                                            stri = i.text
+                                                xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
+                                            stri = run.text
 
                                             if values[1]!=stri:
                                                     values=values[1:]
@@ -646,10 +939,10 @@ def table(table,doc):
                                                         transformed_tree = str(transformed_tree).replace("mml:", "")
                                                         mathml = str(transformed_tree)
                                                         if eq!=2: 
-                                                            xml_text += f"<span style='font-size:{eq}pt;color:{color_hex};'>{mathml}</span>"
+                                                            xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                                             eq=2
                                                         else:       
-                                                            xml_text += f"<span style='font-size:11pt;color:black;'>{mathml}</span>"
+                                                            xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
                                             try:    
                                                 if values[1]==stri:
                                                     values=values[1:]
@@ -657,7 +950,7 @@ def table(table,doc):
                                                 pass
 
 
-                            if len(i.text)==0:
+                            if len(run.text)==0:
                                 pass
                             else:
                                 values=values[1:]
@@ -665,7 +958,7 @@ def table(table,doc):
                             pass
                     
                     #Convert the run text into xml
-                    xmlstr = str(i.element.xml) 
+                    xmlstr = str(run.element.xml) 
                     my_namespaces = dict([node for _, node in ElementTree.iterparse(StringIO(xmlstr), events=['start-ns'])])
                     root = ET.fromstring(xmlstr)
 
@@ -690,28 +983,32 @@ def table(table,doc):
                                 #Construct HTML for the image
                                 xml_text += f"<img src='data:image/png;base64,{encoded_image}' width='{width}px' height='{height}px'/>"
                         
-                    """
 
+                    #If keyword present in run.text the skip this
                     if "keyword" in run.text.lower():
                         continue
                     
-                    # Check for formatting properties and create corresponding XML elements
+                    #Check for formatting properties and create corresponding XML elements
                     if run.font.superscript:
-                        # Handle superscript text
                         xml_text+=f'<sup>{run.text}</sup>'
                     elif run.font.subscript:
-                        # Handle subscript text
                         xml_text+=f'<sub>{run.text}</sub>'
                     elif run.font.italic:
-                        # Handle italic text
                         xml_text+=f'<italic>{run.text}</italic>'
                     elif run.font.underline:
-                        # Handle underlined text
                         xml_text+=f'<under>{run.text}</under>'
+                    elif "<" in run.text:
+                        run.text=run.text.split()
+                        text=""
+                        for i in run.text:
+                            if i=="<":
+                                text+=f'&#60;'
+                            else:
+                                text+=f'{i}'
+                        xml_text+=f'{text}'
                     else:
-                        # Default case (no special formatting)
+                        #Default case (no special formatting)
                         xml_text+=f'{run.text}'
-
 
             #Close the td,tr,table tag
             xml_text+=f"</td>"
@@ -723,6 +1020,7 @@ def table(table,doc):
             xml_text+="</tr>"
             
     xml_text += "</tbody></table></alternatives></table-wrap>"
+    table_no+=1
     return xml_text
 
 
