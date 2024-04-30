@@ -4,6 +4,7 @@ import os
 
 #Import additional module
 import base64     
+import re
 from lxml import etree
 from xml.etree import ElementTree
 from xml.etree import ElementTree as ET
@@ -29,7 +30,7 @@ ref=False   #Find the reference text
 table_title=False   #Find table title text
 table_caption=False
 aff_tag=True    #Find text between author tag and" corresponding author" text
-image_path=""   #Store the image path
+images_path=""   #Store the image path
 sec_1_id=1  #Find Section 1 id
 secid=0
 sec_2_id=1  #Find section 2 id
@@ -38,20 +39,32 @@ back_start=""   #Start the back tag
 ref_id=1    #Put reference id
 copyright_state=""  #Find the copryrights statement
 aff_id=1    #Find number of aff tags
+image_count=1   #Find number of image
 
 #Define the function for convert a paragraph from word document
 def paragraph(para,doc,doc_filename):
     
     #Define the global variables
-    global previous_text,kwd,sec_1,list_count,ref,fig,aff_id,table_title,table_caption,ref_id,back_start,copyright_state,image_path,para_count,aff_tag,sec_1_id,sec_2_id,sec_3,inner_3_id,sec_3_id,secid,sec_2,image_next_para,list_end
+    global previous_text,kwd,sec_1,list_count,ref,fig,aff_id,table_title,table_caption,ref_id,back_start,copyright_state,images_path,image_count,para_count,aff_tag,sec_1_id,sec_2_id,sec_3,inner_3_id,sec_3_id,secid,sec_2,image_next_para,list_end
     #Store all text in xml_text
     xml_text=""
     key_text="" #Store keyword text
     author_id=1     #Find no of authors
-    #print(para.text)
+
+    if "type:" in para.text.lower():
+        return xml_text
+
     #Split the filename in folder path
     file_name = os.path.basename(doc_filename)
     journal=file_name.split("_")
+    if len(journal)==1:
+        journal=file_name.split("-")
+        numbers_only = re.findall(r'\d+',journal[1])
+    elif len(journal)==3:
+        journal=journal[1:]
+        numbers_only = re.findall(r'\d+',journal[-1])
+    else:
+        numbers_only = re.findall(r'\d+',journal[-1])
     if "EJ-EDU" in journal:
         journal_title="European Journal of Education and Pedagogy"
         issn_no="2736-4534"
@@ -67,13 +80,25 @@ def paragraph(para,doc,doc_filename):
     elif "Phyton" in journal:
         journal_title="Phyton-International Journal of Experimental Botany"
         issn_no="1851-5657"
+    elif "EJ-SOCIAL" in journal:
+        journal_title="European Journal of Humanities and Social Sciences"
+        issn_no="2736-5522"
+    elif "peerj" in journal:
+        journal_title="PeerJ"
+        issn_no="2167-8359"
+    elif "BIOCELL" in journal:
+        journal_title="BIOCELL"
+        issn_no="1667-5746"
+    elif "CMC" in journal:
+        journal_title="Computers, Materials &#x0026; Continua"
+        issn_no="1546-2226"
     filename = f"{file_name}.pdf"
     
     #Find the all bold paragraph
     all_bold = all(run.bold for run in para.runs)
-
+   
     #Find heading in word document and change the tag into title-group
-    if para_count==1 or (para_count==2 and all_bold) and len(para.text)!=0:  
+    if (para_count==1 or (para_count==2 and all_bold)) and len(para.text)!=0:  
         if para_count==2:
             #print(para.text)
             para_count-=1
@@ -94,8 +119,8 @@ def paragraph(para,doc,doc_filename):
                     </publisher>
                 </journal-meta>
                 <article-meta>
-                    <article-id pub-id-type="publisher-id">{journal[1]}</article-id>
-                    <article-id pub-id-type="doi">10.24018/ejgeo.2024.1.1.{journal[1]}</article-id>
+                    <article-id pub-id-type="publisher-id">{numbers_only[0]}</article-id>
+                    <article-id pub-id-type="doi">10.24018/ejgeo.2024.1.1.{numbers_only[0]}</article-id>
                     <article-categories>
                         <subj-group subj-group-type="heading">
                             <subject>RESEARCH ARTICLE</subject>
@@ -109,17 +134,12 @@ def paragraph(para,doc,doc_filename):
                         <alt-title alt-title-type="right-running-head">Inevitability of Politics in Ghana&#x2019;s Curriculum Development</alt-title>
                     </title-group>
                     <contrib-group content-type="authors">'''
-    #Find List in word document and change the tag into list-item and p
-    elif para.style.name.startswith("List Paragraph") and list_count==1 and len(para.text)!=0:  
-        xml_text+=f'<list list-type="order"><list-item><p>'
-        list_count+=1
-        list_end=True
     #Find corresponding author text in paragraph in word document and change the tag into author-notes
     elif ("corresponding author:" in para.text.lower() or "e-mail" in para.text.lower()) and len(para.text)!=0:
         xml_text+=f'</contrib-group><author-notes><corresp id="cor1">'
         aff_tag=False
     #Find the next paragraph of abstract paragraph
-    elif "abstract" in previous_text.lower()  and len(para.text)!=0:
+    elif previous_text.lower()=="abstract"  and len(para.text)!=0:
         xml_text+=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                         <day>00</day>
                         <month>00</month>
@@ -150,17 +170,52 @@ def paragraph(para,doc,doc_filename):
                         </license>
                     </permissions>
                     <self-uri content-type="pdf" xlink:href="{filename}"></self-uri><abstract abstract-type="abstract"><p>'''
+    
+    #Find abstract in word document and skip this
+    elif para.text.lower()=="abstract" and len(para.text)!=0:
+        previous_text=para.text
+        if aff_tag:
+            xml_text+=f'</contrib-group>'
+            aff_tag=False
+        return xml_text
     #Find paragraph between author and mail and apply tag aff
     elif aff_tag and para_count>2 and len(para.text)!=0:
         xml_text+=f'<aff id="aff-{aff_id}">'
         aff_id+=1
-    #Find abstract in word document and skip this
-    elif "abstract" in  para.text.lower() and len(para.text)!=0:
-        previous_text=para.text
-        return xml_text
+    elif "abstract" in para.text.lower():
+        xml_text+=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
+                        <day>00</day>
+                        <month>00</month>
+                        <year>2024</year>
+                    </pub-date>
+                    <volume>1</volume>
+                    <issue>1</issue>
+                    <fpage>1</fpage>
+                    <lpage>XX</lpage>
+                    <history>
+                        <date date-type="received">
+                            <day>00</day>
+                            <month>0</month>
+                            <year>2024</year>
+                        </date>
+                        <date date-type="accepted">
+                            <day>00</day>
+                            <month>0</month>
+                            <year>2024</year>
+                        </date>
+                    </history>
+                    <permissions>
+                        <copyright-statement>&#x00A9; 2024 {copyright_state[:-4]}</copyright-statement>
+                        <copyright-year>2024</copyright-year>
+                        <copyright-holder>{copyright_state[:-4]}</copyright-holder>
+                        <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+                            <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.</license-p>
+                        </license>
+                    </permissions>
+                    <self-uri content-type="pdf" xlink:href="{filename}"></self-uri><abstract abstract-type="abstract"><p>'''
     #Find keyword in word document and change the tag into kwd-group
-    elif "keyword" in para.text.lower():
-        xml_text+=f'<kwd-group kwd-group-type="author">'
+    elif "keyword" in para.text.lower() or "key words" in para.text.lower():
+        xml_text+=f'</abstract><kwd-group kwd-group-type="author">'
         kwd=True
     #Find acknowledgment paragraph in word document and change the tag into ack and p
     elif "acknowledgment" in previous_text.lower() and len(para.text)!=0:
@@ -178,14 +233,23 @@ def paragraph(para,doc,doc_filename):
         previous_text=para.text
         return xml_text
     #Find references in word document and change the tag into back,ref-list,title
-    elif "references" in para.text.lower() and len(para.text)!=0:
-        if sec_3>1:
-            xml_text+=f'</sec></sec><ref-list content-type="authoryear"><title>'
-        elif sec_2>1:
-            xml_text+=f'</sec></sec><ref-list content-type="authoryear"><title>'
+    elif para.text.lower()=="references" and len(para.text)!=0:
+        if "back" not in back_start:
+            if sec_3>1:
+                xml_text+=f'</sec></sec></body><back><ref-list content-type="authoryear"><title>'
+            elif sec_2>1:
+                xml_text+=f'</sec></sec></body><back><ref-list content-type="authoryear"><title>'
+            else:
+                xml_text+=f'</sec></body><back><ref-list content-type="authoryear"><title>'
+            ref=True
         else:
-            xml_text+=f'</sec><ref-list content-type="authoryear"><title>'
-        ref=True
+            if sec_3>1:
+                xml_text+=f'</sec></sec><ref-list content-type="authoryear"><title>'
+            elif sec_2>1:
+                xml_text+=f'</sec></sec><ref-list content-type="authoryear"><title>'
+            else:
+                xml_text+=f'</sec><ref-list content-type="authoryear"><title>'
+            ref=True
 
     #Find figure caption in word document and change the tag into fig
     elif (para.style.name.startswith("figure caption") or image_next_para) and len(para.text)!=0:
@@ -198,9 +262,9 @@ def paragraph(para,doc,doc_filename):
         table_title=True
 
     #Find heading in word document and change the tags into sec
-    elif (((para.alignment==1 or para.style.name.startswith("Heading 1")) and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2")) and (sec_2==1)) or (para.style.name.startswith("Heading 3") and sec_3==1)) and len(para.text)!=0:
-        
-        if para.alignment==1 or para.style.name.startswith("Heading 1"):
+    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or para.text.lower()=="introduction") and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2")) and (sec_2==1)) or (para.style.name.startswith("Heading 3") and sec_3==1)) and len(para.text)!=0:
+      
+        if para.alignment==1 or para.style.name.startswith("Heading 1") or para.text.lower()=="introduction":
             xml_text+=f'<sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
             secid=sec_1_id
             sec_1_id+=1
@@ -265,6 +329,11 @@ def paragraph(para,doc,doc_filename):
         #print(para.text)
         xml_text+=f'<ref id="ref-{ref_id}">'
         ref_id+=1
+    #Find List in word document and change the tag into list-item and p
+    elif (para.style.name.startswith("List Paragraph") and list_count==1) and len(para.text)!=0:  
+        xml_text+=f'<list list-type="order"><list-item><p>'
+        list_count+=1
+        list_end=True
     #Find List in word document and change the tag into list-item and p
     elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:  
         xml_text+=f'<list-item><p>'
@@ -473,13 +542,14 @@ def paragraph(para,doc,doc_filename):
                     encoded_image = base64.b64encode(image_path).decode('utf-8')
 
                     # Save the image to a file
-                    folder = f"{doc_filename}-fig-{id_attribute}.jpg"  # You can use any folder format you prefer
-                    filenames = f"{file_name}-fig-{id_attribute}.jpg"  # You can use any filename format you prefer
+                    folder = f"{doc_filename}-fig-{image_count}.jpg"  # You can use any folder format you prefer
+                    filenames = f"{file_name}-fig-{image_count}.jpg"  # You can use any filename format you prefer
+                    image_count+=1
                     with open(folder, 'wb') as f:
                         f.write(image_path)
                     
                     #Construct HTML for the image
-                    image_path = f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
+                    images_path += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
                     image_next_para=True
                   
         try:
@@ -509,12 +579,14 @@ def paragraph(para,doc,doc_filename):
         run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
 
         #If keyword text present in run.text skip this
-        if "keyword" in run.text.lower():
+        if run.text.lower()=="key words" or run.text.lower()=="keyword":
             continue
 
         #Print the figure caption text
         if fig and len(para.text)!=0:
-            figure=run.text
+            figure=para.text
+            if "<" in figure:
+                figure=figure.replace("<","&#60;")
             fig_text=""
             figure=figure.split(".")
             for i in range(len(figure)):
@@ -522,13 +594,15 @@ def paragraph(para,doc,doc_filename):
                     pass
                 elif i==1:
                     fig_text=figure[0]+"."+figure[1]
-                    xml_text+=f'id="{figure[0]}-{figure[1]}"><label>{fig_text}</label><caption>'
+                    xml_text+=f'id="{figure[0]}-{figure[1]}"><label>{fig_text}</label><caption><title>'
                 elif figure[i]!="":
                     fig_text=figure[i]
-                    xml_text+=f'<title>{fig_text}</title>'
+                    xml_text+=f'{fig_text}'
+            if len(figure)==1:
+                xml_text+=f'id="fig-1"><label>Fig. 1</label><caption><title>{figure[i]}</title>'
             fig=False
-            xml_text+=f'</caption>{image_path}</fig>'
-            image_path=""
+            xml_text+=f'</title></caption>{images_path}</fig>'
+            images_path=""
             return xml_text
 
         #Print the table title text
@@ -546,9 +620,11 @@ def paragraph(para,doc,doc_filename):
         
         #Check for formatting properties and create corresponding XML elements
         if run.font.superscript and (para.style.name.startswith("Authors") or para_count==2):
+            xml_text=xml_text[:-10]
             run.text=run.text.split(",")
             for i in run.text:
-                xml_text+=f'<xref ref-type="aff" rid="aff-{i}">{i}</xref>'
+                if len(i)!=0 and not i.isspace():
+                    xml_text+=f'<xref ref-type="aff" rid="aff-{i}">{i}</xref>'
             xml_text+=f'</contrib>'
         elif run.font.superscript and "corresponding author:" in para.text.lower():
             xml_text+=f'<label>{run.text}</label>'
@@ -561,16 +637,14 @@ def paragraph(para,doc,doc_filename):
         elif run.font.subscript and len(para.text)!=0:
             xml_text+=f'<sub>{run.text}</sub>'
         #Find bold text
-        elif run.bold and not (all_bold or para.alignment==1 or para.alignment==0) and len(run.text)!=0:
+        elif run.bold and (not (all_bold or para.alignment==1 or para.alignment==0)) and ("corresponding author:" not in para.text.lower() or "e-mail" not in para.text.lower()) and len(run.text)!=0:
             xml_text+=f'<bold>{run.text}</bold>'
-        #Find italic text
-        elif run.font.italic and len(para.text)!=0:
-            xml_text+=f'<italic>{run.text}</italic>'
         #Find underlined text
         elif run.font.underline and len(para.text)!=0:
             xml_text+=f'<under>{run.text}</under>'
 
         elif ("corresponding author:" in para.text.lower() or "e-mail" in para.text.lower()):
+
             run_text=run.text 
             image_next_para=False
             if "author" in run_text.lower() and not run_text.isspace():
@@ -594,30 +668,37 @@ def paragraph(para,doc,doc_filename):
             xml_text+=f'</institution>,<country>{runn[-1]}</country>.'
 
         elif (para.style.name.startswith("Authors") or para_count==2)  and len(para.text)!=0:  
-            run.text=run.text.replace(",", "")
-            if not run.text.isspace() and len(run.text)!=0:
-                ad=run.text.split(" ")
-                if author_id==1:
-                    xml_text+=f'<contrib id="author-{author_id}" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{ad[-1]}</surname><given-names>'
-                else:
-                    xml_text+=f'<contrib id="author-{author_id}" contrib-type="author"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{ad[-1]}</surname><given-names>'
-                copyright_state+=ad[-1]+" and "
-                author_id+=1
-                ad=ad[:-1]
-                for i in ad:
-                    xml_text+=f'{i}'
-                    xml_text+=f' '
-                xml_text+=f'</given-names></name>'
+            
+            run_text=run.text.split(",")
+            for i in run_text:
+                if not i.isspace() and len(i)!=0:
+                    ad=i.split(" ")
+                    ad = [value for value in ad if value != ""]
+                    if author_id==1:
+                        xml_text+=f'<contrib id="author-{author_id}" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{ad[-1]}</surname><given-names>'
+                    else:
+                        xml_text+=f'<contrib id="author-{author_id}" contrib-type="author"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{ad[-1]}</surname><given-names>'
+                    copyright_state+=ad[-1]+" and "
+                    author_id+=1
+                    ad=ad[:-1]
+                    for i in ad:
+                        xml_text+=f'{i}'
+                        xml_text+=f' '
+                    xml_text+=f'</given-names></name></contrib>'
 
         elif para_count==1 and not run.text.isspace() and len(para.text)!=0:  
             xml_text+=f'{run.text}'
 
         #Print all bold text in title tag 
-        elif (para.alignment==1 or para.alignment==0) and len(para.text)!=0 and not run.text.isspace():
+        elif ((para.alignment==1 or para.text.lower()=="introduction") or para.alignment==0) and len(para.text)!=0 and not run.text.isspace():
             xml_text+=f'{run.text}</title>'
             
         elif kwd and len(para.text)!=0:
+            run.text=run.text.replace(":","")
             key_text+=run.text
+        #Find italic text
+        elif run.font.italic and len(para.text)!=0:
+            xml_text+=f'<italic>{run.text}</italic>'
         elif "<" in run.text:
             run_text=run.text.replace("<","&#60;")
             xml_text+=f'{run_text}'
@@ -648,7 +729,8 @@ def paragraph(para,doc,doc_filename):
         para_count+=1
     #Close the contrib tag
     elif (para.style.name.startswith("Authors") or para_count==2) and len(para.text)!=0:  
-        xml_text+=f''
+        if "</contrib>" not in xml_text:
+            xml_text+=f'</contrib>'
         para_count+=1
     #Close the fig tag
     elif para.style.name.startswith("figure caption") and len(para.text)!=0:  
@@ -659,21 +741,23 @@ def paragraph(para,doc,doc_filename):
     elif aff_tag and para_count>2 and len(para.text)!=0:
         xml_text+=f'</aff>'
     #Close the author-notes tag
-    elif "abstract" in previous_text.lower()  and len(para.text)!=0:
-        xml_text+=f'</p></abstract>'
+    elif previous_text.lower()=="abstract"  and len(para.text)!=0:
+        xml_text+=f'</p>'
     #End the abstract text
-    elif "abstract" in para.text.lower() and len(para.text)!=0:
+    elif para.text.lower()=="abstract" and len(para.text)!=0:
         xml_text+=f''
+    elif "abstract" in para.text.lower():
+        xml_text+=f'</p>'
     #Close the ack tag
     elif "acknowledgment" in previous_text.lower() and len(para.text)!=0:
         xml_text+=f'</p></ack>'
-    elif (para.alignment==1 or para.alignment==0) and len(para.text)!=0:
+    elif ((para.alignment==1 or para.text.lower()=="introduction") or para.alignment==0) and len(para.text)!=0:
         xml_text+=f''
     #Close the references in title tag
     elif para.text.lower()=="references" and len(para.text)!=0:
         xml_text+=f'</title>'
     #Close the keyword in kwd-group tag
-    elif "keyword" in para.text.lower() and len(para.text)!=0:
+    elif "keyword" in para.text.lower() or "key words" in para.text.lower() and len(para.text)!=0:
         xml_text+=f'</kwd-group></article-meta></front><body>'
     #Close the list-item tag fr list paragraph
     elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:  
@@ -688,7 +772,7 @@ def paragraph(para,doc,doc_filename):
     elif len(para.text)!=0:
         xml_text+=f'</p>'
 
-    print(xml_text)
+    #print(xml_text)
     if previous_text:
         if para.style.name.startswith("List Paragraph"):
             list_text=True
@@ -734,7 +818,10 @@ def table(table,doc,doc_filename):
     #Split the filename in folder path
     file_name = os.path.basename(doc_filename)
     filename = f"{file_name}-table-{table_no}.tif"
-    xml_text=f'<alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filename}"/><table><colgroup>{colgroup_text}</colgroup>'
+    if table_title==False:
+        xml_text=f'<table-wrap id="table-{table_no}"><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filename}"/><table><colgroup>{colgroup_text}</colgroup>'
+    else:
+        xml_text=f'<alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filename}"/><table><colgroup>{colgroup_text}</colgroup>'
 
     #Store the span of merged cells
     li = []
@@ -1038,7 +1125,6 @@ def image(image,doc):
     """
 
     xml_text+="<div>"
-    print("jkiuy")
     #Find the Inline Shape is an images
     if image.type.name == "PICTURE":  
         image_bytes = image._inline.graphic.graphicData.pic.blipFill.blip.embed
