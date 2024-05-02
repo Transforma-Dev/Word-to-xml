@@ -26,6 +26,7 @@ sec_3_id=1
 list_end=False  #Close the list
 list_count=1
 fig=False   #Find figure caption
+fig_caption=1   #Find the figure caption number
 ref=False   #Find the reference text
 table_title=False   #Find table title text
 table_caption=False
@@ -40,17 +41,25 @@ ref_id=1    #Put reference id
 copyright_state=""  #Find the copryrights statement
 aff_id=1    #Find number of aff tags
 image_count=1   #Find number of image
+abbre=False     #Find abbrevation content
 
 #Define the function for convert a paragraph from word document
 def paragraph(para,doc,doc_filename):
     
     #Define the global variables
-    global previous_text,kwd,sec_1,list_count,ref,fig,aff_id,table_title,table_caption,ref_id,back_start,copyright_state,images_path,image_count,para_count,aff_tag,sec_1_id,sec_2_id,sec_3,inner_3_id,sec_3_id,secid,sec_2,image_next_para,list_end
+    global previous_text,kwd,sec_1,list_count,ref,fig,fig_caption,abbre,aff_id,table_title,table_caption,ref_id,back_start,copyright_state,images_path,image_count,para_count,aff_tag,sec_1_id,sec_2_id,sec_3,inner_3_id,sec_3_id,secid,sec_2,image_next_para,list_end
     #Store all text in xml_text
     xml_text=""
     key_text="" #Store keyword text
     author_id=1     #Find no of authors
     aff_text=""    #Find aff text
+
+    if (image_next_para) and len(para.text)!=0:
+        if "fig" not in para.text.lower():
+            image_next_para=False
+
+    #Remove space between start and end of the string
+    space_strip=para.text.strip() 
 
     #Split the filename in folder path
     file_name = os.path.basename(doc_filename)
@@ -60,51 +69,61 @@ def paragraph(para,doc,doc_filename):
         issn_no="2736-4534"
         publisher_name="European Open Science"
         publisher_loc="UK"
+        article_id="10.24018/ejedu.2024.1.1."
     elif "EJ-GEO" in journal:
         journal_title="European Journal of Environment and Earth Sciences"
         issn_no="2684-446X"
         publisher_name="European Open Science"
         publisher_loc="UK"
+        article_id="10.24018/ejgeo.2024.1.1."
     elif "EJ-MATH" in journal:
         journal_title="European Journal of Mathematics and Statistics"
         issn_no="2736-5484"
         publisher_name="European Open Science"
         publisher_loc="UK"
+        article_id="10.24018/ejmath.2023.1.1."
     elif "EJ-MED" in journal:
         journal_title="European Journal of Medical and Health Sciences"
         issn_no="2593-8339"
         publisher_name="European Open Science"
         publisher_loc="UK"
+        article_id="10.24018/ejmed.2024.1.1."
     elif "Phyton" in journal:
         journal_title="Phyton-International Journal of Experimental Botany"
         issn_no="1851-5657"
         publisher_name="Tech Science Press"
         publisher_loc="USA"
+        article_id="10.32604/phyton.2024."
     elif "EJ-SOCIAL" in journal:
         journal_title="European Journal of Humanities and Social Sciences"
         issn_no="2736-5522"
         publisher_name="European Open Science"
         publisher_loc="UK"
-    elif "peerj" in journal:
+        article_id="10.24018/ejsocial.2024.1.1."
+    elif "peerj" in journal[0]:
         journal_title="PeerJ"
         issn_no="2167-8359"
         publisher_name="PeerJ Inc."
         publisher_loc="San Diego, USA"
+        article_id="10.7717/peerj."
     elif "BIOCELL" in journal:
         journal_title="BIOCELL"
         issn_no="1667-5746"
         publisher_name="Tech Science Press"
         publisher_loc="USA"
+        article_id="10.32604/biocell.2024."
     elif "CMC" in journal:
         journal_title="Computers, Materials &#x0026; Continua"
         issn_no="1546-2226"
         publisher_name="Tech Science Press"
         publisher_loc="USA"
+        article_id="10.32604/cmc.2024."
     elif "Po" in journal:
         journal_title="Psycho-Oncologie"
         issn_no="1778-3798"    
         publisher_name="Tech Science Press"
         publisher_loc="USA"    
+        article_id="10.3166/po.2024."
     filename = f"{file_name}.pdf"
 
     if len(journal)==1:
@@ -151,7 +170,7 @@ def paragraph(para,doc,doc_filename):
                 </journal-meta>
                 <article-meta>
                     <article-id pub-id-type="publisher-id">{numbers_only[0]}</article-id>
-                    <article-id pub-id-type="doi">10.24018/ejgeo.2024.1.1.{numbers_only[0]}</article-id>
+                    <article-id pub-id-type="doi">{article_id}{numbers_only[0]}</article-id>
                     <article-categories>
                         <subj-group subj-group-type="heading">
                             <subject>RESEARCH ARTICLE</subject>
@@ -210,9 +229,12 @@ def paragraph(para,doc,doc_filename):
             aff_tag=False
         return xml_text
     #Find paragraph between author and mail and apply tag aff
-    elif aff_tag and para_count>2 and len(para.text)!=0:
-        xml_text+=f'<aff id="aff-{aff_id}">'
-        aff_id+=1
+    elif aff_tag and para_count>2 and len(para.text)!=0 and not para.text.isspace():
+        if "running title:" in para.text.lower():
+            return xml_text
+        else:
+            xml_text+=f'<aff id="aff-{aff_id}">'
+            aff_id+=1
     elif "abstract" in para.text.lower():
         xml_text+=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                         <day>00</day>
@@ -269,8 +291,22 @@ def paragraph(para,doc,doc_filename):
         back_start+="back"
         previous_text=para.text
         return xml_text
+    
+    elif space_strip.lower()=="abbreviations":
+        if sec_3>1:
+            xml_text+=f'</sec></sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>'
+        elif sec_2>1:
+            xml_text+=f'</sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>'
+        else:
+            xml_text+=f'</sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>'
+        sec_1=1
+        back_start+="back"
+    #Print abbrevation contents
+    elif abbre:
+        xml_text+=f'<def-list><def-item>'
+
     #Find references in word document and change the tag into back,ref-list,title
-    elif para.text.lower()=="references" and len(para.text)!=0:
+    elif space_strip.lower()=="references" and len(para.text)!=0:
         if "back" not in back_start:
             if sec_3>1:
                 xml_text+=f'</sec></sec></body><back><ref-list content-type="authoryear"><title>'
@@ -290,18 +326,19 @@ def paragraph(para,doc,doc_filename):
 
     #Find figure caption in word document and change the tag into fig
     elif (para.style.name.startswith("figure caption") or image_next_para) and len(para.text)!=0:
-        xml_text+=f'<fig '
-        fig=True
-        image_next_para=False
+        if "fig" in para.text.lower():
+            xml_text+=f'<fig '
+            fig=True
+            image_next_para=False
     #Find table title in word document and change the tag into table-wrap
     elif para.style.name.startswith("Table Title") and len(para.text)!=0:  
         xml_text+=f'<table-wrap id="table-{table_no}">'
         table_title=True
 
     #Find heading in word document and change the tags into sec
-    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or para.text.lower()=="introduction") and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2")) and (sec_2==1)) or (para.style.name.startswith("Heading 3") and sec_3==1)) and len(para.text)!=0:
-      
-        if para.alignment==1 or para.style.name.startswith("Heading 1") or para.text.lower()=="introduction":
+    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction") and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2")) and (sec_2==1)) or (para.style.name.startswith("Heading 3") and sec_3==1)) and len(para.text)!=0:
+        
+        if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction":
             xml_text+=f'<sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
             secid=sec_1_id
             sec_1_id+=1
@@ -337,6 +374,7 @@ def paragraph(para,doc,doc_filename):
                 sec_1_id+=1
                 sec_2_id=1
                 sec_2=1
+                back_start+="back"
             else:
                 if sec_3>1:
                     xml_text+=f'</sec></sec></sec><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>'
@@ -624,19 +662,9 @@ def paragraph(para,doc,doc_filename):
             figure=para.text
             if "<" in figure:
                 figure=figure.replace("<","&#60;")
-            fig_text=""
-            figure=figure.split(".")
-            for i in range(len(figure)):
-                if i==0:
-                    pass
-                elif i==1:
-                    fig_text=figure[0]+"."+figure[1]
-                    xml_text+=f'id="{figure[0]}-{figure[1]}"><label>{fig_text}</label><caption><title>'
-                elif figure[i]!="":
-                    fig_text=figure[i]
-                    xml_text+=f'{fig_text}'
-            if len(figure)==1:
-                xml_text+=f'id="fig-1"><label>Fig. 1</label><caption><title>{figure[i]}'
+            figure=figure.replace("Figure","").replace(str(fig_caption),"").replace("Fig","").replace(".","")
+            xml_text+=f'id="fig-{fig_caption}"><label>Fig.{fig_caption}</label><caption><title>{figure}'
+            fig_caption+=1
             fig=False
             xml_text+=f'</title></caption>{images_path}</fig>'
             images_path=""
@@ -673,28 +701,30 @@ def paragraph(para,doc,doc_filename):
         #Find subscript text
         elif run.font.subscript and len(para.text)!=0:
             xml_text+=f'<sub>{run.text}</sub>'
-        #Find bold text
-        elif run.bold and (not (all_bold or para.alignment==1 or para.alignment==0)) and ("corresponding author:" not in para.text.lower() or "e-mail" not in para.text.lower()) and len(run.text)!=0:
-         
-            if "abstract" not in run.text.lower() and "keyword" not in run.text.lower():
-                xml_text+=f'<bold>{run.text}</bold>'
         #Find underlined text
         elif run.font.underline and len(para.text)!=0:
             xml_text+=f'<under>{run.text}</under>'
 
         elif ("corresponding author" in para.text.lower() or "e-mail" in para.text.lower()):
-          
             run_text=run.text 
             image_next_para=False
-            if "author" in run_text.lower() and not run_text.isspace():
+            if ("author" in run_text.lower() or "e-mail" in run.text.lower()) and not run_text.isspace():
                 corres=run.text.split(":")
                 xml_text+=f'<bold><italic>{corres[0]} :</italic></bold>e-mail : '
-            else:
+
+            """else:
                 if ":" in run.text:
                     corres=run.text.split(":")
-                    xml_text+=f'{corres[1]}'
+                    corres=corres[-1:]
+                    xml_text+=f'<bold><italic>Corresponding Author:</italic></bold>e-mail{corres[0]}'
                 else:
-                    xml_text+=f'{run.text}'
+                    xml_text+=f'{run.text}' """
+
+        #Find bold text
+        elif run.bold and space_strip.lower()!="abbrevations" and space_strip.lower()!="references" and (not (all_bold or para.alignment==1 or para.alignment==0)) and ("corresponding author:" not in para.text.lower() or "e-mail" not in para.text.lower()) and len(run.text)!=0:
+          
+            if "abstract" not in run.text.lower() and "keyword" not in run.text.lower():
+                xml_text+=f'<bold>{run.text}</bold>'
 
         elif aff_tag and para_count>2 and len(para.text)!=0:
             aff_text+=run.text
@@ -723,8 +753,15 @@ def paragraph(para,doc,doc_filename):
             xml_text+=f'{run.text}'
 
         #Print all bold text in title tag 
-        elif ((para.alignment==1 or para.text.lower()=="introduction") or para.alignment==0) and len(para.text)!=0 and not run.text.isspace():
-            xml_text+=f'{run.text}</title>'
+        elif ((para.alignment==1 or space_strip.lower()=="introduction") or para.alignment==0) and len(para.text)!=0 and not run.text.isspace():
+            xml_text+=f'{run.text}'
+
+        elif abbre:
+            if ":" in run.text:
+                run_text=run.text.split(":")
+                xml_text+=f'<term>{run_text[0]}</term>'
+            else:
+                xml_text+=f'<def><p>{run.text}</p></def>'
             
         elif kwd and len(para.text)!=0:
             if ";" in run.text:
@@ -744,7 +781,7 @@ def paragraph(para,doc,doc_filename):
     if table_caption:
         xml_text+=f'</title></caption>'
         table_caption=False
-    if aff_text!="":
+    if aff_text!="" and not para.text.isspace():
         run_text=aff_text.split(",")
         runn=run_text
         xml_text+=f'<institution>'
@@ -800,16 +837,24 @@ def paragraph(para,doc,doc_filename):
     #Close the ack tag
     elif "acknowledgment" in previous_text.lower() and len(para.text)!=0:
         xml_text+=f'</p></ack>'
-    elif ((para.alignment==1 or para.text.lower()=="introduction") or para.alignment==0) and len(para.text)!=0:
-        xml_text+=f''
+    #Close the abbrevation contents
+    elif abbre:
+        xml_text+=f'</def-item></def-list></glossary>'
+        abbre=False
+    elif space_strip.lower()=="abbreviations":
+        xml_text+=f'</bold></title>'
+        abbre=True
+    elif ((para.alignment==1 or space_strip.lower()=="introduction") or para.alignment==0) and len(para.text)!=0:
+        xml_text+=f'</title>'
     #Close the references in title tag
-    elif para.text.lower()=="references" and len(para.text)!=0:
+    elif space_strip.lower()=="references" and len(para.text)!=0:
         xml_text+=f'</title>'
     elif previous_text.lower()=="keywords":
         kwd=False
         xml_text+=f'</kwd-group></article-meta></front><body>'
     #Close the keyword in kwd-group tag
     elif "keyword" in para.text.lower() or "key words" in para.text.lower() and len(para.text)!=0:
+        kwd=False
         xml_text+=f'</kwd-group></article-meta></front><body>'
     #Close the list-item tag fr list paragraph
     elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:  
