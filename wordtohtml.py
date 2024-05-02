@@ -74,7 +74,7 @@ def convert(input_file_name):
     #Read the Word document
     doc = Document(input_path)
     
-    xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink'>"
+    xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
 
     #Check the word document and separate them in paragraph,tables and inline shapes
     for para in iter_block_items(doc):
@@ -108,5 +108,5 @@ def convert(input_file_name):
     return output_xml_name
 
 
-convert("TSP_CMC_38293.docx")
+convert("EJ-EDU_652.docx")
 

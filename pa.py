@@ -50,13 +50,63 @@ def paragraph(para,doc,doc_filename):
     xml_text=""
     key_text="" #Store keyword text
     author_id=1     #Find no of authors
-
-    if "type:" in para.text.lower():
-        return xml_text
+    aff_text=""    #Find aff text
 
     #Split the filename in folder path
     file_name = os.path.basename(doc_filename)
     journal=file_name.split("_")
+    if "EJ-EDU" in journal:
+        journal_title="European Journal of Education and Pedagogy"
+        issn_no="2736-4534"
+        publisher_name="European Open Science"
+        publisher_loc="UK"
+    elif "EJ-GEO" in journal:
+        journal_title="European Journal of Environment and Earth Sciences"
+        issn_no="2684-446X"
+        publisher_name="European Open Science"
+        publisher_loc="UK"
+    elif "EJ-MATH" in journal:
+        journal_title="European Journal of Mathematics and Statistics"
+        issn_no="2736-5484"
+        publisher_name="European Open Science"
+        publisher_loc="UK"
+    elif "EJ-MED" in journal:
+        journal_title="European Journal of Medical and Health Sciences"
+        issn_no="2593-8339"
+        publisher_name="European Open Science"
+        publisher_loc="UK"
+    elif "Phyton" in journal:
+        journal_title="Phyton-International Journal of Experimental Botany"
+        issn_no="1851-5657"
+        publisher_name="Tech Science Press"
+        publisher_loc="USA"
+    elif "EJ-SOCIAL" in journal:
+        journal_title="European Journal of Humanities and Social Sciences"
+        issn_no="2736-5522"
+        publisher_name="European Open Science"
+        publisher_loc="UK"
+    elif "peerj" in journal:
+        journal_title="PeerJ"
+        issn_no="2167-8359"
+        publisher_name="PeerJ Inc."
+        publisher_loc="San Diego, USA"
+    elif "BIOCELL" in journal:
+        journal_title="BIOCELL"
+        issn_no="1667-5746"
+        publisher_name="Tech Science Press"
+        publisher_loc="USA"
+    elif "CMC" in journal:
+        journal_title="Computers, Materials &#x0026; Continua"
+        issn_no="1546-2226"
+        publisher_name="Tech Science Press"
+        publisher_loc="USA"
+    elif "Po" in journal:
+        journal_title="Psycho-Oncologie"
+        issn_no="1778-3798"    
+        publisher_name="Tech Science Press"
+        publisher_loc="USA"    
+    filename = f"{file_name}.pdf"
+
     if len(journal)==1:
         journal=file_name.split("-")
         numbers_only = re.findall(r'\d+',journal[1])
@@ -65,40 +115,21 @@ def paragraph(para,doc,doc_filename):
         numbers_only = re.findall(r'\d+',journal[-1])
     else:
         numbers_only = re.findall(r'\d+',journal[-1])
-    if "EJ-EDU" in journal:
-        journal_title="European Journal of Education and Pedagogy"
-        issn_no="2736-4534"
-    elif "EJ-GEO" in journal:
-        journal_title="European Journal of Environment and Earth Sciences"
-        issn_no="2684-446X"
-    elif "EJ-MATH" in journal:
-        journal_title="European Journal of Mathematics and Statistics"
-        issn_no="2736-5484"
-    elif "EJ-MED" in journal:
-        journal_title="European Journal of Medical and Health Sciences"
-        issn_no="2593-8339"
-    elif "Phyton" in journal:
-        journal_title="Phyton-International Journal of Experimental Botany"
-        issn_no="1851-5657"
-    elif "EJ-SOCIAL" in journal:
-        journal_title="European Journal of Humanities and Social Sciences"
-        issn_no="2736-5522"
-    elif "peerj" in journal:
-        journal_title="PeerJ"
-        issn_no="2167-8359"
-    elif "BIOCELL" in journal:
-        journal_title="BIOCELL"
-        issn_no="1667-5746"
-    elif "CMC" in journal:
-        journal_title="Computers, Materials &#x0026; Continua"
-        issn_no="1546-2226"
-    filename = f"{file_name}.pdf"
     
     #Find the all bold paragraph
     all_bold = all(run.bold for run in para.runs)
    
     #Find heading in word document and change the tag into title-group
     if (para_count==1 or (para_count==2 and all_bold)) and len(para.text)!=0:  
+        if "doi:" in para.text.lower():
+            return xml_text
+        if "commentary" in para.text.lower():
+            return xml_text
+        if "type:" in para.text.lower():
+            return xml_text
+        if "article" in para.text.lower():
+            return xml_text
+
         if para_count==2:
             #print(para.text)
             para_count-=1
@@ -114,8 +145,8 @@ def paragraph(para,doc,doc_filename):
                     </journal-title-group>
                     <issn pub-type="epub">{issn_no}</issn>
                     <publiher>
-                        <publisher-name>European Open Science</publisher-name>
-                        <publisher-loc>UK</publisher-loc>
+                        <publisher-name>{publisher_name}</publisher-name>
+                        <publisher-loc>{publisher_loc}</publisher-loc>
                     </publisher>
                 </journal-meta>
                 <article-meta>
@@ -135,7 +166,7 @@ def paragraph(para,doc,doc_filename):
                     </title-group>
                     <contrib-group content-type="authors">'''
     #Find corresponding author text in paragraph in word document and change the tag into author-notes
-    elif ("corresponding author:" in para.text.lower() or "e-mail" in para.text.lower()) and len(para.text)!=0:
+    elif ("corresponding author" in para.text.lower() or "e-mail" in para.text.lower()) and len(para.text)!=0:
         xml_text+=f'</contrib-group><author-notes><corresp id="cor1">'
         aff_tag=False
     #Find the next paragraph of abstract paragraph
@@ -213,6 +244,12 @@ def paragraph(para,doc,doc_filename):
                         </license>
                     </permissions>
                     <self-uri content-type="pdf" xlink:href="{filename}"></self-uri><abstract abstract-type="abstract"><p>'''
+    elif para.text.lower()=="keywords":
+        previous_text=para.text
+        return xml_text
+    elif previous_text.lower()=="keywords":
+        xml_text+=f'</abstract><kwd-group kwd-group-type="author">'
+        kwd=True
     #Find keyword in word document and change the tag into kwd-group
     elif "keyword" in para.text.lower() or "key words" in para.text.lower():
         xml_text+=f'</abstract><kwd-group kwd-group-type="author">'
@@ -442,6 +479,7 @@ def paragraph(para,doc,doc_filename):
                         if siva[i]==link_text:
                             siva[i]="<"
                     p = ''.join(siva)
+                   
                     text.append(link_text)
                     address.append(link_address)
 
@@ -557,7 +595,6 @@ def paragraph(para,doc,doc_filename):
             a=2
             if para.hyperlinks:  
                 if siva[0]=="<":
-                    print(run.text)
                     a=1
                     siva=siva[1:]
                 if len(p)>1:
@@ -599,7 +636,7 @@ def paragraph(para,doc,doc_filename):
                     fig_text=figure[i]
                     xml_text+=f'{fig_text}'
             if len(figure)==1:
-                xml_text+=f'id="fig-1"><label>Fig. 1</label><caption><title>{figure[i]}</title>'
+                xml_text+=f'id="fig-1"><label>Fig. 1</label><caption><title>{figure[i]}'
             fig=False
             xml_text+=f'</title></caption>{images_path}</fig>'
             images_path=""
@@ -638,13 +675,15 @@ def paragraph(para,doc,doc_filename):
             xml_text+=f'<sub>{run.text}</sub>'
         #Find bold text
         elif run.bold and (not (all_bold or para.alignment==1 or para.alignment==0)) and ("corresponding author:" not in para.text.lower() or "e-mail" not in para.text.lower()) and len(run.text)!=0:
-            xml_text+=f'<bold>{run.text}</bold>'
+         
+            if "abstract" not in run.text.lower() and "keyword" not in run.text.lower():
+                xml_text+=f'<bold>{run.text}</bold>'
         #Find underlined text
         elif run.font.underline and len(para.text)!=0:
             xml_text+=f'<under>{run.text}</under>'
 
-        elif ("corresponding author:" in para.text.lower() or "e-mail" in para.text.lower()):
-
+        elif ("corresponding author" in para.text.lower() or "e-mail" in para.text.lower()):
+          
             run_text=run.text 
             image_next_para=False
             if "author" in run_text.lower() and not run_text.isspace():
@@ -658,14 +697,7 @@ def paragraph(para,doc,doc_filename):
                     xml_text+=f'{run.text}'
 
         elif aff_tag and para_count>2 and len(para.text)!=0:
-            run_text=run.text.split(",")
-            runn=run_text
-            xml_text+=f'<institution>'
-            run_text=run_text[:-1]
-            for i in run_text:
-                xml_text+=f'{i}'
-                xml_text+=f' '
-            xml_text+=f'</institution>,<country>{runn[-1]}</country>.'
+            aff_text+=run.text
 
         elif (para.style.name.startswith("Authors") or para_count==2)  and len(para.text)!=0:  
             
@@ -687,6 +719,7 @@ def paragraph(para,doc,doc_filename):
                     xml_text+=f'</given-names></name></contrib>'
 
         elif para_count==1 and not run.text.isspace() and len(para.text)!=0:  
+            run.text=run.text.replace("<<","&#60;&#60;")
             xml_text+=f'{run.text}'
 
         #Print all bold text in title tag 
@@ -694,6 +727,8 @@ def paragraph(para,doc,doc_filename):
             xml_text+=f'{run.text}</title>'
             
         elif kwd and len(para.text)!=0:
+            if ";" in run.text:
+                run_text=run.text.split(";")
             run.text=run.text.replace(":","")
             key_text+=run.text
         #Find italic text
@@ -709,19 +744,33 @@ def paragraph(para,doc,doc_filename):
     if table_caption:
         xml_text+=f'</title></caption>'
         table_caption=False
+    if aff_text!="":
+        run_text=aff_text.split(",")
+        runn=run_text
+        xml_text+=f'<institution>'
+        run_text=run_text[:-1]
+        for i in run_text:
+            xml_text+=f'{i}'
+            xml_text+=f' '
+        xml_text+=f'</institution>,<country>{runn[-1]}</country>.'
     #Print the keyword paragraph into separate kwd tag
     if key_text:
-        key=key_text.split(",")
-        for a in key:
-            if a!="":
-                a=a.strip()
-                xml_text+=f'<kwd>{a}</kwd>'
+        if ";" in key_text:
+            key=key_text.split(";")
+            for a in key:
+                if a!="":
+                    a=a.strip()
+                    xml_text+=f'<kwd>{a}</kwd>'
+        else:
+            key=key_text.split(",")
+            for a in key:
+                if a!="":
+                    a=a.strip()
+                    xml_text+=f'<kwd>{a}</kwd>'
 
     #Print the link text at end of the paragraph
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
-
-    kwd=False
 
     #Close the heading tag
     if para_count==1 and len(para.text)!=0:  
@@ -736,7 +785,7 @@ def paragraph(para,doc,doc_filename):
     elif para.style.name.startswith("figure caption") and len(para.text)!=0:  
         xml_text+=f''
     #Find abstract paragraph in word document and change the tag into abstract and p
-    elif "corresponding author:" in para.text.lower() or "e-mail" in para.text.lower():
+    elif "corresponding author" in para.text.lower() or "e-mail" in para.text.lower():
         xml_text+=f'</corresp></author-notes>'
     elif aff_tag and para_count>2 and len(para.text)!=0:
         xml_text+=f'</aff>'
@@ -756,6 +805,9 @@ def paragraph(para,doc,doc_filename):
     #Close the references in title tag
     elif para.text.lower()=="references" and len(para.text)!=0:
         xml_text+=f'</title>'
+    elif previous_text.lower()=="keywords":
+        kwd=False
+        xml_text+=f'</kwd-group></article-meta></front><body>'
     #Close the keyword in kwd-group tag
     elif "keyword" in para.text.lower() or "key words" in para.text.lower() and len(para.text)!=0:
         xml_text+=f'</kwd-group></article-meta></front><body>'
@@ -796,7 +848,7 @@ def table(table,doc,doc_filename):
         str: The HTML representation of the table.
     """
 
-    global table_no
+    global table_no,image_count
 
     math_count = 0
     row_count=0
@@ -1067,9 +1119,16 @@ def table(table,doc,doc_filename):
 
                                 #Encode the image
                                 encoded_image = base64.b64encode(image_path).decode('utf-8')
+
+                                 # Save the image to a file
+                                folder = f"{doc_filename}-fig-{image_count}.jpg"  # You can use any folder format you prefer
+                                filenames = f"{file_name}-fig-{image_count}.jpg"  # You can use any filename format you prefer
+                                image_count+=1
+                                with open(folder, 'wb') as f:
+                                    f.write(image_path)
+                    
                                 #Construct HTML for the image
-                                xml_text += f"<img src='data:image/png;base64,{encoded_image}' width='{width}px' height='{height}px'/>"
-                        
+                                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
 
                     #If keyword present in run.text the skip this
                     if "keyword" in run.text.lower():
