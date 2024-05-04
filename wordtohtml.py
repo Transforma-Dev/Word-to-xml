@@ -19,7 +19,7 @@ from io import StringIO
 import sys
 import os
 
-from pa import paragraph,table   #Import Functions from 'pa.py' file
+from pp import paragraph,table   #Import Functions from 'pa.py' file
 
 # Create HTML header and body
 pre_xml = """<?xml version='1.0' encoding='UTF-8'?>"""
@@ -108,5 +108,5 @@ def convert(input_file_name):
     return output_xml_name
 
 
-convert("peerj-17265.docx")
+convert("EJ-GEO_413.docx")
 
