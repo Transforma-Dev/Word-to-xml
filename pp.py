@@ -36,6 +36,7 @@ sec_1_id=1  #Find Section 1 id
 secid=0
 sec_2_id=1  #Find section 2 id
 image_next_para=False   #Fin the image next para figure caption
+image_find=False
 back_start=""   #Start the back tag
 ref_id=1    #Put reference id
 copyright_state=""  #Find the copryrights statement
@@ -47,15 +48,11 @@ abbre=False     #Find abbrevation content
 def paragraph(para,doc,doc_filename):
     
     #Define the global variables
-    global previous_text,kwd,sec_1,list_count,ref,fig,fig_caption,abbre,table_title,table_caption,ref_id,back_start,copyright_state,images_path,image_count,para_count,aff_tag,sec_3,sec_2,image_next_para,list_end
+    global previous_text,kwd,sec_1,list_count,ref,fig,fig_caption,abbre,image_find,table_title,table_caption,ref_id,back_start,copyright_state,images_path,image_count,para_count,aff_tag,sec_3,sec_2,image_next_para,list_end
     #Store all text in xml_text
     xml_text=""
     key_text="" #Store keyword text
     aff_text=""    #Find aff text
-
-    if (image_next_para) and len(para.text)!=0:
-        if "fig" not in para.text.lower():
-            image_next_para=False
 
     #Remove space between start and end of the string
     space_strip=para.text.strip() 
@@ -302,7 +299,7 @@ def paragraph(para,doc,doc_filename):
         xmlstr = str(run._element.xml)
         my_namespaces = dict([node for _, node in ElementTree.iterparse(StringIO(xmlstr), events=['start-ns'])])
         ro = ET.fromstring(xmlstr)
-     
+
         #Check if the run contain an image
         if 'pic:pic' in xmlstr:
             for pic in ro.findall('.//pic:pic', my_namespaces):
@@ -335,7 +332,7 @@ def paragraph(para,doc,doc_filename):
                     
                     #Construct HTML for the image
                     images_path += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
-                    image_next_para=True
+                    image_find=True
                   
         try:
             #Find the hyperlink
@@ -361,6 +358,9 @@ def paragraph(para,doc,doc_filename):
                 print("link")
 
         run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
+        
+        run.text=run.text.replace("<","&#60;")
+        run.text=run.text.replace("<<","&#60;&#60;")
 
         #Find superscript text
         if run.font.superscript and len(para.text)!=0:
@@ -371,6 +371,9 @@ def paragraph(para,doc,doc_filename):
         #Find underlined text
         elif run.font.underline and len(para.text)!=0:
             xml_text+=f'<under>{run.text}</under>'
+        #Find bold text
+        elif run.bold and len(para.text)!=0  and not run.text.isspace():
+            xml_text+=f'<bold>{run.text}</bold>'
         else:
             xml_text+=f'{run.text}'
 
@@ -378,21 +381,18 @@ def paragraph(para,doc,doc_filename):
     #Print the link text at end of the paragraph
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
-
+   
     #Define the function for find title
     def title(xml_text):
         global para_count
-        if "doi:" in para.text.lower():
-            return text
-        if "commentary" in para.text.lower():
-            return text
-        if "type:" in para.text.lower():
-            return text
-        if "article" in para.text.lower():
-            return text
-
+        text=''
+        #Replace bold tag to empty
+        xml_text=xml_text.replace("<bold>","").replace("</bold>","")
+        
         if para_count==2:
             para_count-=1
+            
+            text=f'{xml_text}'
         else:
             text=f'''<front>
                 <journal-meta>
@@ -445,13 +445,14 @@ def paragraph(para,doc,doc_filename):
                 text+=f'{i}'
                 text+=f' '
             text+=f'</given-names></name>'
-            mat=matches[0].split(",")
-            matches=matches[1:]
-            for j in mat:
-                if j=="*":
-                    text+=f'<email>ssss@email.com</email>'
-                else:
-                    text+=f'<xref ref-type="aff" rid="aff-{j}">{j}</xref>'
+            if matches:
+                mat=matches[0].split(",")
+                matches=matches[1:]
+                for j in mat:
+                    if j=="*":
+                        text+=f'<email>ssss@email.com</email>'
+                    else:
+                        text+=f'<xref ref-type="aff" rid="aff-{j}">{j}</xref>'
             text+=f'</contrib>'
         return text
     #Define function to find coresponding author
@@ -462,15 +463,19 @@ def paragraph(para,doc,doc_filename):
     #Define function to find aff text
     def aff_para(xml_text):
         global aff_id
+        split_last=xml_text.split(";")
+        xml_text=split_last[0]
+        text=""
         pattern = re.compile(r'<sup>(.*?)</sup>')
         matches = pattern.findall(xml_text)     #Get superscipt tag text
         string = re.sub(pattern, '', xml_text)  #Get non superscript text
         if "running title:" in para.text.lower():
-            return xml_text
+            return text
         else:
             text=f'<aff id="aff-{aff_id}">'
             run_text=string.split(",")
-            text+=f'<label>{matches[0]}</label>'
+            if matches:
+                text+=f'<label>{matches[0]}</label>'
             runn=run_text
             text+=f'<institution>'
             run_text=run_text[:-1]
@@ -483,6 +488,7 @@ def paragraph(para,doc,doc_filename):
         return text
     #Define function to find 
     def abstract(xml_text):
+        xml_text = re.sub(r'<bold>.*?abstract:.*?</bold>', '', xml_text,flags=re.IGNORECASE)
         text=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                         <day>00</day>
                         <month>00</month>
@@ -517,7 +523,12 @@ def paragraph(para,doc,doc_filename):
     #Define funcion to find keywords
     def keyword_text(xml_text):
         xml_text = re.sub("keywords:", '', xml_text, flags=re.IGNORECASE)
-        xml_text=xml_text.split(",")
+        xml_text= re.sub(r'<bold>.*?</bold>', '', xml_text)
+        xml_text=xml_text.replace(":","")
+        if ";" in xml_text:
+            xml_text=xml_text.split(";")
+        else:       
+            xml_text=xml_text.split(",")
         text=f'</abstract><kwd-group kwd-group-type="author">'
         for i in xml_text:
             if "keyword" in i.lower():
@@ -529,18 +540,20 @@ def paragraph(para,doc,doc_filename):
     #Define function to find Heading
     def heading(xml_text):
         global sec_1,sec_2,sec_3,sec_1_id,sec_2_id,sec_3_id,inner_3_id,secid
-        if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction":
+        xml_text=xml_text.replace("<bold>","").replace("</bold>","")
+        xml_text = re.sub('^[\d.]+', '', xml_text)
+        if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or re.search(r'^\d\s.*$', para.text):
             text=f'<sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>{xml_text}</title>'
             secid=sec_1_id
             sec_1_id+=1
             sec_2=1
             sec_2_id=1
             sec_3=1
-        elif para.style.name.startswith("Heading 3"):
+        elif para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text):
             text=f'<sec id="s{secid}_{sec_3_id}_{inner_3_id}"><label>{secid}.{sec_3_id}.{inner_3_id}</label><title>{xml_text}</title>'
             inner_3_id+=1
             sec_3+=1
-        elif para.alignment==0 or para.style.name.startswith("Heading 2"):
+        elif para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text):
             text=f'<sec id="s{secid}_{sec_2_id}"><label>{secid}.{sec_2_id}</label><title>{xml_text}</title>'
             sec_3_id=sec_2_id
             sec_2_id+=1
@@ -552,7 +565,9 @@ def paragraph(para,doc,doc_filename):
     #Define function to find sub-heading 
     def sub_heading(xml_text):
         global sec_1,sec_2,sec_3,sec_1_id,sec_2_id,sec_3_id,inner_3_id,secid,back_start
-        if para.alignment==1 or para.style.name.startswith("Heading 1"):
+        xml_text=xml_text.replace("<bold>","").replace("</bold>","")
+        xml_text = re.sub('^[\d.]+', '', xml_text)
+        if para.alignment==1 or para.style.name.startswith("Heading 1") or re.search(r'^\d\s.*$', para.text):
             if "conflict of interest" in para.text.lower() and "back" not in back_start:
                 if sec_3>1:
                     text=f'</sec></sec></sec></body><back><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>{xml_text}</title>'
@@ -576,10 +591,10 @@ def paragraph(para,doc,doc_filename):
                 sec_1_id+=1
                 sec_2_id=1
                 sec_2=1
-        elif para.style.name.startswith("Heading 3"):
+        elif para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text):
             text=f'</sec><sec id="s{secid}_{sec_3_id}_{inner_3_id}"><label>{secid}.{sec_3_id}.{inner_3_id}</label><title>{xml_text}</title>'
             inner_3_id+=1
-        elif para.alignment==0 or para.style.name.startswith("Heading 2"):
+        elif para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text):
             if sec_3>1:
                 text=f'</sec></sec><sec id="s{secid}_{sec_2_id}"><label>{secid}.{sec_2_id}</label><title>{xml_text}</title>'
             else:
@@ -598,8 +613,69 @@ def paragraph(para,doc,doc_filename):
             text=f'<list-item><p>{xml_text}</p></list-item>'
         list_count+=1
         return text
+    #Define function to find the figure caption text
+    def image_caption(xml_text):
+        global fig_caption,images_path
+        xml_text = re.sub(r'<bold>.*?FIGURE.*?</bold>', '', xml_text,flags=re.IGNORECASE)
+        path_image=re.findall(r'<graphic[^>]*>', images_path)
+        count_graphic=images_path.count("graphic")
+        text=""
+        figure=xml_text
+        for i in range(count_graphic):
+            if "<" in figure:
+                figure=figure.replace("<","&#60;")
+            figure=figure.replace("Figure","").replace(str(fig_caption),"").replace("Fig","").replace(".","")
+            if "fig" in para.text.lower():
+                text+=f'<fig id="fig-{fig_caption}"><label>Fig.{fig_caption}</label><caption><title>{figure}</title></caption>{path_image[i]}</fig>'
+            else:
+                text+=f'<fig id="fig-{fig_caption}"><label>Fig.{fig_caption}</label><caption><title></title></caption>{path_image[i]}</fig>'
+            fig_caption+=1
+        fig=False
+        images_path=""
+        return text
+    #Define function to find the table heading text
+    def table_heading(xml_text):
+        global table_caption,table_title
+        xml_text=xml_text.split(":")
+        text=f'<table-wrap id="table-{table_no}"><label>{xml_text[0]}</label><caption><title>{xml_text[1]}</title></caption>'
+        return text
+    #Define function to find abrevation paragraph
+    def abbrevation(xml_text):
+        global sec_3,sec_2,sec_1,back_start
+        if sec_3>1:
+            text=f'</sec></sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>{xml_text}</bold></title>'
+        elif sec_2>1:
+            text=f'</sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>{xml_text}</bold></title>'
+        else:
+            text=f'</sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>{xml_text}</bold></title>'
+        sec_1=1
+        back_start+="back"
+        return text
+    # Define function to find and Print abbrevation contents
+    def abbrev_text(xml_text):
+        xml_text=xml_text.split(":")
+        text=f'<def-list><def-item><term>{xml_text[0]}</term><def><p>{xml_text[1]}</p></def></def-item></def-list></glossary>'
+        return text
+    #Define function to find acknowledgment paragraph
+    def ack_para(xml_text):
+        global back_start,sec_1
+        if sec_3>1:
+            text=f'</sec></sec></sec></body><back>'
+        elif sec_2>1:
+            text=f'</sec></sec></body><back>'
+        else:
+            text=f'</sec></body><back>'
+        sec_1=1
+        back_start+="back"
+        previous_text=para.text
+        return text
+    #Define function to find acknowledgment text
+    def ack_text(xml_text):
+        text=f'<ack><p>{xml_text}</p></ack>'
+        return text
     #Define function to find reference part
     def reference(xml_text):
+        xml_text=xml_text.replace("<bold>","").replace("</bold>","")
         if "back" not in back_start:
             if sec_3>1:
                 text=f'</sec></sec></body><back><ref-list content-type="authoryear"><title>{xml_text}</title>'
@@ -621,11 +697,24 @@ def paragraph(para,doc,doc_filename):
         global ref_id
         text=f'<ref id="ref-{ref_id}">{xml_text}</ref>'
         ref_id+=1
-        return aff_text
+        return text
 
         
     #Close the heading tag
-    if para_count==1 and len(para.text)!=0:  
+    if (para_count==1 or (para_count==2 and all_bold)) and len(para.text)!=0:  
+        if "doi:" in para.text.lower():
+            xml_text=''
+            return xml_text
+        if "commentary" in para.text.lower():
+            xml_text=''
+            return xml_text
+        if "type:" in para.text.lower():
+            xml_text=''
+            return xml_text
+        if "article" in para.text.lower():
+            xml_text=''
+            return xml_text
+
         xml_text=title(xml_text)
         para_count+=1
 
@@ -638,10 +727,6 @@ def paragraph(para,doc,doc_filename):
     elif ("corresponding author" in para.text.lower() or "e-mail" in para.text.lower()) and len(para.text)!=0:
         aff_tag=False
         xml_text = corres_author(xml_text)
-
-    #Find paragraph between author and mail and apply tag aff
-    elif aff_tag and para_count>2 and len(para.text)!=0 and not para.text.isspace():
-        xml_text = aff_para(xml_text)
 
     #Find the next paragraph of abstract paragraph
     elif previous_text.lower()=="abstract"  and len(para.text)!=0:
@@ -671,21 +756,54 @@ def paragraph(para,doc,doc_filename):
         kwd=True
 
     #Check the paragraph was starts with keyword text
-    elif para.text.strip().lower().startswith("keyword"):
+    elif para.text.strip().lower().startswith("keyword") or para.text.strip().lower().startswith("key words"):
         xml_text=keyword_text(xml_text)
         kwd=True
+
+    #Find paragraph between author and mail and apply tag aff
+    elif aff_tag and para_count>2 and len(para.text)!=0 and not para.text.isspace():
+        xml_text = aff_para(xml_text)
+
+    #Find acknowledgment paragraph in word document and change the tag into ack and p
+    elif "acknowledgment" in previous_text.lower() and len(para.text)!=0:
+        xml_text = ack_text(xml_text)
+
+    #Find acknowledgment in word document and skip this
+    elif  para.text.strip().lower().startswith("acknowledgment"):
+        xml_text = ack_para(xml_text)
+
+    #Print abbrevation contents
+    elif space_strip.lower()=="abbreviations":
+        xml_text = abbrevation(xml_text)
+        abbre=True
+    
+    #Print abbrevation contents
+    elif abbre:
+        xml_text = abbrev_text(xml_text)
+        abbre=False
 
     #Find references in word document and change the tag into back,ref-list,title
     elif space_strip.lower()=="references" and len(para.text)!=0:
         xml_text = reference(xml_text)
         ref=True
 
+    #Find figure caption in word document and change the tag into fig
+    elif (para.style.name.startswith("figure caption") or image_next_para) and len(para.text)!=0:
+        xml_text = image_caption(xml_text)
+        image_find=False
+        image_next_para=False
+
+    #Find table title in word document and change the tag into table-wrap
+    elif para.style.name.startswith("Table Title") and len(para.text)!=0:  
+        xml_text = table_heading(xml_text)
+        table_title=True
+
     #Find heading in word document and change the tags into sec
-    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction") and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2")) and (sec_2==1)) or (para.style.name.startswith("Heading 3") and sec_3==1)) and len(para.text)!=0:
+    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or re.search(r'^\d\s.*$', para.text)) and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text)) and (sec_2==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and sec_3==1)) and len(para.text)!=0:
         xml_text=heading(xml_text)
 
     #Find heading in word document and change the tags sec
-    elif ((para.alignment==1 or para.style.name.startswith("Heading 1")) or (para.alignment==0  or para.style.name.startswith("Heading 2")) or para.style.name.startswith("Heading 3")) and len(para.text)!=0:
+    elif ((para.alignment==1 or para.style.name.startswith("Heading 1") or re.search(r'^\d\s.*$', para.text)) or (para.alignment==0  or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text)) or (para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text))) and len(para.text)!=0:
         xml_text = sub_heading(xml_text)
 
     #Find List in word document and change the tag into list-item and p
@@ -712,7 +830,12 @@ def paragraph(para,doc,doc_filename):
     elif len(para.text)!=0:
         xml_text=f'<p>{xml_text}</p>' 
 
-    previous_text=para.text
+ 
+    if image_find:
+        image_next_para=True
+
+    if len(para.text)!=0:
+        previous_text=para.text
 
     return xml_text
 
