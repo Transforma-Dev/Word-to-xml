@@ -365,6 +365,8 @@ def paragraph(para,doc,doc_filename):
         #Find superscript text
         if run.font.superscript and len(para.text)!=0:
             xml_text+=f'<sup>{run.text}</sup>'
+        elif run.font.italic and len(run.text)!=0:
+            xml_text+=f'<italic>{run.text}</italic>'
         #Find subscript text
         elif run.font.subscript and len(para.text)!=0:
             xml_text+=f'<sub>{run.text}</sub>'
@@ -377,10 +379,10 @@ def paragraph(para,doc,doc_filename):
             if len(matches)!=0:
                 if matches[0] in run.text:
                     xml_text+=f'{run.text}'
-            elif run.text==":":
-                xml_text+=f'{run.text}'
             else:
                 xml_text+=f'<bold>{run.text}</bold>'
+            if run.text==":":
+                xml_text+=f'{run.text}'
         else:
             xml_text+=f'{run.text}'
 
@@ -392,7 +394,7 @@ def paragraph(para,doc,doc_filename):
     #Print the link text at end of the paragraph
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
-   
+    
     #Define the function for find title
     def title(xml_text):
         global para_count
@@ -482,6 +484,8 @@ def paragraph(para,doc,doc_filename):
         string = re.sub(pattern, '', xml_text)  #Get non superscript text
         if "running title:" in para.text.lower():
             return text
+        if "orcid:" in para.text.lower():
+            return text
         else:
             text=f'<aff id="aff-{aff_id}">'
             run_text=string.split(",")
@@ -551,10 +555,12 @@ def paragraph(para,doc,doc_filename):
     #Define function to find Heading
     def heading(xml_text):
         global sec_1,sec_2,sec_3,sec_1_id,sec_2_id,sec_3_id,inner_3_id,secid
+        text=''
         xml_text=xml_text.replace("<bold>","").replace("</bold>","")
         xml_text = re.sub('^[\d.]+', '', xml_text)
         if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or re.search(r'^\d\s.*$', para.text) or space_strip.strip().lower().startswith("conflict"):
             text=f'<sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>{xml_text}</title>'
+            #print(xml_text)
             secid=sec_1_id
             sec_1_id+=1
             sec_2=1
@@ -576,9 +582,11 @@ def paragraph(para,doc,doc_filename):
     #Define function to find sub-heading 
     def sub_heading(xml_text):
         global sec_1,sec_2,sec_3,sec_1_id,sec_2_id,sec_3_id,inner_3_id,secid,back_start
+        
         xml_text=xml_text.replace("<bold>","").replace("</bold>","")
+        text=''
         xml_text = re.sub('^[\d.]+', '', xml_text)
-        if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith("conflict") or re.search(r'^\d\s.*$', para.text):
+        if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith("conflict") or re.search(r'^\d(\s+|\.).*$', para.text):
             if  space_strip.strip().lower().startswith("conflict") and "back" not in back_start:
                 if sec_3>1:
                     text=f'</sec></sec></sec></body><back><sec id="s{sec_1_id}"><label>{sec_1_id}.</label><title>{xml_text}</title>'
@@ -640,7 +648,7 @@ def paragraph(para,doc,doc_filename):
             if "fig" in para.text.lower():
                 text+=f'<fig id="fig-{fig_caption}"><label>Fig.{fig_caption}</label><caption><title>{figure}</title></caption>{path_image[i]}</fig>'
             else:
-                text+=f'<fig id="fig-{fig_caption}"><label>Fig.{fig_caption}</label><caption><title></title></caption>{path_image[i]}</fig>'
+                text+=f'<fig id="fig-{fig_caption}"><label>Fig.{fig_caption}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
             fig_caption+=1
         fig=False
         images_path=""
@@ -648,8 +656,11 @@ def paragraph(para,doc,doc_filename):
     #Define function to find the table heading text
     def table_heading(xml_text):
         global table_caption,table_title
-        xml_text=xml_text.split(":")
-        text=f'<table-wrap id="table-{table_no}"><label>{xml_text[0]}</label><caption><title>{xml_text[1]}</title></caption>'
+        if ":" in xml_text:
+            xml_text=xml_text.split(":")
+            text=f'<table-wrap id="table-{table_no}"><label>{xml_text[0]}</label><caption><title>{xml_text[1]}</title></caption>'
+        else:
+            text=f'<table-wrap id="table-{table_no}"><label>table</label><caption><title>{xml_text}</title></caption>'
         return text
     #Define function to find abrevation paragraph
     def abbrevation(xml_text):
@@ -730,6 +741,9 @@ def paragraph(para,doc,doc_filename):
             xml_text=''
             return xml_text
         if "article" in para.text.lower():
+            xml_text=''
+            return xml_text
+        if "running title:" in para.text.lower():
             xml_text=''
             return xml_text
 
@@ -820,24 +834,26 @@ def paragraph(para,doc,doc_filename):
         image_next_para=False
 
     #Find table title in word document and change the tag into table-wrap
-    elif (para.style.name.startswith("Table Title") or re.search(r'Table \d+:(.*)', para.text)) and len(para.text)!=0:
+    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+:(.*)', para.text)) and len(para.text)!=0:
         xml_text = table_heading(xml_text)
         table_title=True
+    
+    #Find reference paragraph in word document and change the tag into ref
+    elif ref and para.text!="":
+        xml_text = reference_text(xml_text)
 
     #Find heading in word document and change the tags into sec
-    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or re.search(r'^\d\s.*$', para.text) or space_strip.strip().lower().startswith("conflict")) and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\)\s.*$',para.text) or re.search(r'^\d+\..*', para.text)) and (sec_2==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and sec_3==1)) and len(para.text)!=0:
+    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or space_strip.strip().lower().startswith("conflict") or re.search(r'^((\d+\.*\)*\s*))(\w+)', para.text)) and (sec_1==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+\s.*$', para.text)) and (sec_2==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and sec_3==1)) and len(para.text)!=0:
+        #print(para.text)
         if para.text.strip().lower().startswith("received"):
             xml_text=''
             return xml_text
         xml_text=heading(xml_text)
 
     #Find heading in word document and change the tags sec
-    elif ((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith("conflict") or re.search(r'^\d\s.*$', para.text)) or (para.alignment==0  or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text) or re.search(r'^\d+\)\s.*$',para.text)) or (para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text))) and len(para.text)!=0:
+    elif ((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith("conflict")) or (para.alignment==0  or para.style.name.startswith("Heading 2")) or (para.style.name.startswith("Heading 3") or re.search(r'^((\d+\.*\)*\s*))(\w+)', para.text))) and len(para.text)!=0:
+        #print(para.text)
         xml_text = sub_heading(xml_text)
-
-    #Find reference paragraph in word document and change the tag into ref
-    elif ref and para.text!="":
-        xml_text = reference_text(xml_text)
 
     #Find List in word document and change the tag into list-item and p
     elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:
