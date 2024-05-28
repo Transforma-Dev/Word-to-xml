@@ -1,0 +1,106 @@
+{
+    "EJ-EDU":{"journal_title":"European Journal of Education and Pedagogy",
+            "issn_no":"2736-4534",
+            "publisher_name":"European Open Science",
+            "publisher_loc":"UK",
+            "article_id":"10.24018/ejedu.2024.1.1."
+        },
+
+    "EJ-GEO":{"journal_title":"European Journal of Environment and Earth Sciences",
+            "issn_no":"2684-446X",
+            "publisher_name":"European Open Science",
+            "publisher_loc":"UK",
+            "article_id":"10.24018/ejgeo.2024.1.1."
+        },
+
+    "EJ-MATH":{"journal_title":"European Journal of Mathematics and Statistics",
+            "issn_no":"2736-5484",
+            "publisher_name":"European Open Science",
+            "publisher_loc":"UK",
+            "article_id":"10.24018/ejmath.2023.1.1."
+        },
+
+    "EJ-MED":{"journal_title":"European Journal of Medical and Health Sciences",
+            "issn_no":"2593-8339",
+            "publisher_name":"European Open Science",
+            "publisher_loc":"UK",
+            "article_id":"10.24018/ejmed.2024.1.1."
+        },
+
+    "Phyton":{"journal_title":"Phyton-International Journal of Experimental Botany",
+            "issn_no":"1851-5657",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/phyton.2024."
+        },
+
+    "EJ-SOCIAL":{"journal_title":"European Journal of Humanities and Social Sciences",
+            "issn_no":"2736-5522",
+            "publisher_name":"European Open Science",
+            "publisher_loc":"UK",
+            "article_id":"10.24018/ejsocial.2024.1.1."
+        },
+
+    "peerj":{"journal_title":"PeerJ",
+            "issn_no":"2167-8359",
+            "publisher_name":"PeerJ Inc.",
+            "publisher_loc":"San Diego, USA",
+            "article_id":"10.7717/peerj."
+        },
+
+    "BIOCELL":{"journal_title":"BIOCELL",
+            "issn_no":"1667-5746",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/biocell.2024."
+        },
+
+    "CMC":{"journal_title":"Computers, Materials &#x0026; Continua",
+            "issn_no":"1546-2226",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/cmc.2024."
+        },
+
+    "CMES":{"journal_title":"Computer Modeling in Engineering &#x0026; Sciences",
+            "issn_no":"1526-1506",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/cmes.2024."
+        },
+
+    "CSSE":{"journal_title":"Computer Systems Science &#x0026; Engineering",
+            "issn_no":"0267-6192",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/cmes.2024.0"
+        },
+
+    "DEDT":{"journal_title":"Digital Engineering and Digital Twin",
+            "issn_no":"xxxx-xxxx",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/dedt.2024.0"
+        },
+
+    "FHMT":{"journal_title":"Frontiers in Heat and Mass Transfer",
+            "issn_no":"2151-8629",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/fhmt.2024.0"
+        },
+
+    "Po":{"journal_title":"Psycho-Oncologie",
+            "issn_no":"1778-3798",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.32604/csse.2024.0"
+        },
+
+    "FDMP":{"journal_title":"Fluid Dynamics &#x0026; Materials Processing",
+        "issn_no":"1546-2226",
+        "publisher_name":"Tech Science Press",
+        "publisher_loc":"USA",
+        "article_id":"10.32604/fdmp.2024.0"
+    }
+}
