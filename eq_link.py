@@ -141,12 +141,12 @@ def hyper(root,para):
                         siva[i]="<"
                 p = ''.join(siva)
                 text.append(link_text)
-                address.append(link_address)
+                address.append(link_address)    
 
     return siva,text,address,font,p
 
 #Define function to print the hyperlink text
-def print_hyper(para,siva,p,xml_text,text,address,font):
+def print_hyper(run,para,siva,p,xml_text,text,address,font):
     try:
         #Find the hyperlink in paragraph
         a=2
@@ -154,7 +154,7 @@ def print_hyper(para,siva,p,xml_text,text,address,font):
             if siva[0]=="<":
                 a=1
                 siva=siva[1:]
-            if len(p)>1:
+            if len(siva)>1:
                 siva=siva[1:]
     except Exception as e:
         print(f"An error occurred: {e}")

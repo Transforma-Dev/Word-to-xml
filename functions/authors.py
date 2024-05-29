@@ -18,7 +18,7 @@ def author_name(xml_text,variables):
         pattern = re.compile(r'<sup>(.*?)</sup>')
         matches = pattern.findall(xml_text)     #Get superscipt tag text
         string = re.sub(pattern, '', xml_text)  #Get non superscript text
-        split_string = re.split(r',\s*| and ', string)
+        split_string = re.split(r',\s*| and |;\s*', string)
             
     text=f'''</article-title>
                     <alt-title alt-title-type="left-running-head">Amoako and Otchere</alt-title>
@@ -83,6 +83,7 @@ def corres_author(xml_text,variables):
     xml_text=xml_text.replace("<sup>","<label>").replace("</sup>","</label>").replace("<link>","<email>").replace("</link>","</email>")
     text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}</corresp></author-notes>'
     
+    variables["para_count"]+=1
     variables["aff_tag"]=False
     #print(text)
     return text

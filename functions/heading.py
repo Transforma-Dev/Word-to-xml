@@ -35,7 +35,7 @@ def heading(para,space_strip,xml_text,variables):
         
     variables["sec_1"]+=1
     if variables["noman_text"]:
-        text="</def-list></glossary>"+text
+        variables["noman_store"]+="</def-list></glossary>"
 
     variables["noman_text"]=False
     #print(text)
@@ -45,6 +45,9 @@ def heading(para,space_strip,xml_text,variables):
 #Define function to find sub-heading 
 def sub_heading(para,xml_text,variables,space_strip):
     text=''
+    if xml_text.lower().startswith("fig."):
+        text+=f'<p>{xml_text}</p>'
+        return text
     #Remove bold and italic tag
     xml_text = xml_text.replace("<bold>", "").replace("</bold>", "").replace("<italic>", "").replace("</italic>", "")
     

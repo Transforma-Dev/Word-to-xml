@@ -11,7 +11,7 @@ def reference(xml_text,variables):
             text=f'</sec></body><back><ref-list content-type="authoryear"><title>{xml_text}</title>'
         variables["ref"]=True
     elif "fn" in variables["back_start"]:
-        text=f'</fn-group><ref-list content-type="authoryear"><title>{xml_text}</title>'
+        text=f'</p></fn></fn-group><ref-list content-type="authoryear"><title>{xml_text}</title>'
     else:
         if variables["sec_3"]>1:
             text=f'</sec></sec><ref-list content-type="authoryear"><title>{xml_text}</title>'

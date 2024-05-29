@@ -38,7 +38,7 @@ def paragraph(para,doc,doc_filename,variables):
     with open("journal.json",'r') as file:
         data = json.load(file)
 
-    if space_strip.strip().lower().startswith("received"):
+    if space_strip.strip().lower().startswith(("received", "running")):
         xml_text=''
         return xml_text
     
@@ -78,7 +78,7 @@ def paragraph(para,doc,doc_filename,variables):
 
         #Print the hyperlink preent in paragraph
         if para.hyperlinks:
-            siva,p,xml_text,text,address,font = eq_link.print_hyper(para,siva,p,xml_text,text,address,font)
+            siva,p,xml_text,text,address,font = eq_link.print_hyper(run,para,siva,p,xml_text,text,address,font)
 
         run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
 
@@ -122,7 +122,7 @@ def paragraph(para,doc,doc_filename,variables):
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
 
-        
+    
     #Find the title of the document
     if (variables["para_count"]==1 or (variables["para_count"]==2 and all_bold and not para.style.name.startswith("author") and "*," not in para.text)) and len(para.text)!=0:
         xml_text=title.title(para,xml_text,variables,data,journal,file_name)
@@ -137,7 +137,7 @@ def paragraph(para,doc,doc_filename,variables):
     #     xml_text = two_author(xml_text)
 
     #Find corresponding author text in paragraph in word document and change the tag into author-notes
-    elif ("corresponding author" in para.text.lower() or para.text.strip().lower().startswith("e-mail") or para.text.strip().lower().startswith("email")) and len(para.text)!=0:
+    elif ("corresponding author" in para.text.lower() or para.text.strip().lower().startswith("e-mail") or para.text.strip().lower().startswith("*") or para.text.strip().lower().startswith("email")) and variables["para_count"]==3 and len(para.text)!=0:
         xml_text = authors.corres_author(xml_text,variables)
 
     #Find the next paragraph is abstract paragraph
@@ -145,7 +145,7 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = abstract_key.abstract(xml_text,variables,filename)
 
     #Find abstract in word document and skip this
-    elif para.text.lower()=="abstract" and len(para.text)!=0:
+    elif para.text.lower()=="abstract" and len(para.text)!=0:       
         variables["previous_text"]=para.text
         xml_text=''
         if variables["aff_tag"]:
@@ -159,30 +159,35 @@ def paragraph(para,doc,doc_filename,variables):
             xml_text=box_text
             box_text=''
         xml_text = abstract_key.abstract(xml_text,variables,filename)
+
+    #Check the resume and mots cell in document
+    elif "resume" in para.text.lower():
+        xml_text = other_tags.noman(xml_text,variables)
     
     #Check para.text is keyword then skip them
     elif para.text.lower()=="keywords":
         variables["previous_text"]=para.text
+        xml_text=''
         return xml_text
 
     #Check previous text was equal to keyword
     elif variables["previous_text"].lower()=="keywords":
-        xml_text=abstract_key.keyword_text(xml_text)
+        xml_text=abstract_key.keyword_text(xml_text,variables)
 
     #Check the paragraph was starts with keyword text
     elif para.text.strip().lower().startswith("keyword") or para.text.strip().lower().startswith("key words"):
-        xml_text=abstract_key.keyword_text(xml_text)
+        xml_text=abstract_key.keyword_text(xml_text,variables)
 
     #Find paragraph between author and mail and apply tag aff
     elif variables["aff_tag"] and variables["para_count"]>2 and len(para.text)!=0 and not para.text.isspace():
         xml_text = authors.aff_para(xml_text,variables)
 
     #Find acknowledgment paragraph in word document and change the tag into ack and p
-    elif variables["previous_text"].lower() in ["acknowledgment", "acknowledgement","acknowledgements"]:
+    elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', variables["previous_text"],flags=re.IGNORECASE):
         xml_text = other_tags.ack_text(xml_text,variables)
 
     #Find acknowledgment in word document and skip this
-    elif para.text.lower() in ["acknowledgment", "acknowledgement","acknowledgements"]:
+    elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', para.text,flags=re.IGNORECASE):
         xml_text = other_tags.ack_para(xml_text,variables,para)
 
     #Find acknowledgment in word document and skip this
@@ -215,8 +220,8 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = image_table.image_caption(xml_text,variables)
 
     #Find table title in word document and change the tag into table-wrap
-    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+:(.*)', para.text)) and len(para.text)!=0:
-        #print(para.text)
+    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text))and len(para.text)<=150 and len(para.text)!=0:
+        #print(para.text,len(para.text))
         xml_text = image_table.table_heading(xml_text,variables)
     
     #Find reference paragraph in word document and change the tag into ref
@@ -239,7 +244,7 @@ def paragraph(para,doc,doc_filename,variables):
 
     #Change noman tag text
     elif variables["noman_text"] and len(para.text)!=0:
-        xml_text = other_tag.noman_para(xml_text,variables)
+        xml_text = other_tags.noman_para(xml_text,variables)
 
     #Find List in word document and change the tag into list-item and p
     elif para.style.name.startswith("List Paragraph") and len(para.text)!=0:
@@ -250,7 +255,7 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = list_file.list_close(xml_text,variables,para)    
 
     #Else print p tag
-    elif len(para.text)!=0:
+    elif len(para.text)!=0 and not para.text.isspace():
         xml_text=f'<p>{xml_text}</p>' 
 
     #Find the image caption or next paragraph of image

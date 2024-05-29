@@ -96,8 +96,13 @@ def convert():
     "noman_text": False,"noman_store": ''
     }
     
-    #Read the Word document
-    doc = Document(input_path)
+    try:
+        #Read the Word document
+        doc = Document(input_path)
+
+    except ValueError as e:
+        print(f"Error opening the document: {e}")
+        return ''
     
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
 

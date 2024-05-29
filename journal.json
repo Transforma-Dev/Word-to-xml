@@ -90,11 +90,39 @@
             "article_id":"10.32604/fhmt.2024.0"
         },
 
-    "Po":{"journal_title":"Psycho-Oncologie",
+    "IJMHP":{"journal_title":"International Journal of Mental Health Promotion",
+        "issn_no":"2049-8543",
+        "publisher_name":"Tech Science Press",
+        "publisher_loc":"USA",
+        "article_id":"10.32604/ijmhp.2024.0"
+    },
+
+    "JAI":{"journal_title":"Journal on Artificial Intelligence",
+        "issn_no":"2579-003X",
+        "publisher_name":"Tech Science Press",
+        "publisher_loc":"USA",
+        "article_id":"10.32604/jai.2024.0"
+    },
+
+    "JRM":{"journal_title":"Journal of Renewable Materials",
+        "issn_no":"2164-6341",
+        "publisher_name":"Tech Science Press",
+        "publisher_loc":"USA",
+        "article_id":"10.32604/jrm.2024.0"
+    },
+
+    "OR":{"journal_title":"Oncology Research",
+        "issn_no":"0965-0407",
+        "publisher_name":"Tech Science Press",
+        "publisher_loc":"USA",
+        "article_id":"10.32604/or.2024.0"
+    },
+
+    "PO":{"journal_title":"Psycho-Oncologie",
             "issn_no":"1778-3798",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/csse.2024.0"
+            "article_id":"10.3166/po.2024."
         },
 
     "FDMP":{"journal_title":"Fluid Dynamics &#x0026; Materials Processing",

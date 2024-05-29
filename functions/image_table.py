@@ -31,12 +31,14 @@ def image_caption(xml_text,variables):
 
 #Define function to find the table heading text
 def table_heading(xml_text,variables):
-    if ":" in xml_text:
-        xml_text=xml_text.split(":")
-        text=f'<table-wrap id="table-{variables["table_no"]}"><label>{xml_text[0]}</label><caption><title>{xml_text[1]}</title></caption>'
-    else:
-        text=f'<table-wrap id="table-{variables["table_no"]}"><label>table</label><caption><title>{xml_text}</title></caption>'
+    xml_text=xml_text.replace("<bold>","").replace("</bold>","")
+    
+    match = re.findall("^Table\s*\d+",xml_text)
+    xml_text = xml_text.split(match[0],1)
+    xml_text = re.sub("(^\.|\:)+","",xml_text[1])
 
+    text=f'<table-wrap id="table-{variables["table_no"]}"><label>{match[0]}</label><caption><title>{xml_text}</title></caption>'
+    
     variables["table_title"]=True
     #print(text)
     return text
@@ -77,7 +79,7 @@ def row_col_span(r,c,row,cell,table,li,tt,tr,xml_text):
         tt=False
         tr=False
     except:
-        print("table")
+        print("row_col_span")
 
     #Present first row in th tag other present in td tag
     tag = "th" if r == 0 else "td"
