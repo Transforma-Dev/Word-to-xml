@@ -81,7 +81,10 @@ def aff_para(xml_text,variables):
 #Define function to find coresponding author
 def corres_author(xml_text,variables):
     xml_text=xml_text.replace("<sup>","<label>").replace("</sup>","</label>").replace("<link>","<email>").replace("</link>","</email>")
-    text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}</corresp></author-notes>'
+    if variables["para_count"]==3:
+        text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}</corresp></author-notes>'
+    else:
+        text=f'<author-notes><corresp id="cor1">{xml_text}</corresp></author-notes>'
     
     variables["para_count"]+=1
     variables["aff_tag"]=False

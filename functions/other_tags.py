@@ -47,7 +47,7 @@ def ack_text(xml_text,variables):
         text=f'</sec></sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
     else:
         text=f'</sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
-        
+    
     variables["sec_1"]=1
     variables["sec_2"]=1
     variables["sec_3"]=1

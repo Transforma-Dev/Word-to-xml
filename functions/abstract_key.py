@@ -54,7 +54,7 @@ def abstract(xml_text,variables,filename):
         variables["noman_text"] = False
         text += keyword_text(variables["noman_store"][1],variables)
         text = text.replace("</article-meta></front><body>","")
-        
+    
     #print(text)
     return text
 
@@ -79,11 +79,12 @@ def keyword_text(xml_text,variables):
         for i in xml_text:
             text+=f'<kwd>{i}</kwd>'
         text+=f'</kwd-group></article-meta></front><body>'
+
         if variables["noman_store"]:
             variables["noman_text"] = True
             variables["noman_store"] = ''
         else:
             variables["noman_text"] = False
-    
+
     #print(text)
     return text

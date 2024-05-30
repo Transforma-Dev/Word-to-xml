@@ -36,7 +36,7 @@ def heading(para,space_strip,xml_text,variables):
     variables["sec_1"]+=1
     if variables["noman_text"]:
         variables["noman_store"]+="</def-list></glossary>"
-
+    #print(text)
     variables["noman_text"]=False
     #print(text)
     return text
