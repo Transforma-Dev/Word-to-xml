@@ -5,6 +5,14 @@ import re
 def abstract(xml_text,variables,filename):
     copy_xml=xml_text
     res = ''
+    #print copyright statement
+    ss=variables["copyright_state"].count("and")
+    if ss>4:
+        variables["copyright_state"]=variables["copyright_state"].split("and")
+        variables["copyright_state"] = variables["copyright_state"][0]+"et al."
+    else:
+        variables["copyright_state"] = variables["copyright_state"].strip()[:-3]
+        
     #Find the contend in resume in TSP_PO_49526.docx
     if variables["noman_store"]:
         variables["noman_store"] = variables["noman_store"].lower().split("mots cles")
@@ -38,9 +46,9 @@ def abstract(xml_text,variables,filename):
                     </date>
                 </history>
                 <permissions>
-                    <copyright-statement>&#x00A9; 2024 </copyright-statement>
+                    <copyright-statement>&#x00A9; 2024 {variables["copyright_state"]}</copyright-statement>
                     <copyright-year>2024</copyright-year>
-                    <copyright-holder>et al.</copyright-holder>
+                    <copyright-holder>{variables["copyright_state"]}</copyright-holder>
                     <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
                         <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.</license-p>
                     </license>

@@ -6,7 +6,7 @@ def image_caption(xml_text,variables):
 
     xml_text=xml_text.replace(":","")
     copy_text=xml_text
-    xml_text = re.sub(r'<bold>.*?FIGURE.*?</bold>|<bold>.*?\d+\d*.*?</bold>', '', xml_text, flags=re.IGNORECASE)
+    xml_text = re.sub(r'<bold>|</bold>', '', xml_text, flags=re.IGNORECASE)
     path_image=re.findall(r'<graphic[^>]*>', variables["images_path"])
     count_graphic=variables["images_path"].count("graphic")
     text=""
@@ -14,12 +14,25 @@ def image_caption(xml_text,variables):
     for i in range(count_graphic):
         if "<" in figure:
             figure=figure.replace("<","&#60;")
-        figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
-        figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)
-        if ("fig" in copy_text.lower() or copy_text.lower().startswith("(")):
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title>{figure}</title></caption>{path_image[i]}</fig>'
+        pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|\s)+)(.+)"
+        match = re.match(pattern, xml_text,re.IGNORECASE)
+
+        if match:
+            part1 = match.group(1)
+            if part1[-1]==".":
+                part1 = part1[:-1]
+            part2 = match.group(7)
+    
+            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}</fig>'
         else:
             text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
+            
+        #figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
+        #figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)
+        # if ("fig" in copy_text.lower() or copy_text.lower().startswith("(")):
+        #     text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title>{figure}</title></caption>{path_image[i]}</fig>'
+        # else:
+        #     text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
         variables["fig_caption"]+=1
     variables["fig"]=False
     variables["images_path"]=""
@@ -32,8 +45,9 @@ def image_caption(xml_text,variables):
 #Define function to find the table heading text
 def table_heading(xml_text,variables):
     xml_text=xml_text.replace("<bold>","").replace("</bold>","")
-    
-    match = re.findall("^Table\s*\d+",xml_text)
+
+    match = re.findall("^Table\s*\w+",xml_text,re.IGNORECASE)
+
     xml_text = xml_text.split(match[0],1)
     xml_text = re.sub("(^\.|\:)+","",xml_text[1])
 

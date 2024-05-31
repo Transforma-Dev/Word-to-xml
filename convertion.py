@@ -53,11 +53,11 @@ def paragraph(para,doc,doc_filename,variables):
     #Check where the boxed text are present in paragraph
     if "<wps:txbx>" in xml:
         box_text = eq_link.txbox(root)
-    
+
     #Check where the equation are present in paragraph
     if "<m:oMath" in xml:
         values,xml_text,math_count = eq_link.eq(root,xml_text,para,math_count)
-    
+
     #Check the paragraph to find the hyperlink
     if para.hyperlinks:
         siva,text,address,font,p = eq_link.hyper(root,para)
@@ -250,7 +250,7 @@ def paragraph(para,doc,doc_filename,variables):
     #Find List in word document and change the tag into list-item and p
     elif (para.style.name.startswith("List Paragraph") or "<w:numPr>" in xml) and not all_bold and len(para.text)!=0:
         #print(xml_text)
-        xml_text = list_file.list_para(xml_text,variables)
+        xml_text = list_file.list_para(xml_text,variables,xml,root)
 
     #Close the list tag
     elif variables["list_end"]:

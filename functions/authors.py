@@ -5,7 +5,7 @@ def author_name(xml_text,variables):
     variables["author_id"]=1
     #Remove italic and bold tag present in author name
     xml_text = re.sub(r'</?(italic|bold)>', '', xml_text)
-    if "<sup>" not in xml_text and any(char.isdigit() for char in xml_text):
+    if "<sup>" not in xml_text and any(char.isdigit() or "*" for char in xml_text):
         #superscript text in normal text then write regex to identify them
         pattern = r'([A-Za-z\s]*)([\d\,\*]*)'
         matche = re.findall(pattern, xml_text)
@@ -45,7 +45,7 @@ def author_name(xml_text,variables):
                     if j and j != "*":
                         text += f'<xref ref-type="aff" rid="aff-{j}">{j}</xref>'
                     elif j == "*":
-                        text += '<email>ssss@email.com</email>'
+                        text += '<mail>ssss@email.com</mail>'
             text+=f'</contrib>'
     
     variables["para_count"]+=1

@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style/jpub3-html-trans.xsl"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "D:/Localserver/Apache/htdocs/Transforma/ce_editor/Conversion/Word2HTML/DTD/jats-publishing-dtd-1.0/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    EJ-EDU
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    EJ-EDU
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    EJ-EDU
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     European Journal of Education and Pedagogy
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2736-4534
+   </issn>
+   <publiher>
+    <publisher-name>
+     European Open Science
+    </publisher-name>
+    <publisher-loc>
+     UK
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    802
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.24018/ejedu.2024.1.1.802
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      RESEARCH ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+     Social Justice in Education: Creating an Inclusive Culture at Schools Through Critical Multicultural Theory
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     Amoako and Otchere
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     Inevitability of Politics in Ghana’s Curriculum Development
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid">
+      https:
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Rentzi
+      </surname>
+      <given-names>
+       Argyro
+      </given-names>
+     </name>
+     <email>
+      ssss@email.com
+     </email>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      1
+     </label>
+     <institution>
+      Hellenic Ministry of Education  Religious Affairs  and Sports
+     </institution>
+     ,
+     <country>
+      Greece.
+     </country>
+     .
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <label>
+      *
+     </label>
+     Corresponding Author: Argyro Rentzi. Email:
+     <email>
+      irorentzi@gmail.com
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      00
+     </day>
+     <month>
+      0
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      00
+     </day>
+     <month>
+      0
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     et al.
+    </copyright-holder>
+    <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" xlink:href="EJ-EDU_802.pdf"/>
+   <abstract abstract-type="abstract">
+    <p>
+     During the 21
+     <sup>
+      st
+     </sup>
+     century, major social changes have occurred, such as technological development and the COVID-19 pandemic, along with war conflicts and economic crises, which have created refugee and migration flows. In addition, globally, by promoting social justice, efforts are made to combat any kind of discrimination and exclusion related to race, religion, ethnicity, disability, sexual orientation, and gender identification. School is an organization alive and open to society, affected by every social change. Within this organization, the citizens of the future are formed. Social justice in school education contributes significantly to this, as it is a process in which teachers and students actively contribute to the formation of a democratic, inclusive environment. This study presents the theoretical approaches of social justice in education, emphasizing, however, the critical multicultural theory, as it delves into finding the most effective ways to eliminate social inequalities and exclusion.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+     Critical multicultural theory
+    </kwd>
+    <kwd>
+     inclusion
+    </kwd>
+    <kwd>
+     school education
+    </kwd>
+    <kwd>
+     social justice
+    </kwd>
+    <kwd/>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title>
+    Introduction
+   </title>
+   <p>
+    Considering that people live in societies governed by laws and rules to preserve democracy, social justice is an essential value that promotes respect for equality and freedom. Besides, as Rebore (2001) indicates, human actions have a great social effect, so they must be taken into serious consideration. Education, as a procedure, must prepare young people to become citizens who act responsibly and respectfully to each other, so education on social justice plays a key role in order to fulfill this purpose.
+   </p>
+   <p>
+    According to Turhan (2010), social justice in education is perceived based on the social, political, and economic conditions of each time period. Many years ago, a historical review of the term "social justice" was given by Griffiths (1998), stating that, during the 70s and 80s, it changed from having a social meaning to including race and gender equality. As Rentzi (2023) states, in the 90s, "social justice" as a term expanded, covering the topics of disability and sexuality. Gerwitz (1998) clarified the topic of "justice" by separating it into two forms: the "distributive" and "relational" ones (Rentzi, 2023). Moreover, it is pointed out that the term should not remain in its narrow sense as a fair distribution of goods in a society, but it should expand to all types of institutional rules and relationships (Gerwitz, 1998).
+   </p>
+   <p>
+    According to Gerwitz (1998), justice has been in education in three types:
+   </p>
+   <list list-type="order">
+    <list-item>
+     <p>
+      "Equality of opportunity" refers to the" common good", in other words, to a fair distribution of social benefits and responsibilities as well as mutual recognition and respect for all human rights.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      "Equality of outcomes" states the importance of using "positive discrimination policies" and "affirmative actions" in order to provide marginalized groups of people with equal opportunities in a social context (Griffiths, 2003). Positive discrimination policies refer to actions that improve the lives of people who have been discriminated against because of their gender, disability, and race. (Marshall, 2004). Affirmative actions include government policies that focus on providing minority groups with equal access to work and education in order to obtain equal social benefits (Berkovich, 2014).
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      "Equality of conditions" refers to providing equal access to good living conditions to all members of a society (citizens and non-citizens), "taking their sexual, racial, gender, religious, sexual heterogeneity into account" (Rentzi, 2023, p. 18).
+     </p>
+    </list-item>
+   </list>
+   <p>
+    Globally, there is much diversity at schools due to the fact that there is a population of students carrying their own personality with regard to their culture, race, religion, sexual orientation, and gender identification. Therefore, the need to create an inclusive environment at schools is essential. At this point, this study aims to present the theoretical framework of social justice in education and, especially, to define how the pedagogical framework of critical multiculturism can be an effective tool for schools to equip their students with an inclusive culture.
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title>
+    DEFINING SOCIAL JUSTICE
+   </title>
+   <p>
+    The effort to define social justice began very early since great theorists and philosophers Platon, Aristotle, Marx, and Locke struggled to perceive a thorough analysis of virtues such as freedom, democracy, and equal rights (Turhan, 2010). In the field of psychology, social justice has gained a more "communitarian" approach, which claims that the balance between "what is required," "what is deserved," and "what is equivalent" depends on human relationships within society (Rentzi, 2023). In other words, theorists agree that social justice is a dynamic process based on human relationships (Miller, 1999; Spreight  Vera, 2004). In the 90s, social justice was framed through a distributive form of social goods. For instance, Young (1990) approached social justice through understanding cultural violence and social marginalization. On the other hand, Gerwitz (1998) connected social justice with equality, presenting three versions: "equality of opportunity," "equality of outcome," and "equality of position." In particular, as Rentzi (2018, 2021) explains:
+   </p>
+   <list list-type="unorder">
+    <list-item>
+     <p>
+      "Equality of opportunity" refers to equal access to social goods (i.e., education),
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      "Equality of outcome" is based on affirmative policies that diminish social marginalization and create equal opportunities for social success (i.e., in education, at work),
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      "Equality of position" refers to the creation of equal living conditions for all human beings regardless of gender, nationality, disability, religion, age, sexual orientation, and gender identification.
+     </p>
+    </list-item>
+   </list>
+   <p>
+    As Brown (2004) has stated, social justice has been studied for many years by many researchers and theorists of different scientific fields, such as psychology/psychiatry, law, philosophy, sociology, economics, political studies, etc. Nevertheless, as Warner (2020) points out, only recently, in the 21
+    <sup>
+     st
+    </sup>
+    century, has social justice gained more attention and been discussed thoroughly. Nowadays, the discussion about social justice is more challenging and based on moral virtues defined by respect for human rights and different individual identities (Marshall  Oliva, 2010). In an era that is defined by technological development and human material success, there is a consideration of whether policies provide equal access to social goods and opportunities. Especially after the COVID-19 pandemic, social inequalities emerged even more because of the economic crisis (Rentzi, 2021). Bhurga (2016) estimates that there is a possibility that social discrimination against people with mental and physical disabilities, sexual and gender variation, different religions, races, and other factors is increasing due to all these contemporary social changes. For all these reasons, it is very important that the new generations are educated at schools in such a way that they will become responsible adult citizens who will defend human rights.
+   </p>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title>
+    SOCIAL JUSTICE IN EDUCATION: THEORETICAL FRAMEWORK
+   </title>
+   <p>
+    UNICEF (2017) emphasizes the fact that the priority of education in the 21st century must focus on enhancing human dignity and well-being. Therefore, as many modern theorists have agreed, education has a key role in creating an inclusive culture among students by promoting values of acceptance, respect, and equality (Bell, 2007; Nikolaou, 2011; Rentzi, 2021).
+   </p>
+   <p>
+    According to Bell (2007), social justice is used as a critical, analytical tool in education in order to help people obtain an ability to understand the concept of oppression so as to be able to be opposed to it. As Rentzi (2018, pp. 57-58) states, educational and social justice is within critical, postmodern, transformative, feminist, and multicultural theories:
+   </p>
+   <list list-type="unorder">
+    <list-item>
+     <p>
+      Critical theory refers to the role of institutions, such as schools, regarding the way they face and understand discrimination. According to critic theorists, discrimination and oppression derive from socio-economic and political inequalities.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Postmodern theory is linked to educational justice through the awareness of the relationship between knowledge and power in a society. As Chomsky (2000) mentions, postmodern theorists believe that schools as institutions must focus on the socialization of students in a way that they can obtain knowledge of social classification within the structure of power. This is an effective way for the teachers to realize if their pedagogical practices are open and inclusive for all their students, encouraging them to participate in actions involving social justice (Sommers, 2014).
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Transformational theory investigates the ways that power is used by schools, whether it is helpful and rewarding for some students and, on the contrary, punishing others, according to their classification in the social hierarchy (Cherryholmes, 1998).
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Four types of multicultural theories are proposed by Kincheloe and Steinberg (2002):
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Conservative Multiculturism/Monoculturalism refers to hierarchical classification within societies. Teachers who follow such approaches tend to identify practices of marginalization (Nieto, 1996).
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Liberal Multiculturism states that no matter their race and nationality, all people share equal common rights and humanity.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Pluralistic Multiculturism emphasizes the pluralism that exists in multicultural population groups with different cultures, traditions, and lifestyles (Bhandar, 2006).
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      Critical Multiculturism questions every form of racism and delves into finding ways to reduce injustices. In the same way, educational policies based on multicultural theory tend to find practices
+      <italic>
+       "reducing differences among students by changing the way they think about diversity"
+      </italic>
+      (Rentzi, 2023, p. 21).
+     </p>
+    </list-item>
+   </list>
+   <p>
+    The common goal of the above multicultural theories is the obligation for schools to reveal oppressive situations and help marginalized groups have equal access to education and social success. Liberal multiculturism has provided humanity with the tools to understand each other's unity and diversity. Nevertheless, critical multiculturism is more effective in disrupting embedded power structures and social inequities because it gets deeper into questioning oppressive systems and policies by highlighting structural inequalities within societies. Through critical multiculturism, teachers try to find solutions and ways in order to equip students to critically question and transform inequities and marginalization around race, religion, sexual orientation, gender identity, and disability.
+   </p>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title>
+    THE PEDAGOGICAL FRAMEWORK OF CRITICAL MULTICULTURISM
+   </title>
+   <p>
+    Critical multiculturism is an active process of asking questions as a way for all people in this world to live beautifully and with dignity. This is why it is essential for a democratic society because people are called to critique embedded institutional structures and social inequities, providing a framework that leads to a more equitable and fair society.
+   </p>
+   <p>
+    For critical multicultural education theorists, schools play an important role in creating democratic citizens (Rentzi, 2023). Furthermore, as Kincheloe and Steinberg (2002) state, this theory criticizes curriculums and teaching in a holistic way, taking their political and historical context into account, because it is strongly believed that there are significant social injustices and inequities that must change through education. The main goal of critical multicultural education is to make teachers and students able to track and ant against every form of inequity, having to do with discrimination around race, religion, disability, sexual orientation, and gender (any category of difference), inside and outside their school. Hopkins-Gillispie (2011) has pointed out that critical multicultural education helps teachers and students to go deep into the variety of resources and history so as to pick up the most effective elements that create a democratic society. For this reason, the designing of study curriculums for schools by the government plays an essential role in maintaining a democratic society that eliminates social marginalization and inequities. Sleeter and Grant (2006) expressed their hope that study curriculums for schools would be redesigned so as to reflect the thoughts and concerns of every social group. According to Edgar (2022), this perspective involves pedagogical practices and educational programs that promote inclusion for all students by actively being involved in democratic decision-making proceedings. Actually, in the 21st century, schools must be organizations that prepare active citizens, capable of detecting oppressive environments and transforming them into democratic environments of equal opportunities. Furthermore, with regard to the pedagogical framework, as Radulovic and Nikolic (2023) propose, a variety of teaching methods can be used, such as creating a collaborative environment in the classroom where different text sources can be discussed and analyzed, promoting peer learning. This way, students are taught to work in groups that contain a variety of human beings, enabling them to accept and respect diversity. Moreover, through a critical multicultural pedagogy approach, teachers create an inclusive learning environment in classrooms according to each student's abilities, interests, and special learning needs. This way, schools are democratic organizations capable of effectively contributing to the creation of future adult citizens with enhanced emotional intelligence, ready to fight all forms of social oppression.
+   </p>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title>
+    CONCLUSION
+   </title>
+   <p>
+    As argued in this study, in this modern era, with diversity in societies, social justice in education plays a catalytic role in democracy. Children should be educated at school from a young age in such a way as to develop their emotional intelligence. In other words, it is essential that young students are taught to accept and respect diversity. Moreover, this study presents the theoretical background of social justice in education, emphasizing critical multicultural education. The pedagogical practices that derive from this theory create an inclusive school environment for all students. Additionally, as this study argues, it is very important to create study curricula that promote critical multicultural teaching practices.
+   </p>
+   <p>
+    As it appears from research, the COVID-19 pandemic played a negative role in the mental health of students, triggering violence at schools (Chaffee et al., 2021; Leeb et al., 2020; Shin  Choi, 2021). This is another reason why social justice in education must prevail, so as to enable students to respect and accept diversity, combating all forms of violence and social exclusion.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <sec id="s6">
+   <label>
+    6
+   </label>
+   <title>
+    Conflict of Interest
+   </title>
+   <p>
+    I, the author, declare that I do not have any conflict of interest.
+   </p>
+  </sec>
+  <ref-list content-type="authoryear">
+   <title>
+    References
+   </title>
+   <ref id="ref-1">
+    Bell, L. A. (2007). Theoritical foundations for social justice education. In M. Adams, L. A. Bell,  P. Griffin (Eds.),
+    <italic>
+     Teaching for diversity and social justice
+    </italic>
+    (2
+    <sup>
+     nd
+    </sup>
+    ed., pp. 1-14). Routledge/Taylor  Francis Group.
+   </ref>
+   <ref id="ref-2">
+    Berkovich, I. (2014). A socio-ecological framework of social justice leadership in education.
+    <italic>
+     Journal of Educational Administration, 52
+    </italic>
+    (3), 282-309.
+   </ref>
+   <ref id="ref-3">
+    Bhandar, B. (2006).
+    <italic>
+     Beyond pluralism. Contesting multiculturalism through the recognition of plurality.
+    </italic>
+    King's College.
+   </ref>
+   <ref id="ref-4">
+    Bhurga, D. (2016). Social discrimination and social justice.
+    <italic>
+     International Review of Psychiatry, 28
+    </italic>
+    (4), 336-341.
+   </ref>
+   <ref id="ref-5">
+    Brown, K. M. (2004). Leadership for social justice and equity: Weaving a transformative framework and pedagogy.
+    <italic>
+     Educational Administration Quarterly, 40
+    </italic>
+    (1), 79-110.
+   </ref>
+   <ref id="ref-6">
+    Chaffee, B. W., Cheng, J., Couch, E. T., Hoeft, K. S.,  Halpern-Felsher, B. (2021). Adolescents' substance use and physical activity before and during the COVID-19 pandemic.
+    <italic>
+     JAMA Pediatrics, 175
+    </italic>
+    (7), 715-722.
+   </ref>
+   <ref id="ref-7">
+    Cherryholmes, C. (1998).
+    <italic>
+     Power and criticism: Poststructuralist investigations in education.
+    </italic>
+    Teacher College Press.
+   </ref>
+   <ref id="ref-8">
+    Chomsky, M. (2000).
+    <italic>
+     Rogue states: the rule of force in world affairs.
+    </italic>
+    Pluto Press.
+   </ref>
+   <ref id="ref-9">
+    Edgar, S. (2022). The tricky concept of "educational equity" - In search of conceptual clarity.
+    <italic>
+     Scottish Educational Review, 54
+    </italic>
+    (1), 3-25.
+   </ref>
+   <ref id="ref-10">
+    Gerwitz, S. (1998). Conceptualizing social justice in education: marring the territory.
+    <italic>
+     Journal of Educational Policy, 13
+    </italic>
+    (4), 469-484.
+   </ref>
+   <ref id="ref-11">
+    Griffiths, M. (1998). The discourses of social justice in schools.
+    <italic>
+     British Educational Research Journal, 24
+    </italic>
+    (3), 301-306.
+   </ref>
+   <ref id="ref-12">
+    Griffiths, M. (2003).
+    <italic>
+     Action for social justice in education.
+    </italic>
+    Open University Press.
+   </ref>
+   <ref id="ref-13">
+    Hopkins-Gillispie, D. (2011). Curriculum  schooling: Multiculturalism, critical multiculturalism and critical pedagogy.
+    <italic>
+     The South Sore Journal, 4
+    </italic>
+    , 1-10.
+   </ref>
+   <ref id="ref-14">
+    Kincheloe, J. L.,  Steinberg, S. R. (2002).
+    <italic>
+     Changing multiculturalism.
+    </italic>
+    Open University Press.
+   </ref>
+   <ref id="ref-15">
+    Leeb, R. T., Bitsko, R. H., Radhakrishnan, L., Martinez, P., Njai, R.,  Holland, K. M. (2020). Mental health-related emergency department visits among children aged &lt;18 years during the COVID-19 pandemic.
+    <italic>
+     Morbidity and Mortality Weekly Report, 69
+    </italic>
+    (45), 1675-1680.
+   </ref>
+   <ref id="ref-16">
+    Marshall, C. (2004). Social justice challenges to educational administration: Introduction to a special issue.
+    <italic>
+     Educational Administration Quarterly, 40
+    </italic>
+    (1), 3-13.
+   </ref>
+   <ref id="ref-17">
+    Marshall, C.,  Oliva, M. (2010). Building the capacities of social justice leaders. In C. Marshall,  M. Oliva (Eds.),
+    <italic>
+     Leadership for social justice: Making revolutions in education
+    </italic>
+    (2nd ed., pp. 1-18). Allyn  Bacon.
+   </ref>
+   <ref id="ref-18">
+    Miller, D. (1999).
+    <italic>
+     Principles of social justice.
+    </italic>
+    Harvard University Press.
+   </ref>
+   <ref id="ref-19">
+    Nieto, S. (1996). Affirming diversity:
+    <italic>
+     The socio-political context of multicultural education (2
+    </italic>
+    <sup>
+     nd
+    </sup>
+    <italic>
+     ed.).
+    </italic>
+    Longman.
+   </ref>
+   <ref id="ref-20">
+    Nikolaou, G. (2011).
+    <italic>
+     Inclusion and education of foreign students in primary school from homogeneity to multiculturalism.
+    </italic>
+    Pedio.
+   </ref>
+   <ref id="ref-21">
+    Radulovic, L.,  Nikolic, L. (2023). Justice in education: Perspectives on teacher education. In L. Radulovic  Trajkovic, M. (Eds.)
+    <italic>
+     Papers of the 29
+    </italic>
+    <sup>
+     th
+    </sup>
+    <italic>
+     International Scientific Conference "Educational Research and School Practice" Institute for Educational Research
+    </italic>
+    (pp. 82-86). Faculty of Philosophy.
+   </ref>
+   <ref id="ref-22">
+    Rebore, R. W. (2001).
+    <italic>
+     The ethics of educational leadership
+    </italic>
+    . Prentice-Hall Inc.
+   </ref>
+   <ref id="ref-23">
+    Rentzi, A. (2018). Performing leadership of social justice for the integration of refugee children into the Greek schools.
+    <italic>
+     Scientific Educational Journal "Educational Circle", 6
+    </italic>
+    (2), 55-66.
+   </ref>
+   <ref id="ref-24">
+    Rentzi, A. (2021). Social justice leadership for co-educating refugee and migrant students in the Greek primary schools through distance education during COVID-19. In A. Cortijo  V. Martines (Eds.),
+    <italic>
+     Handbook of research on historical pandemic analysis and the social implications of COVID-19
+    </italic>
+    (pp.195-214). IGI GLOBAL.
+   </ref>
+   <ref id="ref-25">
+    Rentzi, A. (2023).
+    <italic>
+     Intercultural transmission perspective in using school leadership of social justice to include refugee and migrant children into Greek primary public education: Perceptions of school principals
+    </italic>
+    (Unpublished doctoral dissertation). University of Alicante.
+   </ref>
+   <ref id="ref-26">
+    Shin, S. Y.,  Choi, Y. J. (2021). Comparison of cyberbullying before and after the COVID-19 pandemic in Korea.
+    <italic>
+     International Journal of Environmental Research and Public Health, 18
+    </italic>
+    (19), 1-11.
+   </ref>
+   <ref id="ref-27">
+    Sleeter, C. E.,  Grant, C. A. (2006).
+    <italic>
+     Making choices for multicultural education: Five approaches to race, class and gender
+    </italic>
+    (5
+    <sup>
+     th
+    </sup>
+    ed.). Wiley.
+   </ref>
+   <ref id="ref-28">
+    Sommers, S. (2014).
+    <italic>
+     Narratives of social justice educators.
+    </italic>
+    Springer.
+   </ref>
+   <ref id="ref-29">
+    Spreight, S. L.,  Vera, E. M. (2004). Dialogic leadership for social justice: Overcoming pathologies of silence.
+    <italic>
+     Educational Administration Quarterly, 40
+    </italic>
+    (1), 109-132.
+   </ref>
+   <ref id="ref-30">
+    Turhan, M. (2010). Social justice leadership: implications for roles and responsibilities of school administrators.
+    <italic>
+     Procedia Social and Behavioral Sciences, 9
+    </italic>
+    , 1357-1361.
+   </ref>
+   <ref id="ref-31">
+    UNICEF. (2017).
+    <italic>
+     A child is a child: Protecting children on the move from violence, abuse and exploitation
+    </italic>
+    (Report)
+    <italic>
+     .
+    </italic>
+    UNICEF. https://www.unicef.org/media/49571/file/UNICEF_A_child_is_a_child_May_2017_EN.pdf.
+   </ref>
+   <ref id="ref-32">
+    Warner, T. L. G. (2020). Leading for social justice: a call to action to improve society.
+    <italic>
+     Journal of Organizational and Educational Leadership, 5
+    </italic>
+    (1), 1-28.
+   </ref>
+   <ref id="ref-33">
+    Young, I. M. (1990).
+    <italic>
+     Justice and the politics of difference.
+    </italic>
+    Princeton University Press.
+   </ref>
+  </ref-list>
+ </back>
+</article>

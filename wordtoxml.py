@@ -12,8 +12,10 @@ from bs4 import BeautifulSoup
 #Import additional module
 import base64
 from lxml import etree
+from xml.etree import ElementTree
 from xml.etree import ElementTree as ET
 from io import StringIO
+import re
 
 #Get the directory of the script file
 import sys
@@ -22,7 +24,8 @@ import os
 from convertion import paragraph,table   #Import Functions from 'convertion.py' file
 
 # Create HTML header and body
-pre_xml = """<?xml version='1.0' encoding='UTF-8'?>"""
+pre_xml = """<?xml version='1.0' encoding='UTF-8'?>
+"""
 
 #Separate paragraph,tables and Inline shapes
 def iter_block_items(parent):
@@ -120,6 +123,13 @@ def convert():
         
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
             xml+=image(para,doc)
+        
+        if xml[-15:]=="</author-notes>":
+            if "<email>" in xml:
+                match = re.search(r'<email>.*</email>', xml, re.IGNORECASE)
+                match = match.group() if match else None
+                xml = xml.replace("<mail>ssss@email.com</mail>",match)
+  
     
     xml+=f"</article>"
 

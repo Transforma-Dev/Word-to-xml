@@ -1,7 +1,18 @@
 #Define function to find the List paragraph
-def list_para(xml_text,variables):
+def list_para(xml_text,variables,xml,root):
+    num_id = root.find('.//w:numId', namespaces={'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'})
+    #print(xml)
+    if num_id is not None:
+        list_type = num_id.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val')
+    else:
+        text=f'<p>{xml_text}</p>'
+        return text
+    #print(xml)
+    # print(list_type)
+    list_type = "order" if int(list_type)==3 else "unorder"    
+
     if variables["list_count"]==1:
-        text=f'<list list-type="order"><list-item><p>{xml_text}</p></list-item>'
+        text=f'<list list-type="{list_type}"><list-item><p>{xml_text}</p></list-item>'
     else:
         text=f'<list-item><p>{xml_text}</p></list-item>'
     
