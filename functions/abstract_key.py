@@ -12,7 +12,7 @@ def abstract(xml_text,variables,filename):
         variables["copyright_state"] = variables["copyright_state"][0]+"et al."
     else:
         variables["copyright_state"] = variables["copyright_state"].strip()[:-3]
-        
+
     #Find the contend in resume in TSP_PO_49526.docx
     if variables["noman_store"]:
         variables["noman_store"] = variables["noman_store"].lower().split("mots cles")
@@ -22,7 +22,7 @@ def abstract(xml_text,variables,filename):
         split_xml = re.split(r'keyword\s*', xml_text, flags=re.IGNORECASE)
         split_xml[1]="KEYWORD"+split_xml[1]
         xml_text=split_xml[0]
-            
+
     xml_text = re.sub(r'<bold>.*?abstract:.*?</bold>|abstract:', '', xml_text,flags=re.IGNORECASE)
     text=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                     <day>00</day>

@@ -36,7 +36,7 @@ def title(para,xml_text,variables,data,journal,file_name):
                 <journal-title-group>
                     <journal-title>{data[journal[0]]['journal_title']}</journal-title>
                 </journal-title-group>
-                <issn pub-type="epub">{data[journal[0]]['issn_no']}</issn>
+                {data[journal[0]]['issn_no']}
                 <publiher>
                     <publisher-name>{data[journal[0]]['publisher_name']}</publisher-name>
                     <publisher-loc>{data[journal[0]]['publisher_loc']}</publisher-loc>
@@ -47,7 +47,7 @@ def title(para,xml_text,variables,data,journal,file_name):
                 <article-id pub-id-type="doi">{data[journal[0]]['article_id']}{numbers_only[0]}</article-id>
                 <article-categories>
                     <subj-group subj-group-type="heading">
-                        <subject>RESEARCH ARTICLE</subject>
+                        <subject>{data[journal[0]]['subject']}</subject>
                     </subj-group>
                 </article-categories>
             <title-group><article-title>{xml_text}'''

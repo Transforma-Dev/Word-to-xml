@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    BIOCELL
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    BIOCELL
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    BIOCELL
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     BIOCELL
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    1667-5746
+   </issn>
+   <issn pub-type="ppub">
+    0327-9545
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    51049
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604/biocell.2024.51049
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+     Identification of TMEM159 as a biomarker of glioblastoma progression based on immune characteristics
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     Amoako and Otchere
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     Inevitability of Politics in Ghana’s Curriculum Development
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid">
+      https://orcid.org/0000-0000-0000-0000
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Shi
+      </surname>
+      <given-names>
+       Ji
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid">
+      https://orcid.org/0000-0000-0000-0000
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zhang
+      </surname>
+      <given-names>
+       Ye
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-3">
+     <contrib-id contrib-id-type="orcid">
+      https://orcid.org/0000-0000-0000-0000
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Yi
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-4">
+     <contrib-id contrib-id-type="orcid">
+      https://orcid.org/0000-0000-0000-0000
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Guo
+      </surname>
+      <given-names>
+       Tangjun
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-3">
+      3
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-5">
+     <contrib-id contrib-id-type="orcid">
+      https://orcid.org/0000-0000-0000-0000
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Piao
+      </surname>
+      <given-names>
+       Haozhe
+      </given-names>
+     </name>
+     <mail>
+      ssss@email.com
+     </mail>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      1
+     </label>
+     <institution>
+      Graduate School  Dalian Medical University  Dalian  116000
+     </institution>
+     ,
+     <country>
+      China
+     </country>
+     .
+    </aff>
+    <aff id="aff-2">
+     <label>
+      2
+     </label>
+     <institution>
+      Department of Neurosurgery  Liaoning Cancer Hospital  Institute  Shenyang  110042
+     </institution>
+     ,
+     <country>
+      China
+     </country>
+     .
+    </aff>
+    <aff id="aff-3">
+     <label>
+      3
+     </label>
+     <institution>
+      Department of Neurosurgery  Affiliated Hospital of Xuzhou Medical University  Xuzhou  221000
+     </institution>
+     ,
+     <country>
+      China
+     </country>
+     .
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <bold>
+      *Address
+     </bold>
+     <bold>
+      Correspond
+     </bold>
+     <bold>
+      ence to
+     </bold>
+     :
+    </corresp>
+   </author-notes>
+   <p>
+    Tangjun Guo, gtjexcellent@126.com;
+    <sup>
+    </sup>
+   </p>
+   <p>
+    Haozhe Piao, piaohaozhe@cancerhosp-ln-cmu.com
+    <sup>
+    </sup>
+   </p>
+   <p>
+    <email>
+     mailto:
+    </email>
+   </p>
+   <p>
+    DOI: 10.32604/biocell.2024.051049                                                                                                                        www.techscience.com/journal/biocell
+   </p>
+  </article-meta>
+  <kwd-group kwd-group-type="author">
+   <kwd>
+    Single-cell RNA sequencing
+   </kwd>
+   <kwd>
+    Glioblastoma
+   </kwd>
+   <kwd>
+    TMEM159
+   </kwd>
+   <kwd>
+    EGFR
+   </kwd>
+   <kwd>
+    Angiogenesis
+   </kwd>
+  </kwd-group>
+ </front>
+</article>

@@ -19,8 +19,9 @@ def image_caption(xml_text,variables):
 
         if match:
             part1 = match.group(1)
-            if part1[-1]==".":
-                part1 = part1[:-1]
+            
+            if part1.strip()[-1]==".":
+                part1 = part1.strip()[:-1]
             part2 = match.group(7)
     
             text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}</fig>'

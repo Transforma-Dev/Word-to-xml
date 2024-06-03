@@ -29,9 +29,9 @@ def author_name(xml_text,variables):
         auth = [value for value in i.split() if value]
         if auth:
             if variables["author_id"]==1:
-                text+=f'<contrib id="author-{variables["author_id"]}" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{auth[-1]}</surname><given-names>'
+                text+=f'<contrib id="author-{variables["author_id"]}" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0000-0000-0000</contrib-id><name name-style="western"><surname>{auth[-1]}</surname><given-names>'
             else:
-                text+=f'<contrib id="author-{variables["author_id"]}" contrib-type="author"><contrib-id contrib-id-type="orcid">https:</contrib-id><name name-style="western"><surname>{auth[-1]}</surname><given-names>'
+                text+=f'<contrib id="author-{variables["author_id"]}" contrib-type="author"><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0000-0000-0000</contrib-id><name name-style="western"><surname>{auth[-1]}</surname><given-names>'
             variables["author_id"]+=1
             variables["copyright_state"]+=auth[-1]+" and "
             auth=auth[:-1]

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/jpub3-html-trans.xsl"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "D:/Localserver/Apache/htdocs/Transforma/ce_editor/Conversion/Word2HTML/DTD/jats-publishing-dtd-1.0/JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.0">
+<front>
+<journal-meta>
+<journal-id journal-id-type="pmc">JRM</journal-id>
+<journal-id journal-id-type="nlm-ta">JRM</journal-id>
+<journal-id journal-id-type="publisher-id">JRM</journal-id>
+<journal-title-group>
+<journal-title>Journal of Renewable Materials</journal-title>
+</journal-title-group>
+<issn pub-type="epub">2164-6341</issn>
+<publisher>
+<publisher-name>Tech Science Press</publisher-name>
+<publisher-loc>USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta><!--type5-->
+<article-id pub-id-type="publisher-id">49942</article-id>
+<article-id pub-id-type="doi">10.32604/jrm.2024.049942</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>ARTICLE</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Thermo-Physical Potential of Recycled Banana Fibers for Improving the Thermal and Mechanical Properties of Biosourced Gypsum-Based Materials</article-title>
+<alt-title alt-title-type="left-running-head">Thermo-Physical Potential of Recycled Banana Fibers for Improving the Thermal and Mechanical Properties of Biosourced Gypsum-Based Materials</alt-title>
+<alt-title alt-title-type="right-running-head">Thermo-Physical Potential of Recycled Banana Fibers for Improving the Thermal and Mechanical Properties of Biosourced Gypsum-Based Materials</alt-title>
+</title-group>
+<contrib-group content-type="authors">
+<contrib id="author-1" contrib-type="author" corresp="yes">
+<name name-style="western">
+<surname>Maaloufa</surname>
+<given-names>Youssef</given-names>
+</name>
+<xref ref-type="aff" rid="aff-1">1</xref>
+<xref ref-type="aff" rid="aff-2">2</xref>
+<xref ref-type="aff" rid="aff-3">3</xref>
+<email>y.maaloufa@enaagadir.ac.ma</email>
+</contrib>
+<contrib id="author-2" contrib-type="author">
+<name name-style="western">
+<surname>Mounir</surname>
+<given-names>Soumia</given-names>
+</name>
+<xref ref-type="aff" rid="aff-1">1</xref>
+<xref ref-type="aff" rid="aff-2">2</xref>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-3" contrib-type="author">
+<name name-style="western">
+<surname>Ibnelhaj</surname>
+<given-names>Sara</given-names>
+</name>
+<xref ref-type="aff" rid="aff-2">2</xref>
+</contrib>
+<contrib id="author-4" contrib-type="author">
+<name name-style="western">
+<surname>Wardi</surname>
+<given-names>Fatima Zohra El</given-names>
+</name>
+<xref ref-type="aff" rid="aff-6">6</xref>
+</contrib>
+<contrib id="author-5" contrib-type="author">
+<name name-style="western">
+<surname>Souidi</surname>
+<given-names>Asma</given-names>
+</name>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-6" contrib-type="author">
+<name name-style="western">
+<surname>Dodo</surname>
+<given-names>Yakubu Aminu</given-names>
+</name>
+<xref ref-type="aff" rid="aff-4">4</xref>
+<xref ref-type="aff" rid="aff-5">5</xref>
+</contrib>
+<contrib id="author-7" contrib-type="author">
+<name name-style="western">
+<surname>Atigui</surname>
+<given-names>Malika</given-names>
+</name>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-8" contrib-type="author">
+<name name-style="western">
+<surname>Amazal</surname>
+<given-names>Mina</given-names>
+</name>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-9" contrib-type="author">
+<name name-style="western">
+<surname>Khabbazi</surname>
+<given-names>Abelhamid</given-names>
+</name>
+<xref ref-type="aff" rid="aff-2">2</xref>
+</contrib>
+<contrib id="author-10" contrib-type="author">
+<name name-style="western">
+<surname>Demrati</surname>
+<given-names>Hassan</given-names>
+</name>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-11" contrib-type="author">
+<name name-style="western">
+<surname>Aharoune</surname>
+<given-names>Ahmed</given-names>
+</name>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<aff id="aff-1"><label>1</label><institution>National School of Architecture Agadir, New Complex, Ibn Zohr University</institution>, <addr-line>Agadir</addr-line>, <country>Morocco</country></aff>
+<aff id="aff-2"><label>2</label><institution>Energy, Materials and Sustainable Development (EMDD), Center for Water, Natural Resources, Environment and Sustainable Development (CERNE2D), Mohammed V University</institution>, <addr-line>Rabat</addr-line>, <country>Morocco</country></aff>
+<aff id="aff-3"><label>3</label><institution>Thermodynamics and Energetics Laboratory, Faculty of Science, Ibn Zohr University</institution>, <addr-line>Agadir</addr-line>, <country>Morocco</country></aff>
+<aff id="aff-4"><label>4</label><institution>Architectural Engineering Department, Najran University</institution>, <addr-line>Najran</addr-line>, <country>Saudi Arabia</country></aff>
+<aff id="aff-5"><label>5</label><institution>The Centre of Scientific and Engineering Research, Najran University</institution>, <addr-line>Najran</addr-line>, <country>Saudi Arabia</country></aff>
+<aff id="aff-6"><label>6</label><institution>Physics Department, LPMAT Laboratory, Faculty of Sciences Ain Chock, Hassan II University</institution>, <addr-line>Casablanca</addr-line>, <country>Morocco</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1">&#x002A;Corresponding Author: Youssef Maaloufa. Email: <email>y.maaloufa@enaagadir.ac.ma</email></corresp>
+</author-notes>
+<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-03-07">
+<day>07</day>
+<month>xxx</month>
+<year>2024</year>
+</pub-date>
+<volume>XX</volume>
+<issue>XX</issue>
+<fpage>XX</fpage>
+<lpage>XX</lpage>
+<history>
+<date date-type="received">
+<day>23</day>
+<month>1</month>
+<year>2024</year>
+</date>
+<date date-type="accepted">
+<day>27</day>
+<month>2</month>
+<year>2024</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2024 Maaloufa et al.</copyright-statement>
+<copyright-year>2024</copyright-year>
+<copyright-holder>Maaloufa et al.</copyright-holder>
+<license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+<license-p>This work is licensed under a <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="TSP_JRM_49942.pdf"></self-uri>
+<abstract>
+<p>The development of bio-sourced materials is essential to ensuring sustainable construction; it is considered a locomotive of the green economy. Furthermore, it is an abundant material in our country, to which very little attention is being given. This work aims to valorize the waste of the trunks of banana trees to be used in construction. Firstly, the physicochemical properties of the fiber, such as the percentage of crystallization and its morphology, have been determined by X-ray diffraction tests and scanning electron microscopy to confirm the potential and the impact of the mode of drying on the quality of the banana fibers, with the purpose to promote the use of this material in construction. Secondly, the results obtained with the gypsum matrix allowed us to note a preponderant improvement in the composite&#x2019;s thermal properties thanks to the variation of the banana fiber additive. Thirdly, the impact of the nature of the banana fiber distribution (either fiber mixed in matrix or fiber series model) on the flexural and compressive strengths of the composites was studied. The results obtained indicate that the insulation gain reaches up to 40%. It depends on the volume fraction and type of distribution of the banana fibers. However, the thermal inertia of the composites developed, represented by thermal diffusivity and thermal effusivity, was studied. Results indicate a gain of 40% and 25%, respectively, in terms of thermal diffusivity and thermal effusivity of the developed composites compared to plaster alone. Concerning the mechanical properties, the flexural strength depends on the percentage of the volume fraction of banana fibers used, and it can reach 20% more than the flexural strength of plaster; nevertheless, there is a significant loss in terms of the compressive strength of the studied composites. The results obtained are confirmed by the microstructure of the fiber banana. In fact, the morphology of the banana fibers was improved by the drying process. It reduces the amorphous area and improves the cellulosic crystalline surfaces, which assures good adhesion between the fiber and the matrix plaster. Finally, the dimensionless coefficient analysis was done to judge the optimal proportion of the banana fiber additive and to recommend its use even on false ceilings or walls.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Biosourced materials</kwd>
+<kwd>fiber banana</kwd>
+<kwd>flexural strength</kwd>
+<kwd>mechanical properties</kwd>
+<kwd>open-air drying</kwd>
+<kwd>plaster</kwd>
+<kwd>thermal properties</kwd>
+<kwd>waste management</kwd>
+</kwd-group>
+</article-meta>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>Using ecological materials is the most effective way to reduce energy consumption and gas emissions to the environment due to buildings being a huge polluting and energy-consuming sector. That&#x2019;s why the authors of this paper tried to investigate the use of ecological materials composed of banana fibers and plaster with the goal of promoting the use of this type of material in buildings and ensuring the goals of sustainable development. Bananas are among the most traded fruits in the world. In 2017 alone, 22.7 million tons of bananas were produced, which represents nearly 20% of the world&#x2019;s production. In Africa, bananas are a source of income and employment for more than 70 million people [<xref ref-type="bibr" rid="ref-1">1</xref>]. Ibrahim et al. [<xref ref-type="bibr" rid="ref-2">2</xref>], treated the utilization of fiber banana by analyzing its chemical composition, the morphology of its microstructure, and the impact of the chemical modification of the fiber by using an alkaline treatment that improves the mechanical properties of the composites due to the interaction between the matrix polymer and the fiber. Ahmad et al. [<xref ref-type="bibr" rid="ref-3">3</xref>], assessed the global impact of the rheology of vegetable fiber on the development of bio-composite polymers with good performance.</p>
+<p>Many researchers are interested in the use and recycling of vegetable fibers due to their low cost, worldwide availability, biodegradability, renewability, and low energy consumption, such as date palm fiber, alpha fiber, and coconut fiber, for the improvement of the properties of composites based on hydraulic cement binder such as cement, plaster, etc. Among these studies, some have focused on improving the mechanical performance of its binder matrix with different setting conditions, others on enhancing the durability of materials by the incorporation of plant fiber, treated or untreated, in order to judge the impact of treatment on the improvement of the mechanical behavior of composites or on improving some weaknesses of the behavior of building materials, such as masonry structures of construction. Other studies have focused on the potential of absorption to avoid shrinkage cracking for the matrix of cementitious binder [<xref ref-type="bibr" rid="ref-2">2</xref>,<xref ref-type="bibr" rid="ref-4">4</xref>&#x2013;<xref ref-type="bibr" rid="ref-7">7</xref>].</p>
+<p>Ranjan et al. [<xref ref-type="bibr" rid="ref-4">4</xref>],studied the addition of a percentage (0.1%, 0.2%, and 0.3% by weight) of coconut fiber additive to a mortar mixture resulted in a slight reduction in mortar mix, and an improvement in the flexural strength, shear capacity, tensile strength, and ductility of the masonry were noted. The obtained results of this research work revealed that adding a percentage (0.1%, 0.2%, and 0.3% by weight) of coconut fiber additive to the mortar mixture enhances the use of a coconut fiber mortar mix enhances the performance and behavior of a masonry structure.</p>
+<p>Lee et al. [<xref ref-type="bibr" rid="ref-5">5</xref>], treated the effect of adding a weight percentage ranging from zero to 0.25%, 0.5%, 1%, and 2% of abaca fibers to the cement matrix. The hydration reaction of the cement, the hydration heat, the frequency of the ultrasonic pulse, and the adjustment time were measured. The results showed that the absorption rate of abaca fibers reduced and weakened the risk of cracking by shrinkage. These findings can be exploited for applications based on concrete and cement.</p>
+<p>Maaloufa et al. [<xref ref-type="bibr" rid="ref-6">6</xref>], assessed a comparison between the best gypsum alpha and gypsum cork composites to study the impact of the additive nature on the thermomechanical behavior of the composite. The results showed that both thermal and mechanical properties of the composite enhance with the percentage increase of the alpha fibers, thanks to its microstructure and morphology. Increasing the percentage of granular cork additives improves thermal properties and weakens the mechanical properties of the composite.</p>
+<p>Other studies have been focused on improving the thermal and mechanical properties of earth and clay for greater energy efficiency in rural construction, including the use of flax straw, wheat straw, or sheep&#x2019;s wool.</p>
+<p>Phung et al. [<xref ref-type="bibr" rid="ref-8">8</xref>],aimed to determine the influence of fiber properties on the mechanical and hygrothermal behavior of earth-fiber composites. The types of fiber chosen were flax straw and wheat straw. The results show that the use of flax straw provides superior mechanical performance to wheat straw. The study of hygrothermal behavior showed that the sorption and desorption behavior of the fiber-earth material can be approximated from the results obtained for the base materials and that the evolution of the thermal conductivity of the fiber-earth material during drying is related to shrinkage behavior.</p>
+<p>Mounir et al. [<xref ref-type="bibr" rid="ref-9">9</xref>], characterized the thermal properties of a new clay-sheep wool composite and assessed the thermal inertia of this composite. A building-scale simulation was carried out to evaluate annual energy consumption in relation to a harsh climate zone, and the results showed that this composite has an interesting thermal inertia, enabling good energy efficiency at the building level.</p>
+<p>Few studies have been focused on banana fiber; the majority of them have characterized its morphology and microstructure. Guimar&#x00E3;es et al. [<xref ref-type="bibr" rid="ref-10">10</xref>]; Deepa et al. [<xref ref-type="bibr" rid="ref-11">11</xref>]; Milani et al. [<xref ref-type="bibr" rid="ref-12">12</xref>]; Bilba et al. [<xref ref-type="bibr" rid="ref-13">13</xref>]; Akinyemi et al. [<xref ref-type="bibr" rid="ref-14">14</xref>].</p>
+<p>Few studies have treated the recycling of banana fibers as an additive in construction materials as the other ecological additives cited above. Given the availability of this material in our country, its thermal and mechanical potential prompted us to investigate the possibility of solving pollution problems linked to the way in which our farmers dispose of banana trunk waste and recycle it in construction for cement or earth composites. The majority of studies have focused on the thermal and mechanical potential of banana fiber. They studied their morphological structure, or their thermal degradation with increasing temperature, in comparison with other plant additives.</p>
+<p>Guimar&#x00E3;es et al. [<xref ref-type="bibr" rid="ref-10">10</xref>], aim to study the possibility of recycling lignocellulose materials available in Brazil by investigating their potential, their thermal properties, their microstructure, and their morphology. Three materials, such as banana fibers, sugarcane bagasse, and sponge gourd, were compared in order to define the best additives. The results conclude that the three vegetal fibers have a primary microstructure of cellulose type I, while the crystallinity index does not exceed 50%. The thermal stability of all fibers is about 200&#x00B0;C. The decomposition of this fiber appears at 300&#x00B0;C, while total degradation occurs at 400&#x00B0;C.</p>
+<p>Deepa et al. [<xref ref-type="bibr" rid="ref-11">11</xref>],studied the steam explosion technique. The author extracted cellulose nanofiber from banana fibers to characterize its physical and chemical properties, microstructure, and thermal conductivity. The TGA and DSC results show that the treatment impacts the improvement of these thermal properties.</p>
+<p>Milani et al. [<xref ref-type="bibr" rid="ref-12">12</xref>], characterized several banana fiber varieties extracted from Sri Lanka using XRD, FTIR, SEM, and DSC methods. With the aim of using a mixture of banana fiber varieties to prepare economical charcoal from banana fibers, the charcoal prepared was also characterized by XRD, FTIR, and SEM. The results showed that charcoal from banana fibers is not dependent on fiber variety, implying that the collection and handling of banana waste becomes easy for commercial application.</p>
+<p>Bilba et al. [<xref ref-type="bibr" rid="ref-13">13</xref>], focused on botanical composition and its relationship with extraction location, for which four banana and coconut fibers from various tree locations were extracted. The degradation analysis of these fibers is performed by applying a nitrogen flux at a temperature of 200&#x00B0;C to 700&#x00B0;C. The residues of these fibers are analyzed by a Fourier-transformation infrared spectroscopy test and visualized under a scanning microscope. The results allow us to validate the intrinsic relationship between the location of the fiber extraction in the tree, its botanical and chemical composition, and its impact on the rapid decomposition of the banana fiber compared to the coconut fiber.</p>
+<p>Akinyemi et al. [<xref ref-type="bibr" rid="ref-14">14</xref>], proposed the addition of banana fibers after treatment with an alkaline solution as a reinforcement for mortars with a replacement of cement by wood ash and styrene-butadiene polymers to improve strength. The tests of the microstructure, the thermal conductivity, and the mechanical properties have been carried out. The results allow us to note that the optimal cement composite with the principle of replacing cement is of the following proportion: 10% wood ash, 1.5% banana fiber, and 0.3% styrene-butadiene polymer emulsion. Thanushan et Sathiparan [<xref ref-type="bibr" rid="ref-15">15</xref>], focused on the manufacture and comparison of cement-stabilized earth blocks composite behavior with coconut fiber and banana fiber recycling additives. The mechanical properties of the blocks, such as flexion and compression resistance, as well as weather resistance (moist-dry and gel-dough) were given. The results showed that the two fiber reinforcements improved the cement blocks durability against acid and alkaline attacks, and also weather, with a particular benefit for coconut fibers. Balaji et al. [<xref ref-type="bibr" rid="ref-16">16</xref>], studied epoxy and banana fiber-based biocomposites with a fiber rate of 0% to 20% with a step of 5% variation. The test of mechanical properties was given with thermogravimetric analysis, and the results confirm an improvement in the mechanical performance of banana epoxy-fiber composites for a 15% optimum additive ratio, as well as the impact of the application of an alkaline treatment with NaOH and the length of composite banana fibers, with a preference of 20mm instead of 10 mm.</p>
+<p>In this paper, the authors studied the potential of banana fiber extracted from banana trunk waste. The first step evaluates the chemical composition and crystalline index by X-ray diffraction of banana fiber from the southern region of Morocco. A study of its microstructure and morphology was carried out using a scanning electron microscope to validate our extraction and drying methods to ensure the durability of the banana fibers. The second stage of this work tested the impact of adding dried fibers on the thermo-mechanical properties of the plaster composite. The volume fractions tested in this work are &#x201C;0-0.03-0.14-0.18-0.20-0.22&#x201D;. Thermal properties were characterized by appropriate methods, such as the steady-state and transient hot-plate methods in series model distribution. However, the three-point bending and simple compression methods were used to study the mechanical properties of the composite, taking into account the impact of the distribution of the banana fibers inside the matrix plaster. In conclusion, the authors suggest investigating the dimensional relationships between three parameters, K<sub>therm</sub>, K<sub>flex</sub>, and K<sub>comp</sub>, while adjusting the additive fraction to determine the optimal additive ratio for achieving the best thermo-mechanical properties.</p>
+<sec id="s1_1">
+<label>1.1</label>
+<title>Research Significance</title>
+<p>A little research has been conducted on the effect of natural fiber on the plaster&#x2019;s properties, especially the study of the influence of the drying process and the kind of distribution on the thermomechanical properties of the plaster. Some research has assessed the influence of the addition of natural fiber on the properties of plaster. Nevertheless, there are uncertainties about the manner and kind of distribution in which dried fiber bananas change the properties of plaster. According to this, it is necessary to investigate the effect of the process of drying and the kind of distribution (FMM or FSM) of fiber banana on the thermomechanical properties of plaster. Adding to this, the thermal and mechanical properties of the composite plaster-fiber banana have been confirmed by the microstructure analysis using the scanning electron microscope.</p>
+</sec>
+<sec id="s1_2">
+<label>1.2</label>
+<title>Research Objectives</title>
+<p>This research aims to manage the waste of fiber bananas by mixing them with plaster to develop a bio-sourced material that can be used in construction as a false ceiling or wall. The study examined the effect of the process of drying the fiber banana on the thermomechanical properties of plaster. The SEM study confirms the positive effect of incorporating fiber banana on the improvement of thermal conductivity, thermal effusivity, thermal diffusivity, bending, and compressive strengths.</p>
+</sec>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Materials Description</title>
+<sec id="s2_1">
+<label>2.1</label>
+<title>Materials</title>
+<p>The Souss Massa region is recognized as one of Morocco&#x2019;s major agricultural regions, and more specifically, the village of Tameri, 75 km from Agadir, is renowned for its production of Moroccan banana feathers for both local and international markets. <?A3B2 "fig1",5,"anchor"?><xref ref-type="fig" rid="fig-1">Fig. 1a</xref> provides an overview of banana production in the Tameri region. However, this production gives rise to problems of banana waste management, requiring particular care before harvesting to manage water distribution by banana plants and the cutting of banana trunks after and before harvesting. <xref ref-type="fig" rid="fig-1">Fig. 1b</xref> illustrates the banana waste heaped on the outskirts of the region&#x2019;s roads, constituting substantial stockpile of banana waste and a major source of urban climate pollution, owing to the CO<sub>2</sub> following in cineration by farmers to get rid of their banana waste. With this in mind, the authors look at the recycling of this waste and its use.</p>
+<fig id="fig-1">
+<label>Figure 1</label>
+<caption>
+<title>(a) Overview of banana Production in the Tameri region Morocco. (b)The banana in the Tameri region Morocco</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-1.tif"/>
+</fig>
+</sec>
+<sec id="s2_2">
+<label>2.2</label>
+<title>Fiber Banana and Extraction</title>
+<p>The banana fibers employed in this study are extracted from the leaves of banana trunks after using two processes: to identify a low-cost means of extraction and to analyze the effect of the nature of drying on the characteristics of the additive and then on the thermo-mechanical properties of the banana fibers composite.</p>
+<p>The extraction process goes through several stages before the extraction of banana fibers. The first step is the selection and laboratory procurement of banana trunks that should not be in advanced degradation. For this, we will select samples of trunks for the extraction of fibers at ages less than 48 h after cutting. Next, we proceed to step (2), which consists of cutting the trunk leaves in dimensions from 30 cm to 40 cm in length, which allows us to release the water contained between the leaves to begin step (3) which is the drying stage of the banana leaves with ambient air. In laboratory conditions (temperature: 22&#x00B0;C and 60% humidity) for a minimum period of 15 days, as the duration of this operation depends mainly on the ability of the leaf to evacuate the poisoned water inside the leaves under controlled laboratory conditions, the validation of the end drying period which is controlled by the step (4) consisting to weight banana stem leaves, the operation is repeated every 24 h until the stabilization of of the leaves&#x2019;s mass. Finally, we proceed with step (5) of the fiber&#x2019;s extraction from the dried banana stem leaves by means of manual compression of the leaves using a round iron washed with distilled water for peeling off the banana trunk leaf to isolate the fibers from the cellulose.</p>
+<p><?A3B2 "fig2",5,"anchor"?><xref ref-type="fig" rid="fig-2">Fig. 2</xref> summarizes the various stages involved in the production process of the extraction of banana fibers using open-air drying under laboratory conditions.</p>
+<fig id="fig-2">
+<label>Figure 2</label>
+<caption>
+<title>Diagram of the process using open-air drying for extraction fiber banana under laboratory conditions</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-2.tif"/>
+</fig>
+<p><?A3B2 "fig3",5,"anchor"?><xref ref-type="fig" rid="fig-3">Fig. 3</xref> illustrates the oven drying at a constant temperature of 80&#x00B0;C for 4 h. It can be seen that oven-drying process does not produce banana fibers owing to leaf incineration, whereas open-air drying preserves the chemical composition of the banana fibers in terms of components, making them rigid. A microscopic study of the morphology of the banana fibers using an electron scanning microscope was carried out in this work, comparing the state of the fiber before and after drying to confirm the effect of open-air drying on fiber quality.</p>
+<fig id="fig-3">
+<label>Figure 3</label>
+<caption>
+<title>Banana leaves after drying at a constant temperature of 80&#x00B0;C</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-3.tif"/>
+</fig>
+<p><?A3B2 "tbl1",5,"anchor"?><xref ref-type="table" rid="table-1">Table 1</xref> summarizes the quantity of banana fibers extracted from samples between 30&#x2013;40 cm in length from the banana trunk leaves. The average percentage of fiber extracted from the leaves is around 30%, while the waste during the extraction process scan is reused in composite materials with ecological additives in the form of building powder, maximizing the benefits of using bananas.</p>
+<table-wrap id="table-1">
+<label>Table 1</label>
+<caption>
+<title>The quantity of banana fibers extracted from samples of banana trunk</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-1.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>Mass of leaves after drying in (g)</th>
+<th>Quantity of fiber extracted in (g)</th>
+<th>(%) Fiber/Leaf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leaf 1</td>
+<td>14.3</td>
+<td>3.0</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Leaf 2</td>
+<td>18.2</td>
+<td>7.0</td>
+<td>38</td>
+</tr>
+<tr>
+<td>Leaf 3</td>
+<td>14.2</td>
+<td>4.0</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Leaf 4</td>
+<td>16.2</td>
+<td>5.0</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Leaf 5</td>
+<td>14.5</td>
+<td>4.7</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Leaf 6</td>
+<td>11.6</td>
+<td>3.0</td>
+<td>26</td>
+</tr>
+<tr>
+<td>Leaf 7</td>
+<td>14.0</td>
+<td>3.5</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Leaf 8</td>
+<td>13.5</td>
+<td>4.0</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Leaf 9</td>
+<td>12.9</td>
+<td>3.4</td>
+<td>26</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="s2_3">
+<label>2.3</label>
+<title>Plaster</title>
+<p>The binder matrix is sourced from gypsum taken from Tameri which is a city existed in the southern area of Morocco, with a Water-to-plaster ratio of 1; fluidity measured using FLS ring equal to 22 cm, and a particle sizeless than 13.5% for 100 &#x03BC;m. The total porosity rate is based on literature developed by the work of Sanahuja et al. [<xref ref-type="bibr" rid="ref-17">17</xref>],where authors showed the relationship between the ratio of Water/plaster and the porosity; in our case, the porosity of the plaster is Pr &#x003D; 68%, according to <xref ref-type="disp-formula" rid="eqn-1">Eq. (1)</xref>.
+<disp-formula id="eqn-1">
+<label>(1)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-1.tif"/><tex-math id="tex-eqn-1"><![CDATA[
+{\rm Pr} = \displaystyle{{\left( {\displaystyle{{water} \over {plaster}}} \right) - 0.186} \over {\left( {\displaystyle{{water} \over {plaster}}} \right) + 0.326}}
+]]></tex-math><mml:math id="mml-eqn-1" display="block"></mml:math>
+</alternatives></disp-formula></p>
+
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Characterization Methods</title>
+<sec id="s3_1">
+<label>3.1</label>
+<title>Microstructure Analyses</title>
+<p>The microstructure and crystallinity (i.e., scanning electron microscopy and X-ray diffraction) of the various dried and undried banana fiber bundles were studied using the JOEL scanning electron microscope. The samples were metalized with a layer of gold to ensure a smooth transition of the electrons; the amperage was between 10 mA and 40 mA; and the chamber pressure was in the order of 0.5 to 0.05 mbar.</p>
+<p><?A3B2 "fig4",5,"anchor"?><xref ref-type="fig" rid="fig-4">Fig. 4</xref> illustrates the experimental device of a scanning electron microscope. X-ray diffraction was used to identify the crystalline phases and corresponding orientations of banana fibers.</p>
+<fig id="fig-4">
+<label>Figure 4</label>
+<caption>
+<title>Device of scanning electron microscope</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-4.tif"/>
+</fig>
+<p>The X-ray diffractometer, equipped with a radiation copper anode X-ray tube (&#x003D; 1.5406 &#x00C5;), was operated at 40 kV and 40 mA. OriginPro 2023 (Learning Edition) software was used to identify peaks in the raw XRD data.</p>
+</sec>
+<sec id="s3_2">
+<label>3.2</label>
+<title>Samples Preparation</title>
+<p>In order to produce samples of gypsum and banana fiber composites, we produced composites with several volumetric percentages of banana fiber respectively for 100%,80%,60%,40%,20% and 0% of the apparent volume molds with a water mixing ratio of 1.33 (water/gypsum).</p>
+<p>The extracted banana fibers are cut to lengths of 40 to 50 mm. After having the quantities of plaster, banana fiber, and water of each composite, we proceed to make samples for each fraction of banana fiber. Two methods of processing have been studied with the aim of knowing the impact of the fiber orientation on the mechanical properties of the composite plaster, while single processing has been adopted for the samples of characterization of thermal properties.</p>
+<p>The FMM: fiber banana mixed in matrix distribution consists of producing plaster composite samples with a bulk casting mixed into the composite&#x2019;s volume with plaster and water, then the samples are filled in the mold of 100 &#x00D7; 100 &#x00D7; 20 mm<sup>3</sup> or 40 &#x00D7; 40 &#x00D7; 160 mm<sup>3</sup>, without taking into account the precise location or orientation of the banana fiber within the composites. This principle has been used for both types of characterization samples of thermal and mechanical properties.</p>
+<p>The FSM: a series-model distribution of fiber this process of making composites has been used only on samples with dimensions of 40 &#x00D7; 40 &#x00D7; 160 mm<sup>3</sup>. The principle consists of setting up a part of plaster hydrated with a thickness of 1cm in the mold of the samples, then setting into the mold the banana fibers of the length between 40 and 50 mm in the direction of the length of the mold (160 mm) at each fraction&#x2019;s of the additive, followed by a casting of the supplement of the hydrated plaster of the composite. The objective is to compare the effect of additive distribution FSM and FMM on the mechanical properties of the specimens for different percentages of insulation.</p>
+<p>We note that the square samples with dimensions of 100 &#x00D7; 100 &#x00D7; 20 mm<sup>3</sup> for characterizing the thermal properties of the material with a serial distribution of banana fiber strips. Prismatic specimens, 40 &#x00D7; 40 &#x00D7; 160 mm<sup>3</sup> in size, to characterize the mechanical properties of the material.</p>
+<p><?A3B2 "fig5",5,"anchor"?><xref ref-type="fig" rid="fig-5">Figs. 5</xref> and <?A3B2 "fig6",5,"anchor"?><xref ref-type="fig" rid="fig-6">6</xref> show the samples produced. We produced three samples of each percentage of banana fiber, and the results presented are the average of the results obtained.</p>
+<fig id="fig-5">
+<label>Figure 5</label>
+<caption>
+<title>Mechanical samples of the composite plaster-fiber Banana for different percentages of additives. (a) mechanical samples of plaster-banana fiber mixed in the matrix distribution of fiber &#x201C;FMM&#x201D;. (b) mechanical samples of Plaster-banana fiber with series model distribution of fiber &#x201C;FSM&#x201D;</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-5.tif"/>
+</fig>
+<fig id="fig-6">
+<label>Figure 6</label>
+<caption>
+<title>Thermal samples of the composite plaster-fiber banana for different percentages of additives with series model distribution of fiber &#x201C;FSM&#x201D;</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-6.tif"/>
+</fig>
+</sec>
+<sec id="s3_3">
+<label>3.3</label>
+<title>Thermal Properties Characterization Methods</title>
+<p>The thermal properties of banana fiber additive-based composites are characterized using the steady-state hot-plate method to evaluate the composite&#x2019;s thermal conductivity (&#x03BB;) and the transient hot-plate method to obtain the composite&#x2019;s thermal effusivity (E). These methods are detailed and developed by [<xref ref-type="bibr" rid="ref-18">18</xref>] [<xref ref-type="bibr" rid="ref-19">19</xref>]. <?A3B2 "fig7",5,"anchor"?><xref ref-type="fig" rid="fig-7">Figs. 7</xref> and <?A3B2 "fig8",5,"anchor"?><xref ref-type="fig" rid="fig-8">8</xref> illustrate the experimental setup for the hot-plate method in both regimes.</p>
+<fig id="fig-7">
+<label>Figure 7</label>
+<caption>
+<title>View of the Asymmetrical Hot Plate device in steady state regime</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-7.tif"/>
+</fig>
+<fig id="fig-8">
+<label>Figure 8</label>
+<caption>
+<title>View of the Asymmetrical Hot Plate device in transient regime</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-8.tif"/>
+</fig>
+<p>The thermal diffusivity is achieved by the flash method [<xref ref-type="bibr" rid="ref-20">20</xref>,<xref ref-type="bibr" rid="ref-21">21</xref>]. <?A3B2 "fig9",5,"anchor"?><xref ref-type="fig" rid="fig-9">Fig. 9</xref> represents the experimental device of the test. Its principle consists of sending a luminous flux on one side of the sample in a time of 3s (Dirac pulse) and recording the temperature rise on the parallel face. The thermal diffusivity is estimated by modeling the heat transfer of both: theoretical and experimental thermograms.</p>
+<fig id="fig-9">
+<label>Figure 9</label>
+<caption>
+<title>View of the flash method device</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-9.tif"/>
+</fig>
+</sec>
+<sec id="s3_4">
+<label>3.4</label>
+<title>Mechanical Characterization Methods</title>
+<p>The bending test consists of placing on two supports a sample of plaster-fiber banana composite of a prismatic dimension of 40 &#x00D7; 40 &#x00D7; 160 mm<sup>3</sup> under a load applied at half the length of the samples in accordance with NF EN 196-1 and EN 1015-11 until it ruptures [22&#x2013;<xref ref-type="bibr" rid="ref-24">24</xref>]. The results of 3 point bending strength are given directly by the apparatus shown in <?A3B2 "fig10",5,"anchor"?><xref ref-type="fig" rid="fig-10">Fig. 10</xref>.</p>
+<fig id="fig-10">
+<label>Figure 10</label>
+<caption>
+<title>3-point bending test of plaster- fiber banana y &#x003D; 0.14</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-10.tif"/>
+</fig>
+<p>The value of the 3 point bending resistance, R<sub>f</sub>, in megapascals, is determined by the following equation see <xref ref-type="disp-formula" rid="eqn-2">Eq. (2)</xref>:
+<disp-formula id="eqn-2">
+<label>(2)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-2.tif"/><tex-math id="tex-eqn-2"><![CDATA[
+{{\rm R}_{\rm f}} = \displaystyle{{1,5{\rm x\; }{{\rm F}_{\rm f}}{\rm \; x\; l}} \over {{{\rm b}^3}}}{\rm \; }
+]]></tex-math><mml:math id="mml-eqn-2" display="block"></mml:math>
+</alternatives></disp-formula>where:</p>
+<p>R<sub>f</sub> is the flexion resistance, in megapascals;</p>
+<p>b is the side of the square section of the prisma, in millimeters; the value is 40 mm</p>
+<p>F<sub>f</sub> is the charge applied to the middle of the breaking prism, in newtons;</p>
+<p>l is the distance between supports, in millimeters the value is 100 mm</p>
+<p>The compression test consists of applying an axial force, in accordance with NF EN 196-1 and EN 1015-11 [<xref ref-type="bibr" rid="ref-22">22</xref>&#x2013;<xref ref-type="bibr" rid="ref-24">24</xref>], to specimens of the material remaining from the bending test until it is crushed. <?A3B2 "fig11",5,"anchor"?><xref ref-type="fig" rid="fig-11">Fig. 11</xref> shows the compression test.</p>
+<fig id="fig-11">
+<label>Figure 11</label>
+<caption>
+<title>Compression test of plaster-fiber banana y &#x003D; 0.14</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-11.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Results and discussion</title>
+<sec id="s4_1">
+<label>4.1</label>
+<title>X-Ray Diffraction Studies of Fiber Banana</title>
+<p><?A3B2 "fig12",5,"anchor"?><xref ref-type="fig" rid="fig-12">Fig. 12</xref> illustrates the X-ray powder diffraction pattern of banana fiber. The curve results are similar to those reported for other lignocellulose fibers, clearly indicating the presence of crystalline, amorphous regions and predominantly presenting the Cellulose I type structure, as observed for the majority of plant fibers, with peaks indexed at a distance d &#x003D; 5.99 &#x00C5; for 2&#x03B8;&#x00B0; &#x003D; 17&#x00B0; and 3.93 &#x00C5; for 2&#x03B8;&#x00B0; &#x003D; 22&#x00B0;.</p>
+<fig id="fig-12">
+<label>Figure 12</label>
+<caption>
+<title>The X-ray powder diffraction pattern of banana fiber</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-12.tif"/>
+</fig>
+<p>Diffractograms typical of cellulose I show a peak at 2&#x03B8; &#x003D;22&#x00B0; and a shoulder in the regions 2&#x03B8; &#x003D;14&#x00B0; and 2&#x03B8; &#x003D; 18&#x00B0; [<xref ref-type="bibr" rid="ref-25">25</xref>,<xref ref-type="bibr" rid="ref-26">26</xref>].</p>
+<p>The crystallinity index value was calculated with the help of the X-ray diffraction pattern curve using the Buschle-Diller and Zeronian equations [<xref ref-type="bibr" rid="ref-27">27</xref>] and <xref ref-type="disp-formula" rid="eqn-3">Eq. (3)</xref>.
+<disp-formula id="eqn-3">
+<label>(3)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-3.tif"/><tex-math id="tex-eqn-3"><![CDATA[
+{{\rm I}_{{\rm cr}}} = \left( {1 - \displaystyle{{{I_{min}}} \over {{{\rm I}_{{\rm max}}}}}} \right)\times 100\; \; \;
+]]></tex-math><mml:math id="mml-eqn-3" display="block"></mml:math>
+</alternatives></disp-formula></p>
+
+
+<p>With:</p>
+<p>I<sub>cr</sub>: Crystalline index in percent</p>
+<p>I<sub>min</sub>: The Intensity at the minimum of the crystalline peak (14&#x00B0; &#x003C; 2&#x03B8; &#x003C; 18&#x00B0;)</p>
+<p>I<sub>max</sub>: The intensity at its maximum of the crystalline peak (22&#x00B0; &#x003C; 2&#x03B8; &#x003C; 23&#x00B0;)</p>
+<p>The crystalline index of Moroccan banana fiber is above 42.60%, similar to that found in the literature, which varies between 39% and 42.5% [<xref ref-type="bibr" rid="ref-10">10</xref>,<xref ref-type="bibr" rid="ref-11">11</xref>].</p>
+</sec>
+<sec id="s4_2">
+<label>4.2</label>
+<title>Morphology Studies: SEM of Fiber Banana</title>
+<p>The authors analyzed the morphology of banana fiber in the dry and raw state after banana harvesting. The extraction of banana trunk leaves enabled us to study the effect of drying on the thermomechanical potential of banana fiber and its impact on the gypsum binder matrix.</p>
+<p><?A3B2 "fig13",5,"anchor"?><xref ref-type="fig" rid="fig-13">Figs. 13</xref> and <?A3B2 "fig14",5,"anchor"?><xref ref-type="fig" rid="fig-14">14</xref> show the morphology of banana fiber before and after drying under laboratory temperature and humidity conditions, in accordance with the process explained in <xref ref-type="sec" rid="s2">Section 2</xref>.</p>
+<fig id="fig-13">
+<label>Figure 13</label>
+<caption>
+<title>Scanning electron microscope of the longitudinal surface of banana fibers (a: 110 &#x00D7; 100 &#x03BC;m); (b: 1600 &#x00D7; 10 &#x03BC;m); (c: 600 &#x00D7; 20 &#x03BC;); (d: 430 &#x00D7; 50 &#x03BC;m); (e: 1800 &#x00D7; 10 &#x03BC;) after drying</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-13.tif"/>
+</fig>
+<fig id="fig-14">
+<label>Figure 14</label>
+<caption>
+<title>Scanning electron microscope of the longitudinal surface of banana fibers [a: 220 &#x00D7; 100 &#x03BC;m] ;[b: 850 &#x00D7; 20 &#x03BC;m]; [c: 220 &#x00D7; 100 &#x03BC;m]; [d: 450 &#x00D7; 50 &#x03BC;m] before drying</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-14.tif"/>
+</fig>
+<p>Measurements on the surface of banana fibers in figures <xref ref-type="fig" rid="fig-13">Figs. 13a</xref>, <xref ref-type="fig" rid="fig-13">13b</xref> and <xref ref-type="fig" rid="fig-14">14a</xref>, show that the morphological structure of banana fibers before and after drying is composed of several micro-fibrils in a longitudinal network of variable widths ranging from 20 to 33 &#x03BC;m before drying and from 13 &#x03BC;m to 19 &#x03BC;m after drying, giving a banana fiber with a total width of 170 to 190 &#x03BC;m before drying and 120 &#x03BC;m to 150 &#x03BC;m after drying. This results in a reduction in the cross-section of the banana fibers due to drying, which also justifies the loss of fiber weight due to the evaporation of poisoned water from the micro-fibrils and the shrinkage of the fiber shape.</p>
+<p>Analysis of the fiber surfaces <xref ref-type="fig" rid="fig-13">Figs. 13d</xref>, <xref ref-type="fig" rid="fig-13">13e</xref> after drying and <xref ref-type="fig" rid="fig-14">Figs. 14b</xref> and <xref ref-type="fig" rid="fig-14">14c</xref> before drying reveals that the micro-fibrils of banana fiber are cellulosic in nature, attached to each other by a binding material such as lignin and hemicelluloses. Bilba et al. [<xref ref-type="bibr" rid="ref-13">13</xref>], found that these micro-fibrils were probably composed of cellulose, which forms the backbone of the cell wall of the homogeneous matrix, being a mixture of various polysaccharide acids, neutrals (hemicelluloses), and lignin, which creates the surface roughness of the banana fiber.</p>
+<p>Transversely, we note that these micro-fibrils are in the form of a network of elliptical (non-spherical) cells with thick walls (<xref ref-type="fig" rid="fig-13">Fig. 13c</xref>), while Bilba et al. [<xref ref-type="bibr" rid="ref-13">13</xref>], estimated the thickness of these cell walls to be of the order of 1&#x03BC;m.</p>
+<p>A comparison of the two SEM images of the fibers before and after drying, shown in <xref ref-type="fig" rid="fig-13">Figs. 13e</xref> and <xref ref-type="fig" rid="fig-14">14d</xref>, leads to the conclusion that the concentration of cementitious binders such as lignin and hemicelluloses shown in the aforementioned figures is much lower after drying than in the raw state of the banana fiber. This also provides further justification for the reduction in the cross-section of banana fibers after drying, as well as for the evaporation of inter-fibril water.</p>
+</sec>
+<sec id="s4_3">
+<label>4.3</label>
+<title>Results of Densities Sample Composites Measurements</title>
+<p>After preparing three composite samples of each percentage of banana fiber additives, we proceeded to calculate the average of the densities between the samples dedicated to the various thermal and mechanical property characterization tests. We opted to analyze the evolution of the average density of the composites about the increase in volume fraction of the banana fibers additive.</p>
+<p>According to <?A3B2 "fig15",5,"anchor"?><xref ref-type="fig" rid="fig-15">Fig. 15</xref>, the authors note that the density of composites decreases with the increasing volume fraction of the additive. We observed a maximum gain in lightness of around 20% for the highest volume fraction, an almost constant variation for the highest volume fraction from y &#x003D; 0.18, and a remarkable variation in density for the lowest volume fraction of the additive.</p>
+<fig id="fig-15">
+<label>Figure 15</label>
+<caption>
+<title>Variation of average of the densities composites in function of the variation of fiber banana volume fraction and the gain on lightness</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-15.tif"/>
+</fig>
+</sec>
+<sec id="s4_4">
+<label>4.4</label>
+<title>Results of Thermal Properties Measurements</title>
+<p>The results of thermal properties such as thermal conductivity, thermal effusivity, and thermal diffusivity were performed on 100 &#x00D7; 100 &#x00D7; 25 mm<sup>3</sup> prism samples. The estimated error ranged between 1.80% and 11.72%.</p>
+<p>The author found that increasing the volume fraction of banana fiber insulation led to a significant reduction in thermal conductivity, as shown in <?A3B2 "fig16",5,"anchor"?><xref ref-type="fig" rid="fig-16">Fig. 16</xref>, with a gain of 43.7 for the maximum volume fraction FSM5.</p>
+<fig id="fig-16">
+<label>Figure 16</label>
+<caption>
+<title>Variation of average of the thermal conductivity in function of the variation of fiber banana volume fraction and the gain on thermal conductivity</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-16.tif"/>
+</fig>
+<p>This also reveals three ranges of variation in thermal conductivity gain compared with plaster alone as a reference element:
+<list list-type="bullet">
+<list-item>
+<p>For y &#x003C; 0.14, there is an almost constant variation in thermal conductivity of the order of 25%.</p></list-item>
+<list-item>
+<p>14 &#x003C; y &#x003C; 0.18 an observed gain in thermal conductivity between 25% and 40%.</p></list-item>
+<list-item>
+<p>For y &#x003E; 0.18, an observed gain in thermal conductivity above 40%.</p></list-item>
+</list></p>
+<p>The thermal diffusivity results shown in <?A3B2 "fig17",5,"anchor"?><xref ref-type="fig" rid="fig-17">Fig. 17</xref> were estimated by three theoretical models: The Degiovanni model, the Parker model and the complete model.</p>
+<fig id="fig-17">
+<label>Figure 17</label>
+<caption>
+<title>Variation of thermal diffusivity in function of the variation of fiber banana volume fraction and the gain on thermal diffusivity for three theoretical models: degiovanni, Parker and the complete model</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-17.tif"/>
+</fig>
+<p>A comparison of the mean values of the samples from the three models shows that there are two ranges of variation in the thermal diffusivity property of the composites as shown below:
+<list list-type="bullet">
+<list-item>
+<p>For y &#x003C; 0,18 a proportional variation in thermal diffusivity gain, with a maximum gain of around 37% for the Complete and Degiovanni models, and 18% for the Parker model.</p></list-item>
+<list-item>
+<p>For y &#x003E; 0,18 a quasi-constant gain in thermal diffusivity of around 42% for all three models.</p></list-item>
+</list></p>
+<p>Analysis of <?A3B2 "fig18",5,"anchor"?><xref ref-type="fig" rid="fig-18">Fig. 18</xref> shows that the variation in thermal effusivity is proportional to the variation in volume fraction. This is confirmed by the estimated gain values for this property, with a maximum gain of 25% for the largest fraction of insulation compared to plaster alone.</p>
+<fig id="fig-18">
+<label>Figure 18</label>
+<caption>
+<title>Variation of thermal effusivity in function of the variation of fiber banana volume fraction and the gain on thermal effusivity</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-18.tif"/>
+</fig>
+<p>There are two types of gain variation:
+<list list-type="bullet">
+<list-item>
+<p>A sloping variation for volume fractions below 0.18.</p></list-item>
+<list-item>
+<p>An almost constant variation in gain for fractions greater than 0.18.</p></list-item>
+</list></p>
+</sec>
+<sec id="s4_5">
+<label>4.5</label>
+<title>Results of Mechanical Properties Measurements</title>
+<sec id="s4_5_1">
+<label>4.5.1</label>
+<title>Flexural Strength</title>
+<p>The Flexural strength results shown in <?A3B2 "fig19",5,"anchor"?><xref ref-type="fig" rid="fig-19">Fig. 19</xref> show that:</p>
+<fig id="fig-19">
+<label>Figure 19</label>
+<caption>
+<title>Variation of flexural strength R<sub>f</sub>in function of the variation of fiber banana volume fraction and the gain obtained</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-19.tif"/>
+</fig>
+<p>The distribution of banana fiber mixed in the matrix, or in the case of the series model, the flexural strength of composites studied decreased for the fiber banana volume fraction of (y &#x003C; 0.18). However, the authors observed that the flexural strength is smaller in the distribution where the fiber is mixed in the matrix plaster than in the distribution of the series model. In conclusion, we observe a decrease of 22% in loss for FMM distribution and a 15% loss for FSM distribution.</p>
+<p>For the volume fractions of (0.18 &#x003C; y &#x003C; 0.20), we note a gain in terms of flexural strength of 20% for series model distribution instead of 10% for fiber mixed in matrix distribution, compared with plaster alone.</p>
+<p>For fractions (y &#x003E; 0.20), the gain in flexural strength is 2.5 times greater for the series model than for fiber mixed in matrix distribution. Also, we note a considerable gain of 50% for the highest volume fraction of fiber banana compared to plaster alone.</p>
+<p>Improved flexural strength with series model distribution is due to the fact that the flexural stress is perpendicular to the direction of banana fiber, unlike with the fiber mixed in the matrix distribution, which allows the fibers to be stressed in tension and increases the composite&#x2019;s flexural strength thanks to the good adhesion between the banana fibers and the binder plaster. This property is due to the microstructure of the banana fiber and its mechanical resistance to traction.</p>
+</sec>
+<sec id="s4_5_2">
+<label>4.5.2</label>
+<title>Compressive Strength</title>
+<p>The addition of banana fiber considerably reduces the compressive strength of plaster alone. The results shown in <?A3B2 "fig20",5,"anchor"?><xref ref-type="fig" rid="fig-20">Fig. 20</xref> lead to the conclusion below:</p>
+<fig id="fig-20">
+<label>Figure 20</label>
+<caption>
+<title>Variation of compressive strength in function of the variation of fiber bananavolume fraction and the gain on compressive strength</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-20.tif"/>
+</fig>
+<p><list list-type="bullet">
+<list-item>
+<p>For the volume fractions (y &#x003C; 0.18), there is an almost constant loss in compressive strength of about 65% to 75%, with the highest percentage of additive for the series model distribution.</p></list-item>
+<list-item>
+<p>For the volume fractions (y &#x003E; 0.18), we note that the loss in compressive strength of the composite is more remarkable for the fiber mixed in matrix distribution than the series model distribution of the additive.</p></list-item>
+</list></p>
+<p>The value of the loss of compressive strength is almost constant with the variation of the volume fraction of the additive.</p>
+</sec>
+</sec>
+<sec id="s4_6">
+<label>4.6</label>
+<title>Impact of the Microstructure of Fiber on the Thermo-mechanical Properties of the Composites Studied</title>
+<p>The incorporation of banana fibers inside the matrix plaster permits the improvement of the thermal properties and the flexion resistance of composites because of their crystalline microstructure composed of micro-fibrils containing essentially cellulose. A lot of studies [<xref ref-type="bibr" rid="ref-2">2</xref>,<xref ref-type="bibr" rid="ref-28">28</xref>&#x2013;<xref ref-type="bibr" rid="ref-31">31</xref>] demonstrated the relationship between the microstructure, the morphology of the vegetable fibers, and the improvement of the thermo-mechanical properties of composites. Those results are due to the orientation of the angles of microfibrils and to the composition of vegetable fibers, which is composed of a crystalline area with a percentage between 40% and 50% and a low ratio of an amorphous area composed of lignin and hemicelluloses, which assures the connection between the microfibrils.</p>
+<p>Analysis of the MEB images before and after drying proves that drying at ambient temperature permits a reduction in the concentration of the amorphous area represented by the lignin and the hemicelluloses. The fiber surfaces become clean and uniform in the cellulosic micro-fibrils representing the crystalline area [<xref ref-type="bibr" rid="ref-32">32</xref>]. It also reduces the fiber diameter and increases the ratio of length per diameter. The same remarks were confirmed by other authors where an alkaline treatment was applied [<xref ref-type="bibr" rid="ref-29">29</xref>,<xref ref-type="bibr" rid="ref-31">31</xref>,<xref ref-type="bibr" rid="ref-33">33</xref>&#x2013;<xref ref-type="bibr" rid="ref-35">35</xref>], and this had a direct impact on the improvement of the thermal and mechanical properties, such as the flexion resistance. This treatment increases the adhesion between the vegetable fibers and matrix, which increases the hanging interface, the elimination or reduction of lignin, and the hemicelluloses, which creates a strong chemical bond with the hydrophilic surface of the fiber on the hydrophobic surfaces. We also note that the distribution of fibers in the direction of solicitation flexion permits us to reveal the impact of the orientation of the fiber on the mechanical properties, the lightness obtained, and also the kind of distribution of fiber that permits us to improve the thermal properties of the plaster.</p>
+<p>The analyses of the scanning electron microscope using the electron microscopy method of the matrix plaster and the composite plaster-banana fibers permit the observation illustrated in <?A3B2 "fig21",5,"anchor"?><xref ref-type="fig" rid="fig-21">Fig. 21</xref> of the samples of plaster alone, in which the microstructure is composed of big voids composed of microspores. Also, we remark a void of air and air voids merged, and this is due essentially to the water rate equal to 1.33, which has a direct relation with the percentage of porosity of plaster. Moreover, the granulometry of the plaster powder permits the creation of some voids trapped in air, which creates a microstructure with low compactness and a lot of micro-cracks and pores. Furthermore, <?A3B2 "fig22",5,"anchor"?><xref ref-type="fig" rid="fig-22">Fig. 22</xref> reveals the micrograph of the composite plaster-banana fibers. We observe the incorporation of banana fibers characterized by a microstructure composed essentially of natural cellulose in the form of microfibrils, which permits increasing the compacting density of composites and reducing the appearance and development of micro cracks. It also reduces the voids and pores by dispersing the banana fibers inside the matrix plaster. The same behavior was revealed by other researchers who worked on cement reinforced by cellulosic fibers [<xref ref-type="bibr" rid="ref-36">36</xref>].</p>
+<fig id="fig-21">
+<label>Figure 21</label>
+<caption>
+<title>SEM images (20 &#x03BC;m) of the plaster alone used</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-21.tif"/>
+</fig>
+<fig id="fig-22">
+<label>Figure 22</label>
+<caption>
+<title>SEM images (130 &#x00D7; 100 &#x03BC;m) of the composite plaster-fiber banana</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-22.tif"/>
+</fig>
+<p>According to this interpretation, the presence of banana fibers permits the apparition of cracks due to their strength and limits the formation of microcracks and cracks [<xref ref-type="bibr" rid="ref-37">37</xref>]. The image of the interface between the matrix of plaster and banana fibers illustrated in <?A3B2 "fig23",5,"anchor"?><xref ref-type="fig" rid="fig-23">Fig. 23</xref> permits assessing the good adhesion of the banana fibers inside the matrix plaster thanks to the microstructure of the surface and the impact of the process of drying banana fibers, which reduces the amorphous area. Things that improve the mechanical properties, especially the flexure strength of the composites, are developed because those fibers are oriented in the direction of solicitation, despite the compressive strength, where fibers are oriented in the opposite direction of solicitation, which weakens the composite. The improvement of thermal conductivity, when we increase the volume fraction of fibers is due to the creation of coherent small voids, which contribute to the reduction of thermal conductivity thanks to the porous structure of banana fibers, which allows the composites to absorb heat.</p>
+<fig id="fig-23">
+<label>Figure 23</label>
+<caption>
+<title>SEM images of the interface between banana fiber and plaster</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-23.tif"/>
+</fig>
+</sec>
+<sec id="s4_7">
+<label>4.7</label>
+<title>Dimensionless Analysis of Thermal and Mechanical Properties</title>
+<p>The analysis of dimensionless numbers was conducted to find an optimal proportion of the volume fraction of banana fibers in the composite that allows both better properties in terms of thermal insulation of the composite and mechanical resistance, the analysis of dimensionless numbers was conducted. For this purpose, we introduced three normalized dimensionless parameters according to <xref ref-type="disp-formula" rid="eqn-4">Eqs. (4)</xref>&#x2013;<xref ref-type="disp-formula" rid="eqn-6">(6)</xref>.
+<disp-formula id="eqn-4">
+<label>(4)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-4.tif"/><tex-math id="tex-eqn-4"><![CDATA[
+{{\rm K}_{{\rm therm}}} = \displaystyle{{{{\rm R}_{{\rm measured}}} - {{\rm R}_{{\rm min}}}} \over {{{\rm R}_{{\rm max}}} - {{\rm R}_{{\rm fmin}}}}} = \displaystyle{{\displaystyle{1 \over {{\rm \lambda measured}}} - \displaystyle{1 \over {{\rm \lambda max}}}} \over {\displaystyle{1 \over {{\rm \lambda min}}} - \displaystyle{1 \over {{\rm \lambda max}}}}}{\rm \; \; \; \; }
+]]></tex-math><mml:math id="mml-eqn-4" display="block"></mml:math>
+</alternatives></disp-formula>
+<disp-formula id="eqn-5">
+<label>(5)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-5.tif"/><tex-math id="tex-eqn-5"><![CDATA[
+{{\rm K}_{{\rm flex}}} = \displaystyle{{{{\rm R}_{{\rm flex},{\rm measured}}} - {{\rm R}_{{\rm flex},{\rm min\; }}}} \over {{{\rm R}_{{\rm flex},{\rm max}}} - {{\rm R}_{{\rm flex},{\rm min}}}}}{\rm \; \; \; \; }
+]]></tex-math><mml:math id="mml-eqn-5" display="block"></mml:math>
+</alternatives></disp-formula>
+<disp-formula id="eqn-6">
+<label>(6)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-6.tif"/><tex-math id="tex-eqn-6"><![CDATA[
+{{\rm K}_{{\rm comp}}} = \displaystyle{{{{\rm R}_{{\rm com},{\rm measured}}} - {{\rm R}_{{\rm com},{\rm min}}}} \over {{{\rm R}_{{\rm com},{\rm max}}} - {{\rm R}_{{\rm com},{\rm min}}}}}{\rm \; }
+]]></tex-math><mml:math id="mml-eqn-6" display="block"></mml:math>
+</alternatives></disp-formula></p>
+
+
+<p>With:</p>
+<p>R<sub>measured</sub>: the thermal resistance, expressed (m&#x00B2;. K.W<sup>&#x2212;1</sup>).</p>
+<p>R<sub>com</sub>, measured: compressive strength expressed in (MPa).</p>
+<p>R<sub>flex</sub>, measured: bending strength expressed in (MPa).</p>
+<p>K<sub>therm</sub>, K<sub>comp</sub>, and K<sub>flex</sub> are respectively normalized dimensionless parameters of the thermal resistance, the mechanical strength of bending, and the simple compression solicitations, respectively.</p>
+<p><?A3B2 "fig24",5,"anchor"?><xref ref-type="fig" rid="fig-24">Figs. 24</xref> and <?A3B2 "fig25",5,"anchor"?><xref ref-type="fig" rid="fig-25">25</xref> show the evolution of the three-dimensional parameters as a function of the fiber banana content for two kinds of fiber banana composites.</p>
+<fig id="fig-24">
+<label>Figure 24</label>
+<caption>
+<title>The normalized dimensionless parameters K<sub>therm</sub>, K<sub>comp</sub> and K<sub>flex</sub> as function of fiber banana volume fraction mixed in matrix plaster</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-24.tif"/>
+</fig>
+<fig id="fig-25">
+<label>Figure 25</label>
+<caption>
+<title>The normalized dimensionless parameters K<sub>therm</sub>, K<sub>comp</sub>, and K<sub>flex</sub> as functions of volume fiber banana fraction concerning the series model distribution</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="JRM_49942-fig-25.tif"/>
+</fig>
+<p>For fiber mixed in matrix distribution (FMM) and series model distribution (FSM) of banana fiber with small volume fractions, the thermal conductivity of the composite is improved, while a loss of the mechanical properties of the composite is observed. We note a loss of flexural strength for fiber series model distribution (FSM) more than the distribution of mixed fiber in the matrix plaster FMM.</p>
+<p>Above additive volume fractions of (y &#x003E; 0.14), we note a remarkable gain in composite thermal conductivity and flexural strength, whatever the additive distribution method, with an advantage for series model composite distribution.</p>
+<p>We recommend, for small additive volume fractions, using the composite in walls with a series model distribution due to its compression values. We advise that for high volume fractions of (y &#x003E; 0.14), using this composite in false ceiling panels thanks to its values of flexural strength.</p>
+</sec>
+</sec>
+<sec id="s5">
+<label>5</label>
+<title>CONCLUSIONS</title>
+<p>The study of the potential of banana fiber and its use for plaster composites revealed the following conclusions:</p>
+<p>The appropriate choice of drying method between open air drying and ventilated oven drying at a temperature of 80&#x00B0;C confirmed that open air drying is based on the amount extracted from the leaves of the banana tree trunk, like 30% of fiber banana for open air drying instead of 0% by the oven drying method.</p>
+<p>The results of the X-ray diffraction test study revealed a 42.60% crystalline banana fiber index, indicating the presence of crystalline and amorphous regions that mainly have the Cellulose I structure type. The morphology of the banana fiber is composed of several micro-fibrils in a longitudinal network of variable widths. A reduction in the section of banana fibers due to drying leads to a much lower concentration of cementitious binders such as lignin and hemicelluloses.</p>
+<p>Regarding the observed results of the composite of plaster and banana fiber, we obtained a maximum gain in lightness of 20% for the highest volume fraction of the additive, a gain in thermal properties between 25% and 40% for (y &#x003E; 0.18), and 25% for the volume fractions of the additive (y &#x003C; 0.14). Than For high volume fractions of additive (y &#x003E; 0.20), the gain obtained in flexural strength for the serial distribution of the additive is 2.5 times greater than the fiber mixed in matrix distribution, and the highest fraction of volume has a 50% gain in flexural strength compared to plaster alone. The loss of the composite&#x2019;s compressive strength is more remarkable for the fiber mixed in the matrix distribution of the additive than for the series model distribution. The value of the loss of compressive strength is almost constant with the variation of the volume fraction of the additive.</p>
+<p>Based on the results, we recommend using this composite on walls with a distribution of fiber mixed in a matrix for small volume fractions of banana fiber (y &#x003C; 0.14) due to its compression values and improved thermal properties. However, we advise using this composite in a false ceiling with a series model distribution of banana fibers for the volume fractions of the additive (y &#x003E; 0.18), taking into account its values of flexural strength and their good thermal properties. The integration of those composites in buildings permits the reduction of the carbon footprint of the building sector. Otherwise, studies proved the potential of fiber banana is not just limited to construction but also improves the polymer composites used in the industry sector, which will contribute to the management of waste from this material, and by doing so, we will ensure a clean environment and reduce pollution.</p>
+</sec>
+</body>
+<back>
+<glossary content-type="abbreviations" id="glossary-1">
+<title><bold>Nomenclature</bold></title>
+<def-list>
+<def-item>
+<term>&#x03C1;</term>
+<def>
+<p>Density (kg.m<sup>&#x2212;3</sup>)</p>
+</def>
+</def-item>
+<def-item>
+<term>&#x03BB;</term>
+<def>
+<p>Thermal conductivity (W.m<sup>&#x2212;1</sup>. K<sup>&#x2212;1</sup>)</p>
+</def>
+</def-item>
+<def-item>
+<term>K<sub>therm</sub></term>
+<def>
+<p>Adimensional numbers on thermal properties</p>
+</def>
+</def-item>
+<def-item>
+<term>K<sub>flex</sub></term>
+<def>
+<p>Adimensionalnumbers on flexural strength</p>
+</def>
+</def-item>
+<def-item>
+<term>K<sub>comp</sub></term>
+<def>
+<p>Adimensional numbers on compressive strength</p>
+</def>
+</def-item>
+<def-item>
+<term>FMM</term>
+<def>
+<p>Fiber banana mixed in plaster</p>
+</def>
+</def-item>
+<def-item>
+<term>FSM</term>
+<def>
+<p>Fiber banana in series with the matrix plaster</p>
+</def>
+</def-item>
+</def-list>
+</glossary>
+<ack>
+<p>The authors are thankful to the University Ibn Zohr in Agadir and Mohammed V University in Rabat.</p>
+</ack>
+<fn-group>
+<fn fn-type="other">
+<p><bold>Funding Statement:</bold> The authors received no specific funding for this study.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Author Contributions:</bold> The authors confirm contribution to the paper as follows: study conception and design: Y. Maaloufa, S. Mounir, Y. A. Dodo; data collection: Y. Maaloufa, A. Souidi, S. IbnElhaj, F. Z. El Wardi, M. Atigui; analysis and interpretation of results: Y. Maaloufa, S. Mounir, A. Khabbazi, F.Z. El Wardi, A. Aharoune, H. Demrati; draft manuscript preparation: Y. Maaloufa, S. Mounir, Y. A. Dodo, M. Amazal All authors reviewed the results and approved the final version of the manuscript.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Availability of Data and Materials:</bold> The authors confirm that the data supporting the findings of this study are available within article.</p>
+</fn>
+<fn fn-type="conflict">
+<p><bold>Conflicts of Interest:</bold> The authors declare that they have no conflicts of interest to report regarding the present study.</p>
+</fn>
+</fn-group>
+<ref-list content-type="authoryear">
+<title>References</title>
+<ref id="ref-1"><label>1.</label><mixed-citation publication-type="other"><person-group person-group-type="author"><string-name><surname>Voora</surname> <given-names>V</given-names></string-name>, <string-name><surname>Larrea</surname> <given-names>C</given-names></string-name>, <string-name><surname>Bermudez</surname> <given-names>S</given-names></string-name></person-group>. <article-title>Global market<!--Q1: Reference &#96;1&#x0027; is incomplete. Please provide any of the relevant missing information: website.--> report: bananas</article-title>; <year>2020</year>.</mixed-citation></ref>
+<ref id="ref-2"><label>2.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ibrahim</surname> <given-names>MM</given-names></string-name>, <string-name><surname>Dufresne</surname> <given-names>A</given-names></string-name>, <string-name><surname>El-Zawawy</surname> <given-names>WK</given-names></string-name>, <string-name><surname>Agblevor</surname> <given-names>FA</given-names></string-name></person-group>. <article-title>Banana fibers and microfibrils as lignocellulosic reinforcements in polymer composites</article-title>. <source>Carbohyd Polym</source>. <year>2010</year>;<volume>81</volume>(<issue>4</issue>):<fpage>811</fpage>&#x2013;<lpage>19</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.carbpol.2010.03.057</pub-id>.</mixed-citation></ref>
+<ref id="ref-3"><label>3.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ahmad</surname> <given-names>MN</given-names></string-name>, <string-name><surname>Ishak</surname> <given-names>MR</given-names></string-name>, <string-name><surname>Taha</surname> <given-names>MM</given-names></string-name>, <string-name><surname>Mustapha</surname> <given-names>F</given-names></string-name>, <string-name><surname>Leman</surname> <given-names>Z</given-names></string-name></person-group>. <article-title>Rheological properties of natural fiber reinforced thermoplastic composite for fused deposition modeling (FDM): a short review</article-title>. <source>J Adv Res Fluid Mech Therm Sci</source>. <year>2022</year>;<volume>98</volume>(<issue>2</issue>):<fpage>157</fpage>&#x2013;<lpage>64</lpage>. doi:<pub-id pub-id-type="doi">10.37934/arfmts.98.2.157164</pub-id>.</mixed-citation></ref>
+<ref id="ref-4"><label>4.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ranjan</surname> <given-names>N</given-names></string-name>, <string-name><surname>Banerjee</surname> <given-names>S</given-names></string-name>, <string-name><surname>Nayak</surname> <given-names>S</given-names></string-name>, <string-name><surname>Das</surname> <given-names>S</given-names></string-name></person-group>. <article-title>Agro-waste fiber reinforced mortar for augmenting the performance of masonry structures</article-title>. <source>Constr Build Mater</source>. <year>2023</year>;<volume>363</volume>:<fpage>129848</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.conbuildmat.2022.129848</pub-id>.</mixed-citation></ref>
+<ref id="ref-5"><label>5.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lee</surname> <given-names>GW</given-names></string-name>, <string-name><surname>Choi</surname> <given-names>YC</given-names></string-name></person-group>. <article-title>Effect of abaca natural fiber on the setting behavior and autogenous shrinkage of cement composite</article-title>. <source>J Build Eng</source>. <year>2022</year>;<volume>56</volume>:<fpage>104719</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jobe.2022.104719</pub-id>.</mixed-citation></ref>
+<ref id="ref-6"><label>6.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Maaloufa</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Mounir</surname> <given-names>S</given-names></string-name>, <string-name><surname>Abdelhamid</surname> <given-names>K</given-names></string-name>, <string-name><surname>El Harrouni</surname> <given-names>K</given-names></string-name></person-group>. <article-title>Influence of the kind and the shape of insulating materials on the mechanical properties of the composites plaster- granular cork and plaster- fiber alpha</article-title>. <source>Key Eng Mat</source>. <year>2021</year>;<volume>886</volume>:<fpage>241</fpage>&#x2013;<lpage>55</lpage>. doi:<pub-id pub-id-type="doi">10.4028/www.scientific.net/KEM.886.241</pub-id>.</mixed-citation></ref>
+<ref id="ref-7"><label>7.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>El Wardi</surname> <given-names>FZ</given-names></string-name>, <string-name><surname>Ladouy</surname> <given-names>S</given-names></string-name>, <string-name><surname>Khabbazi</surname> <given-names>A</given-names></string-name>, <string-name><surname>Ibaaz</surname> <given-names>K</given-names></string-name>, <string-name><surname>Khaldoun</surname> <given-names>A</given-names></string-name></person-group>. <article-title>Unfired clay-cork granules bricks reinforced with natural stabilizers: tthermomechanical characteristics assessment</article-title>. <source>Civ Eng J</source>. <year>2021</year>;<volume>7</volume>(<issue>12</issue>):<fpage>2068</fpage>&#x2013;<lpage>82</lpage>. doi:<pub-id pub-id-type="doi">10.28991/cej-2021-03091778</pub-id>.</mixed-citation></ref>
+<ref id="ref-8"><label>8.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Phung</surname> <given-names>TA</given-names></string-name></person-group>. <source>Formulation et caract&#x00E9;risation d&#x2019;un composite terre-fibres v&#x00E9;g&#x00E9;tales: la bauge (phdthesis)</source>. <publisher-name>Normandie Universit&#x00E9;</publisher-name>; <year>2018, May 28</year>. Retrieved from: <ext-link ext-link-type="uri" xlink:href="https://theses.hal.science/tel-01938827">https://theses.hal.science/tel-01938827</ext-link>.</mixed-citation></ref>
+<ref id="ref-9"><label>9.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Mounir</surname> <given-names>S</given-names></string-name>, <string-name><surname>Khabbazi</surname> <given-names>A</given-names></string-name>, <string-name><surname>Khaldoun</surname> <given-names>A</given-names></string-name>, <string-name><surname>Maaloufa</surname> <given-names>Y</given-names></string-name>, <string-name><surname>El Hamdouni</surname> <given-names>Y</given-names></string-name></person-group>. <article-title>Thermal inertia and thermal properties of the composite material clay-wool</article-title>. <source>Sustain Cities Soc</source>. <year>2015</year>;<volume>19</volume>:<fpage>191</fpage>&#x2013;<lpage>99</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.scs.2015.07.018</pub-id>.</mixed-citation></ref>
+<ref id="ref-10"><label>10.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Guimar&#x00E3;es</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Frollini</surname> <given-names>E</given-names></string-name>, <string-name><surname>da Silva</surname> <given-names>CG</given-names></string-name>, <string-name><surname>Wypych</surname> <given-names>F</given-names></string-name>, <string-name><surname>Satyanarayana</surname> <given-names>KG</given-names></string-name></person-group>. <article-title>Characterization of banana, sugarcane bagasse and sponge gourd fibers of Brazil</article-title>. <source>Ind Crop Prod</source>. <year>2009</year>;<volume>30</volume>(<issue>3</issue>):<fpage>407</fpage>&#x2013;<lpage>15</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.indcrop.2009.07.013</pub-id>.</mixed-citation></ref>
+<ref id="ref-11"><label>11.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Deepa</surname> <given-names>B</given-names></string-name>, <string-name><surname>Abraham</surname> <given-names>E</given-names></string-name>, <string-name><surname>Cherian</surname> <given-names>BM</given-names></string-name>, <string-name><surname>Bismarck</surname> <given-names>A</given-names></string-name>, <string-name><surname>Blaker</surname> <given-names>JJ</given-names></string-name>, <string-name><surname>Pothan</surname> <given-names>LA</given-names></string-name>, <etal>et al</etal></person-group>. <article-title>Structure, morphology and thermal characteristics of banana nano fibers obtained by steam explosion</article-title>. <source>Bioresource Technol</source>. <year>2011</year>;<volume>102</volume>(<issue>2</issue>):<fpage>1988</fpage>&#x2013;<lpage>97</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.biortech.2010.09.030</pub-id>.</mixed-citation></ref>
+<ref id="ref-12"><label>12.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Milani</surname> <given-names>MDY</given-names></string-name>, <string-name><surname>Samarawickrama</surname> <given-names>DS</given-names></string-name>, <string-name><surname>Dharmasiri</surname> <given-names>GPCA</given-names></string-name>, <string-name><surname>Kottegoda</surname> <given-names>IRM</given-names></string-name></person-group>. <article-title>Study the structure, morphology, and thermal behavior of banana fiber and its charcoal derivative from selected banana varieties</article-title>. <source>J Nat Fibers</source>. <year>2016</year>;<volume>13</volume>(<issue>3</issue>):<fpage>332</fpage>&#x2013;<lpage>42</lpage>. doi:<pub-id pub-id-type="doi">10.1080/15440478.2015.1029195</pub-id>.</mixed-citation></ref>
+<ref id="ref-13"><label>13.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bilba</surname> <given-names>K</given-names></string-name>, <string-name><surname>Arsene</surname> <given-names>M</given-names></string-name>, <string-name><surname>Ouensanga</surname> <given-names>A</given-names></string-name></person-group>. <article-title>Study of banana and coconut fibersBotanical composition, thermal degradation and textural observations</article-title>. <source>Bioresource Technol</source>. <year>2007</year>;<volume>98</volume>(<issue>1</issue>):<fpage>58</fpage>&#x2013;<lpage>68</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.biortech.2005.11.030</pub-id>.</mixed-citation></ref>
+<ref id="ref-14"><label>14.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Akinyemi</surname> <given-names>BA</given-names></string-name>, <string-name><surname>Dai</surname> <given-names>C</given-names></string-name></person-group>. <article-title>Development of banana fibers and wood bottom ash modified cement mortars</article-title>. <source>Constr Build Mater</source>. <year>2020</year>;<volume>241</volume>:<fpage>118041</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.conbuildmat.2020.118041</pub-id>.</mixed-citation></ref>
+<ref id="ref-15"><label>15.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Thanushan</surname> <given-names>K</given-names></string-name>, <string-name><surname>Sathiparan</surname> <given-names>N</given-names></string-name></person-group>. <article-title>Mechanical performance and durability of banana fibre and coconut coir reinforced cement stabilized soil blocks</article-title>. <source>Materialia</source>. <year>2022</year>;<volume>21</volume>:<fpage>101309</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.mtla.2021.101309</pub-id>.</mixed-citation></ref>
+<ref id="ref-16"><label>16.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Balaji</surname> <given-names>A</given-names></string-name>, <string-name><surname>Purushothaman</surname> <given-names>R</given-names></string-name>, <string-name><surname>Udhayasankar</surname> <given-names>R</given-names></string-name>, <string-name><surname>Vijayaraj</surname> <given-names>S</given-names></string-name>, <string-name><surname>Karthikeyan</surname> <given-names>B</given-names></string-name></person-group>. <article-title>Study on mechanical, thermal and morphological properties of banana fiber-reinforced epoxy composites</article-title>. <source>J Bio-Tribo-Corros</source>. <year>2020</year>;<volume>6</volume>(<issue>2</issue>):<fpage>60</fpage>. doi:<pub-id pub-id-type="doi">10.1007/s40735-020-00357-8</pub-id>.</mixed-citation></ref>
+<ref id="ref-17"><label>17.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Sanahuja</surname> <given-names>J</given-names></string-name></person-group>. <source>Impact de la morphologie structurale sur les performances m&#x00E9;caniques des mat&#x00E9;riaux de construction: application au pl&#x00E2;tre et &#x00E0; la p&#x00E2;te de ciment (phdthesis)</source>. <publisher-loc>Paris Est</publisher-loc>, <year>2008, January 1</year>. Retrieved from:<year> </year><ext-link ext-link-type="uri" xlink:href="https://www.theses.fr/2008ENPC0808">https://www.theses.fr/2008ENPC0808</ext-link>.</mixed-citation></ref>
+<ref id="ref-18"><label>18.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Jannot</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Felix</surname> <given-names>V</given-names></string-name>, <string-name><surname>Degiovanni</surname> <given-names>A</given-names></string-name></person-group>. <article-title>A centered hot plate method for measurement of thermal properties of thin insulating materials</article-title>. <source>Meas Sci Technol</source>. <year>2010</year>;<volume>21</volume>(<issue>3</issue>):<fpage>035106</fpage>. doi:<pub-id pub-id-type="doi">10.1088/0957-0233/21/3/035106</pub-id>.</mixed-citation></ref>
+<ref id="ref-19"><label>19.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>F&#x00E9;lix</surname> <given-names>V</given-names></string-name></person-group>. <source>Caract&#x00E9;risation thermique de mat&#x00E9;riaux isolants l&#x00E9;gers. Application &#x00E0; des a&#x00E9;rogels de faible poids mol&#x00E9;culaire (phdthesis)</source>. <publisher-name>Institut National Polytechnique de Lorraine</publisher-name>; <year>2011, November 24</year>. Retrieved from:<year> </year><ext-link ext-link-type="uri" xlink:href="https://hal.univ-lorraine.fr/tel-01749491">https://hal.univ-lorraine.fr/tel-01749491</ext-link>.</mixed-citation></ref>
+<ref id="ref-20"><label>20.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Degiovanni</surname> <given-names>A</given-names></string-name>, <string-name><surname>Laurent</surname> <given-names>M</given-names></string-name>, <string-name><surname>Prost</surname> <given-names>R</given-names></string-name></person-group>. <article-title>Mesure automatique de la diffusivit&#x00E9; thermique</article-title>. <source>Revue de Physique Appliqu&#x00E9;e</source>. <year>1979</year>;<volume>14</volume>(<issue>11</issue>):<fpage>927</fpage>&#x2013;<lpage>32</lpage>. doi:<pub-id pub-id-type="doi">10.1051/rphysap:019790014011092700</pub-id>.</mixed-citation></ref>
+<ref id="ref-21"><label>21.</label><mixed-citation publication-type="other"><person-group person-group-type="author"><string-name><surname>Remy</surname> <given-names>B</given-names></string-name>, <string-name><surname>Degiovanni</surname> <given-names>A</given-names></string-name></person-group>. <article-title>Mesure de la diffusivit&#x00E9; thermique de mat&#x00E9;riaux anisotropes<!--Q2: Reference &#96;21&#x0027; is incomplete. Please provide any of the relevant missing information: website.--> de petites dimensions par thermographie infrarouge et transformations int&#x00E9;grales</article-title>; <year>2007</year>.</mixed-citation></ref>
+<ref id="ref-22"><label>22.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><collab>European committee for standardization</collab></person-group>. <source>NF EN<!--Q3: Reference &#96;22&#x0027; is incomplete. Please provide any of the relevant missing information: location of publisher.--> 196-1-2016</source>. <publisher-loc>Afnor EDITIONS</publisher-loc>, <year>2016</year>.</mixed-citation></ref>
+<ref id="ref-23"><label>23.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><collab>European committee for standardization</collab></person-group>. <source>EN 1015-11:2019 - Methods of test for mortar for masonry - Part 11: Determination of flexural and compressive strength of hardened mortar</source>. <publisher-name>iTeh Standards</publisher-name>; <year>February 17, 2024</year>. Retrieved from:<year> </year><ext-link ext-link-type="uri" xlink:href="https://standards.iteh.ai/catalog/standards/cen/14596d4c-119b-4a78-94e1-3fe481a29bde/en-1015-11-2019">https://standards.iteh.ai/catalog/standards/cen/14596d4c-119b-4a78-94e1-3fe481a29bde/en-1015-11-2019</ext-link>.</mixed-citation></ref>
+<ref id="ref-24"><label>24.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Z&#x00E1;lesk&#x00E1;</surname> <given-names>M</given-names></string-name>, <string-name><surname>Pavl&#x00ED;kov&#x00E1;</surname> <given-names>M</given-names></string-name>, <string-name><surname>Piv&#x00E1;k</surname> <given-names>A</given-names></string-name>, <string-name><surname>Lauermannov&#x00E1;</surname> <given-names>AM</given-names></string-name>, <string-name><surname>Jankovsk&#x00FD;</surname> <given-names>O</given-names></string-name>, <string-name><surname>Pavl&#x00ED;k</surname> <given-names>Z</given-names></string-name></person-group>. <article-title>Lightweight vapor-permeable plasters for building repair detailed experimental analysis of the functional properties</article-title>. <source>Materials</source>. <year>2021</year>;<volume>14</volume>(<issue>10</issue>):<fpage>2613</fpage>. doi:<pub-id pub-id-type="doi">10.3390/ma14102613</pub-id>.</mixed-citation></ref>
+<ref id="ref-25"><label>25.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Liu</surname> <given-names>K</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>X</given-names></string-name>, <string-name><surname>Takagi</surname> <given-names>H</given-names></string-name>, <string-name><surname>Yang</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>D</given-names></string-name></person-group>. <article-title>Effect of chemical treatments on transverse thermal conductivity of unidirectional abaca fiber/epoxy composite</article-title>. <source>Compos-A: Appl Sci Manuf</source>. <year>2014</year>;<volume>66</volume>:<fpage>227</fpage>&#x2013;<lpage>36</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.compositesa.2014.07.018</pub-id>.</mixed-citation></ref>
+<ref id="ref-26"><label>26.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Elanthikkal</surname> <given-names>S</given-names></string-name>, <string-name><surname>Gopalakrishnapanicker</surname> <given-names>U</given-names></string-name>, <string-name><surname>Varghese</surname> <given-names>S</given-names></string-name>, <string-name><surname>Guthrie</surname> <given-names>JT</given-names></string-name></person-group>. <article-title>Cellulose microfibres produced from banana plant wastes: isolation and characterization</article-title>. <source>Carbohyd Polym</source>. <year>2010</year>;<volume>80</volume>(<issue>3</issue>):<fpage>852</fpage>&#x2013;<lpage>9</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.carbpol.2009.12.043</pub-id>.</mixed-citation></ref>
+<ref id="ref-27"><label>27.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Buschle-Diller</surname> <given-names>G</given-names></string-name>, <string-name><surname>Zeronian</surname> <given-names>SH</given-names></string-name></person-group>. <article-title>Enhancing the reactivity and strength of cotton fibers</article-title>. <source>J Appl Polym Sci</source>. <year>1992</year>;<volume>45</volume>(<issue>6</issue>):<fpage>967</fpage>&#x2013;<lpage>79</lpage>. doi:<pub-id pub-id-type="doi">10.1002/app.1992.070450604</pub-id>.</mixed-citation></ref>
+<ref id="ref-28"><label>28.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Fonseca-Pinheiro</surname> <given-names>L</given-names></string-name>, <string-name><surname>de Garavello</surname> <given-names>MEPE</given-names></string-name>, <string-name><surname>Baruque-Ramos</surname> <given-names>J</given-names></string-name>, <string-name><surname>Kohan</surname> <given-names>L</given-names></string-name>, <string-name><surname>Oliveira-Duarte</surname> <given-names>L</given-names></string-name>, <string-name><surname>Fernandes</surname> <given-names>PRB</given-names></string-name>, <etal>et al.</etal></person-group> <article-title>Banana pseudostem fibers (Musa sp.&#x2014;cultivar AAB Prata): physicochemical characteristics</article-title>. <source>Mat Circ Econm</source>. <year>2022</year>;<volume>4</volume>(<issue>1</issue>):<fpage>21</fpage>. doi:<pub-id pub-id-type="doi">10.1007/s42824-022-00062-6</pub-id>.</mixed-citation></ref>
+<ref id="ref-29"><label>29.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Hajj</surname> <given-names>R</given-names></string-name></person-group>. <chapter-title>Proc&#x00E9;d&#x00E9;s de Modification des Fibres naturelles (PROMOF) (phdthesis)</chapter-title>. In: <source>IMT-MINES ALES-IMT-Mines Al&#x00E8;s Ecole Mines-T&#x00E9;l&#x00E9;com; &#x00C9;cole Doctorale des Sciences et de Technologie (Beyrouth)</source><year>2018, November 29</year>. Retrieved from:<year> </year><ext-link ext-link-type="uri" xlink:href="https://theses.hal.science/tel-02005677">https://theses.hal.science/tel-02005677</ext-link>.</mixed-citation></ref>
+<ref id="ref-30"><label>30.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Dalmay</surname> <given-names>P</given-names></string-name></person-group>. <source>Etude physico-chimique et m&#x00E9;canique de composites &#x00E0; matrice pl&#x00E2;tre contenant des fibres v&#x00E9;g&#x00E9;tales (These de doctorat)</source>. <publisher-loc>Limoges</publisher-loc>, <year>2009, January 1</year>. Retrieved from:<year> </year><ext-link ext-link-type="uri" xlink:href="https://www.theses.fr/2009LIMO4071">https://www.theses.fr/2009LIMO4071</ext-link>.</mixed-citation></ref>
+<ref id="ref-31"><label>31.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Fehri</surname> <given-names>M</given-names></string-name></person-group>. <source>Comportements m&#x00E9;canique et hydrique des composites renforc&#x00E9;s par des fibres naturelles et/ou conventionnelles (phdthesis)</source>. <publisher-loc>Universit&#x00E9; de Sfax (Tunisie)</publisher-loc>: <publisher-name>Normandie Universit&#x00E9; </publisher-name>; <year>2018, May 23</year>. Retrieved from:<year> </year><ext-link ext-link-type="uri" xlink:href="https://theses.hal.science/tel-01871108">https://theses.hal.science/tel-01871108</ext-link>.</mixed-citation></ref>
+<ref id="ref-32"><label>32.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>John</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Anandjiwala</surname> <given-names>RD</given-names></string-name></person-group>. <article-title>Recent developments in chemical modification and characterization of natural fiber-reinforced composites</article-title>. <source>Polym Composite</source>. <year>2008</year>;<volume>29</volume>(<issue>2</issue>):<fpage>187</fpage>&#x2013;<lpage>207</lpage>. doi:<pub-id pub-id-type="doi">10.1002/pc.20461</pub-id>.</mixed-citation></ref>
+<ref id="ref-33"><label>33.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Van de Weyenberg</surname> <given-names>I</given-names></string-name>, <string-name><surname>Chi Truong</surname> <given-names>T</given-names></string-name>, <string-name><surname>Vangrimde</surname> <given-names>B</given-names></string-name>, <string-name><surname>Verpoest</surname> <given-names>I</given-names></string-name></person-group>. <article-title>Improving the properties of UD flax fibre reinforced composites by applying an alkaline fibre treatment</article-title>. <source>Compos A: Appl Sci Manuf</source>. <year>2006</year>;<volume>37</volume>(<issue>9</issue>):<fpage>1368</fpage>&#x2013;<lpage>76</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.compositesa.2005.08.016</pub-id>.</mixed-citation></ref>
+<ref id="ref-34"><label>34.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Adekunle</surname> <given-names>KF</given-names></string-name></person-group>. <article-title>Surface treatments of natural fibres&#x2014;a review: part 1</article-title>. <source>Open J Polym Chem</source>. <year>2015</year>;<volume>05</volume>(<issue>03</issue>):<fpage>41</fpage>&#x2013;<lpage>6</lpage>. doi:<pub-id pub-id-type="doi">10.4236/ojpchem.2015.53005</pub-id>.</mixed-citation></ref>
+<ref id="ref-35"><label>35.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Baley</surname> <given-names>C</given-names></string-name>, <string-name><surname>Busnel</surname> <given-names>F</given-names></string-name>, <string-name><surname>Grohens</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Sire</surname> <given-names>O</given-names></string-name></person-group>. <article-title>Influence of chemical treatments on surface properties and adhesion of flax fibre-polyester resin</article-title>. <source>Compos-A: Appl Sci Manuf</source>. <year>2006</year>;<volume>37</volume>(<issue>10</issue>):<fpage>1626</fpage>&#x2013;<lpage>37</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.compositesa.2005.10.014</pub-id>.</mixed-citation></ref>
+<ref id="ref-36"><label>36.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Hoyos</surname> <given-names>CG</given-names></string-name>, <string-name><surname>Zuluaga</surname> <given-names>R</given-names></string-name>, <string-name><surname>Ga&#x00F1;&#x00E1;n</surname> <given-names>P</given-names></string-name>, <string-name><surname>Pique</surname> <given-names>TM</given-names></string-name>, <string-name><surname>Vazquez</surname> <given-names>A</given-names></string-name></person-group>. <article-title>Cellulose nanofibrils extracted from fique fibers as bio-based cement additive</article-title>. <source>J Clean Prod</source>. <year>2019</year>;<volume>235</volume>:<fpage>1540</fpage>&#x2013;<lpage>48</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jclepro.2019.06.292</pub-id>.</mixed-citation></ref>
+<ref id="ref-37"><label>37.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>da Costa Correia</surname> <given-names>V</given-names></string-name>, <string-name><surname>Santos</surname> <given-names>SF</given-names></string-name>, <string-name><surname>Soares Teixeira</surname> <given-names>R</given-names></string-name>, <string-name><surname>Savastano Junior</surname> <given-names>H</given-names></string-name></person-group>. <article-title>Nanofibrillated cellulose and cellulosic pulp for reinforcement of the extruded cement based materials</article-title>. <source>Constr Build Mater</source>. <year>2018</year>;<volume>160</volume>:<fpage>376</fpage>&#x2013;<lpage>84</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.conbuildmat.2017.11.066</pub-id>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

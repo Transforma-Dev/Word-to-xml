@@ -18,7 +18,7 @@ from functions import title,authors,abstract_key,heading,list_file,image_table,r
 
 #Define the function for convert a paragraph from word document
 def paragraph(para,doc,doc_filename,variables):
-    
+
     #Initialize the all variables
     xml_text=""
     math_count = 0    #Initialize math count for math equations 
@@ -83,6 +83,16 @@ def paragraph(para,doc,doc_filename,variables):
 
         run.text=run.text.replace("<","&#60;").replace("<<","&#60;&#60;")   #Replace the '<' symbol in string format
 
+        # parentheses_text = re.findall(r'\((.*?)\)',run.text)
+        # pattern = re.compile(r'(?=.*[,])(?=.*[a-zA-Z])(?=.*\d)')
+        # for i in parentheses_text:
+        #     if pattern.search(i):
+        #         if ";" in i:
+        #             variables["ref_text_link"].extend(part.strip() for part in i.split(";"))
+        #         else:
+        #             variables["ref_text_link"].append(i.strip())
+                
+                
         #Find superscript text
         if run.font.superscript and len(para.text)!=0:
             xml_text+=f'<sup>{run.text}</sup>'
@@ -234,7 +244,8 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = other_tags.noman(xml_text,variables)
 
     #Change noman tag text
-    elif variables["noman_text"] and not space_strip.lower()=="introduction" and len(para.text)!=0:
+    elif variables["noman_text"] and not "introduction" in space_strip.lower() and len(para.text)!=0:
+        # print(xml_text)
         xml_text = other_tags.noman_para(xml_text,variables)
 
     #Find heading in word document and change the tags into sec

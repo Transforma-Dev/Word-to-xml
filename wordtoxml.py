@@ -96,7 +96,8 @@ def convert():
     "copyright_state": "",    
     "abbre": False,
     "fn_start": False,
-    "noman_text": False,"noman_store": ''
+    "noman_text": False,"noman_store": '',
+    "ref_text_link":[],"ref_link_save":[]
     }
     
     try:
@@ -129,8 +130,56 @@ def convert():
                 match = re.search(r'<email>.*</email>', xml, re.IGNORECASE)
                 match = match.group() if match else None
                 xml = xml.replace("<mail>ssss@email.com</mail>",match)
-  
-    
+
+    xml = xml.split("<ref-list")
+
+    if re.findall(r'\[\d\d*\]', xml[0]):
+        parentheses_text = re.findall(r'\[(.*?)\]',xml[0])
+        for num in parentheses_text:
+            # Split the num by commas
+            split_i = num.split(",")
+            # Initialize the replacement string
+            add_xref = '['
+            for i, ref in enumerate(split_i):
+                # Add xref tags to each reference
+                add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
+                # Add comma separator if not the last reference
+                if i < len(split_i) - 1:
+                    add_xref += ','
+            # Close the num
+            add_xref += ']'
+            # Replace the original num with the new one in the XML
+            xml[0] = xml[0].replace(f'[{num}]', add_xref)
+            
+    else:
+        #Find author name and year present in xml
+        for index,i in enumerate(variables["ref_text_link"]):
+            name = i.split(",")
+            year = name[1].replace("(","").replace(")","")
+            pattern = rf'{re.escape(name[0].strip())}\,*\s*\(*{re.escape(year.strip())}'
+            match = re.findall(pattern, xml[0])
+            #Save the matched text and index in variable
+            for j in match:
+                variables["ref_link_save"].append((j,index))
+        
+        #Remove duplicates
+        variables["ref_link_save"] = list(set(variables["ref_link_save"]))
+
+        #Replace refereance text in xml
+        for j,index in variables["ref_link_save"]:
+            add_xref = f'<xref ref-type="bibr" rid="ref-{index+1}">{j}</xref>'
+            xml[0] = xml[0].replace(j,add_xref)
+        
+        # for i in variables["ref_text_link"]:
+        #     # print(i)
+        #     for j in variables["ref_link_save"]:
+        #         if i in j:
+        #             # print(i)
+        #             # print(j)
+        #             xml[0] = xml[0].replace(i,j)
+
+    xml=xml[0]+xml[1]
+
     xml+=f"</article>"
 
     #Parse the HTML with BeautifulSoup for pretty-printing

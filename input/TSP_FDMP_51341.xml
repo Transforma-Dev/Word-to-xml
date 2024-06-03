@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/jpub3-html-trans.xsl"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "D:/Localserver/Apache/htdocs/Transforma/ce_editor/Conversion/Word2HTML/DTD/jats-publishing-dtd-1.0/JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.0">
+<front>
+<journal-meta>
+<journal-id journal-id-type="pmc">FDMP</journal-id>
+<journal-id journal-id-type="nlm-ta">FDMP</journal-id>
+<journal-id journal-id-type="publisher-id">FDMP</journal-id>
+<journal-title-group>
+<journal-title>Fluid Dynamics &#x0026; Materials Processing</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1546-2226</issn>
+<issn pub-type="ppub">1555-2578</issn>
+<publisher>
+<publisher-name>Tech Science Press</publisher-name>
+<publisher-loc>USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta><!--type1-->
+<article-id pub-id-type="publisher-id">51341</article-id>
+<article-id pub-id-type="doi">10.32604/fdmp.2024.051341</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A Numerical Investigation of the Effect of Boundary Conditions on Acoustic Pressure Distribution in a Sonochemical Reactor Chamber</article-title>
+<alt-title alt-title-type="left-running-head">A Numerical Investigation of the Effect of Boundary Conditions on Acoustic Pressure Distribution in a Sonochemical Reactor Chamber</alt-title>
+<alt-title alt-title-type="right-running-head">A Numerical Investigation of the Effect of Boundary Conditions on Acoustic Pressure Distribution in a Sonochemical Reactor Chamber</alt-title>
+</title-group>
+<contrib-group content-type="authors">
+<contrib id="author-1" contrib-type="author" corresp="yes">
+<name name-style="western">
+<surname>Sboev</surname>
+<given-names>Ivan</given-names>
+</name>
+<xref ref-type="aff" rid="aff-1">1</xref>
+<email>ivan-sboev@yandex.ru</email>
+</contrib>
+<contrib id="author-2" contrib-type="author">
+<name name-style="western">
+<surname>Lyubimova</surname>
+<given-names>Tatyana</given-names>
+</name>
+<xref ref-type="aff" rid="aff-2">2</xref>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-3" contrib-type="author">
+<name name-style="western">
+<surname>Rybkin</surname>
+<given-names>Konstantin</given-names>
+</name>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<contrib id="author-4" contrib-type="author">
+<name name-style="western">
+<surname>Kuchinskiy</surname>
+<given-names>Michael</given-names>
+</name>
+<xref ref-type="aff" rid="aff-2">2</xref>
+<xref ref-type="aff" rid="aff-3">3</xref>
+</contrib>
+<aff id="aff-1"><label>1</label><institution>UEC-Aviadvigatel, 93 Komsomolsky Prospect</institution>, <addr-line>Perm, 614990</addr-line>, <country>Russia</country></aff>
+<aff id="aff-2"><label>2</label><institution>Laboratory of Computing Hydrodynamic, Institute of Continuous Media Mechanics UB RAS</institution>, <addr-line>Perm, 614013</addr-line>, <country>Russia</country></aff>
+<aff id="aff-3"><label>3</label><institution>Laboratory of Interfacial Hydrodynamic, Perm State University</institution>, <addr-line>Perm, 614068</addr-line>, <country>Russia</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1">&#x002A;Corresponding Author: Ivan Sboev. Email: ivan-<email>sboev@yandex.ru</email></corresp>
+</author-notes>
+<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-01-01">
+<day>01</day>
+<month>xxx</month>
+<year>2024</year>
+</pub-date>
+<volume>XX</volume>
+<issue>XX</issue>
+<fpage>XX</fpage>
+<lpage>XX</lpage>
+<history>
+<date date-type="received">
+<day>03</day>
+<month>3</month>
+<year>2024</year>
+</date>
+<date date-type="accepted">
+<day>14</day>
+<month>5</month>
+<year>2024</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2024 Sboev et al.</copyright-statement>
+<copyright-year>2024</copyright-year>
+<copyright-holder>Sboev et al.</copyright-holder>
+<license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+<license-p>This work is licensed under a <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="TSP_FDMP_51341.pdf"></self-uri>
+<abstract>
+<p>The intensification of physicochemical processes in the sonochemical reactor chamber is widely used in problems of synthesis, extraction and separation. One of the most important mechanisms at play in such processes is the acoustic cavitation due to the non-uniform distribution of acoustic pressure in the chamber. Cavitation has a strong impact on the surface degradation mechanisms. In this work, a numerical calculation of the acoustic pressure distribution inside the reactor chamber was performed using COMSOL Multiphysics. The numerical results have revealed the dependence of the structure of the acoustic pressure field on the boundary conditions for various thicknesses of the piezoelectric transducer. In particular, the amplitude of the acoustic pressure is minimal in the case of absorbing boundaries, and the attenuation becomes more significant as the thickness of the piezoelectric transducer increases. In addition, reflective boundaries play a significant role in the formation and distribution of zones of maximum cavitation activity.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Ultrasound</kwd>
+<kwd>numerical simulation</kwd>
+<kwd>acoustic pressure field</kwd>
+<kwd>cavitation erosion</kwd>
+<kwd>foil test</kwd>
+</kwd-group>
+</article-meta>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>Acoustic cavitation occurs in a fluid under the influence of high-frequency sound waves (ultrasound). The cavitation phenomena involves sequential expansion, compression and destruction of gas bubbles [<xref ref-type="bibr" rid="ref-1">1</xref>,<xref ref-type="bibr" rid="ref-2">2</xref>]. Acoustic cavitation in fluid occurs at amplitude of acoustic pressure corresponding to cavitation threshold [<xref ref-type="bibr" rid="ref-3">3</xref>,<xref ref-type="bibr" rid="ref-4">4</xref>]. The results of acoustic cavitation investigations are used in the designing of chambers of sonochemical reactors and also make it possible to assess the contribution of cavitation effects to the processes of synthesis, extraction and separation of various substances [<xref ref-type="bibr" rid="ref-5">5</xref>&#x2013;<xref ref-type="bibr" rid="ref-7">7</xref>].</p>
+<p>One of the most important and time-consuming tasks in an experimental study of cavitation phenomena is the development and improvement of methods for visualizing acoustic fields in the cavitation zone. Observation and systematic study of cavitation zones often require high costs and special conditions to minimize the influence of measuring equipment and negative factors on fluid parameters.</p>
+<p>One of the main methods of studying cavitation zones, which has become widespread, is considered a foil test method based on the erosion effect of aluminum foil [<xref ref-type="bibr" rid="ref-8">8</xref>,<xref ref-type="bibr" rid="ref-9">9</xref>]. It is cavitation erosion that occurs during the operation of various equipment that pushes many researchers to actively study cavitation in order to reduce noise, wear of the base material of the solid surface and reduce the risk of metal destruction [<xref ref-type="bibr" rid="ref-10">10</xref>,<xref ref-type="bibr" rid="ref-11">11</xref>]. A method based on the use of hydrophone has also become widespread. Due to the hydrophone capable of acting as a scanner, it is possible to obtain data, for example, on energy at various points of the acoustic field [<xref ref-type="bibr" rid="ref-12">12</xref>]. A significant limitation of the use of the hydrophone, in addition to its relatively high cost, is the effect of the sound receiver (microphone) on the acoustic field. As an alternative to the traditional hydrophone development of fiber-tip sensors, which have higher spatial resolution is conducted and allow to carry out measurements in limited spaces [<xref ref-type="bibr" rid="ref-13">13</xref>,<xref ref-type="bibr" rid="ref-14">14</xref>]. Despite this, the described methods are used both in the study of the evolution of cavitation zones and in the visualization of stationary acoustic fields in the cavitation zone.</p>
+<p>It is known that the propagation of ultrasonic waves in the liquid significantly affects the distribution of pressure inside the sonochemical reactor. The distribution of acoustic pressure and the location of cavitation zones is determined by many factors: external conditions, the geometry of the sonochemical reactor chamber, the physicochemical properties of the fluid, the presence of various impurities and solid particles, as well as the configuration, location and frequency of the ultrasound source. The most effective method for studying the distribution of acoustic pressure under various conditions is numerical simulation [<xref ref-type="bibr" rid="ref-15">15</xref>&#x2013;<xref ref-type="bibr" rid="ref-18">18</xref>]. Numerical simulation and experiments provide a more complete understanding of the acoustic field above the ultrasound source and a more detailed study of the pressure distribution in the cavitation zone [<xref ref-type="bibr" rid="ref-19">19</xref>&#x2013;<xref ref-type="bibr" rid="ref-22">22</xref>].</p>
+<p>In this work, the structure of the steady-state acoustic pressure field in the sonochemical reactor chamber is studied numerically. The influence of the piezoelectric transducer configuration and boundary conditions on the distribution of acoustic pressure in the fluid is studied. Comparison of the data on the location of cavitation zones obtained in the experiment by the foil test method and the structure of the simulated acoustic field in the fluid is carried out.</p>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Methodology</title>
+<p>The steady-state acoustic field is simulated using the Finite Element Method (FEM). The geometry of the sonochemical reactor chamber is shown schematically in <?A3B2 "fig1",5,"anchor"?><xref ref-type="fig" rid="fig-1">Fig. 1</xref>. The dimensions of the camera are 160 &#x00D7; 110 &#x00D7; 116 mm<sup>3</sup>. The bottom and side surface of the chamber were assumed to be solid (Plexiglas-water boundary). The top of the chamber was assumed to be open (water-air boundary). A three-dimensional reactor chamber is considered to approach the conditions of the full-scale experiment [<xref ref-type="bibr" rid="ref-23">23</xref>].</p>
+<fig id="fig-1">
+<label>Figure 1</label>
+<caption>
+<title>Geometry setup of the model. In the figure, <italic>z</italic><sub><italic>max</italic></sub> &#x003D; 17.5 mm is the coordinate of the local maximum acoustic pressure <italic>p</italic><sub><italic>max</italic></sub> above the emitter</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-1.tif"/>
+</fig>
+<p>Sound waves in the fluid domain are generated by the surface of a thin brass membrane, which in turn oscillates under the action of a piezoelectric transducer (<xref ref-type="fig" rid="fig-1">Fig. 1</xref>). This membrane with a diameter of <italic>d</italic><sub><italic>1</italic></sub> &#x003D; 88 mm and a thickness of <italic>h</italic><sub><italic>1</italic></sub> &#x003D; 0.4 mm contacts the bottom of the sonochemical reactor chamber. At the same time, the membrane contacts a piezoelectric transducer with a diameter of <italic>d</italic><sub><italic>2</italic></sub> &#x003D; 62 mm located below. The thickness of the piezoelectric transducer <italic>h</italic><sub><italic>2</italic></sub> is 0.25; 0.40; 0.80; 1.0; 1.25; 2.5 and 5.0 mm.</p>
+<p>The piezoelectric transducer material is PZT-5H which is a type of lead zirconate titanate piezoceramics (PZT). The basic properties of brass and PZT-5H are shown in <?A3B2 "tbl1",5,"anchor"?><xref ref-type="table" rid="table-1">Tables 1</xref> and <?A3B2 "tbl2",5,"anchor"?><xref ref-type="table" rid="table-2">2</xref>.</p>
+<table-wrap id="table-1">
+<label>Table 1</label>
+<caption>
+<title>Basic properties of brass membrane</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-1.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">Brass membrane</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Density, <inline-formula id="ieqn-1"><alternatives><inline-graphic xlink:href="ieqn-1.tif"/><tex-math id="tex-ieqn-1"><![CDATA[
+\rho
+]]></tex-math><mml:math id="mml-ieqn-1"><mml:mi>&#x03C1;</mml:mi></mml:math></alternatives></inline-formula></td>
+<td>8.9&#x00B7;10<sup>3</sup> kg/m<sup>3</sup></td>
+</tr>
+<tr>
+<td>Young&#x2019;s modulus, <italic>E</italic><sub>d</sub>,</td>
+<td>1.0&#x00B7;10<sup>2</sup> GPa</td>
+</tr>
+<tr>
+<td>Poisson&#x2019;s ratio, &#x03BD;<sub>d</sub></td>
+<td>0.3</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="table-2">
+<label>Table 2</label>
+<caption>
+<title>Basic properties of PZT-5H</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-2.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2">PZT-5H</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Density, <inline-formula id="ieqn-2"><alternatives><inline-graphic xlink:href="ieqn-2.tif"/><tex-math id="tex-ieqn-2"><![CDATA[
+\rho
+]]></tex-math><mml:math id="mml-ieqn-2"><mml:mi>&#x03C1;</mml:mi></mml:math></alternatives></inline-formula></td>
+<td>7.5&#x00B7;10<sup>3</sup> kg/m<sup>3</sup></td>
+</tr>
+<tr>
+<td>Heat capacity (constant pressure), <italic>C</italic><sub><italic>p</italic></sub></td>
+<td>4.4&#x00B7;10<sup>2</sup> J/(kg&#x00B7;K)</td>
+</tr>
+<tr>
+<td>Thermal conductivity, &#x03B1;</td>
+<td>1.3 W/(m&#x00B7;K)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The fluid domain is filled with water with parameters at a temperature of <italic>T</italic><sub><italic>0</italic></sub> &#x003D; 293 K and a pressure of <italic>p</italic><sub><italic>0</italic></sub> &#x003D; 10<sup>5</sup> Pa. The water density is <inline-formula id="ieqn-3"><alternatives><inline-graphic xlink:href="ieqn-3.tif"/><tex-math id="tex-ieqn-3"><![CDATA[
+\rho
+]]></tex-math><mml:math id="mml-ieqn-3"><mml:mi>&#x03C1;</mml:mi></mml:math></alternatives></inline-formula> &#x003D; 1.0&#x00B7;10<sup>3</sup> kg/m<sup>3</sup>, and the sound wave velocity is <italic>&#x0441;</italic> &#x003D; 1.5&#x00B7;10<sup>3</sup> m/s. Attenuation of sound waves in water is characterized by attenuation coefficient <italic>&#x03B1;</italic> &#x003D; 1.3 Np/m. In this paper, the effect of convection and acoustic flow on the distribution of sound pressure in the liquid is not considered.</p>
+<p>Simulation of the steady-state sound field in the water taking into account the interaction at the interfaces of the water, membrane and piezoelectric transducer. The calculation of stresses and deformations in the membrane is carried out together with the electric field in the piezoelectric transducer, which are also time-harmonic.</p>
+<sec id="s2_1">
+<label>2.1</label>
+<title>Acoustic Pressure Field (Fluid Domain)</title>
+<p>The isentropic case is assumed, where the total change in entropy is zero and pressure is only a function of density. In addition, the case of an ideal fluid (water) is considered without taking into account the external mass force (gravity). Thus, taking into account the Fourier transform, the Helmoltz wave equation in the frequency domain is used in terms of the total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub>. The Helmholtz wave equation assumes a spatial constant sound velocity <italic>c</italic><sub><italic>0</italic></sub> and an average density of <italic>&#x03C1;</italic> [<xref ref-type="bibr" rid="ref-24">24</xref>].
+<disp-formula id="eqn-1">
+<label>(1)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-1.tif"/><tex-math id="tex-eqn-1"><![CDATA[
+\nabla \cdot \left( { - \displaystyle{1 \over \rho }\left( {\nabla {p_t}} \right)} \right) - \displaystyle{{{\omega ^2}} \over {\rho {{\rm c}^2}}}{p_t} = 0
+]]></tex-math><mml:math id="mml-eqn-1" display="block"><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mstyle displaystyle="true" scriptlevel="0"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mi>&#x03C1;</mml:mi></mml:mfrac></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mstyle></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mstyle displaystyle="true" scriptlevel="0"><mml:mrow><mml:mfrac><mml:mrow><mml:mrow><mml:msup><mml:mi>&#x03C9;</mml:mi><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mrow><mml:mrow><mml:mi>&#x03C1;</mml:mi><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">c</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:mstyle></mml:math>
+</alternatives></disp-formula>where &#x03C1; is the water density, c is the sound velocity in the water. It is assumed that the acoustic pressure in the water varies linearly with an angular frequency of &#x03C9; &#x003D; 2&#x03C0;<italic>f</italic>. The attenuation of the sound wave associated with the occurrence of cavitation gas bubbles and thermo-viscous processes in the water [<xref ref-type="bibr" rid="ref-25">25</xref>] is not taken into account in this work.</p>
+<p>The interaction of a sound wave with a side boundary depends on whether the boundary is &#x201C;sound hard&#x201D; or &#x201C;sound soft&#x201D; free or closed. For an incident sound wave on a &#x201C;sound hard&#x201D; boundary, there is no normal velocity of water particles, i.e., <inline-formula id="ieqn-4"><alternatives><inline-graphic xlink:href="ieqn-4.tif"/><tex-math id="tex-ieqn-4"><![CDATA[
+\vec n \cdot \vec u = 0
+]]></tex-math><mml:math id="mml-ieqn-4"><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mover><mml:mi>u</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:math></alternatives></inline-formula>. At the &#x201C;sound soft&#x201D; boundary, the sound pressure in the water is set equal to the initial pressure p<sub>0</sub>, or taken equal to <italic>p</italic> &#x003D; 0. Therefore, different types of boundary conditions are modeled depending on the behavior of sound waves at the boundary (<?A3B2 "tbl3",5,"anchor"?><xref ref-type="table" rid="table-3">Table 3</xref>).</p>
+<table-wrap id="table-3">
+<label>Table 3</label>
+<caption>
+<title>Types of simulated boundary conditions</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-3.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th rowspan="2">Top: <italic>Z</italic> &#x003D; 160 mm</th>
+<th>1) Side: <italic>X</italic> &#x003D; &#x00B1;55 mm, <italic>Y</italic> &#x003D; &#x00B1;58 mm;</th>
+</tr>
+<tr>
+<th>2) Bottom and outside the membrane domain: <italic>Z</italic> &#x003D; 0 mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><italic>Type 1</italic></td>
+<td>Sound soft boundary (SSB)</td>
+<td>Sound hard boundary (SHB)</td>
+</tr>
+<tr>
+<td><italic>Type 2</italic></td>
+<td>Impedance</td>
+<td>Sound hard boundary (SHB)</td>
+</tr>
+<tr>
+<td><italic>Type 3</italic></td>
+<td>Impedance</td>
+<td>Plane wave radiation (PWR)</td>
+</tr>
+<tr>
+<td><italic>Type 4</italic></td>
+<td>Impedance</td>
+<td>Impedance</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<sec id="s2_1_1">
+<label>2.1.1</label>
+<title>Type 1</title>
+<p>The top of the fluid domain (<italic>Z</italic> &#x003D; 160 mm) is set to the Sound Soft Boundary (&#x201C;SSB&#x201D;) condition:
+<disp-formula id="eqn-2">
+<label>(2)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-2.tif"/><tex-math id="tex-eqn-2"><![CDATA[
+{p_t} = 0
+]]></tex-math><mml:math id="mml-eqn-2" display="block"><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:math>
+</alternatives></disp-formula></p>
+
+
+<p>This condition corresponds to a 180&#x00B0; phase shift of the sound wave at ideal reflection. In this case the acoustic impedance gets zero at the boundary.</p>
+<p>At the side wall (<italic>X</italic> &#x003D; &#x00B1;55 mm, <italic>Y</italic> &#x003D; &#x00B1;58 mm) and bottom (<italic>Z</italic> &#x003D; 0 (outside the membrane domain)) the Sound Hard Boundary (&#x201C;SHB&#x201D;) condition is set [<xref ref-type="bibr" rid="ref-24">24</xref>]:
+<disp-formula id="eqn-3">
+<label>(3)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-3.tif"/><tex-math id="tex-eqn-3"><![CDATA[
+\displaystyle{{\partial {p_t}} \over {\partial \vec n}} = 0
+]]></tex-math><mml:math id="mml-eqn-3" display="block"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:mstyle></mml:math>
+</alternatives></disp-formula>where <inline-formula id="ieqn-5"><alternatives><inline-graphic xlink:href="ieqn-5.tif"/><tex-math id="tex-ieqn-5"><![CDATA[
+\vec n
+]]></tex-math><mml:math id="mml-ieqn-5"><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the normal vector to the wall.</p>
+<p>The reflection coefficient at the boundary is 1 (total reflection), which corresponds to the infinite impedance at the boundary. This condition also means that the normal derivative of the total acoustic pressure is 0 at the surface. Under this condition, the incident and reflected sound waves have the same phase [<xref ref-type="bibr" rid="ref-26">26</xref>].</p>
+</sec>
+<sec id="s2_1_2">
+<label>2.1.2</label>
+<title>Type 2</title>
+<p>At the bottom (<italic>Z</italic> &#x003D; 0 (outside the membrane domain)) and at the side wall (<italic>X</italic> &#x003D; &#x00B1;55 mm, <italic>Y</italic> &#x003D; &#x00B1;58 mm), the &#x201C;SHB&#x201D; condition is set. At the top (<italic>Z</italic> &#x003D; 160 mm) the &#x201C;Impedance&#x201D; condition is set [<xref ref-type="bibr" rid="ref-27">27</xref>]:
+<disp-formula id="eqn-4">
+<label>(4)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-4.tif"/><tex-math id="tex-eqn-4"><![CDATA[
+\displaystyle{1 \over \rho }\displaystyle{{\partial {p_t}} \over {\partial \vec n}} = - \displaystyle{{i\omega {p_t}} \over {{Z_1}}}
+]]></tex-math><mml:math id="mml-eqn-4" display="block"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mi>&#x03C1;</mml:mi></mml:mfrac></mml:mrow><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>i</mml:mi><mml:mi>&#x03C9;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mi>Z</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:mrow></mml:mfrac></mml:mrow></mml:mstyle></mml:mstyle></mml:mstyle></mml:math>
+</alternatives></disp-formula></p>
+
+
+<p>This condition implies that the top boundary is the water-air interface, which is characterized by the acoustic impedance <italic>Z</italic><sub><italic>1</italic></sub>. The acoustic impedance denotes the ratio between the local pressure and the local normal particle velocity. The impedance boundary condition in this case is a good approximation of the locally reacting surface, for which the normal velocity at any point depends only on the pressure at this exact point. For example, an acoustic impedance of air is <italic>Z</italic><sub><italic>1</italic></sub> &#x003D; 412 Pa&#x00B7;s/m (density 1.2 kg/m<sup>3</sup>, sound wave velocity 343 m/s).</p>
+</sec>
+<sec id="s2_1_3">
+<label>2.1.3</label>
+<title>Type 3</title>
+<p>The top of the fluid domain (<italic>Z</italic> &#x003D; 160 mm) is set to the &#x201C;Impedance&#x201D; condition. The side wall (<italic>X</italic> &#x003D; &#x00B1;55 mm, <italic>Y</italic> &#x003D; &#x00B1;58 mm) and bottom (<italic>Z</italic> &#x003D; 0 (outside the membrane domain)) are assumed to be non-reflective, where the Plane Wave Radiation (&#x201C;PWR&#x201D;) condition is set [<xref ref-type="bibr" rid="ref-28">28</xref>]:
+<disp-formula id="eqn-5">
+<label>(5)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-5.tif"/><tex-math id="tex-eqn-5"><![CDATA[
+\displaystyle{{\partial {p_t}} \over {\partial \vec n}} = - ik{p_t}
+]]></tex-math><mml:math id="mml-eqn-5" display="block"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mi>i</mml:mi><mml:mi>k</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mstyle></mml:math>
+</alternatives></disp-formula>where <inline-formula id="ieqn-6"><alternatives><inline-graphic xlink:href="ieqn-6.tif"/><tex-math id="tex-ieqn-6"><![CDATA[
+k = \displaystyle{\omega \over c} - i\alpha
+]]></tex-math><mml:math id="mml-ieqn-6"><mml:mi>k</mml:mi><mml:mo>&#x003D;</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mi>&#x03C9;</mml:mi><mml:mi>c</mml:mi></mml:mfrac></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mi>i</mml:mi><mml:mi>&#x03B1;</mml:mi></mml:mstyle></mml:math></alternatives></inline-formula>&#x2013;complex wave number with regard to attenuation, &#x03B1;&#x2013;attenuation coefficient.</p>
+<p>This condition corresponds to a non-reflective (absorbing) walls that allows the outgoing plane wave to leave the fluid domain with minimal reflections when the incident angle is close to normal.</p>
+</sec>
+<sec id="s2_1_4">
+<label>2.1.4</label>
+<title>Type 4</title>
+<p>The top of the fluid domain (<italic>Z</italic> &#x003D; 160 mm) is set to the &#x201C;Impedance&#x201D; condition (<xref ref-type="disp-formula" rid="eqn-4">Eq. (4)</xref>).</p>
+<p>The bottom (<italic>Z</italic> &#x003D; 0 (outside the membrane domain)) and side wall (<italic>X</italic> &#x003D; &#x00B1;55 mm, <italic>Y</italic> &#x003D; &#x00B1;58 mm) of the chamber are characterized by acoustic impedance <italic>Z</italic><sub><italic>2</italic></sub> &#x003D; 3.24&#x00B7;10<sup>6</sup> Pa&#x00B7;s/m (the density of plexiglass is 1.2&#x00B7;10<sup>3</sup> kg/m<sup>3</sup>, sound wave velocity 2.7&#x00B7;10<sup>3</sup> m/s [<xref ref-type="bibr" rid="ref-23">23</xref>,<xref ref-type="bibr" rid="ref-29">29</xref>]):
+<disp-formula id="eqn-6">
+<label>(6)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-6.tif"/><tex-math id="tex-eqn-6"><![CDATA[
+\displaystyle{1 \over \rho }\displaystyle{{\partial {p_t}} \over {\partial \vec n}} = - \displaystyle{{i\omega {p_t}} \over {{Z_2}}}
+]]></tex-math><mml:math id="mml-eqn-6" display="block"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mi>&#x03C1;</mml:mi></mml:mfrac></mml:mrow><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>i</mml:mi><mml:mi>&#x03C9;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mi>Z</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:mrow></mml:mfrac></mml:mrow></mml:mstyle></mml:mstyle></mml:mstyle></mml:math>
+</alternatives></disp-formula></p>
+
+
+</sec>
+</sec>
+<sec id="s2_2">
+<label>2.2</label>
+<title>Displacement, Stress and Deformation (Brass Membrane Domain)</title>
+<p>Solid Mechanics module is used to simulate mechanical stresses and strain in a membrane (<xref ref-type="fig" rid="fig-1">Fig. 1</xref>). The position of the solid particles is described by the Cauchy stress tensor &#x03C3; in the approximation of an isotropic linear elastic medium:
+<disp-formula id="eqn-7">
+<label>(7)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-7.tif"/><tex-math id="tex-eqn-7"><![CDATA[
+{\rm \rho }\displaystyle{{{\partial ^2}{\rm \vec u}} \over {\partial {{\rm t}^2}}} = \nabla \sigma + \overrightarrow {{f_V}}
+]]></tex-math><mml:math id="mml-eqn-7" display="block"><mml:mrow><mml:mi>&#x03C1;</mml:mi></mml:mrow><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mrow><mml:mfrac><mml:mrow><mml:mrow><mml:msup><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mrow><mml:mrow><mml:mover><mml:mi mathvariant="normal">u</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">t</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mi>&#x03C3;</mml:mi><mml:mo>&#x002B;</mml:mo><mml:mover><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>V</mml:mi></mml:msub></mml:mrow><mml:mo>&#x2192;</mml:mo></mml:mover></mml:mstyle></mml:math>
+</alternatives></disp-formula>where <italic>&#x03C1;</italic> is density of membrane material in undeformed state, <inline-formula id="ieqn-7"><alternatives><inline-graphic xlink:href="ieqn-7.tif"/><tex-math id="tex-ieqn-7"><![CDATA[
+\vec u
+]]></tex-math><mml:math id="mml-ieqn-7"><mml:mrow><mml:mover><mml:mi>u</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is vector of structural displacement, <inline-formula id="ieqn-8"><alternatives><inline-graphic xlink:href="ieqn-8.tif"/><tex-math id="tex-ieqn-8"><![CDATA[
+\overrightarrow {{f_V}}
+]]></tex-math><mml:math id="mml-ieqn-8"><mml:mover><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>V</mml:mi></mml:msub></mml:mrow><mml:mo>&#x2192;</mml:mo></mml:mover></mml:math></alternatives></inline-formula> is vector of volumetric force acting on unit of deformed volume. Thermal losses in the membrane material during deformation are not taken into account.</p>
+<p>At the side boundary of the membrane (<italic>X</italic> &#x003D; &#x00B1;<italic>d</italic><sub><italic>1</italic></sub>/2), the condition <inline-formula id="ieqn-9"><alternatives><inline-graphic xlink:href="ieqn-9.tif"/><tex-math id="tex-ieqn-9"><![CDATA[
+\vec u
+]]></tex-math><mml:math id="mml-ieqn-9"><mml:mrow><mml:mover><mml:mi>u</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> &#x003D; 0 is set.</p>
+<p>The relationship between the total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> in the fluid domain (Pressure Acoustic module) with structural acceleration <inline-formula id="ieqn-10"><alternatives><inline-graphic xlink:href="ieqn-10.tif"/><tex-math id="tex-ieqn-10"><![CDATA[
+\vec a
+]]></tex-math><mml:math id="mml-ieqn-10"><mml:mrow><mml:mover><mml:mi>a</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> in the membrane domain (Solid Mechanics module) is set using the Acoustic-Structure Boundary module. The interaction between the water and the membrane on the contact surface (<italic>Z</italic> &#x003D; 0) is described by the following system of equations:
+<disp-formula id="eqn-8">
+<label>(8)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-8.tif"/><tex-math id="tex-eqn-8"><![CDATA[
+\displaystyle{1 \over \rho }\displaystyle{{\partial {p_t}} \over {\partial \vec n}} = - \vec n\cdot \vec a
+]]></tex-math><mml:math id="mml-eqn-8" display="block"><mml:mstyle displaystyle="true" scriptlevel="0"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mi>&#x03C1;</mml:mi></mml:mfrac></mml:mrow><mml:mstyle displaystyle="true" scriptlevel="0"><mml:mrow><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mover><mml:mi>a</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mstyle></mml:mstyle></mml:math>
+</alternatives></disp-formula>
+<disp-formula id="eqn-9">
+<label>(9)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-9.tif"/><tex-math id="tex-eqn-9"><![CDATA[
+\overrightarrow {{f_A}} = {p_t}\vec n
+]]></tex-math><mml:math id="mml-eqn-9" display="block"><mml:mover><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>A</mml:mi></mml:msub></mml:mrow><mml:mo>&#x2192;</mml:mo></mml:mover><mml:mo>&#x003D;</mml:mo><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math>
+</alternatives></disp-formula>where <inline-formula id="ieqn-11"><alternatives><inline-graphic xlink:href="ieqn-11.tif"/><tex-math id="tex-ieqn-11"><![CDATA[
+\vec n
+]]></tex-math><mml:math id="mml-ieqn-11"><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the normal vector to the contact surface, <inline-formula id="ieqn-12"><alternatives><inline-graphic xlink:href="ieqn-12.tif"/><tex-math id="tex-ieqn-12"><![CDATA[
+\overrightarrow {{f_A}}
+]]></tex-math><mml:math id="mml-ieqn-12"><mml:mover><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>A</mml:mi></mml:msub></mml:mrow><mml:mo>&#x2192;</mml:mo></mml:mover></mml:math></alternatives></inline-formula> is the stress (force per unit area) experienced by the membrane from the water side.</p>
+</sec>
+<sec id="s2_3">
+<label>2.3</label>
+<title>Electric Field, Electric Displacement Field and Potential Distribution (Piezoceramic Domain)</title>
+<p>To simulate the distribution of an electric field in a piezoelectric plate (<xref ref-type="fig" rid="fig-1">Fig. 1a</xref>) the Electrostatics module is used. The relationship between the electric field and the electric potential &#x03C6; is represented in the form of Gauss&#x2019;s law:
+<disp-formula id="eqn-10">
+<label>(10)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-10.tif"/><tex-math id="tex-eqn-10"><![CDATA[
+\nabla \cdot \left( {{\varepsilon _0}{\varepsilon _r}\vec E} \right) = {\rho _v}
+]]></tex-math><mml:math id="mml-eqn-10" display="block"><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x03B5;</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mi>&#x03B5;</mml:mi><mml:mi>r</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mover><mml:mi>E</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mrow><mml:msub><mml:mi>&#x03C1;</mml:mi><mml:mi>v</mml:mi></mml:msub></mml:mrow></mml:math>
+</alternatives></disp-formula>
+<disp-formula id="eqn-11">
+<label>(11)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-11.tif"/><tex-math id="tex-eqn-11"><![CDATA[
+\vec E = - \nabla \varphi
+]]></tex-math><mml:math id="mml-eqn-11" display="block"><mml:mrow><mml:mover><mml:mi>E</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mo>&#x2212;</mml:mo><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mi>&#x03C6;</mml:mi></mml:math>
+</alternatives></disp-formula>where <inline-formula id="ieqn-13"><alternatives><inline-graphic xlink:href="ieqn-13.tif"/><tex-math id="tex-ieqn-13"><![CDATA[
+\vec E
+]]></tex-math><mml:math id="mml-ieqn-13"><mml:mrow><mml:mover><mml:mi>E</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the electric field strength, <inline-formula id="ieqn-14"><alternatives><inline-graphic xlink:href="ieqn-14.tif"/><tex-math id="tex-ieqn-14"><![CDATA[
+{\varepsilon _0}
+]]></tex-math><mml:math id="mml-ieqn-14"><mml:mrow><mml:msub><mml:mi>&#x03B5;</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> is the electric constant, <inline-formula id="ieqn-15"><alternatives><inline-graphic xlink:href="ieqn-15.tif"/><tex-math id="tex-ieqn-15"><![CDATA[
+{\varepsilon _r}
+]]></tex-math><mml:math id="mml-ieqn-15"><mml:mrow><mml:msub><mml:mi>&#x03B5;</mml:mi><mml:mi>r</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> is the electric permeability of the brass, the <inline-formula id="ieqn-16"><alternatives><inline-graphic xlink:href="ieqn-16.tif"/><tex-math id="tex-ieqn-16"><![CDATA[
+\rho
+]]></tex-math><mml:math id="mml-ieqn-16"><mml:mi>&#x03C1;</mml:mi></mml:math></alternatives></inline-formula> is the bulk density of the electric charge, and <italic>&#x03C6;</italic> is the scalar electric potential.</p>
+<p>At the side boundary of the piezoelectric transducer (<italic>X</italic> &#x003D; &#x00B1;<italic>d</italic><sub><italic>2</italic></sub>/2) zero charge is set
+<disp-formula id="eqn-12">
+<label>(12)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-12.tif"/><tex-math id="tex-eqn-12"><![CDATA[
+\vec n \cdot \vec D = 0
+]]></tex-math><mml:math id="mml-eqn-12" display="block"><mml:mrow><mml:mover><mml:mi>n</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mover><mml:mi>D</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:math>
+</alternatives></disp-formula></p>
+
+
+
+<p>At the bottom of the piezoelectric transducer (<italic>Z</italic> &#x003D; &#x2212;(<italic>h</italic><sub><italic>1</italic></sub> &#x002B; <italic>h</italic><sub><italic>2</italic></sub>)) the zero potential is set
+<disp-formula id="eqn-13">
+<label>(13)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-13.tif"/><tex-math id="tex-eqn-13"><![CDATA[
+\varphi = 0
+]]></tex-math><mml:math id="mml-eqn-13" display="block"><mml:mi>&#x03C6;</mml:mi><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:math>
+</alternatives></disp-formula></p>
+
+<p>On the contact surface of the membrane and the piezoelectric transducer (<italic>Z</italic> &#x003D; &#x2212;<italic>h</italic><sub><italic>1</italic></sub>), an AC electric potential is set <italic>&#x03C6;</italic> &#x003D; <italic>&#x03C6;</italic><sub><italic>0</italic></sub>, which is called the exciting voltage <italic>V</italic><sub><italic>0</italic></sub>. This electric potential value, also called the excitation voltage <italic>V</italic><sub><italic>0</italic></sub>, determines the amplitude of the sound wave to be excited. Excitation voltage is taken equal to <italic>V</italic><sub><italic>0</italic></sub> &#x003D; 5.0 V.</p>
+</sec>
+<sec id="s2_4">
+<label>2.4</label>
+<title>Piezoelectric Effect (PZT-5H Domain)</title>
+<p>The piezoelectric effect in the PZT-5H domain is considered in terms of linear piezoelectric material [<xref ref-type="bibr" rid="ref-30">30</xref>]:
+<disp-formula id="eqn-14">
+<label>(14)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-14.tif"/><tex-math id="tex-eqn-14"><![CDATA[
+\vec T = {c^E}\vec S - {e^t}\vec E
+]]></tex-math><mml:math id="mml-eqn-14" display="block"><mml:mrow><mml:mover><mml:mi>T</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mrow><mml:msup><mml:mi>c</mml:mi><mml:mi>E</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mover><mml:mi>E</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math>
+</alternatives></disp-formula>
+<disp-formula id="eqn-15">
+<label>(15)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-15.tif"/><tex-math id="tex-eqn-15"><![CDATA[
+\vec D = e\vec S - {\varepsilon ^S}\vec E
+]]></tex-math><mml:math id="mml-eqn-15" display="block"><mml:mrow><mml:mover><mml:mi>D</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mi>e</mml:mi><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mrow><mml:msup><mml:mi>&#x03B5;</mml:mi><mml:mi>S</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mover><mml:mi>E</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math>
+</alternatives></disp-formula>where <inline-formula id="ieqn-17"><alternatives><inline-graphic xlink:href="ieqn-17.tif"/><tex-math id="tex-ieqn-17"><![CDATA[
+\vec T
+]]></tex-math><mml:math id="mml-ieqn-17"><mml:mrow><mml:mover><mml:mi>T</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the stress, <inline-formula id="ieqn-18"><alternatives><inline-graphic xlink:href="ieqn-18.tif"/><tex-math id="tex-ieqn-18"><![CDATA[
+\vec S
+]]></tex-math><mml:math id="mml-ieqn-18"><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the strain, <inline-formula id="ieqn-19"><alternatives><inline-graphic xlink:href="ieqn-19.tif"/><tex-math id="tex-ieqn-19"><![CDATA[
+\vec E
+]]></tex-math><mml:math id="mml-ieqn-19"><mml:mrow><mml:mover><mml:mi>E</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the electric field at each point of the piezoelectric material, at each moment in time, and <inline-formula id="ieqn-20"><alternatives><inline-graphic xlink:href="ieqn-20.tif"/><tex-math id="tex-ieqn-20"><![CDATA[
+\vec D
+]]></tex-math><mml:math id="mml-ieqn-20"><mml:mrow><mml:mover><mml:mi>D</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:math></alternatives></inline-formula> is the charge density displacement vector. The superscript <italic>t</italic> denotes the transpose and <inline-formula id="ieqn-21"><alternatives><inline-graphic xlink:href="ieqn-21.tif"/><tex-math id="tex-ieqn-21"><![CDATA[
+{c^E}
+]]></tex-math><mml:math id="mml-ieqn-21"><mml:mrow><mml:msup><mml:mi>c</mml:mi><mml:mi>E</mml:mi></mml:msup></mml:mrow></mml:math></alternatives></inline-formula> is the stiffness or elasticity matrix, <inline-formula id="ieqn-22"><alternatives><inline-graphic xlink:href="ieqn-22.tif"/><tex-math id="tex-ieqn-22"><![CDATA[
+{\varepsilon ^S}
+]]></tex-math><mml:math id="mml-ieqn-22"><mml:mrow><mml:msup><mml:mi>&#x03B5;</mml:mi><mml:mi>S</mml:mi></mml:msup></mml:mrow></mml:math></alternatives></inline-formula> is the dielectric matrix and <italic>e</italic> the electromechanical coupling term.</p>
+<p>The dynamics of the piezoelectric material are determined from Newton&#x2019;s second law:
+<disp-formula id="eqn-16">
+<label>(16)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-16.tif"/><tex-math id="tex-eqn-16"><![CDATA[
+{\rm \rho }\displaystyle{{{\partial ^2}{\rm \vec u}} \over {\partial {{\rm t}^2}}} = \nabla \cdot \vec T
+]]></tex-math><mml:math id="mml-eqn-16" display="block"><mml:mrow><mml:mi>&#x03C1;</mml:mi></mml:mrow><mml:mstyle displaystyle="true" scriptlevel="0"><mml:mrow><mml:mfrac><mml:mrow><mml:mrow><mml:msup><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mrow><mml:mrow><mml:mover><mml:mi mathvariant="normal">u</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">&#x2202;</mml:mi><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">t</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mover><mml:mi>T</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow></mml:mstyle></mml:math>
+</alternatives></disp-formula></p>
+
+
+<p>In the absence of sources or sinks of charge
+<disp-formula id="eqn-17">
+<label>(17)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-17.tif"/><tex-math id="tex-eqn-17"><![CDATA[
+\nabla \cdot \vec D = 0
+]]></tex-math><mml:math id="mml-eqn-17" display="block"><mml:mi mathvariant="normal">&#x2207;</mml:mi><mml:mo>&#x22C5;</mml:mo><mml:mrow><mml:mover><mml:mi>D</mml:mi><mml:mo stretchy="false">&#x2192;</mml:mo></mml:mover></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mn>0</mml:mn></mml:math>
+</alternatives></disp-formula></p>
+
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Mesh</title>
+<p>Unstructured mesh with elements in the form of tetrahedra was used for numerical simulation. The parametric study of the mesh is based on the analysis of the convergence of the maximum acoustic pressure <italic>p</italic><sub><italic>max</italic></sub> at <italic>z</italic><sub><italic>max</italic></sub> &#x003D; 17.5 mm above the brass membrane (<xref ref-type="fig" rid="fig-1">Fig. 1</xref>) and the dependence of <italic>p</italic><sub><italic>max</italic></sub> on the mesh elements size &#x0394; and the number of mesh elements <italic>N</italic>. The number of elements <italic>N</italic> was set manually for the fluid domain, brass membrane domain, and PZT-5H domain. Each domain was characterized by the number of elements <italic>m</italic> per height (thickness) of the domain. Mesh resolution increased near the edges of the membrane.</p>
+<p>In the fluid domain (<xref ref-type="fig" rid="fig-1">Fig. 1</xref>) the number of elements per height was set to <italic>m</italic><sub>1</sub> &#x003D; 75. The maximum mesh element size &#x0394;<sub>max</sub> is determined based on the number of mesh elements per wavelength &#x03BB;:
+<disp-formula id="eqn-18">
+<label>(18)</label>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="eqn-18.tif"/><tex-math id="tex-eqn-18"><![CDATA[
+{{\rm \Delta}_{max}}{\rm \; } = {\rm \; \lambda }/n\; = c/\left( {f\cdot n} \right)
+]]></tex-math><mml:math id="mml-eqn-18" display="block"><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="normal">&#x0394;</mml:mi></mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mspace width="thickmathspace"></mml:mspace></mml:mrow><mml:mo>&#x003D;</mml:mo><mml:mrow><mml:mspace width="thickmathspace"></mml:mspace><mml:mi>&#x03BB;</mml:mi></mml:mrow><mml:mrow><mml:mo>/</mml:mo></mml:mrow><mml:mi>n</mml:mi><mml:mspace width="thickmathspace"></mml:mspace><mml:mo>&#x003D;</mml:mo><mml:mi>c</mml:mi><mml:mrow><mml:mo>/</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>f</mml:mi><mml:mo>&#x22C5;</mml:mo><mml:mi>n</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:math>
+</alternatives></disp-formula></p>
+
+<p>Based on the parametric study, the most optimal value <italic>n</italic> &#x003D; 6 is determined which corresponds to &#x0394;<sub>1max</sub> &#x003D; 6.3 mm. The minimum mesh element size is &#x0394;<sub>1min</sub> &#x003D; 0.24 mm. The total number of mesh elements is <italic>N</italic><sub>1</sub> &#x003D; 167700.</p>
+<p>In the brass membrane domain (<xref ref-type="fig" rid="fig-1">Fig. 1</xref>) the number of elements per height was set to <italic>m</italic><sub>2</sub> &#x003D; 5. The maximum mesh element size is &#x0394;<sub><italic>2max</italic></sub> &#x003D; 3.23 mm. The minimum mesh element size is &#x0394;<sub><italic>2min</italic></sub> &#x003D; 0.032 mm. The total number of mesh elements is <italic>N</italic><sub>2</sub> &#x003D; 7740.</p>
+<p>In the PZT-5H domain (<xref ref-type="fig" rid="fig-1">Fig. 1</xref>) the number of elements per height was set to <italic>m</italic><sub>3</sub> &#x003D; 5. The maximum mesh element size is &#x0394;<sub><italic>3max</italic></sub> &#x003D; 3.23 mm. The minimum mesh element size is &#x0394;<sub><italic>3min</italic></sub> &#x003D; 0.032 mm. The total number of mesh elements is <italic>N</italic><sub>3</sub> &#x003D; 4040.</p>
+<p>User-controlled mesh was used to study the acoustic pressure distribution in the reactor chamber (<?A3B2 "fig2",5,"anchor"?><xref ref-type="fig" rid="fig-2">Fig. 2</xref>).</p>
+<fig id="fig-2">
+<label>Figure 2</label>
+<caption>
+<title>Unstructured tetrahedral user-controlled mesh</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-2.tif"/>
+</fig>
+<p>The mesh was also tested in the emitter region. The distribution of internal stresses during membrane deformation (brass membrane domain in <xref ref-type="fig" rid="fig-1">Fig. 1</xref>) as well as the electrical potential within the piezoelectric transducer (PZT-5H domain in <xref ref-type="fig" rid="fig-1">Fig. 1</xref>). The distribution of stresses and electrical potential for each domain was considered at <italic>Y</italic> &#x003D; 0.</p>
+<p>The distribution of stress tensor &#x03C3; along <italic>Z</italic> &#x003D; &#x2212;<italic>h</italic><sub><italic>1</italic></sub>/2 inside the membrane (<?A3B2 "fig3",5,"anchor"?><xref ref-type="fig" rid="fig-3">Fig. 3a</xref>) and along <italic>Z</italic> &#x003D; &#x2212;(<italic>h</italic><sub><italic>1</italic></sub> &#x002B; <italic>h</italic><sub><italic>2</italic></sub>/2) inside the piezoelectric emitter (<xref ref-type="fig" rid="fig-3">Fig. 3b</xref>) was obtained using a mesh at <italic>m</italic> &#x003D; 5. The distribution of the electric potential inside the piezoelectric transducer is obtained at <italic>m</italic> &#x003D; 5 (<?A3B2 "fig4",5,"anchor"?><xref ref-type="fig" rid="fig-4">Fig. 4</xref>).</p>
+<fig id="fig-3">
+<label>Figure 3</label>
+<caption>
+<title>The distribution of internal stress &#x03C3; along x-axis caused by: (a) membrane deformation; (b) piezoelectric transducer deformation</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-3.tif"/>
+</fig>
+<fig id="fig-4">
+<label>Figure 4 </label>
+<caption>
+<title>(a) The distribution electric potential &#x03C6; along <italic>x</italic>-axis into piezoelectric transducer; (b) electric potential field inside a piezoelectric transducer</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-4.tif"/>
+</fig>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Results and Discussion</title>
+<p>For acoustic standing waves the structure of the sound field depends on the geometry of reactor chamber and boundary conditions [<xref ref-type="bibr" rid="ref-26">26</xref>]. The use of different boundary conditions leads to a change in the location of the acoustic pressure peaks, which is due to the interaction of incident and reflected waves (interference).</p>
+<p>The structure of the acoustic pressure field <italic>p</italic><sub><italic>t</italic></sub> (<italic>x</italic>, <italic>z</italic>) above the emitter (brass membrane and piezoelectric transducer) has been studied numerically. Various boundary conditions are considered (<xref ref-type="table" rid="table-3">Table 3</xref>). <?A3B2 "fig5",5,"anchor"?><xref ref-type="fig" rid="fig-5">Fig. 5</xref> shows the differences for distribution of total acoustic pressure in the reactor chamber created by a piezoelectric transducer with a thickness of <italic>h</italic><sub>2</sub> &#x003D; 1.0 mm at <italic>f</italic> &#x003D; 40 kHz. In each case, the acoustic pressure field is an alternation of high (red) and low (blue) pressure regions.</p>
+<fig id="fig-5">
+<label>Figure 5</label>
+<caption>
+<title>Acoustic pressure distribution in the center (<italic>Y</italic> &#x003D; 0) of the chamber at the different types of boundary conditions (<italic>h</italic><sub><italic>2</italic></sub> &#x003D; 1.0 mm, <italic>f</italic> &#x003D; 40 kHz)</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-5.tif"/>
+</fig>
+<sec id="s4_1">
+<label>4.1</label>
+<title>Effect of Boundary Conditions</title>
+<p>For boundary conditions of type 1 and 2 (<xref ref-type="fig" rid="fig-5">Figs. 5a</xref>, <xref ref-type="fig" rid="fig-5">5b</xref>) the zones of maximum total acoustic pressure (<italic>p</italic><sub><italic>t</italic></sub>&#x007E;4&#x00B7;10<sup>3</sup> Pa) are mainly formed near the surface of the emitter and in the central part at the side walls. Additionally, on the acoustic axis of the emitter there are two local areas of high acoustic pressure: in the center of the reactor chamber <italic>p</italic><sub><italic>t</italic></sub>&#x007E;2.5&#x00B7;10<sup>3</sup> Pa, at the top boundary <italic>p</italic><sub><italic>t</italic></sub>&#x007E;1.2&#x00B7;10<sup>3</sup> Pa. The acoustic pressure distribution is the same for type 1 and 2 boundary conditions [<xref ref-type="bibr" rid="ref-31">31</xref>,<xref ref-type="bibr" rid="ref-32">32</xref>].</p>
+<p>For non-reflective side walls (boundary conditions of type 3) the distribution of total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> (<italic>x, z</italic>) in the reactor chamber is similar to the sound field from a point source in the area without boundaries (<xref ref-type="fig" rid="fig-5">Fig. 5c</xref>). The maximum acoustic pressure region (<italic>p</italic><sub><italic>t</italic></sub>&#x007E;4&#x00B7;10<sup>3</sup> Pa) in this case is also above the emitter surface. When moving away from the emitter, the ultrasonic wave attenuates and the wavefront bends. The amplitude of acoustic pressure <italic>p</italic><sub><italic>t</italic></sub>&#x007E;1&#x00B7;10<sup>3</sup> Pa near the side boundaries of the reactor chamber. The sound wavefront tends to a plane wave shape near the top boundary of the reactor chamber. In the steady-state distribution of total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> <italic>(x, z)</italic>, there are four high-pressure and four low-pressure regions. Despite the most ordered structure of the sound field, this type of boundary conditions does not seem physical enough for the problem under consideration [<xref ref-type="bibr" rid="ref-21">21</xref>,<xref ref-type="bibr" rid="ref-26">26</xref>].</p>
+<p>For boundary conditions of type 4 (<xref ref-type="fig" rid="fig-5">Fig. 5d</xref>), in addition to the zone of maximum total acoustic pressure (<italic>p</italic><sub><italic>t</italic></sub>&#x007E;4&#x00B7;10<sup>3</sup> Pa) near the emitter, there are several local areas of high pressure in the center of the chamber (along the acoustic axis of the emitter) and at the side walls of the chamber. Distribution of zones of highest and lowest pressure along acoustic axis of radiator is periodic and is caused by reflection from side boundaries. In addition, this type of boundary condition changes the pressure distribution near the top of chamber.</p>
+<p>Boundary conditions of type 4 are further used to investigate the effect of emitter thickness on the distribution of total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> (<italic>x, z</italic>) in the reactor chamber.</p>
+</sec>
+<sec id="s4_2">
+<label>4.2</label>
+<title>Effect of Piezoelectric Plate Thickness</title>
+<p>For boundary conditions of type 4 dependence of the distribution of total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> (<italic>x, z</italic>) on thickness <italic>h</italic><sub><italic>2</italic></sub> of piezoelectric transducer with frequency <italic>f</italic> &#x003D; 40 kHz is considered.</p>
+<p>When ultrasonic waves are excited in a water by an emitter of small thickness (<italic>h</italic><sub><italic>2</italic></sub> &#x003C; 1 mm), a maximum acoustic pressure region is not formed above the emitter (<?A3B2 "fig6",5,"anchor"?><xref ref-type="fig" rid="fig-6">Figs. 6a</xref>, <xref ref-type="fig" rid="fig-6">6b</xref>). The structure of acoustic pressure field is still an alternation of high and low pressure regions. In turn, a high pressure region (<italic>p</italic><sub><italic>t</italic></sub>&#x007E;2&#x00B7;10<sup>3</sup> Pa) centered on the acoustic axis of the emitter is observed near the top boundary. In the center of the chamber there is a localized region of minimum total acoustic pressure (<italic>p</italic><sub><italic>t</italic></sub>&#x007E;(&#x2212;2&#x00B7;10<sup>3</sup>) Pa).</p>
+<fig id="fig-6">
+<label>Figure 6</label>
+<caption>
+<title>Effect of the thickness <italic>h</italic><sub><italic>2</italic></sub> of a piezoelectric plate with <italic>f</italic> &#x003D; 40 kHz on the total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> (<italic>x, z</italic>) in the center of the reactor chamber: (a) 0.4 mm; (b) 0.8 mm; (c) 1.0 mm; (d) 2.5 mm; (e) 5.0 mm</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-6.tif"/>
+</fig>
+<p>As the thickness of the emitter <italic>h</italic><sub><italic>2</italic></sub> increases, the acoustic pressure distribution changes (<xref ref-type="fig" rid="fig-6">Figs. 6c</xref>&#x2013;<xref ref-type="fig" rid="fig-6">6e</xref>). Region of maximum acoustic pressure above emitter is formed. Several high-pressure regions local to the side walls are formed in the water and alternate with the low-pressure regions. As the thickness <italic>h</italic><sub><italic>2</italic></sub> of the emitter increases, there is a change in distribution of total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> (<italic>x, z</italic>) near the top boundary and a decrease in the pressure amplitude along the acoustic axis of the emitter.</p>
+<p>The amplitude of the acoustic pressure at a distance of 17.5 mm from the emitter is maximum at <italic>h</italic><sub><italic>2</italic></sub> &#x003D; 0.8 mm, which is apparently due to vibrations of the membrane in the resonance mode (<?A3B2 "fig7",5,"anchor"?><xref ref-type="fig" rid="fig-7">Fig. 7</xref>). Therefore, a piezoelectric transducer at <italic>h</italic><sub><italic>2</italic></sub> &#x003D; 0.8 mm and boundary conditions of type 4 is used to compare numerical simulation with experiment.</p>
+<fig id="fig-7">
+<label>Figure 7</label>
+<caption>
+<title>On axis total acoustic pressure <italic>p</italic><sub><italic>max</italic></sub> at 17.5 mm in front of the emitter</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-7.tif"/>
+</fig>
+</sec>
+<sec id="s4_3">
+<label>4.3</label>
+<title>Comparison with Experiment</title>
+<p>The results of numerical simulation are compared with the experiment data described in [<xref ref-type="bibr" rid="ref-23">23</xref>]. A parallelepiped-shaped cuvette with dimensions of 110 &#x00D7; 116 &#x00D7; 160 mm<sup>3</sup> was used. The tank was made of acrylic glass with a thickness of 3 mm. As an ultrasound source, a piezoelectric transducer attached to a metal plate with a diameter of 88 mm was used, placed on the bottom of the tank so that the center of the emitter coincided with the center of the bottom. It was connected to an ultrasonic generator with a frequency of <italic>f</italic> &#x003D; 40 kHz.</p>
+<p>The distribution of cavitation zones was obtained from an experiment using the foil test method. The aluminum foil located in the center of the liquid layer is taken after 5 min from the start of the generator. The surface of the aluminum foil is destroyed by ultrasound as shown in <?A3B2 "fig8",5,"anchor"?><xref ref-type="fig" rid="fig-8">Fig. 8a</xref>. The appearance of alternating horizontal black and white regions indicates the creation of a standing wave in the water. Localized erosion of aluminum foil is due to the distribution of energy in the standing wave between high pressure regions and low pressure regions. As a result, six cavitation zones (white regions) are formed in the water, distributed along the acoustic axis of the emitter. The average distance between the centers of the cavitation zones is 2.5 cm.</p>
+<fig id="fig-8">
+<label>Figure 8</label>
+<caption>
+<title>(a) The distribution of cavitation zones in the reactor chamber is studied using the foil test method (photo from article [<xref ref-type="bibr" rid="ref-22">22</xref>]. Copyright &#x00A9;2020, IOP publishing); (b) total acoustic pressure <italic>p</italic><sub><italic>t</italic></sub> (<italic>x, z</italic>) in the center of the reactor chamber (<italic>h</italic><sub><italic>2</italic></sub> &#x003D; 0.8 mm, <italic>f</italic> &#x003D; 40 kHz)</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="FDMP_51341-fig-8.tif"/>
+</fig>
+<p>The intensity of cavitation activity is proportional to the size of the white regions on the foil (<xref ref-type="fig" rid="fig-8">Fig. 8a</xref>). The intensity of erosion of the foil near the top of the tank is comparable in intensity to the cavitation activity near the emitter. Minimal cavitation activity appears near the side walls (black regions). Therefore, there is no destruction of the foil in this region.</p>
+<p>The results of the numerical simulation were compared with experimental data to determine the type of boundary conditions that provide the best qualitative match of the acoustic pressure field structure in the central region of the reactor chamber [<xref ref-type="bibr" rid="ref-33">33</xref>]. The main assumption when comparing the sound field with the image of aluminum foil (<xref ref-type="fig" rid="fig-8">Fig. 8a</xref>) consists in the fact that the location of cavitation zones in the water is associated with the structure of the steady sound field [<xref ref-type="bibr" rid="ref-21">21</xref>]. The comparison showed that the best agreement between the experiment data and the numerical results is achieved by boundary conditions of the type 4 with the thickness of the piezoelectric transducer <italic>h</italic><sub>2</sub> &#x003D; 0.8 mm (<xref ref-type="fig" rid="fig-8">Fig. 8b</xref>).</p>
+</sec>
+</sec>
+<sec id="s5">
+<label>5</label>
+<title>Conclusion</title>
+<p>The acoustic pressure distribution in the sonochemical reactor chamber has been studied numerically. A study performed using COMSOL software showed the dependence of the sensitivity of the acoustic pressure field structure on boundary conditions for different thicknesses of the piezoelectric transducer. According to the results of the study, the amplitude of the acoustic pressure is minimal in the case of absorbing boundaries (type 3), and the attenuation becomes more significant as the thickness of the emitter increases.</p>
+<p>The novelty of this study lies in the attempt to establish an interrelation between the location of the zones of maximum cavitation activity and the acoustic pressure field in the chamber of the sonochemical reactor. Comparison with experimental data by the foil test method showed that the regions of maximum sound pressure are located in the center of the reactor chamber along the acoustic axis of the emitter. For a more accurate comparison with the experiment, it seems more correct to use the impedance boundary condition (type 4). It is shown that the maximum amplitude of acoustic pressure in the water is achieved for a piezoelectric transducer with <italic>h</italic><sub><italic>2</italic></sub> &#x003D; 0.8 mm at <italic>f</italic> &#x003D; 40 kHz, which may indicate a resonant radiation mode.</p>
+<p>The steady-state pressure field <italic>p</italic><sub><italic>t</italic></sub> <italic>(x, z)</italic> obtained during numerical simulation is qualitatively consistent with the experimental data. The distribution of the sound field makes it possible to estimate the structure and location of the zones of cavitation activity in the reactor chamber.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>None.</p>
+</ack>
+<fn-group>
+<fn fn-type="other">
+<p><bold>Funding Statement:</bold> The authors received no specific funding for this study.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Author Contributions:</bold> The authors confirm contribution to the paper as follows: study conception and design: TL, IS, KR; data collection: IS, MK, KR; analysis and interpretation of results: IS, TL, KR, MK; draft manuscript preparation: IS, TL, KR. All authors reviewed the results and approved the final version of the manuscript.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Availability of Data and Materials:</bold> Data sets generated during the current study are available from the corresponding author on reasonable request.</p>
+</fn>
+<fn fn-type="conflict">
+<p><bold>Conflicts of Interest:</bold> The authors declare that they have no conflicts of interest to report regarding the present study.</p>
+</fn>
+</fn-group>
+<ref-list content-type="authoryear">
+<title>References</title>
+<ref id="ref-1"><label>1.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ashokkumar</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Lee</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Kentish</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Grieser</surname>, <given-names>F.</given-names></string-name></person-group> (<year>2007</year>). <article-title>Bubbles in an acoustic field: An overview</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>14</volume><italic>(</italic><issue>4</issue><italic>),</italic> <fpage>470</fpage>&#x2013;<lpage>475</lpage>.</mixed-citation></ref>
+<ref id="ref-2"><label>2.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ashokkumar</surname>, <given-names>M.</given-names></string-name></person-group> (<year>2011</year>). <article-title>The characterization of acoustic cavitation bubbles&#x2014;An overview</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>18</volume><italic>(</italic><issue>4</issue><italic>),</italic> <fpage>864</fpage>&#x2013;<lpage>872</lpage>.</mixed-citation></ref>
+<ref id="ref-3"><label>3.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Yasui</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Yasui</surname>, <given-names>K.</given-names></string-name></person-group> (<year>2018</year>). <source>Acoustic Cavitation<!--Q1: Reference &#x2018;3&#x2019; is incomplete. Please provide any of the relevant missing information: location of publisher.--></source>. <publisher-name>Springer International Publishing</publisher-name>. pp. <fpage>1</fpage>&#x2013;<lpage>35</lpage>.</mixed-citation></ref>
+<ref id="ref-4"><label>4.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Nguyen</surname>, <given-names>T. T.</given-names></string-name>, <string-name><surname>Asakura</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Koda</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Yasuda</surname>, <given-names>K.</given-names></string-name></person-group> (<year>2017</year>). <article-title>Dependence of cavitation, chemical effect, and mechanical effect thresholds on ultrasonic frequency</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>39</volume><italic>,</italic> <fpage>301</fpage>&#x2013;<lpage>306</lpage>.</mixed-citation></ref>
+<ref id="ref-5"><label>5.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Leong</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Johansson</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Juliano</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>McArthur</surname>, <given-names>S. L.</given-names></string-name>, <string-name><surname>Manasseh</surname>, <given-names>R.</given-names></string-name></person-group> (<year>2013</year>). <article-title>Ultrasonic separation of particulate fluids in small and large scale systems: A review</article-title>. <source>Industrial &#x0026; Engineering Chemistry Research</source><italic>,</italic> <volume>52</volume><italic>(</italic><issue>47</issue><italic>),</italic> <fpage>16555</fpage>&#x2013;<lpage>16576</lpage>.</mixed-citation></ref>
+<ref id="ref-6"><label>6.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Trujillo</surname>, <given-names>F. J.</given-names></string-name>, <string-name><surname>Juliano</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Barbosa-C&#x00E1;novas</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Knoerzer</surname>, <given-names>K.</given-names></string-name></person-group> (<year>2014</year>). <article-title>Separation of suspensions and emulsions via ultrasonic standing waves&#x2014;A review</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>21</volume><italic>(</italic><issue>6</issue><italic>),</italic> <fpage>2151</fpage>&#x2013;<lpage>2164</lpage>.</mixed-citation></ref>
+<ref id="ref-7"><label>7.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Luo</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Gong</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Yin</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>He</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>He</surname>, <given-names>L.</given-names></string-name></person-group> (<year>2020</year>). <article-title>Optimization of acoustic parameters for ultrasonic separation of emulsions with different physical properties</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>68</volume><italic>,</italic> <fpage>105221</fpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2020.105221</pub-id></mixed-citation></ref>
+<ref id="ref-8"><label>8.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Krefting</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Mettin</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Lauterborn</surname>, <given-names>W.</given-names></string-name></person-group> (<year>2004</year>). <article-title>High-speed observation of acoustic cavitation erosion in multibubble systems</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>11</volume><italic>(</italic><issue>3&#x2013;4</issue><italic>),</italic> <fpage>119</fpage>&#x2013;<lpage>123</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2004.01.006</pub-id></mixed-citation></ref>
+<ref id="ref-9"><label>9.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Dular</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Osterman</surname>, <given-names>A.</given-names></string-name></person-group> (<year>2008</year>). <article-title>Pit clustering in cavitation erosion</article-title>. <source>Wear</source><italic>,</italic> <volume>265</volume><italic>(</italic><issue>5&#x2013;6</issue><italic>),</italic> <fpage>811</fpage>&#x2013;<lpage>820</lpage>. <pub-id pub-id-type="doi">10.1016/j.wear.2008.01.005</pub-id></mixed-citation></ref>
+<ref id="ref-10"><label>10.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Liu</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Yu</surname>, <given-names>P.</given-names></string-name></person-group> (<year>2020</year>). <article-title>Design and experiment-based optimization of high-flow hydraulic one-way valves</article-title>. <source>Fluid Dynamics and Materials Processing</source><italic>,</italic> <volume>16</volume><italic>(</italic><issue>2</issue><italic>),</italic> <fpage>211</fpage>&#x2013;<lpage>224</lpage>. <pub-id pub-id-type="doi">10.32604/fdmp.2020.08168</pub-id></mixed-citation></ref>
+<ref id="ref-11"><label>11.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Tong</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Qin</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Liu</surname>, <given-names>Q.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Lin</surname>, <given-names>J.</given-names></string-name></person-group> (<year>2022</year>). <article-title>An analysis of the factors influencing cavitation in the cylinder liner of a diesel engine</article-title>. <source>Fluid Dynamics and Materials Processing</source><italic>,</italic> <volume>18</volume><italic>(</italic><issue>6</issue><italic>),</italic> <fpage>1667</fpage>&#x2013;<lpage>1682</lpage>. <pub-id pub-id-type="doi">10.32604/fdmp.2022.019768</pub-id></mixed-citation></ref>
+<ref id="ref-12"><label>12.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lafond</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Asquier</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Mestas</surname>, <given-names>J. L. A.</given-names></string-name>, <string-name><surname>Carpentier</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Umemura</surname>, <given-names>S. I.</given-names></string-name> <etal>et al.</etal></person-group> (<year>2018</year>). <article-title>Evaluation of a three-hydrophone method for 2-D cavitation localization</article-title>. <source>IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control</source><italic>,</italic> <volume>65</volume><italic>(</italic><issue>7</issue><italic>),</italic> <fpage>1093</fpage>&#x2013;<lpage>1101</lpage>. <pub-id pub-id-type="doi">10.1109/TUFFC.2018.2825233</pub-id></mixed-citation></ref>
+<ref id="ref-13"><label>13.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Koch</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Jenderka</surname>, <given-names>K. V.</given-names></string-name></person-group> (<year>2008</year>). <article-title>Measurement of sound field in cavitating media by an optical fibre-tip hydrophone</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>15</volume><italic>(</italic><issue>4</issue><italic>),</italic> <fpage>502</fpage>&#x2013;<lpage>509</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2007.05.007</pub-id></mixed-citation></ref>
+<ref id="ref-14"><label>14.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Arvengas</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Davitt</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Caupin</surname>, <given-names>F.</given-names></string-name></person-group> (<year>2011</year>). <article-title>Fiber optic probe hydrophone for the study of acoustic cavitation in water</article-title>. <source>Review of Scientific Instruments</source><italic>,</italic> <volume>82</volume><italic>(</italic><issue>3</issue><italic>),</italic> <fpage>1000</fpage>. <pub-id pub-id-type="doi">10.1063/1.3557420</pub-id></mixed-citation></ref>
+<ref id="ref-15"><label>15.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Wei</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Weavers</surname>, <given-names>L. K.</given-names></string-name></person-group> (<year>2016</year>). <article-title>Combining COMSOL modeling with acoustic pressure maps to design sono-reactors</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>31</volume><italic>,</italic> <fpage>490</fpage>&#x2013;<lpage>498</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2016.01.036</pub-id></mixed-citation></ref>
+<ref id="ref-16"><label>16.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Sutkar</surname>, <given-names>V. S.</given-names></string-name>, <string-name><surname>Gogate</surname>, <given-names>P. R.</given-names></string-name>, <string-name><surname>Csoka</surname>, <given-names>L.</given-names></string-name></person-group> (<year>2010</year>). <article-title>Theoretical prediction of cavitational activity distribution in sonochemical reactors</article-title>. <source>Chemical Engineering Journal</source><italic>,</italic> <volume>158</volume><italic>(</italic><issue>2</issue><italic>),</italic> <fpage>290</fpage>&#x2013;<lpage>295</lpage>. <pub-id pub-id-type="doi">10.1016/j.cej.2010.01.049</pub-id></mixed-citation></ref>
+<ref id="ref-17"><label>17.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Cao</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Hao</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Ma</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Yang</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Sun</surname>, <given-names>R.</given-names></string-name></person-group> (<year>2021</year>). <article-title>Physical field simulation of the ultrasonic radiation method: An investigation of the vessel, probe position and power</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>76</volume><italic>,</italic> <fpage>105626</fpage>.</mixed-citation></ref>
+<ref id="ref-18"><label>18.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Hadi</surname>, <given-names>N. A. H.</given-names></string-name>, <string-name><surname>Ahmad</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Oladokun</surname>, <given-names>O.</given-names></string-name></person-group> (<year>2019</year>). <article-title>Modelling pressure distribution in sonicated ethanol solution using COMSOL simulation</article-title>. <source>E3S Web of Conferences. EDP Sciences</source><italic>,</italic> <volume>90</volume><italic>,</italic> <fpage>2003</fpage>.</mixed-citation></ref>
+<ref id="ref-19"><label>19.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Tao</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Zhao</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>W.</given-names></string-name></person-group> (<year>2020</year>). <article-title>Study on the characterization method of ultrasonic cavitation field based on the numerical simulation of the amplitude of sound pressure</article-title>. <source>MATEC Web of Conferences. EDP Sciences</source><italic>,</italic> <volume>319</volume><italic>,</italic> <fpage>2003</fpage>.</mixed-citation></ref>
+<ref id="ref-20"><label>20.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Servant</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Laborde</surname>, <given-names>J. L.</given-names></string-name>, <string-name><surname>Hita</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Caltagirone</surname>, <given-names>J. P.</given-names></string-name>, <string-name><surname>G&#x00E9;rard</surname>, <given-names>A.</given-names></string-name></person-group> (<year>2001</year>). <article-title>Spatio-temporal dynamics of cavitation bubble clouds in a low frequency reactor: Comparison between theoretical and experimental results</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>8</volume><italic>(</italic><issue>3</issue><italic>),</italic> <fpage>163</fpage>&#x2013;<lpage>174</lpage>.</mixed-citation></ref>
+<ref id="ref-21"><label>21.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Tudela</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>S&#x00E1;ez</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Esclapez</surname>, <given-names>M. D.</given-names></string-name>, <string-name><surname>D&#x00ED;ez-Garc&#x00ED;a</surname>, <given-names>M. I.</given-names></string-name>, <string-name><surname>Bonete</surname>, <given-names>P.</given-names></string-name> <etal>et al.</etal></person-group> (<year>2014</year>). <article-title>Simulation of the spatial distribution of the acoustic pressure in sonochemical reactors with numerical methods: A review</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>21</volume><italic>(</italic><issue>3</issue><italic>),</italic> <fpage>909</fpage>&#x2013;<lpage>919</lpage>.</mixed-citation></ref>
+<ref id="ref-22"><label>22.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Kuchinskiy</surname>, <given-names>M. O.</given-names></string-name>, <string-name><surname>Lyubimova</surname>, <given-names>T. P.</given-names></string-name>, <string-name><surname>Rybkin</surname>, <given-names>K. A.</given-names></string-name>, <string-name><surname>Fattalov</surname>, <given-names>O. O.</given-names></string-name>, <string-name><surname>Klimenko</surname>, <given-names>L. S.</given-names></string-name> <etal>et al.</etal></person-group> (<year>2021</year>). <article-title>Experimental and numerical study of acoustic pressure distribution in a sonochemical reactor</article-title>. <source>Journal of Physics: Conference Series. IOP Publishing</source><italic>,</italic> <volume>1809</volume><italic>(</italic><issue>1</issue><italic>),</italic> <fpage>12025</fpage>. <pub-id pub-id-type="doi">10.1088/1742-6596/1809/1/012025</pub-id></mixed-citation></ref>
+<ref id="ref-23"><label>23.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lyubimova</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Rybkin</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Fattalov</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Kuchinskiy</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Filippov</surname>, <given-names>L.</given-names></string-name></person-group> (<year>2021</year>). <article-title>Experimental study of temporal dynamics of cavitation bubbles selectively attached to the solid surfaces of different hydrophobicity under the action of ultrasound</article-title>. <source>Ultrasonics</source><italic>,</italic> <volume>117</volume><italic>(</italic><issue>5</issue><italic>),</italic> <fpage>106516</fpage>. <pub-id pub-id-type="doi">10.1016/j.ultras.2021.106516</pub-id></mixed-citation></ref>
+<ref id="ref-24"><label>24.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Kaltenbacher</surname>, <given-names>M.</given-names></string-name></person-group> (<year>2018</year>). <source>Computational Acoustics</source>. <publisher-loc>Cham</publisher-loc>: <publisher-name>Springer International Publishing</publisher-name>.</mixed-citation></ref>
+<ref id="ref-25"><label>25.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bampouli</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Goris</surname>, <given-names>Q.</given-names></string-name>, <string-name><surname>Van Olmen</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Solmaz</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Hussain</surname>, <given-names>M. N.</given-names></string-name> <etal>et al.</etal></person-group> (<year>2023</year>). <article-title>Understanding the ultrasound field of high viscosity mixtures: Experimental and numerical investigation of a lab scale batch reactor</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>97</volume><italic>(</italic><issue>1&#x2013;2</issue><italic>),</italic> <fpage>106444</fpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2023.106444</pub-id></mixed-citation></ref>
+<ref id="ref-26"><label>26.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Rashwan</surname>, <given-names>S. S.</given-names></string-name>, <string-name><surname>Mohany</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Dincer</surname>, <given-names>I.</given-names></string-name></person-group> (<year>2021</year>). <article-title>Development of efficient sonoreactor geometries for hydrogen production</article-title>. <source>International Journal of Hydrogen Energy</source><italic>,</italic> <volume>46</volume><italic>(</italic><issue>29</issue><italic>),</italic> <fpage>15219</fpage>&#x2013;<lpage>15240</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijhydene.2021.02.113</pub-id></mixed-citation></ref>
+<ref id="ref-27"><label>27.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ajmal</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Rusli</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Fieg</surname>, <given-names>G.</given-names></string-name></person-group> (<year>2016</year>). <article-title>Modeling and experimental validation of hydrodynamics in an ultrasonic batch reactor</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>28</volume><italic>(</italic><issue>7</issue><italic>),</italic> <fpage>218</fpage>&#x2013;<lpage>229</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2015.07.015</pub-id></mixed-citation></ref>
+<ref id="ref-28"><label>28.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Khan</surname>, <given-names>M. U.</given-names></string-name>, <string-name><surname>Rehman</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Saleem</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Elahi</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Sung</surname>, <given-names>T. H.</given-names></string-name> <etal>et al.</etal></person-group> (<year>2023</year>). <article-title>Optimum driving of ultrasonic cleaner using impedance and FFT analysis with validation of image processing of perforated foils</article-title>. <source>Applied Sciences</source><italic>,</italic> <volume>13</volume><italic>(</italic><issue>12</issue><italic>),</italic> <fpage>6991</fpage>. <pub-id pub-id-type="doi">10.3390/app13126991</pub-id></mixed-citation></ref>
+<ref id="ref-29"><label>29.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Jiao</surname>, <given-names>Q.</given-names></string-name>, <string-name><surname>Tan</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Zhu</surname>, <given-names>J.</given-names></string-name></person-group> (<year>2014</year>). <article-title>Numerical simulation of ultrasonic enhancement on mass transfer in liquid-solid reaction by a new computational model</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>21</volume><italic>(</italic><issue>2</issue><italic>),</italic> <fpage>535</fpage>&#x2013;<lpage>541</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2013.09.002</pub-id></mixed-citation></ref>
+<ref id="ref-30"><label>30.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bolborici</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Dawson</surname>, <given-names>F. P.</given-names></string-name>, <string-name><surname>Pugh</surname>, <given-names>M. C.</given-names></string-name></person-group> (<year>2010</year>). <article-title>Modeling of piezoelectric devices with the finite volume method</article-title>. <source>IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control</source><italic>,</italic> <volume>57</volume><italic>(</italic><issue>7</issue><italic>),</italic> <fpage>1673</fpage>&#x2013;<lpage>1691</lpage>. <pub-id pub-id-type="doi">10.1109/TUFFC.2010.1598</pub-id></mixed-citation></ref>
+<ref id="ref-31"><label>31.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Yasui</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Kozuka</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Tuziuti</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Towata</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Iida</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal></person-group> (<year>2007</year>). <article-title>FEM calculation of an acoustic field in a sonochemical reactor</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>14</volume><italic>(</italic><issue>5</issue><italic>),</italic> <fpage>605</fpage>&#x2013;<lpage>614</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2006.09.010</pub-id></mixed-citation></ref>
+<ref id="ref-32"><label>32.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Sajjadi</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Raman</surname>, <given-names>A. A. A.</given-names></string-name>, <string-name><surname>Ibrahim</surname>, <given-names>S.</given-names></string-name></person-group> (<year>2015</year>). <article-title>A comparative fluid flow characterisation in a low frequency/high power sonoreactor and mechanical stirred vessel</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>27</volume><italic>,</italic> <fpage>359</fpage>&#x2013;<lpage>373</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2015.04.034</pub-id></mixed-citation></ref>
+<ref id="ref-33"><label>33.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Wang</surname>, <given-names>Y. C.</given-names></string-name>, <string-name><surname>Yao</surname>, <given-names>M. C.</given-names></string-name></person-group> (<year>2013</year>). <article-title>Realization of cavitation fields based on the acoustic resonance modes in an immersion-type sonochemical reactor</article-title>. <source>Ultrasonics Sonochemistry</source><italic>,</italic> <volume>20</volume><italic>(</italic><issue>1</issue><italic>),</italic> <fpage>565</fpage>&#x2013;<lpage>570</lpage>. <pub-id pub-id-type="doi">10.1016/j.ultsonch.2012.07.026</pub-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

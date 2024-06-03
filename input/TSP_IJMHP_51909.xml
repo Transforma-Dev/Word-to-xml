@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/jpub3-html-trans.xsl"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330//EN" "D:/Localserver/Apache/htdocs/Transforma/ce_editor/Conversion/Word2HTML/DTD/jats-publishing-dtd-1.0/JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.0">
+<front>
+<journal-meta>
+<journal-id journal-id-type="pmc">IJMHP</journal-id>
+<journal-id journal-id-type="nlm-ta">IJMHP</journal-id>
+<journal-id journal-id-type="publisher-id">IJMHP</journal-id>
+<journal-title-group>
+<journal-title>International Journal of Mental Health Promotion</journal-title>
+</journal-title-group>
+<issn pub-type="epub">2049-8543</issn>
+<publisher>
+<publisher-name>Tech Science Press</publisher-name>
+<publisher-loc>USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta><!--type2-->
+<article-id pub-id-type="publisher-id">51909</article-id>
+<article-id pub-id-type="doi">10.32604/ijmhp.2024.051909</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>The Influence of Preschool Teachers&#x2019; Social Skills on Job Burnout: A Moderated Mediation Model</article-title>
+<alt-title alt-title-type="left-running-head">The Influence of Preschool Teachers&#x2019; Social Skills on Job Burnout: A Moderated Mediation Model</alt-title>
+<alt-title alt-title-type="right-running-head">The Influence of Preschool Teachers&#x2019; Social Skills on Job Burnout: A Moderated Mediation Model</alt-title>
+</title-group>
+<contrib-group content-type="authors">
+<contrib id="author-1" contrib-type="author" corresp="yes">
+<name name-style="western">
+<surname>He</surname>
+<given-names>Yuanqing</given-names>
+</name>
+<email>725207@ahnu.edu.cn</email>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib id="author-2" contrib-type="author">
+<name name-style="western">
+<surname>Yu</surname>
+<given-names>Xinyue</given-names>
+</name>
+</contrib>
+<contrib id="author-3" contrib-type="author">
+<name name-style="western">
+<surname>Xia</surname>
+<given-names>Yu</given-names>
+</name>
+</contrib>
+<contrib id="author-4" contrib-type="author">
+<name name-style="western">
+<surname>Cao</surname>
+<given-names>Yanhua</given-names>
+</name>
+</contrib>
+<aff>
+<label></label><institution>School of Educational Science, Anhui Normal University</institution>, <addr-line>Wuhu, 241000</addr-line>, <country>China</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1">&#x002A;Corresponding Author: Yuanqing He. Email: <email>725207@ahnu.edu.cn</email></corresp>
+</author-notes>
+<pub-date pub-type="epub" date-type="pub" iso-8601-date="2022-06-01">
+<day>01</day>
+<month>xxx</month>
+<year>2024</year>
+</pub-date>
+<volume>XX</volume>
+<issue>XX</issue>
+<fpage>XX</fpage>
+<lpage>XX</lpage>
+<history>
+<date date-type="received">
+<day>18</day>
+<month>3</month>
+<year>2024</year>
+</date>
+<date date-type="accepted">
+<day>29</day>
+<month>5</month>
+<year>2024</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2024 He et al.</copyright-statement>
+<copyright-year>2024</copyright-year>
+<copyright-holder>He et al.</copyright-holder>
+<license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+<license-p>This work is licensed under a <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="TSP_IJMHP_51909.pdf"></self-uri>
+<abstract>
+<p><bold>Background:</bold> Teacher burnout is a serious issue in the field of education, particularly in early childhood education, where teachers face high levels of work stress and emotional labor, leading to emotional exhaustion and job burnout. However, past research has not sufficiently explored the mechanisms of social skills, empathy, and mindfulness in mitigating teacher burnout. Therefore, this study aims to investigate the relationship between preschool teachers&#x0027; social skills, empathy, and mindfulness with job burnout, in order to provide theoretical basis and practical guidance for reducing teacher burnout. <bold>Methods:</bold> This research utilized a convenience sampling approach to target preschool teachers for a questionnaire survey. A total of 1109 questionnaires were collected. To ensure the quality of the data, we excluded questionnaires that were not carefully filled out in terms of lie scale questions, those with abnormal demographic variables, and outliers identified based on response time. Ultimately, 901 valid questionnaires were obtained, achieving a valid response rate of 81.2%. Participants&#x2019; levels of social skills, empathy, mindfulness, and job burnout were assessed using the Social Skills Scale (SKS), Empathy Scale (ME), Mindful Attention Awareness Scale (MAAS), and the Maslach Burnout Inventory-Educators Survey (MBI-ES), respectively. Data analysis was conducted using SPSS. <bold>Results:</bold> After controlling for gender, age, teaching experience, educational level, grade taught, and location of the kindergarten, the study found: (1) There is a negative correlation between preschool teachers&#x2019; social skills and the level of job burnout(r &#x003D; &#x2212;0.238); (2) Empathy has a dual-track effect on job burnout, where cognitive empathy negatively affects job burnout (r &#x003D; &#x2212;0.245), while emotional empathy has a positive effect (r &#x003D; 0.045); (3) Cognitive empathy partially mediates the relationship between social skills and job burnout (&#x03B2; &#x003D; &#x2212;0.124); (4) Mindfulness significantly impacts social skills, cognitive empathy, and job burnout (r &#x003D; 0.278; r &#x003D; 0.286; r &#x003D; &#x2212;0.539), and plays a moderating role in the mediation model (&#x03B2; &#x003D; 0.003; &#x03B2; &#x003D; &#x2212;0.023). <bold>Conclusion:</bold> These findings provide theoretical support for the development of burnout prevention and intervention strategies targeted at preschool teachers. They also point out new directions for future research and potential intervention targets, suggesting that enhancing preschool teachers&#x2019; social skills and cognitive empathy, as well as increasing their mindfulness level, can help them cope with work-related stress and emotional labor, thereby alleviating job burnout.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Social skills</kwd>
+<kwd>job burnout</kwd>
+<kwd>empathy</kwd>
+<kwd>mindfulness</kwd>
+<kwd>preschool teachers</kwd>
+</kwd-group>
+</article-meta>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Teacher burnout is a state of tension or extreme fatigue manifested by teachers in the face of teaching pressures. It is a sense of emotional, mental, and behavioral exhaustion formed under the perception of persistent stress [<xref ref-type="bibr" rid="ref-1">1</xref>], typically characterized by low job satisfaction, diminished enthusiasm and interest in work, and emotional detachment and indifference. The situation of teacher burnout in China&#x2019;s preschool education industry is concerning [<xref ref-type="bibr" rid="ref-2">2</xref>,<xref ref-type="bibr" rid="ref-3">3</xref>]. In China, as societal emphasis on early childhood education continues to grow, the pressures and responsibilities of preschool teachers are also increasing. Preschool teachers are often considered a highly stressful profession, prone to psychological issues and facing a high risk of turnover due to the lack of kindergarten resources, heavy workloads, and psychological pressure [<xref ref-type="bibr" rid="ref-4">4</xref>]. Preschool teachers&#x2019; work involves high-intensity emotional labor, which may lead to emotional exhaustion, making teachers feel overwhelmed in coping with job stress and consequently experience burnout [<xref ref-type="bibr" rid="ref-5">5</xref>]. According to social exchange theory, job burnout often stems from individuals perceiving a disproportion between their efforts and the rewards they receive [<xref ref-type="bibr" rid="ref-6">6</xref>]. Additionally, the lack of social support is also one of the significant factors exacerbating job burnout [<xref ref-type="bibr" rid="ref-7">7</xref>]. This situation is particularly evident among preschool teachers, where the immense pressures of their job and their frequent perception of unfairness in social exchanges, such as lower wages and benefits and lack of social support, lead to diminished feelings of work accomplishment, making preschool teachers more susceptible to job burnout.</p>
+<p>Existing research further confirms the applicability of the Job Demands-Resources model (JD-R) in the context of teachers&#x2019; work, identifying high job demands and insufficient job resources as key factors leading to job burnout [<xref ref-type="bibr" rid="ref-8">8</xref>]. Reducing job burnout among preschool teachers can be achieved by increasing job and personal resources and decreasing job demands [<xref ref-type="bibr" rid="ref-2">2</xref>,<xref ref-type="bibr" rid="ref-9">9</xref>]. Compared to job resources, personal resources, which mainly rely on the teacher&#x2019;s own personal abilities and traits, are relatively easier to acquire. Studies have shown that teachers experiencing severe emotional exhaustion generally have lower quality interactions with young children [<xref ref-type="bibr" rid="ref-10">10</xref>], and job burnout negatively impacts preschool teachers&#x2019; job satisfaction and performance [<xref ref-type="bibr" rid="ref-11">11</xref>,<xref ref-type="bibr" rid="ref-12">12</xref>]. This state not only reduces the quality of education, affecting the comprehensive development and growth of young children, but can also lead to preschool teachers&#x2019; resignation [<xref ref-type="bibr" rid="ref-13">13</xref>]. Therefore, paying attention to the issue of job burnout among preschool teachers and analyzing the factors influencing it is of great significance for improving the quality of early childhood education and ensuring the comprehensive development of young children. In order to more conveniently reduce job burnout among preschool teachers, this study will investigate the personal resources of preschool teachers.</p>
+<sec id="s1_1">
+<title>Social skills and preschool teachers&#x2019; job burnout</title>
+<p>Social skills are one of the essential abilities for preschool teachers in their daily work, crucial for establishing and maintaining good interpersonal relationships [<xref ref-type="bibr" rid="ref-14">14</xref>]. These skills encompass various aspects such as effective communication, teamwork, appropriate emotional expression, active empathy, proper exercise of personal rights, and firmly expressing personal opinions [<xref ref-type="bibr" rid="ref-15">15</xref>]. Teachers&#x2019; social skills are vital for building effective interpersonal self-efficacy and promoting close teacher-student relationships, factors that collectively act to reduce the occurrence of job burnout [<xref ref-type="bibr" rid="ref-16">16</xref>,<xref ref-type="bibr" rid="ref-17">17</xref>]. A lack of social skills may lead to frustration in teachers during interactions with young children or parents, increasing the risk of emotional exhaustion, depersonalization, and reduced personal accomplishment. Existing research confirms that insufficient social skills are closely associated with premature resignation, and individuals with lower social skills are more likely to choose to resign early [<xref ref-type="bibr" rid="ref-18">18</xref>]. Teacher turnover not only impacts the overall educational quality of kindergartens but also adversely affects the education and growth of young children. Social skills can be viewed as a personal resource in the JD-R model, serving as an effective means to alleviate the stress brought by occupational job demands [<xref ref-type="bibr" rid="ref-19">19</xref>]. Moreover, social skills can directly impact the multidimensional factors of burnout, including emotional exhaustion, depersonalization, and reduced personal accomplishment, thus playing a positive role in reducing burnout [<xref ref-type="bibr" rid="ref-20">20</xref>]. However, studies on the negative impact of social skills on job burnout are still limited among preschool teachers. Therefore, this study proposes Hypothesis 1: Social skills have a positive impact on preschool teachers&#x2019; job burnout.</p>
+</sec>
+<sec id="s1_2">
+<title>The dual-track impact of empathy on job burnout and the mediating role of cognitive empathy</title>
+<p>Empathy, also known as sympathy, is the ability of an individual to perceive and understand the emotional states of others and respond accordingly [<xref ref-type="bibr" rid="ref-21">21</xref>]. Empathy is divided into two dimensions: cognitive empathy, which refers to an individual&#x2019;s understanding of another&#x2019;s emotional experience, and emotional empathy, which refers to an individual&#x2019;s feeling towards another&#x2019;s emotional state [<xref ref-type="bibr" rid="ref-22">22</xref>,<xref ref-type="bibr" rid="ref-23">23</xref>]. Empathy is a key element of a teacher&#x2019;s professional competence [<xref ref-type="bibr" rid="ref-4">4</xref>] and can mitigate the relationship between work demands and work stress. In the JD-R model, it is negatively correlated with job burnout as a personal resource [<xref ref-type="bibr" rid="ref-24">24</xref>,<xref ref-type="bibr" rid="ref-25">25</xref>], and can act as a protective factor against job burnout [<xref ref-type="bibr" rid="ref-26">26</xref>,<xref ref-type="bibr" rid="ref-27">27</xref>]. Specifically, individuals with higher empathy capabilities tend to have lower levels of job burnout, suggesting that enhancing empathy may help prevent and alleviate job burnout. However, some studies indicate that empathy might lead to burnout [<xref ref-type="bibr" rid="ref-28">28</xref>], as excessive empathy can cause emotional fatigue, thereby increasing the risk of job burnout [<xref ref-type="bibr" rid="ref-29">29</xref>,<xref ref-type="bibr" rid="ref-30">30</xref>]. The relationship and mechanisms of action between empathy and job burnout are not yet clear, which may be related to the different effects of cognitive empathy and emotional sympathy, the different components of empathy [<xref ref-type="bibr" rid="ref-31">31</xref>]. Studies show that when cognitive empathy and emotional empathy interact, the preventive effect of empathy on job burnout may decrease [<xref ref-type="bibr" rid="ref-32">32</xref>]. Cognitive empathy has been found to play a significant role in reducing job burnout, while emotional empathy is associated with an increase in job burnout [<xref ref-type="bibr" rid="ref-32">32</xref>]. The theory of emotional contagion suggests that people&#x2019;s emotional states can influence each other and potentially exacerbate job burnout [<xref ref-type="bibr" rid="ref-33">33</xref>]. Emotional empathy causes individuals to be affected emotionally when perceiving others&#x2019; negative emotions, while cognitive empathy enables individuals to understand others&#x2019; emotions and experiences while maintaining their own emotional stability, thus mitigating the impact of job burnout. Therefore, empathy has different impacts on job burnout through its two dimensions, where cognitive empathy may have a positive effect on reducing job burnout, and emotional empathy may have a negative effect.</p>
+<p>Social skills, including communication, interaction, and cooperation abilities, help individuals better understand others&#x2019; emotional states and needs, establishing good interpersonal relationships. The better the social skills of teachers, the higher their empathy [<xref ref-type="bibr" rid="ref-34">34</xref>]. Under the influence of social skills, preschool teachers can enhance their level of empathy, better understanding the emotional states and needs of others. Individuals with higher empathy capabilities tend to have better social skills [<xref ref-type="bibr" rid="ref-35">35</xref>]. job burnout is closely related to empathy and interpersonal relationships in the work environment. A stratified regression analysis showed that harmonious relationships among colleagues in the workplace play a positive role in reducing job burnout [<xref ref-type="bibr" rid="ref-36">36</xref>]. In the relationship between social skills and job burnout, cognitive empathy is considered an important mediating variable, as it explains how individuals use empathy, interpersonal perception, and emotional expression skills to understand others&#x2019; emotional states and needs, helping to reduce the degree of job burnout. Moreover, by enhancing the ability to recognize others&#x2019; emotional expressions, i.e., cognitive empathy, it can also promote the development of social interaction and behavior [<xref ref-type="bibr" rid="ref-37">37</xref>]. In contrast, emotional empathy mainly focuses on individuals&#x2019; feelings towards others&#x2019; emotional states, which may lead to excessive attention to others&#x2019; emotions, resulting in emotional fatigue and even aggravating job burnout. Excessive emotional empathy and insufficient cognitive empathy can lead to stress responses [<xref ref-type="bibr" rid="ref-38">38</xref>], and the positive correlation between burnout and empathy can be explained by the excessive emotional investment in the work of preschool teachers [<xref ref-type="bibr" rid="ref-39">39</xref>]. Furthermore, research has found that cognitive empathy is significantly related to fewer psychological health problems and job burnout, while emotional empathy is associated with more psychological health problems and burnout [<xref ref-type="bibr" rid="ref-40">40</xref>]. Cognitive empathy involves broader psychological processes, such as understanding others&#x2019; emotional states and needs, and adjusting one&#x2019;s behavior to meet others&#x2019; needs. These processes may be more critical in alleviating job burnout than emotional empathy. Therefore, in this study, we did not consider emotional empathy as a mediating variable to explore its relationship with job burnout but focused on the role of cognitive empathy.</p>
+<p>Hence, Hypothesis 2 of this study is proposed: The impact of empathy on job burnout may differ between the two dimensions, with cognitive empathy negatively affecting job burnout and emotional empathy positively affecting it; Hypothesis 3, cognitive empathy mediates the relationship between social skills and job burnout.</p>
+</sec>
+<sec id="s1_3">
+<title>The moderating role of mindfulness</title>
+<p>Mindfulness is defined as the conscious, present-moment, and nonjudgmental awareness of the current experience [<xref ref-type="bibr" rid="ref-41">41</xref>], with a core focus on concentrated attention and unbiased acceptance of any present situation or experience [<xref ref-type="bibr" rid="ref-42">42</xref>]. As a psychological intervention method, mindfulness has been widely applied in the field of education, especially showing significant effects in reducing teachers&#x2019; occupational stress and improving their psychological health. This is manifested in providing psychological support to teachers, optimizing social support, alleviating work stress, reducing job burnout, and enhancing well-being and occupational health, among other aspects [<xref ref-type="bibr" rid="ref-43">43</xref>,<xref ref-type="bibr" rid="ref-44">44</xref>]. In early childhood education, mindfulness training for teachers is particularly important because their work often requires high emotional investment and patience, potentially leading to emotional exhaustion and job burnout. Through mindfulness training, teachers can learn to better manage their emotional responses, increase their stress resilience, and thus reduce feelings of burnout. By enhancing mindfulness, teachers can better detach from work during leisure time, reducing psychological stress, improving psychological health, and increasing work engagement [<xref ref-type="bibr" rid="ref-45">45</xref>]. Mindfulness can be integrated as a psychological resource capable of maintaining occupational health into the Job Demands-Resources model, meaning it can act as a personal resource to reduce the energy consumption process and prevent burnout [<xref ref-type="bibr" rid="ref-46">46</xref>,<xref ref-type="bibr" rid="ref-47">47</xref>]. Mindfulness significantly mitigates the impact of job demands and resources on burnout, and it can modulate the relationship between work stressors and job burnout [<xref ref-type="bibr" rid="ref-48">48</xref>], making it a protective factor against job burnout [<xref ref-type="bibr" rid="ref-49">49</xref>,<xref ref-type="bibr" rid="ref-50">50</xref>].</p>
+<p>Mindfulness has been proven to alleviate anxiety, enabling individuals to participate in social activities more focused and relaxed, thus improving their social skills [<xref ref-type="bibr" rid="ref-51">51</xref>]. High levels of mindfulness are often positively correlated with the development of social interaction skills [<xref ref-type="bibr" rid="ref-52">52</xref>], characterized by individuals with higher levels of mindfulness demonstrating more adaptive communication skills, stronger empathy, and more effective emotional regulation abilities in social contexts, thereby showing a higher capability in establishing and maintaining interpersonal relationships. Furthermore, mindfulness training&#x2019;s ability to enhance empathy has been supported by extensive research [<xref ref-type="bibr" rid="ref-53">53</xref>,<xref ref-type="bibr" rid="ref-54">54</xref>]. Mindfulness training also enhances individuals&#x2019; emotional regulation abilities and work engagement [<xref ref-type="bibr" rid="ref-55">55</xref>]. Individuals with higher levels of mindfulness may more effectively manage emotional stress when facing challenges in social skills, thus reducing the negative impact of emotional empathy on job burnout. Literature indicates that mindfulness benefits emotional clarity and regulation [<xref ref-type="bibr" rid="ref-56">56</xref>], helping individuals better understand their own and others&#x2019; inner feelings and needs, thereby enhancing cognitive empathy. Individuals are also better at regulating their emotions, facing challenges with a more positive mindset. Experiential mindfulness interventions can increase cognitive empathy levels, reduce occupational distress, and improve personal and job satisfaction [<xref ref-type="bibr" rid="ref-57">57</xref>]. Based on the above, Hypothesis 4 is proposed: Mindfulness positively impacts social skills, cognitive empathy, and job burnout; Hypothesis 5: Mindfulness moderates the paths in the front and back halves of the entire mediation model.</p>
+</sec>
+<sec id="s1_4">
+<title>Model hypotheses</title>
+<p>In this study, based on a literature review and research questions, we propose a research model (as shown in <?A3B2 "fig1",5,"anchor"?><xref ref-type="fig" rid="fig-1">Fig. 1</xref>). According to the JD-R model, social skills, empathy, and mindfulness can serve as personal resources that effectively reduce job burnout. Specifically, we propose the following hypotheses: First, social skills are significantly and negatively correlated with job burnout; Second, the impact of empathy on job burnout may differ between its two dimensions, with cognitive empathy negatively affecting professional burnout, while emotional empathy positively affecting it; Third, cognitive empathy plays a mediating role between social skills and job burnout; Fourth, mindfulness has a significant impact on social skills, cognitive empathy, and job burnout; Fifth, mindfulness has a moderating effect on both the first and second half of the entire mediation model pathway.</p>
+<fig id="fig-1">
+<label>Figure 1</label>
+<caption>
+<title>The mediating model of the relationship between social skills and job burnout.</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="IJMHP_51909-fig-1.tif"/>
+</fig>
+<p>In summary, the research model proposed in this study aims to explore the relationships among preschool teachers&#x2019; social skills, empathy, mindfulness, and job burnout. By investigating these hypotheses, we hope to gain a deeper understanding of the issue of job burnout among preschool teachers and provide valuable insights for improving their work quality and life satisfaction. This, in turn, will promote the professional development and psychological well-being of preschool teachers. To test these hypotheses, this study will employ quantitative research methods and use questionnaires to measure the relevant indicators of preschool teachers&#x2019; social skills, empathy, mindfulness, and job burnout.</p>
+</sec>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2_1">
+<title>Participants and procedure</title>
+<p>Using G&#x002A;Power 3.1.9.7, we calculated the required sample size, with a significance level &#x03B1; set to 0.05, an effect size of 0.15, and a statistical power of 1-&#x03B2; set to 0.95. The required sample size is 476.This study employed convenience sampling, targeting preschool teachers as the research subjects. The data was collected via the Questionnaire Star online survey platform, yielding 1,109 responses, of which 901 were valid, resulting in an 81.2% validity rate. The study was approved by the Ethics Review Committee of the Anhui Normal University (ethical approval number: 2023-BBA190027). All participants signed the informed consent in this study. Invalid questionnaires were excluded based on the following criteria: (1) For the lie scale question &#x201C;Please choose the option that best fits,&#x201D;196 questionnaires were discarded due to non-serious responses to lie detector questions; (2) 5 datasets with abnormal demographic variable values were removed, such as those with underage data and those with ages exceeding human lifespan limits. (3) 7 outlier datasets were eliminated based on the respondents&#x2019; time to answer the questions, using a criterion of three times the standard deviation.</p>
+<p>The study included 901 preschool teachers. The average age of all participants was 30.83 years (SD &#x003D; 8.035, age range 18&#x2013;59 years). The specific demographic statistics can be found in <?A3B2 "tbl1",5,"anchor"?><xref ref-type="table" rid="table-1">Table 1</xref>.</p>
+<table-wrap id="table-1">
+<label>Table 1</label>
+<caption>
+<title>Demographic characteristics of study participants (N &#x003D; 901)</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-1.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th style="background:#FFFFFF;">Variable</th>
+<th style="background:#FFFFFF;"></th>
+<th style="background:#FFFFFF;">M/n (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="background:#FFFFFF;">Age</td>
+<td style="background:#FFFFFF;"></td>
+<td style="background:#FFFFFF;">30.83</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;" rowspan="2">Gender</td>
+<td style="background:#FFFFFF;">Male</td>
+<td style="background:#FFFFFF;">7 (0.8%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Female</td>
+<td style="background:#FFFFFF;">894 (99.2%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;" rowspan="5">Teaching age</td>
+<td style="background:#FFFFFF;">5 years or less</td>
+<td style="background:#FFFFFF;">478 (53.2%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">6 to 10 years</td>
+<td style="background:#FFFFFF;">234 (26.0%) </td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">11 to 15 years</td>
+<td style="background:#FFFFFF;">80 (8.9%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">16 to 20 years</td>
+<td style="background:#FFFFFF;">35 (3.9%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">More than 21 years</td>
+<td style="background:#FFFFFF;">74 (8.2%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;" rowspan="4">Nature of kindergarten</td>
+<td style="background:#FFFFFF;">Township public kindergarten</td>
+<td style="background:#FFFFFF;">257 (28.5%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Township private kindergarten</td>
+<td style="background:#FFFFFF;">42 (4.7%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Urban public kindergarten</td>
+<td style="background:#FFFFFF;">443 (49.2%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Urban private kindergarten</td>
+<td style="background:#FFFFFF;">159 (17.6%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;" rowspan="3">Teaching grade</td>
+<td style="background:#FFFFFF;">Primary class</td>
+<td style="background:#FFFFFF;">318 (35.3%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Middle shift</td>
+<td style="background:#FFFFFF;">262 (29.1%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">The upper class of a class</td>
+<td style="background:#FFFFFF;">321 (35.6%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;" rowspan="3">Highest degree</td>
+<td style="background:#FFFFFF;">Junior college and below</td>
+<td style="background:#FFFFFF;">403 (44.7%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Undergraduate</td>
+<td style="background:#FFFFFF;">497 (55.2%)</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Postgraduate and above</td>
+<td style="background:#FFFFFF;">1 (0.1%)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="s2_2">
+<title>Measures</title>
+<p>The scales used in this study are all publicly available resources that have been confirmed for their reliability through extensive research and can be used for the assessment of preschool teachers.</p>
+<sec id="s2_2_1">
+<title>Social skills scale (SKS)</title>
+<p>This scale utilizes the instrument developed by Ferris et al. [<xref ref-type="bibr" rid="ref-58">58</xref>], which comprises a single dimension with 7 items and does not include reverse scoring items. It employs a seven-point scoring system, ranging from 1 for &#x201C;strongly disagree&#x201D; to 7 for &#x201C;strongly agree.&#x201D; A higher score indicates better social skills. An example item is, &#x201C;I can easily put myself in someone else&#x2019;s shoes.&#x201D; In previous studies, the Cronbach&#x2019;s &#x03B1; coefficient was 0.89. In this study, the internal consistency coefficient for this scale was 0.815, indicating the measuring tool is relatively reliable. The KMO value of the scale is 0.852, and <italic>P</italic> &#x003C; 0.001, which provides strong support for the construct validity of the scale.</p>
+</sec>
+<sec id="s2_2_2">
+<title>Empathy scale (ME)</title>
+<p>This study used the Chinese version of the Empathy Scale (Measure of Empathy, ME), developed by Vossen et al. [<xref ref-type="bibr" rid="ref-59">59</xref>] and revised by Wang Yang, Wang Caikang, Wen Zhonglin, and Xiao Wanting, to measure the empathy level of preschool teachers. The scale consists of two dimensions with a total of 8 items, where 4 items assess cognitive empathy and the other 4 assess emotional empathy. It does not include reverse scoring items and uses a five-point scoring system, ranging from 1 for &#x201C;completely disagree&#x201D; to 5 for &#x201C;completely agree.&#x201D; A higher score indicates a higher level of empathy. An example item is, &#x201C;I am good at recognizing others&#x2019; true feelings.&#x201D; In this study, the Cronbach&#x2019;s &#x03B1; coefficients for the scale&#x2019;s dimensions were 0.828 and 0.859, respectively, with an overall internal consistency coefficient of 0.833 for the entire scale. In previous studies, the total scale&#x2019;s Cronbach&#x2019;s &#x03B1; coefficient was 0.76, and the &#x03B1; coefficients for the cognitive empathy and emotional empathy dimensions were 0.77 and 0.81, respectively. The KMO values for the subscales are 0.785 (cognitive empathy) and 0.790 (emotional empathy), and the total scale KMO value is 0.825, with <italic>P</italic> &#x003C; 0.001, indicating that the scale has good validity.</p>
+</sec>
+<sec id="s2_2_3">
+<title>Teacher job burnout scale (MBI-ES)</title>
+<p>The study utilized the Maslach Burnout Inventory-Educator Survey (MBI-ES) [<xref ref-type="bibr" rid="ref-60">60</xref>], adapted and validated by Chinese scholars. The scale comprises 22 items, organized into three dimensions: emotional exhaustion, reduced personal accomplishment, and depersonalization. The reduced personal accomplishment dimension is scored in reverse. The scale employs a 5-point scoring system, ranging from 1 for &#x201C;never&#x201D; to 5 for &#x201C;always.&#x201D; A higher score indicates more severe job burnout. An example item is, &#x201C;I feel energized when facing my work.&#x201D; In previous studies, the questionnaire&#x2019;s &#x03B1; coefficient was 0.90, and the &#x03B1; coefficients for the three dimensions were 0.76, 0.90, and 0.76, respectively. In this study, the Cronbach&#x2019;s &#x03B1; coefficients for the scale&#x2019;s dimensions were 0.876, 0.845, and 0.820, with an overall internal consistency coefficient of 0.904 for the entire scale. The KMO coefficients for each dimension are 0.883 (emotional exhaustion), 0.879 (depersonalization), and 0.871 (reduced personal accomplishment), indicating that each subscale has good construct validity and can reliably measure the concepts it was designed to assess. Additionally, the total scale&#x2019;s KMO coefficient is 0.945, which suggests that the scale can be used for further research and practice, and its measurement results can be trusted.</p>
+</sec>
+<sec id="s2_2_4">
+<title>Mindful attention awareness scale (MAAS)</title>
+<p>In this study, the Mindful Attention Awareness Scale (MAAS), developed by Brown and others and revised by Chen Siyi and colleagues for the Chinese version, was used to measure the mindfulness levels of subjects [<xref ref-type="bibr" rid="ref-61">61</xref>]. The scale consists of a single dimension with 15 items and does not include reverse scoring items. It employs a six-point scoring system, ranging from 1 for &#x201C;almost always&#x201D; to 6 for &#x201C;almost never.&#x201D; A higher score indicates a higher level of mindfulness. An example item is, &#x201C;I snack without realizing what I am eating.&#x201D; In previous studies, the Cronbach&#x2019;s &#x03B1; coefficient was 0.890. The internal consistency coefficient of the scale in this study was 0.935, indicating good reliability. The KMO value of the scale is 0.954, and <italic>P</italic> &#x003C; 0.001, confirming that the scale has good construct validity.</p>
+</sec>
+</sec>
+<sec id="s2_3">
+<title>Data processing</title>
+<p>In this study, we employed multiple statistical methods to analyze the data and used SPSS 25.0 software for data organization and descriptive analysis. Since the sample size was large enough and the data did not have severe skewness or contain extreme outliers, the data met the normality assumption in this study. Firstly, we used Harman&#x2019;s single-factor method to test for common method bias, ensuring that our results were not affected by common source bias. Secondly, we used Pearson correlation analysis to examine the relationships between variables. In addition, we conducted mediation effect analysis using Model 4 of the PROCESS macro program to test the mediating effects between social skills, empathy, mindfulness, and professional burnout. Finally, we used Model 58 for moderated mediation analysis to explore how mindfulness moderates the relationship between social skills, empathy, and job burnout.</p>
+</sec>
+<sec id="s2_4">
+<title>Common method bias test</title>
+<p>Since the data in this study were self-reported by preschool teachers, there was a potential for common method bias. To address this, the study employed Harman&#x2019;s single-factor test, incorporating all items from the four scales to analyze common method bias. The study controlled for common method bias procedurally through measures like reverse scoring of some items and conducted the Harman&#x2019;s single factor test for bias examination. The results of the unrotated factor analysis revealed eight common factors with eigenvalues greater than 1, where the largest factor accounted for 27.145% of the variance. This indicated that there was no severe common method bias in the data of this study.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3_1">
+<title>Descriptive statistics and correlations</title>
+<p>The results shown in <?A3B2 "tbl2",5,"anchor"?><xref ref-type="table" rid="table-2">Table 2</xref> indicate that social skills are significantly negatively correlated with all dimensions of job burnout (<italic>p</italic> &#x003C; 0.01). The impact of empathy on the various dimensions of job burnout is not entirely statistically significant. Cognitive empathy reduces job burnout (<italic>p</italic> &#x003C; 0.01), while emotional empathy is positively correlated with emotional exhaustion (<italic>p</italic> &#x003C; 0.01), predicting a higher level of job burnout. Mindfulness significantly positively affects social skills and cognitive empathy, and negatively impacts job burnout (<italic>p</italic> &#x003C; 0.01).</p>
+<table-wrap id="table-2">
+<label>Table 2</label>
+<caption>
+<title>Descriptive statistics of study variables and Pearson correlation (N &#x003D; 901)</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-2.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>Mindfulness</th>
+<th>Emotional exhaustion</th>
+<th>Low personal accomplishment</th>
+<th>Depersonalization</th>
+<th>Job burnout</th>
+<th>Social skills</th>
+<th>Cognitive empathy</th>
+<th>Emotional empathy</th>
+<th>Empathy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mindfulness</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Emotional exhaustion</td>
+<td>&#x2212;0.508&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Low personal accomplishment</td>
+<td>&#x2212;0.314&#x002A;&#x002A;</td>
+<td>0.297&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Depersonalization</td>
+<td>&#x2212;0.506&#x002A;&#x002A;</td>
+<td>0.781&#x002A;&#x002A;</td>
+<td>0.473&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Job burnout</td>
+<td>&#x2212;0.539&#x002A;&#x002A;</td>
+<td>0.856&#x002A;&#x002A;</td>
+<td>0.714&#x002A;&#x002A;</td>
+<td>0.897&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Social skills</td>
+<td>0.278&#x002A;&#x002A;</td>
+<td>&#x2212;0.164&#x002A;&#x002A;</td>
+<td>&#x2212;0.240&#x002A;&#x002A;</td>
+<td>&#x2212;0.181&#x002A;&#x002A;</td>
+<td>&#x2212;0.238&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cognitive empathy</td>
+<td>0.286&#x002A;&#x002A;</td>
+<td>&#x2212;0.166&#x002A;&#x002A;</td>
+<td>&#x2212;0.261&#x002A;&#x002A;</td>
+<td>&#x2212;0.175&#x002A;&#x002A;</td>
+<td>&#x2212;0.245&#x002A;&#x002A;</td>
+<td>0.365&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Emotional empathy</td>
+<td>&#x2212;0.010</td>
+<td>0.095&#x002A;&#x002A;</td>
+<td>&#x2212;0.043</td>
+<td>0.056</td>
+<td>0.045</td>
+<td>0.246&#x002A;&#x002A;</td>
+<td>0.352&#x002A;&#x002A;</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Empathy</td>
+<td>0.148&#x002A;&#x002A;</td>
+<td>&#x2212;0.026</td>
+<td>&#x2212;0.171&#x002A;&#x002A;</td>
+<td>&#x2212;0.058</td>
+<td>&#x2212;0.103&#x002A;&#x002A;</td>
+<td>0.363&#x002A;&#x002A;</td>
+<td>0.779&#x002A;&#x002A;</td>
+<td>0.862&#x002A;&#x002A;</td>
+<td>1</td>
+</tr>
+<tr>
+<td>M</td>
+<td>67.8757</td>
+<td>20.6704</td>
+<td>20.0588</td>
+<td>12.8491</td>
+<td>53.5782</td>
+<td>33.6260</td>
+<td>15.4528</td>
+<td>13.7836</td>
+<td>29.2364</td>
+</tr>
+<tr>
+<td>SD</td>
+<td>12.47745</td>
+<td>5.64812</td>
+<td>4.95624</td>
+<td>3.88551</td>
+<td>11.86150</td>
+<td>6.33236</td>
+<td>2.66025</td>
+<td>3.28917</td>
+<td>4.90540</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="table-2fn1" fn-type="other">
+<p>Note: &#x002A;p &#x003C; 0.05, &#x002A;&#x002A;p &#x003C; 0.01, the same below.</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="s3_2">
+<title>Mediation effect test</title>
+<p>Firstly, Hayes&#x2019; Process macro-Model 4 was utilized to examine the mediating effect of cognitive empathy between social skills and job burnout. The results shown in <?A3B2 "tbl3",5,"anchor"?><xref ref-type="table" rid="table-3">Tables 3</xref> and <?A3B2 "tbl4",5,"anchor"?><xref ref-type="table" rid="table-4">4</xref> indicate that the effect of social skills on job burnout was significant (&#x03B2; &#x003D; &#x2212;0.437, t &#x003D; &#x2212;7.416, <italic>p</italic> &#x003C; 0.001). After including the mediating variable of anxiety, the effect of social skills on job burnout remained significant (&#x03B2; &#x003D; &#x2212;0.313, t &#x003D; &#x2212;5.016, <italic>p</italic> &#x003C; 0.001). The positive prediction of social skills on cognitive empathy was also quite significant (&#x03B2; &#x003D; 0.154, t &#x003D; 11.779, <italic>p</italic> &#x003C; 0.001).</p>
+<table-wrap id="table-3">
+<label>Table 3</label>
+<caption>
+<title>Tests the mediating effects of cognitive empathy</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-3.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2">Model 1 (Burnout)</th>
+<th colspan="2">Model 2 (Cognitive empathy)</th>
+<th colspan="2">Model 3 (Burnout)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>&#x03B2;</td>
+<td>t</td>
+<td>&#x03B2;</td>
+<td>t</td>
+<td>&#x03B2;</td>
+<td>t</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>&#x2212;2.001</td>
+<td>&#x2212;0.470</td>
+<td>0.138</td>
+<td>0.146</td>
+<td>&#x2212;1.890</td>
+<td>&#x2212;0.451</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>&#x2212;0.465</td>
+<td>&#x2212;5.959&#x002A;&#x002A;</td>
+<td>0.022</td>
+<td>1.269</td>
+<td>&#x2212;0.448</td>
+<td>&#x2212;5.818&#x002A;&#x002A;</td>
+</tr>
+<tr>
+<td>Teaching age</td>
+<td>1.603</td>
+<td>3.122&#x002A;&#x002A;</td>
+<td>&#x2212;0.076</td>
+<td>&#x2212;0.671</td>
+<td>1.542</td>
+<td>3.049&#x002A;&#x002A;</td>
+</tr>
+<tr>
+<td>Nature of kindergarten</td>
+<td>2.890</td>
+<td>3.780&#x002A;&#x002A;</td>
+<td>0.168</td>
+<td>0.989</td>
+<td>3.025</td>
+<td>4.0173&#x002A;&#x002A;</td>
+</tr>
+<tr>
+<td>Teaching grade</td>
+<td>0.155</td>
+<td>0.349</td>
+<td>0.166</td>
+<td>1.681</td>
+<td>0.289</td>
+<td>0.659</td>
+</tr>
+<tr>
+<td>Highest degree</td>
+<td>&#x2212;0.550</td>
+<td>&#x2212;1.571</td>
+<td>&#x2212;0.084</td>
+<td>&#x2212;1.081</td>
+<td>&#x2212;0.618</td>
+<td>&#x2212;1.791</td>
+</tr>
+<tr>
+<td>Social skills</td>
+<td>&#x2212;0.437</td>
+<td>&#x2212;7.416&#x002A;&#x002A;</td>
+<td>0.154</td>
+<td>11.779&#x002A;&#x002A;</td>
+<td>&#x2212;0.313</td>
+<td>&#x2212;5.016&#x002A;&#x002A;</td>
+</tr>
+<tr>
+<td>Cognitive empathy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&#x2212;0.808</td>
+<td>&#x2212;5.433&#x002A;&#x002A;</td>
+</tr>
+<tr>
+<td>R2</td>
+<td colspan="2">0.119</td>
+<td colspan="2">0.141</td>
+<td colspan="2">0.148</td>
+</tr>
+<tr>
+<td>F</td>
+<td colspan="2">17.295&#x002A;&#x002A;</td>
+<td colspan="2">20.886&#x002A;&#x002A;</td>
+<td colspan="2">19.307&#x002A;&#x002A;</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="table-4">
+<label>Table 4</label>
+<caption>
+<title>Summary of results of mediation effect</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-4.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th style="background:#FFFFFF;"></th>
+<th style="background:#FFFFFF;">&#x03B2;</th>
+<th style="background:#FFFFFF;">Boot SE</th>
+<th style="background:#FFFFFF;">Boot LLCI</th>
+<th style="background:#FFFFFF;">Boot ULCI</th>
+<th style="background:#FFFFFF;">Proportion %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="background:#FFFFFF;">Total effect</td>
+<td style="background:#FFFFFF;">&#x2212;0.437</td>
+<td style="background:#FFFFFF;">0.0589</td>
+<td style="background:#FFFFFF;">&#x2212;0.5526</td>
+<td style="background:#FFFFFF;">&#x2212;0.3213</td>
+<td style="background:#FFFFFF;"></td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Direct effect</td>
+<td style="background:#FFFFFF;">&#x2212;0.313</td>
+<td style="background:#FFFFFF;">0.0623</td>
+<td style="background:#FFFFFF;">&#x2212;0.4351</td>
+<td style="background:#FFFFFF;">&#x2212;0.1904</td>
+<td style="background:#FFFFFF;">71.6%</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">The mediating role of cognitive empathy</td>
+<td style="background:#FFFFFF;">&#x2212;0.124</td>
+<td style="background:#FFFFFF;">0.0306</td>
+<td style="background:#FFFFFF;">&#x2212;0.1893</td>
+<td style="background:#FFFFFF;">&#x2212;0.0678</td>
+<td style="background:#FFFFFF;">28.4%</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>In this context, &#x2018;c&#x2019; represents the regression coefficient of social skills on job burnout (when the mediating variable, cognitive empathy, is not included in the model), which is the total effect. &#x2018;a&#x2019; represents the regression coefficient of social skills on cognitive empathy, and &#x2018;b&#x2019; represents the regression coefficient of cognitive empathy on job burnout. The product of &#x2018;a&#x2019; and &#x2018;b&#x2019; represents the mediating effect. &#x2018;c&#x2019; &#x2018; is the regression coefficient of social skills on job burnout when the mediating variable M is included in the model, indicating the direct effect. When &#x2018;a&#x2019; (0.154&#x002A;&#x002A;), &#x2018;b&#x2019; (&#x2212;0.808&#x002A;&#x002A;), and &#x2018;c&#x2019; &#x2018; (&#x2212;0.313&#x002A;&#x002A;) are significant and the sign of &#x2018;a&#x002A;b&#x2019; (&#x2212;0.124) is the same as &#x2018;c&#x2019; &#x2018;, it indicates a partial mediation effect. This suggests that social skills can not only directly predict job burnout but also predict it through the mediating effect of cognitive empathy. The direct effect (&#x2212;0.313) and the mediating effect (&#x2212;0.124) account for 71.6% and 26.4% of the total effect &#x2018;c&#x2019; (&#x2212;0.437), respectively.</p>
+</sec>
+<sec id="s3_3">
+<title>Moderated mediation effect test</title>
+<p>Using Hayes&#x2019; Process Macro Model 58, the moderated mediation model was tested while controlling for variables such as gender, age, years of teaching experience, educational background, the grade taught, and the campus location, and as shown in <?A3B2 "tbl5",5,"anchor"?><xref ref-type="table" rid="table-5">Table 5</xref>. After incorporating mindfulness into the model, the interaction term of social skills and mindfulness had a significant predictive effect on cognitive empathy (&#x03B2; &#x003D; 0.003, t &#x003D; 3.055, <italic>p</italic> &#x003C; 0.01). The interaction term of cognitive empathy and mindfulness also significantly predicted job burnout (&#x03B2; &#x003D; &#x2212;0.023, t &#x003D; &#x2212;2.832, <italic>p</italic> &#x003C; 0.01). This indicates that mindfulness not only moderates the direct prediction of cognitive empathy by social skills but also moderates the predictive effect of cognitive empathy on job burnout.</p>
+<table-wrap id="table-5">
+<label>Table 5</label>
+<caption>
+<title>Mediating effects of different levels of mindfulness</title>
+</caption>
+<alternatives>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="table-5.tif"/>
+<table>
+<colgroup>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+</colgroup>
+<thead>
+<tr>
+<th style="background:#FFFFFF;">Mindfulness</th>
+<th style="background:#FFFFFF;">Intermediate effect</th>
+<th style="background:#FFFFFF;">Boot SE</th>
+<th style="background:#FFFFFF;">Boot LLCI</th>
+<th style="background:#FFFFFF;">Boot ULCI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="background:#FFFFFF;">Low (M-1SD)</td>
+<td style="background:#FFFFFF;">&#x2212;0.0079</td>
+<td style="background:#FFFFFF;">0.0188</td>
+<td style="background:#FFFFFF;">&#x2212;0.0478</td>
+<td style="background:#FFFFFF;">0.0272</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">Middle (M)</td>
+<td style="background:#FFFFFF;">&#x2212;0.0469</td>
+<td style="background:#FFFFFF;">0.0219</td>
+<td style="background:#FFFFFF;">&#x2212;0.0937</td>
+<td style="background:#FFFFFF;">&#x2212;0.0081</td>
+</tr>
+<tr>
+<td style="background:#FFFFFF;">High (M&#x002B;1SD)</td>
+<td style="background:#FFFFFF;">&#x2212;0.1057</td>
+<td style="background:#FFFFFF;">0.0349</td>
+<td style="background:#FFFFFF;">&#x2212;0.1785</td>
+<td style="background:#FFFFFF;">&#x2212;0.0423</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Analyzing the moderated mediation effect of Model 58, the moderating variable mindfulness showed that at a low level, the bootstrapped 95% confidence interval (CI) includes the number 0, indicating no mediation effect at this level. At the average and high levels, the boot 95%CI does not include 0, indicating a mediation effect at these levels. Consequently, the mediation effect of the moderating variable mindfulness varies at different levels, demonstrating its moderated mediation effect. An analysis of the size of the mediating effect of cognitive empathy at different levels of mindfulness (as shown in <xref ref-type="table" rid="table-5">Table 5</xref>) reveals that when mindfulness is high or at the mean level, the indirect effect of social skills on job burnout through cognitive empathy is significant. However, when mindfulness is low, the indirect effect of cognitive empathy is no longer significant, indicating that the moderated mediation is established.</p>
+<p><?A3B2 "fig2",5,"anchor"?><xref ref-type="fig" rid="fig-2">Fig. 2</xref>: Further analysis of the simple slopes reveals that for subjects with high mindfulness (M&#x002B;1SD), cognitive empathy has a significant negative effect on job burnout, with a simple slope of &#x2212;0.6667, t &#x003D; &#x2212;3.8976, <italic>p</italic> &#x003C; 0.05. For subjects with low mindfulness (M-1SD), cognitive empathy has a negative effect on job burnout as well, but this predictive effect is not significant, with a simple slope of &#x2212;0.0873, t &#x003D; &#x2212;0.5257, <italic>p</italic> &#x003E; 0.05. This indicates that as an individual&#x2019;s mindfulness increases, the negative predictive effect of cognitive empathy on job burnout tends to grow progressively.</p>
+<fig id="fig-2">
+<label>Figure 2</label>
+<caption>
+<title>The moderating role of mindfulness in the relationship between cognitive empathy and job burnout.</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="IJMHP_51909-fig-2.tif"/>
+</fig>
+<p><?A3B2 "fig3",5,"anchor"?><xref ref-type="fig" rid="fig-3">Fig. 3</xref> illustrates that for subjects with low mindfulness (M-1SD), social skills significantly positively predict cognitive empathy, with a simple slope of 0.0903, t &#x003D; 4.8621, <italic>p</italic> &#x003C; 0.05. For subjects with high mindfulness (M&#x002B;1SD), social skills also significantly positively predict cognitive empathy, with a simple slope of 0.1585, t &#x003D; 9.8031, <italic>p</italic> &#x003C; 0.05. This suggests that as the level of mindfulness increases, the impact of social skills on cognitive empathy shows a growing trend.</p>
+<fig id="fig-3">
+<label>Figure 3</label>
+<caption>
+<title>The moderating role of mindfulness in the relationship between social skills and cognitive empathy.</title>
+</caption>
+<graphic mimetype="image" mime-subtype="tif" xlink:href="IJMHP_51909-fig-3.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>This study explored the complex relationships between social skills, empathy, mindfulness, and job burnout among preschool teachers, as well as the mediating role of cognitive empathy and the moderating role of mindfulness. The results indicated that preschool teachers&#x2019; social skills were negatively correlated with their level of job burnout (Hypothesis 1 supported). The impact of empathy on job burnout exhibited a dual-track effect, where cognitive empathy negatively influenced job burnout, while emotional empathy had a positive effect on it (Hypothesis 2 supported). Cognitive empathy partially mediated the relationship between social skills and job burnout (Hypothesis 3 supported). Mindfulness significantly influenced social skills, cognitive empathy, and job burnout (Hypothesis 4 supported), and it also moderated the paths in the first and second halves of the mediation model (Hypothesis 5 supported).</p>
+<sec id="s4_1">
+<title>Social skills and job burnout in preschool teachers</title>
+<p>There is a significant negative correlation between social skills and job burnout in preschool teachers, aligning with previous research [<xref ref-type="bibr" rid="ref-62">62</xref>]. Social skills refer to an individual&#x2019;s ability to communicate effectively, establish interpersonal relationships, and engage in social interactions [<xref ref-type="bibr" rid="ref-63">63</xref>]. In the field of education, a teacher&#x2019;s social skills not only affect the quality of communication with students but are also closely linked to collaboration with colleagues. Positive interpersonal relationships and a sense of collaboration can enhance teachers&#x2019; professional dedication and effectively prevent and alleviate job burnout [<xref ref-type="bibr" rid="ref-64">64</xref>]. Social skills play an important role in early childhood education because preschool teachers need to establish a special relationship with young children, understand their needs and emotions, and deal with the unique challenges and pressures associated with young children.</p>
+<p>Firstly, social skills are crucial for teachers to establish and maintain positive teacher-student relationships [<xref ref-type="bibr" rid="ref-65">65</xref>], which in turn are key to promoting student classroom engagement [<xref ref-type="bibr" rid="ref-66">66</xref>] and enhancing the classroom relational climate [<xref ref-type="bibr" rid="ref-67">67</xref>]. Additionally, research indicates that poor classroom relational climates and lower student engagement can lead to teachers experiencing job burnout [<xref ref-type="bibr" rid="ref-17">17</xref>,<xref ref-type="bibr" rid="ref-68">68</xref>]. Therefore, by improving social skills, teachers can effectively enhance teacher-student relationships and optimize the classroom atmosphere, which helps in alleviating the pressures of job burnout.</p>
+<p>Secondly, social skills assist teachers in effectively managing and resolving conflicts in their work. Social interdependence theory suggests that social skills play a key role in resolving conflicts and promoting collaboration [<xref ref-type="bibr" rid="ref-69">69</xref>], and at the group level, social skills are more influential in reducing intra-group conflicts and strengthening collaboration than the social skills of individual members [<xref ref-type="bibr" rid="ref-70">70</xref>]. This means that the performance and interaction style of the entire preschool teacher team in terms of social skills are crucial for creating a harmonious and efficient working environment, which can effectively reduce the job burnout pressure faced by teachers.</p>
+</sec>
+<sec id="s4_2">
+<title>Empathy and job burnout of preschool teachers</title>
+<sec id="s4_2_1">
+<title>The dual role of empathy</title>
+<p>Preschool teachers face special challenges in their work, such as the emotional instability and poor self-control of young children, which may affect the teachers&#x2019; emotional empathy and cognitive empathy. Empathy is significantly negatively correlated with the overall dimension of job burnout in preschool teachers, but not with every dimension of burnout. This situation may be related to the different roles played by the components of empathy. For cognitive empathy, there is a significant negative correlation with both the overall dimension of job burnout and its individual dimensions. However, emotional empathy not only fails to inhibit job burnout but even significantly promotes emotional exhaustion. This indicates that empathy has a bidirectional effect on job burnout, revealing a complex mechanism of empathy in the job burnout of preschool teachers: empathy mainly exerts its positive effects through cognitive empathy [<xref ref-type="bibr" rid="ref-71">71</xref>], while emotional empathy is the primary source of the negative effects of empathy [<xref ref-type="bibr" rid="ref-31">31</xref>]. Therefore, the negative relationship between empathy and job burnout is primarily driven by cognitive empathy, not emotional empathy [<xref ref-type="bibr" rid="ref-71">71</xref>].</p>
+<p>The significant negative correlation between cognitive empathy and job burnout suggests that teachers who effectively understand the emotions of students and parents are more likely to maintain a positive attitude in their work and experience less burnout. Strong cognitive empathy helps to regulate emotional responses [<xref ref-type="bibr" rid="ref-72">72</xref>], allowing teachers to deal with work challenges more rationally and effectively, thereby reducing the risk of job burnout.</p>
+<p>In contrast, emotional empathy, instead of inhibiting burnout, is significantly positively correlated with emotional exhaustion. This indicates that teachers who overly absorb and share the negative emotions of students or parents may increase their emotional burden. In such situations, emotional empathy might become a risk factor, as teachers, through deep empathy, might inadvertently bear the negative emotions of students, leading to emotional strain. On the other hand, cognitive empathy acts as a protective mechanism. It enables teachers to understand students&#x2019; emotions without internalizing these emotions, which is beneficial for maintaining teachers&#x2019; psychological health and the sustainability of their profession [<xref ref-type="bibr" rid="ref-73">73</xref>].</p>
+</sec>
+<sec id="s4_2_2">
+<title>The mediating role of cognitive empathy</title>
+<p>The study findings indicate that cognitive empathy plays a mediating role between social skills and job burnout in preschool teachers, providing a deeper explanation for how the relationship between social skills and job burnout functions. Enhancing the social skills of preschool teachers, especially by boosting their cognitive empathy, can not only improve interpersonal relations and increase job satisfaction but also effectively reduce the sense of job burnout. Empathy and communication skills, as key components of social skills, are crucial for establishing successful interpersonal relationships [<xref ref-type="bibr" rid="ref-35">35</xref>].Generally, teachers with strong social skills tend to have higher empathy abilities [<xref ref-type="bibr" rid="ref-34">34</xref>].</p>
+<p>Cognitive empathy endows teachers with the ability to approach students&#x2019; emotional and behavioral issues from a deeper level of understanding and compassion, enabling them to adopt appropriate response strategies. Through cognitive empathy, preschool teachers may offer more suitable instructional plans and establish a harmonious relationship and sense of trust with their students [<xref ref-type="bibr" rid="ref-74">74</xref>]. Furthermore, it enables them to better manage their classrooms, thereby reducing work stress and the likelihood of job burnout.</p>
+</sec>
+</sec>
+<sec id="s4_3">
+<title>The role of mindfulness in the model</title>
+<sec id="s4_3_1">
+<title>The impact of mindfulness on enhancing social skills and cognitive empathy, and reducing job burnout in preschool teachers</title>
+<p>The results of this study indicate that mindfulness significantly positively influences preschool teachers&#x2019; social skills and cognitive empathy, while also having a negative effect on job burnout. This finding offers a new perspective, suggesting that cultivating mindfulness in teachers can enhance their social skills and cognitive empathy, thereby reducing the risk of job burnout.</p>
+<p>The nature of preschool teachers&#x2019; work requires a high level of emotional investment and interpersonal interaction, which makes them more vulnerable to job burnout. Mindfulness can alleviate anxiety and enable more focused and relaxed participation in social activities, thus improving social skills [<xref ref-type="bibr" rid="ref-51">51</xref>]. When teachers practice mindfulness, they become more aware of their emotions and thoughts, and how these influence their interactions with others. This enhanced self-awareness helps teachers to communicate more thoughtfully and effectively in their interactions with students, parents, and colleagues, enhancing their social skills. According to the mindfulness emotion regulation model, mindfulness helps individuals more accurately recognize others&#x2019; emotions and manage their own [<xref ref-type="bibr" rid="ref-75">75</xref>]. This keen awareness of others&#x2019; inner worlds is foundational for the development of cognitive empathy. Mindfulness facilitates the recognition of others&#x2019; emotions, which helps to alleviate work-related stress. Implementing simple mindfulness exercises can alleviate symptoms of job burnout in preschool teachers [<xref ref-type="bibr" rid="ref-76">76</xref>]. By improving mindfulness, teachers can better handle work-related stress and challenges, reduce emotional exhaustion, and thereby lower the risk of job burnout [<xref ref-type="bibr" rid="ref-77">77</xref>]. This suggests that incorporating mindfulness as a part of professional development programs for preschool teachers may be an effective strategy for mitigating job burnout.</p>
+</sec>
+<sec id="s4_3_2">
+<title>The moderating role of mindfulness</title>
+<p>The study found that the impact of social skills on cognitive empathy is moderated by the level of mindfulness. Specifically, regardless of the level of social skills, the higher the level of mindfulness in preschool teachers, the greater their cognitive empathy. This means that mindfulness can strengthen the influence of social skills on cognitive empathy. Furthermore, the study discovered that mindfulness also moderates the indirect effect of social skills on job burnout through cognitive empathy. That is, the higher the level of mindfulness in preschool teachers, the higher their level of cognitive empathy, and this higher level of cognitive empathy could potentially reduce their level of job burnout and improve job happiness and satisfaction [<xref ref-type="bibr" rid="ref-57">57</xref>].</p>
+<p>This indicates that mindfulness plays a key role in moderating the indirect effects of social skills and cognitive empathy on job burnout. Mindfulness training helps teachers better manage and regulate emotions and face work-related stress with a calmer mindset. Mindfulness interventions can provide measures for preschool teachers at risk of job burnout [<xref ref-type="bibr" rid="ref-78">78</xref>].</p>
+</sec>
+</sec>
+<sec id="s4_4">
+<title>Significance and limitations</title>
+<p>This study explored the relationships between social skills, empathy, mindfulness, and job burnout among preschool teachers and delved into the mediating role of cognitive empathy and the moderating role of mindfulness. It offers new perspectives for teacher training and professional interventions. While the negative correlation between social skills and job burnout is confirmed, enhancing teachers&#x2019; social skills in educational practice can effectively reduce the level of burnout. Teacher training programs should include the enhancement of social skills as a crucial component, aiding teachers in developing more effective communication strategies and interpersonal skills, thereby reducing job burnout while improving educational quality. Kindergartens and educational institutions can provide relevant training and support for preschool teachers to improve these capabilities. For example, social skills training, emotional management, and mindfulness meditation courses can be offered to help preschool teachers better cope with the challenges and pressures of their work.</p>
+<p>In enhancing teachers&#x2019; empathy abilities, the focus should be on cultivating cognitive empathy, aiding preschool teachers in better understanding and assessing others&#x2019; emotions, while also teaching them how to protect themselves from the negative impact of excessive emotional empathy. Mindfulness training can be integrated into teacher training, enabling teachers to better manage their mindset and emotions, improve their psychological resilience, and cope with and adjust to job burnout more effectively. In practice, cultivating social skills and cognitive empathy, as well as enhancing mindfulness, is crucial for helping preschool teachers deal with work-related stress and emotional challenges, thereby reducing the risk of job burnout.</p>
+<p>This study has its limitations. It explored the relationships between social skills, empathy, mindfulness, and job burnout among preschool teachers, but reliance on quantitative data alone may not fully capture these complex relationships. The absence of qualitative methods and larger sample size validation limits the generalizability of the findings. The cross-sectional design of the study precludes determining causality, especially since it did not examine the effects of mindfulness intervention on job burnout. Future research can adopt more representative sampling methods and use longitudinal and experimental designs to further explore the causal relationships between these variables, as well as explore the differences in different cultural and educational backgrounds, such as limitations. For example, we can adopt more representative sampling methods, increase sample size and diversity, to enhance the generalizability and external validity of the research findings.</p>
+</sec>
+</sec>
+<sec id="s5">
+<title>Conclusion</title>
+<p>(1) Social skills have a significant negative correlation with all dimensions of job burnout among preschool teachers, playing a notable negative predictive role in job burnout. (2) Empathy has a dual-track effect on job burnout: cognitive empathy negatively influences job burnout, while emotional empathy has a positive impact on it. (3) Cognitive empathy mediates the relationship between social skills and job burnout. (4) Mindfulness significantly positively influences preschool teachers&#x2019; social skills and cognitive empathy and is significantly negatively correlated with job burnout. (5) Mindfulness moderates the paths in the first and second halves of the mediation model involving social skills, cognitive empathy, and job burnout.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>The authors thank research participants for their participation in this study.</p>
+</ack>
+<fn-group>
+<fn fn-type="other">
+<p><bold>Funding Statement:</bold> National Education Science &#x201C;Thirteenth Five-Year Plan&#x201D; Project (Research on the Mindfulness Integrated Prevention Model of Preschool Teachers&#x2019; Burnout), Grant No.: BBA190027.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Author Contributions:</bold> YH contributed to conception and design of the study. XY, YH, YX, and YC then coordinated the planning, collection, and organization of the data. XY and YH analyzed the data. XY, YH, YX, and YC wrote&#x2014;reviewed and edited the manuscript. All authors have read and agreed to the published version of the manuscript.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Availability of Data and Materials:</bold> The datasets generated and/or analyzed in the current study are available from the corresponding author upon reasonable request.</p>
+</fn>
+<fn fn-type="other">
+<p><bold>Ethics Approval:</bold> The study was approved by the Ethics Review Committee of the Anhui Normal University (ethical approval number: 2023-BBA190027). All participants signed the informed consent in this study.</p>
+</fn>
+<fn fn-type="conflict">
+<p><bold>Conflicts of Interest:</bold> The authors declare that they have no competing interests.</p>
+</fn>
+</fn-group>
+<ref-list content-type="authoryear">
+<title>References</title>
+<ref id="ref-1"><label>1.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Byrne</surname> <given-names>BM</given-names></string-name></person-group>. <article-title>The Maslach Burnout inventory: testing for factorial validity and invariance across elementary, intermediate and secondary teachers</article-title>. <source>J Occup Organ Psychol</source>. <year>1993</year>;<volume>66</volume>(<issue>3</issue>):<fpage>197</fpage>&#x2013;<lpage>212</lpage>. doi:<pub-id pub-id-type="doi">10.1111/j.2044-8325.1993.tb00532.x</pub-id>.</mixed-citation></ref>
+<ref id="ref-2"><label>2.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Zhao</surname> <given-names>N</given-names></string-name>, <string-name><surname>Huo</surname> <given-names>M</given-names></string-name>, <string-name><surname>Van den Noortgate</surname> <given-names>W</given-names></string-name></person-group>. <article-title>Exploring burnout among preschool teachers in rural China: a job demands-resources model perspective<!--Q1: Reference &#x2018;2&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Front Psychol</source>. <year>2023</year>;<volume>14</volume>. doi:<pub-id pub-id-type="doi">10.3389/fpsyg.2023.1253774</pub-id>.</mixed-citation></ref>
+<ref id="ref-3"><label>3.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Li</surname> <given-names>S</given-names></string-name>, <string-name><surname>Li</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Lv</surname> <given-names>H</given-names></string-name>, <string-name><surname>Jiang</surname> <given-names>R</given-names></string-name>, <string-name><surname>Zhao</surname> <given-names>P</given-names></string-name>, <string-name><surname>Zheng</surname> <given-names>X</given-names></string-name>, <etal>et al</etal></person-group>. <article-title>The prevalence and correlates of burnout among Chinese preschool teachers</article-title>. <source>BMC Public Health</source>. <year>2020</year>;<volume>20</volume>(<issue>1</issue>):<fpage>160</fpage>. doi:<pub-id pub-id-type="doi">10.1186/s12889-020-8287-7</pub-id>.</mixed-citation></ref>
+<ref id="ref-4"><label>4.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Vu&#x010D;ini&#x0107;</surname> <given-names>V</given-names></string-name>, <string-name><surname>Stanimirovic</surname> <given-names>D</given-names></string-name>, <string-name><surname>Gligorovi&#x0107;</surname> <given-names>M</given-names></string-name>, <string-name><surname>Jablan</surname> <given-names>B</given-names></string-name>, <string-name><surname>Marinovi&#x0107;</surname> <given-names>M</given-names></string-name></person-group>. <article-title>Stress and empathy in teachers at general and special education schools</article-title>. <source>Int J Disabil, Develop Educ</source>. <year>2022</year>;<volume>69</volume>(<issue>2</issue>):<fpage>533</fpage>&#x2013;<lpage>49</lpage>. doi:<pub-id pub-id-type="doi">10.1080/1034912X.2020.1727421</pub-id>.</mixed-citation></ref>
+<ref id="ref-5"><label>5.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Kim</surname> <given-names>H</given-names></string-name>, <string-name><surname>Kim</surname> <given-names>JS</given-names></string-name>, <string-name><surname>Choe</surname> <given-names>K</given-names></string-name>, <string-name><surname>Kwak</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Song</surname> <given-names>JS</given-names></string-name></person-group>. <article-title>Mediating effects of workplace violence on the relationships between emotional labour and burnout among clinical nurses</article-title>. <source>J Adv Nurs</source>. <year>2018</year>;<volume>74</volume>(<issue>10</issue>):<fpage>2331</fpage>&#x2013;<lpage>9</lpage>. doi:<pub-id pub-id-type="doi">10.1111/jan.13731</pub-id>.</mixed-citation></ref>
+<ref id="ref-6"><label>6.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Schaufeli</surname> <given-names>WB</given-names></string-name>, <string-name><surname>Maassen</surname> <given-names>GH</given-names></string-name>, <string-name><surname>Bakker</surname> <given-names>AB</given-names></string-name>, <string-name><surname>Sixma</surname> <given-names>HJ</given-names></string-name></person-group>. <article-title>Stability and change in burnout: a 10-year follow-up study among primary care physicians</article-title>. <source>J Occup Organ Psych</source>. <year>2011</year>;<volume>84</volume>(<issue>2</issue>):<fpage>248</fpage>&#x2013;<lpage>67</lpage>. doi:<pub-id pub-id-type="doi">10.1111/j.2044-8325.2010.02013.x</pub-id>.</mixed-citation></ref>
+<ref id="ref-7"><label>7.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Boland</surname> <given-names>LL</given-names></string-name>, <string-name><surname>Mink</surname> <given-names>PJ</given-names></string-name>, <string-name><surname>Kamrud</surname> <given-names>JW</given-names></string-name>, <string-name><surname>Jeruzal</surname> <given-names>JN</given-names></string-name>, <string-name><surname>Stevens</surname> <given-names>AC</given-names></string-name></person-group>. <article-title>Social support outside the workplace, coping styles, and burnout in a cohort of EMS providers from minnesota</article-title>. <source>Workplace Health Saf</source>. <year>2019</year>;<volume>67</volume>(<issue>8</issue>):<fpage>414</fpage>&#x2013;<lpage>22</lpage>. doi:<pub-id pub-id-type="doi">10.1177/2165079919829154</pub-id>.</mixed-citation></ref>
+<ref id="ref-8"><label>8.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lee</surname> <given-names>SS</given-names></string-name>, <string-name><surname>Wolf</surname> <given-names>S</given-names></string-name></person-group>. <article-title>Measuring and predicting burnout among early childhood educators in Ghana</article-title>. <source>Teach Teach Educ</source>. <year>2019</year>;<volume>78</volume>:<fpage>49</fpage>&#x2013;<lpage>61</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.tate.2018.10.021</pub-id>.</mixed-citation></ref>
+<ref id="ref-9"><label>9.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Hakanen</surname> <given-names>JJ</given-names></string-name>, <string-name><surname>Bakker</surname> <given-names>AB</given-names></string-name>, <string-name><surname>Schaufeli</surname> <given-names>WB</given-names></string-name></person-group>. <article-title>Burnout and work engagement among teachers</article-title>. <source>J Sch Psychol</source>. <year>2006</year>;<volume>43</volume>(<issue>6</issue>):<fpage>495</fpage>&#x2013;<lpage>513</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jsp.2005.11.001</pub-id>.</mixed-citation></ref>
+<ref id="ref-10"><label>10.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ansari</surname> <given-names>A</given-names></string-name>, <string-name><surname>Pianta</surname> <given-names>R</given-names></string-name>, <string-name><surname>Vick Whittaker</surname> <given-names>J</given-names></string-name>, <string-name><surname>Vitiello</surname> <given-names>V</given-names></string-name>, <string-name><surname>Ruzek</surname> <given-names>E</given-names></string-name></person-group>. <article-title>Preschool teachers&#x2019; emotional exhaustion in relation to classroom instruction and teacher-child interactions</article-title>. <source>Early Educ Dev</source>. <year>2020</year>;<volume>33</volume>:<fpage>1</fpage>&#x2013;<lpage>14</lpage>. doi:<pub-id pub-id-type="doi">10.1080/10409289.2020.1848301</pub-id>.</mixed-citation></ref>
+<ref id="ref-11"><label>11.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Swider</surname> <given-names>BW</given-names></string-name>, <string-name><surname>Zimmerman</surname> <given-names>RD</given-names></string-name></person-group>. <article-title>Born to burnout: a meta-analytic path model of personality, job burnout, and work outcomes</article-title>. <source>J Vocat Behav</source>. <year>2010</year>;<volume>76</volume>(<issue>3</issue>):<fpage>487</fpage>&#x2013;<lpage>506</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jvb.2010.01.003</pub-id>.</mixed-citation></ref>
+<ref id="ref-12"><label>12.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Schaufeli</surname> <given-names>W</given-names></string-name></person-group>. <article-title>Job demands, job resources, and their relationship with burnout and engagement: a multi-sample study</article-title>. <source>J Organ Behav</source>. <year>2004</year>;<volume>25</volume>:<fpage>293</fpage>&#x2013;<lpage>315</lpage>. doi:<pub-id pub-id-type="doi">10.1002/job.248</pub-id>.</mixed-citation></ref>
+<ref id="ref-13"><label>13.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Scanlan</surname> <given-names>J</given-names></string-name>, <string-name><surname>Still</surname> <given-names>M</given-names></string-name></person-group>. <article-title>Relationships between burnout, turnover intention, job satisfaction, job demands and job resources for mental health personnel in an Australian mental health service<!--Q2: Reference &#x2018;13&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>BMC Health Serv Res</source>. <year>2019</year>;<volume>19</volume>. doi:<pub-id pub-id-type="doi">10.1186/s12913-018-3841-z</pub-id>.</mixed-citation></ref>
+<ref id="ref-14"><label>14.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Queluz</surname> <given-names>FNFR</given-names></string-name>, <string-name><surname>Barham</surname> <given-names>EJ</given-names></string-name>, <string-name><surname>Del Prette</surname> <given-names>ZAP</given-names></string-name></person-group>. <source>The Relationship between Social Skills and Psychosocial Adjustment among those Who Care for Older Adults<!--Q3: Reference &#x2018;14&#x2019; is incomplete. Please provide any of the relevant missing information: location of publisher.--></source>. <publisher-name>Universidade de S&#x00E3;o Paulo</publisher-name>; <year>2019</year>.</mixed-citation></ref>
+<ref id="ref-15"><label>15.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Del Prette</surname> <given-names>ZAP</given-names></string-name>, <string-name><surname>Del Prette</surname> <given-names>A</given-names></string-name>, <string-name><surname>Peixoto</surname> <given-names>EM</given-names></string-name></person-group>. <article-title>Social skill inventory-2 Del-Prette: expanding and updating psychometric properties<!--Q4: Reference &#x2018;15&#x2019; is incomplete. Please provide any of the relevant missing information: volume, page range.--></article-title>. <source>Pontificia Universidade Cat&#x00F3;lica de Campinas</source>. <year>2021</year>.</mixed-citation></ref>
+<ref id="ref-16"><label>16.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Sim&#x00F5;es</surname> <given-names>F</given-names></string-name>, <string-name><surname>Calheiros</surname> <given-names>M</given-names></string-name></person-group>. <article-title>A matter of teaching and relationships: determinants of teaching style, interpersonal resources and teacher burnout<!--Q5: Reference &#x2018;16&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Soc Psychol Educ</source>. <year>2019</year>;<volume>22</volume>. doi:<pub-id pub-id-type="doi">10.1007/s11218-019-09501-w</pub-id>.</mixed-citation></ref>
+<ref id="ref-17"><label>17.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Alamos</surname> <given-names>P</given-names></string-name>, <string-name><surname>Corbin</surname> <given-names>C</given-names></string-name>, <string-name><surname>Klotz</surname> <given-names>M</given-names></string-name>, <string-name><surname>Lowenstein</surname> <given-names>A</given-names></string-name>, <string-name><surname>Downer</surname> <given-names>J</given-names></string-name>, <string-name><surname>Brown</surname> <given-names>J</given-names></string-name></person-group>. <article-title>Bidirectional associations among teachers&#x2019; burnout and classroom relational climate across an academic year</article-title>. <source>J Sch Psychol</source>. <year>2022</year>;<volume>95</volume>:<fpage>43</fpage>&#x2013;<lpage>57</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jsp.2022.09.001</pub-id>.</mixed-citation></ref>
+<ref id="ref-18"><label>18.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Niitsuma</surname> <given-names>M</given-names></string-name>, <string-name><surname>Katsuki</surname> <given-names>T</given-names></string-name>, <string-name><surname>Sakuma</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Sato</surname> <given-names>C</given-names></string-name></person-group>. <article-title>The relationship between social skills and early resignation in Japanese novice nurses</article-title>. <source>J Nurs Manag</source>. <year>2012</year>;<volume>20</volume>(<issue>5</issue>):<fpage>659</fpage>&#x2013;<lpage>67</lpage>. doi:<pub-id pub-id-type="doi">10.1111/j.1365-2834.2011.01256.x</pub-id>.</mixed-citation></ref>
+<ref id="ref-19"><label>19.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Biasotto Feitosa</surname> <given-names>F</given-names></string-name>, <string-name><surname>Daniel</surname> <given-names>T</given-names></string-name>, <string-name><surname>Rodr&#x00ED;guez</surname> <given-names>T</given-names></string-name></person-group>. <article-title>Estresse psicol&#x00F3;gico, depress&#x00E3;o e habilidades sociais de policiais militares</article-title>. <source>Res Soc Develop</source>. <year>2020</year>;<volume>9</volume>:<fpage>e5149108789</fpage>. doi:<pub-id pub-id-type="doi">10.33448/rsd-v9i10.8789</pub-id>.</mixed-citation></ref>
+<ref id="ref-20"><label>20.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Pereira-Lima</surname> <given-names>K</given-names></string-name>, <string-name><surname>Loureiro</surname> <given-names>SR</given-names></string-name></person-group>. <article-title>Associations between social skills and burnout dimensions in medical residents</article-title>. <source>Pontificia Universidade Cat&#x00F3;lica de Campinas</source>. <year>2017</year>;<volume>34</volume>:<fpage>281</fpage>&#x2013;<lpage>92</lpage>. doi:<pub-id pub-id-type="doi">10.1590/1982-02752017000200009</pub-id>.</mixed-citation></ref>
+<ref id="ref-21"><label>21.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>de Waal</surname> <given-names>FBM</given-names></string-name>, <string-name><surname>Preston</surname> <given-names>SD</given-names></string-name></person-group>. <article-title>Mammalian empathy: behavioural manifestations and neural basis</article-title>. <source>Nat Rev Neurosci</source>. <year>2017</year>;<volume>18</volume>(<issue>8</issue>):<fpage>498</fpage>&#x2013;<lpage>509</lpage>. doi:<pub-id pub-id-type="doi">10.1038/nrn.2017.72</pub-id>.</mixed-citation></ref>
+<ref id="ref-22"><label>22.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Batson</surname> <given-names>C</given-names></string-name></person-group>. <article-title>These things called empathy: eight related but distinct phenomena<!--Q6: Reference &#x2018;22&#x2019; is incomplete. Please provide any of the relevant missing information: volume.--></article-title>. <source>Soc Neurosci Empathy</source>. <year>2009</year>. <fpage>3</fpage>&#x2013;<lpage>16</lpage>. doi:<pub-id pub-id-type="doi">10.7551/mitpress/9780262012973.003.0002</pub-id>.</mixed-citation></ref>
+<ref id="ref-23"><label>23.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Walter</surname> <given-names>H</given-names></string-name></person-group>. <article-title>Social cognitive neuroscience of empathy: concepts, circuits, and genes</article-title>. <source>Emot Rev</source>. <year>2012</year>;<volume>4</volume>(<issue>1</issue>):<fpage>9</fpage>&#x2013;<lpage>17</lpage>. doi:<pub-id pub-id-type="doi">10.1177/1754073911421379</pub-id>.</mixed-citation></ref>
+<ref id="ref-24"><label>24.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ma</surname> <given-names>X</given-names></string-name>, <string-name><surname>Deng</surname> <given-names>T</given-names></string-name>, <string-name><surname>Luo</surname> <given-names>D</given-names></string-name>, <string-name><surname>Ma</surname> <given-names>J</given-names></string-name></person-group>. <article-title>Analysis of the relationship between burnout and empathy ability among teachers in special education schools<!--Q7: Reference &#x2018;24&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>SHS Web Conf</source>. <year>2021</year>;<volume>123</volume>.</mixed-citation></ref>
+<ref id="ref-25"><label>25.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Tremblay</surname> <given-names>MA</given-names></string-name>, <string-name><surname>Messervey</surname> <given-names>DL</given-names></string-name></person-group>. <article-title>The job demands-resources model: further evidence for the buffering effect of personal resources</article-title>. <source>Sa J Ind Psychol</source>. <year>2011</year>;<volume>37</volume>:<fpage>10</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="ref-26"><label>26.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Delgado Bolton</surname> <given-names>RC</given-names></string-name>, <string-name><surname>San-Mart&#x00ED;n</surname> <given-names>M</given-names></string-name>, <string-name><surname>Vivanco</surname> <given-names>L</given-names></string-name></person-group>. <article-title>Role of empathy and lifelong learning abilities in physicians and nurses who work in direct contact with patients in adverse working conditions<!--Q8: Reference &#x2018;26&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Int J Environ Res Public Health</source>. <year>2022</year>;<volume>19</volume>.</mixed-citation></ref>
+<ref id="ref-27"><label>27.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Thirioux</surname> <given-names>B</given-names></string-name>, <string-name><surname>Birault</surname> <given-names>F</given-names></string-name>, <string-name><surname>Jaafari</surname> <given-names>N</given-names></string-name></person-group>. <article-title>Empathy is a protective factor of burnout in physicians: new neuro-phenomenological hypotheses regarding empathy and sympathy in care relationship</article-title>. <source>Front Psychol</source>. <year>2016</year>;<volume>7</volume>:<fpage>763</fpage>. doi:<pub-id pub-id-type="doi">10.3389/fpsyg.2016.00763</pub-id>.</mixed-citation></ref>
+<ref id="ref-28"><label>28.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Altmann</surname> <given-names>T</given-names></string-name>, <string-name><surname>Roth</surname> <given-names>M</given-names></string-name></person-group>. <article-title>The risk of empathy: longitudinal associations between empathy and burnout</article-title>. <source>Psychol Health</source>. <year>2020</year>;<volume>36</volume>:<fpage>1441</fpage>&#x2013;<lpage>60</lpage>. doi:<pub-id pub-id-type="doi">10.1080/08870446.2020.1838521</pub-id>.</mixed-citation></ref>
+<ref id="ref-29"><label>29.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Yang</surname> <given-names>W</given-names></string-name>, <string-name><surname>Zhonglin</surname> <given-names>W</given-names></string-name>, <string-name><surname>Wanting</surname> <given-names>X</given-names></string-name>, <string-name><surname>Yuanshu</surname> <given-names>F</given-names></string-name></person-group>. <article-title>Negative effects of empathy in preschool teachers: a moderated mediation model</article-title>. <source>J Psychol Sci</source>. <year>2018</year>;<volume>41</volume>(<issue>6</issue>):<fpage>1423</fpage>&#x2013;<lpage>9</lpage>. doi:<pub-id pub-id-type="doi">10.16719/j.cnki.1671-6981.20180620</pub-id>.</mixed-citation></ref>
+<ref id="ref-30"><label>30.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Wercelens</surname> <given-names>V</given-names></string-name>, <string-name><surname>Bueno</surname> <given-names>M</given-names></string-name>, <string-name><surname>Bueno</surname> <given-names>J</given-names></string-name>, <string-name><surname>Abrahim</surname> <given-names>R</given-names></string-name>, <string-name><surname>Ydy</surname> <given-names>J</given-names></string-name>, <string-name><surname>Zanetti</surname> <given-names>H</given-names></string-name>, <etal>et al.</etal></person-group> <article-title>Empathy and psychological concerns among medical students in Brazil during the COVID-19 pandemic</article-title>. <source>Int J Psychiatry Med</source>. <year>2023</year>;<volume>58</volume>:<fpage>9121742311790</fpage>. doi:<pub-id pub-id-type="doi">10.1177/00912174231179069</pub-id>.</mixed-citation></ref>
+<ref id="ref-31"><label>31.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Dekel</surname> <given-names>R</given-names></string-name>, <string-name><surname>Siegel</surname> <given-names>A</given-names></string-name>, <string-name><surname>Fridkin</surname> <given-names>S</given-names></string-name>, <string-name><surname>Svetlitzky</surname> <given-names>V</given-names></string-name></person-group>. <article-title>The double-edged sword: the role of empathy in military veterans&#x2019; partners distress</article-title>. <source>Psychol Trauma</source>. <year>2018</year>;<volume>10</volume>(<issue>2</issue>):<fpage>216</fpage>&#x2013;<lpage>24</lpage>. doi:<pub-id pub-id-type="doi">10.1037/tra0000265</pub-id>.</mixed-citation></ref>
+<ref id="ref-32"><label>32.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bokuchava</surname> <given-names>T</given-names></string-name>, <string-name><surname>Javakhishvili</surname> <given-names>N</given-names></string-name></person-group>. <article-title>Dual role of empathy in job stress, burnout, and intention to leave among addiction specialists</article-title>. <source>Psych J</source>. <year>2022</year>;<volume>11</volume>(<issue>6</issue>):<fpage>945</fpage>&#x2013;<lpage>55</lpage>. doi:<pub-id pub-id-type="doi">10.1002/pchj.583</pub-id>.</mixed-citation></ref>
+<ref id="ref-33"><label>33.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bouza</surname> <given-names>E</given-names></string-name>, <string-name><surname>Gil-Monte</surname> <given-names>PR</given-names></string-name>, <string-name><surname>Palomo</surname> <given-names>E</given-names></string-name>, <string-name><surname>Bouza</surname> <given-names>E</given-names></string-name>, <string-name><surname>Cortell-Alcocer</surname> <given-names>M</given-names></string-name>, <string-name><surname>Del Rosario</surname> <given-names>G</given-names></string-name>, <etal>et al</etal></person-group>. <article-title>S&#x00ED;ndrome de quemarse por el trabajo (burnout) en los m&#x00E9;dicos de Espa&#x00F1;a</article-title>. <source>Revista Cl&#x00ED;nica Espa&#x00F1;ola</source>. <year>2020</year>;<volume>220</volume>(<issue>6</issue>):<fpage>359</fpage>&#x2013;<lpage>63</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.rce.2020.02.002</pub-id>. 
+<comment>(In Spanish)</comment>.</mixed-citation></ref>
+<ref id="ref-34"><label>34.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ahmeto&#x011F;lu</surname> <given-names>E</given-names></string-name>, <string-name><surname>Acar</surname> <given-names>IH</given-names></string-name></person-group>. <article-title>The correlates of Turkish preschool preservice teachers&#x2019; social competence, empathy and communication skills</article-title>. <source>Eur J Contemp Educ</source>. <year>2016</year>;<volume>16</volume>:<fpage>188</fpage>&#x2013;<lpage>97</lpage>.</mixed-citation></ref>
+<ref id="ref-35"><label>35.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Eisenberg</surname> <given-names>N</given-names></string-name>, <string-name><surname>Miller</surname> <given-names>PA</given-names></string-name></person-group>. <source>The Relation of Empathy to Prosocial and Related Behaviors<!--Q9: Reference &#x2018;35&#x2019; is incomplete. Please provide any of the relevant missing information: location of publisher.--></source>. <publisher-name>American Psychological Association</publisher-name>; <year>1987</year>. pp. <fpage>91</fpage>&#x2013;<lpage>119</lpage>.</mixed-citation></ref>
+<ref id="ref-36"><label>36.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lvcheng</surname> <given-names>L</given-names></string-name>, <string-name><surname>Lim</surname> <given-names>YJ</given-names></string-name></person-group>. <article-title>The regulating effect of job environment on the relationship between empathy ability and job burnout of child care teachers<!--Q10: Reference &#x2018;36&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Early Childhood Educ Res Rev</source>. <year>2021</year>;<volume>25</volume>(<issue>6</issue>).</mixed-citation></ref>
+<ref id="ref-37"><label>37.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Benitez-Lopez</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Ramos-Loyo</surname> <given-names>J</given-names></string-name></person-group>. <article-title>Improved ability in emotional recognition and social skills after emotional recognition training in children</article-title>. <source>Int J Psychol Stud</source>. <year>2022</year>;<volume>14</volume>:<fpage>1</fpage>. doi:<pub-id pub-id-type="doi">10.5539/ijps.v14n3p1</pub-id>.</mixed-citation></ref>
+<ref id="ref-38"><label>38.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Hicks</surname> <given-names>M</given-names></string-name>, <string-name><surname>Hanes</surname> <given-names>D</given-names></string-name></person-group>. <article-title>Naturopathic medical student empathy and burnout: a preliminary study</article-title>. <source>Adv Integr Med</source>. <year>2019</year>;<volume>6</volume>(<issue>4</issue>):<fpage>151</fpage>&#x2013;<lpage>8</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.aimed.2018.07.001</pub-id>.</mixed-citation></ref>
+<ref id="ref-39"><label>39.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Figley</surname> <given-names>CR</given-names></string-name></person-group>. <article-title>Compassion fatigue: psychotherapists&#x2019; chronic lack of self care</article-title>. <source>J Clin Psychol</source>. <year>2002</year>;<volume>58</volume>(<issue>11</issue>):<fpage>1433</fpage>&#x2013;<lpage>41</lpage>. doi:<pub-id pub-id-type="doi">10.1002/jclp.10090</pub-id>.</mixed-citation></ref>
+<ref id="ref-40"><label>40.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Carrard</surname> <given-names>V</given-names></string-name>, <string-name><surname>Bourquin</surname> <given-names>C</given-names></string-name>, <string-name><surname>Berney</surname> <given-names>S</given-names></string-name>, <string-name><surname>Schlegel</surname> <given-names>K</given-names></string-name>, <string-name><surname>Gaume</surname> <given-names>J</given-names></string-name>, <string-name><surname>Bart</surname> <given-names>P-A</given-names></string-name>, <etal>et al.</etal></person-group> <article-title>The relationship between medical students&#x2019; empathy, mental health, and burnout: a cross-sectional study</article-title>. <source>Med Teach</source>. <year>2022</year>;<volume>44</volume>:<fpage>1</fpage>&#x2013;<lpage>8</lpage>. doi:<pub-id pub-id-type="doi">10.1080/0142159X.2022.2098708</pub-id>.</mixed-citation></ref>
+<ref id="ref-41"><label>41.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Kabat-Zinn</surname> <given-names>J</given-names></string-name></person-group>. <article-title>Mindfulness-based interventions in context: past, present, and future</article-title>. <source>Clin Psychol: Sci Pract</source>. <year>2003</year>;<volume>10</volume>(<issue>2</issue>):<fpage>144</fpage>&#x2013;<lpage>56</lpage>. doi:<pub-id pub-id-type="doi">10.1093/clipsy.bpg016</pub-id>.</mixed-citation></ref>
+<ref id="ref-42"><label>42.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bishop</surname> <given-names>SR</given-names></string-name></person-group>. <article-title>What do we really know about mindfulness-based stress reduction?</article-title> <source>Psychosom Med</source>. <year>2002</year>;<volume>64</volume>(<issue>1</issue>):<fpage>71</fpage>&#x2013;<lpage>83</lpage>.</mixed-citation></ref>
+<ref id="ref-43"><label>43.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Fabbro</surname> <given-names>A</given-names></string-name>, <string-name><surname>Fabbro</surname> <given-names>F</given-names></string-name>, <string-name><surname>Capurso</surname> <given-names>V</given-names></string-name>, <string-name><surname>D&#x2019;Antoni</surname> <given-names>F</given-names></string-name>, <string-name><surname>Crescentini</surname> <given-names>C</given-names></string-name></person-group>. <article-title>Effects of mindfulness training on school teachers&#x2019; self-reported personality traits as well as stress and burnout levels</article-title>. <source>Percept Mot Skills</source>. <year>2020</year>;<volume>127</volume>(<issue>3</issue>):<fpage>515</fpage>&#x2013;<lpage>32</lpage>. doi:<pub-id pub-id-type="doi">10.1177/0031512520908708</pub-id>.</mixed-citation></ref>
+<ref id="ref-44"><label>44.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Roeser</surname> <given-names>RW</given-names></string-name>, <string-name><surname>Mashburn</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Skinner</surname> <given-names>EA</given-names></string-name>, <string-name><surname>Choles</surname> <given-names>JR</given-names></string-name>, <string-name><surname>Taylor</surname> <given-names>C</given-names></string-name>, <string-name><surname>Rickert</surname> <given-names>NP</given-names></string-name>, <etal>et al</etal></person-group>. <article-title>Mindfulness training improves middle school teachers&#x2019; occupational health, well-being, and interactions with students in their most stressful classrooms</article-title>. <source>J Educ Psychol</source>. <year>2022</year>;<volume>114</volume>(<issue>2</issue>):<fpage>408</fpage>&#x2013;<lpage>25</lpage>. doi:<pub-id pub-id-type="doi">10.1037/edu0000675</pub-id>.</mixed-citation></ref>
+<ref id="ref-45"><label>45.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Janssen</surname> <given-names>M</given-names></string-name>, <string-name><surname>Heerkens</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Van der Heijden</surname> <given-names>B</given-names></string-name>, <string-name><surname>Korzilius</surname> <given-names>H</given-names></string-name>, <string-name><surname>Peters</surname> <given-names>P</given-names></string-name>, <string-name><surname>Engels</surname> <given-names>J</given-names></string-name></person-group>. <article-title>Effects of mindfulness-based stress reduction and an organizational health intervention on Dutch teachers&#x2019; mental health</article-title>. <source>Health Promot Int</source>. <year>2023</year>;<volume>38</volume>(<issue>3</issue>):<fpage>329</fpage>. doi:<pub-id pub-id-type="doi">10.1093/heapro/daac008</pub-id>.</mixed-citation></ref>
+<ref id="ref-46"><label>46.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Grover</surname> <given-names>SL</given-names></string-name>, <string-name><surname>Teo</surname> <given-names>STT</given-names></string-name>, <string-name><surname>Pick</surname> <given-names>D</given-names></string-name>, <string-name><surname>Roche</surname> <given-names>M</given-names></string-name></person-group>. <article-title>Mindfulness as a personal resource to reduce work stress in the job demands-resources model</article-title>. <source>Stress Health</source>. <year>2017</year>;<volume>33</volume>:<fpage>426</fpage>&#x2013;<lpage>36</lpage>. doi:<pub-id pub-id-type="doi">10.1002/smi.2726</pub-id>.</mixed-citation></ref>
+<ref id="ref-47"><label>47.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Guidetti</surname> <given-names>G</given-names></string-name>, <string-name><surname>Viotti</surname> <given-names>S</given-names></string-name>, <string-name><surname>Badagliacca</surname> <given-names>R</given-names></string-name>, <string-name><surname>Colombo</surname> <given-names>L</given-names></string-name>, <string-name><surname>Converso</surname> <given-names>D</given-names></string-name></person-group>. <article-title>Can mindfulness mitigate the energy-depleting process and increase job resources to prevent burnout? A study on the mindfulness trait in the school context</article-title>. <source>PLoS One</source>. <year>2019</year>;<volume>14</volume>(<issue>4</issue>):<fpage>e0214935</fpage>. doi:<pub-id pub-id-type="doi">10.1371/journal.pone.0214935</pub-id>.</mixed-citation></ref>
+<ref id="ref-48"><label>48.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Voci</surname> <given-names>A</given-names></string-name>, <string-name><surname>Veneziani</surname> <given-names>CA</given-names></string-name>, <string-name><surname>Metta</surname> <given-names>M</given-names></string-name></person-group>. <article-title>Affective organizational commitment and dispositional mindfulness as correlates of burnout in health care professionals</article-title>. <source>J Workplace Behav Health</source>. <year>2016</year>;<volume>31</volume>(<issue>2</issue>):<fpage>63</fpage>&#x2013;<lpage>70</lpage>. doi:<pub-id pub-id-type="doi">10.1080/15555240.2015.1047500</pub-id>.</mixed-citation></ref>
+<ref id="ref-49"><label>49.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Huang</surname> <given-names>C</given-names></string-name>, <string-name><surname>Xie</surname> <given-names>X</given-names></string-name>, <string-name><surname>Cheung</surname> <given-names>SP</given-names></string-name>, <string-name><surname>Zhou</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Ying</surname> <given-names>GW</given-names></string-name></person-group>. <article-title>Job demands, resources, and burnout in social workers in china: mediation effect of mindfulness<!--Q11: Reference &#x2018;49&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Int J Environ Res Public Health</source>. <year>2021</year>;<volume>18</volume>.</mixed-citation></ref>
+<ref id="ref-50"><label>50.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Zhang</surname> <given-names>C</given-names></string-name>, <string-name><surname>Cheung</surname> <given-names>SP</given-names></string-name>, <string-name><surname>Huang</surname></string-name></person-group><person-group person-group-type="author"><string-name></string-name></person-group> <person-group person-group-type="author"></person-group><person-group person-group-type="author"><string-name> <given-names>C-YJ</given-names></string-name></person-group>. <article-title>Job demands and resources, mindfulness, and burnout among delivery drivers in China<!--Q12: Reference &#x2018;50&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Front Psychol</source>. <year>2022</year>;<volume>13</volume>.</mixed-citation></ref>
+<ref id="ref-51"><label>51.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Beauchemin</surname> <given-names>J</given-names></string-name>, <string-name><surname>Hutchins</surname> <given-names>TL</given-names></string-name>, <string-name><surname>Patterson</surname> <given-names>F</given-names></string-name></person-group>. <article-title>Mindfulness meditation may lessen anxiety, promote social skills, and improve academic performance among adolescents with learning disabilities<!--Q13: Reference &#x2018;51&#x2019; is incomplete. Please provide any of the relevant missing information: volume.--></article-title>. <source>Complement Health Pract Rev</source>. <year>2008</year>. <fpage>34</fpage>. <comment>2008/01//</comment>.</mixed-citation></ref>
+<ref id="ref-52"><label>52.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Iwasaki</surname> <given-names>S</given-names></string-name>, <string-name><surname>Sogabe</surname> <given-names>A</given-names></string-name>, <string-name><surname>Iredale</surname> <given-names>F</given-names></string-name>, <string-name><surname>Sasaki</surname> <given-names>T</given-names></string-name></person-group>. <article-title>An assessment of Australian judo practitioners&#x2019; perceptions of motivational climate, mindfulness, aggression, and social skills: 2988 Board #53 June 3, 2: 00 PM&#x2013;3: 30 PM</article-title>. <source>Med Sci Sports Exerc</source>. <year>2016</year>;<volume>48</volume>(<issue>5S</issue>):<fpage>842</fpage>. doi:<pub-id pub-id-type="doi">10.1249/01.mss.0000487523.52815.34</pub-id>.</mixed-citation></ref>
+<ref id="ref-53"><label>53.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Winning</surname> <given-names>AP</given-names></string-name>, <string-name><surname>Boag</surname> <given-names>S</given-names></string-name></person-group>. <article-title>Does brief mindfulness training increase empathy? The role of personality</article-title>. <source>Pers Individ Dif</source>. <year>2015</year>;<volume>86</volume>:<fpage>492</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="ref-54"><label>54.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ridderinkhof</surname> <given-names>A</given-names></string-name>, <string-name><surname>de Bruin</surname> <given-names>EI</given-names></string-name>, <string-name><surname>Brummelman</surname> <given-names>E</given-names></string-name>, <string-name><surname>B&#x00F6;gels</surname> <given-names>SM</given-names></string-name></person-group>. <article-title>Does mindfulness meditation increase empathy? An experiment</article-title>. <source>Self Identity</source>. <year>2017</year>;<volume>16</volume>:<fpage>251</fpage>&#x2013; <lpage>69</lpage>.</mixed-citation></ref>
+<ref id="ref-55"><label>55.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Chen</surname> <given-names>L</given-names></string-name>, <string-name><surname>Li</surname> <given-names>X</given-names></string-name>, <string-name><surname>Xing</surname> <given-names>L</given-names></string-name></person-group>. <article-title>From mindfulness to work engagement: the mediating roles of work meaningfulness, emotion regulation, and job competence<!--Q14: Reference &#x2018;55&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Front Psychol</source>. <year>2022</year>;<volume>13</volume>.</mixed-citation></ref>
+<ref id="ref-56"><label>56.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Jones</surname> <given-names>T</given-names></string-name></person-group>. <article-title>The effects of mindfulness meditation on emotion regulation, cognition and social skills<!--Q15: Reference &#x2018;56&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Eur Sci J</source>. <year>2018</year>;<volume>14</volume>. doi:<pub-id pub-id-type="doi">10.19044/esj.2018.v14n14p18</pub-id>.</mixed-citation></ref>
+<ref id="ref-57"><label>57.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Salvarani</surname> <given-names>V</given-names></string-name>, <string-name><surname>Rampoldi</surname> <given-names>G</given-names></string-name>, <string-name><surname>Ardenghi</surname> <given-names>S</given-names></string-name>, <string-name><surname>Bani</surname> <given-names>M</given-names></string-name>, <string-name><surname>Blasi</surname> <given-names>P</given-names></string-name>, <string-name><surname>Ausili</surname> <given-names>D</given-names></string-name>, <etal>et al</etal></person-group>. <article-title>Protecting emergency room nurses from burnout: the role of dispositional mindfulness, emotion regulation and empathy</article-title>. <source>J Nurs Manag</source>. <year>2019</year>;<volume>27</volume>(<issue>4</issue>):<fpage>765</fpage>&#x2013;<lpage>74</lpage>. doi:<pub-id pub-id-type="doi">10.1111/jonm.12771</pub-id>.</mixed-citation></ref>
+<ref id="ref-58"><label>58.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Ferris</surname> <given-names>GR</given-names></string-name>, <string-name><surname>Witt</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Hochwarter</surname> <given-names>WA</given-names></string-name></person-group>. <article-title>Interaction of social skill and general mental ability on job performance and salary</article-title>. <source>J Appl Psychol</source>. <year>2001</year>;<volume>86</volume>(<issue>6</issue>):<fpage>1075</fpage>&#x2013;<lpage>82</lpage>. doi:<pub-id pub-id-type="doi">10.1037/0021-9010.86.6.1075</pub-id>.</mixed-citation></ref>
+<ref id="ref-59"><label>59.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Vossen</surname> <given-names>HGM</given-names></string-name>, <string-name><surname>Piotrowski</surname> <given-names>JT</given-names></string-name>, <string-name><surname>Valkenburg</surname> <given-names>PM</given-names></string-name></person-group>. <article-title>Development of the adolescent measure of empathy and sympathy (AMES)</article-title>. <source>Pers Individ Dif</source>. <year>2015</year>;<volume>74</volume>:<fpage>66</fpage>&#x2013;<lpage>71</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.paid.2014.09.040</pub-id>.</mixed-citation></ref>
+<ref id="ref-60"><label>60.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Maslach</surname> <given-names>C</given-names></string-name>, <string-name><surname>Jackson</surname> <given-names>SE</given-names></string-name></person-group>. <article-title>The measurement of experienced burnout</article-title>. <source>J Organ Behav</source>. <year>1981</year>;<volume>2</volume>(<issue>2</issue>):<fpage>99</fpage>&#x2013;<lpage>113</lpage>. doi:<pub-id pub-id-type="doi">10.1002/job.4030020205</pub-id>.</mixed-citation></ref>
+<ref id="ref-61"><label>61.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Brown</surname> <given-names>KW</given-names></string-name>, <string-name><surname>Ryan</surname> <given-names>RM</given-names></string-name></person-group>. <article-title>The benefits of being present: mindfulness and its role in psychological well-being</article-title>. <source>J Pers Soc Psychol</source>. <year>2003</year>;<volume>84</volume>(<issue>4</issue>):<fpage>822</fpage>&#x2013;<lpage>48</lpage>. doi:<pub-id pub-id-type="doi">10.1037/0022-3514.84.4.822</pub-id>.</mixed-citation></ref>
+<ref id="ref-62"><label>62.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Pereira-Lima</surname> <given-names>K</given-names></string-name>, <string-name><surname>Loureiro</surname> <given-names>SR</given-names></string-name></person-group>. <article-title>Burnout, anxiety, depression, and social skills in medical residents</article-title>. <source>Psychol, Health Med</source>. <year>2015</year>;<volume>20</volume>(<issue>3</issue>):<fpage>353</fpage>&#x2013;<lpage>62</lpage>. doi:<pub-id pub-id-type="doi">10.1080/13548506.2014.936889</pub-id>.</mixed-citation></ref>
+<ref id="ref-63"><label>63.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lopes</surname> <given-names>D</given-names></string-name>, <string-name><surname>Gerolamo</surname> <given-names>M</given-names></string-name>, <string-name><surname>Del Prette</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Musetti</surname> <given-names>M</given-names></string-name>, <string-name><surname>Prette</surname> <given-names>A</given-names></string-name></person-group>. <article-title>Social skills: a key factor for engineering students to develop interpersonal skills</article-title>. <source>Int J Eng Educ</source>. <year>2015</year>;<volume>31</volume>:<fpage>405</fpage>&#x2013;<lpage>13</lpage>.</mixed-citation></ref>
+<ref id="ref-64"><label>64.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Puranitee</surname> <given-names>P</given-names></string-name>, <string-name><surname>Kaewpila</surname> <given-names>W</given-names></string-name>, <string-name><surname>Heeneman</surname> <given-names>S</given-names></string-name>, <string-name><surname>Van Mook</surname> <given-names>WNKA</given-names></string-name>, <string-name><surname>Busari</surname> <given-names>JO</given-names></string-name></person-group>. <article-title>Promoting a sense of belonging, engagement, and collegiality to reduce burnout: a mixed methods study among undergraduate medical students in a non-Western, Asian context</article-title>. <source>BMC Med Educ</source>. <year>2022</year>;<volume>22</volume>(<issue>1</issue>):<fpage>327</fpage>. doi:<pub-id pub-id-type="doi">10.1186/s12909-022-03380-0</pub-id>.</mixed-citation></ref>
+<ref id="ref-65"><label>65.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Hajovsky</surname> <given-names>D</given-names></string-name>, <string-name><surname>Chesnut</surname> <given-names>S</given-names></string-name>, <string-name><surname>Helbig</surname> <given-names>K</given-names></string-name>, <string-name><surname>Goranowski</surname> <given-names>S</given-names></string-name></person-group>. <article-title>On the examination of longitudinal trends between teacher-student relationship quality and social skills during elementary school</article-title>. <source>Sch Psych Rev</source>. <year>2021</year>;<volume>52</volume>:<fpage>679</fpage>&#x2013;<lpage>95</lpage>. doi:<pub-id pub-id-type="doi">10.1080/2372966X.2021.1883995</pub-id>.</mixed-citation></ref>
+<ref id="ref-66"><label>66.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Hasty</surname> <given-names>LM</given-names></string-name>, <string-name><surname>Quintero</surname> <given-names>M</given-names></string-name>, <string-name><surname>Li</surname> <given-names>T</given-names></string-name>, <string-name><surname>Song</surname> <given-names>S</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>Z</given-names></string-name></person-group>. <article-title>The longitudinal associations among student externalizing behaviors, teacher-student relationships, and classroom engagement</article-title>. <source>J Sch Psychol</source>. <year>2023</year>;<volume>100</volume>:<fpage>101242</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jsp.2023.101242</pub-id>.</mixed-citation></ref>
+<ref id="ref-67"><label>67.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>McLure</surname> <given-names>FI</given-names></string-name>, <string-name><surname>Fraser</surname> <given-names>BJ</given-names></string-name>, <string-name><surname>Koul</surname> <given-names>RB</given-names></string-name></person-group>. <article-title>Structural relationships between classroom emotional climate, teacher-student interpersonal relationships and students&#x2019; attitudes to STEM</article-title>. <source>Soc Psychol Educ</source>. <year>2022</year>;<volume>25</volume>(<issue>2</issue>):<fpage>625</fpage>&#x2013;<lpage>48</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s11218-022-09694-7</pub-id>.</mixed-citation></ref>
+<ref id="ref-68"><label>68.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Gardner</surname> <given-names>M</given-names></string-name>, <string-name><surname>Hanno</surname> <given-names>E</given-names></string-name>, <string-name><surname>Jones</surname> <given-names>S</given-names></string-name>, <string-name><surname>Lesaux</surname> <given-names>N</given-names></string-name></person-group>. <article-title>Exploring early educator burnout and process quality in a statewide sample</article-title>. <source>J Sch Psychol</source>. <year>2023</year>;<volume>99</volume>:<fpage>101214</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jsp.2023.04.004</pub-id>.</mixed-citation></ref>
+<ref id="ref-69"><label>69.</label><mixed-citation publication-type="book"><person-group person-group-type="author"><string-name><surname>Johnson</surname> <given-names>DW</given-names></string-name>, <string-name><surname>Johnson</surname> <given-names>RT</given-names></string-name></person-group>. <chapter-title>Social interdependence theory</chapter-title>. In: <person-group person-group-type="editor"><string-name><surname>Christie</surname> <given-names>DJ</given-names></string-name></person-group>, editors. <source>Encyclopedia of Peace Psychology</source>. <publisher-loc>Hoboken, NJ</publisher-loc>: <publisher-name>Wiley-Blackwell</publisher-name>; <year>2012</year>.</mixed-citation></ref>
+<ref id="ref-70"><label>70.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Lee</surname> <given-names>D</given-names></string-name>, <string-name><surname>Huh</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Reigeluth</surname> <given-names>C</given-names></string-name></person-group>. <article-title>Collaboration, intragroup conflict, and social skills in project-based learning<!--Q16: Reference &#x2018;70&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Instr Sci</source>. <year>2015</year>;<volume>43</volume>. doi:<pub-id pub-id-type="doi">10.1007/s11251-015-9348-7</pub-id>.</mixed-citation></ref>
+<ref id="ref-71"><label>71.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Cairns</surname> <given-names>P</given-names></string-name>, <string-name><surname>Isham</surname> <given-names>A</given-names></string-name>, <string-name><surname>Zachariae</surname> <given-names>R</given-names></string-name></person-group>. <article-title>The association between empathy and burnout in medical students: a systematic review and meta-analysis</article-title>. <source>Res Square</source>. <year>2024</year>;<volume>52</volume>:<fpage>397</fpage>. doi:<pub-id pub-id-type="doi">10.21203/rs.3.rs-3878990/v1</pub-id>.</mixed-citation></ref>
+<ref id="ref-72"><label>72.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Xiaodong</surname> <given-names>G</given-names></string-name>, <string-name><surname>Hong</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Dun</surname> <given-names>R</given-names></string-name>, <string-name><surname>Dingding</surname> <given-names>H</given-names></string-name>, <string-name><surname>Yi</surname> <given-names>W</given-names></string-name>, <string-name><surname>Yanyu</surname> <given-names>W</given-names></string-name>, <etal>et al</etal></person-group>. <article-title>Associations between empathy and negative affect: effect of emotion regulation</article-title>. <source>Acta Psychol Sin</source>. <year>2023</year>;<volume>55</volume>(<issue>6</issue>):<fpage>892</fpage>&#x2013;<lpage>904</lpage>.</mixed-citation></ref>
+<ref id="ref-73"><label>73.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Huang</surname> <given-names>H</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Su</surname> <given-names>Y</given-names></string-name></person-group>. <article-title>What is the relationship between empathy and mental health in preschool teachers: the role of teaching experience<!--Q17: Reference &#x2018;73&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>Front Psychol</source>. <year>2020</year>;<volume>11</volume>. doi:<pub-id pub-id-type="doi">10.3389/fpsyg.2020.01366</pub-id>.</mixed-citation></ref>
+<ref id="ref-74"><label>74.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Wu</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Jin</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>P</given-names></string-name></person-group>. <article-title>The relationship between the physician-patient relationship, physician empathy, and patient trust<!--Q18: Reference &#x2018;74&#x2019; is incomplete. Please provide any of the relevant missing information: page range.--></article-title>. <source>J Gen Intern Med</source>. <year>2021</year>;<volume>37</volume>. doi:<pub-id pub-id-type="doi">10.1007/s11606-021-07008-9</pub-id>.</mixed-citation></ref>
+<ref id="ref-75"><label>75.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Mesmer-Magnus</surname> <given-names>J</given-names></string-name>, <string-name><surname>Manapragada</surname> <given-names>A</given-names></string-name>, <string-name><surname>Viswesvaran</surname> <given-names>C</given-names></string-name>, <string-name><surname>Allen</surname> <given-names>JW</given-names></string-name></person-group>. <article-title>Trait mindfulness at work: a meta-analysis of the personal and professional correlates of trait mindfulness</article-title>. <source>Hum Perform</source>. <year>2017</year>;<volume>30</volume>(<issue>2&#x2013;3</issue>):<fpage>79</fpage>&#x2013;<lpage>98</lpage>. doi:<pub-id pub-id-type="doi">10.1080/08959285.2017.1307842</pub-id>.</mixed-citation></ref>
+<ref id="ref-76"><label>76.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Sos</surname> <given-names>T</given-names></string-name>, <string-name><surname>Melton</surname> <given-names>B</given-names></string-name></person-group>. <article-title>Comparison of mindfulness practices for effectiveness of stress and burnout reduction in healthcare staff</article-title>. <source>J Holist Nurs</source>. <year>2023</year>;<volume>5</volume>:<fpage>8980101231219304</fpage>. doi:<pub-id pub-id-type="doi">10.1177/08980101231219304</pub-id>.</mixed-citation></ref>
+<ref id="ref-77"><label>77.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Bi</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Ye</surname> <given-names>X</given-names></string-name></person-group>. <article-title>The effect of trait mindfulness on teachers&#x2019; emotional exhaustion: the chain mediating role of psychological capital and job engagement</article-title>. <source>Healthcare</source>. <year>2021</year>;<volume>9</volume>:<fpage>1527</fpage>. doi:<pub-id pub-id-type="doi">10.3390/healthcare9111527</pub-id>.</mixed-citation></ref>
+<ref id="ref-78"><label>78.</label><mixed-citation publication-type="journal"><person-group person-group-type="author"><string-name><surname>Daya</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Hearn</surname> <given-names>JH</given-names></string-name></person-group>. <article-title>Mindfulness interventions in medical education: a systematic review of their impact on medical student stress, depression, fatigue and burnout</article-title>. <source>Med Teach</source>. <year>2018</year>;<volume>40</volume>(<issue>2</issue>):<fpage>146</fpage>&#x2013;<lpage>53</lpage>. doi:<pub-id pub-id-type="doi">10.1080/0142159x.2017.1394999</pub-id>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

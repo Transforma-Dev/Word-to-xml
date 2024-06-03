@@ -1,134 +1,153 @@
 {
     "EJ-EDU":{"journal_title":"European Journal of Education and Pedagogy",
-            "issn_no":"2736-4534",
+            "issn_no":"<issn pub-type='epub'>2736-4534</issn>",
             "publisher_name":"European Open Science",
             "publisher_loc":"UK",
-            "article_id":"10.24018/ejedu.2024.1.1."
+            "article_id":"10.24018/ejedu.2024.1.1.",
+            "subject":"RESEARCH ARTICLE"
         },
 
     "EJ-GEO":{"journal_title":"European Journal of Environment and Earth Sciences",
-            "issn_no":"2684-446X",
+            "issn_no":"<issn pub-type='epub'>2684-446X</issn>",
             "publisher_name":"European Open Science",
             "publisher_loc":"UK",
-            "article_id":"10.24018/ejgeo.2024.1.1."
+            "article_id":"10.24018/ejgeo.2024.1.1.",
+            "subject":"RESEARCH ARTICLE"
         },
 
     "EJ-MATH":{"journal_title":"European Journal of Mathematics and Statistics",
-            "issn_no":"2736-5484",
+            "issn_no":"<issn pub-type='epub'>2736-5484</issn>",
             "publisher_name":"European Open Science",
             "publisher_loc":"UK",
-            "article_id":"10.24018/ejmath.2023.1.1."
+            "article_id":"10.24018/ejmath.2023.1.1.",
+            "subject":"RESEARCH ARTICLE"
         },
 
     "EJ-MED":{"journal_title":"European Journal of Medical and Health Sciences",
-            "issn_no":"2593-8339",
+            "issn_no":"<issn pub-type='epub'>2593-8339</issn>",
             "publisher_name":"European Open Science",
             "publisher_loc":"UK",
-            "article_id":"10.24018/ejmed.2024.1.1."
-        },
-
-    "Phyton":{"journal_title":"Phyton-International Journal of Experimental Botany",
-            "issn_no":"1851-5657",
-            "publisher_name":"Tech Science Press",
-            "publisher_loc":"USA",
-            "article_id":"10.32604/phyton.2024."
+            "article_id":"10.24018/ejmed.2024.1.1.",
+            "subject":"RESEARCH ARTICLE"
         },
 
     "EJ-SOCIAL":{"journal_title":"European Journal of Humanities and Social Sciences",
-            "issn_no":"2736-5522",
+            "issn_no":"<issn pub-type='epub'>2736-5522</issn>",
             "publisher_name":"European Open Science",
             "publisher_loc":"UK",
-            "article_id":"10.24018/ejsocial.2024.1.1."
+            "article_id":"10.24018/ejsocial.2024.1.1.",
+            "subject":"RESEARCH ARTICLE"
         },
 
     "peerj":{"journal_title":"PeerJ",
-            "issn_no":"2167-8359",
+            "issn_no":"<issn pub-type='epub'>2167-8359</issn>",
             "publisher_name":"PeerJ Inc.",
             "publisher_loc":"San Diego, USA",
-            "article_id":"10.7717/peerj."
+            "article_id":"10.7717/peerj.",
+            "subject":"RESEARCH ARTICLE"
         },
 
     "BIOCELL":{"journal_title":"BIOCELL",
-            "issn_no":"1667-5746",
+            "issn_no":"<issn pub-type='epub'>1667-5746</issn><issn pub-type='ppub'>0327-9545</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/biocell.2024."
+            "article_id":"10.32604/biocell.2024.",
+            "subject":"ARTICLE"
         },
 
     "CMC":{"journal_title":"Computers, Materials &#x0026; Continua",
-            "issn_no":"1546-2226",
+            "issn_no":"<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1546-2218</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/cmc.2024."
+            "article_id":"10.32604/cmc.2024.",
+            "subject":"ARTICLE"
         },
 
     "CMES":{"journal_title":"Computer Modeling in Engineering &#x0026; Sciences",
-            "issn_no":"1526-1506",
+            "issn_no":"<issn pub-type='epub'>1526-1506</issn><issn pub-type='ppub'>1526-1492</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/cmes.2024."
+            "article_id":"10.32604/cmes.2024.",
+            "subject":"ARTICLE"
         },
 
     "CSSE":{"journal_title":"Computer Systems Science &#x0026; Engineering",
-            "issn_no":"0267-6192",
+            "issn_no":"<issn pub-type='ppub'>0267-6192</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/cmes.2024.0"
+            "article_id":"10.32604/cmes.2024.0",
+            "subject":"ARTICLE"
         },
 
     "DEDT":{"journal_title":"Digital Engineering and Digital Twin",
-            "issn_no":"xxxx-xxxx",
+            "issn_no":"<issn pub-type='epub'>xxxx-xxxx</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/dedt.2024.0"
+            "article_id":"10.32604/dedt.2024.0",
+            "subject":"ARTICLE"
         },
 
     "FHMT":{"journal_title":"Frontiers in Heat and Mass Transfer",
-            "issn_no":"2151-8629",
+            "issn_no":"<issn pub-type='epub'>2151-8629</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/fhmt.2024.0"
+            "article_id":"10.32604/fhmt.2024.0",
+            "subject":"ARTICLE"
         },
 
     "IJMHP":{"journal_title":"International Journal of Mental Health Promotion",
-        "issn_no":"2049-8543",
+        "issn_no":"<issn pub-type='epub'>2049-8543</issn>",
         "publisher_name":"Tech Science Press",
         "publisher_loc":"USA",
-        "article_id":"10.32604/ijmhp.2024.0"
+        "article_id":"10.32604/ijmhp.2024.0",
+        "subject":"ARTICLE"
     },
 
     "JAI":{"journal_title":"Journal on Artificial Intelligence",
-        "issn_no":"2579-003X",
+        "issn_no":"<issn pub-type='epub'>2579-003X</issn><issn pub-type='ppub'>2579-0021</issn>",
         "publisher_name":"Tech Science Press",
         "publisher_loc":"USA",
-        "article_id":"10.32604/jai.2024.0"
+        "article_id":"10.32604/jai.2024.0",
+        "subject":"ARTICLE"
     },
 
     "JRM":{"journal_title":"Journal of Renewable Materials",
-        "issn_no":"2164-6341",
+        "issn_no":"<issn pub-type='epub'>2164-6341</issn>",
         "publisher_name":"Tech Science Press",
         "publisher_loc":"USA",
-        "article_id":"10.32604/jrm.2024.0"
+        "article_id":"10.32604/jrm.2024.0",
+        "subject":"ARTICLE"
     },
 
     "OR":{"journal_title":"Oncology Research",
-        "issn_no":"0965-0407",
+        "issn_no":"<issn pub-type='ppub'>0965-0407</issn><issn pub-type='epub'>1555-3906</issn>",
         "publisher_name":"Tech Science Press",
         "publisher_loc":"USA",
-        "article_id":"10.32604/or.2024.0"
+        "article_id":"10.32604/or.2024.0",
+        "subject":"ARTICLE"
     },
 
-    "PO":{"journal_title":"Psycho-Oncologie",
-            "issn_no":"1778-3798",
+    "Phyton":{"journal_title":"Phyton-International Journal of Experimental Botany",
+            "issn_no":"<issn pub-type='epub'>1851-5657</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.3166/po.2024."
+            "article_id":"10.32604/phyton.2024.",
+            "subject":"ARTICLE"
+        },
+
+    "PO":{"journal_title":"Psycho-Oncologie",
+            "issn_no":"<issn pub-type='epub'>1778-3798</issn>",
+            "publisher_name":"Tech Science Press",
+            "publisher_loc":"USA",
+            "article_id":"10.3166/po.2024.",
+            "subject":"COMMENTARY"
         },
 
     "FDMP":{"journal_title":"Fluid Dynamics &#x0026; Materials Processing",
-        "issn_no":"1546-2226",
+        "issn_no":"<issn pub-type='epub'>1546-2226</issn>",
         "publisher_name":"Tech Science Press",
         "publisher_loc":"USA",
-        "article_id":"10.32604/fdmp.2024.0"
+        "article_id":"10.32604/fdmp.2024.0",
+        "subject":"ARTICLE"
     }
 }
