@@ -15,11 +15,19 @@ def author_name(xml_text,variables):
             split_string.append(name.strip())   #It holds the author names
             matches.append(numbers.strip())     #It holds the numbers
     else:
+        xml_t = re.split(r',\s*[A-Za-z]| and |;\s*', xml_text)
         pattern = re.compile(r'<sup>(.*?)</sup>')
-        matches = pattern.findall(xml_text)     #Get superscipt tag text
+        matches = []
+        for i in xml_t:
+            i = i+"</sup>"
+            matche = pattern.findall(i)     #Get superscipt tag text
+            add = ''
+            for j in matche:
+                add += j
+            matches.append(add)
         string = re.sub(pattern, '', xml_text)  #Get non superscript text
         split_string = re.split(r',\s*| and |;\s*', string)
-            
+    # print(matches)
     text=f'''</article-title>
                     <alt-title alt-title-type="left-running-head">Amoako and Otchere</alt-title>
                     <alt-title alt-title-type="right-running-head">Inevitability of Politics in Ghana&#x2019;s Curriculum Development</alt-title>
@@ -39,9 +47,13 @@ def author_name(xml_text,variables):
             text += ' '.join(i for i in auth if i!="and") + ' '
             text+=f'</given-names></name>'
             if matches and matches!=",":
-                mat=matches[0].split(",")
+                mat=matches[0]
+                mat = mat.replace(",","")
+                # print(mat)
                 matches=matches[1:]
                 for j in mat:
+                    if j.strip()=="":
+                        continue
                     if j and j != "*":
                         text += f'<xref ref-type="aff" rid="aff-{j}">{j}</xref>'
                     elif j == "*":
@@ -55,12 +67,14 @@ def author_name(xml_text,variables):
 
 #Define function to find aff text
 def aff_para(xml_text,variables):
+    # print(xml_text)
     split_last=xml_text.split(";")
     xml_text=split_last[0]
     text=""
-    pattern = re.compile(r'<sup>(.*?)</sup>')
+    pattern = re.compile(r'<sup>\d\d*</sup>')
     matches = pattern.findall(xml_text)     #Get superscipt tag text
     string = re.sub(pattern, '', xml_text)  #Get non superscript text
+    string = string.replace("<sup>","").replace("</sup>","")
     if any(keyword in xml_text.lower() for keyword in ["running title:", "orcid:"]):
         return text
     else:
@@ -82,9 +96,11 @@ def aff_para(xml_text,variables):
 def corres_author(xml_text,variables):
     xml_text=xml_text.replace("<sup>","<label>").replace("</sup>","</label>").replace("<link>","<email>").replace("</link>","</email>")
     if variables["para_count"]==3:
-        text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}</corresp></author-notes>'
+        text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}'
+    elif ".com" in xml_text:
+        text = f'{xml_text}'
     else:
-        text=f'<author-notes><corresp id="cor1">{xml_text}</corresp></author-notes>'
+        text=f'</corresp></author-notes><author-notes><corresp id="cor1">{xml_text}'
     
     variables["para_count"]+=1
     variables["aff_tag"]=False

@@ -46,34 +46,10 @@ def reference_text(xml_text,variables):
             if matches[0] in i:
                 auth_name += ","+i
                 break
-
+    
     variables["ref_text_link"].append(auth_name)
     # print(variables["ref_text_link"])
-    # xml_text_split = xml_text.split()[0]
-    # # print(variables["ref_text_link"],"---")
-    # changes = []    
-    # for index,i in enumerate(variables["ref_text_link"]):
-    #     if "p." in i:
-    #         j=i.split("p.")
-    #         if j[0].strip()[-1]==",":
-    #             j[0] = j[0].strip()[:-1]
-    #         changes.append((index, j[0]))
-    
-    # for index, new_element in changes:
-    #     variables["ref_text_link"].insert(index, new_element)
-    #     variables["ref_text_link"].pop(index+1)
-    # #Remove duplicate in list reference
-    # change_set = set(variables["ref_text_link"])
-    # variables["ref_text_link"] = list(change_set)
-    # print(variables["ref_text_link"])
-    # for i in variables["ref_text_link"]:
-    #     # i_split = i.split(",")
-    #     # if xml_text_split.startswith(i_split[0]) and i_split[1].strip() in xml_text:
-    #         print("plo")
-    # add_xref = f'<xref ref-type="bibr" rid="ref-{variables["ref_id"]}">{ss}</xref>'
-    # variables["ref_link_save"].append(add_xref) 
 
-    # print(variables["ref_link_save"])
     text=f'<ref id="ref-{variables["ref_id"]}">{xml_text}</ref>'
     
     variables["ref_id"]+=1

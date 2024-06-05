@@ -30,7 +30,7 @@ def abbrev_text(xml_text,variables):
 #Define function to find acknowledgment paragraph
 def ack_para(xml_text,variables,para):
     text=''
-    variables["previous_text"]=para.text
+    variables["previous_text"]=para.text.strip()
     #print(text)
     return text
 

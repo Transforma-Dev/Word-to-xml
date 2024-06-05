@@ -51,7 +51,7 @@
             "issn_no":"<issn pub-type='epub'>1667-5746</issn><issn pub-type='ppub'>0327-9545</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/biocell.2024.",
+            "article_id":"10.32604/biocell.2024.0",
             "subject":"ARTICLE"
         },
 
@@ -59,7 +59,7 @@
             "issn_no":"<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1546-2218</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/cmc.2024.",
+            "article_id":"10.32604/cmc.2024.0",
             "subject":"ARTICLE"
         },
 
@@ -67,7 +67,7 @@
             "issn_no":"<issn pub-type='epub'>1526-1506</issn><issn pub-type='ppub'>1526-1492</issn>",
             "publisher_name":"Tech Science Press",
             "publisher_loc":"USA",
-            "article_id":"10.32604/cmes.2024.",
+            "article_id":"10.32604/cmes.2024.0",
             "subject":"ARTICLE"
         },
 
@@ -144,7 +144,7 @@
         },
 
     "FDMP":{"journal_title":"Fluid Dynamics &#x0026; Materials Processing",
-        "issn_no":"<issn pub-type='epub'>1546-2226</issn>",
+        "issn_no":"<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1555-2578</issn>",
         "publisher_name":"Tech Science Press",
         "publisher_loc":"USA",
         "article_id":"10.32604/fdmp.2024.0",

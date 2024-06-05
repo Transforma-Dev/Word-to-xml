@@ -22,6 +22,7 @@ import sys
 import os
 
 from convertion import paragraph,table   #Import Functions from 'convertion.py' file
+import eq_link
 
 # Create HTML header and body
 pre_xml = """<?xml version='1.0' encoding='UTF-8'?>
@@ -83,7 +84,7 @@ def convert():
     output_xml_name = filename + '.xml'
     output_xml = os.path.join(output_folder, output_xml_name)
 
-    variables = {"previous_text": "","para_count": 1,
+    variables = {"previous_text": "","para_count": 1,"key_first":True,"key_store":'',
     "sec_1": 1,"sec_2": 1,"sec_3": 1,
     "secid": 0,"inner_3_id": 1,
     "sec_1_id": 1,"sec_2_id": 1,"sec_3_id": 1,
@@ -97,7 +98,8 @@ def convert():
     "abbre": False,
     "fn_start": False,
     "noman_text": False,"noman_store": '',
-    "ref_text_link":[],"ref_link_save":[]
+    "ref_text_link":[],"ref_link_save":[],
+    "recive":''
     }
     
     try:
@@ -111,13 +113,13 @@ def convert():
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
 
     #Check the word document and separate them in paragraph,tables and inline shapes
-    for para in iter_block_items(doc):
+    for para_num,para in enumerate(iter_block_items(doc)):
         """
         Parameters:
             para (object): The element (paragraph, table, or inline shape) from the Word document.
         """
         if isinstance(para, Paragraph):   #Word contain a paragraph
-            xml += paragraph(para, doc,doc_filename,variables)
+            xml += paragraph(para, doc,doc_filename,variables,para_num)
             
         elif isinstance(para, Table):    #Word contain a table
             xml += table(para, doc,doc_filename,variables)
@@ -131,54 +133,7 @@ def convert():
                 match = match.group() if match else None
                 xml = xml.replace("<mail>ssss@email.com</mail>",match)
 
-    xml = xml.split("<ref-list")
-
-    if re.findall(r'\[\d\d*\]', xml[0]):
-        parentheses_text = re.findall(r'\[(.*?)\]',xml[0])
-        for num in parentheses_text:
-            # Split the num by commas
-            split_i = num.split(",")
-            # Initialize the replacement string
-            add_xref = '['
-            for i, ref in enumerate(split_i):
-                # Add xref tags to each reference
-                add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
-                # Add comma separator if not the last reference
-                if i < len(split_i) - 1:
-                    add_xref += ','
-            # Close the num
-            add_xref += ']'
-            # Replace the original num with the new one in the XML
-            xml[0] = xml[0].replace(f'[{num}]', add_xref)
-            
-    else:
-        #Find author name and year present in xml
-        for index,i in enumerate(variables["ref_text_link"]):
-            name = i.split(",")
-            year = name[1].replace("(","").replace(")","")
-            pattern = rf'{re.escape(name[0].strip())}\,*\s*\(*{re.escape(year.strip())}'
-            match = re.findall(pattern, xml[0])
-            #Save the matched text and index in variable
-            for j in match:
-                variables["ref_link_save"].append((j,index))
-        
-        #Remove duplicates
-        variables["ref_link_save"] = list(set(variables["ref_link_save"]))
-
-        #Replace refereance text in xml
-        for j,index in variables["ref_link_save"]:
-            add_xref = f'<xref ref-type="bibr" rid="ref-{index+1}">{j}</xref>'
-            xml[0] = xml[0].replace(j,add_xref)
-        
-        # for i in variables["ref_text_link"]:
-        #     # print(i)
-        #     for j in variables["ref_link_save"]:
-        #         if i in j:
-        #             # print(i)
-        #             # print(j)
-        #             xml[0] = xml[0].replace(i,j)
-
-    xml=xml[0]+xml[1]
+    xml = eq_link.add_ref_tag(xml,variables)
 
     xml+=f"</article>"
 

@@ -17,8 +17,8 @@ from functions import title,authors,abstract_key,heading,list_file,image_table,r
 
 
 #Define the function for convert a paragraph from word document
-def paragraph(para,doc,doc_filename,variables):
-
+def paragraph(para,doc,doc_filename,variables,para_num):
+    
     #Initialize the all variables
     xml_text=""
     math_count = 0    #Initialize math count for math equations 
@@ -38,16 +38,16 @@ def paragraph(para,doc,doc_filename,variables):
     with open("journal.json",'r') as file:
         data = json.load(file)
 
-    if space_strip.strip().lower().startswith(("received", "running")):
+    if space_strip.strip().lower().startswith(("running","doi")):
         xml_text=''
         return xml_text
     
     #Find the all bold paragraph
     all_bold = all(run.bold for run in para.runs)
-
+    
     #Convert the pargaraph into xml
     xml=para._element.xml
-    #print(xml)
+    # print(xml)
     root = ET.fromstring(xml)
 
     #Check where the boxed text are present in paragraph
@@ -67,6 +67,7 @@ def paragraph(para,doc,doc_filename,variables):
         #Check if the paragraph contains math equations
         if '<m:oMath' in xml:
             values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count)
+            # print(xml_text)
 
         #Convert the run text in xml
         xmlstr = str(run._element.xml)
@@ -83,16 +84,6 @@ def paragraph(para,doc,doc_filename,variables):
 
         run.text=run.text.replace("<","&#60;").replace("<<","&#60;&#60;")   #Replace the '<' symbol in string format
 
-        # parentheses_text = re.findall(r'\((.*?)\)',run.text)
-        # pattern = re.compile(r'(?=.*[,])(?=.*[a-zA-Z])(?=.*\d)')
-        # for i in parentheses_text:
-        #     if pattern.search(i):
-        #         if ";" in i:
-        #             variables["ref_text_link"].extend(part.strip() for part in i.split(";"))
-        #         else:
-        #             variables["ref_text_link"].append(i.strip())
-                
-                
         #Find superscript text
         if run.font.superscript and len(para.text)!=0:
             xml_text+=f'<sup>{run.text}</sup>'
@@ -139,23 +130,23 @@ def paragraph(para,doc,doc_filename,variables):
     #Find author name in word document
     elif (para.style.name.startswith("Authors") or variables["para_count"]==2) and len(para.text)!=0:
         xml_text = authors.author_name(xml_text,variables)
-
-    # #Find two author in para.text contain † 
-    # elif space_strip.lower().startswith("†"):
-    #     aff_tag=False
-    #     xml_text = two_author(xml_text)
-
+        
     #Find corresponding author text in paragraph in word document and change the tag into author-notes
-    elif ("corresponding author" in para.text.lower() or para.text.strip().lower().startswith("e-mail") or para.text.strip().lower().startswith("*") or para.text.strip().lower().startswith("email")) and variables["para_count"]<5 and len(para.text)!=0:
-        #print(xml_text)
+    elif ("corresponding author" in para.text.lower() or ".com" in para.text.lower() or para.text.strip().lower().startswith(("e-mail", "*", "email"))) and not "Materials" in para.text and not "doi" in para.text and para_num<25 and len(para.text)!=0:
         xml_text = authors.corres_author(xml_text,variables)
 
+    #Find the recived text paragraph in document
+    elif (para.text.strip().lower().startswith("received")):
+        variables["recive"] = para.text
+        xml_text = ''
+        return xml_text
+
     #Find the next paragraph is abstract paragraph
-    elif variables["previous_text"].lower()=="abstract"  and len(para.text)!=0:
+    elif variables["previous_text"].strip().lower() in ["abstract","abstract:"] and len(para.text)!=0:
         xml_text = abstract_key.abstract(xml_text,variables,filename)
 
     #Find abstract in word document and skip this
-    elif para.text.lower()=="abstract" and len(para.text)!=0:       
+    elif para.text.strip().lower() in ["abstract", "abstract:"] and len(para.text)!=0:       
         variables["previous_text"]=para.text
         xml_text=''
         if variables["aff_tag"]:
@@ -175,8 +166,8 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = other_tags.noman(xml_text,variables)
     
     #Check para.text is keyword then skip them
-    elif para.text.lower()=="keywords":
-        variables["previous_text"]=para.text
+    elif para.text.strip().lower()=="keywords":
+        variables["previous_text"]=para.text.strip()
         xml_text=''
         return xml_text
 
@@ -193,15 +184,16 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = authors.aff_para(xml_text,variables)
 
     #Find acknowledgment paragraph in word document and change the tag into ack and p
-    elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', variables["previous_text"],flags=re.IGNORECASE):
+    elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', variables["previous_text"].strip(),flags=re.IGNORECASE):
         xml_text = other_tags.ack_text(xml_text,variables)
 
     #Find acknowledgment in word document and skip this
-    elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', para.text,flags=re.IGNORECASE):
+    elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', para.text.strip(),flags=re.IGNORECASE):
         xml_text = other_tags.ack_para(xml_text,variables,para)
 
     #Find acknowledgment in word document and skip this
     elif para.text.strip().lower().startswith("acknowledg") and not re.search(r'^Acknowledging', para.text,re.IGNORECASE):
+        # print(xml_text)
         xml_text = other_tags.ack_text(xml_text,variables)
 
     #Find funding statement in word document
@@ -228,6 +220,7 @@ def paragraph(para,doc,doc_filename,variables):
 
     #Find figure caption in word document and change the tag into fig
     elif (para.style.name.startswith("figure caption") or variables["image_next_para"]) and not re.search(r'^\d', para.text) and len(para.text)!=0:
+        # print(xml_text)
         xml_text = image_table.image_caption(xml_text,variables)
 
     #Find table title in word document and change the tag into table-wrap
@@ -249,12 +242,12 @@ def paragraph(para,doc,doc_filename,variables):
         xml_text = other_tags.noman_para(xml_text,variables)
 
     #Find heading in word document and change the tags into sec
-    elif (((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or space_strip.strip().lower().startswith("conflict") or re.search(r'^((\d+\.*\)*\s*|\w+\.+\s*))(\w+)', para.text)) and (variables["sec_1"]==1)) or ((para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+\.*\s.*$', para.text)) and (variables["sec_2"]==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and variables["sec_3"]==1)) and len(para.text)!=0:
+    elif ((((para.alignment==1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or space_strip.strip().lower().startswith("conflict") or re.search(r'^((\d+\.*\)*\s*|\w+\.+\s*))(\w+)', para.text)) and (variables["sec_1"]==1)) or (((para.alignment==0 and all_bold) or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+(\.*|\s)+.*$', para.text)) and (variables["sec_2"]==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and variables["sec_3"]==1)) and len(para.text)!=0:
         #print(para.text,"---")
         xml_text=heading.heading(para,space_strip,xml_text,variables)
 
     #Find heading in word document and change the tags sec
-    elif ((para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith("conflict")) or (para.alignment==0  or para.style.name.startswith("Heading 2")) or (para.style.name.startswith("Heading 3") or re.search(r'^((\b[IVX]+\.\s*|\d+\.*\)*\s*))(\w+)', para.text))) and not re.search(r'^Note:', para.text,re.IGNORECASE) and len(para.text.strip())!=0:
+    elif (((para.alignment==1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith(("conflict","discussion","conclusions"))) or ((para.alignment==0 and all_bold)  or para.style.name.startswith("Heading 2")) or (para.style.name.startswith("Heading 3") or re.search(r'^((\b[IVX]+\.\s*|\d+\.*\)*\s*))(\w+)', para.text))) and not re.search(r'^Note:', para.text,re.IGNORECASE) and len(para.text.strip())!=0:
         #print(para.text,len(para.text))
         xml_text = heading.sub_heading(para,xml_text,variables,space_strip)
 
@@ -269,7 +262,10 @@ def paragraph(para,doc,doc_filename,variables):
 
     #Else print p tag
     elif len(para.text)!=0 and not para.text.isspace():
+        xml_text = eq_link.add_tag(xml_text)
         xml_text=f'<p>{xml_text}</p>' 
+        # if "3" in xml_text:
+            # print(xml_text)
 
     #Find the image caption or next paragraph of image
     if variables["image_find"]:
@@ -377,7 +373,7 @@ def table(table,doc,doc_filename,variables):
         
         #Find columns in table  
         for c, cell in enumerate(row.cells):   
-
+            # print(cell.text)
             #Skip the cell that are part of a merged region
             if (r, c) in li:
                 continue 

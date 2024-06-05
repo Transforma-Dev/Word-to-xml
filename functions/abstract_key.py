@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 
 
 #Define function to find abstract paragraph in document
@@ -7,7 +8,7 @@ def abstract(xml_text,variables,filename):
     res = ''
     #print copyright statement
     ss=variables["copyright_state"].count("and")
-    if ss>4:
+    if ss>3:
         variables["copyright_state"]=variables["copyright_state"].split("and")
         variables["copyright_state"] = variables["copyright_state"][0]+"et al."
     else:
@@ -23,8 +24,20 @@ def abstract(xml_text,variables,filename):
         split_xml[1]="KEYWORD"+split_xml[1]
         xml_text=split_xml[0]
 
+    #Find the recived date in document
+    d1 = d2 = 00
+    m1 = m2 = 0
+    y1 = y2 = 2024 
+    if variables["recive"]:
+        variables["recive"] = variables["recive"].replace(";","").replace(",","")
+        date = variables["recive"].split()
+        date[2] = datetime.strptime(date[2], "%B").month
+        date[6] = datetime.strptime(date[6], "%B").month
+        d1,m1,y1,d2,m2,y2 = date[1],date[2],date[3],date[5],date[6],date[7]
+
     xml_text = re.sub(r'<bold>.*?abstract:.*?</bold>|abstract:', '', xml_text,flags=re.IGNORECASE)
-    text=f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
+    text=f'''</corresp></author-notes>
+                <pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                     <day>00</day>
                     <month>00</month>
                     <year>2024</year>
@@ -35,14 +48,14 @@ def abstract(xml_text,variables,filename):
                 <lpage>XX</lpage>
                 <history>
                     <date date-type="received">
-                        <day>00</day>
-                        <month>0</month>
-                        <year>2024</year>
+                        <day>{d1}</day>
+                        <month>{m1}</month>
+                        <year>{y1}</year>
                     </date>
                     <date date-type="accepted">
-                        <day>00</day>
-                        <month>0</month>
-                        <year>2024</year>
+                        <day>{d2}</day>
+                        <month>{m2}</month>
+                        <year>{y2}</year>
                     </date>
                 </history>
                 <permissions>
@@ -62,7 +75,11 @@ def abstract(xml_text,variables,filename):
         variables["noman_text"] = False
         text += keyword_text(variables["noman_store"][1],variables)
         text = text.replace("</article-meta></front><body>","")
-    
+
+    if variables["key_store"]:
+        text += f'{variables["key_store"]}'  
+
+    variables["key_first"] = False  
     #print(text)
     return text
 
@@ -73,7 +90,7 @@ def keyword_text(xml_text,variables):
     xml_text = re.sub(r'keywords?:|key\s*words', '', xml_text, flags=re.IGNORECASE)
     xml_text= re.sub(r'<bold>.*?</bold>', '', xml_text)
     xml_text=xml_text.replace(":","").replace(";", ",")
-
+    
     #Split the string into individual keywords
     xml_text = [keyword for keyword in xml_text.split(",") if "keyword" not in keyword.lower()]
     if variables["noman_text"]:
@@ -93,6 +110,10 @@ def keyword_text(xml_text,variables):
             variables["noman_store"] = ''
         else:
             variables["noman_text"] = False
+    
+    if variables["key_first"]:
+        variables["key_store"] = text
+        text = ''
 
     #print(text)
     return text

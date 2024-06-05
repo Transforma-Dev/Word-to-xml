@@ -3,7 +3,7 @@ import re
 
 #Define function to find the figure caption text
 def image_caption(xml_text,variables):
-
+    # print(xml_text)
     xml_text=xml_text.replace(":","")
     copy_text=xml_text
     xml_text = re.sub(r'<bold>|</bold>', '', xml_text, flags=re.IGNORECASE)
@@ -11,22 +11,35 @@ def image_caption(xml_text,variables):
     count_graphic=variables["images_path"].count("graphic")
     text=""
     figure=xml_text
+
     for i in range(count_graphic):
         if "<" in figure:
             figure=figure.replace("<","&#60;")
-        pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|\s)+)(.+)"
-        match = re.match(pattern, xml_text,re.IGNORECASE)
-
-        if match:
+        pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|(\:|\s)*|\s)+)(.+)"
+        match = re.match(pattern, figure.strip(),re.IGNORECASE)
+      
+        if "<disp-formula" in xml_text:
+            pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\:|\s)*|\s)+)(.+)"
+            match = re.match(pattern, xml_text,re.IGNORECASE)
             part1 = match.group(1)
-            
             if part1.strip()[-1]==".":
                 part1 = part1.strip()[:-1]
-            part2 = match.group(7)
-    
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}</fig>'
+
+            add_text = figure.replace(part1,"")
+            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>{path_image[i]}</fig>'    
+        
         else:
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
+            if match:
+                part1 = match.group(1)
+                if part1.strip()[-1]==".":
+                    part1 = part1.strip()[:-1]
+                part2 = match.group(7)
+                if part2 is None:
+                    part2 = match.group(8)
+                    
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}</fig>'
+            else:
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
             
         #figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
         #figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)

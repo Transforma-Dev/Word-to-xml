@@ -3,6 +3,7 @@ from xml.etree import ElementTree
 from xml.etree import ElementTree as ET
 from io import StringIO
 import base64    
+import re
 
 #Define function to find the boxed text in the document
 def txbox(root):
@@ -214,3 +215,96 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
                 variables["image_find"]=True
 
     return xml_text
+
+def add_tag(xml_text):
+    #Find fig and add tag
+    pattern = r"Fig\.\s\d\d*"
+    match = re.findall(pattern, xml_text,re.IGNORECASE)
+    if match:
+        match = set(match)
+        match = list(match)
+        for i in match:
+            xml_tex = i.split()
+            xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_tex[1]}'>Fig. {xml_tex[1]}</xref>")
+    #Find fig and add tag
+    pattern = r"Table\.*\s\d\d*"
+    match = re.findall(pattern, xml_text,re.IGNORECASE)
+    if match:
+        match = set(match)
+        match = list(match)
+        for i in match:
+            xml_tex = i.split()
+            xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
+
+    return xml_text
+
+def add_ref_tag(xml,variables):
+    xml = xml.split("<ref-list")
+
+    if re.findall(r'\[\d\]', xml[0]):
+
+        parentheses_text = re.findall(r'\[(.*?)\]',xml[0])
+
+        for num in parentheses_text:
+            # print(num)
+            if num.isdigit() or "," in num or "-" in num:
+                check_digit = False
+
+                if "-" in num:
+                    # Split the num by commas
+                    split_i = num.split("-")
+                else:
+                    split_i = num.split(",")
+
+                #Check digit or not
+                if "," in num:
+                    for i in split_i:
+                        if i.isdigit():
+                            check_digit = True
+                    if not check_digit:
+                        continue
+
+                # Initialize the replacement string
+                add_xref = '['
+                for i, ref in enumerate(split_i):
+                    # Add xref tags to each reference
+                    add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
+                    # Add comma separator if not the last reference
+                    if i < len(split_i) - 1:
+                        add_xref += ','
+                # Close the num
+                add_xref += ']'
+                # Replace the original num with the new one in the XML
+                xml[0] = xml[0].replace(f'[{num}]', add_xref)
+
+    else:
+        #Find author name and year present in xml
+        for index,i in enumerate(variables["ref_text_link"]):
+            name = i.split(",")
+            if len(name)>=2:
+                year = name[1].replace("(","").replace(")","")
+                pattern = rf'{re.escape(name[0].strip())}\,*\s*\(*{re.escape(year.strip())}'
+                match = re.findall(pattern, xml[0])
+                #Save the matched text and index in variable
+                for j in match:
+                    variables["ref_link_save"].append((j,index))
+
+        #Remove duplicates
+        variables["ref_link_save"] = list(set(variables["ref_link_save"]))
+
+        #Replace refereance text in xml
+        for j,index in variables["ref_link_save"]:
+            add_xref = f'<xref ref-type="bibr" rid="ref-{index+1}">{j}</xref>'
+            xml[0] = xml[0].replace(j,add_xref)
+
+        # for i in variables["ref_text_link"]:
+        #     # print(i)
+        #     for j in variables["ref_link_save"]:
+        #         if i in j:
+        #             # print(i)
+        #             # print(j)
+        #             xml[0] = xml[0].replace(i,j)
+
+    xml=xml[0]+"<ref-list"+xml[1]
+
+    return xml

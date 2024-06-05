@@ -45,6 +45,11 @@ def heading(para,space_strip,xml_text,variables):
 #Define function to find sub-heading 
 def sub_heading(para,xml_text,variables,space_strip):
     text=''
+    if variables["list_end"]:
+        text += "</list>"
+        variables["list_end"]=False
+        variables["list_count"]=1
+
     if xml_text.lower().startswith("fig."):
         text+=f'<p>{xml_text}</p>'
         return text
@@ -52,11 +57,10 @@ def sub_heading(para,xml_text,variables,space_strip):
     xml_text = xml_text.replace("<bold>", "").replace("</bold>", "").replace("<italic>", "").replace("</italic>", "")
     
     xml_text = re.sub(r'^[\d.]+|^\w+\.', '', xml_text)
-    
-    if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith("conflict") or re.search(r'^\d(\.|\s)+[A-Za-z]|^\b[IVX]+\.\s*', para.text):
+
+    if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith(("conflict","discussion","conclusions")) or re.search(r'^\d(\.|\s)+[A-Za-z]|^\b[IVX]+\.\s*', para.text):
         if  space_strip.strip().lower().startswith("conflict"):
             if "back" not in variables["back_start"]:
-
                 if variables["sec_3"]>1:
                     text=f'</sec></sec></sec></body><back><sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title>{xml_text}</title>'
                 elif variables["sec_2"]>1:
@@ -72,7 +76,6 @@ def sub_heading(para,xml_text,variables,space_strip):
                 text=f'<fn fn-type="conflict"><p><bold>{xml_text[0]}</bold>{xml_text[1]}</p></fn>'
 
         else:
-            
             if "<disp-formula>" in xml_text or "figure" in xml_text.lower() or xml_text.strip().lower().startswith("("):
                 text=f'<p>{xml_text}</p>'
                 return text
@@ -84,7 +87,7 @@ def sub_heading(para,xml_text,variables,space_strip):
                 text=f'</sec></sec><sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title>{xml_text}</title>'
             else:
                 text=f'</sec><sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title>{xml_text}</title>'
-
+            # print(text)
             #Update the dictionary variable values
             variables.update(secid=variables["sec_1_id"], sec_1_id=variables["sec_1_id"] + 1, sec_2_id=1, sec_2=1, sec_3=1)
 
