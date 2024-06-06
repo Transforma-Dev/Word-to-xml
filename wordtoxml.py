@@ -99,7 +99,8 @@ def convert():
     "fn_start": False,
     "noman_text": False,"noman_store": '',
     "ref_text_link":[],"ref_link_save":[],
-    "recive":''
+    "recive":'',
+    "author_mail":True
     }
     
     try:
@@ -127,11 +128,12 @@ def convert():
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
             xml+=image(para,doc)
         
-        if xml[-15:]=="</author-notes>":
+        if "</contrib-group>" in xml and variables["author_mail"]:
             if "<email>" in xml:
                 match = re.search(r'<email>.*</email>', xml, re.IGNORECASE)
                 match = match.group() if match else None
                 xml = xml.replace("<mail>ssss@email.com</mail>",match)
+                variables["author_mail"] = False
 
     xml = eq_link.add_ref_tag(xml,variables)
 

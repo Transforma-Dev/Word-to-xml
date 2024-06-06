@@ -7,7 +7,7 @@ def author_name(xml_text,variables):
     xml_text = re.sub(r'</?(italic|bold)>', '', xml_text)
     if "<sup>" not in xml_text and any(char.isdigit() or "*" for char in xml_text):
         #superscript text in normal text then write regex to identify them
-        pattern = r'([A-Za-z\s]*)([\d\,\*]*)'
+        pattern = r'([A-Za-z\s\-]*)([\d\,\*]*)'
         matche = re.findall(pattern, xml_text)
         split_string = []
         matches = []
@@ -27,7 +27,7 @@ def author_name(xml_text,variables):
             matches.append(add)
         string = re.sub(pattern, '', xml_text)  #Get non superscript text
         split_string = re.split(r',\s*| and |;\s*', string)
-    # print(matches)
+    # print(split_string)
     text=f'''</article-title>
                     <alt-title alt-title-type="left-running-head">Amoako and Otchere</alt-title>
                     <alt-title alt-title-type="right-running-head">Inevitability of Politics in Ghana&#x2019;s Curriculum Development</alt-title>

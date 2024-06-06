@@ -43,7 +43,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         return xml_text
     
     #Find the all bold paragraph
-    all_bold = all(run.bold for run in para.runs)
+    all_bold = all(run.bold for run in para.runs if run.text.strip()!='')
     
     #Convert the pargaraph into xml
     xml=para._element.xml
@@ -121,7 +121,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     #Print the link text at end of the paragraph
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
-
     
     #Find the title of the document
     if (variables["para_count"]==1 or (variables["para_count"]==2 and all_bold and not para.style.name.startswith("author") and "*," not in para.text)) and len(para.text)!=0:
@@ -242,14 +241,14 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         xml_text = other_tags.noman_para(xml_text,variables)
 
     #Find heading in word document and change the tags into sec
-    elif ((((para.alignment==1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or space_strip.strip().lower().startswith("conflict") or re.search(r'^((\d+\.*\)*\s*|\w+\.+\s*))(\w+)', para.text)) and (variables["sec_1"]==1)) or (((para.alignment==0 and all_bold) or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+(\.*|\s)+.*$', para.text)) and (variables["sec_2"]==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and variables["sec_3"]==1)) and len(para.text)!=0:
-        #print(para.text,"---")
+    elif ((((para.alignment==1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or space_strip.strip().lower().startswith("conflict") or re.search(r'^((\d+\.*\)*\s*|\w+\.+\s*))(\w+)', para.text)) and (variables["sec_1"]==1)) or (((para.alignment==0 and all_bold) or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+(\.*|\s)+.*$', para.text)) and (variables["sec_2"]==1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and len(para.text.split())<20 and variables["sec_3"]==1)) and (not space_strip.lower().startswith("conclusion")) and len(para.text)!=0:
+        # print(para.text,"---")
         xml_text=heading.heading(para,space_strip,xml_text,variables)
 
     #Find heading in word document and change the tags sec
-    elif (((para.alignment==1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith(("conflict","discussion","conclusions"))) or ((para.alignment==0 and all_bold)  or para.style.name.startswith("Heading 2")) or (para.style.name.startswith("Heading 3") or re.search(r'^((\b[IVX]+\.\s*|\d+\.*\)*\s*))(\w+)', para.text))) and not re.search(r'^Note:', para.text,re.IGNORECASE) and len(para.text.strip())!=0:
-        #print(para.text,len(para.text))
-        xml_text = heading.sub_heading(para,xml_text,variables,space_strip)
+    elif (((para.alignment==1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith(("conflict","discussion","conclusion","materials"))) or ((para.alignment==0 and all_bold)  or para.style.name.startswith("Heading 2")) or (para.style.name.startswith("Heading 3") or re.search(r'^((\b[IVX]+\.\s*|\d+(\.|\)|\s)+))(\w+)', para.text) or (all_bold and len(para.text.strip().split())<15))) and not re.search(r'^Note:', para.text,re.IGNORECASE) and len(para.text.split())<18 and len(para.text.strip())!=0:
+        # print(para.text,len(para.text))
+        xml_text = heading.sub_heading(para,xml_text,variables,space_strip,all_bold)
 
     #Find List in word document and change the tag into list-item and p
     elif (para.style.name.startswith("List Paragraph") or "<w:numPr>" in xml) and not all_bold and len(para.text)!=0:

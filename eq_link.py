@@ -99,6 +99,12 @@ def print_equation(xml_text,para,math_count):
         xml_doc = etree.fromstring(math_str)
         transformed_tree = transformer(xml_doc)
         transformed_tree = str(transformed_tree).replace("mml:", "")
+        
+        # xslt_file = "config/xsl_yarosh/mmltex.xsl"
+        # dom = etree.fromstring(transformed_tree)
+        # xslt = etree.parse(xslt_file)
+        # transform = etree.XSLT(xslt)
+        # newdom = transform(dom)
         mathml =f'{str(transformed_tree)}'
         #Print the equation
         xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
