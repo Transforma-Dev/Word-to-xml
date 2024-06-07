@@ -48,8 +48,6 @@ def iter_block_items(parent):
 
 
 def convert():
-    #Get the directory of the file
-    #script_directory = "/home/user2/Documents"
 
     input_file_name = (sys.argv[1])
     input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else ""

@@ -67,7 +67,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         #Check if the paragraph contains math equations
         if '<m:oMath' in xml:
             values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count)
-            # print(xml_text)
 
         #Convert the run text in xml
         xmlstr = str(run._element.xml)
@@ -99,12 +98,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         #Find bold text
         elif run.bold and len(run.text)!=0  and not run.text.isspace():
             matches = re.findall(r'^Table \d+:', para.text, flags=re.IGNORECASE | re.MULTILINE)
-            # if len(matches)!=0:
-            #     if matches[0] in run.text:
-            #         xml_text+=f'{run.text}'
-            # elif run.text==":":
-            #     print(run.text)
-            #     xml_text+=f'{run.text}'
             if matches and matches[0] in run.text or run.text == ":":
                 xml_text+=f'{run.text}'
             else:
@@ -112,10 +105,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
         else:
             xml_text+=f'{run.text}'
-
-        # if "(" in run.text:
-        #     run.text=run.text.replace("(","(<xref ref-type='bibr' rid='ref-22'>").replace(")","</xref>)")
-        #     print(run.text)
 
 
     #Print the link text at end of the paragraph
@@ -263,8 +252,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     elif len(para.text)!=0 and not para.text.isspace():
         xml_text = eq_link.add_tag(xml_text)
         xml_text=f'<p>{xml_text}</p>' 
-        # if "3" in xml_text:
-            # print(xml_text)
 
     #Find the image caption or next paragraph of image
     if variables["image_find"]:
