@@ -13,8 +13,8 @@ def image_caption(xml_text,variables):
     figure=xml_text
 
     for i in range(count_graphic):
-        if "<" in figure:
-            figure=figure.replace("<","&#60;")
+        # if "<" in figure:
+        #     figure=figure.replace("<","&#60;")
         pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|(\:|\s)*|\s)+)(.+)"
         match = re.match(pattern, figure.strip(),re.IGNORECASE)
       

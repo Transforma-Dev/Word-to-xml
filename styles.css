@@ -2,50 +2,62 @@ article {
     padding-left: 20px;
     padding-top: 20px;
 }
-journal-id,publiher,article-id,subject,issn,article-title,alt-title,aff,author-notes,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
+journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
     display: block;
 }
 journal-id::before {
-    content: "journal-id : ";
+    content: "Journal ID :";
     font-weight: bold;
 }
 journal-title::before {
-    content: "jounal-title : ";
+    content: "Jounal Title : ";
     font-weight: bold;
 }
 issn::before {
     content: "ISSN: ";
     font-weight: bold;
 }
-publiher::before {
-    content: "publiher : ";
+publisher-name::before {
+    content: "Publiher Name : ";
+    font-weight: bold;
+}
+publisher-loc::before {
+    content: "Publiher Location : ";
     font-weight: bold;
 }
 article-id::before {
-    content: "article-id : ";
+    content: "Article ID : ";
     font-weight: bold;
 }
 subject::before {
-    content: "subject : ";
+    content: "SUBJECT : ";
     font-weight: bold;
 }
 alt-title::before {
-    content: "alt-title : ";
+    content: "Alternative Title : ";
     font-weight: bold;
 }
 contrib-group::before {
-    content: "contrib : ";
+    content: "Contributors : ";
     font-weight: bold;
 }
 contrib::after {
     content: " , ";
 }
 aff::before {
-    content: "aff : ";
+    content: "Affiliation : ";
     font-weight: bold;
 }
 author-notes::before {
-    content: "author-notes : ";
+    content: "Author's Notes : ";
+    font-weight: bold;
+}
+history date[ date-type="received" ]::before {
+    content: "Received Date : ";
+    font-weight: bold;
+}
+history date[ date-type="accepted" ]::before {
+    content: "Accepted Date : ";
     font-weight: bold;
 }
 abstract p::before {
@@ -70,19 +82,24 @@ fig label::after {
     content: " : ";
 }
 pub-date::before {
-    content: " pub-date : ";
+    content: " Publication Date : ";
     font-weight: bold;
 }
 permissions::before {
-    content: " permissions : ";
+    content: " Permissions : ";
     font-weight: bold;
+}
+ack p::before {
+    content: " Acknowledgement : ";
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
 
 
 
-journal-id,publiher,article-id,subject,issn,article-title,alt-title,contrib,aff,author-notes,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
+journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,alt-title,contrib,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
     margin: 8px 0px 8px 0px;
 }
 
@@ -96,11 +113,21 @@ article-title{
 
 abstract p {
     margin: 15px 0px 15px 0px;
+    font-size: 18px;
     background-color: lightblue;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+    padding: 10px 10px 10px 20px;
+    line-height: 25px;
+}
+
+abstract p bold {
+    font-weight: bold;
 }
 
 kwd-group {
     margin: 15px 0px 15px 0px;
+    font-size: 18px;
     color: saddlebrown;
 }
 
@@ -139,10 +166,6 @@ sec > sec > sec > label,sec > sec > sec > title {
 table-wrap > label {
     font-weight: bold;
     color: #0f60efcc;
-}
-
-table-wrap title {
-    font-weight: bold;
 }
 
 table-wrap {
@@ -194,6 +217,7 @@ ref-list title {
 
 ref {
     margin: 10px 0px 10px 0px;
+    line-height: 22px;
 }
 
 fn {
@@ -221,9 +245,15 @@ fig title {
     font-weight: normal;
 }
 
+back glossary title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 p {
     display: block;
     padding-left: 10px;
     margin-top: 10px;
+    line-height: 22px;
 }
 

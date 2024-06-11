@@ -61,9 +61,7 @@
    </title-group>
    <contrib-group content-type="authors">
     <contrib contrib-type="author" corresp="yes" id="author-1">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Yan
@@ -77,9 +75,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-2">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Yang
@@ -96,9 +92,7 @@
      </email>
     </contrib>
     <contrib contrib-type="author" id="author-3">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Fang
@@ -112,9 +106,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-4">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Gao
@@ -128,9 +120,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-5">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Chen

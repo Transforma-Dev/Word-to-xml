@@ -2,7 +2,6 @@
 
 <?xml-stylesheet type="text/css" href="/home/user2/python/wordtoxml/convertion/styles.css"?>
 
-<?xml-stylesheet type="text/css" href="styles.css"?>
 <article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <front>
   <journal-meta>
@@ -62,9 +61,7 @@
    </title-group>
    <contrib-group content-type="authors">
     <contrib contrib-type="author" corresp="yes" id="author-1">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Shi
@@ -81,9 +78,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-2">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Zhang
@@ -97,9 +92,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-3">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Chen
@@ -113,9 +106,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-4">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Guo
@@ -132,9 +123,7 @@
      </mail>
     </contrib>
     <contrib contrib-type="author" id="author-5">
-     <contrib-id contrib-id-type="orcid">
-      https://orcid.org/0000-0000-0000-0000
-     </contrib-id>
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Piao

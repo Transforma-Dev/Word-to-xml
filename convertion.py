@@ -181,7 +181,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Find acknowledgment in word document and skip this
     elif para.text.strip().lower().startswith("acknowledg") and not re.search(r'^Acknowledging', para.text,re.IGNORECASE):
-        # print(xml_text)
         xml_text = other_tags.ack_text(xml_text,variables)
 
     #Find funding statement in word document
@@ -199,7 +198,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Find references in word document and change the tag into back,ref-list,title
     elif space_strip.strip().lower().startswith(("references","reference","bibliographie")) and len(para.text)!=0:
-        #print(xml)
         xml_text = reference.reference(xml_text,variables)
 
     #Find the fn tag 
@@ -208,12 +206,10 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Find figure caption in word document and change the tag into fig
     elif (para.style.name.startswith("figure caption") or variables["image_next_para"]) and not re.search(r'^\d', para.text) and len(para.text)!=0:
-        # print(xml_text)
         xml_text = image_table.image_caption(xml_text,variables)
 
     #Find table title in word document and change the tag into table-wrap
-    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text))and len(para.text)<=150 and len(para.text)!=0:
-        #print(para.text,len(para.text))
+    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text)<=150 and len(para.text)!=0:
         xml_text = image_table.table_heading(xml_text,variables)
     
     #Find reference paragraph in word document and change the tag into ref
@@ -226,7 +222,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Change noman tag text
     elif variables["noman_text"] and not "introduction" in space_strip.lower() and len(para.text)!=0:
-        # print(xml_text)
         xml_text = other_tags.noman_para(xml_text,variables)
 
     #Find heading in word document and change the tags into sec
