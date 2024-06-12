@@ -29,8 +29,8 @@ def author_name(xml_text,variables):
         split_string = re.split(r',\s*| and |;\s*', string)
     # print(split_string)
     text=f'''</article-title>
-                    <alt-title alt-title-type="left-running-head">Amoako and Otchere</alt-title>
-                    <alt-title alt-title-type="right-running-head">Inevitability of Politics in Ghana&#x2019;s Curriculum Development</alt-title>
+                    <alt-title alt-title-type="left-running-head">{variables["noman_store"]}</alt-title>
+                    <alt-title alt-title-type="right-running-head">{variables["noman_store"]}</alt-title>
                 </title-group>
                 <contrib-group content-type="authors">'''  
     for i in split_string:
@@ -59,7 +59,8 @@ def author_name(xml_text,variables):
                     elif j == "*":
                         text += '<mail>ssss@email.com</mail>'
             text+=f'</contrib>'
-    
+
+    variables["noman_store"] = ""
     variables["para_count"]+=1
     #print(text)
     return text
@@ -94,7 +95,9 @@ def aff_para(xml_text,variables):
 
 #Define function to find coresponding author
 def corres_author(xml_text,variables):
+    #Replace specific HTML tags with appropriate XML tags for email and labels
     xml_text=xml_text.replace("<sup>","<label>").replace("</sup>","</label>").replace("<link>","<email>").replace("</link>","</email>")
+    
     if variables["para_count"]==3:
         text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}'
     elif ".com" in xml_text:

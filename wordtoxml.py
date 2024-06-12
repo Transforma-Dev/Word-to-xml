@@ -24,7 +24,7 @@ import os
 from convertion import paragraph,table   #Import Functions from 'convertion.py' file
 import eq_link
 
-# Create HTML header and body
+#Create XML header
 pre_xml = """<?xml version='1.0' encoding='UTF-8'?>
 """
 
@@ -46,16 +46,17 @@ def iter_block_items(parent):
             print(type(child), "Unknown Type")     
 
 
-
+#Define funcion to create xml
 def convert():
-
+    
+    #Get filename in command line argument
     input_file_name = (sys.argv[1])
     input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else ""
     
-    #Get the directory of the file
+    #Get the directory of the python file
     script_path = os.path.abspath(__file__)
     
-    # Get the directory containing the script
+    #Get the directory of the script
     script_directory = os.path.dirname(script_path)
    
     #Check command line argument was present in input folder
@@ -64,7 +65,6 @@ def convert():
 
     #Define the name of the output folder and Check if the output folder exists, if not, create it
     output_folder = os.path.join(script_directory, "output")
-
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
@@ -73,7 +73,6 @@ def convert():
 
     #Define the name of the Image folder and Check if the image folder exists, if not, create it
     image_folder = os.path.join(script_directory, "image")
-
     if not os.path.exists(image_folder):
         os.makedirs(image_folder)
     doc_filename=image_folder+"/"+filename
@@ -82,6 +81,7 @@ def convert():
     output_xml_name = filename + '.xml'
     output_xml = os.path.join(output_folder, output_xml_name)
 
+    #Define all neccessary variables in dictionary
     variables = {"previous_text": "","para_count": 1,"key_first":True,"key_store":'',
     "sec_1": 1,"sec_2": 1,"sec_3": 1,
     "secid": 0,"inner_3_id": 1,
@@ -100,15 +100,15 @@ def convert():
     "recive":'',
     "author_mail":True
     }
-    
-    try:
-        #Read the Word document
-        doc = Document(input_path)
 
+    #Read the Word document and not present word document then thrown error
+    try:
+        doc = Document(input_path)
     except ValueError as e:
         print(f"Error opening the document: {e}")
         return ''
-    
+
+    #Add nessaccery tags
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
 
     #Check the word document and separate them in paragraph,tables and inline shapes
@@ -119,13 +119,14 @@ def convert():
         """
         if isinstance(para, Paragraph):   #Word contain a paragraph
             xml += paragraph(para, doc,doc_filename,variables,para_num)
-            
+
         elif isinstance(para, Table):    #Word contain a table
             xml += table(para, doc,doc_filename,variables)
-        
+
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
             xml+=image(para,doc)
-        
+
+        #Change the email in author name 
         if "</contrib-group>" in xml and variables["author_mail"]:
             if "<email>" in xml:
                 match = re.search(r'<email>.*</email>', xml, re.IGNORECASE)
@@ -133,6 +134,7 @@ def convert():
                 xml = xml.replace("<mail>ssss@email.com</mail>",match)
                 variables["author_mail"] = False
 
+    #Call function to solve the xref tag for references
     xml = eq_link.add_ref_tag(xml,variables)
 
     xml+=f"</article>"

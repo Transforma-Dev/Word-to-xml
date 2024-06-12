@@ -72,6 +72,7 @@ def table_heading(xml_text,variables):
     return text
 
 
+#Find row span and colspan in table
 def row_col_span(r,c,row,cell,table,li,tt,tr,xml_text):
             
     try:

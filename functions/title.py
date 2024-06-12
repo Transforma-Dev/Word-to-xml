@@ -51,7 +51,8 @@ def title(para,xml_text,variables,data,journal,file_name):
                     </subj-group>
                 </article-categories>
             <title-group><article-title>{xml_text}'''
-
+            
+    variables["noman_store"] += xml_text
     variables["para_count"]+=1
     #print(text)
     return text

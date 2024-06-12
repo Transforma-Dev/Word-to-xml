@@ -3,6 +3,7 @@ import re
 
 #Define function to find Heading
 def heading(para,space_strip,xml_text,variables):
+
     text=''
     #Remove bold and italic tag
     xml_text = xml_text.replace("<bold>", "").replace("</bold>", "").replace("<italic>", "").replace("</italic>", "")
@@ -10,7 +11,7 @@ def heading(para,space_strip,xml_text,variables):
         return text
     #xml_text = re.sub('^[\d.\s*]+', '', xml_text)
 
-    #Check the string heading type
+    #Determine the heading type based on paragraph alignment, style, or content
     if para.alignment==1 or para.style.name.startswith("Heading 1") or space_strip.lower()=="introduction" or re.search(r'(^\d\.*\s|^\w\.*\s+)', para.text) or space_strip.strip().lower().startswith("conflict"):
         xml_text = re.sub('^[\d.\s*]+', '', xml_text)   #Remove numbers before string
         text=f'<sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title>{xml_text}</title>'
@@ -29,13 +30,13 @@ def heading(para,space_strip,xml_text,variables):
     elif para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text):
         xml_text = re.sub('^[\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
         text=f'<sec id="s{variables["secid"]}_{variables["sec_2_id"]}"><label>{variables["secid"]}.{variables["sec_2_id"]}</label><title>{xml_text}</title>'
-      
+
         #Update the dictionary variable values
         variables.update(sec_3_id=variables["sec_2_id"], sec_2_id=variables["sec_2_id"] + 1, inner_3_id=1, sec_3=1, sec_2=variables["sec_2"] + 1)
-    
+
     else:
         text = f'<p>{xml_text}</p>'
-        
+
     variables["sec_1"]+=1
     if variables["noman_text"]:
         variables["noman_store"]+="</def-list></glossary>"

@@ -104,7 +104,7 @@ def print_equation(xml_text,para,math_count):
         # dom = etree.fromstring(transformed_tree)
         # xslt = etree.parse(xslt_file)
         # transform = etree.XSLT(xslt)
-        # newdom = transform(dom)
+        # transformed_tree = transform(dom)
         mathml =f'{str(transformed_tree)}'
         #Print the equation
         xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
@@ -222,6 +222,7 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
 
     return xml_text
 
+#Define function to find fig and table in paragraph nd add xref tag
 def add_tag(xml_text):
     #Find fig and add tag
     pattern = r"Fig\.\s\d\d*"
@@ -244,15 +245,15 @@ def add_tag(xml_text):
 
     return xml_text
 
+#Define function to find the reference number in paragraph
 def add_ref_tag(xml,variables):
     xml = xml.split("<ref-list")
 
-    if re.findall(r'\[\d\]', xml[0]):
-
+    if re.findall(r'\[\d\]', xml[0]):   #Find the number inside the square bracket
         parentheses_text = re.findall(r'\[(.*?)\]',xml[0])
 
         for num in parentheses_text:
-            # print(num)
+            
             if num.isdigit() or "," in num or "-" in num:
                 check_digit = False
 
@@ -270,7 +271,7 @@ def add_ref_tag(xml,variables):
                     if not check_digit:
                         continue
 
-                # Initialize the replacement string
+                #Initialize the replacement string
                 add_xref = '['
                 for i, ref in enumerate(split_i):
                     # Add xref tags to each reference

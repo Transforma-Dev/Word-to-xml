@@ -12,12 +12,23 @@ from io import StringIO
 from unidecode import unidecode
 import subprocess
 import json
-import eq_link
+import eq_link     #Import your own function in our file
 from functions import title,authors,abstract_key,heading,list_file,image_table,reference,other_tags
 
 
-#Define the function for convert a paragraph from word document
+#Define the function to convert a paragraph from word document
 def paragraph(para,doc,doc_filename,variables,para_num):
+
+    """
+    Convert a paragraph from a Word document into XML format.
+
+    Parameters:
+        para (Paragraph): The Paragraph object from the Word document.
+        doc (Document): The Document object representing the converter Word document.
+
+    Returns:
+        The XML representation of the paragraph.
+    """
     
     #Initialize the all variables
     xml_text=""
@@ -38,6 +49,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     with open("journal.json",'r') as file:
         data = json.load(file)
 
+    #Skip the paragraph
     if space_strip.strip().lower().startswith(("running","doi")):
         xml_text=''
         return xml_text
@@ -64,6 +76,12 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Iterate through each run in the paragraph
     for run in para.runs:
+        """
+        Iterate through the runs in the paragraph and process each run accordingly.
+
+        Parameters:
+            i (Run): The Run object representing a portion of the paragraph text.
+        """
         #Check if the paragraph contains math equations
         if '<m:oMath' in xml:
             values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count)
@@ -71,11 +89,11 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         #Convert the run text in xml
         xmlstr = str(run._element.xml)
 
-        #Check if the run contain an image
+        #Check if the run contain an inline image image
         if 'pic:pic' in xmlstr:
             xml_text = eq_link.inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text)
 
-        #Print the hyperlink preent in paragraph
+        #Print the hyperlink present in paragraph
         if para.hyperlinks:
             siva,p,xml_text,text,address,font = eq_link.print_hyper(run,para,siva,p,xml_text,text,address,font)
 
@@ -106,10 +124,11 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         else:
             xml_text+=f'{run.text}'
 
-
     #Print the link text at end of the paragraph
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
+
+
     
     #Find the title of the document
     if (variables["para_count"]==1 or (variables["para_count"]==2 and all_bold and not para.style.name.startswith("author") and "*," not in para.text)) and len(para.text)!=0:
@@ -258,7 +277,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     return xml_text
 
 
-
+#Define function to find the table in word document
 def table(table,doc,doc_filename,variables):
 
     """
@@ -290,14 +309,14 @@ def table(table,doc,doc_filename,variables):
 
     xml=table._element.xml
     root = ET.fromstring(xml)
-    #print(xml)
+
     #Find col-group was center or not 
     ns = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
     jc_element = root.find('.//w:jc', namespaces=ns)
     
-    # Check if the element is found
+    #Check if the element is found
     if jc_element is not None:
-        # Check if the attribute exists and get its value
+        #Check if the attribute exists and get its value
         center_value = jc_element.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val')
         if center_value is not None:
             center_value= center_value
@@ -305,7 +324,6 @@ def table(table,doc,doc_filename,variables):
             center_value = ''
     else:
         center_value = ''
-
     
     #Find the number of col tag in col-group
     colgroup_text=""
@@ -359,8 +377,8 @@ def table(table,doc,doc_filename,variables):
             if (r, c) in li:
                 continue 
 
+            #Call functio to fin no of rowspan and colspan
             r,c,row,cell,table,li,tt,tr,xml_text = image_table.row_col_span(r,c,row,cell,table,li,tt,tr,xml_text)
-            
            
             #Iterate through the cell text
             for para in cell.paragraphs:  
@@ -430,6 +448,7 @@ def table(table,doc,doc_filename,variables):
             thead=False
         else:
             xml_text+="</tr>"
+
     variables["table_title"]=False
     xml_text += "</tbody></table></alternatives></table-wrap>"
     variables["table_no"]+=1
