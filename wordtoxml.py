@@ -47,11 +47,11 @@ def iter_block_items(parent):
 
 
 #Define funcion to create xml
-def convert():
-    
-    #Get filename in command line argument
-    input_file_name = (sys.argv[1])
-    input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else ""
+def convert(input_file_name = None):
+    #Get the directory of the file
+    if input_file_name == None:
+        input_file_name = (sys.argv[1])
+        input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else ""
     
     #Get the directory of the python file
     script_path = os.path.abspath(__file__)
@@ -154,4 +154,4 @@ def convert():
     return output_xml_name
 
 
-convert()
+# convert()
