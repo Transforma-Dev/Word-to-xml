@@ -79,16 +79,17 @@ def noman_para(xml_text,variables):
         xml_text=xml_text.replace("<bold>","").replace("</bold>","")
         variables["noman_store"] += f'{xml_text}'
         return text
-    for split_data in ["\t"]:
-        if split_data in xml_text:
-            xml_text = [i for i in xml_text.split(split_data) if i.strip()]
+    i=False
 
-    # print(xml_text)
-    if len(xml_text)<5:
+    # if "\t" in xml_text:
+    xml_text = [item.strip() for item in xml_text.split("\t") if item.strip()]
+
+    # print((xml_text))
+    if len(xml_text)!=1:
         variables["noman_store"]+=f'<def-item><term>{xml_text[0]}</term><def><p>{xml_text[1]}</p></def></def-item>'
     else:
         variables["noman_store"]+=f'<def-item><def><p>{xml_text[0]}</p></def></def-item>'
-    
+    # print(variables["noman_store"])
     #print(text)
     return text
 

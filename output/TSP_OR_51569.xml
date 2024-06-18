@@ -61,10 +61,26 @@
      study
     </article-title>
     <alt-title alt-title-type="left-running-head">
-     Amoako and Otchere
+     Hsa-miR-181a-5p inhibits glioblastoma development via the MAPK pathway:
+     <italic>
+      in-silico
+     </italic>
+     and
+     <italic>
+      in-vitro
+     </italic>
+     study
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Inevitability of Politics in Ghana’s Curriculum Development
+     Hsa-miR-181a-5p inhibits glioblastoma development via the MAPK pathway:
+     <italic>
+      in-silico
+     </italic>
+     and
+     <italic>
+      in-vitro
+     </italic>
+     study
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">
@@ -870,7 +886,11 @@
     </label>
     <caption>
      <title>
-      Hsa-miR-181a-5p involvement in glioblastoma development. A) Identifying the potential target of hsa-miR-181a-5p. B) The interaction between hsa-miR-181a-5p and &lt;italic&gt;AKT3&lt;/italic&gt;. C) The interaction between studied genes based on the GeneMANIA database.
+      Hsa-miR-181a-5p involvement in glioblastoma development. A) Identifying the potential target of hsa-miR-181a-5p. B) The interaction between hsa-miR-181a-5p and
+      <italic>
+       AKT3
+      </italic>
+      . C) The interaction between studied genes based on the GeneMANIA database.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-1.jpg"/>
@@ -908,7 +928,23 @@
     </label>
     <caption>
      <title>
-      Hsa-miR-181a-5p and &lt;italic&gt;AK3&lt;/italic&gt; expression in glioblastoma and non-tumoral brain tissues. A) The box plot of the GSE158284 dataset. B) The cluster dendrogram of the GSE158284 dataset. C) The heatmap of the GSE158284 dataset. D) The box plot of the GSE108474 dataset. E) The cluster dendrogram of the GSE108474 dataset. F) The heatmap of the GSE108474 dataset. G) hsa-miR-181a-5p expression in glioblastoma based on the GSE158284 dataset. H) &lt;italic&gt;AKT3&lt;/italic&gt; expression in glioblastoma based on the GSE108474 dataset. I) &lt;italic&gt;AKT3&lt;/italic&gt; expression in glioblastoma based on the TCGA-GTEx dataset. Ns Not significant; *&lt;italic&gt;p&lt;/italic&gt;&lt;0.05.
+      Hsa-miR-181a-5p and
+      <italic>
+       AK3
+      </italic>
+      expression in glioblastoma and non-tumoral brain tissues. A) The box plot of the GSE158284 dataset. B) The cluster dendrogram of the GSE158284 dataset. C) The heatmap of the GSE158284 dataset. D) The box plot of the GSE108474 dataset. E) The cluster dendrogram of the GSE108474 dataset. F) The heatmap of the GSE108474 dataset. G) hsa-miR-181a-5p expression in glioblastoma based on the GSE158284 dataset. H)
+      <italic>
+       AKT3
+      </italic>
+      expression in glioblastoma based on the GSE108474 dataset. I)
+      <italic>
+       AKT3
+      </italic>
+      expression in glioblastoma based on the TCGA-GTEx dataset. Ns Not significant; *
+      <italic>
+       p
+      </italic>
+      &lt;0.05.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-2.jpg"/>
@@ -957,7 +993,11 @@
     </label>
     <caption>
      <title>
-      Hsa-miR-181a-5p significance in cell viability, chemo-sensitivity, and stemness of U373 cells. A) miR-181a expression in the U87MG and A172 cells based on the CCLE dataset. B) The IC50 of temozolomide on U373 cells. C) The effect of the transfection process on the cell viability of U373 cells. D) The effect of hsa-miR-181a-5p ectopic expression on the cell viability and chemosensivity of U373 cells. E and F) The effect of hsa-miR-181a-5p mimics on the stemness of U373 cells. Ns Not significant; **&lt;italic&gt;p&lt;/italic&gt;&lt;0.01.
+      Hsa-miR-181a-5p significance in cell viability, chemo-sensitivity, and stemness of U373 cells. A) miR-181a expression in the U87MG and A172 cells based on the CCLE dataset. B) The IC50 of temozolomide on U373 cells. C) The effect of the transfection process on the cell viability of U373 cells. D) The effect of hsa-miR-181a-5p ectopic expression on the cell viability and chemosensivity of U373 cells. E and F) The effect of hsa-miR-181a-5p mimics on the stemness of U373 cells. Ns Not significant; **
+      <italic>
+       p
+      </italic>
+      &lt;0.01.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-3.jpg"/>
@@ -995,7 +1035,15 @@
     </label>
     <caption>
      <title>
-      The effect of the hsa-miR-181a-5p mimics on the migration of U373 cells. A) the migration assay, B) &lt;italic&gt;MMP9&lt;/italic&gt; expression in the groups. ***&lt;italic&gt;p&lt;/italic&gt;&lt;0.001.
+      The effect of the hsa-miR-181a-5p mimics on the migration of U373 cells. A) the migration assay, B)
+      <italic>
+       MMP9
+      </italic>
+      expression in the groups. ***
+      <italic>
+       p
+      </italic>
+      &lt;0.001.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-4.jpg"/>
@@ -1041,7 +1089,23 @@
     </label>
     <caption>
      <title>
-      The effect of hsa-miR-181a-5p mimics on the apoptosis rate of U373 cells. A) control group. B) hsa-miR-181a-5p group. C) Comparing the apoptosis rate of studied groups. D) The mRNA expression of &lt;italic&gt;BAX&lt;/italic&gt; in the studied groups. E) The mRNA expression of &lt;italic&gt;CASP9&lt;/italic&gt; in the studied groups. Ns Not significant; ***&lt;italic&gt;p&lt;/italic&gt;&lt;0.001; ****&lt;italic&gt;p&lt;/italic&gt;&lt;0.0001.
+      The effect of hsa-miR-181a-5p mimics on the apoptosis rate of U373 cells. A) control group. B) hsa-miR-181a-5p group. C) Comparing the apoptosis rate of studied groups. D) The mRNA expression of
+      <italic>
+       BAX
+      </italic>
+      in the studied groups. E) The mRNA expression of
+      <italic>
+       CASP9
+      </italic>
+      in the studied groups. Ns Not significant; ***
+      <italic>
+       p
+      </italic>
+      &lt;0.001; ****
+      <italic>
+       p
+      </italic>
+      &lt;0.0001.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-5.jpg"/>
@@ -1071,7 +1135,11 @@
     </label>
     <caption>
      <title>
-      The effect of the hsa-miR-181a-5p ectopic expression on the cell cycle phase distribution of U373 cells. A) Control group. B) Hsa-miR-181a-5p group. C) Comparing cell cycle phases' distribution among populations under study. ****&lt;italic&gt;p&lt;/italic&gt;&lt;0.0001.
+      The effect of the hsa-miR-181a-5p ectopic expression on the cell cycle phase distribution of U373 cells. A) Control group. B) Hsa-miR-181a-5p group. C) Comparing cell cycle phases' distribution among populations under study. ****
+      <italic>
+       p
+      </italic>
+      &lt;0.0001.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-6.jpg"/>
@@ -1125,7 +1193,43 @@
     </label>
     <caption>
      <title>
-      The effect of the hsa-miR-181a-5p mimics on the MAPK pathway of U373 cells. A) The mRNA expression of &lt;italic&gt;MET&lt;/italic&gt;. B) The mRNA expression of &lt;italic&gt;MAP2K1&lt;/italic&gt;. C) The mRNA expression of &lt;italic&gt;MAPK1&lt;/italic&gt;. D) The mRNA expression of &lt;italic&gt;MAPK3&lt;/italic&gt;. E) The mRNA expression of &lt;italic&gt;PIK3CA&lt;/italic&gt;. F) &lt;italic&gt;AKT3&lt;/italic&gt; mRNA expression in the groups. Ns Not significant; **&lt;italic&gt;p&lt;/italic&gt;&lt;0.05; ***&lt;italic&gt;p&lt;/italic&gt;&lt;0.001; ****&lt;italic&gt;p&lt;/italic&gt;&lt;0.0001.
+      The effect of the hsa-miR-181a-5p mimics on the MAPK pathway of U373 cells. A) The mRNA expression of
+      <italic>
+       MET
+      </italic>
+      . B) The mRNA expression of
+      <italic>
+       MAP2K1
+      </italic>
+      . C) The mRNA expression of
+      <italic>
+       MAPK1
+      </italic>
+      . D) The mRNA expression of
+      <italic>
+       MAPK3
+      </italic>
+      . E) The mRNA expression of
+      <italic>
+       PIK3CA
+      </italic>
+      . F)
+      <italic>
+       AKT3
+      </italic>
+      mRNA expression in the groups. Ns Not significant; **
+      <italic>
+       p
+      </italic>
+      &lt;0.05; ***
+      <italic>
+       p
+      </italic>
+      &lt;0.001; ****
+      <italic>
+       p
+      </italic>
+      &lt;0.0001.
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-7.jpg"/>

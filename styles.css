@@ -1,98 +1,110 @@
 article { 
-    padding-left: 20px;
-    padding-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+title {
+  display: contents;
+}
+italic {
+  font-style: italic;
+}
+bold {
+  font-weight: bold;
 }
 journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
-    display: block;
+  display: block;
 }
 journal-id::before {
-    content: "Journal ID :";
-    font-weight: bold;
+  content: "Journal ID :";
+  font-weight: bold;
 }
 journal-title::before {
-    content: "Jounal Title : ";
-    font-weight: bold;
+  content: "Jounal Title : ";
+  font-weight: bold;
 }
 issn::before {
-    content: "ISSN: ";
-    font-weight: bold;
+  content: "ISSN: ";
+  font-weight: bold;
 }
 publisher-name::before {
-    content: "Publiher Name : ";
-    font-weight: bold;
+  content: "Publiher Name : ";
+  font-weight: bold;
 }
 publisher-loc::before {
-    content: "Publiher Location : ";
-    font-weight: bold;
+  content: "Publiher Location : ";
+  font-weight: bold;
 }
 article-id::before {
-    content: "Article ID : ";
-    font-weight: bold;
+  content: "Article ID : ";
+  font-weight: bold;
 }
 subject::before {
-    content: "SUBJECT : ";
-    font-weight: bold;
+  content: "SUBJECT : ";
+  font-weight: bold;
 }
 alt-title::before {
-    content: "Alternative Title : ";
-    font-weight: bold;
+  content: "Alternative Title : ";
+  font-weight: bold;
 }
 contrib-group::before {
-    content: "Contributors : ";
-    font-weight: bold;
+  content: "Contributors : ";
+  font-weight: bold;
 }
 contrib::after {
-    content: " , ";
+  content: " , ";
 }
 aff::before {
-    content: "Affiliation : ";
-    font-weight: bold;
+  content: "Affiliation : ";
+  font-weight: bold;
 }
 author-notes::before {
-    content: "Author's Notes : ";
-    font-weight: bold;
+  content: "Author's Notes : ";
+  font-weight: bold;
 }
 history date[ date-type="received" ]::before {
-    content: "Received Date : ";
-    font-weight: bold;
+  content: "Received Date : ";
+  font-weight: bold;
 }
 history date[ date-type="accepted" ]::before {
-    content: "Accepted Date : ";
-    font-weight: bold;
+  content: "Accepted Date : ";
+  font-weight: bold;
 }
 abstract p::before {
-    content: "ABSTRACT : ";
-    font-weight: bold;
-    font-size: 20px;
-    color: #0f60efcc;
+  content: "ABSTRACT : ";
+  font-weight: bold;
+  font-size: 20px;
+  color: #0f60efcc;
 }
 kwd-group::before {
-    content: "KEYWORDS : ";
-    font-weight: bold;
-    font-size: 20px;
-    color: #0f60efcc;
+  content: "KEYWORDS : ";
+  font-weight: bold;
+  font-size: 20px;
+  color: #0f60efcc;
 }
 kwd::after {
-    content: ",";
+  content: ",";
 }
 table-wrap > label::after {
-    content: " : ";
+  content: " : ";
 }
 fig label::after {
-    content: " : ";
+  content: " : ";
 }
 pub-date::before {
-    content: " Publication Date : ";
-    font-weight: bold;
+  content: " Publication Date : ";
+  font-weight: bold;
 }
 permissions::before {
-    content: " Permissions : ";
-    font-weight: bold;
+  content: " Permissions : ";
+  font-weight: bold;
 }
 ack p::before {
-    content: " Acknowledgement : ";
-    font-weight: bold;
-    font-size: 18px;
+  content: " Acknowledgement : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+label::after {
+  content: " ";
 }
 
 
@@ -100,160 +112,159 @@ ack p::before {
 
 
 journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,alt-title,contrib,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
-    margin: 8px 0px 8px 0px;
+  margin: 8px 0px 8px 0px;
 }
 
 article-title{
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;   
-    width: 100%; 
-    margin: 10px 0px 10px 0px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;   
+  width: 100%; 
+  margin: 10px 0px 10px 0px;
 }
 
 abstract p {
-    margin: 15px 0px 15px 0px;
-    font-size: 18px;
-    background-color: lightblue;
-    border-radius: 10px;
-    border: 1px solid darkblue;
-    padding: 10px 10px 10px 20px;
-    line-height: 25px;
+  margin: 15px 0px 15px 0px;
+  font-size: 18px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px solid darkblue;
+  padding: 10px 10px 10px 20px;
+  line-height: 25px;
 }
 
 abstract p bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 kwd-group {
-    margin: 15px 0px 15px 0px;
-    font-size: 18px;
-    color: saddlebrown;
+  margin: 15px 0px 15px 0px;
+  font-size: 18px;
+  color: saddlebrown;
 }
 
 email {
-    text-decoration: underline;
-    color: blue;
-    font-style: italic;
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
 }
 
 contrib-group xref {
-    vertical-align: super;
+  vertical-align: super;
 }
 
 sec {
-    margin: 25px 0px 20px 0px;
+  margin: 25px 0px 20px 0px;
 }
 
 sec > label,sec > title { 
-    font-size: 25px;
-    font-weight: bold;
-    color: #0f60efcc;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0f60efcc;
 }
 
 sec > sec > label,sec > sec > title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #EF5151;
+  font-size: 20px;
+  font-weight: bold;
+  color: #EF5151;
 }
 
 sec > sec > sec > label,sec > sec > sec > title {
-    font-size: 17px;
-    font-weight: bold;
-    color: green;
+  font-size: 17px;
+  font-weight: bold;
+  color: green;
 }
 
 table-wrap > label {
-    font-weight: bold;
-    color: #0f60efcc;
+  font-weight: bold;
+  color: #0f60efcc;
 }
 
 table-wrap {
-    margin: 25px 0px 25px 0px;
-    text-align: center;
-    width: 100%;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  width: 100%;
 }
 
 table {
-    margin: 20px 0px 20px 0px;
-    display: table;
-    border-collapse: collapse;
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 20px 0px 20px 0px;
+  display: table;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 thead,tbody {
-    display: table-header-group;
+  display: table-header-group;
 }
 
 tr {
-    display: table-row;
-    border: 1px solid black;
+  display: table-row;
+  border: 1px solid black;
 }
 
 td {
-    display: table-cell;
-    border: 1px solid black;
-    text-wrap: wrap;
-    padding: 10px;
+  display: table-cell;
+  border: 1px solid black;
+  text-wrap: wrap;
+  padding: 10px;
 }
 
 th {
-    font-weight: bold;
-    display: table-cell;
-    border: 1px solid black;
-    text-wrap: wrap;
-    padding: 10px;
+  font-weight: bold;
+  display: table-cell;
+  border: 1px solid black;
+  text-wrap: wrap;
+  padding: 10px;
 }
 
 ref-list title {
-    display: block;
-    margin: 30px 0px 20px 0px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #0f60efcc;
+  display: block;
+  margin: 30px 0px 20px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0f60efcc;
 }
 
 ref {
-    margin: 10px 0px 10px 0px;
-    line-height: 22px;
+  margin: 10px 0px 10px 0px;
+  line-height: 22px;
 }
 
 fn {
-    margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 fn bold {
-    margin: 10px 0px 10px 0px;
-    font-size: 18px;
-    font-weight: bold;
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 fig {
-    text-align: center;
-    margin: 20px 0px 20px 0px;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
 }
 
 fig label {
-    font-weight: bold;
-    color: #0f60efcc;
+  font-weight: bold;
+  color: #0f60efcc;
 }
 
 fig title {
-    color: black;
-    font-weight: normal;
+  color: black;
+  font-weight: normal;
 }
 
 back glossary title {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 p {
-    display: block;
-    padding-left: 10px;
-    margin-top: 10px;
-    line-height: 22px;
+  display: block;
+  padding-left: 10px;
+  margin-top: 10px;
+  line-height: 22px;
 }
-

@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<?xml-stylesheet type="text/css" href="/home/user2/python/wordtoxml/convertion/styles.css"?>
-
 <article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <front>
   <journal-meta>
@@ -53,10 +50,10 @@
      MUS Model: a Deep Learning-Based Architecture for IoT Intrusion Detection
     </article-title>
     <alt-title alt-title-type="left-running-head">
-     Amoako and Otchere
+     MUS Model: a Deep Learning-Based Architecture for IoT Intrusion Detection
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Inevitability of Politics in Ghana’s Curriculum Development
+     MUS Model: a Deep Learning-Based Architecture for IoT Intrusion Detection
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">

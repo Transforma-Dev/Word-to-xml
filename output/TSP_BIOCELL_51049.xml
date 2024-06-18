@@ -53,10 +53,10 @@
      Identification of TMEM159 as a biomarker of glioblastoma progression based on immune characteristics
     </article-title>
     <alt-title alt-title-type="left-running-head">
-     Amoako and Otchere
+     Identification of TMEM159 as a biomarker of glioblastoma progression based on immune characteristics
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Inevitability of Politics in Ghana’s Curriculum Development
+     Identification of TMEM159 as a biomarker of glioblastoma progression based on immune characteristics
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">
@@ -620,18 +620,18 @@
     <p>
      As depicted in Figure 1, the study was performed in four steps. The immune grouping of GBM was performed in step 1. Briefly, information pertaining to patients with GBM was retrieved from the TCGA database and the patients were grouped based on their immune characteristics. The immune characteristics of each group were re-analyzed, and the key genes linked to the progression of GBM were finally identified by WGCNA. In step 2, a prognostic model was built using genes related to the immune features. We first used univariate COX regression analysis and LASSO for screening the genes that were associated with patient prognosis and constructed the prognostic model. Internal and external validation were subsequently performed, and the differences between the biological characteristics of the groups were explored. In step 3, the high-risk cell clusters were identified at the single-cell level. To this end, scRNA-seq data for GBM (accession number: GSE84465) were retrieved from the GEO database and clustered. Risk assessment was then performed for each cell subpopulation using the prognostic model, and the biological characteristics of the high-risk cell subpopulations was explored. The prognostic model was finally re-verified at the single-cell level. In step 4, the impact of the high-risk cell subpopulations on drug resistance in GBM was explored, and the effect of TMEM159 on GBM was verified experimentally. The workflow of the study is depicted in Figure 1.
     </p>
+    <p>
+     <bold>
+      Figure
+     </bold>
+     <bold>
+      1. Schematic depiction of the research workflow.
+     </bold>
+    </p>
    </sec>
-  </sec>
-  <sec id="s4">
-   <label>
-    4
-   </label>
-   <title>
-    Figure 1. Schematic depiction of the research workflow.
-   </title>
-   <sec id="s4_1">
+   <sec id="s3_2">
     <label>
-     4.1
+     3.2
     </label>
     <title>
      Exploration of the immune characteristics of GBM
@@ -671,9 +671,9 @@
      &lt; 0.0001.
     </p>
    </sec>
-   <sec id="s4_2">
+   <sec id="s3_3">
     <label>
-     4.2
+     3.3
     </label>
     <title>
      Differences between the immune characteristics of sample clusters
@@ -709,9 +709,9 @@
      These results further confirmed that there were meaningful differences in the biological characteristics of the two clusters, which were reflected in the immune microenvironment and gene expression profiles, and the differences in the immune microenvironment could be attributed to differences in the expression of key genes.
     </p>
    </sec>
-   <sec id="s4_3">
+   <sec id="s3_4">
     <label>
-     4.3
+     3.4
     </label>
     <title>
      Identification of immune-related gene modules by WGCNA
@@ -758,9 +758,9 @@
      values, the closer to red. The 20 most significantly enriched pathways are depicted.
     </p>
    </sec>
-   <sec id="s4_4">
+   <sec id="s3_5">
     <label>
-     4.4
+     3.5
     </label>
     <title>
      Establishment and validation of prognostic model
@@ -1172,9 +1172,9 @@
      (A) Lasso regression curve depicting the convergent screening of gene features with lasso regression analysis. The X- and Y-axes represent the log lambda values and regression coefficients, respectively, and the various colored lines denote different features. (B) Optimal lambda selection curve. The best value is usually selected from the first dotted line. (C) Survival curve of the groups. The dashed line corresponds to the median survival time. ROC curves for prediction of (D) half-year, (E) 1-year, and (F) 3-year survival rates. (G) Survival curve of the GSE4412 dataset.
     </p>
    </sec>
-   <sec id="s4_5">
+   <sec id="s3_6">
     <label>
-     4.5
+     3.6
     </label>
     <title>
      Biological differences between the high- and low-risk groups
@@ -1208,9 +1208,9 @@
      |FC| values. The ten most significantly enriched DEGs are depicted in the figure. (D) Results of GO-based GSEA. Summary of gene mutations in (E) and (F). Waterfall map depicting the gene mutations in (G) and (H).
     </p>
    </sec>
-   <sec id="s4_6">
+   <sec id="s3_7">
     <label>
-     4.6
+     3.7
     </label>
     <title>
      Validation and analysis of the prognostic model at the single-cell level
@@ -1253,9 +1253,9 @@
      -value. (B) Result of analysis with the Elbow method. The best principal components are generally situated at the inflection point. (C) PCA diagram after batch correction. (D) Results of annotation of cell subpopulations. (E) UMAP-based mapping using known cell labels. (F) Heatmap of DEGs in each subgroup. The five most significantly enriched terms are shown for each subgroup. (G) Visualization of risk scores using UMAP. (H) Box diagram of risk scoring. (I) Results of analysis with GSEA. The 10 most significantly enriched terms are depicted in the figure. (J) Survival curve of the two groups. (K) The proportion of vascular cell subsets in the original risk group. (L) Heatmap depicting the proportion of cell subpopulations.
     </p>
    </sec>
-   <sec id="s4_7">
+   <sec id="s3_8">
     <label>
-     4.7
+     3.8
     </label>
     <title>
      TMEM159 is highly expressed in GBM and negatively correlates with prognosis
@@ -1321,9 +1321,9 @@
      &lt; 0.0001.
     </p>
    </sec>
-   <sec id="s4_8">
+   <sec id="s3_9">
     <label>
-     4.8
+     3.9
     </label>
     <title>
      TMEM159 promotes the development of GBM
@@ -1376,9 +1376,9 @@
      &lt; 0.001.
     </p>
    </sec>
-   <sec id="s4_9">
+   <sec id="s3_10">
     <label>
-     4.9
+     3.10
     </label>
     <title>
      Inhibition of TMEM159 enhanced the anti-tumor effect of osimertinib
@@ -1422,9 +1422,9 @@
     </p>
    </sec>
   </sec>
-  <sec id="s5">
+  <sec id="s4">
    <label>
-    5
+    4
    </label>
    <title>
     Discussion
@@ -1615,9 +1615,9 @@
     experiments need to be conducted in the future to confirm whether TMEM159 interacts with EGFR in gliomas and whether TMEM159 affects the degradation of EGFR.
    </p>
   </sec>
-  <sec id="s6">
+  <sec id="s5">
    <label>
-    6
+    5
    </label>
    <title>
     Conclusions
