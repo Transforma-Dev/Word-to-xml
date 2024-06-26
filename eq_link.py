@@ -1,6 +1,9 @@
 #Import nesseccary packages
 from xml.etree import ElementTree
 from xml.etree import ElementTree as ET
+from lxml import etree
+from xml.etree import ElementTree
+from xml.etree import ElementTree as ET
 from io import StringIO
 import base64    
 import re
@@ -8,21 +11,62 @@ import re
 #Define function to find the boxed text in the document
 def txbox(root):
     box_text=''
-    ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
+    # ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
+    # for elem in root.iter():
+    #     if elem.tag.endswith("txbx"):  # Check if the element is a textbox
+    #         text_box = elem.find(".//w:txbxContent", namespaces=ns)  # Check if it contains a text box content
+    #         if text_box is not None:
+    #             for p_elem in text_box.findall(".//w:p", namespaces=ns):  # Find all paragraph elements inside the text box
+    #                 for r_elem in p_elem.findall(".//w:r", namespaces=ns):  # Find all run elements inside the paragraph
+    #                     text = ""
+    #                     for t_elem in r_elem.findall(".//w:t", namespaces=ns):  # Find all text elements inside the run
+    #                         text += t_elem.text if t_elem.text else ""
+    #                     bold = r_elem.find(".//w:b", namespaces=ns)  # Look for bold property inside the run
+    #                     if bold is not None:
+    #                         box_text += f"{text}:"
+    #                     else:
+    #                         box_text += f'{text}'
+    ns = {
+        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        'mml': 'http://www.w3.org/1998/Math/MathML' 
+    }
+    
     for elem in root.iter():
+        math_count = 0
         if elem.tag.endswith("txbx"):  # Check if the element is a textbox
             text_box = elem.find(".//w:txbxContent", namespaces=ns)  # Check if it contains a text box content
             if text_box is not None:
-                for p_elem in text_box.findall(".//w:p", namespaces=ns):  # Find all paragraph elements inside the text box
-                    for r_elem in p_elem.findall(".//w:r", namespaces=ns):  # Find all run elements inside the paragraph
+                box_text = ""
+                for sub_elem in text_box.iter():
+                    # if sub_elem.tag.endswith("oMath"):  # Find math equation text in paragraph
+
+                    if sub_elem.tag.endswith("r"):  # Find normal text in paragraph
                         text = ""
-                        for t_elem in r_elem.findall(".//w:t", namespaces=ns):  # Find all text elements inside the run
-                            text += t_elem.text if t_elem.text else ""
-                        bold = r_elem.find(".//w:b", namespaces=ns)  # Look for bold property inside the run
-                        if bold is not None:
+                        for t_elem in sub_elem.findall(".//w:t", namespaces=ns):
+                            text = t_elem.text if t_elem.text else ""
+                        bold = sub_elem.find(".//w:b", namespaces=ns)  # Look for bold property inside the run
+                        if bold is not None and text:
                             box_text += f"{text}:"
                         else:
-                                box_text += f'{text}'
+                            box_text += f'{text}'
+                    if sub_elem.tag.endswith("oMath"):
+                        math_xml = elem.findall('.//m:oMath', namespaces=ns)  # Find all OMML tags in paragraph
+                        # print(math_xml)
+                        if len(math_xml) > math_count:
+                            cur_math = math_xml[math_count]
+                            math_str = str(ET.tostring(cur_math, method='xml', encoding="unicode"))
+                            # Transform OMML to MML
+                            xslt_file = "config/omml2mml.xsl"
+                            xslt_doc = etree.parse(xslt_file)
+                            transformer = etree.XSLT(xslt_doc)
+                            xml_doc = etree.fromstring(math_str)
+                            transformed_tree = transformer(xml_doc)
+                            transformed_tree = str(transformed_tree).replace("mml:", "")
+                            mathml = f'{str(transformed_tree)}'
+                            box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
+                            math_count += 1
+    
     return box_text
 
 #Define function to find the equation in the document
@@ -56,22 +100,35 @@ def eq(root,xml_text,para,math_count):
 def run_eq(root,xml_text,para,run,values,math_count):
     stri = run.text
     try:
+        
         if values[0]!=stri:
-            #Check the length of run object equal to zero
-            if len(run.text) != 0:
-                #Call function to print equation
-                xml_text,math_count = print_equation(xml_text,para,math_count)
-                stri = run.text
-
-                if values[1]!=stri:
-                    values=values[1:]
+            if values[0] == "[":
+                num = 0
+                text = ''
+                for i in values:
+                    num+=1
+                    text += i
+                    if i=="]":
+                        break
+                xml_text += text
+                values = values[num:]
+                
+            else:
+                #Check the length of run object equal to zero
+                if len(run.text) != 0:
                     #Call function to print equation
                     xml_text,math_count = print_equation(xml_text,para,math_count)
-                try:    
-                    if values[1]==stri:
+                    stri = run.text
+
+                    if values[1]!=stri:
                         values=values[1:]
-                except:
-                    pass
+                        #Call function to print equation
+                        xml_text,math_count = print_equation(xml_text,para,math_count)
+                    try:    
+                        if values[1]==stri:
+                            values=values[1:]
+                    except:
+                        pass
 
         if len(run.text)==0:
             pass
@@ -90,7 +147,6 @@ def print_equation(xml_text,para,math_count):
     if len(math_xml) > math_count:
         cur_math = math_xml[math_count]
         math_str = str(ElementTree.tostring(cur_math, method='xml', encoding="unicode"))
-        math_count = math_count + 1
         math_count = math_count + 1
         from lxml import etree    #Change omml to mml format
         xslt_file = "config/omml2mml.xsl"

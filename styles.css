@@ -11,7 +11,7 @@ italic {
 bold {
   font-weight: bold;
 }
-journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
+journal-id,publisher-name,publisher-loc,article-id,subject,issn,front article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list,ref label,ref article-title,ref volume,ref source,ref year,ref issue,ref lpage,ref pub-id {
   display: block;
 }
 journal-id::before {
@@ -106,6 +106,64 @@ ack p::before {
 label::after {
   content: " ";
 }
+ref label::before {
+  content: "Reference Number : ";
+  font-weight: bold;
+  font-size: 20px;
+}
+person-group::before {
+  content: "Author Group : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref article-title::before {
+  content: "Article Title : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref source::before {
+  content: "Journal Title : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref year::before {
+  content: "Year : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref volume::before {
+  content: "Volume Number : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref issue::before {
+  content: "Issue Number : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref fpage::before {
+  content: "First Page : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref lpage::before {
+  content: "Last Page : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref pub-id::before {
+  content: "DOI Number : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref mixed-citation::before {
+  content: "Cross Ref DATA : ";
+  display: block;
+  font-weight: bold;
+  color: #0f60efcc;
+  font-size: 20px;
+  margin: -30px 0px 15px 0px;
+}
 
 
 
@@ -115,7 +173,12 @@ journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,al
   margin: 8px 0px 8px 0px;
 }
 
-article-title{
+person-group,ref article-title,ref volume,ref source,ref year,ref issue,ref fpage,ref lpage,ref pub-id {
+  margin: 8px 0px 8px 10px;
+  font-size: 16px;
+}
+
+front article-title{
   font-size: 30px;
   text-align: center;
   font-weight: bold;   
@@ -230,6 +293,28 @@ ref-list title {
 ref {
   margin: 10px 0px 10px 0px;
   line-height: 22px;
+  padding: 10px;
+  margin-top: 30px;
+  border: 4px solid #c81406;
+  font-size: 14px;
+}
+
+ref label {
+ font-weight: bold; 
+ font-size: 20px;
+}
+
+mixed-citation {
+  border-style: groove;
+  padding: 10px;
+  padding-top: 50px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: block;
+  border-color: #238ab3;
+  background-color: #1ce6a6;
+  background-clip: content-box;
 }
 
 fn {

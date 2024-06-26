@@ -14,7 +14,7 @@ def reference(xml_text,variables):
         else:
             text=f'</sec></body><back><ref-list content-type="authoryear"><title>{xml_text}</title>'
         variables["ref"]=True
-    elif "fn" in variables["back_start"]:   #fn is already is there then not add back tag
+    elif "fn" in variables["back_start"]:   #fn is already is there then not anames back tag
         text=f'</p></fn></fn-group><ref-list content-type="authoryear"><title>{xml_text}</title>'
     else:
         if variables["sec_3"]>1:
@@ -32,6 +32,63 @@ def reference(xml_text,variables):
     return text
 
 def reference_text(xml_text,variables):
+    
+    # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
+
+    # names = volume = alt_title = year = source = issue = page = pub_id = ''
+
+    # match = re.search(r'\b[A-Za-z]{3}\. \d{2}, \d{4}\b| \d{4}\b',xml_text)
+    # # Extract the matched date if found
+    # result = match.group() if match else None
+    # if result:
+    #     year += f'<year>{result}</year>'
+    #     xml_text = re.sub(re.escape(result), "", xml_text).strip()
+    
+    # aa = xml_text.strip().split(",")
+    # # print(aa)
+    
+    # matches = re.findall(r'"(.*?)"', xml_text)
+    # # Print the results
+    # for match in matches:
+    #     alt_title = f'<article-title>{match}</article-tite>'
+    
+    # # match = re.search(r'\b\d{3}-\d{3}\b | \b\d{2}-\d{2}\b | \b\d{4}-\d{4}\b',xml_text)
+    # # # Extract the matched date if found
+    # # result = match.group() if match else None
+    # # hh = f'<year>{result}</year>'
+
+    # # if "Applied" in xml_text:
+    # #     print("plo")
+    
+    
+    # for i in aa:
+    #     if "." in i:
+    #         # print(aa)
+    #         i = i.replace("and","")
+    #         split_i = i.strip().split(".")
+    #         # print(split_i)
+    #         if len(split_i[0])<2 and len(split_i[0])!=0: 
+    #             names += f'<string-name><surname>{split_i[-1]}</surname><given-names>{"".join(split_i[:-1])}</given-names></string-name>,'
+    #             # print(names)
+    #         elif "vol" in split_i:
+    #             volume = f'<volume>{split_i[1]}</volume>'
+    #         elif "no." in i:
+    #             issue = f'<issue>{i}</issue>'
+    #         elif "pp." in i:
+    #             i = i.split("-")
+    #             page = f'<fpage>{i[0]}</fpage>-<lpage>{i[1]}</lpage>'
+    #         elif "doi" in i:
+    #             pub_id += f'<pub-id>{i}</pub-id>'
+    #     elif "italic" in i:
+    #         i = i.replace('"','').replace('<italic>','').replace('</italic>','')
+    #         source += f'<source>{i}</souce>'
+        
+    # names = names[:-1]
+
+    
+    # xml_text = f'<label>{variables["ref_id"]}.</label><mixed-citation publication-type="journal"><person-group person-group-type="author">{names}</person-group>.{alt_title}{source}{year}{volume}{issue}{page}{pub_id}</mixed-citation>'
+    # # print(aa)
+
     #Split the reference text and find author name and year
     xml_text_split = xml_text.split(".")
     count = 1
@@ -55,5 +112,5 @@ def reference_text(xml_text,variables):
     text=f'<ref id="ref-{variables["ref_id"]}">{xml_text}</ref>'
     
     variables["ref_id"]+=1
-    #print(text)
+    # print(text)
     return text

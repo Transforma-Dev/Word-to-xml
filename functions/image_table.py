@@ -17,7 +17,7 @@ def image_caption(xml_text,variables):
         #     figure=figure.replace("<","&#60;")
         pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|(\:|\s)*|\s)+)(.+)"
         match = re.match(pattern, figure.strip(),re.IGNORECASE)
-      
+
         if "<disp-formula" in xml_text:
             pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\:|\s)*|\s)+)(.+)"
             match = re.match(pattern, xml_text,re.IGNORECASE)

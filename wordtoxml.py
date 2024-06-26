@@ -108,6 +108,9 @@ def convert(input_file_name = None):
         print(f"Error opening the document: {e}")
         return ''
 
+    # Add css style in xml file
+    xml+=f'<?xml-stylesheet type="text/css" href="/home/user2/python/wordtoxml/convertion/styles.css"?>'
+    
     #Add nessaccery tags
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
 
@@ -154,4 +157,4 @@ def convert(input_file_name = None):
     return output_xml_name
 
 
-# convert()
+convert()

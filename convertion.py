@@ -64,7 +64,9 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Check where the boxed text are present in paragraph
     if "<wps:txbx>" in xml:
+        # print(xml)
         box_text = eq_link.txbox(root)
+        
 
     #Check where the equation are present in paragraph
     if "<m:oMath" in xml:
@@ -82,6 +84,8 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         Parameters:
             i (Run): The Run object representing a portion of the paragraph text.
         """
+        
+        # print(run.text,len(run.text))
         #Check if the paragraph contains math equations
         if '<m:oMath' in xml:
             values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count)
