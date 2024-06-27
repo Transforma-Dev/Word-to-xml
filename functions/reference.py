@@ -1,4 +1,6 @@
 import re 
+import calendar
+import requests
 
 
 #Define function to find reference part
@@ -33,84 +35,124 @@ def reference(xml_text,variables):
 
 def reference_text(xml_text,variables):
     
-    # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
+    text =''
+    
+    #Example usage:
+    references_data = {
+        "references": [
+            {
+                "id": f'{variables["ref_id"]}',
+                "reference": f"{xml_text}"
+            }
+        ]
+    }
 
-    # names = volume = alt_title = year = source = issue = page = pub_id = ''
-
-    # match = re.search(r'\b[A-Za-z]{3}\. \d{2}, \d{4}\b| \d{4}\b',xml_text)
-    # # Extract the matched date if found
-    # result = match.group() if match else None
-    # if result:
-    #     year += f'<year>{result}</year>'
-    #     xml_text = re.sub(re.escape(result), "", xml_text).strip()
+    api_endpoint = 'http://10.10.10.41:7878/'  #API url endpoint
     
-    # aa = xml_text.strip().split(",")
-    # # print(aa)
-    
-    # matches = re.findall(r'"(.*?)"', xml_text)
-    # # Print the results
-    # for match in matches:
-    #     alt_title = f'<article-title>{match}</article-tite>'
-    
-    # # match = re.search(r'\b\d{3}-\d{3}\b | \b\d{2}-\d{2}\b | \b\d{4}-\d{4}\b',xml_text)
-    # # # Extract the matched date if found
-    # # result = match.group() if match else None
-    # # hh = f'<year>{result}</year>'
-
-    # # if "Applied" in xml_text:
-    # #     print("plo")
-    
-    
-    # for i in aa:
-    #     if "." in i:
-    #         # print(aa)
-    #         i = i.replace("and","")
-    #         split_i = i.strip().split(".")
-    #         # print(split_i)
-    #         if len(split_i[0])<2 and len(split_i[0])!=0: 
-    #             names += f'<string-name><surname>{split_i[-1]}</surname><given-names>{"".join(split_i[:-1])}</given-names></string-name>,'
-    #             # print(names)
-    #         elif "vol" in split_i:
-    #             volume = f'<volume>{split_i[1]}</volume>'
-    #         elif "no." in i:
-    #             issue = f'<issue>{i}</issue>'
-    #         elif "pp." in i:
-    #             i = i.split("-")
-    #             page = f'<fpage>{i[0]}</fpage>-<lpage>{i[1]}</lpage>'
-    #         elif "doi" in i:
-    #             pub_id += f'<pub-id>{i}</pub-id>'
-    #     elif "italic" in i:
-    #         i = i.replace('"','').replace('<italic>','').replace('</italic>','')
-    #         source += f'<source>{i}</souce>'
+    try:
+        #Sending a POST request to the API endpoint with JSON data
+        response = requests.post(api_endpoint, json=references_data)
         
-    # names = names[:-1]
-
+        #Checking if the request was successful (status code 200)
+        if response.status_code == 200:
+            references_json = response.json()  #Assuming the response is JSON
+        else:
+            print({'error': f'API Error: {response.status_code}'})
     
-    # xml_text = f'<label>{variables["ref_id"]}.</label><mixed-citation publication-type="journal"><person-group person-group-type="author">{names}</person-group>.{alt_title}{source}{year}{volume}{issue}{page}{pub_id}</mixed-citation>'
-    # # print(aa)
-
-    #Split the reference text and find author name and year
-    xml_text_split = xml_text.split(".")
-    count = 1
-    #Find the author name and year in reference part
-    for i in xml_text_split:
-        matches = re.findall(r"\b\d{4}\b", i)
-        if count==1:
-            auth_name = i.split(",")[0]
-            count+=1
-        elif "&" in i:
-            i = i[1:]
-            auth_name += i.split(",")[0]
-        elif matches:
-            if matches[0] in i:
-                auth_name += ","+i
-                break
+    except requests.exceptions.RequestException as e:
+        print({'error': f'Request Exception: {str(e)}'})
     
-    variables["ref_text_link"].append(auth_name)
-    # print(variables["ref_text_link"])
+    # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
+    # print(references_json)
+    if references_json and not xml_text.isspace():
+        data = references_json[0]
 
-    text=f'<ref id="ref-{variables["ref_id"]}">{xml_text}</ref>'
-    
-    variables["ref_id"]+=1
-    # print(text)
+        ref_word = ''
+
+        ref_word += f'<label>{data["id"]}</label><mixed-citation publication-type="journal">'
+
+        tag_list = ["author","title","container-title","volume","issue","year","issued","page","DOI","doi_url","publisher"]
+
+        #Loop through the tag order
+        for k in tag_list:
+            #Loop through parsed text in json
+            for j in data["parsed"]:
+                #Find author name
+                if j==k=="author":
+                    ref_word += f'<person-group person-group-type="author">'
+                    for i in data["parsed"]["author"]:
+                        if len(i)>1:
+                            ref_word += f'<string-name><surname>{i["family"]}</surname><given-names>{i["given"]}</given-names></string-name>'
+                        else:
+                            ref_word += f'<string-name><surname>{i["family"]}</surname></string-name>'
+                    ref_word += f'</person-group>'
+                #Find article title
+                elif j==k=="title":
+                    ref_word += f'<article-title>{data["parsed"]["title"]}</article-title>'
+                #Find source
+                elif j==k=="container-title":
+                    ref_word += f'<source>{data["parsed"]["container-title"]}</source>'
+                #Find Volume
+                elif j==k=="volume":
+                    ref_word += f'<volume>{data["parsed"]["volume"]}</volume>'
+                #Find issue
+                elif j==k=="issue":
+                    ref_word += f'<issue>{data["parsed"]["issue"]}</issue>'
+                #Find page number
+                elif j==k=="page":
+                    if "-" in data["parsed"]["page"]:
+                        split_page = data["parsed"]["page"].split("-")
+                        ref_word += f'<fpage>{split_page[0]}</fpage><lpage>{split_page[1]}</lpage>'
+                    else:
+                        ref_word += f'<fpage>{data["parsed"]["page"]}</fpage>'
+                #Find Year
+                elif j==k=="year":
+                    ref_word += f'<year>{data["parsed"]["year"]}</year>'
+                #Find DOI
+                elif j==k=="DOI":
+                    ref_word += f'<pub-id>{data["parsed"]["DOI"]}</pub-id>'
+                #Find publisher
+                elif j==k=="publisher":
+                    ref_word += f'<comment>{data["parsed"]["publisher"]}</comment>'
+                #Find doi_url
+                elif j==k=="doi_url":
+                    ref_word += f'<web-url>{data["parsed"]["doi_url"]}</web-url>'
+                #Find year
+                elif j==k=="issued":
+                    date = data["parsed"]["issued"]["date-parts"][0]
+                    if len(date)>1:
+                        dates = calendar.month_name[date[1]]
+                        date[1] = ","+dates[:3]+"."
+                        print(date)
+                        ref_word += f'<year>{" ".join(map(str, date))}</year>'
+                    else:
+                        ref_word += f'<year>{" ".join(map(str, data["parsed"]["issued"]["date-parts"][0]))}</year>'
+
+        ref_word += f'</mixed-citation>'
+        print(ref_word)
+
+        #Split the reference text and find author name and year
+        xml_text_split = xml_text.split(".")
+        count = 1
+        #Find the author name and year in reference part
+        for i in xml_text_split:
+            matches = re.findall(r"\b\d{4}\b", i)
+            if count==1:
+                auth_name = i.split(",")[0]
+                count+=1
+            elif "&" in i:
+                i = i[1:]
+                auth_name += i.split(",")[0]
+            elif matches:
+                if matches[0] in i:
+                    auth_name += ","+i
+                    break
+        
+        variables["ref_text_link"].append(auth_name)
+        # print(variables["ref_text_link"])
+
+        text=f'<ref id="ref-{variables["ref_id"]}">{ref_word}</ref>'
+        
+        variables["ref_id"]+=1
+        # print(text)
     return text

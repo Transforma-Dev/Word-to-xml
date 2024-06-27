@@ -11,7 +11,13 @@ italic {
 bold {
   font-weight: bold;
 }
-journal-id,publisher-name,publisher-loc,article-id,subject,issn,front article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list,ref label,ref article-title,ref volume,ref source,ref year,ref issue,ref lpage,ref pub-id {
+sub {
+  vertical-align: sub;
+}
+sup {
+  vertical-align: super;
+}
+journal-id,publisher-name,publisher-loc,article-id,subject,issn,front article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list,ref label,ref person-group,ref article-title,ref source,ref year,ref volume,ref issue,ref fpage,ref lpage,ref pub-id,ref commend,ref year,ref issue,ref lpage,ref comment,ref web-url {
   display: block;
 }
 journal-id::before {
@@ -156,6 +162,16 @@ ref pub-id::before {
   font-weight: bold;
   font-size: 18px;
 }
+ref comment::before {
+  content: "Commend  : ";
+  font-weight: bold;
+  font-size: 18px;
+}
+ref web-url::before {
+  content: "Web Url  : ";
+  font-weight: bold;
+  font-size: 18px;
+}
 ref mixed-citation::before {
   content: "Cross Ref DATA : ";
   display: block;
@@ -173,7 +189,7 @@ journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,al
   margin: 8px 0px 8px 0px;
 }
 
-person-group,ref article-title,ref volume,ref source,ref year,ref issue,ref fpage,ref lpage,ref pub-id {
+person-group,ref article-title,ref volume,ref source,ref year,ref issue,ref fpage,ref lpage,ref pub-id,ref comment,ref web-url {
   margin: 8px 0px 8px 10px;
   font-size: 16px;
 }
@@ -230,6 +246,9 @@ sec > sec > label,sec > sec > title {
   font-size: 20px;
   font-weight: bold;
   color: #EF5151;
+}
+ref string-name {
+  background-color: yellow;
 }
 
 sec > sec > sec > label,sec > sec > sec > title {
@@ -345,6 +364,7 @@ fig title {
 back glossary title {
   font-size: 20px;
   font-weight: bold;
+  display: block  ;
 }
 
 p {
