@@ -51,7 +51,7 @@ def convert(input_file_name = None):
     #Get the directory of the file
     if input_file_name == None:
         input_file_name = (sys.argv[1])
-        input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else ""
+        input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else input_file_name
     
     #Get the directory of the python file
     script_path = os.path.abspath(__file__)
@@ -109,7 +109,7 @@ def convert(input_file_name = None):
         return ''
 
     # Add css style in xml file
-    xml+=f'<?xml-stylesheet type="text/css" href="/home/user2/python/wordtoxml/convertion/styles.css"?>'
+    # xml+=f'<?xml-stylesheet type="text/css" href="/home/user2/python/wordtoxml/convertion/styles.css"?>'
     
     #Add nessaccery tags
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
@@ -157,4 +157,4 @@ def convert(input_file_name = None):
     return output_xml_name
 
 
-# convert()
+convert()

@@ -86,7 +86,7 @@ def aff_para(xml_text,variables):
         #Add all text except last one
         institution_text = " ".join(run_text[:-1])
         #Add the institution and country information
-        text += f'<institution>{institution_text}</institution>,<country>{run_text[-1]}</country>.</aff>'
+        text += f'<institution>{institution_text}</institution><country>{run_text[-1]}</country></aff>'
         variables["aff_id"]+=1
 
     #print(text)

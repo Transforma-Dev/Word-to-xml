@@ -63,7 +63,7 @@ def reference_text(xml_text,variables):
         print({'error': f'Request Exception: {str(e)}'})
     
     # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
-    # print(references_json)
+    print(references_json)
     if references_json and not xml_text.isspace():
         data = references_json[0]
 
@@ -119,14 +119,20 @@ def reference_text(xml_text,variables):
                     ref_word += f'<web-url>{data["parsed"]["doi_url"]}</web-url>'
                 #Find year
                 elif j==k=="issued":
-                    date = data["parsed"]["issued"]["date-parts"][0]
+                    for d_name in data["parsed"]["issued"]:
+                        if d_name=="date-parts":
+                            date = data["parsed"]["issued"][d_name][0]
+                        else:
+                            date = []
+                            date.append(data["parsed"]["issued"][d_name])
+                        
                     if len(date)>1:
                         dates = calendar.month_name[date[1]]
                         date[1] = ","+dates[:3]+"."
-                        print(date)
+                        
                         ref_word += f'<year>{" ".join(map(str, date))}</year>'
                     else:
-                        ref_word += f'<year>{" ".join(map(str, data["parsed"]["issued"]["date-parts"][0]))}</year>'
+                        ref_word += f'<year>{date[0]}</year>'
 
         ref_word += f'</mixed-citation>'
         print(ref_word)
