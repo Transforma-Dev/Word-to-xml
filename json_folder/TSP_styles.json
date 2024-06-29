@@ -1,0 +1,11 @@
+{
+    "replace_text" : [
+            {"text":"i.e.","replace":"i.e.,"},
+            {"text":"e.g.","replace":"e.g.,"}
+        ],
+    "aff_replace_text" : [
+            {"text":"People’s Republic of China","replace":"China"},
+            {"text":"Dept","replace":"Department"}
+        ],
+    "skip_words" : ["and", "or", "but","so", "in", "on", "at", "for", "with", "to", "from","of","into","a"]
+}

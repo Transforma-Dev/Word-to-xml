@@ -1,0 +1,5162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    CMC
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Computers, Materials &amp; Continua
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    1546-2226
+   </issn>
+   <issn pub-type="ppub">
+    1546-2218
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    51685
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604/cmc.2024.051685
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+     MUS Model: a Deep Learning-Based Architecture for IoT Intrusion Detection
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     MUS Model: a Deep Learning-Based Architecture for IoT Intrusion Detection
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     MUS Model: a Deep Learning-Based Architecture for IoT Intrusion Detection
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Yan
+      </surname>
+      <given-names>
+       Yu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Yang
+      </surname>
+      <given-names>
+       Yu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+     <mail>
+      ssss@email.com
+     </mail>
+    </contrib>
+    <contrib contrib-type="author" id="author-3">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Fang
+      </surname>
+      <given-names>
+       Shen
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-4">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Gao
+      </surname>
+      <given-names>
+       Minna
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-5">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Yiding
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      <sup>
+       1
+      </sup>
+     </label>
+     <institution>
+      College of Information Engineering  University of Engineering of the Chinese People's Armed Police Force (PAP)  Xi'an  710000
+     </institution>
+     <country>
+      China
+     </country>
+    </aff>
+    <aff id="aff-2">
+     <label>
+      <sup>
+       2
+      </sup>
+     </label>
+     <institution>
+      college of Missile Engineering  Rocket Force Engineering University  Xi'an  710000
+     </institution>
+     <country>
+      China
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <label>
+      *
+     </label>
+     Corresponding Author: Yu Yang. Email: aa18634816079@163.com
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      12
+     </day>
+     <month>
+      3
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      16
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024 Yan et al.
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     Yan et al.
+    </copyright-holder>
+    <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" xlink:href="TSP_CMC_51685.pdf"/>
+   <abstract abstract-type="abstract">
+    <p>
+     In the face of the effective popularity of the Internet of Things (IoT), but the frequent occurrence of cybersecurity incidents, various cybersecurity protection means have been proposed and applied. Among them, Intrusion Detection System (IDS) has been proven to be stable and efficient. However, traditional intrusion detection methods have shortcomings such as low detection accuracy and inability to effectively identify malicious attacks. To address the above problems, this paper fully considers the superiority of deep learning models in processing high-dimensional data, and reasonable data type conversion methods can extract deep features and detect classification using advanced computer vision techniques to improve classification accuracy. The Markov Transform Field (MTF) method is used to convert 1D network traffic data into 2D images, and then the converted 2D images are filtered by Unsharp Masking to enhance the image details by sharpening; to further improve the accuracy of data classification and detection, unlike using the existing high-performance baseline image classification models, a soft-voting integrated model, which integrates three deep learning models, MobileNet, VGGNet and ResNet, to finally obtain an effective IoT intrusion detection architecture: the MUS model. Four types of experiments are conducted on the publicly available intrusion detection dataset CICIDS2018 and the IoT network traffic dataset N_BaIoT, and the results demonstrate that the accuracy of attack traffic detection is greatly improved, which is not only applicable to the IoT intrusion detection environment, but also to different types of attacks and different network environments, which confirms the effectiveness of the work done.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+     Cyberspace Security
+    </kwd>
+    <kwd>
+     Intrusion Detection
+    </kwd>
+    <kwd>
+     Deep Learning
+    </kwd>
+    <kwd>
+     Markov Transition Fields (MTF)
+    </kwd>
+    <kwd>
+     Soft Voting Integration
+    </kwd>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title>
+    Introduction
+   </title>
+   <p>
+    With the development of the Internet, computer technology [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ] has penetrated into all aspects of human production and life. From food, clothing, housing and transport to mobile payments, from smart homes to drones, especially the emergence and popularity of IoT [
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ] has created a new situation of interconnecting everything, becoming an indispensable bridge connecting the digital world and the physical world. It collects, analyses and utilizes heterogeneous data through the interconnectivity of different devices to achieve seamless communication between systems, platforms and humans, thus assisting in the generation of smarter decisions (
+    <xref ref-type="fig" rid="fig-1">
+     Fig. 1
+    </xref>
+    ).
+   </p>
+   <fig id="fig-1">
+    <label>
+     Figure 1
+    </label>
+    <caption>
+     <title>
+      Examples of IoT components
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-1.jpg"/>
+   </fig>
+   <p>
+    However, due to the diversity and differences between smart devices belonging to IoT, and the layered, seamless, and unstable nature of the network structure, security is facing serious challenges, which are highlighted by the frequent occurrence of malicious attacks, which are harmful.20 In October 2023 genetic testing provider 23andMe suffered from a crash attack that led to the leakage of 6.9 million users' data, which was described as the "the worst medical data breach"; on 8 November 2023, ICBC Financial Services LLC (ICBCFS), a wholly-owned US subsidiary of the Industrial and Commercial Bank of China (ICBC), was hit by a LockBit ransomware [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ] attack that was launched using the Citrix Bleed vulnerability that was not patched in time attack, resulting in partial system disruption and affecting normal business. The occurrence of the above security incidents is not coincidental, the "2022 Annual Cyberspace Mapping Report" shows that the number of exposed smart connected devices such as cameras, routers, VoIP phones, etc. in 2022 have all exceeded 2 million units, which has a very high risk of information leakage, and this has directly led to the development and expansion of the market for  IoT security industry [
+    <xref ref-type="bibr" rid="ref-4">
+     4
+    </xref>
+    ] (
+    <xref ref-type="fig" rid="fig-2">
+     Fig. 2
+    </xref>
+    ).
+   </p>
+   <fig id="fig-2">
+    <label>
+     Figure 2
+    </label>
+    <caption>
+     <title>
+      IoT Security Industry Market Trend Chart
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-2.jpg"/>
+   </fig>
+   <p>
+    In the face of severe IoT network security problems, a complete IoT network security system [
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ] has been proposed (
+    <xref ref-type="fig" rid="fig-3">
+     Fig. 3
+    </xref>
+    ).
+   </p>
+   <fig id="fig-3">
+    <label>
+     Figure 3
+    </label>
+    <caption>
+     <title>
+      Internet of Things Network Security System Architecture
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-3.jpg"/>
+   </fig>
+   <p>
+    In order to achieve the solidity of the system and give full play to the system's role, this paper starts the research from the bottom structure - security protection [
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ]. However, traditional network security protection means, such as data encryption [
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ], traceability analysis, firewall [
+    <xref ref-type="bibr" rid="ref-8">
+     8
+    </xref>
+    ], access control [
+    <xref ref-type="bibr" rid="ref-9">
+     9
+    </xref>
+    ], anti-virus wall, user authorization [
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ], etc., belong to the negative means of passive defence, and it is difficult to provide comprehensive security protection. Therefore, the active means of protection - intrusion detection technology urgently needs to be used, which focuses on the internal data, external data and misuse of active detection and early warning, to provide decision-making basis for operations and maintenance personnel. Although the current research for intrusion detection [
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ] technology is being carried out one after another, machine learning, deep learning and other artificial intelligence technology to make the detection performance greatly improved. However, it is far from enough for the network anomaly traffic detection which requires very high accuracy and costly false alarms, with the following problems:
+   </p>
+   <p>
+    (1) Directly using low-dimensional deep learning models to learn, train and test one-dimensional network traffic data, ignoring the superiority of deep learning in extracting complex features;
+   </p>
+   <p>
+    (2) Lacking the necessary and efficient feature extraction and further processing of network traffic data after simple preprocessing, which substantially affects the detection accuracy;
+   </p>
+   <p>
+    (3) Directly using baseline machine learning or deep learning models to detect and classify network traffic, which is highly dependent on the quality and diversity of the training dataset, with low model robustness and detection accuracy.
+   </p>
+   <p>
+    In order to further improve the detection accuracy of the IoT intrusion detection framework, this paper conducts research on the above issues, with the following main contributions:
+   </p>
+   <p>
+    (1) The MTF method is proposed to convert one-dimensional network traffic data into two-dimensional images, using Recurrent Neural Networks (RNN) instead of frequency counts to estimate the transfer probability, automatically learning the complex relationship between different states, accurately capturing the key features of the data, and having a stronger semantic understanding capability;
+   </p>
+   <p>
+    (2) Adopt Unsharp Masking filter to sharpen the converted 2D image, so as to enhance the image details and lay a good foundation for the next step of image classification and detection;
+   </p>
+   <p>
+    (3) Propose to construct an image classification model using the soft voting integration method to improve the detection accuracy, select three efficient baseline deep learning models for image classification: MobileNet, VGGNet, and ResNet, perform soft voting integration, and use the merged integrated model AVR Model to detect the image, which greatly improves the detection accuracy;
+   </p>
+   <p>
+    (4) Construct a MUS intrusion detection framework for IoT using MTF method and deep learning models. Three types of experiments are conducted on two datasets: N_BaIoT, and CICIDS2018, respectively, and the results prove that the detection accuracy of the proposed framework is substantially improved and is effective on IoT.
+   </p>
+   <p>
+    The line structure of this paper is as follows: section II is the related work, including an overview comparison of research on intrusion detection techniques, data processing and integration methods; section III is the methodology, including a detailed description of the MTF method, the improved Unsharp Masking filtering method, and the baseline image classification model soft-voting integration method, which ultimately constitutes the intrusion detection framework, MUS; and section IV is the implementation of the experiments. It includes a description of the dataset, experimental environment, setup conditions and process to demonstrate the effectiveness of the work done; Section V is the conclusion and outlook, which aims to summarize this paper and look forward to the future, providing a reference basis for researchers in related fields.
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title>
+    Related Work
+   </title>
+   <sec id="s2_1">
+    <label>
+     2.1
+    </label>
+    <title>
+     Intrusion Detection Systems(IDS)
+    </title>
+    <p>
+     Since Anderson first proposed the concept of intrusion detection in 1980 [
+     <xref ref-type="bibr" rid="ref-12">
+      12
+     </xref>
+     ], the research of intrusion detection technology has become a hot spot in the field of network security protection, and the related researches have emerged and developed rapidly. Especially after Hinton [
+     <xref ref-type="bibr" rid="ref-13">
+      13
+     </xref>
+     ] proposed deep neural networks in 2006, along with the arithmetic power improvement of hardware devices and the surge of data volume, machine learning and deep learning algorithms have been widely used in the field of intrusion detection and achieved good results. Farooq et al. in their research [
+     <xref ref-type="bibr" rid="ref-14">
+      14
+     </xref>
+     ] proposed a fusion intrusion detection framework based on machine learning, IDS-FMLT, for a heterogeneous network composed of heterogeneous networks composed of different source networks, and experiments proved that the detection accuracy of this framework on the training and validation sets can reach 96.73% and 95.18%, respectively, which significantly improves the detection accuracy; Qazi et al. in their research [
+     <xref ref-type="bibr" rid="ref-15">
+      15
+     </xref>
+     ] proposed an intrusion detection based on convolutional neural network (CNN) and recurrent neural network (RNN) for the problem of difficulty in acquiring and analyzing the local features of the data, and proposed a convolutional neural network (CNN) and recurrent neural network (RNN) based intrusion detection system HDLNIDS, and achieved an average accuracy of up to 98.90% on the public dataset CICIDS2018; In their research [
+     <xref ref-type="bibr" rid="ref-16">
+      16
+     </xref>
+     ], Xie et al. proposed an anomaly detection method based on Multi-Granularity Neighbourhood Residual Network (MGNRN) for the problem of difficult to obtain sample features comprehensively in the time series data, which was proved by experiments to significantly improve the detection accuracy on the task scenarios, especially on F1-Score, and provide a high-value method for the difficulty of deep feature extraction in time series. Yin et al. in their research [
+     <xref ref-type="bibr" rid="ref-17">
+      17
+     </xref>
+     ] constructed an intrusion detection framework based on virtual fusion data for the IoT security problem, fused machine learning and deep convolutional neural network algorithm (DCNN), and proposed a new loss function with full consideration of user privacy protection, and the detection accuracy is up to 96.5% on the NSL-KDD dataset. The above studies make full use of the advantages of deep learning in feature analysis and learning, and they all achieve good detection results. However, they neglect the potential and effectiveness of deep learning models in extracting high-dimensional features, and all of them directly detect and classify one-dimensional network traffic, which can't fully exploit the superiority of deep learning algorithms in terms of detection accuracy. Therefore, due to the above considerations, this paper adopts the MTF method, which converts one-dimensional network traffic into two-dimensional images, and combines the classical filtering method and the efficient image classification model to obtain higher detection accuracy and improve the level of IoT network security protection.
+    </p>
+   </sec>
+   <sec id="s2_2">
+    <label>
+     2.2
+    </label>
+    <title>
+     Data processing
+    </title>
+    <p>
+     Data processing usually refers to numerical, normalization, feature extraction, feature dimensionality reduction and other operations on the collected data to clean the "dirty" data into "clean" data, laying the foundation for subsequent detection and classification. However, the arrival of the big data era has led to a surge in the amount of heterogeneous data from multiple sources, and the traditional simple data processing is no longer sufficient to effectively detect malicious traffic attacks. Therefore, a number of studies have made special processing of 1D network traffic before detection and classification, such as converting data types, feature engineering processing, etc. Terzi et al. in their research [
+     <xref ref-type="bibr" rid="ref-18">
+      18
+     </xref>
+     ] emphasised the superiority of the visual interpretation capability of deep learning algorithms and used the Gram's Angle Field method (GAF) to convert 1D data to 2D images and classify the images using CNN, with a detection accuracy of up to 1.0% on the CICIDS2017 The detection accuracy on the dataset is up to 99.33%; Baldini et al. in their research [
+     <xref ref-type="bibr" rid="ref-19">
+      19
+     </xref>
+     ] used Grey Level Co-occurrence Matrix (GLCM) and 2D Dispersion Entropy to convert 1D data into 2D grey scale maps, and later used the detection bias of machine learning algorithms to achieve an Error Rate (ER) of as low as 0.16% on the CICIDS2017 dataset; Siddiqi et al. in their research [
+     <xref ref-type="bibr" rid="ref-20">
+      20
+     </xref>
+     ] proposed improved DeepInsight-based approach and Kernel Principal Component Analysis (KPCA) method to convert one-dimensional data into two-dimensional images, and after data augmentation, a deep learning classifier was used to classify the images on CSE- CIC-IDS 2018 and other three types of datasets experimentally proved to have high detection accuracy. All of the above studies convert one-dimensional network traffic into two-dimensional images for detection and classification, which not only allows the data to present more features and diversity, which is conducive to the model to better capture different types of network traffic behaviours; they also make use of the mature image processing techniques in the fields of computer vision and deep learning to better learn and train the model, and further improve the detection accuracy of malicious traffic. However, they only focus on image conversion using traditional data processing methods, while ignoring the way and accuracy of feature extraction, and the effective data information is not retained, converted and utilised on a large scale. Therefore, in this paper, we adopt the MTF method for image conversion, which can maximise the retention of sequence information, reduce the data dimensions, enhance local features, and help the deep learning model to better capture the key details related to intrusion.
+    </p>
+   </sec>
+   <sec id="s2_3">
+    <label>
+     2.3
+    </label>
+    <title>
+     Ensemble Learning
+    </title>
+    <p>
+     Ensemble Learning (EL) [
+     <xref ref-type="bibr" rid="ref-21">
+      21
+     </xref>
+     ] is a learning method that accomplishes a learning task by combining multiple underlying learners. It uses a set of complementary learners for prediction, combining their outputs appropriately to improve the generalisation ability of the model, reduce the risk of overfitting, and in some cases produce better performance than the individual learners, and is now widely used in the field of intrusion detection. In their research [
+     <xref ref-type="bibr" rid="ref-22">
+      22
+     </xref>
+     ], Shen et al. constructed a class-level soft-voting integration scheme (CBA-CLSVE) combining Chaos Bat Algorithm (CBA) with Support Vector Machines (SVM), K Nearest Neighbours (KNN), and Decision Trees (DTs) as the base learners, and experimentally proved the scheme to be effective on NSL-KDD, UNSW-NB15, and CICIDS2017 datasets; Hend et al. in their research [
+     <xref ref-type="bibr" rid="ref-23">
+      23
+     </xref>
+     ] developed a Random Forest (RF) and Convolutional Neural Network (CNN) based integrated voting method, and experimentally achieved up to 98.29% accuracy on the CICIDS2017 dataset, which is a significant increase in accuracy compared to other baseline models; Dheeb et al. proposed a heterogeneous integrated classifier combining multiple baseline machine learning models and weighted majority voting in their research [
+     <xref ref-type="bibr" rid="ref-24">
+      24
+     </xref>
+     ], and performed five classifications on the NSL-KDD dataset, and experimentally proved that the overall classification accuracy has been significantly improved. As shown in
+     <xref ref-type="table" rid="table-1">
+      Table 1
+     </xref>
+     , the above study proves that integrated learning can effectively improve the detection accuracy of baseline deep learning models in intrusion detection, especially the soft voting integration method. Therefore, in this paper, on the basis of selecting three types of high-performing baseline image classification models: MobileNet, VGGNet and ResNet, we adjust the parameters and construct a soft-voting integration framework to improve the classification accuracy of abnormal traffic.
+    </p>
+    <table-wrap id="table-1">
+     <label>
+      Table 1
+     </label>
+     <caption>
+      <title>
+       Relevant studies conducted on IoT Intrusion Detection.
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-table-1.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          Related Work
+         </th>
+         <th>
+          Proposed algorithm
+         </th>
+         <th>
+          Dataset
+         </th>
+         <th>
+          With or without data processing
+         </th>
+         <th>
+          With or without integration
+         </th>
+         <th>
+          Accuracy
+         </th>
+         <th>
+          Year
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-14">
+           14
+          </xref>
+          ]
+         </td>
+         <td>
+          IDS-FMLT
+         </td>
+         <td>
+          KDD-CUP99NetML-2020
+         </td>
+         <td colspan="2">
+          ×
+         </td>
+         <td>
+          95.18%
+         </td>
+         <td rowspan="2">
+          2023
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-15">
+           15
+          </xref>
+          ]
+         </td>
+         <td>
+          HDLNIDS
+         </td>
+         <td>
+          CICIDS2018
+         </td>
+         <td rowspan="6">
+          √
+         </td>
+         <td rowspan="6">
+          ×
+         </td>
+         <td>
+          98.90%
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-16">
+           16
+          </xref>
+          ]
+         </td>
+         <td>
+          MGNRN
+         </td>
+         <td>
+          three UCI datasets
+         </td>
+         <td>
+          99.20%
+         </td>
+         <td>
+          2022
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-17">
+           17
+          </xref>
+          ]
+         </td>
+         <td>
+          RNN、DCNNCloud-based Loss Function
+         </td>
+         <td>
+          NSL-KDD
+         </td>
+         <td>
+          96.50%
+         </td>
+         <td>
+          2023
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-18">
+           18
+          </xref>
+          ]
+         </td>
+         <td>
+          GAF+CNN
+         </td>
+         <td rowspan="2">
+          CICIDS2017
+         </td>
+         <td>
+          99.33%
+         </td>
+         <td>
+          2022
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-19">
+           19
+          </xref>
+          ]
+         </td>
+         <td>
+          GLCMthe 2D Dispersion Entropy
+         </td>
+         <td>
+          0.16%(Error rate)
+         </td>
+         <td>
+          2021
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-20">
+           20
+          </xref>
+          ]
+         </td>
+         <td>
+          DeepInsight-basedKernel Principal Component Analysis (KPCA)CNN
+         </td>
+         <td>
+          CSE-CIC-IDS 2018, CIC-IDS 2017, ISCX-IDS 2012
+         </td>
+         <td>
+          97.75%98.79%92.92%
+         </td>
+         <td rowspan="2">
+          2022
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-22">
+           22
+          </xref>
+          ]
+         </td>
+         <td>
+          CBA-CLSVE
+         </td>
+         <td>
+          NSL-KDDUNSW-NB15CICIDS2017
+         </td>
+         <td rowspan="3">
+          ×
+         </td>
+         <td rowspan="3">
+          √
+         </td>
+         <td>
+          97.50%94.73%99.75%
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-23">
+           23
+          </xref>
+          ]
+         </td>
+         <td>
+          ADS
+         </td>
+         <td>
+          CICIDS2017
+         </td>
+         <td>
+          98.29%
+         </td>
+         <td>
+          2023
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          [
+          <xref ref-type="bibr" rid="ref-24">
+           24
+          </xref>
+          ]
+         </td>
+         <td>
+          ACOR-WMV
+         </td>
+         <td>
+          NSL-KDD
+         </td>
+         <td>
+          83.43%
+         </td>
+         <td>
+          2022
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+   </sec>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title>
+    Methodology
+   </title>
+   <p>
+    In order to give full play to the superiority of deep learning models in high-dimensional data learning and testing, and to further improve the accuracy of anomalous traffic detection and classification, it is different from the traditional research in which one-dimensional network traffic data are directly subjected to feature learning, training and classification. In this paper, we focus on the application of deep learning models on 2D images, using MTF method to convert 1D network traffic data into 2D images, and then using Unsharp Masking filter to sharpen the image to enhance the details, and finally constructing a soft-voting integration framework consisting of three types of baseline image classification models, namely MobileNet, VGGNet, and ResNet. The processed images are inputted into the integrated intrusion detection framework with high detection accuracy to obtain accurate classification of benign and abnormal traffic (
+    <xref ref-type="fig" rid="fig-4">
+     Fig. 4
+    </xref>
+    ).
+   </p>
+   <fig id="fig-4">
+    <label>
+     Figure 4
+    </label>
+    <caption>
+     <title>
+      Intrusion Detection Integration Framework
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-4.jpg"/>
+   </fig>
+   <sec id="s3_1">
+    <label>
+     3.1
+    </label>
+    <title>
+     MTF [
+     <xref ref-type="bibr" rid="ref-25">
+      25
+     </xref>
+     ] - for data type conversions
+    </title>
+    <p>
+     MTF is a data type conversion method based on Markov stochastic process, belongs to the first step in the constructed intrusion detection framework for data type conversion, which regards the one-dimensional time series to be converted as a set of data conforming to the Markov stochastic process, i.e., the current state is related to the previous state only, and is not related to other previous states. Based on the above theory a Markov matrix can be constructed to expand the time series into a Markov transfer field, thus realizing the conversion of data types.
+    </p>
+    <p>
+     Taking a set of benign network traffic in the CICIDS2018 dataset as an example, the process can be briefly described as follows: the first step is to divide the one-dimensional time series X={x
+     <sub>
+      1
+     </sub>
+     ,x
+     <sub>
+      2
+     </sub>
+     ,...... ,x
+     <sub>
+      n
+     </sub>
+     } into Q bins Q={q
+     <sub>
+      1
+     </sub>
+     ,q
+     <sub>
+      2
+     </sub>
+     ,...... ,q
+     <sub>
+      n
+     </sub>
+     }, which serves to discretize the data; at the same time, the time series data can also be mapped into the Q quantile bins, which facilitates the subsequent transformation into Markov matrices; the second step is to construct the Markov transfer matrix W (Equation 1).
+    </p>
+    <p>
+     W=
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mfenced close="]" open="[" separators="|">
+          <mrow>
+           <mtable>
+            <mtr>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi>
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 11
+                </mn>
+               </mrow>
+              </msub>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋯
+              </mo>
+             </mtd>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi>
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 1
+                </mn>
+                <mi>
+                 Q
+                </mi>
+               </mrow>
+              </msub>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <mo>
+               ⋮
+              </mo>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋱
+              </mo>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋮
+              </mo>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi>
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 Q
+                </mi>
+                <mn>
+                 1
+                </mn>
+               </mrow>
+              </msub>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋯
+              </mo>
+             </mtd>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi>
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 Q
+                </mi>
+                <mi>
+                 Q
+                </mi>
+               </mrow>
+              </msub>
+             </mtd>
+            </mtr>
+           </mtable>
+          </mrow>
+         </mfenced>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          s
+         </mi>
+         <mo>
+          .
+         </mo>
+         <mi mathvariant="normal">
+          t
+         </mi>
+         <mo>
+          .
+         </mo>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <munder>
+           <mo stretchy="false">
+            ∑
+           </mo>
+           <mrow>
+            <mi>
+             j
+            </mi>
+           </mrow>
+          </munder>
+          <mrow>
+           <msub>
+            <mrow>
+             <mi>
+              w
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              i
+             </mi>
+             <mi>
+              j
+             </mi>
+            </mrow>
+           </msub>
+          </mrow>
+         </mrow>
+         <mo>
+          =
+         </mo>
+         <mn>
+          1
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (1)
+    </p>
+    <p>
+     Where w
+     <sub>
+      ij
+     </sub>
+     denotes the frequency of transfer of data from quartile box i to quartile box j. In this case, frequency counts or frequency statistics are usually used to estimate the transfer probability. For example, using maximum likelihood estimation or frequency statistics, the transfer probability is estimated based on the number or frequency of transfers between states occurring in the historical data. Based on these estimates, the number of occurrences of neighbouring sub-sequences in the actual data is counted and normalized to a probability value, which represents the likelihood of transferring from one state to another, thus estimating the transfer probability between neighbouring sub-intervals (Equation 2).
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          p
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi>
+          i
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi>
+          j
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          =
+         </mo>
+         <mfrac>
+          <mrow>
+           <mi>
+            c
+           </mi>
+           <mi>
+            o
+           </mi>
+           <mi>
+            u
+           </mi>
+           <mi>
+            n
+           </mi>
+           <mi>
+            t
+           </mi>
+           <mo>
+            (
+           </mo>
+           <mi>
+            i
+           </mi>
+           <mo>
+            ,
+           </mo>
+           <mi>
+            j
+           </mi>
+           <mo>
+            )
+           </mo>
+          </mrow>
+          <mrow>
+           <mrow>
+            <munderover>
+             <mo stretchy="false">
+              ∑
+             </mo>
+             <mrow>
+              <mi>
+               k
+              </mi>
+              <mo>
+               =
+              </mo>
+              <mn>
+               1
+              </mn>
+             </mrow>
+             <mrow>
+              <mi>
+               N
+              </mi>
+             </mrow>
+            </munderover>
+            <mrow>
+             <mi>
+              c
+             </mi>
+             <mi>
+              o
+             </mi>
+             <mi>
+              u
+             </mi>
+             <mi>
+              n
+             </mi>
+             <mi>
+              t
+             </mi>
+             <mo>
+              (
+             </mo>
+             <mi>
+              i
+             </mi>
+             <mo>
+              ,
+             </mo>
+             <mi>
+              j
+             </mi>
+             <mo>
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mrow>
+         </mfrac>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (2)
+    </p>
+    <p>
+     Where P(i,j) denotes the probability of transferring state i to state j in the data; count(i,j) denotes the frequency or number of transfers from state i to state j, which can be obtained by updating the number of (i,j) in real time on the transfer count matrix C initialized with N*N (N is the number of states); similarly, count(i,k) denotes the number of transfers from each state i to the other states, denoting the the total number of transfers from state i to any state; the transfer probability P(i,j) can be obtained by dividing the number of transfers in the specified state interval count(i,j) by the total number of transfers from the specified state to any state.
+    </p>
+    <p>
+     The third step is to construct the Markov transfer field M (Equation 3), which achieves the purpose of representing the spatial distribution of transfer probabilities by arranging each transfer probability in the Markov transfer matrix W along the time order. Finally, the matrix elements are mapped to 2D matrix pixel values, and the transformed 2D image is obtained by displaying the transfer probabilities between different states and visualizing the transfer patterns and correlations in the data (
+     <xref ref-type="fig" rid="fig-5">
+      Fig. 5
+     </xref>
+     ).
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi mathvariant="normal">
+          M
+         </mi>
+         <mo>
+          =
+         </mo>
+         <mfenced close="]" open="[" separators="|">
+          <mrow>
+           <mtable>
+            <mtr>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               |
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 1
+                </mn>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ,
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 1
+                </mn>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋯
+              </mo>
+             </mtd>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               |
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 1
+                </mn>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ,
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <mo>
+               ⋮
+              </mo>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋱
+              </mo>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋮
+              </mo>
+             </mtd>
+            </mtr>
+            <mtr>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               |
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ,
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 1
+                </mn>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+             </mtd>
+             <mtd>
+              <mo>
+               ⋯
+              </mo>
+             </mtd>
+             <mtd>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 w
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               |
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ,
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+              </msub>
+              <mo>
+               ∈
+              </mo>
+              <msub>
+               <mrow>
+                <mi mathvariant="normal">
+                 p
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 j
+                </mi>
+               </mrow>
+              </msub>
+             </mtd>
+            </mtr>
+           </mtable>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (3)
+    </p>
+    <fig id="fig-5">
+     <label>
+      Figure 5
+     </label>
+     <caption>
+      <title>
+       2D image after MTF conversion
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-5.jpg"/>
+    </fig>
+   </sec>
+   <sec id="s3_2">
+    <label>
+     3.2
+    </label>
+    <title>
+     Unsharp Masking [
+     <xref ref-type="bibr" rid="ref-26">
+      26
+     </xref>
+     ] - for Image Feature Processing
+    </title>
+    <p>
+     The Unsharp Masking method is an effective image sharpening method, belonging to the second step in the constructed intrusion detection framework for image feature processing, which serves to sharpen the image edge details by enhancing the high-frequency details of the image, and strengthens the deep-level feature expression and learning. It mainly consists of three steps: constructing a blurred image, generating an image with high-frequency details, and enhancing image details (
+     <xref ref-type="fig" rid="fig-6">
+      Fig. 6
+     </xref>
+     ).
+    </p>
+    <fig id="fig-6">
+     <label>
+      Figure 6
+     </label>
+     <caption>
+      <title>
+       Unsharp Masking schematic diagram
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-6.jpg"/>
+    </fig>
+    <p>
+     Specifically, the original image x(n,m) (n,m represents the pixel coordinates of the image) is first filtered out the high-frequency details by a low-pass filter (e.g., Gaussian filter) to generate a blurred image that does not contain the high-frequency details; then the original image is subtracted from the blurred image to generate the high-frequency detail image z(n,m); and finally the original image is added to the high-frequency detail image by the enhancement factor l to get the output image y(n,m) (Equation 4), which is enhanced with details and sharpened with edges. Finally, the original image is added to the high-frequency detail image by the enhancement factor l to obtain the output image y(n,m) after detail enhancement and edge sharpening (Equation 4).
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi mathvariant="normal">
+          y
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          =
+         </mo>
+         <mi mathvariant="normal">
+          x
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          +
+         </mo>
+         <mi mathvariant="normal">
+          λ
+         </mi>
+         <mi mathvariant="normal">
+          z
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (4)
+    </p>
+    <p>
+     Meanwhile, in the traditional USM algorithm, z(n,m) can be generally obtained by Eq. 5:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi mathvariant="normal">
+          z
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          =
+         </mo>
+         <mn>
+          4
+         </mn>
+         <mi mathvariant="normal">
+          x
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          -
+         </mo>
+         <mi mathvariant="normal">
+          x
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          -
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          -
+         </mo>
+         <mi mathvariant="normal">
+          x
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          +
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          )
+         </mo>
+         <mo>
+          -
+         </mo>
+         <mi mathvariant="normal">
+          x
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          -
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo>
+          )
+         </mo>
+         <mo>
+          -
+         </mo>
+         <mi mathvariant="normal">
+          x
+         </mi>
+         <mo>
+          (
+         </mo>
+         <mi mathvariant="normal">
+          n
+         </mi>
+         <mo>
+          ,
+         </mo>
+         <mi mathvariant="normal">
+          m
+         </mi>
+         <mo>
+          +
+         </mo>
+         <mn>
+          1
+         </mn>
+         <mo>
+          )
+         </mo>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (5)
+    </p>
+    <p>
+     The 2D image converted by the MTF method can be filtered by Unsharp Masking to obtain a high-quality image with sharpened edge details (
+     <xref ref-type="fig" rid="fig-7">
+      Fig. 7
+     </xref>
+     ), which is convenient for the next step of the image classification model to carry out deep feature learning and achieve high-precision anomalous traffic detection and classification.
+    </p>
+    <fig id="fig-7">
+     <label>
+      Figure 7
+     </label>
+     <caption>
+      <title>
+       2D image after Unsharp Masking
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-7.jpg"/>
+    </fig>
+   </sec>
+   <sec id="s3_3">
+    <label>
+     3.3
+    </label>
+    <title>
+     Soft Voting Integration - for Image Detection Classification
+    </title>
+    <p>
+     When using a single image classification model, the classification accuracy and effectiveness may be far inferior to an integrated model built from multiple baseline models, even though the parameters are tuned appropriately. In particular, soft-voting integration methods make decisions by weighted averaging or voting the predictions of multiple models: for a multi-category classification problem, the probabilities of each model on each category are weighted averaged or weighted summed to obtain the final category prediction. It is usually possible to improve the performance of the integrated models, make full use of the advantages of each model, reduce the risk of overfitting, and give higher weights to the predictions with higher confidence, thus improving the overall accuracy and robustness. Therefore, in this paper, we select three baseline image classification models with large differences, MobileNet, VGGNet and ResNet, and integrate them using a soft-voting method to form a final integrated model, AVR Model, belongs to the third step in the constructed intrusion detection framework for image detection classification, to improve the detection accuracy.
+    </p>
+    <sec id="s3_3_1">
+     <label>
+      3.3.1
+     </label>
+     <title>
+      Three types of baseline models ----MobileNet, VGGNet and ResNet
+     </title>
+     <p>
+      VGGNet was proposed by Karen et al. in 2014 [
+      <xref ref-type="bibr" rid="ref-27">
+       27
+      </xref>
+      ], which consists of sixteen convolutional layers and three fully-connected layers with a pooling layer between every two convolutional layers; multiple small 3*3 convolutional kernels are also stacked to increase the depth of the network to obtain deeper features, and its main feature is that the structure is simple and clear and easy to build; ResNet was proposed by Kaiming He et al. proposed in 2015 [
+      <xref ref-type="bibr" rid="ref-28">
+       28
+      </xref>
+      ], which introduces residual connections to skip the multilayer structure in the network to mitigate the phenomenon of gradient vanishing, each residual block has multiple convolutional and normalisation layers and is connected by constant mapping, the main feature is that the residual connections are used to effectively mitigate the phenomenon of gradient vanishing.MobileNet belongs to a kind of lightweight model, which was proposed by Google in 2017 of [
+      <xref ref-type="bibr" rid="ref-29">
+       29
+      </xref>
+      ], MobileNet replaces the standard convolution in VGGNet with depth-separable convolution, and adds a point-by-point convolution layer using ReLU activation function behind some of the layers, the main feature is to reduce the model size and computation as much as possible while maintaining higher accuracy, and with depth-separable convolution as the core feature, it achieves a good performance in the design of lightweight models[
+      <xref ref-type="bibr" rid="ref-3">
+       3
+      </xref>
+      ]. All the above three types of baseline models have achieved good performance in the field of image classification, and their respective characteristics are different and differ. Therefore, in this paper, we adjust to the appropriate model parameters to integrate them with soft voting.
+     </p>
+    </sec>
+    <sec id="s3_3_2">
+     <label>
+      3.3.2
+     </label>
+     <title>
+      Soft Voting Integration Model - AVR Model
+     </title>
+     <p>
+      AVR Model improves detection accuracy by integrating three classes of baseline models MobileNet, VGGNet and ResNet. Using the soft-voting integration method, the classification results of the three models are weighted and combined to finally form the most credible and unified classification results (Algorithm 1). The integration process can be represented by equation 6:
+     </p>
+     <table-wrap id="table-2">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-table-2.tif"/>
+       <table>
+        <colgroup>
+         <col align="center"/>
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Algorithm 1:Soft Voting Integration of VGGNet, MobileNet, and ResNet to Form the AVR Model
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Require:1:List of predictions from three models: predictions_mobile_net, predictions_vgg_net, predictions_res_net2:List of weights for the three models: weights, ensuring the sum of weights is 1Procedure:3:soft_voting_intergration(predictions_mobile_net,predictions_vgg_net,predictions_res_net, weights)Ensure:4:final_predictions contains the weighted combination of the predictions from the three modelsBegin:5:      final_predictions = []6:      for i in range(len(predictions_mobile_net)):7:          # Weighted combination of the predictions from the three models8:          final_prediction = ( weights[
+           <xref ref-type="bibr" rid="ref-0">
+            0
+           </xref>
+           ] * predictions_mobile_net[i] +9:                          weights[
+           <xref ref-type="bibr" rid="ref-1">
+            1
+           </xref>
+           ] * predictions_vgg_net[i] +10:                         weights[
+           <xref ref-type="bibr" rid="ref-2">
+            2
+           </xref>
+           ] * predictions_res_net[i]) / sum(weights)11:         final_predictions.append(final_prediction)12:     return final_predictionsEnd procedure
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           F
+          </mi>
+          <mi>
+           i
+          </mi>
+          <mi>
+           n
+          </mi>
+          <mi>
+           a
+          </mi>
+          <msub>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             P
+            </mi>
+            <mi>
+             r
+            </mi>
+            <mi>
+             e
+            </mi>
+            <mi>
+             d
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           =
+          </mo>
+          <mi>
+           S
+          </mi>
+          <mi>
+           V
+          </mi>
+          <mo>
+           (
+          </mo>
+          <msub>
+           <mrow>
+            <mi>
+             P
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             M
+            </mi>
+            <mi>
+             o
+            </mi>
+            <mi>
+             b
+            </mi>
+            <mi>
+             i
+            </mi>
+            <mi>
+             l
+            </mi>
+            <mi>
+             e
+            </mi>
+            <mi>
+             N
+            </mi>
+            <mi>
+             e
+            </mi>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <msub>
+           <mrow>
+            <mi>
+             P
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             V
+            </mi>
+            <mi>
+             G
+            </mi>
+            <mi>
+             G
+            </mi>
+            <mi>
+             N
+            </mi>
+            <mi>
+             e
+            </mi>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <msub>
+           <mrow>
+            <mi>
+             P
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             R
+            </mi>
+            <mi>
+             e
+            </mi>
+            <mi>
+             s
+            </mi>
+            <mi>
+             N
+            </mi>
+            <mi>
+             e
+            </mi>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      (6)
+     </p>
+     <p>
+      Where SV represents the soft-voting integrated prediction function of the three component models MobileNet, VGGNet  ResNet. AVR Model architecture is shown in
+      <xref ref-type="fig" rid="fig-8">
+       Fig. 8
+      </xref>
+      .
+     </p>
+     <fig id="fig-8">
+      <label>
+       Figure 8
+      </label>
+      <caption>
+       <title>
+        AVR Model framework structure diagram
+       </title>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-8.jpg"/>
+     </fig>
+    </sec>
+   </sec>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title>
+    Results and discussion
+   </title>
+   <p>
+    The focus of this chapter is to describe the conditions, details and process of the experimental implementation in order to confirm the effectiveness of the methods involved with the construction of the intrusion detection framework. Based on various evaluation metrics, the performance of the methodological models is evaluated in all aspects to illustrate the limitations and advantages of the models to provide a feasible and high performance approach for the field of intrusion detection.
+   </p>
+   <sec id="s4_1">
+    <label>
+     4.1
+    </label>
+    <title>
+     Introduction to the data set
+    </title>
+    <p>
+     Considering the necessity of comparing with other related work in the field of intrusion detection and the applicability of the application scenario as IoT, this paper selects two publicly available datasets: the dataset CICIDS2018, which is widely used by researchers, to facilitate comparative experiments with other models; and the dataset N_BaIoT, which contains data on networking of smart devices in the Internet of Things (IoT), in order to validate the fit with IoT environments.
+    </p>
+    <sec id="s4_1_1">
+     <label>
+      4.1.1
+     </label>
+     <title>
+      CICIDS2018
+     </title>
+     <p>
+      CICIDS2018 dataset was collected by the Canadian Institute for Cybersecurity Research in 2018 and contains seven types of attack scenarios: brute force, heartbleed leaks, botnets, DoS, DDoS, web attacks, and internal penetration, collected from five departments, 420 machines, and 30 servers using the CICFlowMeters-V3 traffic capture software. Compared to the NSL-KDD, KDDCUP99 dataset, the temporal dimension is more novel and contains the latest cyberattack diversity and capacity. However, CICIDS2018 contains 16,232,943 data, including 59,721 null data, and there are also incomplete and repetitive data, the massive data will increase the training model overhead, and the meaningless data will reduce the model efficiency. Therefore, data preprocessing is carried out, data cleaning is performed, null data, error data, incomplete data and duplicate data are deleted, and three major types of attack data and one type of normal data are extracted according to the difficulty of each type of attack in the original data, forming a new training set and test set (
+      <xref ref-type="table" rid="table-2">
+       Table 2
+      </xref>
+      ).
+     </p>
+     <table-wrap id="table-3">
+      <label>
+       Table 2
+      </label>
+      <caption>
+       <title>
+        Data distribution of the CICIDS2018 train and test sets.
+       </title>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-table-3.tif"/>
+       <table>
+        <colgroup>
+         <col align="center"/>
+         <col align="center"/>
+         <col align="center"/>
+         <col align="center"/>
+         <col align="center"/>
+        </colgroup>
+        <thead>
+         <tr align="center">
+          <th>
+           Type of attack
+          </th>
+          <th>
+           Train set
+          </th>
+          <th>
+           Number
+          </th>
+          <th>
+           Test set
+          </th>
+          <th>
+           Number
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr align="center">
+          <td>
+           Normal
+          </td>
+          <td>
+           Benign
+          </td>
+          <td>
+           16899
+          </td>
+          <td>
+           Benign
+          </td>
+          <td>
+           4225
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           Botnet
+          </td>
+          <td>
+           Botnet Attack
+          </td>
+          <td>
+           16144
+          </td>
+          <td>
+           Botnet Attack
+          </td>
+          <td>
+           4036
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           DDoS
+          </td>
+          <td>
+           DDoS-LOIC-HTTPDDOS-HOIC
+          </td>
+          <td>
+           17024
+          </td>
+          <td>
+           DDoS-LOIC-HTTPDDOS-HOIC,DDOS-LOIC-UDP
+          </td>
+          <td>
+           4256
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           Bruteforce
+          </td>
+          <td>
+           FTP-Bruteforce
+          </td>
+          <td>
+           16840
+          </td>
+          <td>
+           FTP-Bruteforce,SSH-Bruteforce
+          </td>
+          <td>
+           4210
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           Total
+          </td>
+          <td>
+           5
+          </td>
+          <td>
+           66907
+          </td>
+          <td>
+           7
+          </td>
+          <td>
+           16727
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      CICIDS2018 contains a total of 83 features and 1 tag class, deleting the "Timestamp" feature because Timestamp records the time of the attack, which has no practical significance and reference value for the detection of network attacks in all-weather hours; deleting the "Flow ID", "Src IP", "Src Port", and "Dst IP" because these four features only appear in the flow of one day, and most of the flow data does not contain these features; using the remaining 78 features for the training of the intrusion detection model, as shown in
+      <xref ref-type="table" rid="table-3">
+       Table 3
+      </xref>
+      .
+     </p>
+     <table-wrap id="table-4">
+      <label>
+       Table 3
+      </label>
+      <caption>
+       <title>
+        Featured description of CICIDS2018.
+       </title>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-table-4.tif"/>
+       <table>
+        <colgroup>
+         <col align="center"/>
+         <col align="center"/>
+        </colgroup>
+        <thead>
+         <tr align="center">
+          <th>
+           Feature
+          </th>
+          <th>
+           Feature information/attributes
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr align="center">
+          <td>
+           1-4
+          </td>
+          <td>
+           network connection
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           5-15
+          </td>
+          <td>
+           network packet
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           16-21
+          </td>
+          <td>
+           network flow
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           22-44
+          </td>
+          <td>
+           Statistics of network traffic
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           45-62
+          </td>
+          <td>
+           Content-related traffic features
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           63-66
+          </td>
+          <td>
+           Network sub-traffic features
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           67-78
+          </td>
+          <td>
+           Generic flow features
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           78-79
+          </td>
+          <td>
+           labels
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+    <sec id="s4_1_2">
+     <label>
+      4.1.2
+     </label>
+     <title>
+      N_BaIoT
+     </title>
+     <p>
+      N_BaIoT dataset contains malicious attack traffic collected from nine IoT devices involving two types of botnet attacks, Mirai and BASHLITE, which can be subdivided into 10 categories of attacks, and are specifically designed to launch botnet attacks against IoT environments. N_BaIoT contains a total of 7062606 instance data, and in order to improve the model training efficiency and reduce unnecessary arithmetic consumption, the training set and test set are divided according to
+      <xref ref-type="table" rid="table-4">
+       Table 4
+      </xref>
+      . In addition, its 115 features are appropriately filtered and cleaned for input into the intrusion detection framework.
+     </p>
+     <table-wrap id="table-5">
+      <label>
+       Table 4
+      </label>
+      <caption>
+       <title>
+        Data distribution of the N_BaIoT train and test sets.
+       </title>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-table-5.tif"/>
+       <table>
+        <colgroup>
+         <col align="center"/>
+         <col align="center"/>
+         <col align="center"/>
+         <col align="center"/>
+         <col align="center"/>
+        </colgroup>
+        <thead>
+         <tr align="center">
+          <th>
+           Class
+          </th>
+          <th>
+           Train set
+          </th>
+          <th>
+           Number
+          </th>
+          <th>
+           Test set
+          </th>
+          <th>
+           Number
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr align="center">
+          <td>
+           Normal
+          </td>
+          <td>
+           normal
+          </td>
+          <td>
+           34806
+          </td>
+          <td>
+           normal
+          </td>
+          <td>
+           14917
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           BASHLITE Attack
+          </td>
+          <td>
+           Scan(BASH),JunkCOMBO,UDP(BASH)
+          </td>
+          <td>
+           6869
+          </td>
+          <td>
+           Scan(BASH),JunkCOMBO,UDP(BASH),TCP flooding
+          </td>
+          <td>
+           5778
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           Mirai Attack
+          </td>
+          <td>
+           Ack,Syn,UDPplain
+          </td>
+          <td>
+           6051
+          </td>
+          <td>
+           Ack,Syn,UDPplain,Scan(Mirai),UDP(Mirai)
+          </td>
+          <td>
+           5663
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           Total
+          </td>
+          <td>
+           8
+          </td>
+          <td>
+           47726
+          </td>
+          <td>
+           11
+          </td>
+          <td>
+           26358
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+   </sec>
+   <sec id="s4_2">
+    <label>
+     4.2
+    </label>
+    <title>
+     Evaluation of indicators
+    </title>
+    <p>
+     In order to facilitate comparison and validation with other related work in the field of intrusion detection, this paper selects four common types of evaluation metrics: accuracy, precision, recall and F1-Score, where accuracy is used to measure the proportion of samples correctly predicted by the model, precision is used to measure the reliability of the model in making positive class predictions, recall is used to measure the ability of the model to predict positive samples, and F1-Score is a combined consideration of precision and recall, and is the reconciled average of the two. Recall are considered together and are the reconciled mean of the two, which is used to measure the balanced performance of the model:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          A
+         </mi>
+         <mi>
+          c
+         </mi>
+         <mi>
+          c
+         </mi>
+         <mi>
+          u
+         </mi>
+         <mi>
+          r
+         </mi>
+         <mi>
+          a
+         </mi>
+         <mi>
+          c
+         </mi>
+         <mi>
+          y
+         </mi>
+         <mo>
+          =
+         </mo>
+         <mfrac>
+          <mrow>
+           <mi>
+            T
+           </mi>
+           <mi>
+            P
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            T
+           </mi>
+           <mi>
+            N
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            F
+           </mi>
+           <mi>
+            P
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            F
+           </mi>
+           <mi>
+            N
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            T
+           </mi>
+           <mi>
+            P
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            T
+           </mi>
+           <mi>
+            N
+           </mi>
+          </mrow>
+         </mfrac>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (7)
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          P
+         </mi>
+         <mi>
+          r
+         </mi>
+         <mi>
+          e
+         </mi>
+         <mi>
+          c
+         </mi>
+         <mi>
+          i
+         </mi>
+         <mi>
+          s
+         </mi>
+         <mi>
+          i
+         </mi>
+         <mi>
+          o
+         </mi>
+         <mi>
+          n
+         </mi>
+         <mo>
+          =
+         </mo>
+         <mfrac>
+          <mrow>
+           <mi>
+            T
+           </mi>
+           <mi>
+            P
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            F
+           </mi>
+           <mi>
+            P
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            T
+           </mi>
+           <mi>
+            P
+           </mi>
+          </mrow>
+         </mfrac>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (8)
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          R
+         </mi>
+         <mi>
+          e
+         </mi>
+         <mi>
+          c
+         </mi>
+         <mi>
+          a
+         </mi>
+         <mi>
+          l
+         </mi>
+         <mi>
+          l
+         </mi>
+         <mo>
+          =
+         </mo>
+         <mfrac>
+          <mrow>
+           <mi>
+            T
+           </mi>
+           <mi>
+            P
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            F
+           </mi>
+           <mi>
+            N
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            T
+           </mi>
+           <mi>
+            P
+           </mi>
+          </mrow>
+         </mfrac>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (9)
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          -
+         </mo>
+         <mi>
+          s
+         </mi>
+         <mi>
+          c
+         </mi>
+         <mi>
+          o
+         </mi>
+         <mi>
+          r
+         </mi>
+         <mi>
+          e
+         </mi>
+         <mo>
+          =
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mfrac>
+          <mrow>
+           <mi>
+            P
+           </mi>
+           <mi>
+            r
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            c
+           </mi>
+           <mi>
+            i
+           </mi>
+           <mi>
+            s
+           </mi>
+           <mi>
+            i
+           </mi>
+           <mi>
+            o
+           </mi>
+           <mi>
+            n
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            R
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            c
+           </mi>
+           <mi>
+            a
+           </mi>
+           <mi>
+            l
+           </mi>
+           <mi>
+            l
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            P
+           </mi>
+           <mi>
+            r
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            c
+           </mi>
+           <mi>
+            i
+           </mi>
+           <mi>
+            s
+           </mi>
+           <mi>
+            i
+           </mi>
+           <mi>
+            o
+           </mi>
+           <mi>
+            n
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mi>
+            R
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            c
+           </mi>
+           <mi>
+            a
+           </mi>
+           <mi>
+            l
+           </mi>
+           <mi>
+            l
+           </mi>
+          </mrow>
+         </mfrac>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (10)
+    </p>
+    <p>
+     The meanings of the sub-indicators TP, TN, FP and FN are shown in
+     <xref ref-type="table" rid="table-5">
+      Table 5
+     </xref>
+     :
+    </p>
+    <table-wrap id="table-6">
+     <label>
+      Table 5
+     </label>
+     <caption>
+      <title>
+       Meaning of TP, TN, FP, FN.
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-table-6.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          Actual \ prediction
+         </th>
+         <th>
+          Positive
+         </th>
+         <th>
+          Negative
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td>
+          PositiveNegative
+         </td>
+         <td>
+          TPFP
+         </td>
+         <td>
+          FNTN
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+   </sec>
+   <sec id="s4_3">
+    <label>
+     4.3
+    </label>
+    <title>
+     Experimental Implementation
+    </title>
+    <p>
+     To validate the effectiveness of the proposed method and the constructed framework in this paper, three types of experiments are mainly conducted on two datasets, CICIDS2018 and N_BaIoT: (1) ablation experiments are conducted on the MTF used for data type conversion and compared with other type conversion methods to validate the effectiveness of the MTF on the conversion of one-dimensional data to two-dimensional images; (2) ablation experiments on AVR Model, a soft-voting integration model for image detection and classification, and compare its detection performance with individual baseline models VGGNet, ResNet and MobileNet on task scenarios to validate the utility of the integration approach for image classification; (3) comparative evaluation experiments on MUS Model, an entire intrusion detection framework, compared with SVM, DT, RNN, CNN four classes of machines with deep learning baseline models to illustrate the value of the work done.
+    </p>
+    <sec id="s4_3_1">
+     <label>
+      4.3.1
+     </label>
+     <title>
+      Evaluation of MTF methods for data type conversion
+     </title>
+     <p>
+      Since the images generated in this paper are mainly used for the detection of the image classification module, no metrics specifically for assessing image quality are used; instead, different data conversion methods are combined and compared with the baseline image classification model, CNN, so as to illustrate the effectiveness of the MTF method in the whole intrusion detection framework using classification assessment metrics. Firstly, this paper selects unprocessed one-dimensional data as the input source and compares the detection performance of MTF on CNN to illustrate the necessity and importance of data type conversion; meanwhile, classical data type conversion methods such as GAF, STFT and recursive map are set as the control group to illustrate that it is more effective and practical to adopt the MTF method in the intrusion detection framework constructed in this paper.
+     </p>
+     <fig id="fig-9">
+      <label>
+       Figure 9
+      </label>
+      <caption>
+       <title>
+        Experimental diagram of MTF evaluation
+       </title>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-9.jpg"/>
+     </fig>
+     <p>
+      As can be seen from
+      <xref ref-type="fig" rid="fig-9">
+       Fig. 9
+      </xref>
+      , the MTF method in the constructed framework achieves higher detection accuracy on both the CICIDS2018 and N_BaIoT datasets compared to the control group, which can be explained in two ways: firstly, compared to the one-dimensional data processing methods that do not use image conversion methods, the STFT, Recurrence Plot, GAF, and MTF methods that convert the one-dimensional network traffic data into 2D images for detection and classification, all of which achieve a high accuracy rate, due to the fact that the conversion of data types can learn deep features, and 2D images are more capable of capturing spatio-temporal features; it facilitates the use of advanced computer vision and image processing techniques to enhance the pattern recognition ability, which leads to effective training and classification, and embodies the superiority of the idea; secondly, in comparison with STFT, Recurrence Plot, GAF and other image transformation methods, the MTF method achieves the best performance on both the CICIDS2018 and N_BaIoT datasets, which is due to the fact that the MTF can extract features at multiple scales, thus capturing patterns and features at different scales in the dataset, which helps to characterise the data in a more comprehensive way and facilitates subsequent detection classification. It is also worth noting that the experimental results show that all the four types of methods outperform the dataset N_BaIoT on the dataset CICIDS2018, indicating that the adopted frameworks are more effective in representing the characteristics of the CICIDS2018 dataset, which is not only applicable to the widely used IoT, but also applicable to different scenarios and attack types.
+     </p>
+    </sec>
+    <sec id="s4_3_2">
+     <label>
+      4.3.2
+     </label>
+     <title>
+      Evaluation of AVR Model
+     </title>
+     <p>
+      In order to comprehensively evaluate the effectiveness of the constructed integrated model AVR Model, it is compared with three single baseline models, VGGNet, ResNet and MobileNet, in the classification task of two types of datasets, and the experimental results of the four evaluation metrics are as follows:
+     </p>
+     <fig id="fig-10">
+      <label>
+       Figure 10
+      </label>
+      <caption>
+       <title>
+        Experimental diagram of AVR Model evaluation
+       </title>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-10.jpg"/>
+     </fig>
+     <p>
+      As can be seen from
+      <xref ref-type="fig" rid="fig-10">
+       Fig. 10
+      </xref>
+      , AVR Model outperforms the single baseline model in all four categories of evaluation metrics on both types of datasets. This is due to the fact that AVR Model has the characteristic of diversity integration, which is able to gather the advantages of the three models and make up for their shortcomings; in addition, it is able to reduce the risk of overfitting, synthesise the feature representations of each baseline model, and reduce the stochasticity. Specifically, AVR Model significantly outperforms all the single baseline models in terms of overall classification accuracy, which indicates that the integrated model is able to combine the advantages of the different models and handle complex classification tasks more efficiently; the precision rate of AVR Model also exhibits high performance, which suggests that there are fewer misclassifications in determining the positive class of samples; and lastly, the significant improvement in the F1 scores further proves that AVR Model is superior in maintaining a balance between precision rate and recall balance of AVR model. Taking the above experimental results together, it can be seen that AVR model outperforms the single baseline model in all the evaluation metrics, proving its effectiveness and efficiency in dealing with complex classification tasks. This is due to its ability to integrate the features of multiple models, thus compensating for the deficiencies of a single model and improving the overall performance.
+     </p>
+    </sec>
+    <sec id="s4_3_3">
+     <label>
+      4.3.3
+     </label>
+     <title>
+      Evaluation of MUS Model
+     </title>
+     <p>
+      The above two types of ablation experiments illustrate the effectiveness of the modules in the intrusion detection framework, however, the role of the independent modules does not indicate the performance of the overall framework. Therefore, in order to evaluate the superiority of the intrusion detection framework MUS in the field of IoT security, comparative experiments with classical machine learning models SVM, DT and deep learning models RNN, CNN are conducted on two types of datasets, CICIDS2018 and N_BaIoT, and evaluated with four types of metrics.
+     </p>
+     <fig id="fig-11">
+      <label>
+       Figure 11
+      </label>
+      <caption>
+       <title>
+        Experimental diagram of MUS Model evaluation
+       </title>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-11.jpg"/>
+     </fig>
+     <p>
+      As can be seen from
+      <xref ref-type="fig" rid="fig-11">
+       Fig. 11
+      </xref>
+      , the constructed MUS intrusion detection framework achieves the highest detection accuracy on the CICIDS2018 dataset, indicating that MUS can identify intrusions more accurately in complex network traffic data; MUS likewise performs best on the N_BaIoT dataset, which contains a large amount of data from IoT devices,. It further shows that MUS has strong detection capability in IoT environment. Taken together, the above experimental results show that the MUS framework demonstrates better performance than traditional machine learning models and deep learning models on both types of datasets, this is due to the fact that the MUS framework contains three modules of data conversion, image processing and detection and classification, which are able to convert one-dimensional data into two-dimensional images, mine deep-seated features with the help of advanced computer vision and image processing techniques, and use the soft-voting integration model AVR to combine the advantages of the three types of baseline models for accurate detection, which further proves the superiority of the MUS framework in the field of IoT security, and its efficient detection capability can help better identify and defend against a variety of cyber-attacks.
+     </p>
+    </sec>
+    <sec id="s4_3_4">
+     <label>
+      4.3.4
+     </label>
+     <title>
+      Tests of model variability
+     </title>
+     <p>
+      The Friedman test is a non-parametric test to determine whether multiple algorithms have the same performance. The Nemenyi follow-up test, on the other hand, further determines whether the difference between the mean ordinal values of two algorithms exceeds the critical value domain on the basis of the Friedman test to identify significant differences in algorithm performance. In order to compare whether there is any difference between the intrusion detection framework MUS constructed in this paper and the baseline machine learning and deep learning models, the experiments implemented in Section 4.3 are used as the research object to launch the model difference test.
+     </p>
+     <p>
+      The original hypothesis of the Friedman test is that the overall median is equal for all samples, and the alternative hypothesis is that the overall median is different for at least one sample. In performing the Friedman test, the data in each sample are first ranked, and then the rank order of each observation is calculated; and then the ranks in each sample are summed to obtain the rank sum of the sample. Finally, a statistical test is performed using the computed rank sum, and the distribution of the test statistic approximates a chi-square distribution with k-1 degrees of freedom, where k is the number of samples, N is the number of datasets, and r
+      <sub>
+       i
+      </sub>
+      denotes the average ordinal value of the ith algorithm.
+     </p>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi mathvariant="normal">
+             τ
+            </mi>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi mathvariant="normal">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+           </mrow>
+          </msub>
+          <mo>
+           =
+          </mo>
+          <mfrac>
+           <mrow>
+            <mn>
+             12
+            </mn>
+            <mi mathvariant="normal">
+             N
+            </mi>
+           </mrow>
+           <mrow>
+            <mi mathvariant="normal">
+             k
+            </mi>
+            <mo>
+             (
+            </mo>
+            <mi mathvariant="normal">
+             k
+            </mi>
+            <mo>
+             +
+            </mo>
+            <mn>
+             1
+            </mn>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </mfrac>
+          <mo>
+           (
+          </mo>
+          <mrow>
+           <munderover>
+            <mo stretchy="false">
+             ∑
+            </mo>
+            <mrow>
+             <mi mathvariant="normal">
+              i
+             </mi>
+             <mo>
+              =
+             </mo>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mi mathvariant="normal">
+              k
+             </mi>
+            </mrow>
+           </munderover>
+           <mrow>
+            <msubsup>
+             <mrow>
+              <mi mathvariant="normal">
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mi mathvariant="normal">
+               i
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msubsup>
+            <mo>
+             -
+            </mo>
+            <mfrac>
+             <mrow>
+              <mi mathvariant="normal">
+               k
+              </mi>
+              <msup>
+               <mrow>
+                <mo>
+                 (
+                </mo>
+                <mi mathvariant="normal">
+                 k
+                </mi>
+                <mo>
+                 +
+                </mo>
+                <mn>
+                 1
+                </mn>
+                <mo>
+                 )
+                </mo>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+             </mrow>
+             <mrow>
+              <mn>
+               4
+              </mn>
+             </mrow>
+            </mfrac>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </mrow>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      (11)
+     </p>
+     <p>
+      The F-distribution
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi mathvariant="normal">
+             τ
+            </mi>
+           </mrow>
+           <mrow>
+            <mi mathvariant="normal">
+             F
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      obeying degrees of freedom k-1 and (k-1)(N-1) can be derived from
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi mathvariant="normal">
+             τ
+            </mi>
+           </mrow>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi mathvariant="normal">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      .
+     </p>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi>
+             τ
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           =
+          </mo>
+          <mfrac>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mi>
+             N
+            </mi>
+            <mo>
+             -
+            </mo>
+            <mn>
+             1
+            </mn>
+            <mo>
+             )
+            </mo>
+            <msub>
+             <mrow>
+              <mi>
+               τ
+              </mi>
+             </mrow>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+             </mrow>
+            </msub>
+           </mrow>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mo>
+             (
+            </mo>
+            <mi>
+             k
+            </mi>
+            <mo>
+             -
+            </mo>
+            <mn>
+             1
+            </mn>
+            <mo>
+             )
+            </mo>
+            <mo>
+             -
+            </mo>
+            <msub>
+             <mrow>
+              <mi>
+               τ
+              </mi>
+             </mrow>
+             <mrow>
+              <msup>
+               <mrow>
+                <mi>
+                 x
+                </mi>
+               </mrow>
+               <mrow>
+                <mn>
+                 2
+                </mn>
+               </mrow>
+              </msup>
+             </mrow>
+            </msub>
+           </mrow>
+          </mfrac>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      (12)
+     </p>
+     <p>
+      As a result of these calculations, the Friedman test rejected the original hypothesis, indicating that at least one of the models differed significantly in performance on at least one of the metrics. Therefore a Nemenyi follow-up test was conducted.The Nemenyi test calculates the critical value domain for the difference in mean ordinal values:
+     </p>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           C
+          </mi>
+          <mi>
+           D
+          </mi>
+          <mo>
+           =
+          </mo>
+          <msub>
+           <mrow>
+            <mi>
+             q
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             α
+            </mi>
+           </mrow>
+          </msub>
+          <msqrt>
+           <mfrac>
+            <mrow>
+             <mi>
+              k
+             </mi>
+             <mo>
+              (
+             </mo>
+             <mi>
+              k
+             </mi>
+             <mo>
+              +
+             </mo>
+             <mn>
+              1
+             </mn>
+             <mo>
+              )
+             </mo>
+            </mrow>
+            <mrow>
+             <mn>
+              6
+             </mn>
+             <mi>
+              N
+             </mi>
+            </mrow>
+           </mfrac>
+          </msqrt>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      (13)
+     </p>
+     <p>
+      Where is the fixed critical value derived from checking the table. In this paper, the CD is 1.9268, and after control, it is found that MUS is significantly different from SVM, DT, and RNN, while it is not significantly different from CNN (
+      <xref ref-type="fig" rid="fig-12">
+       Fig. 12
+      </xref>
+      )
+     </p>
+     <fig id="fig-12">
+      <label>
+       Figure 12
+      </label>
+      <caption>
+       <title>
+        Critical Difference (CD) Diagram
+       </title>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_51685-fig-12.jpg"/>
+     </fig>
+     <p>
+      This is due to the fact that the three baseline models of the soft voting integration model in MUS: VGGNet, ResNet and MobileNet all belong to the classical convolutional model and therefore do not differ much from CNN, but in terms of the four types of performance metrics, have a significant enhancement, which illustrates the validity and practicability of the constructed framework MUS.
+     </p>
+    </sec>
+   </sec>
+   <sec id="s4_4">
+    <label>
+     4.4
+    </label>
+    <title>
+     Discussion
+    </title>
+    <p>
+     From the four types of experimental parts mentioned above, it can be concluded that each module of the constructed part plays a corresponding role and contributes to the effectiveness of the overall framework in IoT intrusion detection. Among them, the data type conversion module consisting of the MTF method for converting 1D network traffic data into 2D images has higher evaluation indexes in all four categories than the direct processing of 1D data and the baseline image classification method, which illustrates the necessity of data type conversion and the applicability of the adopted MTF method; the detection and classification model AVR, which is obtained by integrating the three image classification baseline models of VGGNet, ResNet, and Mobile Net by the soft polling The detection and classification model AVR Model obtained from the soft-vote integration of VGGNet, ResNet, and Mobile Net has higher detection accuracy compared with the above three baseline models, which illustrates the effectiveness of the soft-vote integration method; finally, the IoT intrusion detection framework MUS constructed by the research institute has the best performance in the four types of evaluation indexes compared with commonly used machine learning and deep learning models, which further illustrates the excellent performance of the constructed framework AVR model performance; the experimental performance on two types of datasets, CICIDS2018 and N_BaIoT, fully proves that MUS is not only suitable for IoT intrusion detection environments, but also for different attack types and network environments.
+    </p>
+    <p>
+     However, the experimental setup is limited in some aspects and needs to be further improved. First, in terms of dataset selection bias, the division of training and testing sets in CICIDS2018 and N_BaIoT is random, which cannot cover each traffic data of each attack type, and there exists one-sidedness; in addition, although the dataset used in the experiments has covered the real network environments and the specific IoT environments, it is not possible for them to cover all possible intrusion scenarios and network environments, and the model's ability to generalise in unknown environment, the generalisation ability of the model in unknown environments needs to be further verified. Second, the four categories of indicators used in the experimental evaluation are commonly used in the field of intrusion detection, which can illustrate the high-performance performance of the constructed framework on the IoT intrusion detection task scenarios; however, it gives the same weight to the prediction performance of all categories, which does not take into account the requirements of practical applications, and needs to be explored and improved in the next step.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title>
+    Conclusion and Outlook
+   </title>
+   <p>
+    In order to fully improve the performance of the IoT intrusion detection model, considering the superiority of deep learning models in learning and training high-dimensional data, this paper constructs an IoT intrusion detection framework, MUS Model, based on MTF, Unsharp Masking, and soft-voting integration models, and conducts three types of experiments on two datasets to prove that each module of the constructed framework MUS is necessary and all contribute to the final performance improvement, and that the overall framework is applicable not only to IoT intrusion detection environments, but also to different attack types and network environments. This fully demonstrates the following conclusions: (1) after converting 1D network traffic data into 2D images, it is effective to detect and classify them using advanced computer vision techniques, which shows that the data type conversion can fully leverage the visual feature extraction techniques to improve the detection performance to a certain extent; (2) processing the converted data images is necessary to facilitate learning to extract the deeper features and optimise the detection performance; (3) the soft-voting integration method can combine the advantages of different baseline models and reduce the risk of overfitting, which provides a reference for the subsequent improvement of intrusion detection performance under different task scenarios.
+   </p>
+   <p>
+    However, this paper only focuses on the enhancement of intrusion detection performance in the IoT domain without considering the resource constraints. In the future IoT security domain, with the explosive growth of the number of devices and the increasing complexity of the network environment, the intrusion detection system not only needs to have high-precision detection capability to accurately identify and defend against a variety of threats, but also must have fast inference speed and lightweight model design to adapt to resource-constrained IoT devices and to ensure real-time security requirements. To achieve this goal, the following methods are proposed for refinement: model compression and pruning, knowledge refinement, quantification, hardware-specific optimisation, joint-learning distributed training, etc.; through the combined use of the above methods, both the performance and efficiency of the IoT intrusion detection model can be improved, and its feasibility and practicability can be ensured in resource-constrained environments, so that the growing IoT ecosystem can be better protected from security threats.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <p>
+    The authors would like to thank the support and help from the People's Armed Police Force of China Engineering University, College of Information Engineering subject group, which funded this work under the All-Army Military Theory Research Project, Armed Police Force Military Theory Research Project.
+   </p>
+  </ack>
+  <fn-group>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Funding Statement
+     </bold>
+     The authors would like to thank the support and help from the People's Armed Police Force of China Engineering University, College of Information Engineering subject group, which funded this work under the All-Army Military Theory Research Project, Armed Police Force Military Theory Research Project (WJJY22JL0498).
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Author Contributions
+     </bold>
+     The authors confirm contribution to the paper as follows conceptualization, methodology, Yu Yan; formal analysis, investigation, Yu Yan, Shen Fang; writing--original draft preparation, Yu Yan, Minna Gao; writing--review and editing, Yu Yan, Yu Yang; supervision, resources, funding acquisition, Yu Yang. All authors reviewed the results and approved the final version of the manuscript.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     Data available on request from the authors. "The data that support the findings of this study are available from the corresponding author, [Yu Yang], upon reasonable request."
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+  </fn-group>
+  <ref-list content-type="authoryear">
+   <title>
+    References
+   </title>
+   <ref id="ref-1">
+    <label>
+     1
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Leo
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Medioni
+       </surname>
+       <given-names>
+        G
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Trivedi
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kanade
+       </surname>
+       <given-names>
+        T
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Farinella
+       </surname>
+       <given-names>
+        G
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Computer vision for assistive technologies
+     </article-title>
+     <source>
+      Computer Vision and Image Understanding
+     </source>
+     <volume>
+      154
+     </volume>
+     <year>
+      2017 ,Jan.
+     </year>
+     <fpage>
+      1
+     </fpage>
+     <lpage>
+      15
+     </lpage>
+     <pub-id>
+      10.1016/j.cviu.2016.09.001
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1016/j.cviu.2016.09.001
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-2">
+    <label>
+     2
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Madakam
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ramaswamy
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Tripathi
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Internet of Things (IoT): A literature review
+     </article-title>
+     <source>
+      Journal of Computer and Communications
+     </source>
+     <volume>
+      3
+     </volume>
+     <issue>
+      5
+     </issue>
+     <year>
+      2015
+     </year>
+     <fpage>
+      164
+     </fpage>
+     <lpage>
+      173
+     </lpage>
+     <pub-id>
+      10.4236/jcc.2015.35021
+     </pub-id>
+     <web-url>
+      https://doi.org/10.4236/jcc.2015.35021
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-3">
+    <label>
+     3
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Eliando
+       </surname>
+       <given-names>
+        E
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Purnomo
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      LockBit 2.0 Ransomware: Analysis of infection, persistence, prevention mechanism
+     </article-title>
+     <source>
+      CogITo Smart Journal
+     </source>
+     <volume>
+      8
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2022
+     </year>
+     <fpage>
+      232
+     </fpage>
+     <lpage>
+      243
+     </lpage>
+     <pub-id>
+      10.31154/cogito.v8i1.356.232-243
+     </pub-id>
+     <web-url>
+      https://doi.org/10.31154/cogito.v8i1.356.232-243
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-4">
+    <label>
+     4
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Zahan
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Al Azad
+       </surname>
+       <given-names>
+        M W
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ali
+       </surname>
+       <given-names>
+        I
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mastorakis
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      IoT-AD: A Framework To Detect Anomalies Among Interconnected IoT Devices
+     </article-title>
+     <source>
+      IEEE Internet of Things Journal
+     </source>
+     <volume>
+      11
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2023 ,Jun.
+     </year>
+     <fpage>
+      478
+     </fpage>
+     <lpage>
+      489
+     </lpage>
+     <pub-id>
+      10.1109/JIOT.2023.3285714
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1109/JIOT.2023.3285714
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-5">
+    <label>
+     5
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Khan
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Su'ud
+       </surname>
+       <given-names>
+        MB
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Alam
+       </surname>
+       <given-names>
+        MM
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ahmad
+       </surname>
+       <given-names>
+        SF
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Salim
+       </surname>
+       <given-names>
+        NA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Khan
+       </surname>
+       <given-names>
+        N
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Architectural threats to security and privacy: a challenge for internet of things (IoT) applications
+     </article-title>
+     <source>
+      Electronics
+     </source>
+     <volume>
+      12
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2022 ,Dec.
+     </year>
+     <fpage>
+      88
+     </fpage>
+     <pub-id>
+      10.3390/electronics12010088
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3390/electronics12010088
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-6">
+    <label>
+     6
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Qi
+       </surname>
+       <given-names>
+        X
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        He
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      SDN candidate and protection path selection for link failure protection in hybrid SDNs
+     </article-title>
+     <source>
+      Reliability Engineering  System Safety
+     </source>
+     <volume>
+      244
+     </volume>
+     <issue>
+      109893
+     </issue>
+     <year>
+      2024 ,Apr.
+     </year>
+     <fpage>
+      109893
+     </fpage>
+     <pub-id>
+      https://doi.org/10.1016/j.ress.2023.109893
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1016/j.ress.2023.109893
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-7">
+    <label>
+     7
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Huang
+       </surname>
+       <given-names>
+        MJ
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        YT
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        B
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        YQ
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        MR
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Efficient Revocable Attribute-Based Encryption with Data Integrity and Key Escrow-Free
+     </article-title>
+     <source>
+      Information
+     </source>
+     <volume>
+      15
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      32
+     </fpage>
+     <pub-id>
+      10.3390/info15010032
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3390/info15010032
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-8">
+    <label>
+     8
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ioannidis
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Keromytis
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Bellovin
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Smith
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Implementing a distributed firewall
+     </article-title>
+     <source>
+      Proceedings of the 7th ACM conference on Computer and communications security
+     </source>
+     <year>
+      2000
+     </year>
+     <fpage>
+      190
+     </fpage>
+     <lpage>
+      199
+     </lpage>
+     <comment>
+      Greece
+     </comment>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-9">
+    <label>
+     9
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Samarati
+       </surname>
+       <given-names>
+        P
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        De Vimercati
+       </surname>
+       <given-names>
+        S C
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Access control: Policies, models, and mechanisms
+     </article-title>
+     <source>
+      International school on foundations of security analysis and design
+     </source>
+     <year>
+      2000
+     </year>
+     <fpage>
+      137
+     </fpage>
+     <lpage>
+      196
+     </lpage>
+     <web-url>
+      https://doi.org/1-58113-203-4/00/0011
+     </web-url>
+     <comment>
+      Springer Berlin Heidelberg
+     </comment>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-10">
+    <label>
+     10
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Polenov
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Guzik
+       </surname>
+       <given-names>
+        V
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lukyanov
+       </surname>
+       <given-names>
+        V
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Using virtualization technology for the user authorization system
+     </article-title>
+     <source>
+      Software Engineering Trends and Techniques in Intelligent Systems: Proceedings of the 6th Computer Science On-line Conference 2017 (CSOC2017)
+     </source>
+     <volume>
+      3
+     </volume>
+     <issue>
+      6
+     </issue>
+     <year>
+      2017 ,Apr.
+     </year>
+     <fpage>
+      192
+     </fpage>
+     <lpage>
+      200
+     </lpage>
+     <pub-id>
+      10.1007/978-3-319-57141-6_20
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1007/978-3-319-57141-6_20
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-11">
+    <label>
+     11
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Yan
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Shen
+       </surname>
+       <given-names>
+        F
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Gao
+       </surname>
+       <given-names>
+        MN
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Gu
+       </surname>
+       <given-names>
+        YH
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      GDE model: A variable intrusion detection model for few-shot attack
+     </article-title>
+     <source>
+      Journal of King Saud University-Computer and Information Sciences
+     </source>
+     <volume>
+      35
+     </volume>
+     <issue>
+      10
+     </issue>
+     <year>
+      2023 ,Dec.
+     </year>
+     <fpage>
+      101796
+     </fpage>
+     <pub-id>
+      10.1016/j.jksuci.2023.101796
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1016/j.jksuci.2023.101796
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-12">
+    <label>
+     12
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Anderson
+       </surname>
+       <given-names>
+        J P
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Computer security threat monitoring and surveillance
+     </article-title>
+     <source>
+      Technical Report
+     </source>
+     <year>
+      1980
+     </year>
+     <fpage>
+      215, 646
+     </fpage>
+     <lpage>
+      4706
+     </lpage>
+     <comment>
+      James P Anderson Co.
+     </comment>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-13">
+    <label>
+     13
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Hinton
+       </surname>
+       <given-names>
+        G E
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Salakhutdinov
+       </surname>
+       <given-names>
+        R R
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Reducing the dimensionality of data with neural networks
+     </article-title>
+     <source>
+      science
+     </source>
+     <volume>
+      313
+     </volume>
+     <issue>
+      5786
+     </issue>
+     <year>
+      2006 ,Jul.
+     </year>
+     <fpage>
+      504
+     </fpage>
+     <lpage>
+      507
+     </lpage>
+     <pub-id>
+      10.1126/science.112764
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1126/science.112764
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-14">
+    <label>
+     14
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Farooq
+       </surname>
+       <given-names>
+        M. S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Abbas
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sultan
+       </surname>
+       <given-names>
+        K
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Atta-ur-Rahman
+       </surname>
+       <given-names>
+        MA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Khan
+       </surname>
+       <given-names>
+        MA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mosavi
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      A fused machine learning approach for intrusion detection system
+     </article-title>
+     <source>
+      Computers, Materials  Continua
+     </source>
+     <volume>
+      74
+     </volume>
+     <issue>
+      2
+     </issue>
+     <year>
+      2023 ,Apr.
+     </year>
+     <fpage>
+      2607
+     </fpage>
+     <lpage>
+      2623
+     </lpage>
+     <pub-id>
+      10.32604/cmc.2023.032617
+     </pub-id>
+     <web-url>
+      https://doi.org/10.32604/cmc.2023.032617
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-15">
+    <label>
+     15
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Qazi
+       </surname>
+       <given-names>
+        E U H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Faheem
+       </surname>
+       <given-names>
+        M H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zia
+       </surname>
+       <given-names>
+        T
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      HDLNIDS: hybrid deep-learning-based network intrusion detection system
+     </article-title>
+     <source>
+      Applied Sciences
+     </source>
+     <volume>
+      13
+     </volume>
+     <issue>
+      8
+     </issue>
+     <fpage>
+      4921
+     </fpage>
+     <pub-id>
+      10.3390/app13084921
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3390/app13084921
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-16">
+    <label>
+     16
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Xie
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hao
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Luo
+       </surname>
+       <given-names>
+        P
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhu
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Anomaly Detection for Time Series Data Based on Multi-granularity Neighbor Residual Network
+     </article-title>
+     <source>
+      International Journal of Cognitive Computing in Engineering
+     </source>
+     <volume>
+      3
+     </volume>
+     <year>
+      2022 ,Jun.
+     </year>
+     <fpage>
+      180
+     </fpage>
+     <lpage>
+      187
+     </lpage>
+     <pub-id>
+      10.1016/j.ijcce.2022.10.001
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1016/j.ijcce.2022.10.001
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-17">
+    <label>
+     17
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Yin
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Internet of things intrusion detection system based on convolutional neural network
+     </article-title>
+     <source>
+      CMC-COMPUTERS MATERIALS  CONTINUA
+     </source>
+     <volume>
+      75
+     </volume>
+     <year>
+      2023 ,Mar.
+     </year>
+     <fpage>
+      2119
+     </fpage>
+     <lpage>
+      2135
+     </lpage>
+     <web-url>
+      https://doi.org/10.32604/cmc.2023.035077
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-18">
+    <label>
+     18
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Terzi
+       </surname>
+       <given-names>
+        D S
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Gramian angular field transformation-based intrusion detection
+     </article-title>
+     <source>
+      Computer Science
+     </source>
+     <volume>
+      23
+     </volume>
+     <issue>
+      4
+     </issue>
+     <year>
+      2022 ,Dec.
+     </year>
+     <fpage>
+      571
+     </fpage>
+     <lpage>
+      585
+     </lpage>
+     <pub-id>
+      10.7494/csci.2022.23.4.4406
+     </pub-id>
+     <web-url>
+      https://doi.org/10.7494/csci.2022.23.4.4406
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-19">
+    <label>
+     19
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Baldini
+       </surname>
+       <given-names>
+        G
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hernandez Ramos
+       </surname>
+       <given-names>
+        J L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Amerini
+       </surname>
+       <given-names>
+        I
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Intrusion detection based on gray-level co-occurrence matrix and 2D dispersion entropy
+     </article-title>
+     <source>
+      Applied Sciences
+     </source>
+     <volume>
+      11
+     </volume>
+     <issue>
+      2
+     </issue>
+     <year>
+      2021 ,Jun.
+     </year>
+     <fpage>
+      5567
+     </fpage>
+     <pub-id>
+      10.3390/app11125567
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3390/app11125567
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-20">
+    <label>
+     20
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Siddiqi
+       </surname>
+       <given-names>
+        M A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Pak
+       </surname>
+       <given-names>
+        W
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Tier-based optimization for synthesized network intrusion detection system
+     </article-title>
+     <source>
+      IEEE Access
+     </source>
+     <volume>
+      10
+     </volume>
+     <year>
+      2022 ,Oct.
+     </year>
+     <fpage>
+      108530
+     </fpage>
+     <lpage>
+      108544
+     </lpage>
+     <pub-id>
+      10.1109/ACCESS.2022.3213937
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1109/ACCESS.2022.3213937
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-21">
+    <label>
+     21
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Webb
+       </surname>
+       <given-names>
+        G I
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zheng
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Multistrategy ensemble learning: Reducing error by combining ensemble learning techniques
+     </article-title>
+     <source>
+      IEEE transactions on knowledge and data engineering
+     </source>
+     <volume>
+      16
+     </volume>
+     <issue>
+      8
+     </issue>
+     <year>
+      2004 ,Aug.
+     </year>
+     <fpage>
+      980
+     </fpage>
+     <lpage>
+      991
+     </lpage>
+     <pub-id>
+      10.1109/TKDE.2004.29
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1109/TKDE.2004.29
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-22">
+    <label>
+     22
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shen
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zheng
+       </surname>
+       <given-names>
+        K
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Huang
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      CBA-CLSVE: A Class-Level Soft-Voting Ensemble Based on the Chaos Bat Algorithm for Intrusion Detection
+     </article-title>
+     <source>
+      Applied Sciences
+     </source>
+     <volume>
+      12
+     </volume>
+     <issue>
+      21
+     </issue>
+     <year>
+      2022 ,Nov.
+     </year>
+     <fpage>
+      11298
+     </fpage>
+     <pub-id>
+      10.3390/app122111298
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3390/app122111298
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-23">
+    <label>
+     23
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Alshede
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Nassef
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Alowidi
+       </surname>
+       <given-names>
+        N
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Fadel
+       </surname>
+       <given-names>
+        E
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Ensemble Voting-Based Anomaly Detection for a Smart Grid Communication Infrastructure
+     </article-title>
+     <source>
+      Intelligent Automation  Soft Computing
+     </source>
+     <volume>
+      36
+     </volume>
+     <issue>
+      3
+     </issue>
+     <year>
+      2023 ,Jun.
+     </year>
+     <fpage>
+      3257
+     </fpage>
+     <lpage>
+      3278
+     </lpage>
+     <pub-id>
+      10.32604/iasc.2023.035874
+     </pub-id>
+     <web-url>
+      https://doi.org/10.32604/iasc.2023.035874
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-24">
+    <label>
+     24
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Albashish
+       </surname>
+       <given-names>
+        D
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Aburomman
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Weighted heterogeneous ensemble for the classification of intrusion detection using ant colony optimization for continuous search spaces
+     </article-title>
+     <source>
+      Soft Computing
+     </source>
+     <volume>
+      27
+     </volume>
+     <issue>
+      8
+     </issue>
+     <fpage>
+      4779
+     </fpage>
+     <lpage>
+      4793
+     </lpage>
+     <pub-id>
+      10.1007/s00500-022-07612-9
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1007/s00500-022-07612-9
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-25">
+    <label>
+     25
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Encoding temporal markov dynamics in graph for time series visualization
+     </article-title>
+     <source>
+      arXiv preprint arXiv
+     </source>
+     <year>
+      2016
+     </year>
+     <pub-id>
+      10.48550/arXiv.1610.07273
+     </pub-id>
+     <web-url>
+      https://doi.org/10.48550/arXiv.1610.07273
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-26">
+    <label>
+     26
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Gui
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      An image sharpening algorithm based on fuzzy logic
+     </article-title>
+     <source>
+      Optik
+     </source>
+     <volume>
+      122
+     </volume>
+     <issue>
+      8
+     </issue>
+     <year>
+      2011 ,Jan.
+     </year>
+     <fpage>
+      697
+     </fpage>
+     <lpage>
+      702
+     </lpage>
+     <pub-id>
+      10.1016/j.ijleo.2010.05.010
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1016/j.ijleo.2010.05.010
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-27">
+    <label>
+     27
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Simonyan
+       </surname>
+       <given-names>
+        K
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zisserman
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Very deep convolutional networks for large-scale image recognition
+     </article-title>
+     <source>
+      arXiv preprint arXiv
+     </source>
+     <year>
+      2014
+     </year>
+     <pub-id>
+      10.48550/arXiv.1409.1556
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-28">
+    <label>
+     28
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shafiq
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Gu
+       </surname>
+       <given-names>
+        ZQ
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Deep residual learning for image recognition: A Survey
+     </article-title>
+     <source>
+      Applied Science-Basel
+     </source>
+     <volume>
+      12
+     </volume>
+     <issue>
+      18
+     </issue>
+     <year>
+      2022 ,Sep.
+     </year>
+     <fpage>
+      8972
+     </fpage>
+     <pub-id>
+      10.3390/app12188972
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3390/app12188972
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-29">
+    <label>
+     29
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Howard
+       </surname>
+       <given-names>
+        A G
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Mobilenets: Efficient convolutional neural networks for mobile vision applications
+     </article-title>
+     <source>
+      arXiv preprint arXiv
+     </source>
+     <year>
+      2017
+     </year>
+     <pub-id>
+      10.48550/arXiv.1704.04861
+     </pub-id>
+     <web-url>
+      https://doi.org/10.48550/arXiv.1704.04861
+     </web-url>
+    </mixed-citation>
+   </ref>
+  </ref-list>
+ </back>
+</article>

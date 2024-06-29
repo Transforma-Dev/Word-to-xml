@@ -1,0 +1,5429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    CMC
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Computers, Materials &amp; Continua
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    1546-2226
+   </issn>
+   <issn pub-type="ppub">
+    1546-2218
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    49791
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604/cmc.2024.049791
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+     CrossLinkNet: An Explainable and Trustworthy AI Framework for Whole-Slide Images Segmentation
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     CrossLinkNet: An Explainable and Trustworthy AI Framework for Whole-Slide Images Segmentation
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     CrossLinkNet: An Explainable and Trustworthy AI Framework for Whole-Slide Images Segmentation
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Xiao
+      </surname>
+      <given-names>
+       Peng
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Zhong
+      </surname>
+      <given-names>
+       Qi
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-3">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Jingxue
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-4">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Wu
+      </surname>
+      <given-names>
+       Dongyuan
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-5">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Qin
+      </surname>
+      <given-names>
+       Zhen
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-6">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Zhou
+      </surname>
+      <given-names>
+       Erqiang
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+     <mail>
+      ssss@email.com
+     </mail>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      <sup>
+       1
+      </sup>
+     </label>
+     <institution>
+      Network and Data Security Key Laboratory of Sichuan Province  University of Electronic Science and Technology of China  Chengdu  610054
+     </institution>
+     <country>
+      China
+     </country>
+    </aff>
+    <aff id="aff-2">
+     <label>
+      <sup>
+       2
+      </sup>
+     </label>
+     <institution>
+      Faculty of Data Science  City University of Macau  Macau  999078
+     </institution>
+     <country>
+      China
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <label>
+      *
+     </label>
+     Corresponding Author: Erqiang Zhou. Email: zhoueq@uestc.edu.cn
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      17
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      23
+     </day>
+     <month>
+      4
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024 Xiao et al.
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     Xiao et al.
+    </copyright-holder>
+    <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" xlink:href="TSP_CMC_49791.pdf"/>
+   <abstract abstract-type="abstract">
+    <p>
+     In the intelligent medical diagnosis area, Artificial Intelligence (AI)'s trustworthiness, reliability, and interpretability are critical, especially in cancer diagnosis. Traditional neural networks, while excellent at processing natural images, often lack interpretability and adaptability when processing high-resolution digital pathological images. This limitation is particularly evident in pathological diagnosis, which is the gold standard of cancer diagnosis and relies on a pathologist's careful examination and analysis of digital pathological slides to identify the features and progression of the disease. Therefore, the integration of interpretable AI into smart medical diagnosis is not only an inevitable technological trend but also a key to improving diagnostic accuracy and reliability. In this paper, we introduce an innovative Multi-Scale Multi-Branch Feature Encoder (MSBE) and present the design of the CrossLinkNet Framework. The MSBE enhances the network’s capability for feature extraction by allowing the adjustment of hyperparameters to configure the number of branches and modules. The CrossLinkNet Framework, serving as a versatile image segmentation network architecture, employs cross-layer encoder-decoder connections for multi-level feature fusion, thereby enhancing feature integration and segmentation accuracy. Comprehensive quantitative and qualitative experiments on two datasets demonstrate that CrossLinkNet, equipped with the MSBE encoder, not only achieves accurate segmentation results but is also adaptable to various tumor segmentation tasks and scenarios by replacing different feature encoders. Crucially, CrossLinkNet emphasizes the interpretability of the AI model, a crucial aspect for medical professionals, providing an in-depth understanding of the model's decisions and thereby enhancing trust and reliability in AI-assisted diagnostics.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+     Explainable AI
+    </kwd>
+    <kwd>
+     security
+    </kwd>
+    <kwd>
+     trustworthy
+    </kwd>
+    <kwd>
+     CrossLinkNet
+    </kwd>
+    <kwd>
+     whole slide images
+    </kwd>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title>
+    Introduction
+   </title>
+   <p>
+    The integration of AI into clinical practice is transforming the healthcare landscape, particularly in diagnostic pathology [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ]. Accurate diagnosis is the cornerstone of effective cancer treatment, where pathologists often face the daunting task of deciphering complex patterns in whole-slide images (WSIs) to identify malignancies [
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ]. However, this traditional process is not without its challenges. It is labor-intensive, subject to inter-observer variability, and requires significant expertise, which may be limited in resource-constrained environments [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ]. As AI technology, particularly deep learning, becomes increasingly capable of augmenting or even surpassing human performance in image recognition tasks, its potential in enhancing the speed, accuracy, and efficiency of cancer diagnosis is becoming more apparent. However, alongside these advancements, concerns have emerged about the opaque nature of AI decisions and their implications for patient safety and treatment outcomes [
+    <xref ref-type="bibr" rid="ref-4">
+     4
+    </xref>
+    ].
+   </p>
+   <p>
+    In the sensitive realm of oncology, the trust in AI systems hinges on their ability to not only perform with high accuracy but also provide clarity on how conclusions are drawn [
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ]. Traditional neural networks, while proficient in various applications, often operate as "black boxes," offering little insight into their internal decision-making processes [
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ]. This lack of transparency is particularly problematic in the clinical setting, where understanding the rationale behind diagnostic decisions is imperative for clinician acceptance, quality control, and ethical considerations [
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ]. In this context, the role of explainable AI (XAI) technologies becomes pivotal, as they bridge the gap between AI performance and human interpretability. XAI aims to make the workings of complex neural networks accessible and comprehensible, enabling clinicians to follow the AI's logic, verify its reasoning, and, crucially, trust its outputs.
+   </p>
+   <p>
+    With the proliferation of digital pathology, WSIs have emerged as a standard in modern cancer diagnostics, providing an exhaustive view of tissue samples [
+    <xref ref-type="bibr" rid="ref-8">
+     8
+    </xref>
+    ]. However, manual analysis of WSIs is notably laborious, time-consuming, and subject to variability due to human interpretation [
+    <xref ref-type="bibr" rid="ref-9">
+     9
+    </xref>
+    ]. To mitigate these challenges, there has been a growing impetus towards incorporating explainable AI models. These models not only enhance the efficiency and accuracy of pathological analyses but also contribute to a deeper understanding of disease characteristics and progression [
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ]. AI's proficiency in rapidly processing and analyzing large volumes of data has been transformative across various sectors, particularly in medical imaging [
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ]. In the field of pathology, AI algorithms are increasingly recognized for their potential to improve WSI interpretation, providing results that are more consistent and reproducible [
+    <xref ref-type="bibr" rid="ref-12">
+     12
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ].
+   </p>
+   <p>
+    Traditional machine learning approaches for image analysis predominantly depend on manually extracted and defined features [
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ]. Traditional neural network approaches encounter significant challenges in medical image segmentation, particularly with whole-slide images (WSIs). Firstly, Whole Slide Images (WSIs) typically contain gigabytes of pixels, making it impossible for traditional deep neural networks to process them directly due to computational and memory constraints. This severely limits the ability to analyze WSIs comprehensively, affecting the extraction of critical diagnostic information. Furthermore, WSIs often contain tumor regions that are very small relative to the overall image size, presenting significant challenges to conventional approaches in identifying tumors and segmenting crucial minor targets. Additionally, the rigid architecture of numerous traditional neural networks, due to the lack of a modular design, restricts their adaptability. This limitation obstructs the integration of alternative feature encoders that could potentially enhance feature extraction for specific types of medical images. Lastly, the complexity of these traditional network architectures often lacks interpretability. Within clinical contexts, grasping the fundamental rationales behind diagnostic forecasts is essential for fostering trust and guiding clinical decisions.
+   </p>
+   <p>
+    Addressing the limitations of traditional neural network approaches, this paper introduces CrossLinkNet, which is specifically designed to address these challenges through its scalable processing of high-resolution images, enhanced sensitivity to small target regions, modular architecture for flexible feature encoding, and improved interpretability, thereby offering a significant advancement in the field of medical image segmentation.
+   </p>
+   <p>
+    The primary contributions of this paper are summarized as follows:
+   </p>
+   <list list-type="unorder">
+    <list-item>
+     <p>
+      An explainable Multi-Scale Multi-Branch Feature Encoder is proposed to enhance the network's capability for feature extraction. The MSBE Encoder facilitates the fine-tuning of hyperparameters to customize the quantity of branches and modules. This provides flexibility in adjusting the width of the network, thereby enhancing its capability to extract features.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      A versatile medical image segmentation network architecture, CrossLinkNet, is designed to accurately identify tumor regions by leveraging cross-layer encoder-decoder connections for multi-level feature fusion, thereby enhancing feature integration and improving segmentation accuracy. Moreover, this architecture can be flexibly adapted to various tumor segmentation tasks and scenarios through the replacement of different feature encoders.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      The CrossLinkNet with an MSBE encoder demonstrates accurate segmentation results through comprehensive quantitative and qualitative experiments on two datasets, namely BOT and Kvasir. Moreover, it exhibits adaptability to various tumor segmentation tasks and scenarios by seamlessly replacing different feature encoders.
+     </p>
+    </list-item>
+   </list>
+   <p>
+    The structure of this paper is organized as follows: Section 2 provides a concise review of existing literature pertinent to pathological image analysis. Section 3 elaborates on the deep neural network proposed for pathological image segmentation. Section 4 outlines the experimental setup. Section 5 presents and analyses the experimental results obtained. Section 6 discusses the potential challenges of the proposed approach. Finnally, Section 7 offers the conclusion.
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title>
+    Related Works
+   </title>
+   <p>
+    In the field of image segmentation, numerous methods have been developed over the years. Traditional segmentation techniques, such as threshold-based methods and edge detection algorithms, have laid the foundation in this domain. This section explores the evolution and intricacies of these traditional segmentation approaches and deep learning approaches.
+   </p>
+   <sec id="s2_1">
+    <label>
+     2.1
+    </label>
+    <title>
+     Threshold Segmentation Method
+    </title>
+    <p>
+     Threshold-based image segmentation is a common technique in digital image processing and an important method for achieving image segmentation [
+     <xref ref-type="bibr" rid="ref-15">
+      15
+     </xref>
+     ]. The Otsu algorithm, also known as Otsu's method, represents a classical approach to image thresholding, initially introduced by Nobuyuki Otsu in 1979 [
+     <xref ref-type="bibr" rid="ref-16">
+      16
+     </xref>
+     ]. Zhu et al. [
+     <xref ref-type="bibr" rid="ref-17">
+      17
+     </xref>
+     ] developed a novel segmentation algorithm to overcome the limitations of traditional threshold-based techniques in extracting complex information. This method employs adaptive thresholds for each pixel, determined by the mean and variance of adjacent pixel values, thereby enhancing edge detection. Yang et al. [
+     <xref ref-type="bibr" rid="ref-18">
+      18
+     </xref>
+     ] focused on enhancing the Otsu algorithm by examining the relationship between pixel grayscale values and cumulative pixel counts. The use of threshold-based image segmentation methods is common in digital image processing; however, they have notable limitations. One major drawback is the criticality of selecting an appropriate threshold, as different thresholds can lead to divergent segmentation outcomes.
+    </p>
+   </sec>
+   <sec id="s2_2">
+    <label>
+     2.2
+    </label>
+    <title>
+     Segmentation Method based on an Interpretable Convolutional Neural Network
+    </title>
+    <p>
+     With the rapid advancement in the fields of computer vision and deep learning [
+     <xref ref-type="bibr" rid="ref-19">
+      19
+     </xref>
+     ], Convolutional Neural Networks (CNNs) have emerged as a pivotal component for various visual tasks, particularly excelling in image segmentation. Kiran et al. [
+     <xref ref-type="bibr" rid="ref-20">
+      20
+     </xref>
+     ] utilized ResNet for segmenting cell clusters in whole-slide cervical pathology images. Their model achieved an impressive accuracy of 99.63% on single-cell images and 96.37% on cell clusters within entire images. Lin et al. [
+     <xref ref-type="bibr" rid="ref-21">
+      21
+     </xref>
+     ] introduced a deep convolutional neural network-based lesion detection system, optimized for high efficiency and sensitivity across various lesion sizes. CNN-based image segmentation algorithms show high efficiency in detecting tumors in pathological images. However, they struggle to interpret the contextual relationships among image segments, and there's a considerable gap in AI interpretability.
+    </p>
+   </sec>
+   <sec id="s2_3">
+    <label>
+     2.3
+    </label>
+    <title>
+     Segmentation Method based on Transformer
+    </title>
+    <p>
+     The Vision Transformer (ViT) [
+     <xref ref-type="bibr" rid="ref-22">
+      22
+     </xref>
+     ] represents a technological turning point in the field of computer vision, as it applies Transformer technology to this domain. Chen et al. [
+     <xref ref-type="bibr" rid="ref-23">
+      23
+     </xref>
+     ] developed a Multimodal Co-Attention Transformer (MCAT) framework, leveraging Transformer layers for multi-instance learning to map relationships between pathological image features and genomic data. Yin et al. [
+     <xref ref-type="bibr" rid="ref-24">
+      24
+     </xref>
+     ] developed the PyT2T-ViT, a streamlined Vision Transformer architecture for multi-instance learning. Transformer-based approaches demonstrate significant advantages in capturing long-range dependencies and integrating global and local information. However, their extensive model parameters require substantial hardware resources, which can result in overfitting when dealing with limited data.
+    </p>
+    <fig id="fig-1">
+     <label>
+      Figure 1
+     </label>
+     <caption>
+      <title>
+       CrossLinkNet Architecture
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-fig-1.jpg"/>
+    </fig>
+    <p>
+     The exploration of various segmentation methods in pathology imaging reveals a dynamic progression from traditional to advanced deep learning techniques. All the methods previously discussed have their limitations. With the advancement of this field, overcoming these weaknesses is essential for creating more efficient, accurate, and interpretable segmentation methods for pathological analysis.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title>
+    Method
+   </title>
+   <p>
+    In this paper, a universal and explainable segmentation network named CrossLinkNet is proposed, with the specific details of the network shown in Figure 1. CrossLinkNet consists of the MSB Encoder and the CrossLinkNet Framework. The MSB Encoder is a multi-scale, multi-branch light-weight feature encoder designed for extracting multi-scale features, with its architecture illustrated in Figure 2. Figure 3 demonstrates the structure of the MSB Encoder in various modes. The CrossLinkNet Framework is a generic segmentation framework based on an encoder-decoder architecture with cross-layer connections, as shown in Figure 4. By combining the CrossLinkNet Framework with the MSB Encoder, it is possible to identify more features of tumors and perform pixel-level segmentation. By substituting different feature encoders, the network can also be adapted to various medical imaging analysis tasks, ultimately achieving commendable results in segmentation accuracy. The following sections will provide detailed introductions to the Multi-Scale Multi-Branch Feature Encoder (MSBE) and the generic segmentation network architecture, CrossLinkNet.
+   </p>
+   <sec id="s3_1">
+    <label>
+     3.1
+    </label>
+    <title>
+     Multi-scale Multi-branch Feature Encoder
+    </title>
+    <p>
+     The extraction of multi-scale features plays a pivotal role in neural networks, particularly in tasks such as object detection and image segmentation, where it can significantly enhance the performance of the model. Traditional convolutional neural networks employ standard convolutional kernels and pooling operations of fixed sizes to extract features from images. However, this approach predominantly captures local features and is limited in its capacity to handle objects of varying sizes. To address this limitation, this section introduces a MSB encoder for feature extraction within the proposed versatile segmentation network, CrossLinkNet. The fundamental architecture of this feature encoder is depicted in Figure 2.
+    </p>
+    <fig id="fig-2">
+     <label>
+      Figure 2
+     </label>
+     <caption>
+      <title>
+       Basic structure of MSB encoder
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-fig-2.jpg"/>
+    </fig>
+    <p>
+     The architecture of the MSB Encoder primarily encompasses dimensionality expansion, depthwise separable convolutions, multi-scale feature extraction, dimensionality reduction and skip connections. The MSB encoder initially employs a strategy of increasing dimensionality (using 1x1 convolutions), followed by feature extraction, and culminating in a reduction of dimensions. This approach primarily aims to bolster the network's ability to represent complex features. Elevating the dimensionality allows the network to learn features in a higher-dimensional space, which facilitates capturing more complex feature relationships. The dimension reduction phase that follows is designed to curtail the parameter count, alleviate overfitting, and ensure the network remains efficient. The adoption of depthwise separable convolutions is based on their advantage of reducing computations and model size while still maintaining good feature extraction performance. By decomposing traditional convolutions into depthwise convolution and pointwise convolution, depthwise separable convolutions significantly reduce computational complexity and model parameters, making the model more lightweight and suitable for devices with limited computational resources. Within the strategy of multi-scale feature extraction, the application of 1x1, 3x3, and 5x5 convolutions caters to the necessity of discerning features across differing scales. 1x1 convolutions are primarily used to adjust the number of channels, reduce the number of parameters, while still retaining spatial features; 3x3 convolutions, a common convolution size, are effective in capturing local features; and 5x5 convolutions are capable of capturing features from a larger receptive field. However, the direct use of 5x5 convolutions involves a large number of parameters, so two stacked 3x3 convolutions are used as a substitute for a single 5x5 convolution, which not only expands the receptive field but also reduces the number of parameters, enhancing network efficiency. Finally, the integration of skip connections aims to mitigate the vanishing gradient issue encountered in training deep networks, which maintains network depth while facilitating effective information flow between layers. Skip connections allow for the direct transfer of information from shallower layers to deeper layers, aiding in the restoration of detail information and improving segmentation accuracy.
+    </p>
+    <p>
+     Overall, the MSBE takes into consideration multi-scale feature extraction, computational efficiency, and effective information flow. This approach is pivotal in refining the utilization of computational resources while maintaining the integrity of the model's performance, especially critical in the segmentation of high-resolution whole slide images. Next, we'll delve into Dimensionality Expansion, Depthwise Separable Convolution, Multi-Scale Feature Extraction, Dimensionality Reduction, and Skip Connections in detail.
+    </p>
+    <p>
+     <bold>
+      Dimensionality Expansion:
+     </bold>
+     The architecture employs a standard
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          1
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          1
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolution to upscale the input feature map to
+     <italic>
+      D
+     </italic>
+     channels. Dimensionality expansion enhances the neural network's representational capability, providing the model with a larger parameter space to capture complex feature relationships, thereby reducing the bottleneck of information flow through the network. It increases the non-linearity of feature representation and supplies a richer informational basis for subsequent multi-scale feature extraction. This facilitation is crucial for the model's ability to more effectively learn and integrate diverse feature details.
+    </p>
+    <p>
+     For an input feature map
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          X
+         </mi>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            H
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            W
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            C
+           </mi>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     , where
+     <italic>
+      H
+     </italic>
+     and
+     <italic>
+      W
+     </italic>
+     denote the height and width respectively, and C is the number of channels, the dimensionality expansion can be described using a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          1
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          1
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolution as follows:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msup>
+          <mrow>
+           <mi>
+            X
+           </mi>
+          </mrow>
+          <mrow>
+           <mi mathvariant="normal">
+            '
+           </mi>
+          </mrow>
+         </msup>
+         <mo>
+          =
+         </mo>
+         <mi>
+          X
+         </mi>
+         <mi>
+          *
+         </mi>
+         <mi>
+          K
+         </mi>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (1)
+    </p>
+    <p>
+     where
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          K
+         </mi>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            1
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            C
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            D
+           </mi>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     represents the
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          1
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          1
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolutional kernel, and the resulting feature map
+     <italic>
+      X'
+     </italic>
+     possesses D channels.
+    </p>
+    <p>
+     <bold>
+      Depthwise Separable Convolution:
+     </bold>
+     This architecture comprehensively employs depthwise separable convolutions to reduce the number of parameters and computational costs while maintaining robust feature extraction capabilities. This makes the network more lightweight and ensures efficiency without compromising on powerful representational capacity. Depthwise separable convolution involves an initial depthwise convolution, followed by a pointwise convolution. For a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     depthwise separable convolution, this can be described as:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          Y
+         </mi>
+         <mo>
+          =
+         </mo>
+         <mo>
+          (
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            X
+           </mi>
+          </mrow>
+          <mrow>
+           <mi mathvariant="normal">
+            '
+           </mi>
+          </mrow>
+         </msup>
+         <mo>
+          ⊛
+         </mo>
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            d
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          )
+         </mo>
+         <mi>
+          *
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            p
+           </mi>
+          </mrow>
+         </msub>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (2)
+    </p>
+    <p>
+     where
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mo>
+          ⊛
+         </mo>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     denotes the depthwise convolution operation,
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            d
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            D
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     is the depthwise convolutional kernel, and
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            p
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            1
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            D
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            D
+           </mi>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     is the pointwise convolutional kernel.
+    </p>
+    <p>
+     <bold>
+      Multi-Scale Feature Extraction:
+     </bold>
+     In order to capture information of various scales within the image more effectively, a multi-scale feature extraction strategy is introduced. The encoder selects different convolutional kernel sizes based on distinct patterns:
+    </p>
+    <p>
+     <bold>
+      Mode=0:
+     </bold>
+     Employs both
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     and a tandem of two
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     kernels to simulate the effect of a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          5
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          5
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     kernel for multi-scale feature extraction, as illustrated in Figure 3(a).
+    </p>
+    <p>
+     <bold>
+      Mode=1:
+     </bold>
+     Utilizes solely the
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     kernel to extract features with a smaller receptive field, as depicted in Figure 3(b).
+    </p>
+    <p>
+     <bold>
+      Mode=2:
+     </bold>
+     Engages two consecutive
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     kernels to approximate the impact of a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          5
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          5
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolution, aiming to expand the receptive field and capture a broader range of contextual information, as shown in Figure 3(c).
+    </p>
+    <p>
+     The representation of Mode 0, using a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     kernel and two
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     kernels to simulate a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          5
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          5
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolutional effect, is as follows:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            Z
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          =
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            X
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            '
+           </mi>
+          </mrow>
+         </msup>
+         <mi>
+          *
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+          </mrow>
+         </msub>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (3)
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            Z
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            5
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            5
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          =
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            X
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            '
+           </mi>
+          </mrow>
+         </msup>
+         <mi>
+          *
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+          </mrow>
+         </msub>
+         <mi>
+          *
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+          </mrow>
+         </msub>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (4)
+    </p>
+    <p>
+     where
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            3
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            D
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            D
+           </mi>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     represents the
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          3
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          3
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolutional kernel.
+    </p>
+    <fig id="fig-3">
+     <label>
+      Figure 3
+     </label>
+     <caption>
+      <title>
+       Different structure of MSB encoder
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-fig-3.jpg"/>
+    </fig>
+    <p>
+     <bold>
+      Dimensionality Reduction:
+     </bold>
+     Following the extraction of features at different scales, a convolutional operation is applied to reduce the channel count of the output feature map, aligning it with the channel count of the input feature map in preparation for the skip connections. The dimensionality reduction can be represented using a
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mn>
+          1
+         </mn>
+         <mo>
+          ×
+         </mo>
+         <mn>
+          1
+         </mn>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     convolution. For the concatenated feature map
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          Z
+         </mi>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            H
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            W
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            2
+           </mn>
+           <mi>
+            D
+           </mi>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     , the dimensionality reduction operation can be expressed as:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msup>
+          <mrow>
+           <mi>
+            Z
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            '
+           </mi>
+          </mrow>
+         </msup>
+         <mo>
+          =
+         </mo>
+         <mi>
+          Z
+         </mi>
+         <mi>
+          *
+         </mi>
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            r
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            d
+           </mi>
+          </mrow>
+         </msub>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (5)
+    </p>
+    <p>
+     where
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+       <tex-math>
+        
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+         <msub>
+          <mrow>
+           <mi>
+            K
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            r
+           </mi>
+           <mi>
+            e
+           </mi>
+           <mi>
+            d
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            1
+           </mn>
+           <mo>
+            ×
+           </mo>
+           <mn>
+            2
+           </mn>
+           <mi>
+            D
+           </mi>
+           <mo>
+            ×
+           </mo>
+           <mi>
+            C
+           </mi>
+          </mrow>
+         </msup>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     is the convolutional kernel used for dimensionality reduction.
+    </p>
+    <p>
+     <bold>
+      Skip Connections:
+     </bold>
+     The design of skip connections ensures improved information propagation through the depth of the model, guaranteeing that shallow features can be directly transmitted to deeper layers. This approach mitigates the common issue of gradient vanishing in deep networks. Additionally, skip connections facilitate easier network training and enable the construction of deeper network architectures, which, in turn, enhances the stability of model training.
+    </p>
+    <p>
+     The core concept of the MSB Encoder lies in the selective application of various convolutional kernel sizes based on different modes for feature extraction. Moreover, the encoder dynamically chooses the convolutional kernel size according to the mode, providing enhanced flexibility for feature extraction. The incorporation of skip connections enables the model to better maintain and convey information at deeper layers, thereby mitigating the issue of vanishing gradients and enhancing training stability. Compared to traditional convolutions, depthwise separable convolutions significantly reduce the number of parameters, thereby decreasing computational costs, but also retain impressive feature extraction capabilities. This design renders the network more lightweight while maintaining powerful representational abilities and ensuring greater efficiency. In summary, the MSB encoder not only accounts for feature extraction across varying scales but also effectively controls the number of parameters, making it a highly promising feature extractor.
+    </p>
+   </sec>
+   <sec id="s3_2">
+    <label>
+     3.2
+    </label>
+    <title>
+     Cross-layer Connected Segmentation Network Framework
+    </title>
+    <p>
+     We proposed an innovative segmentation network structure, the CrossLinkNet Framework, which employs cross-layer connections to segment pathological images. The CrossLinkNet Framework's key advantage is its ability to progressively learn and integrate information through multiple sub-modules, thereby enhancing the model's feature extraction and contextual information recognition capability by focusing on extracting features across various dimensions. This method bolsters the model's robustness, augmenting its tolerance to noise, variations, and perturbations present in the input data. The CrossLinkNet Framework is highly adaptable, allowing for easy customization of encoder and decoder configurations to suit different tasks by modifying sub-module structures and parameters. Each sub-module can be replaced with high-performance encoders to handle different datasets and segmentation challenges. CrossLinkNet progressively learns and integrates features across layers, enhancing segmentation results. This flexibility renders the CrossLinkNet Framework suitable for a wide array of tumor segmentation tasks and scenarios.
+    </p>
+    <p>
+     The CrossLinkNet architecture is a novel image segmentation network structure, where the cornerstone is the implementation of cross-layer connections that facilitate information transfer between encoders and among decoders. This design optimizes the pathways of information flow, thereby enhancing segmentation accuracy. The network consists of two principal components: the encoders and the decoders, as illustrated in Figure 4.
+    </p>
+    <fig id="fig-4">
+     <label>
+      Figure 4
+     </label>
+     <caption>
+      <title>
+       CrossLinkNet segmentation network framework
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-fig-4.jpg"/>
+    </fig>
+    <p>
+     The encoder, being the epicenter and novelty of the framework, aims to efficiently extract features from the input image. It employs a standard sequence of convolution, batch normalization, and activation functions to capture multi-level information from the input image, followed by max-pooling operations for downsampling. This creates feature maps at various depths, providing a rich source of information for the decoder. Diverging from conventional decoder designs, the decoder in CrossLinkNet is comprised of features from two upsampling branches and encoder features from the corresponding level. Subsequently, these upsampled feature maps are merged with the feature maps from the encoder through a concatenation operation, ensuring that cross-layer information is thoroughly harnessed during the decoding process. Such an arrangement allows the model to concurrently capture both local details and global contextual information of the image, significantly amplifying the precision of segmentation.
+    </p>
+    <p>
+     The encoder component of the CrossLinkNet framework is designed with remarkable flexibility, accommodating a multitude of feature extraction architectures. In this paper, the MSB encoder proposed in the preceding subsection is employed as the default encoder within the CrossLinkNet architecture, with the overall network architecture illustrated in Figure 1. Furthermore, CrossLinkNet strategically integrates batch normalization layers post multiple convolutional layers, which can expedite the convergence of the network during the training of deep learning models and also contribute to enhancing the generalization performance of the model. This design thoroughly contemplates the balance between model training efficiency and performance.
+    </p>
+    <p>
+     In summary, CrossLinkNet presents an image segmentation framework utilizing cross-layer connections to optimize pathways for information flow and enhance the feature representation capabilities of the model. The flexibility of its encoder design, the innovation within its decoder structure, and the incorporation of batch normalization collectively contribute to positioning CrossLinkNet as a highly accurate solution for image segmentation tasks. It possesses vast potential for application and demonstrates exceptional ability in feature extraction.
+    </p>
+   </sec>
+   <sec id="s3_3">
+    <label>
+     3.3
+    </label>
+    <title>
+     Interpretability in MSBE and CrossLinkNet
+    </title>
+    <p>
+     During the design of the CrossLinkNet framework and MSBE, we specifically focused on enhancing the interpretability of the model. This is particularly vital in medical image analysis, where understanding AI's decision-making process can significantly increase medical professionals' trust in AI-assisted diagnostic systems. Here is how we enhanced the interpretability of CrossLinkNet and MSBE by designing specific model structural components.
+    </p>
+    <p>
+     <bold>
+      Multi-Scale Feature Extraction
+     </bold>
+     <bold>
+      :
+     </bold>
+     MSBE processes images at multiple scales using different modes (Mode=0, Mode=1, Mode=2), allowing the model to capture a range of features from fine textures to macro structures. This multi-level feature extraction enhances the model's performance and makes the decision-making process of the model more transparent. Visualizing the feature activation maps at different scales, medical practitioners can clearly see how the model makes diagnoses based on different details of the image, which offering a clear understanding about the decision-making logic of AI.
+    </p>
+    <p>
+     <bold>
+      Cross-Layer Connections
+     </bold>
+     <bold>
+      :
+     </bold>
+     The cross-layer connection design in CrossLinkNet enables high-level features to be directly associated with low-level features, which not only aids in the propagation of gradients, reducing information loss during training but also enhances the model's interpretability. Through these connections, we can trace how high-level decisions are directly related to the original image, providing medical professionals with an intuitive way to verify the basis of the model's decisions.
+    </p>
+    <p>
+     Overall, the design of CrossLinkNet and MSBE has fully taken into account the importance of interpretability in medical image analysis, especially in critical application areas like cancer diagnosis. By combining high performance with high interpretability, our model is capable of providing accurate diagnostic results, and also allows doctors to understand and trust the AI's decision-making process, which is of significant importance for advancing the application of AI in the medical field.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title>
+    Experiments Setting
+   </title>
+   <p>
+    This section is devoted to presenting the experimental results and analysis, conducting a thorough evaluation of the MSB encoder and the universal segmentation network CrossLinkNet using publicly available pathological image datasets. Initially, the experimental datasets and environment are introduced, followed by a detailed description of the evaluation metrics employed.
+   </p>
+   <sec id="s4_1">
+    <label>
+     4.1
+    </label>
+    <title>
+     Dataset
+    </title>
+    <p>
+     The dataset utilized in this chapter originates from the "BOT Series Competition on Pathological Slide Recognition AI Challenge", focusing on a gastric cancer digital pathology image dataset. This dataset emphasizes the pathological characteristics of gastric cancer and is designed to support high-quality automated pathological image recognition. To ensure the dataset's quality and accuracy, during the initial phase, each image was meticulously annotated by a medically knowledgeable pathologist and subsequently subjected to careful review by an expert panel. In later stages, images were annotated by two pathologists with extensive knowledge in the field, with their work again reviewed by experts post-completion. Such a multi-stage, multi-reviewer process guarantees the accuracy of the annotations in the dataset and minimizes errors due to subjective judgment to the greatest extent possible.
+    </p>
+   </sec>
+   <sec id="s4_2">
+    <label>
+     4.2
+    </label>
+    <title>
+     Experiments Steps
+    </title>
+    <p>
+     In the experimental section of the paper, the annotation files in .svg format were initially converted into binary mask images in .png format. Subsequently, the pathological and mask images, at a resolution of 2048x2048, were scaled down to 256x256 pixels for storage. To validate the model's generalizability, the dataset was randomly split into a training set of 490 images, a validation set of 70 images, and a test set of 140 images. Each model was trained on the training set, validated on the validation set, and evaluated on the test set. The detailed distribution of the dataset is shown in
+     <xref ref-type="table" rid="table-1">
+      Table 1
+     </xref>
+     .
+    </p>
+    <table-wrap id="table-1">
+     <label>
+      Table 1
+     </label>
+     <caption>
+      <title>
+       Dataset distribution for the BOT datasets
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-table-1.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          Dataset
+         </th>
+         <th>
+          Training
+         </th>
+         <th>
+          Validation
+         </th>
+         <th>
+          Testing
+         </th>
+         <th>
+          Total
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td>
+          BOT Competiton
+         </td>
+         <td>
+          490
+         </td>
+         <td>
+          70
+         </td>
+         <td>
+          140
+         </td>
+         <td>
+          700
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     The first part of the experiment compared our proposed MSB encoder with four classic encoder architectures: VGG, ResNet34, ResNet50, and MobileNet, to explore performance differences across various backbone networks. Following this, our newly designed CrossLinkNet was compared with existing architectures like UNet and SegNet under the same encoder configurations (namely, VGG, ResNet34, ResNet50, MobileNet, and MSBE). Subsequently, to comprehensively assess the superiority of the proposed model, we conducted extensive comparative experiments of CrossLinkNet (MSBE) with a series of classical networks, such as SegNet, UNet++, as well as the renowned DeepLabV3+ and the recently introduced state-of-the-art model, PidNet. Finally, to confirm the applicability of the proposed universal segmentation network to other segmentation tasks, the CrossLinkNet (MSBE) network was also tested using the Kvasir gastrointestinal polyp segmentation dataset.
+    </p>
+    <p>
+     In summary, the efficacy of the MSB encoder, the performance of the universal segmentation network CrossLinkNet, the combined effect of CrossLinkNet (MSBE), and its performance on other datasets were evaluated through four different ablation studies. This multi-dimensional validation confirmed the high performance of the proposed model.
+    </p>
+   </sec>
+   <sec id="s4_3">
+    <label>
+     4.3
+    </label>
+    <title>
+     Experiments Environment
+    </title>
+    <p>
+     In this study, we conducted experimental validation on a high-end workstation with the following configuration: an Intel Core i7-8700k CPU, Nvidia GTX 3090 GPU, and 64 GB of system memory. The workstation was running the Ubuntu 20.04 LTS operating system. The experiments were performed using the deep learning framework Keras, with cross-entropy loss function as the foundation and stochastic gradient descent as the optimizer for the experimental model. The training was carried out for 100 epochs with a batch size set to 16. These settings enabled us to achieve favorable results within a relatively short time and allowed us to train and test more complex deep learning models.
+    </p>
+   </sec>
+   <sec id="s4_4">
+    <label>
+     4.4
+    </label>
+    <title>
+     Evaluation Metrics
+    </title>
+    <p>
+     In our experiments, the evaluation metrics include Frequency-Weighted Intersection over Union (FW_IoU), Mean Intersection over Union (mIoU), Mean Dice Coefficient (mDice), Pixel Accuracy (PA), Mean Average Precision (mAP), Mean Recall(mRecall). Through these metrics, a comprehensive understanding of the model's performance can be gained, facilitating model assessment, improvement, and optimization.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title>
+    Experiments Result
+   </title>
+   <sec id="s5_1">
+    <label>
+     5.1
+    </label>
+    <title>
+     Comparison with Different Encoders
+    </title>
+    <p>
+     VGG, ResNet34, ResNet50, and MobileNet are classic convolutional neural network architectures often used as feature extractors to assist other primary networks in feature extraction. In our experimental design, we developed an innovative multi-scale, multi-branch feature encoder (MSBE) module and integrated it into various baseline networks such as UNet, SegNet, and the newly proposed CrossLinkNet. We evaluated the performance of the MSB encoder in image segmentation tasks through comparative experiments. The results are shown in
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     . For the three sets of experimental results, we used different encoders and conducted ablation studies on each encoder using different backbone network structures to accurately assess their performance in image segmentation tasks.
+    </p>
+    <table-wrap id="table-2">
+     <label>
+      Table 2
+     </label>
+     <caption>
+      <title>
+       Ablation experiment of different feature encoder with same backbone networks
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-table-2.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          ID
+         </th>
+         <th>
+          Model
+         </th>
+         <th>
+          Params (M)
+         </th>
+         <th>
+          GFLOPs
+         </th>
+         <th>
+          FW_IoU
+         </th>
+         <th>
+          mIoU
+         </th>
+         <th>
+          mDice
+         </th>
+         <th>
+          PA
+         </th>
+         <th>
+          mAP
+         </th>
+         <th>
+          mRecall
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td rowspan="5">
+          1
+         </td>
+         <td>
+          VGG-UNet
+         </td>
+         <td>
+          19.4
+         </td>
+         <td>
+          52.3
+         </td>
+         <td>
+          0.8580
+         </td>
+         <td>
+          0.7591
+         </td>
+         <td>
+          0.8552
+         </td>
+         <td>
+          0.9172
+         </td>
+         <td>
+          0.8372
+         </td>
+         <td>
+          0.8772
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet34-UNet
+         </td>
+         <td>
+          24.4
+         </td>
+         <td>
+          19.9
+         </td>
+         <td>
+          0.8491
+         </td>
+         <td>
+          0.7243
+         </td>
+         <td>
+          0.8268
+         </td>
+         <td>
+          0.9171
+         </td>
+         <td>
+          0.8790
+         </td>
+         <td>
+          0.7921
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet50-UNet
+         </td>
+         <td>
+          31.3
+         </td>
+         <td>
+          25.8
+         </td>
+         <td>
+          0.8683
+         </td>
+         <td>
+          0.7647
+         </td>
+         <td>
+          0.8582
+         </td>
+         <td>
+          0.9268
+         </td>
+         <td>
+          0.8752
+         </td>
+         <td>
+          0.8434
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MobileNet-UNet
+         </td>
+         <td>
+          7.8
+         </td>
+         <td>
+          13.6
+         </td>
+         <td>
+          0.8767
+         </td>
+         <td>
+          0.7742
+         </td>
+         <td>
+          0.8645
+         </td>
+         <td>
+          0.9334
+         </td>
+         <td>
+          0.9063
+         </td>
+         <td>
+          0.8338
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MSBE-UNet
+         </td>
+         <td>
+          3.9
+         </td>
+         <td>
+          26.6
+         </td>
+         <td>
+          0.8824
+         </td>
+         <td>
+          0.7845
+         </td>
+         <td>
+          0.8718
+         </td>
+         <td>
+          0.9366
+         </td>
+         <td>
+          0.9112
+         </td>
+         <td>
+          0.8423
+         </td>
+        </tr>
+        <tr align="center">
+         <td rowspan="5">
+          2
+         </td>
+         <td>
+          VGG-SegNet
+         </td>
+         <td>
+          18.6
+         </td>
+         <td>
+          48.6
+         </td>
+         <td>
+          0.8573
+         </td>
+         <td>
+          0.7337
+         </td>
+         <td>
+          0.8335
+         </td>
+         <td>
+          0.9236
+         </td>
+         <td>
+          0.9146
+         </td>
+         <td>
+          0.7872
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet34-SegNet
+         </td>
+         <td>
+          24
+         </td>
+         <td>
+          17.5
+         </td>
+         <td>
+          0.8237
+         </td>
+         <td>
+          0.6855
+         </td>
+         <td>
+          0.7958
+         </td>
+         <td>
+          0.8994
+         </td>
+         <td>
+          0.8291
+         </td>
+         <td>
+          0.7716
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet50-SegNet
+         </td>
+         <td>
+          29.8
+         </td>
+         <td>
+          19.8
+         </td>
+         <td>
+          0.8316
+         </td>
+         <td>
+          0.6804
+         </td>
+         <td>
+          0.7886
+         </td>
+         <td>
+          0.9103
+         </td>
+         <td>
+          0.9222
+         </td>
+         <td>
+          0.7333
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MobileNet-SegNet
+         </td>
+         <td>
+          7.1
+         </td>
+         <td>
+          10.0
+         </td>
+         <td>
+          0.8650
+         </td>
+         <td>
+          0.7474
+         </td>
+         <td>
+          0.8441
+         </td>
+         <td>
+          0.9282
+         </td>
+         <td>
+          0.9250
+         </td>
+         <td>
+          0.7971
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MSBE-SegNet
+         </td>
+         <td>
+          3.5
+         </td>
+         <td>
+          25.5
+         </td>
+         <td>
+          0.8784
+         </td>
+         <td>
+          0.7764
+         </td>
+         <td>
+          0.8660
+         </td>
+         <td>
+          0.9346
+         </td>
+         <td>
+          0.9127
+         </td>
+         <td>
+          0.8327
+         </td>
+        </tr>
+        <tr align="center">
+         <td rowspan="5">
+          3
+         </td>
+         <td>
+          VGG-CrossLinkNet
+         </td>
+         <td>
+          30.7
+         </td>
+         <td>
+          67.0
+         </td>
+         <td>
+          0.8710
+         </td>
+         <td>
+          0.7675
+         </td>
+         <td>
+          0.8600
+         </td>
+         <td>
+          0.9290
+         </td>
+         <td>
+          0.8852
+         </td>
+         <td>
+          0.8395
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet34-CrossLinkNet
+         </td>
+         <td>
+          35.4
+         </td>
+         <td>
+          33.0
+         </td>
+         <td>
+          0.8645
+         </td>
+         <td>
+          0.7561
+         </td>
+         <td>
+          0.8516
+         </td>
+         <td>
+          0.9250
+         </td>
+         <td>
+          0.8779
+         </td>
+         <td>
+          0.8304
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet50-CrossLinkNet
+         </td>
+         <td>
+          49.6
+         </td>
+         <td>
+          47.1
+         </td>
+         <td>
+          0.8719
+         </td>
+         <td>
+          0.7762
+         </td>
+         <td>
+          0.8668
+         </td>
+         <td>
+          0.9276
+         </td>
+         <td>
+          0.8634
+         </td>
+         <td>
+          0.8704
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MobileNet-CrossLinkNet
+         </td>
+         <td>
+          21.3
+         </td>
+         <td>
+          29.5
+         </td>
+         <td>
+          0.8779
+         </td>
+         <td>
+          0.7780
+         </td>
+         <td>
+          0.8674
+         </td>
+         <td>
+          0.9337
+         </td>
+         <td>
+          0.9005
+         </td>
+         <td>
+          0.8416
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MSBE-CrossLinkNet
+         </td>
+         <td>
+          14.9
+         </td>
+         <td>
+          45.9
+         </td>
+         <td>
+          0.8829
+         </td>
+         <td>
+          0.7856
+         </td>
+         <td>
+          0.8727
+         </td>
+         <td>
+          0.9369
+         </td>
+         <td>
+          0.9113
+         </td>
+         <td>
+          0.8436
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     In the first set of experiments of this study, we chose UNet as the basic backbone network and combined it with five different encoder structures: VGG, ResNet34, ResNet50, MobileNet, and MSBE for ablation studies. The results showed that the UNet model, with the MSBE encoder, performed excellently on multiple performance metrics, including FW_IoU, mIoU, mDice, PA, and mAP. Specifically, MSBE-UNet achieved the best performance in terms of frequency weighted IoU, mean IoU, mean Dice coefficient, pixel accuracy, and mean precision. In terms of mIoU, MSBE-UNet was about 2.89% higher than the average of the other four encoder structures. In terms of mAP, its performance was 7.4%, 3.21%, 3.6%, and 0.48% higher than VGG, ResNet34, ResNet50, and MobileNet, respectively. However, in terms of mRecall, the performance of MSBE-UNet was slightly inferior to VGG-UNet and ResNet50-UNet. This result suggests that the MSBE encoder is more effective in feature extraction and preserving image details compared to other encoder structures.
+    </p>
+    <p>
+     In the second set of experiments of this study, SegNet was used as the base backbone network, and the MSBE encoder was compared with four different encoder structures: VGG, ResNet34, ResNet50, and MobileNet. The results indicated that the MSBE encoder integrated into the SegNet network exhibited superior performance compared to the other four encoders. Specifically, MSBE-SegNet surpassed the other combinations in all performance metrics except mAP. In terms of mIoU, MSBE-SegNet was 6.47% higher than the average of the other encoder structures. Also, in mRecall, MSBE-SegNet's performance was 4.55%, 6.1%, 9.94%, and 3.55% higher than VGG, ResNet34, ResNet50, and MobileNet, respectively. Although MSBE-SegNet was slightly inferior to MobileNet-SegNet in terms of mAP, it performed better in other key performance metrics, demonstrating the effectiveness of the MSBE encoder in the SegNet framework.
+    </p>
+    <p>
+     In the third set of experiments of this study, we utilized the newly proposed CrossLinkNet as the base backbone network and integrated five different encoder structures: VGG, ResNet34, ResNet50, MobileNet, and MSBE for ablation studies. The results showed that the CrossLinkNet network with the MSBE encoder exhibited excellent performance, outperforming the other four encoders. Specifically, MSBE-CrossLinkNet achieved optimal performance in all five metrics: FW_IoU, mIoU, mDice, PA, and mAP, with scores of 88.29%, 78.56%, 87.27%, 93.69%, and 91.13%, respectively. In terms of mRecall, MSBE-CrossLinkNet ranked second at 84.36%, slightly behind ResNet50-CrossLinkNet's 87.04%. These data indicate that in the CrossLinkNet-based experimental setup, MSBE-CrossLinkNet achieved the best performance in all metrics except mean recall, further confirming the superior performance of the MSBE encoder.
+    </p>
+    <p>
+     As demonstrated in
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     , with different backbone networks, the model parameter quantity (Params) is generally lower when employing MSBE as the feature encoder compared to other feature encoders. When combined with UNet, SegNet, and CrossLinkNet, the parameter quantities of MSBE are merely 3.9M, 3.5M, and 14.9M respectively, significantly lower than other encoders. This highlights the parameter efficiency advantage of MSBE. These results demonstrate that MSBE efficiently extracts features with a reduced parameter count, significantly lightening the model's storage and deployment load. Additionally, the GFLOPs of MSBE are not the lowest, but which remain at a moderate level. Specifically, in integration with CrossLinkNet, MSBE's GFLOPs are 45.9. Although this is higher than MobileNet-UNet's GFLOPs, it remains notably superior to the VGG and ResNet50 as encoders. MSBE achieves a reasonable computational complexity and excellent performance with fewer parameters, demonstrating its efficiency and balance between computational efficiency in feature extraction.
+    </p>
+    <p>
+     The comprehensive analysis of the three sets of experiments in this study shows that the MSBE encoder demonstrated the best or near-best performance in all three backbone network experiments (UNet, SegNet, and CrossLinkNet). The proposed MSBE encoder, with its theoretical multi-scale and multi-branch design advantages, has also been empirically confirmed to exhibit superior performance in segmentation tasks. Compared to traditional encoders like VGG, ResNet, and MobileNet, MSBE showed greater stability and performance across different backbone networks. This proves its vast potential for application in deep learning segmentation tasks. Subsequently, we'll discuss the theoretical foundation behind MSBE and the characteristics of its network structure, further analyzing the reasons for its effectiveness.
+    </p>
+    <p>
+     The design philosophy of MSBE is primarily based on two foundational principles: the importance of multi-scale features and the flexibility of the network's branching structure. In medical imaging, especially in the analysis of whole slide images, the size, shape, and texture of lesion areas can vary greatly. Conventional single-scale feature encoders are typically constrained by their fixed receptive field sizes, making it challenging to concurrently capture fine detail features and large-scale structural information. MSBE introduces multi-scale convolutional kernels, enabling the network to extract features at different scales and thus understand the image content more comprehensively. For instance, small-scale convolutional kernels can capture the fine details of an image, such as the edges and textures of cells, while large-scale kernels are able to extract broader contextual information, aiding in the understanding of the overall morphology and relative position of lesion areas. This multi-scale feature extraction strategy allows MSBE to more accurately identify and locate key areas within images. Furthermore, the multi-branch structure of MSBE enhances the network's flexibility and adaptiveness. Deviating from the conventional linear or singular pathway structures, MSBE's parallel branching enables the concurrent processing and integration of features across various scales. This design not only increases the network's capacity but also enables MSBE to better utilize the multi-level information in images, while concurrently reducing the parameter overhead. In experiments, these features enable MSBE to effectively improve the accuracy and robustness of segmentation tasks without significantly increasing computational complexity.
+    </p>
+   </sec>
+   <sec id="s5_2">
+    <label>
+     5.2
+    </label>
+    <title>
+     Comparison with Different Segmentation Network Framework
+    </title>
+    <p>
+     UNet and SegNet are established baseline models in computer vision, with UNet being prevalently utilized in medical image segmentation and SegNet being notable for semantic segmentation tasks. In our research, a novel network termed CrossLinkNet was developed for comparative analysis with these baseline models. This comparative study, detailed in
+     <xref ref-type="table" rid="table-3">
+      Table 3
+     </xref>
+     , employed ablation experiments using a consistent set of encoders (VGG, ResNet34, ResNet50, MobileNet, and MSBE) across different backbone network structures. This approach was adopted to rigorously assess the efficacy of CrossLinkNet in image segmentation tasks. The following content will provide an in-depth analysis of the results from these five distinct experimental sets.
+    </p>
+    <table-wrap id="table-3">
+     <label>
+      Table 3
+     </label>
+     <caption>
+      <title>
+       Ablation experiment of different backbone networks with same feature encoder
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-table-3.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          ID
+         </th>
+         <th>
+          Model
+         </th>
+         <th>
+          Params (M)
+         </th>
+         <th>
+          GFLOPs
+         </th>
+         <th>
+          FW_IoU
+         </th>
+         <th>
+          mIoU
+         </th>
+         <th>
+          mDice
+         </th>
+         <th>
+          PA
+         </th>
+         <th>
+          mAP
+         </th>
+         <th>
+          mRecall
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td rowspan="3">
+          1
+         </td>
+         <td>
+          VGG-UNet
+         </td>
+         <td>
+          19.4
+         </td>
+         <td>
+          52.3
+         </td>
+         <td>
+          0.8580
+         </td>
+         <td>
+          0.7591
+         </td>
+         <td>
+          0.8552
+         </td>
+         <td>
+          0.9172
+         </td>
+         <td>
+          0.8372
+         </td>
+         <td>
+          0.8772
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          VGG-SegNet
+         </td>
+         <td>
+          18.6
+         </td>
+         <td>
+          48.6
+         </td>
+         <td>
+          0.8573
+         </td>
+         <td>
+          0.7337
+         </td>
+         <td>
+          0.8335
+         </td>
+         <td>
+          0.9236
+         </td>
+         <td>
+          0.9146
+         </td>
+         <td>
+          0.7872
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          VGG-CrossLinkNet
+         </td>
+         <td>
+          30.7
+         </td>
+         <td>
+          67.0
+         </td>
+         <td>
+          0.8710
+         </td>
+         <td>
+          0.7675
+         </td>
+         <td>
+          0.8600
+         </td>
+         <td>
+          0.9290
+         </td>
+         <td>
+          0.8852
+         </td>
+         <td>
+          0.8395
+         </td>
+        </tr>
+        <tr align="center">
+         <td rowspan="3">
+          2
+         </td>
+         <td>
+          ResNet34-UNet
+         </td>
+         <td>
+          24.4
+         </td>
+         <td>
+          19.9
+         </td>
+         <td>
+          0.8491
+         </td>
+         <td>
+          0.7243
+         </td>
+         <td>
+          0.8268
+         </td>
+         <td>
+          0.9171
+         </td>
+         <td>
+          0.8790
+         </td>
+         <td>
+          0.7921
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet34-SegNet
+         </td>
+         <td>
+          24.0
+         </td>
+         <td>
+          17.5
+         </td>
+         <td>
+          0.8237
+         </td>
+         <td>
+          0.6855
+         </td>
+         <td>
+          0.7958
+         </td>
+         <td>
+          0.8994
+         </td>
+         <td>
+          0.8291
+         </td>
+         <td>
+          0.7716
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet34-CrossLinkNet
+         </td>
+         <td>
+          35.4
+         </td>
+         <td>
+          33.0
+         </td>
+         <td>
+          0.8645
+         </td>
+         <td>
+          0.7561
+         </td>
+         <td>
+          0.8516
+         </td>
+         <td>
+          0.9250
+         </td>
+         <td>
+          0.8779
+         </td>
+         <td>
+          0.8304
+         </td>
+        </tr>
+        <tr align="center">
+         <td rowspan="3">
+          3
+         </td>
+         <td>
+          ResNet50-UNet
+         </td>
+         <td>
+          31.3
+         </td>
+         <td>
+          25.8
+         </td>
+         <td>
+          0.8683
+         </td>
+         <td>
+          0.7647
+         </td>
+         <td>
+          0.8582
+         </td>
+         <td>
+          0.9268
+         </td>
+         <td>
+          0.8752
+         </td>
+         <td>
+          0.8434
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet50-SegNet
+         </td>
+         <td>
+          29.8
+         </td>
+         <td>
+          19.8
+         </td>
+         <td>
+          0.8316
+         </td>
+         <td>
+          0.6804
+         </td>
+         <td>
+          0.7886
+         </td>
+         <td>
+          0.9103
+         </td>
+         <td>
+          0.9222
+         </td>
+         <td>
+          0.7333
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          ResNet50-CrossLinkNet
+         </td>
+         <td>
+          49.6
+         </td>
+         <td>
+          47.1
+         </td>
+         <td>
+          0.8719
+         </td>
+         <td>
+          0.7762
+         </td>
+         <td>
+          0.8668
+         </td>
+         <td>
+          0.9276
+         </td>
+         <td>
+          0.8634
+         </td>
+         <td>
+          0.8704
+         </td>
+        </tr>
+        <tr align="center">
+         <td rowspan="3">
+          4
+         </td>
+         <td>
+          MobileNet-UNet
+         </td>
+         <td>
+          7.8
+         </td>
+         <td>
+          13.6
+         </td>
+         <td>
+          0.8767
+         </td>
+         <td>
+          0.7742
+         </td>
+         <td>
+          0.8645
+         </td>
+         <td>
+          0.9334
+         </td>
+         <td>
+          0.9063
+         </td>
+         <td>
+          0.8338
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MobileNet-SegNet
+         </td>
+         <td>
+          7.1
+         </td>
+         <td>
+          10.0
+         </td>
+         <td>
+          0.8650
+         </td>
+         <td>
+          0.7474
+         </td>
+         <td>
+          0.8441
+         </td>
+         <td>
+          0.9282
+         </td>
+         <td>
+          0.9250
+         </td>
+         <td>
+          0.7971
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MobileNet-CrossLinkNet
+         </td>
+         <td>
+          21.3
+         </td>
+         <td>
+          29.5
+         </td>
+         <td>
+          0.8779
+         </td>
+         <td>
+          0.7780
+         </td>
+         <td>
+          0.8674
+         </td>
+         <td>
+          0.9337
+         </td>
+         <td>
+          0.9005
+         </td>
+         <td>
+          0.8416
+         </td>
+        </tr>
+        <tr align="center">
+         <td rowspan="3">
+          5
+         </td>
+         <td>
+          MSBE-UNet
+         </td>
+         <td>
+          3.9
+         </td>
+         <td>
+          26.6
+         </td>
+         <td>
+          0.8824
+         </td>
+         <td>
+          0.7845
+         </td>
+         <td>
+          0.8718
+         </td>
+         <td>
+          0.9366
+         </td>
+         <td>
+          0.9112
+         </td>
+         <td>
+          0.8423
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MSBE-SegNet
+         </td>
+         <td>
+          3.5
+         </td>
+         <td>
+          25.5
+         </td>
+         <td>
+          0.8784
+         </td>
+         <td>
+          0.7764
+         </td>
+         <td>
+          0.8660
+         </td>
+         <td>
+          0.9346
+         </td>
+         <td>
+          0.9127
+         </td>
+         <td>
+          0.8327
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          MSBE-CrossLinkNet
+         </td>
+         <td>
+          14.9
+         </td>
+         <td>
+          45.9
+         </td>
+         <td>
+          0.8829
+         </td>
+         <td>
+          0.7856
+         </td>
+         <td>
+          0.8727
+         </td>
+         <td>
+          0.9369
+         </td>
+         <td>
+          0.9113
+         </td>
+         <td>
+          0.8436
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     In the first set of experiments, VGG was utilized as the feature encoder, and ablation studies were conducted using three different backbone networks: UNet, SegNet, and CrossLinkNet. The results indicated that VGG-CrossLinkNet surpassed the other two comparative models across four metrics: FW_IoU, mIoU, mDice, and PA. Specifically, compared to VGG-UNet, CrossLinkNet showed an approximate 1.3% improvement in FW_IoU, about 0.85% in mIoU, around 0.5% in mDice, and a 1.2% increase in PA. Although VGG-SegNet achieved the highest score in mAP at 91.46%, its performance was poorer in other metrics. It is noteworthy that, while the mRecall of CrossLinkNet was slightly lower than that of VGG-UNet, it still represented an improvement of over 5% compared to VGG-SegNet. Overall, the performance of VGG-CrossLinkNet was superior to both VGG-UNet and VGG-SegNet.
+    </p>
+    <p>
+     In the second set of experiments, ResNet34 was employed as the feature encoder, and ablation studies were again conducted using the three distinct backbone networks: UNet, SegNet, and CrossLinkNet. The results demonstrated that ResNet34-CrossLinkNet achieved the best outcomes across five metrics: FW_IoU, mIoU, mDice, PA, and mRecall. Particularly in comparison with ResNet34-SegNet, ResNet34-CrossLinkNet showed superior performance in all metrics, with respective improvements of approximately 4.1%, 7.1%, 5.6%, 2.6%, 4.9%, and 5.9% in FW_IoU, mIoU, mDice, PA, mAP, and mRecall. When compared to ResNet34-UNet, ResNet34-CrossLinkNet was only marginally lower, by about 0.1%, in the mAP metric.
+    </p>
+    <p>
+     In the third set of experiments, ResNet50 was used as the feature encoder, with UNet, SegNet, and CrossLinkNet once again serving as the different backbone networks for ablation studies. The results indicated that ResNet50-CrossLinkNet achieved the best performance in five metrics: FW_IoU, mIoU, mDice, AP, and mAP. Notably, compared to ResNet50-SegNet, ResNet50-CrossLinkNet exhibited substantial improvements in these metrics, with increases of approximately 4%, 9.6%, 7.8%, 1.7%, and 13.7% in FW_IoU, mIoU, mDice, PA, and mRecall, respectively. Although ResNet50-UNet and ResNet50-SegNet showed slightly higher mean precision than ResNet50-CrossLinkNet, they were significantly outperformed in all other metrics by ResNet50-CrossLinkNet.
+    </p>
+    <p>
+     In the fourth set of experiments, MobileNet was employed as the feature encoder, with UNet, SegNet, and CrossLinkNet again used as different backbone networks for ablation studies. The results showed that MobileNet-CrossLinkNet achieved the best outcomes in five metrics: FW_IoU, mIoU, mDice, PA, and mRecall, with respective values of 87.79%, 77.8%, 86.74%, 93.37%, and 84.16%. Particularly in comparison with MobileNet-SegNet, MobileNet-CrossLinkNet demonstrated superior performance in these metrics, showing respective improvements of approximately 1.3%, 3.1%, 2.3%, 0.6%, and 4.5% in FW_IoU, mIoU, mDice, PA, and mRecall. Compared to MobileNet-UNet, MobileNet-CrossLinkNet was only marginally lower by 0.6 percentage points in mAP, but outperformed in all other evaluation metrics.
+    </p>
+    <p>
+     In the fifth set of experiments, MSBE was utilized as the feature encoder, with UNet, SegNet, and CrossLinkNet once again serving as the different backbone networks for ablation studies. The results indicated that MSBE-CrossLinkNet achieved the best performance across five metrics: FW_IoU, mIoU, mDice, PA, and mRecall, with respective values of 88.29%, 78.56%, 87.27%, 93.69%, and 84.36%. Notably, when compared to MSBE-UNet, MSBE-CrossLinkNet surpassed MSBE-UNet's metrics of 88.24%, 78.45%, 87.18%, 93.66%, 91.12%, and 84.23% in all evaluation metric. Compared to MSBE-SegNet, MSBE-CrossLinkNet was only marginally lower by 0.14 percentage points in mAP, yet excelled in all other evaluation metrics.
+    </p>
+    <p>
+     CrossLinkNet's foundational design is centered on boosting model performance via cross-layer connections, notably in feature fusion and information flow. This strategy, however, requires additional parameters and computations to realize such performance improvement, leading to a rise in both parameters and GFLOPs. Therefore, this can be regarded as a trade-off between model performance and computational resources.
+    </p>
+    <p>
+     Comparing the results from the above experiments, our proposed cross-layer linking segmentation network, CrossLinkNet, demonstrated exceptional performance under various encoders, particularly in key metrics like FW_IoU, mIoU, mDice, and PA, where it consistently showed significant advantages. Even in certain evaluation metrics (e.g., mAP) where other models may have a slight edge, CrossLinkNet still maintained a high level of overall performance, illustrating its stability and reliability in different environments. The following content will explore the network structural features of CrossLinkNet from a theoretical perspective, further analyzing the underpinnings for its effectiveness.
+    </p>
+    <p>
+     The primary hallmark of CrossLinkNet is its innovative cross-layer connection structure. CrossLinkNet establishes cross-layer connections among multiple levels, which effectively facilitates the fusion of low-level features with high-level features. This design enables the network to utilize deep abstract information for accurate region determination and to retain more detail information, thereby enhancing the precision of segmentation and the clarity of edges. Additionally, the cross-layer connections aid in better gradient backpropagation, minimizing the loss of information during training and thereby improving the network's learning efficiency and stability. Furthermore, apart from cross-layer connections, CrossLinkNet adopts a modular framework. This modular architecture is crucial for a deeper analysis and comprehension of the model's decision-making processes. Combining cross-layer connections with multi-scale feature encoding, CrossLinkNet not only excels in performance but also enhances the transparency of its network structure. In the aforementioned experiments, these advantages of CrossLinkNet enabled it to achieve superior performance.
+    </p>
+   </sec>
+   <sec id="s5_3">
+    <label>
+     5.3
+    </label>
+    <title>
+     Comparison with state-of-the-arts Models on BOT Dataset
+    </title>
+    <p>
+     To validate the performance advantages of the proposed segmentation network, CrossLinkNet (MSBE), the experiment incorporated a series of classic network models for comparison, including SegNet, UNet++, DeepLabV3+, PidNet, and the latest state-of-the-art (SOTA) model, EnsNet. The experimental results, as shown in
+     <xref ref-type="table" rid="table-4">
+      Table 4
+     </xref>
+     , clearly demonstrate the exceptional performance of CrossLinkNet (MSBE) across various evaluation metrics. Specifically, CrossLinkNet (MSBE) achieved an FW_IoU of 88.29%, significantly surpassing SegNet, UNet++, DeepLabV3+, PidNet, and EnsNet, and leading the second-best model, PidNet, by a margin of 0.35 percentage points. In terms of mIoU, its performance of 78.56% was also the highest, exceeding the second-placed PidNet by 0.98 percentage points. For the mDice, CrossLinkNet (MSBE) led other networks with a score of 87.27%. In PA, it reached the peak performance of 93.69%, slightly ahead of PidNet's 93.56% by 0.13 percentage points. Although in mAP, CrossLinkNet (MSBE)'s 91.13% was slightly lower than PidNet's 91.96%, its performance was still highly competitive compared to other networks. Finally, CrossLinkNet (MSBE) also achieved the best result in mRecall with 84.36%.
+    </p>
+    <table-wrap id="table-4">
+     <label>
+      Table 4
+     </label>
+     <caption>
+      <title>
+       CrossLinkNet (MSBE) Performance Comparison to SOTA models with BOT Datasets
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-table-4.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          Model
+         </th>
+         <th>
+          FW_IoU
+         </th>
+         <th>
+          mIoU
+         </th>
+         <th>
+          mDice
+         </th>
+         <th>
+          PA
+         </th>
+         <th>
+          mAP
+         </th>
+         <th>
+          mRecall
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td>
+          SegNet[
+          <xref ref-type="bibr" rid="ref-25">
+           25
+          </xref>
+          ]
+         </td>
+         <td>
+          0.8191
+         </td>
+         <td>
+          0.6668
+         </td>
+         <td>
+          0.7779
+         </td>
+         <td>
+          0.8998
+         </td>
+         <td>
+          0.8575
+         </td>
+         <td>
+          0.7363
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          UNet++[
+          <xref ref-type="bibr" rid="ref-26">
+           26
+          </xref>
+          ]
+         </td>
+         <td>
+          0.8554
+         </td>
+         <td>
+          0.7379
+         </td>
+         <td>
+          0.8377
+         </td>
+         <td>
+          0.9201
+         </td>
+         <td>
+          0.8761
+         </td>
+         <td>
+          0.8095
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          DeepLabV3+[
+          <xref ref-type="bibr" rid="ref-27">
+           27
+          </xref>
+          ]
+         </td>
+         <td>
+          0.8656
+         </td>
+         <td>
+          0.7544
+         </td>
+         <td>
+          0.8501
+         </td>
+         <td>
+          0.9263
+         </td>
+         <td>
+          0.8875
+         </td>
+         <td>
+          0.8221
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          PidNet[
+          <xref ref-type="bibr" rid="ref-28">
+           28
+          </xref>
+          ]
+         </td>
+         <td>
+          0.8794
+         </td>
+         <td>
+          0.7758
+         </td>
+         <td>
+          0.8655
+         </td>
+         <td>
+          0.9356
+         </td>
+         <td>
+          0.9196
+         </td>
+         <td>
+          0.8284
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          EnsNet[
+          <xref ref-type="bibr" rid="ref-29">
+           29
+          </xref>
+          ]
+         </td>
+         <td>
+          0.8694
+         </td>
+         <td>
+          0.7630
+         </td>
+         <td>
+          0.8566
+         </td>
+         <td>
+          0.9285
+         </td>
+         <td>
+          0.8903
+         </td>
+         <td>
+          0.8307
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          CrossLinkNet (MSBE)
+         </td>
+         <td>
+          0.8829
+         </td>
+         <td>
+          0.7856
+         </td>
+         <td>
+          0.8727
+         </td>
+         <td>
+          0.9369
+         </td>
+         <td>
+          0.9113
+         </td>
+         <td>
+          0.8436
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     To visually demonstrate the performance of CrossLinkNet (MSBE) in image segmentation tasks, we selected three pathological images from the test set for visualization analysis, as shown in Figure 5. The first image contains multiple small tumor regions, used to assess the model's capability in segmenting small targets. The second image displays a large tumor area, aimed at examining the model's effectiveness in handling large targets. The third image is a mixed case, containing both large and small tumor regions, to evaluate the model's comprehensive segmentation performance for targets of varying sizes. In these images, the green areas represent the correctly predicted parts by the model (i.e., True Positive), the red areas indicate incorrect predictions (i.e., False Positive), and the blue areas denote the portions that the model failed to recognize (i.e., False Negative). The comparison of these three groups of images clearly demonstrates CrossLinkNet's exceptional segmentation performance in various scenarios.
+    </p>
+    <fig id="fig-5">
+     <label>
+      Figure 5
+     </label>
+     <caption>
+      <title>
+       Comparison results of pathological image segmentation experiment
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-fig-5.jpg"/>
+    </fig>
+   </sec>
+   <sec id="s5_4">
+    <label>
+     5.4
+    </label>
+    <title>
+     Comparison with state-of-the-arts Models on Kvasir Dataset
+    </title>
+    <p>
+     To assess the versatility of the proposed segmentation network, CrossLinkNet (MSBE), across various medical datasets, we conducted a series of comparative tests using the Kvasir dataset. The Kvasir dataset is specifically designed for research in gastrointestinal (GI) imagery and videos, encompassing various GI anatomical landmarks as well as a subset dedicated to GI polyp segmentation. This experiment utilized the polyp segmentation subset of the Kvasir dataset to evaluate the performance of CrossLinkNet (MSBE) in segmenting GI tract polyps. The comparative networks used in the experiment included SegNet, UNet++, DeepLabV3+, PidNet and EnsNet, with detailed results presented in
+     <xref ref-type="table" rid="table-5">
+      Table 5
+     </xref>
+     .
+    </p>
+    <table-wrap id="table-5">
+     <label>
+      Table 5
+     </label>
+     <caption>
+      <title>
+       CrossLinkNet (MSBE) Performance Comparison to SOTA models with Kvasir Datasets
+      </title>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-table-5.tif"/>
+      <table>
+       <colgroup>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+        <col align="center"/>
+       </colgroup>
+       <thead>
+        <tr align="center">
+         <th>
+          Model
+         </th>
+         <th>
+          FW_IoU
+         </th>
+         <th>
+          mIoU
+         </th>
+         <th>
+          mDice
+         </th>
+         <th>
+          PA
+         </th>
+         <th>
+          mAP
+         </th>
+         <th>
+          mRecall
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr align="center">
+         <td>
+          SegNet[
+          <xref ref-type="bibr" rid="ref-25">
+           25
+          </xref>
+          ]
+         </td>
+         <td>
+          0.9179
+         </td>
+         <td>
+          0.7943
+         </td>
+         <td>
+          0.8766
+         </td>
+         <td>
+          0.9562
+         </td>
+         <td>
+          0.9198
+         </td>
+         <td>
+          0.8434
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          UNet++[
+          <xref ref-type="bibr" rid="ref-26">
+           26
+          </xref>
+          ]
+         </td>
+         <td>
+          0.9395
+         </td>
+         <td>
+          0.8505
+         </td>
+         <td>
+          0.9151
+         </td>
+         <td>
+          0.9679
+         </td>
+         <td>
+          0.9307
+         </td>
+         <td>
+          0.9009
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          DeepLabV3+[
+          <xref ref-type="bibr" rid="ref-27">
+           27
+          </xref>
+          ]
+         </td>
+         <td>
+          0.9456
+         </td>
+         <td>
+          0.8670
+         </td>
+         <td>
+          0.9256
+         </td>
+         <td>
+          0.9708
+         </td>
+         <td>
+          0.9258
+         </td>
+         <td>
+          0.9254
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          PidNet[
+          <xref ref-type="bibr" rid="ref-28">
+           28
+          </xref>
+          ]
+         </td>
+         <td>
+          0.9489
+         </td>
+         <td>
+          0.8734
+         </td>
+         <td>
+          0.9296
+         </td>
+         <td>
+          0.9728
+         </td>
+         <td>
+          0.9343
+         </td>
+         <td>
+          0.9250
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          EnsNet[
+          <xref ref-type="bibr" rid="ref-29">
+           29
+          </xref>
+          ]
+         </td>
+         <td>
+          0.9523
+         </td>
+         <td>
+          0.8811
+         </td>
+         <td>
+          0.9343
+         </td>
+         <td>
+          0.9749
+         </td>
+         <td>
+          0.9435
+         </td>
+         <td>
+          0.9256
+         </td>
+        </tr>
+        <tr align="center">
+         <td>
+          CrossLinkNet (MSBE)
+         </td>
+         <td>
+          0.9537
+         </td>
+         <td>
+          0.8846
+         </td>
+         <td>
+          0.9364
+         </td>
+         <td>
+          0.9756
+         </td>
+         <td>
+          0.9440
+         </td>
+         <td>
+          0.9292
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     Based on the experimental results from the Kvasir dataset, it is evident that our proposed CrossLinkNet (MSBE) outperformed all other comparative network models in every evaluation metric. Specifically, CrossLinkNet (MSBE) achieved a FW_IoU of 95.37%, which is 0.14 percentage points higher than the second-ranked EnsNet and 3.58 percentage points above the lowest-ranked SegNet. In the mIoU metric, CrossLinkNet (MSBE) led with 88.46%, ahead of EnsNet's 88.11% and surpassing SegNet's 79.43% by 9.03 percentage points. For mDice, CrossLinkNet (MSBE) scored 93.64%, slightly higher than EnsNet's 93.43% and more than 1 percentage point higher compared to SegNet, UNet++, and DeepLabV3+. In terms of PA, mAP, and mRecall, CrossLinkNet (MSBE) performed at 97.56%, 94.40%, and 92.92%, respectively, outperforming the second-best EnsNet by 0.07 percentage points, 0.05 percentage points, and 0.36 percentage points, while significantly surpassing the results of SegNet, UNet++, and DeepLabV3+.
+    </p>
+    <p>
+     To visually demonstrate the performance of the proposed CrossLinkNet model in different types of gastrointestinal (GI) tract image segmentation tasks, the experiment selected three representative images from the test set for visualization analysis, as illustrated in Figure 6. The first image displays a GI tract image containing small polyps, used to assess the model's segmentation effectiveness on small targets. The second image includes larger polyps, testing the model's ability to segment larger targets. The third image is a mixed case, containing both large and small polyps, used to evaluate the model's segmentation performance when dealing with targets of varying sizes simultaneously. In these images, green areas represent correctly predicted parts by the model (i.e., True Positive), red areas denote incorrect predictions (i.e., False Positive), and purple areas are the portions that the model failed to recognize (i.e., False Negative). The comparison of these three groups of images clearly indicates that CrossLinkNet demonstrates exceptional segmentation performance in various scenarios, validating its effectiveness and precision in medical image segmentation.
+    </p>
+    <fig id="fig-6">
+     <label>
+      Figure 6
+     </label>
+     <caption>
+      <title>
+       Comparison results of upper gastrointestinal polyp segmentation experiment
+      </title>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_CMC_49791-fig-6.jpg"/>
+    </fig>
+    <p>
+     In Sections 5.3 and 5.4, we have showcased the comparative results of CrossLinkNet (MSBE) against other models on the BOT and Kvasir datasets. These experimental results demonstrate that CrossLinkNet (MSBE) surpasses other network models on several critical performance metrics. The subsequent content will analyze the reasons for the superior performance of CrossLinkNet (MSBE) from a theoretical perspective.
+    </p>
+    <p>
+     The superior performance of CrossLinkNet (MSBE) across diverse datasets and tasks can be attributed to a confluence of critical factors. Foremost among these is MSBE's prowess in multi-scale feature extraction. By leveraging convolutional kernels of different scales, MSBE is capable of capturing both the detailed information and the global context of images simultaneously. This multi-scale feature extraction mechanism is particularly suitable for medical images, as they often contain lesions of varying significantly in size and morphology. Such a design enables CrossLinkNet (MSBE) to more accurately identify and segment lesion areas of various scales. Secondly, it benefits from the cross-layer connections and shortcut connections in CrossLinkNet (MSBE). The cross-layer connection structure in CrossLinkNet facilitates the fusion of features from different levels, integrating low-level details into the overarching decision-making process. This not only enhances the model's segmentation precision but also improves the delineation of edges, which is pivotal for intricate medical image segmentation tasks. Additionally, shortcut connections tackle the gradient vanishing issue inherent in deep network training, facilitating the seamless flow of information across layers. This process is instrumental in recapturing fine details and elevating segmentation fidelity. Finally, the modular design of CrossLinkNet (MSBE) plays a pivotal role. This design approach bolsters the model's transparency and explicability. Through cross-layer connections and multi-scale feature encoding, CrossLinkNet (MSBE) not only achieves excellent performance but also provides more comprehensible visual insights into its decision-making mechanics, which is of great significance for improving the accuracy and credibility of clinical diagnoses.
+    </p>
+    <p>
+     In conclusion, CrossLinkNet (MSBE)'s distinguished performance in various tasks stems from its sophisticated multi-scale feature extraction, potent feature fusion mechanisms, and a strong focus on model interpretability. These integrated features not only elevate segmentation precision and robustness but also offer an interpretable solution for medical image segmentation tasks.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s6">
+   <label>
+    6
+   </label>
+   <title>
+    Discussion
+   </title>
+   <p>
+    The introduction of CrossLinkNet, with its innovative MSBE and cross-layer connections, marks a significant advancement in whole-slide image segmentation. However, its performance is limited by the inherent variability and complexity of medical datasets, thus it is necessary to further explore adaptive feature extraction methods and data augmentation strategies to enhance robustness.  Additionally, the model's computational intensity, necessitated by the high-resolution nature of whole-slide images, poses scalability challenges, especially in resource-constrained settings. Addressing this issue may require architectural optimizations to improve efficiency without compromising performance. Moreover, the impact of different feature encoders on the model's effectiveness is a crucial consideration. The comparative performance of MSBE against traditional encoders like VGG, ResNet, and MobileNet within the CrossLinkNet framework warrants a detailed examination to identify the most suitable encoder for specific segmentation tasks. Future enhancements to CrossLinkNet should focus on these areas to bolster its adaptability, scalability, and overall performance in the evolving field of medical images.
+   </p>
+  </sec>
+  <sec id="s7">
+   <label>
+    7
+   </label>
+   <title>
+    Conclusion
+   </title>
+   <p>
+    In this study, we present CrossLinkNet, an innovative segmentation network for whole slide images with a focus on explainable AI, marking a significant advancement in the field of medical image analysis. The introduction of the Multi-Scale Multi-Branch Feature Encoder (MSBE) represents a pivotal innovation, enhancing the network's ability to extract nuanced features effectively. This encoder's adaptability in configuration through hyperparameter adjustments allows for flexibility and precision in feature extraction. Furthermore, CrossLinkNet's unique cross-layer encoder-decoder connections markedly improve feature integration, thereby elevating segmentation accuracy. Our comprehensive experiments on datasets like BOT and Kvasir have showcased CrossLinkNet's exceptional performance. Crucially, the incorporation of explainable AI principles within CrossLinkNet addresses the pressing need for interpretability in medical diagnostics, thereby contributing to the field of digital pathology and automated diagnostic technologies. This research not only presents innovative methodologies but also emphasizes the pivotal role of explainable AI in advancing medical imaging analysis.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <p>
+    The authors would like to extend their gratitude to the Network and Data Security Key Laboratory of Sichuan Province for their invaluable support. We also acknowledge the significant contributions and resources provided by the University of Electronic Science and Technology of China. Their assistance was instrumental in the completion of this research.
+   </p>
+  </ack>
+  <fn-group>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Funding Statement
+     </bold>
+     This work was supported by the National Natural Science Foundation of China (Grant Numbers 62372083, 62072074, 62076054, 62027827, 62002047); the Sichuan Provincial Science and Technology Innovation Platform and Talent Program (Grant Number 2022JDJQ0039); the Sichuan Provincial Science and Technology Support Program (Grant Numbers 2022YFQ0045, 2022YFS0220, 2021YFG0131, 2023YFS0020, 2023YFS0197, 2023YFG0148); and the CCF-Baidu Open Fund (Grant Number 202312).
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Author Contributions
+     </bold>
+     <bold>
+     </bold>
+     The authors confirm contribution to the paper as follows study conception and design Peng Xiao, Qi Zhong;   dataset and experiments Peng Xiao, Dongyuan Wu;   analysis and interpretation of results Peng Xiao, Zhen Qin;   draft manuscript preparation Peng Xiao, Jingxue Chen, Erqiang Zhou.   All authors reviewed the results and approved the final version of the manuscript.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     There are no data and materials available to share.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+  </fn-group>
+  <ref-list content-type="authoryear">
+   <title>
+    References
+   </title>
+   <ref id="ref-1">
+    <label>
+     1
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shafi
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Parwani
+       </surname>
+       <given-names>
+        A. V.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Artificial intelligence in diagnostic pathology
+     </article-title>
+     <source>
+      Diagnostic pathology
+     </source>
+     <volume>
+      18
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2023
+     </year>
+     <fpage>
+      109
+     </fpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-2">
+    <label>
+     2
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Hunter
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hindocha
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lee
+       </surname>
+       <given-names>
+        R. W.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      The role of artificial intelligence in early cancer diagnosis
+     </article-title>
+     <source>
+      Cancers
+     </source>
+     <volume>
+      14
+     </volume>
+     <issue>
+      6
+     </issue>
+     <year>
+      2022
+     </year>
+     <fpage>
+      1524
+     </fpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-3">
+    <label>
+     3
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Lai
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Fu
+       </surname>
+       <given-names>
+        J.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        Q.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Deng
+       </surname>
+       <given-names>
+        N.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Jiang
+       </surname>
+       <given-names>
+        Q.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Peng
+       </surname>
+       <given-names>
+        J.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Artificial intelligence in cancer pathology: Challenge to meet increasing demands of precision medicine
+     </article-title>
+     <source>
+      International Journal of Oncology
+     </source>
+     <volume>
+      63
+     </volume>
+     <issue>
+      3
+     </issue>
+     <year>
+      2023
+     </year>
+     <fpage>
+      1
+     </fpage>
+     <lpage>
+      30
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-4">
+    <label>
+     4
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Guo
+       </surname>
+       <given-names>
+        W.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Tondi
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Barni
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Universal detection of backdoor attacks via density-based clustering and centroids analysis
+     </article-title>
+     <source>
+      IEEE Transactions on Information Forensics and Security
+     </source>
+     <volume>
+      19
+     </volume>
+     <issue>
+      None
+     </issue>
+     <year>
+      2024
+     </year>
+     <fpage>
+      970
+     </fpage>
+     <lpage>
+      984
+     </lpage>
+     <pub-id>
+      None
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-5">
+    <label>
+     5
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ladbury
+       </surname>
+       <given-names>
+        C.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zarinshenas
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Semwal
+       </surname>
+       <given-names>
+        H.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Tam
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Vaidehi
+       </surname>
+       <given-names>
+        N.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Rodin
+       </surname>
+       <given-names>
+        A. S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Glaser
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Salgia
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Amini
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Utilization of modelagnostic explainable artificial intelligence frameworks in oncology: a narrative review
+     </article-title>
+     <source>
+      Translational Cancer Research
+     </source>
+     <volume>
+      11
+     </volume>
+     <issue>
+      10
+     </issue>
+     <year>
+      2022
+     </year>
+     <fpage>
+      3853
+     </fpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-6">
+    <label>
+     6
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Farhadloo
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Molnar
+       </surname>
+       <given-names>
+        C.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Luo
+       </surname>
+       <given-names>
+        G.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        Y.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Shekhar
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Maus
+       </surname>
+       <given-names>
+        R. L.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Markovic
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Leontovich
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Moore
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Samcnet: towards a spatially explainable AI approach for classifying MXIF oncology data
+     </article-title>
+     <source>
+      Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+     </source>
+     <year>
+      2022 ,Aug.
+     </year>
+     <fpage>
+      2860
+     </fpage>
+     <lpage>
+      2870
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-7">
+    <label>
+     7
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Fang
+       </surname>
+       <given-names>
+        G.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sun
+       </surname>
+       <given-names>
+        Y.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Almutiq
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhou
+       </surname>
+       <given-names>
+        W.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        Y.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ren
+       </surname>
+       <given-names>
+        Y.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Distributed medical data storage mechanism based on proof of retrievability and vector commitment for metaverse services
+     </article-title>
+     <source>
+      IEEE Journal of Biomedical and Health Informatics
+     </source>
+     <year>
+      2023
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-8">
+    <label>
+     8
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ramirez-Mena
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Andres-Leon
+       </surname>
+       <given-names>
+        E.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Alvarez-Cubero
+       </surname>
+       <given-names>
+        M. J.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Anguita-Ruiz
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Martinez-Gonzalez
+       </surname>
+       <given-names>
+        L. J.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Alcala-Fdez
+       </surname>
+       <given-names>
+        J.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Explainable artificial intelligence to predict and identify prostate cancer tissue by gene expression
+     </article-title>
+     <source>
+      Computer Methods and Programs in Biomedicine
+     </source>
+     <volume>
+      240
+     </volume>
+     <year>
+      2023
+     </year>
+     <fpage>
+      107719
+     </fpage>
+     <pub-id>
+      https://doi.org/10.1016/j.cmpb.2023.107719
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-9">
+    <label>
+     9
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Khened
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kori
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Rajkumar
+       </surname>
+       <given-names>
+        H.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Krishnamurthi
+       </surname>
+       <given-names>
+        G.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Srinivasan
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      A generalized deep learning framework for whole-slide image segmentation and analysis
+     </article-title>
+     <source>
+      Scientific reports
+     </source>
+     <volume>
+      11
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2021
+     </year>
+     <fpage>
+      11579
+     </fpage>
+     <pub-id>
+      https://doi.org/10.1038/s41598-021-89923-y
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-10">
+    <label>
+     10
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Alkhalaf
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Alturise
+       </surname>
+       <given-names>
+        F.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Bahaddad
+       </surname>
+       <given-names>
+        A. A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Elnaim
+       </surname>
+       <given-names>
+        B. M. E.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Shabana
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Abdel-Khalek
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mansour
+       </surname>
+       <given-names>
+        R. F.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Adaptive aquila optimizer with explainable artificial intelligence-enabled cancer diagnosis on medical imaging
+     </article-title>
+     <source>
+      Cancers
+     </source>
+     <volume>
+      15
+     </volume>
+     <issue>
+      5
+     </issue>
+     <year>
+      2023
+     </year>
+     <fpage>
+      1492
+     </fpage>
+     <pub-id>
+      https://doi.org/10.3390/cancers15051492
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-11">
+    <label>
+     11
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Djavanshir
+       </surname>
+       <given-names>
+        G. R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        X.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        W.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      A review of artificial intelligence's neural networks (deep learning) applications in medical diagnosis and prediction
+     </article-title>
+     <source>
+      It Professional
+     </source>
+     <volume>
+      23
+     </volume>
+     <issue>
+      3
+     </issue>
+     <year>
+      2021
+     </year>
+     <fpage>
+      58
+     </fpage>
+     <lpage>
+      62
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-12">
+    <label>
+     12
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Araujo
+       </surname>
+       <given-names>
+        A. L. D.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        da Silva
+       </surname>
+       <given-names>
+        V. M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kudo
+       </surname>
+       <given-names>
+        M. S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        de Souza
+       </surname>
+       <given-names>
+        E. S. C.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Saldivia-Siracusa
+       </surname>
+       <given-names>
+        C.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Giraldo-Roldan
+       </surname>
+       <given-names>
+        D.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lopes
+       </surname>
+       <given-names>
+        M. A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Vargas
+       </surname>
+       <given-names>
+        P. A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Khurram
+       </surname>
+       <given-names>
+        S. A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Pearson
+       </surname>
+       <given-names>
+        A. T.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Machine learning concepts applied to oral pathology and oral medicine: A convolutional neural networks' approach
+     </article-title>
+     <source>
+      Journal of Oral Pathology  Medicine
+     </source>
+     <volume>
+      52
+     </volume>
+     <year>
+      2023
+     </year>
+     <fpage>
+      109
+     </fpage>
+     <lpage>
+      118
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-13">
+    <label>
+     13
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Chiwariro
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Julius
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Comparative analysis of deep learning convolutional neural networks based on transfer learning for pneumonia detection
+     </article-title>
+     <source>
+      Int. J. Res. Appl. Sci. Eng. Technol
+     </source>
+     <volume>
+      11
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2023
+     </year>
+     <fpage>
+      1161
+     </fpage>
+     <lpage>
+      1170
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-14">
+    <label>
+     14
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        An
+       </surname>
+       <given-names>
+        N. S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lan
+       </surname>
+       <given-names>
+        P. N.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hang
+       </surname>
+       <given-names>
+        D. V.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Long
+       </surname>
+       <given-names>
+        D. V.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Trung
+       </surname>
+       <given-names>
+        T. Q.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Thuy
+       </surname>
+       <given-names>
+        N. T.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sang
+       </surname>
+       <given-names>
+        D. V.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Blazeneo: Blazing fast polyp segmentation and neoplasm detection
+     </article-title>
+     <source>
+      IEEE Access
+     </source>
+     <volume>
+      10
+     </volume>
+     <year>
+      2022
+     </year>
+     <fpage>
+      43669
+     </fpage>
+     <lpage>
+      43684
+     </lpage>
+     <pub-id>
+      https://doi.org/10.1109/ACCESS.2022.3164333
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-15">
+    <label>
+     15
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Roszkowiak
+       </surname>
+       <given-names>
+        L.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Korzynska
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Pijanowska
+       </surname>
+       <given-names>
+        D.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Bosch
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lejeune
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lopez
+       </surname>
+       <given-names>
+        C.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Clustered nuclei splitting based on recurrent distance transform in digital pathology images
+     </article-title>
+     <source>
+      EURASIP Journal on Image and Video Processing
+     </source>
+     <year>
+      2020
+     </year>
+     <pub-id>
+      10.1186/s13640-020-00514-6
+     </pub-id>
+     <web-url>
+      https://doi.org/10.1186/s13640-020-00514-6
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-16">
+    <label>
+     16
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Otsu
+       </surname>
+       <given-names>
+        N.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      A threshold selection method from gray-level histograms
+     </article-title>
+     <source>
+      IEEE transactions on systems, man, and cybernetics
+     </source>
+     <volume>
+      9
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      1979
+     </year>
+     <fpage>
+      62
+     </fpage>
+     <lpage>
+      66
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-17">
+    <label>
+     17
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Zhu
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Xia
+       </surname>
+       <given-names>
+        X.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        Q.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Belloulata
+       </surname>
+       <given-names>
+        K.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      An image segmentation algorithm in image processing based on threshold segmentation
+     </article-title>
+     <source>
+      2007 third international IEEE conference on signal-image technologies and internet-based system
+     </source>
+     <year>
+      2007 ,Dec.
+     </year>
+     <fpage>
+      673
+     </fpage>
+     <lpage>
+      678
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-18">
+    <label>
+     18
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        P.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Song
+       </surname>
+       <given-names>
+        W.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        X.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zheng
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Qingge
+       </surname>
+       <given-names>
+        L.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      An improved otsu threshold segmentation algorithm
+     </article-title>
+     <source>
+      International Journal of Computational Science and Engineering
+     </source>
+     <volume>
+      22
+     </volume>
+     <issue>
+      1
+     </issue>
+     <year>
+      2020
+     </year>
+     <fpage>
+      146
+     </fpage>
+     <lpage>
+      153
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-19">
+    <label>
+     19
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Guo
+       </surname>
+       <given-names>
+        W.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Tondi
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Barni
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      An overview of backdoor attacks against deep neural networks and possible defences
+     </article-title>
+     <source>
+      IEEE Open Journal of Signal Processing
+     </source>
+     <volume>
+      3
+     </volume>
+     <issue>
+      None
+     </issue>
+     <year>
+      2022
+     </year>
+     <fpage>
+      261
+     </fpage>
+     <lpage>
+      287
+     </lpage>
+     <pub-id>
+      None
+     </pub-id>
+     <web-url>
+      None
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-20">
+    <label>
+     20
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Kiran GV
+       </surname>
+       <given-names>
+        K.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Reddy
+       </surname>
+       <given-names>
+        G. Meghana
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Automatic classification of whole slide pap smear images using cnn with pca based feature interpretation
+     </article-title>
+     <source>
+      Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops
+     </source>
+     <year>
+      2019 ,Jun.
+     </year>
+     <fpage>
+      pp.
+     </fpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-21">
+    <label>
+     21
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Lin
+       </surname>
+       <given-names>
+        H.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        H.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        X.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        Q.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        L.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Heng
+       </surname>
+       <given-names>
+        P.-A.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Dualpath network with synergistic grouping loss and evidence driven risk stratification for whole slide cervical image analysis
+     </article-title>
+     <source>
+      Medical Image Analysis
+     </source>
+     <volume>
+      69
+     </volume>
+     <year>
+      2021
+     </year>
+     <fpage>
+      101955
+     </fpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-22">
+    <label>
+     22
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Dosovitskiy
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Beyer
+       </surname>
+       <given-names>
+        L.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kolesnikov
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Weissenborn
+       </surname>
+       <given-names>
+        D.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhai
+       </surname>
+       <given-names>
+        X.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Unterthiner
+       </surname>
+       <given-names>
+        T.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Dehghani
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Minderer
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Heigold
+       </surname>
+       <given-names>
+        G.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Gelly
+       </surname>
+       <given-names>
+        S.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      An image is worth 16x16 words: Transformers for image recognition  at scale
+     </article-title>
+     <source>
+      arXiv preprint arXiv:2010.11929
+     </source>
+     <year>
+      2020
+     </year>
+     <pub-id>
+      https://doi.org/10.48550/arXiv.2010.11929
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-23">
+    <label>
+     23
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        R. J.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lu
+       </surname>
+       <given-names>
+        M. Y.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Weng
+       </surname>
+       <given-names>
+        W.-H.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        T. Y.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Williamson
+       </surname>
+       <given-names>
+        D. F.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Manz
+       </surname>
+       <given-names>
+        T.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Shady
+       </surname>
+       <given-names>
+        M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mahmood
+       </surname>
+       <given-names>
+        F.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Multimodal co-attention transformer for survival prediction in gigapixel whole slide images
+     </article-title>
+     <source>
+      Proceedings of the IEEE/CVF International Conference on Computer Vision
+     </source>
+     <year>
+      2021
+     </year>
+     <fpage>
+      4015
+     </fpage>
+     <lpage>
+      4025
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-24">
+    <label>
+     24
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Yin
+       </surname>
+       <given-names>
+        P.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yu
+       </surname>
+       <given-names>
+        B.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Jiang
+       </surname>
+       <given-names>
+        C.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        H.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Pyramid tokens-to-token vision transformer for thyroid pathology image classification
+     </article-title>
+     <source>
+      2022 Eleventh International Conference on Image Processing Theory, Tools and Applications (IPTA)
+     </source>
+     <year>
+      2022
+     </year>
+     <fpage>
+      1
+     </fpage>
+     <lpage>
+      6
+     </lpage>
+     <comment>
+      IEEE
+     </comment>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-25">
+    <label>
+     25
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Badrinarayanan
+       </surname>
+       <given-names>
+        V.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kendall
+       </surname>
+       <given-names>
+        A.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Cipolla
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Segnet: A deep convolutional encoder-decoder architecture for image segmentation
+     </article-title>
+     <source>
+      IEEE transactions on pattern analysis and machine intelligence
+     </source>
+     <volume>
+      39
+     </volume>
+     <issue>
+      12
+     </issue>
+     <year>
+      2017
+     </year>
+     <fpage>
+      2481
+     </fpage>
+     <lpage>
+      2495
+     </lpage>
+     <pub-id>
+      https://doi.org/10.1109/TPAMI.2016.2644615
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-26">
+    <label>
+     26
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Zhou
+       </surname>
+       <given-names>
+        Z.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Rahman Siddiquee
+       </surname>
+       <given-names>
+        M. M.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Tajbakhsh
+       </surname>
+       <given-names>
+        N.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liang
+       </surname>
+       <given-names>
+        J.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Unet++: A nested u-net architecture for medical image segmentation
+     </article-title>
+     <source>
+      Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support: 4th International Workshop, DLMIA 2018, and 8th International Workshop, ML-CDS 2018, Held in Conjunction with MICCAI 2018, Granada, Spain, September 20, 2018, Proceedings 4
+     </source>
+     <year>
+      2018
+     </year>
+     <fpage>
+      3
+     </fpage>
+     <lpage>
+      11
+     </lpage>
+     <comment>
+      Springer
+     </comment>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-27">
+    <label>
+     27
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        L.-C.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhu
+       </surname>
+       <given-names>
+        Y.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Papandreou
+       </surname>
+       <given-names>
+        G.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Schroff
+       </surname>
+       <given-names>
+        F.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Adam
+       </surname>
+       <given-names>
+        H.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Encoder decoder with atrous separable convolution for semantic image segmentation
+     </article-title>
+     <source>
+      Proceedings of the European Conference on Computer Vision (ECCV)
+     </source>
+     <year>
+      2018
+     </year>
+     <fpage>
+      801
+     </fpage>
+     <lpage>
+      818
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-28">
+    <label>
+     28
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Xu
+       </surname>
+       <given-names>
+        J.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Xiong
+       </surname>
+       <given-names>
+        Z.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Bhattacharyya
+       </surname>
+       <given-names>
+        S. P.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Pidnet: A real-time semantic segmentation network inspired by pid controllers
+     </article-title>
+     <source>
+      Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+     </source>
+     <year>
+      2023 ,Jun.
+     </year>
+     <fpage>
+      19529
+     </fpage>
+     <lpage>
+      19539
+     </lpage>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-29">
+    <label>
+     29
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Prusty
+       </surname>
+       <given-names>
+        M. R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Dinesh
+       </surname>
+       <given-names>
+        R.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sheth
+       </surname>
+       <given-names>
+        H. S. Kumar
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Viswanath
+       </surname>
+       <given-names>
+        A. L.
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Satapathy
+       </surname>
+       <given-names>
+        S. K.
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Nuclei segmentation in histopathology images using structure-preserving color normalization based ensemble deep learning frameworks.
+     </article-title>
+     <source>
+      Computers, Materials  Continua
+     </source>
+     <volume>
+      77
+     </volume>
+     <issue>
+      3
+     </issue>
+     <year>
+      2023
+     </year>
+     <fpage>
+      1
+     </fpage>
+     <lpage>
+      18
+     </lpage>
+    </mixed-citation>
+   </ref>
+  </ref-list>
+ </back>
+</article>

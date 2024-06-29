@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <article xmlns:ns0="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.0">
  <front>
   <journal-meta>
@@ -45,12 +46,12 @@
     </subj-group>
    </article-categories>
    <title-group>
-    <article-title>Natural Convection of a Power-law Nanofluid in a Square Cavity with a Vertical Fin</article-title>
+    <article-title>Natural Convect+ion + of a Power-law Nanofluid in a Square Cavity with a Vertical Fin</article-title>
     <alt-title alt-title-type="left-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convect+ion + of a power-law nanofluid in a square cavity with a vertical fin
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convect+ion + of a power-law nanofluid in a square cavity with a vertical fin
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">
@@ -142,7 +143,7 @@
      <country>
       France
      </country>
-    <new>mew</new></aff>
+    </aff>
     <aff id="aff-2">
      <label>
       <sup>
@@ -155,7 +156,7 @@
      <country>
       Tunisia
      </country>
-    <new>mew</new></aff>
+    </aff>
     <aff id="aff-3">
      <label>
       <sup>
@@ -168,7 +169,7 @@
      <country>
       France
      </country>
-    <new>mew</new></aff>
+    </aff>
    </contrib-group>
    <author-notes>
     <corresp id="cor1">
@@ -203,7 +204,9 @@
    </lpage>
    <history>
     <date date-type="received">
-     <day>07</day>
+     <day>
+      17
+     </day>
      <month>
       2
      </month>
@@ -225,7 +228,7 @@
    </history>
    <permissions>
     <copyright-statement>
-     &#169; 2024 M'hadbi et al.
+     © 2024 M'hadbi et al.
     </copyright-statement>
     <copyright-year>
      2024
@@ -256,13 +259,13 @@
           l
          </mi>
          <mo>
-          &#8322;
+          ₂
          </mo>
          <mi>
           O
          </mi>
          <mo>
-          &#8323;
+          ₃
          </mo>
         </math>
        </tex-math>
@@ -285,7 +288,7 @@
           O
          </mi>
          <mo>
-          &#8322;
+          ₂
          </mo>
         </math>
        </tex-math>
@@ -337,7 +340,7 @@
           </mrow>
          </msup>
          <mo>
-          &#8722;
+          −
          </mo>
          <msup>
           <mrow>
@@ -363,7 +366,7 @@
         
         <math>
          <mi>
-          &#966;
+          φ
          </mi>
          <mo>
           =
@@ -372,7 +375,7 @@
           0
          </mn>
          <mo>
-          &#8722;
+          −
          </mo>
          <mn>
           20
@@ -401,7 +404,7 @@
           0.6
          </mn>
          <mo>
-          &#8722;
+          −
          </mo>
          <mn>
           1.4
@@ -447,13 +450,13 @@
           l
          </mi>
          <mo>
-          &#8322;
+          ₂
          </mo>
          <mi>
           O
          </mi>
          <mo>
-          &#8323;
+          ₃
          </mo>
         </math>
        </tex-math>
@@ -476,7 +479,7 @@
           O
          </mi>
          <mo>
-          &#8322;
+          ₂
          </mo>
         </math>
        </tex-math>
@@ -537,12 +540,12 @@
  </front>
  <body>
   <sec id="s1">
-   <label>
+   <label><b>
     1
-   </label>
-   <title>
+   </b></label>
+   <title><b>
     Introduction
-   </title>
+   </b></title>
    <p>
     Free convection heat transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics . Researchers have expressed significant concern regarding the enhancement of heat transfer in free convection due to its inherently low heat transfer coefficient. Consequently, they actively explored diverse techniques and concepts to improve the heat transfer in this process. One of those techniques that researchers frequently focus on is adding nanoparticles to the conventional working fluid. The addition of nanoparticles enhances the thermophysical properties of the base fluid, particularly thermal conductivity, a pivotal parameter that improves the heat transfer mechanisms . Therefore, the single-phase model was largely employed due to its simplicity and computational efficiency, making it suitable for diluting nanofluids with low nanoparticle concentrations. However, its simplicity may lead to inaccuracies, as it oversimplifies complex nanofluid behavior and neglects nanoparticle interactions . The two-phase model, initiated in 2006 by Buongiorno, offered a deeper insight into the movement of nanoparticles into the base fluid. Alsabery et al.  have concluded in their review that the high computational cost of the two-phase models has limited the adoption of the model of single-phase among researchers. As a result, only 19% of nanofluid studies have opted for the two-phase approach.
    </p>
@@ -585,7 +588,7 @@
          </mrow>
         </msub>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -670,7 +673,7 @@
          </mrow>
         </msub>
         <mo>
-         &#8722;
+         −
         </mo>
         <msub>
          <mrow>
@@ -699,7 +702,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -829,7 +832,7 @@
          u
         </mi>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -955,7 +958,7 @@
          </mrow>
         </msub>
         <mo>
-         &#8722;
+         −
         </mo>
         <msub>
          <mrow>
@@ -1011,7 +1014,7 @@
          </mrow>
         </msub>
         <mo>
-         &#8722;
+         −
         </mo>
         <msub>
          <mrow>
@@ -1127,7 +1130,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -1220,12 +1223,12 @@
    </p>
   </sec>
   <sec id="s2">
-   <label>
+   <label><b>
     2
-   </label>
-   <title>
+   </b></label>
+   <title><b>
     Modelling and mathematical formulation
-   </title>
+   </b></title>
    <p>
     The square cavity
     <xref ref-type="fig" rid="fig-1">
@@ -1298,7 +1301,7 @@
          ,
         </mo>
         <mo>
-         &#8743;
+         ∧
         </mo>
         <mn>
          0.7
@@ -1462,7 +1465,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               U
@@ -1470,7 +1473,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -1483,7 +1486,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               V
@@ -1491,7 +1494,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               Y
@@ -1540,7 +1543,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               U
@@ -1548,7 +1551,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -1564,7 +1567,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               U
@@ -1572,7 +1575,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               Y
@@ -1585,10 +1588,10 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8722;
+              −
              </mo>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               P
@@ -1596,7 +1599,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -1634,12 +1637,12 @@
              <mfrac>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 X
@@ -1653,7 +1656,7 @@
                  <msub>
                   <mrow>
                    <mi>
-                    &#956;
+                    μ
                    </mi>
                   </mrow>
                   <mrow>
@@ -1678,7 +1681,7 @@
                <mfrac>
                 <mrow>
                  <mo>
-                  &#8706;
+                  ∂
                  </mo>
                  <mi>
                   U
@@ -1686,7 +1689,7 @@
                 </mrow>
                 <mrow>
                  <mo>
-                  &#8706;
+                  ∂
                  </mo>
                  <mi>
                   X
@@ -1701,12 +1704,12 @@
              <mfrac>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 Y
@@ -1720,7 +1723,7 @@
                  <msub>
                   <mrow>
                    <mi>
-                    &#956;
+                    μ
                    </mi>
                   </mrow>
                   <mrow>
@@ -1747,7 +1750,7 @@
                  <mfrac>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     U
@@ -1755,7 +1758,7 @@
                   </mrow>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     Y
@@ -1768,7 +1771,7 @@
                  <mfrac>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     V
@@ -1776,7 +1779,7 @@
                   </mrow>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     X
@@ -1828,7 +1831,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               V
@@ -1836,7 +1839,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -1852,7 +1855,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               V
@@ -1860,7 +1863,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               Y
@@ -1873,10 +1876,10 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8722;
+              −
              </mo>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               P
@@ -1884,7 +1887,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -1922,12 +1925,12 @@
              <mfrac>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 Y
@@ -1941,7 +1944,7 @@
                  <msub>
                   <mrow>
                    <mi>
-                    &#956;
+                    μ
                    </mi>
                   </mrow>
                   <mrow>
@@ -1966,7 +1969,7 @@
                <mfrac>
                 <mrow>
                  <mo>
-                  &#8706;
+                  ∂
                  </mo>
                  <mi>
                   V
@@ -1974,7 +1977,7 @@
                 </mrow>
                 <mrow>
                  <mo>
-                  &#8706;
+                  ∂
                  </mo>
                  <mi>
                   Y
@@ -1989,12 +1992,12 @@
              <mfrac>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 X
@@ -2008,7 +2011,7 @@
                  <msub>
                   <mrow>
                    <mi>
-                    &#956;
+                    μ
                    </mi>
                   </mrow>
                   <mrow>
@@ -2035,7 +2038,7 @@
                  <mfrac>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     U
@@ -2043,7 +2046,7 @@
                   </mrow>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     Y
@@ -2056,7 +2059,7 @@
                  <mfrac>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     V
@@ -2064,7 +2067,7 @@
                   </mrow>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     X
@@ -2085,7 +2088,7 @@
               r
              </mi>
              <mi>
-              &#952;
+              θ
              </mi>
             </mrow>
            </mfenced>
@@ -2128,15 +2131,15 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
-              &#952;
+              θ
              </mi>
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -2152,15 +2155,15 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
-              &#952;
+              θ
              </mi>
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               Y
@@ -2194,7 +2197,7 @@
                <msup>
                 <mrow>
                  <mo>
-                  &#8706;
+                  ∂
                  </mo>
                 </mrow>
                 <mrow>
@@ -2204,12 +2207,12 @@
                 </mrow>
                </msup>
                <mi>
-                &#952;
+                θ
                </mi>
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <msup>
                 <mrow>
@@ -2233,7 +2236,7 @@
                <msup>
                 <mrow>
                  <mo>
-                  &#8706;
+                  ∂
                  </mo>
                 </mrow>
                 <mrow>
@@ -2243,12 +2246,12 @@
                 </mrow>
                </msup>
                <mi>
-                &#952;
+                θ
                </mi>
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <msup>
                 <mrow>
@@ -2364,7 +2367,7 @@
                  <msub>
                   <mrow>
                    <mi>
-                    &#945;
+                    α
                    </mi>
                   </mrow>
                   <mrow>
@@ -2415,7 +2418,7 @@
                  <msub>
                   <mrow>
                    <mi>
-                    &#945;
+                    α
                    </mi>
                   </mrow>
                   <mrow>
@@ -2462,7 +2465,7 @@
              <msup>
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <mfenced separators="|">
                 <mrow>
@@ -2471,7 +2474,7 @@
                    <msub>
                     <mrow>
                      <mi>
-                      &#945;
+                      α
                      </mi>
                     </mrow>
                     <mrow>
@@ -2508,7 +2511,7 @@
             ,
            </mo>
            <mi>
-            &#1138;
+            Ѳ
            </mi>
            <mo>
             =
@@ -2519,7 +2522,7 @@
               T
              </mi>
              <mo>
-              &#8722;
+              −
              </mo>
              <msub>
               <mrow>
@@ -2548,7 +2551,7 @@
               </mrow>
              </msub>
              <mo>
-              &#8722;
+              −
              </mo>
              <msub>
               <mrow>
@@ -2648,7 +2651,7 @@
              <msub>
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
               </mrow>
               <mrow>
@@ -2663,7 +2666,7 @@
              <msub>
               <mrow>
                <mi>
-                &#946;
+                β
                </mi>
               </mrow>
               <mrow>
@@ -2695,7 +2698,7 @@
                 h
                </mi>
                <mo>
-                &#8722;
+                −
                </mo>
                <msub>
                 <mrow>
@@ -2716,7 +2719,7 @@
              <msub>
               <mrow>
                <mi>
-                &#181;
+                µ
                </mi>
               </mrow>
               <mrow>
@@ -2736,7 +2739,7 @@
                <mtext>
                </mtext>
                <mtext>
-                &#945;
+                α
                </mtext>
               </mrow>
               <mrow>
@@ -2772,7 +2775,7 @@
              <msub>
               <mrow>
                <mi>
-                &#181;
+                µ
                </mi>
               </mrow>
               <mrow>
@@ -2792,7 +2795,7 @@
              <msub>
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
               </mrow>
               <mrow>
@@ -2804,7 +2807,7 @@
              <msub>
               <mrow>
                <mtext>
-                &#945;
+                α
                </mtext>
               </mrow>
               <mrow>
@@ -2847,7 +2850,7 @@
            <msub>
             <mrow>
              <mi>
-              &#961;
+              ρ
              </mi>
             </mrow>
             <mrow>
@@ -2868,17 +2871,17 @@
               1
              </mn>
              <mo>
-              &#8722;
+              −
              </mo>
              <mi>
-              &#966;
+              φ
              </mi>
             </mrow>
            </mfenced>
            <msub>
             <mrow>
              <mi>
-              &#961;
+              ρ
              </mi>
             </mrow>
             <mrow>
@@ -2891,12 +2894,12 @@
             +
            </mo>
            <mi>
-            &#966;
+            φ
            </mi>
            <msub>
             <mrow>
              <mi>
-              &#961;
+              ρ
              </mi>
             </mrow>
             <mrow>
@@ -2943,7 +2946,7 @@
              <mfenced separators="|">
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <msub>
                 <mrow>
@@ -2978,10 +2981,10 @@
               1
              </mn>
              <mo>
-              &#8722;
+              −
              </mo>
              <mi>
-              &#966;
+              φ
              </mi>
             </mrow>
            </mfenced>
@@ -2990,7 +2993,7 @@
              <mfenced separators="|">
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <msub>
                 <mrow>
@@ -3017,14 +3020,14 @@
             +
            </mo>
            <mi>
-            &#966;
+            φ
            </mi>
            <msub>
             <mrow>
              <mfenced separators="|">
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <msub>
                 <mrow>
@@ -3085,10 +3088,10 @@
              <mfenced separators="|">
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <mi>
-                &#946;
+                β
                </mi>
               </mrow>
              </mfenced>
@@ -3111,10 +3114,10 @@
               1
              </mn>
              <mo>
-              &#8722;
+              −
              </mo>
              <mi>
-              &#966;
+              φ
              </mi>
             </mrow>
            </mfenced>
@@ -3123,10 +3126,10 @@
              <mfenced separators="|">
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <mi>
-                &#946;
+                β
                </mi>
               </mrow>
              </mfenced>
@@ -3141,17 +3144,17 @@
             +
            </mo>
            <mi>
-            &#966;
+            φ
            </mi>
            <msub>
             <mrow>
              <mfenced separators="|">
               <mrow>
                <mi>
-                &#961;
+                ρ
                </mi>
                <mi>
-                &#946;
+                β
                </mi>
               </mrow>
              </mfenced>
@@ -3193,7 +3196,7 @@
        
        <math>
         <mi>
-         &#961;
+         ρ
         </mi>
        </math>
       </tex-math>
@@ -3230,7 +3233,7 @@
        
        <math>
         <mi>
-         &#946;
+         β
         </mi>
        </math>
       </tex-math>
@@ -3244,7 +3247,7 @@
        
        <math>
         <mi>
-         &#945;
+         α
         </mi>
        </math>
       </tex-math>
@@ -3258,7 +3261,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -3391,13 +3394,13 @@
                 </mrow>
                </mfenced>
                <mo>
-                &#8722;
+                −
                </mo>
                <mn>
                 2
                </mn>
                <mi>
-                &#966;
+                φ
                </mi>
                <mfenced separators="|">
                 <mrow>
@@ -3414,7 +3417,7 @@
                   </mrow>
                  </msub>
                  <mo>
-                  &#8722;
+                  −
                  </mo>
                  <msub>
                   <mrow>
@@ -3470,7 +3473,7 @@
                 +
                </mo>
                <mi>
-                &#966;
+                φ
                </mi>
                <mfenced separators="|">
                 <mrow>
@@ -3487,7 +3490,7 @@
                   </mrow>
                  </msub>
                  <mo>
-                  &#8722;
+                  −
                  </mo>
                  <msub>
                   <mrow>
@@ -3540,7 +3543,7 @@
         <msub>
          <mrow>
           <mi>
-           &#181;
+           µ
           </mi>
          </mrow>
          <mrow>
@@ -3572,7 +3575,7 @@
            <msub>
             <mrow>
              <mi>
-              &#181;
+              µ
              </mi>
             </mrow>
             <mrow>
@@ -3592,7 +3595,7 @@
              <msub>
               <mrow>
                <mi>
-                &#181;
+                µ
                </mi>
               </mrow>
               <mrow>
@@ -3617,10 +3620,10 @@
                   1
                  </mn>
                  <mo>
-                  &#8722;
+                  −
                  </mo>
                  <mi>
-                  &#966;
+                  φ
                  </mi>
                 </mrow>
                </mfenced>
@@ -3685,7 +3688,7 @@
             
             <math>
              <mi>
-              &#961;
+              ρ
              </mi>
              <mfenced separators="|">
               <mrow>
@@ -3780,7 +3783,7 @@
             
             <math>
              <mi>
-              &#946;
+              β
              </mi>
              <mfenced separators="|">
               <mrow>
@@ -3792,7 +3795,7 @@
                 </mrow>
                 <mrow>
                  <mo>
-                  &#8722;
+                  −
                  </mo>
                  <mn>
                   1
@@ -3802,7 +3805,7 @@
               </mrow>
              </mfenced>
              <mo>
-              &#215;
+              ×
              </mo>
              <msup>
               <mrow>
@@ -4100,7 +4103,7 @@
            <msub>
             <mrow>
              <mi>
-              &#964;
+              τ
              </mi>
             </mrow>
             <mrow>
@@ -4121,7 +4124,7 @@
            <msub>
             <mrow>
              <mi>
-              &#181;
+              µ
              </mi>
             </mrow>
             <mrow>
@@ -4136,7 +4139,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               u
@@ -4144,7 +4147,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               x
@@ -4187,7 +4190,7 @@
            <msub>
             <mrow>
              <mi>
-              &#964;
+              τ
              </mi>
             </mrow>
             <mrow>
@@ -4208,7 +4211,7 @@
            <msub>
             <mrow>
              <mi>
-              &#181;
+              µ
              </mi>
             </mrow>
             <mrow>
@@ -4223,7 +4226,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               v
@@ -4231,7 +4234,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               y
@@ -4274,7 +4277,7 @@
            <msub>
             <mrow>
              <mi>
-              &#964;
+              τ
              </mi>
             </mrow>
             <mrow>
@@ -4292,7 +4295,7 @@
            <msub>
             <mrow>
              <mi>
-              &#964;
+              τ
              </mi>
             </mrow>
             <mrow>
@@ -4310,7 +4313,7 @@
            <msub>
             <mrow>
              <mi>
-              &#181;
+              µ
              </mi>
             </mrow>
             <mrow>
@@ -4327,7 +4330,7 @@
              <mfrac>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 u
@@ -4335,7 +4338,7 @@
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 y
@@ -4348,7 +4351,7 @@
              <mfrac>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 v
@@ -4356,7 +4359,7 @@
               </mrow>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
                <mi>
                 x
@@ -4398,7 +4401,7 @@
         <msub>
          <mrow>
           <mi>
-           &#181;
+           µ
           </mi>
          </mrow>
          <mrow>
@@ -4433,7 +4436,7 @@
            <msub>
             <mrow>
              <mi>
-              &#956;
+              μ
              </mi>
             </mrow>
             <mrow>
@@ -4470,7 +4473,7 @@
                      <mfrac>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         u
@@ -4478,7 +4481,7 @@
                       </mrow>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         x
@@ -4504,7 +4507,7 @@
                      <mfrac>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         v
@@ -4512,7 +4515,7 @@
                       </mrow>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         y
@@ -4540,7 +4543,7 @@
                    <mfrac>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       v
@@ -4548,7 +4551,7 @@
                     </mrow>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       x
@@ -4561,7 +4564,7 @@
                    <mfrac>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       u
@@ -4569,7 +4572,7 @@
                     </mrow>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       y
@@ -4595,7 +4598,7 @@
                 n
                </mi>
                <mo>
-                &#8722;
+                −
                </mo>
                <mn>
                 1
@@ -4642,7 +4645,7 @@
         <msub>
          <mrow>
           <mi>
-           &#956;
+           μ
           </mi>
          </mrow>
          <mrow>
@@ -4721,7 +4724,7 @@
              <msub>
               <mrow>
                <mi>
-                &#181;
+                µ
                </mi>
               </mrow>
               <mrow>
@@ -4738,7 +4741,7 @@
              </msub>
             </mrow>
             <mo>
-             &#175;
+             ¯
             </mo>
            </mover>
            <mo>
@@ -4763,7 +4766,7 @@
                      <mfrac>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         U
@@ -4771,7 +4774,7 @@
                       </mrow>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         X
@@ -4797,7 +4800,7 @@
                      <mfrac>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         V
@@ -4805,7 +4808,7 @@
                       </mrow>
                       <mrow>
                        <mo>
-                        &#8706;
+                        ∂
                        </mo>
                        <mi>
                         Y
@@ -4833,7 +4836,7 @@
                    <mfrac>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       V
@@ -4841,7 +4844,7 @@
                     </mrow>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       X
@@ -4854,7 +4857,7 @@
                    <mfrac>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       U
@@ -4862,7 +4865,7 @@
                     </mrow>
                     <mrow>
                      <mo>
-                      &#8706;
+                      ∂
                      </mo>
                      <mi>
                       Y
@@ -4888,7 +4891,7 @@
                 n
                </mi>
                <mo>
-                &#8722;
+                −
                </mo>
                <mn>
                 1
@@ -4966,15 +4969,15 @@
                  <mfrac>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
-                    &#1138;
+                    Ѳ
                    </mi>
                   </mrow>
                   <mrow>
                    <mo>
-                    &#8706;
+                    ∂
                    </mo>
                    <mi>
                     Y
@@ -5061,7 +5064,7 @@
                      ,
                     </mo>
                     <mi>
-                     &#1138;
+                     Ѳ
                     </mi>
                     <mo>
                      =
@@ -5069,7 +5072,7 @@
                     <msub>
                      <mrow>
                       <mi>
-                       &#1138;
+                       Ѳ
                       </mi>
                      </mrow>
                      <mrow>
@@ -5157,7 +5160,7 @@
                      ,
                     </mo>
                     <mi>
-                     &#1138;
+                     Ѳ
                     </mi>
                     <mo>
                      =
@@ -5165,7 +5168,7 @@
                     <msub>
                      <mrow>
                       <mi>
-                       &#1138;
+                       Ѳ
                       </mi>
                      </mrow>
                      <mrow>
@@ -5297,7 +5300,7 @@
              <msub>
               <mrow>
                <mi>
-                &#948;
+                δ
                </mi>
               </mrow>
               <mrow>
@@ -5312,7 +5315,7 @@
             </mrow>
            </mfrac>
            <mo>
-            &#8744;
+            ∨
            </mo>
            <mi>
             N
@@ -5328,7 +5331,7 @@
             </mrow>
             <mrow>
              <mi>
-              &#948;
+              δ
              </mi>
             </mrow>
            </mfrac>
@@ -5391,7 +5394,7 @@
        
        <math>
         <mi>
-         &#948;
+         δ
         </mi>
        </math>
       </tex-math>
@@ -5407,7 +5410,7 @@
         <msub>
          <mrow>
           <mi>
-           &#948;
+           δ
           </mi>
          </mrow>
          <mrow>
@@ -5433,7 +5436,7 @@
         <mrow>
          <mrow>
           <mi>
-           &#948;
+           δ
           </mi>
          </mrow>
          <mo>
@@ -5443,7 +5446,7 @@
           <msub>
            <mrow>
             <mi>
-             &#948;
+             δ
             </mi>
            </mrow>
            <mrow>
@@ -5554,7 +5557,7 @@
              </mi>
             </mrow>
             <mo>
-             &#175;
+             ¯
             </mo>
            </mover>
            <msup>
@@ -5575,7 +5578,7 @@
                   2
                  </mn>
                  <mo>
-                  &#8722;
+                  −
                  </mo>
                  <mi>
                   n
@@ -5593,7 +5596,7 @@
                 </mrow>
                 <mrow>
                  <mo>
-                  &#8722;
+                  −
                  </mo>
                  <mi>
                   n
@@ -5681,7 +5684,7 @@
              </mi>
             </mrow>
             <mo>
-             &#175;
+             ¯
             </mo>
            </mover>
            <mo />
@@ -5712,12 +5715,12 @@
    </disp-formula>
   </sec>
   <sec id="s3">
-   <label>
+   <label><b>
     3
-   </label>
-   <title>
+   </b></label>
+   <title><b>
     Numerical methodology and validation
-   </title>
+   </b></title>
    <p>
     Numerical solutions for the Eqs. (1 - 4), considering the initial and boundary conditions (17), were computed employing COMSOL, a partial differential equations (PDEs) solver that utilizes the Galerkin weighted residual finite element approach is adapted. The flow is laminar and the fluid is assumed to be incompressible. The computational domain was subdivided to triangular elements, and various orders of triangular Lagrange finite elements were employed to represent the various flow variables throughout the computational domain. To handle the non-linear terms present in momentum equations, Newton iterative method was employed for simplifications.
    </p>
@@ -5740,7 +5743,7 @@
              <msup>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
               </mrow>
               <mrow>
@@ -5750,12 +5753,12 @@
               </mrow>
              </msup>
              <mi>
-              &#968;
+              ψ
              </mi>
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <msup>
               <mrow>
@@ -5779,7 +5782,7 @@
              <msup>
               <mrow>
                <mo>
-                &#8706;
+                ∂
                </mo>
               </mrow>
               <mrow>
@@ -5789,12 +5792,12 @@
               </mrow>
              </msup>
              <mi>
-              &#968;
+              ψ
              </mi>
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <msup>
               <mrow>
@@ -5816,7 +5819,7 @@
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               U
@@ -5824,7 +5827,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               Y
@@ -5832,12 +5835,12 @@
             </mrow>
            </mfrac>
            <mo>
-            &#8722;
+            −
            </mo>
            <mfrac>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               V
@@ -5845,7 +5848,7 @@
             </mrow>
             <mrow>
              <mo>
-              &#8706;
+              ∂
              </mo>
              <mi>
               X
@@ -5965,10 +5968,10 @@
          
          <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
           <mtext>
-           &#966;
+           φ
           </mtext>
           <mtext>
-           =&#160;0.02
+           = 0.02
           </mtext>
          </math>
         </tex-math>
@@ -6180,10 +6183,10 @@
        
        <math>
         <mtext>
-         &#966;
+         φ
         </mtext>
         <mtext>
-         =&#160;0
+         = 0
         </mtext>
        </math>
       </tex-math>
@@ -6297,7 +6300,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
         <mo>
          =
@@ -6422,7 +6425,7 @@
          
          <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
           <mi>
-           &#966;
+           φ
           </mi>
           <mo>
            =
@@ -6821,12 +6824,12 @@
    </table-wrap>
   </sec>
   <sec id="s4">
-   <label>
+   <label><b>
     4
-   </label>
-   <title>
+   </b></label>
+   <title><b>
     Results and discussion
-   </title>
+   </b></title>
    <p>
     <xref ref-type="fig" rid="fig-3">
      Fig. 3
@@ -6865,7 +6868,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -6888,7 +6891,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -6908,13 +6911,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -7036,13 +7039,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -7065,7 +7068,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -7154,13 +7157,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -7183,7 +7186,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -7243,13 +7246,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -7272,7 +7275,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -7326,13 +7329,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -7355,7 +7358,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -7395,13 +7398,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -7424,7 +7427,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -7750,7 +7753,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -7904,7 +7907,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -8019,13 +8022,13 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
        </math>
       </tex-math>
@@ -8048,7 +8051,7 @@
          O
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
        </math>
       </tex-math>
@@ -8192,7 +8195,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -8244,16 +8247,16 @@
          l
         </mi>
         <mo>
-         &#8322;
+         ₂
         </mo>
         <mi>
          O
         </mi>
         <mo>
-         &#8323;
+         ₃
         </mo>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -8294,7 +8297,7 @@
          2
         </mn>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -8329,7 +8332,7 @@
          u
         </mi>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -8392,7 +8395,7 @@
          
          <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
           <mi>
-           &#966;
+           φ
           </mi>
          </math>
         </tex-math>
@@ -8515,7 +8518,7 @@
          
          <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
           <mi>
-           &#966;
+           φ
           </mi>
           <mo>
            =
@@ -8596,7 +8599,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
         <mo>
          =
@@ -8619,13 +8622,13 @@
          0.6
         </mn>
         <mo>
-         &#8804;
+         ≤
         </mo>
         <mi>
          n
         </mi>
         <mo>
-         &#8804;
+         ≤
         </mo>
         <mn>
          1.4
@@ -8651,7 +8654,7 @@
         <msub>
          <mrow>
           <mi>
-           &#968;
+           ψ
           </mi>
          </mrow>
          <mrow>
@@ -8686,7 +8689,7 @@
         <msub>
          <mrow>
           <mi>
-           &#968;
+           ψ
           </mi>
          </mrow>
          <mrow>
@@ -8898,7 +8901,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
         <mo>
          =
@@ -8924,7 +8927,7 @@
          u
         </mi>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -9022,7 +9025,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
         <mo>
          =
@@ -9048,7 +9051,7 @@
          u
         </mi>
         <mo>
-         &#8722;
+         −
         </mo>
         <mi>
          w
@@ -9108,7 +9111,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
        </math>
       </tex-math>
@@ -9223,7 +9226,7 @@
        
        <math>
         <mi>
-         &#966;
+         φ
         </mi>
         <mo>
          =
@@ -9456,7 +9459,7 @@
          
          <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
           <mi>
-           &#966;
+           φ
           </mi>
           <mo>
            =
@@ -9482,7 +9485,7 @@
            u
           </mi>
           <mo>
-           &#8722;
+           −
           </mo>
           <mi>
            w
@@ -9510,12 +9513,12 @@
    </fig>
   </sec>
   <sec id="s5">
-   <label>
+   <label><b>
     5
-   </label>
-   <title>
+   </b></label>
+   <title><b>
     Conclusions
-   </title>
+   </b></title>
    <p>
     In the current study, heat transfer by free convection for
     <disp-formula>
@@ -9598,7 +9601,7 @@
          u
         </mi>
         <mo>
-         &#8722;
+         −
         </mo>
         <msub>
          <mrow>
@@ -9636,7 +9639,7 @@
          0.6
         </mn>
         <mo>
-         &#8722;
+         −
         </mo>
         <mn>
          1.4
@@ -9674,7 +9677,7 @@
          </mrow>
         </msup>
         <mo>
-         &#8722;
+         −
         </mo>
         <msup>
          <mrow>
@@ -10138,7 +10141,7 @@
            O
           </mi>
           <mo>
-           &#8322;
+           ₂
           </mo>
          </math>
         </tex-math>
@@ -10158,13 +10161,13 @@
            l
           </mi>
           <mo>
-           &#8322;
+           ₂
           </mo>
           <mi>
            O
           </mi>
           <mo>
-           &#8323;
+           ₃
           </mo>
          </math>
         </tex-math>
@@ -10662,7 +10665,7 @@
           
           <math>
            <mi>
-            &#948;
+            δ
            </mi>
            <mo>
             ,
@@ -10670,7 +10673,7 @@
            <msub>
             <mrow>
              <mi>
-              &#948;
+              δ
              </mi>
             </mrow>
             <mrow>
@@ -10944,71 +10947,6 @@
      <comment>
       Elsevier Ltd
      </comment>
-    </mixed-citation>
-   </ref>
-   <ref id="ref-2">
-    <label>
-     2
-    </label>
-    <mixed-citation publication-type="journal">
-     <person-group person-group-type="author">
-      <string-name>
-       <surname>
-        Sundar
-       </surname>
-       <given-names>
-        L. S.
-       </given-names>
-      </string-name>
-      <string-name>
-       <surname>
-        Farooky
-       </surname>
-       <given-names>
-        Md. H.
-       </given-names>
-      </string-name>
-      <string-name>
-       <surname>
-        Sarada
-       </surname>
-       <given-names>
-        S. N.
-       </given-names>
-      </string-name>
-      <string-name>
-       <surname>
-        Singh
-       </surname>
-       <given-names>
-        M. K.
-       </given-names>
-      </string-name>
-     </person-group>
-     <article-title>
-      Experimental thermal conductivity of ethylene glycol and water mixture based low volume concentration of Al2O3 and CuO nanofluids
-     </article-title>
-     <source>
-      International Communications in Heat and Mass Transfer
-     </source>
-     <volume>
-      41
-     </volume>
-     <year>
-      2013
-     </year>
-     <fpage>
-      41
-     </fpage>
-     <lpage>
-      46
-     </lpage>
-     <pub-id>
-      https://doi.org/10.1016/j.icheatmasstransfer.2012.11.004
-     </pub-id>
-     <web-url>
-      https://doi.org/10.1016/j.icheatmasstransfer.2012.11.004
-     </web-url>
     </mixed-citation>
    </ref>
   </ref-list>

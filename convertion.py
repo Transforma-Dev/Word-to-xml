@@ -12,8 +12,7 @@ from io import StringIO
 from unidecode import unidecode
 import subprocess
 import json
-import eq_link     #Import your own function in our file
-from functions import title,authors,abstract_key,heading,list_file,image_table,reference,other_tags
+from functions import title,authors,abstract_key,heading,list_file,image_table,reference,other_tags,eq_link
 
 
 #Define the function to convert a paragraph from word document
@@ -46,7 +45,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     filename = f"{file_name}.pdf"
 
     #from journal load the json file
-    with open("journal.json",'r') as file:
+    with open("json_folder/journal.json",'r') as file:
         data = json.load(file)
 
     #Skip the paragraph

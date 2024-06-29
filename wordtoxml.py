@@ -22,7 +22,10 @@ import sys
 import os
 
 from convertion import paragraph,table   #Import Functions from 'convertion.py' file
-import eq_link
+from functions import eq_link
+#Tsp_styles.data
+from TSP_styles import TSP_styles
+
 
 #Create XML header
 pre_xml = """<?xml version='1.0' encoding='UTF-8'?>
@@ -153,6 +156,10 @@ def convert(input_file_name = None):
     #Write the HTML content to a file
     with open(output_xml, 'w', encoding="utf-8") as file:
         file.write(pretty_xml)
+
+    # #Create object for class TSP_styles
+    # xml_modifier = TSP_styles()
+    # xml_modifier.modify_xml(output_xml, output_xml)
 
     return output_xml_name
 
