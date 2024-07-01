@@ -56,6 +56,7 @@ def txbox(root):
                         if len(math_xml) > math_count:
                             cur_math = math_xml[math_count]
                             math_str = str(ET.tostring(cur_math, method='xml', encoding="unicode"))
+                            math_count = math_count + 1
                             # Transform OMML to MML
                             xslt_file = "config/omml2mml.xsl"
                             xslt_doc = etree.parse(xslt_file)
@@ -65,8 +66,51 @@ def txbox(root):
                             transformed_tree = str(transformed_tree).replace("mml:", "")
                             mathml = f'{str(transformed_tree)}'
                             box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
-                            math_count += 1
     
+    return box_text
+
+#Define function to find the boxed text in the document
+def sq_text(root):
+    box_text = ''
+    ns = {
+        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        'mml': 'http://www.w3.org/1998/Math/MathML' 
+    }
+    
+    for elem in root.iter():
+        math_count = 0
+        if elem.tag.endswith("p"):  # Check if the element is a textbox
+                box_text = ""
+                for sub_elem in elem.iter():
+                    # if sub_elem.tag.endswith("oMath"):  # Find math equation text in paragraph
+
+                    if sub_elem.tag.endswith("r"):  # Find normal text in paragraph
+                        text = ""
+                        for t_elem in sub_elem.findall(".//w:t", namespaces=ns):
+                            text = t_elem.text if t_elem.text else ""
+                        bold = sub_elem.find(".//w:b", namespaces=ns)  # Look for bold property inside the run
+                        if bold is not None and text:
+                            box_text += f"{text}:"
+                        else:
+                            box_text += f'{text}'
+                    if sub_elem.tag.endswith("oMath"):
+                        math_xml = elem.findall('.//m:oMath', namespaces=ns)  # Find all OMML tags in paragraph
+                        # print(math_xml)
+                        if len(math_xml) > math_count:
+                            cur_math = math_xml[math_count]
+                            math_str = str(ET.tostring(cur_math, method='xml', encoding="unicode"))
+                            math_count = math_count + 1
+                            # Transform OMML to MML
+                            xslt_file = "config/omml2mml.xsl"
+                            xslt_doc = etree.parse(xslt_file)
+                            transformer = etree.XSLT(xslt_doc)
+                            xml_doc = etree.fromstring(math_str)
+                            transformed_tree = transformer(xml_doc)
+                            transformed_tree = str(transformed_tree).replace("mml:", "")
+                            mathml = f'{str(transformed_tree)}'
+                            box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
+                            
     return box_text
 
 #Define function to find the equation in the document
@@ -335,7 +379,6 @@ def add_ref_tag(xml,variables):
 
     if re.findall(r'\[\d\]', xml[0]):   #Find the number inside the square bracket
         parentheses_text = re.findall(r'\[(.*?)\]',xml[0])
-
         for num in parentheses_text:
             
             if num.isdigit() or "," in num or "-" in num:

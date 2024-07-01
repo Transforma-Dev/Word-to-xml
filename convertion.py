@@ -55,15 +55,18 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     
     #Find the all bold paragraph
     all_bold = all(run.bold for run in para.runs if run.text.strip()!='')
-    
+    # print(para.text)
     #Convert the pargaraph into xml
     xml=para._element.xml
     # print(xml)
     root = ET.fromstring(xml)
 
+    #Find the square bracket text present in paragraph
+    if "<w:sdt>" in xml:
+        box_text = eq_link.sq_text(root)
+
     #Check where the boxed text are present in paragraph
     if "<wps:txbx>" in xml:
-        # print(xml)
         box_text = eq_link.txbox(root)
         
 
@@ -266,7 +269,12 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Close the list tag
     elif variables["list_end"]:
-        xml_text = list_file.list_close(xml_text,variables,para)    
+        xml_text = list_file.list_close(xml_text,variables,para)  
+
+    elif box_text:
+        xml_text = eq_link.add_tag(box_text)
+        xml_text=f'<p>{xml_text}</p>' 
+        box_text = ''
 
     #Else print p tag
     elif len(para.text)!=0 and not para.text.isspace():

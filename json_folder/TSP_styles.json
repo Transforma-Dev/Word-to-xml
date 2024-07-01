@@ -1,8 +1,17 @@
 {
     "replace_text" : [
             {"text":"i.e.","replace":"i.e.,"},
-            {"text":"e.g.","replace":"e.g.,"}
+            {"text":"e.g.","replace":"e.g.,"},
+            {"text":"Ltd","replace":"Ltd."},
+            {"text":"versus","replace":"vs."}
         ],
+    
+    "space_add_text" : ["+","-","*","/","="],
+
+    "space_remove_text" : ["-","—"],
+
+    "space_before_text" : ["cm"],
+
     "aff_replace_text" : [
             {"text":"People’s Republic of China","replace":"China"},
             {"text":"Dept","replace":"Department"}

@@ -44,16 +44,33 @@ class TSP_styles:
         if element.tag == "day" and len(element.text.strip()) == 1:
             element.text = "0" + element.text.strip()
 
+        if element.find('./table-wrap//title') is not None:
+            table_title = element.find('./table-wrap//title')
+            # print(table_title.text)
+
 
         #Replace text
         for i in data["replace_text"]:
             if element.text and i["text"] in element.text:
                 element.text = element.text.replace(i["text"], i["replace"])
 
-        #Space before and after
-        if element.text and "+" in element.text:
-            pattern = r"\s*\+\s*"
-            element.text = re.sub(pattern, " + ", element.text)
+        #Replace and add space text
+        for i in data["space_add_text"]:
+            if element.text and i in element.text:
+                pattern = fr"\s*\{i}\s*"
+                element.text = re.sub(pattern, f' {i} ', element.text)
+
+        #Replace and remove space text
+        for i in data["space_remove_text"]:
+            if element.text and i in element.text:
+                pattern = fr"\s*\{i}\s*"
+                element.text = re.sub(pattern, f'{i}', element.text)
+
+        #Replace and remove space text
+        for i in data["space_before_text"]:
+            if element.text and i in element.text:
+                pattern = fr"\s*{i}\s*"
+                element.text = re.sub(pattern, f' {i}', element.text)
 
         for child in element:
             self.change_text(child)

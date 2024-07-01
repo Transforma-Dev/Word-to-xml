@@ -47,13 +47,13 @@
    </article-categories>
    <title-group>
     <article-title>
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convcmection of a power-law nanofluid in a square cavity with a vertical fin
     </article-title>
     <alt-title alt-title-type="left-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convcmection of a power-law nanofluid in a square cavity with a vertical fin
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convcmection of a power-law nanofluid in a square cavity with a vertical fin
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">
@@ -551,14 +551,70 @@
     Introduction
    </title>
    <p>
-    Free convection heat transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics . Researchers have expressed significant concern regarding the enhancement of heat transfer in free convection due to its inherently low heat transfer coefficient. Consequently, they actively explored diverse techniques and concepts to improve the heat transfer in this process. One of those techniques that researchers frequently focus on is adding nanoparticles to the conventional working fluid. The addition of nanoparticles enhances the thermophysical properties of the base fluid, particularly thermal conductivity, a pivotal parameter that improves the heat transfer mechanisms . Therefore, the single-phase model was largely employed due to its simplicity and computational efficiency, making it suitable for diluting nanofluids with low nanoparticle concentrations. However, its simplicity may lead to inaccuracies, as it oversimplifies complex nanofluid behavior and neglects nanoparticle interactions . The two-phase model, initiated in 2006 by Buongiorno, offered a deeper insight into the movement of nanoparticles into the base fluid. Alsabery et al.  have concluded in their review that the high computational cost of the two-phase models has limited the adoption of the model of single-phase among researchers. As a result, only 19% of nanofluid studies have opted for the two-phase approach.
+    Free convection heat transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ]. Researchers have expressed significant concern regarding the enhancement of heat transfer in free convection due to its inherently low heat transfer coefficient. Consequently, they actively explored diverse techniques and concepts to improve the heat transfer in this process. One of those techniques that researchers frequently focus on is adding nanoparticles to the conventional working fluid. The addition of nanoparticles enhances the thermophysical properties of the base fluid, particularly thermal conductivity, a pivotal parameter that improves the heat transfer mechanisms [
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-4">
+     4
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ]. Therefore, the single-phase model was largely employed due to its simplicity and computational efficiency, making it suitable for diluting nanofluids with low nanoparticle concentrations. However, its simplicity may lead to inaccuracies, as it oversimplifies complex nanofluid behavior and neglects nanoparticle interactions [
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ]. The two-phase model, initiated in 2006 by Buongiorno, offered a deeper insight into the movement of nanoparticles into the base fluid. Alsabery et al. [
+    <xref ref-type="bibr" rid="ref-8">
+     8
+    </xref>
+    ] have concluded in their review that the high computational cost of the two-phase models has limited the adoption of the model of single-phase among researchers. As a result, only 19% of nanofluid studies have opted for the two-phase approach.
    </p>
    <p>
-    Some analytical and numerical investigations have been performed on free convection through nanofluids in cavities of different shapes . These studies have investigated the impact of altering the nanoparticle's volume fraction at various Rayleigh numbers (Ra) on heat transfer.
+    Some analytical and numerical investigations have been performed on free convection through nanofluids in cavities of different shapes [
+    <xref ref-type="bibr" rid="ref-9">
+     9
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-12">
+     12
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ]. These studies have investigated the impact of altering the nanoparticle's volume fraction at various Rayleigh numbers (Ra) on heat transfer.
    </p>
    <p>
-    Houda et al. [14] have explored enhanced heat transfer in
-    <disp-formula>
+    Houda et al. [
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ] have explored enhanced heat transfer in
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -612,9 +668,17 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    nanofluid through nanoparticle addition. They have carried out a numerical study of a square enclosure, revealing optimal conditions for heat transfer improvement. They have proposed precise correlations for thermal conductivity and viscosity on the basis of experimental outcomes. They have identified the minimum value of temperature (40degC) and the diameter limit (45-50 nm) for enhanced heat transmission. Ma et al. [15,16] have numerically investigated the natural convection of
-    <disp-formula>
+    </inline-formula>
+    nanofluid through nanoparticle addition. They have carried out a numerical study of a square enclosure, revealing optimal conditions for heat transfer improvement. They have proposed precise correlations for thermal conductivity and viscosity on the basis of experimental outcomes. They have identified the minimum value of temperature (40°C) and the diameter limit (45-50 nm) for enhanced heat transmission. Ma et al. [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-16">
+     16
+    </xref>
+    ] have numerically investigated the natural convection of
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -641,9 +705,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     and
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -697,9 +761,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanofluids inside a U-shaped enclosure featuring a heated obstacle. It was demonstrated that an increase in the Ra and the nanoparticles volume fraction (
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -711,9 +775,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ) led to a higher
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -737,9 +801,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     on the obstacle sides, irrespective of the aspect ratio. At lower
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -754,9 +818,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , nanoparticles had a greater impact on the improvement of the heat transfer in slender cavities compared to larger ones. Moreover, when the diameters of nanoparticles are equal,
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -792,9 +856,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanoparticles are more effective than
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -821,9 +885,13 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    ones in enhancing heat transfer. Faraz et al. [17] have conducted a study on convective heat transfer through
-    <disp-formula>
+    </inline-formula>
+    ones in enhancing heat transfer. Faraz et al. [
+    <xref ref-type="bibr" rid="ref-17">
+     17
+    </xref>
+    ] have conducted a study on convective heat transfer through
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -856,9 +924,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanofluid within a hexagonal cavity with an internal square. Their research focused on how the heat transfer characteristics are affected by the placement of the active sections of the side walls and the nanoparticles volume fraction. Their parametric investigation revealed that increasing the volume fraction of
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -873,12 +941,16 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanoparticles led to enhanced heat transfer within the cavity.
    </p>
    <p>
-    While most studies have concentrated on free convection heat transfer for Newtonian fluids within cavities, the influence of non-Newtonian behavior exhibited by nanofluids on free convection heat transport remains less explored. Some studies have employed a comparative analysis to investigate the free convection heat transfer characteristics between Newtonian and non-Newtonian behaviors. Turan et al. [18] considered the free convection phenomenon in a square enclosure exposed to heat flux at the sidewalls, focusing on power-law fluids and Newtonian fluids. For both power-law and Newtonian fluids, heat transfer increased with rising
-    <disp-formula>
+    While most studies have concentrated on free convection heat transfer for Newtonian fluids within cavities, the influence of non-Newtonian behavior exhibited by nanofluids on free convection heat transport remains less explored. Some studies have employed a comparative analysis to investigate the free convection heat transfer characteristics between Newtonian and non-Newtonian behaviors. Turan et al. [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ] considered the free convection phenomenon in a square enclosure exposed to heat flux at the sidewalls, focusing on power-law fluids and Newtonian fluids. For both power-law and Newtonian fluids, heat transfer increased with rising
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -893,9 +965,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     values. Nevertheless, at the same Ra, shear-thinning fluids with
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -911,9 +983,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     exhibited greater heat transfer rates compared to both Newtonian fluids and dilatant behavior with
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -929,15 +1001,51 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    . These obtained results are confirmed by several researchers[19,20,21,22].
+    </inline-formula>
+    . These obtained results are confirmed by several researchers[
+    <xref ref-type="bibr" rid="ref-19">
+     19
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-20">
+     20
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-21">
+     21
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-22">
+     22
+    </xref>
+    ].
    </p>
    <p>
-    Several published studies have proved that the presence of the fin in cavities introduces an additional heat transfer surface, leading to improved convective heat transfer. Elatar et al.  have numerically investigated the laminar free convection in a square differentially heated enclosure with one simple horizontal fin fixed to the heated wall. The study has revealed that the effectiveness of the fin has increased with its length. Saravanan et al.  have numerically analyzed the free convection inside an enclosure with a heated plate, considering thermal radiation effects. In the cases of the absence of emissivity, it has been well documented in the literature that the heat transfer is significantly improved when the fin is both longer and vertical. These same results were obtained also by Mahalakshmi et al. .
+    Several published studies have proved that the presence of the fin in cavities introduces an additional heat transfer surface, leading to improved convective heat transfer. Elatar et al. [
+    <xref ref-type="bibr" rid="ref-23">
+     23
+    </xref>
+    ] have numerically investigated the laminar free convection in a square differentially heated enclosure with one simple horizontal fin fixed to the heated wall. The study has revealed that the effectiveness of the fin has increased with its length. Saravanan et al. [
+    <xref ref-type="bibr" rid="ref-24">
+     24
+    </xref>
+    ] have numerically analyzed the free convection inside an enclosure with a heated plate, considering thermal radiation effects. In the cases of the absence of emissivity, it has been well documented in the literature that the heat transfer is significantly improved when the fin is both longer and vertical. These same results were obtained also by Mahalakshmi et al. [
+    <xref ref-type="bibr" rid="ref-25">
+     25
+    </xref>
+    ].
    </p>
    <p>
-    In the constantly changing field of heat transfer involving fluid flow through nanoparticles inside cavities, there have been notable advancements in recent years. Islam et al. [26] analyzed copper-water nanofluid convective flow through a prismatic cavity under two different temperature boundary conditions, aiming to visualize temperature flow and identify the most efficient temperature change path. Khan et al. [27] studied
-    <disp-formula>
+    In the constantly changing field of heat transfer involving fluid flow through nanoparticles inside cavities, there have been notable advancements in recent years. Islam et al. [
+    <xref ref-type="bibr" rid="ref-26">
+     26
+    </xref>
+    ] analyzed copper-water nanofluid convective flow through a prismatic cavity under two different temperature boundary conditions, aiming to visualize temperature flow and identify the most efficient temperature change path. Khan et al. [
+    <xref ref-type="bibr" rid="ref-27">
+     27
+    </xref>
+    ] studied
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -982,9 +1090,13 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    nanofluid free convection heat transfer inside a square enclosure with partly active sidewalls employing Finite Element Method (FEM). Saha et al. [28] conducted a numerical study of MHD free convective heat transfer and fluid flow inside a square cavity containing
-    <disp-formula>
+    </inline-formula>
+    nanofluid free convection heat transfer inside a square enclosure with partly active sidewalls employing Finite Element Method (FEM). Saha et al. [
+    <xref ref-type="bibr" rid="ref-28">
+     28
+    </xref>
+    ] conducted a numerical study of MHD free convective heat transfer and fluid flow inside a square cavity containing
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1038,9 +1150,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanofluid. The cavity features a wavy top wall and a vertically attached, hot single fin in the center of the bottom side. The upper wavy side is considered cold, while the bottom, left, and right sides were thermally isolated.
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1076,9 +1188,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanoparticles possess a high thermal conductivity, and Cu nanoparticles exhibit both high specific heat capacity and thermal conductivity, while
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1105,7 +1217,7 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     nanoparticles possess a high surface area. They also exhibit other advantages that make them versatile for numerous applications. Additionally, alumina nanoparticles are chemically inert, non-toxic, and widely available. Furthermore, titania nanoparticles are known for their photocatalytic properties and UV-blocking capabilities. And copper nanoparticles are recognized for their chemical stability and their ability to work effectively with numerous HTF and materials. However, despite the existing literature, there is still a research gap that needs to be further investigated in order to fully understand the non-Newtonian flow behavior in a square enclosure with a hot central fin.
    </p>
    <p>
@@ -1239,7 +1351,7 @@
      Fig. 1
     </xref>
     is enclosed by two vertical walls cooled to a temperature of
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1260,9 +1372,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     and two horizontal walls that are adiabatic. A heated fin with dimensionless variable length (
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1313,9 +1425,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    ) is vertically positioned at the cavity's midpoint, kept at an elevated temperature
-    <disp-formula>
+    </inline-formula>
+    ) is vertically positioned at the cavity’s midpoint, kept at an elevated temperature
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1336,9 +1448,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     . The enclosure contains water-based nanofluid incorporating nanoparticles of
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1374,9 +1486,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ,
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1403,9 +1515,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , or
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1420,9 +1532,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , assumed as a laminar and incompressible Boussinesq power law model, with a Prandtl number (
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -1437,12 +1549,40 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ) set at 6.2. Assuming thermal stability between the water-based fluid and nanoparticles, with no slip occurring due to their thermophysical properties as listed in
     <xref ref-type="table" rid="table-1">
      Table 1
     </xref>
-    . Under these conditions and according to the nanofluid model suggested by Tiwari and Das [29,30], continuity, momentum, and energy equations, in laminar incompressible nanofluid may be expressed in their nondimensional form for the numerical solution as follows [24, 27,28,31,32].
+    . Under these conditions and according to the nanofluid model suggested by Tiwari and Das [
+    <xref ref-type="bibr" rid="ref-29">
+     29
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-30">
+     30
+    </xref>
+    ], continuity, momentum, and energy equations, in laminar incompressible nanofluid may be expressed in their nondimensional form for the numerical solution as follows [
+    <xref ref-type="bibr" rid="ref-24">
+     24
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-27">
+     27
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-28">
+     28
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-31">
+     31
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-32">
+     32
+    </xref>
+    ].
    </p>
    <fig id="fig-1">
     <label>
@@ -2296,7 +2436,15 @@
     </alternatives>
    </disp-formula>
    <p>
-    Dimensionless variables can be linked to dimensional ones through :
+    Dimensionless variables can be linked to dimensional ones through [
+    <xref ref-type="bibr" rid="ref-19">
+     19
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-28">
+     28
+    </xref>
+    ]:
    </p>
    <disp-formula>
     <alternatives>
@@ -2595,7 +2743,7 @@
    </disp-formula>
    <p>
     Dimensionless Rayleigh (
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -2610,9 +2758,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ) and Prandtl (
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -2627,8 +2775,16 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    ) numbers are expressed below [27,33]:
+    </inline-formula>
+    ) numbers are expressed below [
+    <xref ref-type="bibr" rid="ref-27">
+     27
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-33">
+     33
+    </xref>
+    ]:
    </p>
    <disp-formula>
     <alternatives>
@@ -2838,7 +2994,15 @@
     </alternatives>
    </disp-formula>
    <p>
-    The thermo-physical characteristics of the nanofluid are determined using conventional models reported in the literature  as follows:
+    The thermo-physical characteristics of the nanofluid are determined using conventional models reported in the literature [
+    <xref ref-type="bibr" rid="ref-34">
+     34
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-35">
+     35
+    </xref>
+    ] as follows:
    </p>
    <disp-formula>
     <alternatives>
@@ -3192,8 +3356,8 @@
     </alternatives>
    </disp-formula>
    <p>
-    The nonofluid's density, specific heat, thermal expansion coefficient, and thermal diffusivity are represented by
-    <disp-formula>
+    The nonofluid’s density, specific heat, thermal expansion coefficient, and thermal diffusivity are represented by
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3205,9 +3369,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ,
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3228,9 +3392,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ,
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3242,9 +3406,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , and
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3256,9 +3420,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , respectively. The nanoparticle volume fraction is denominated by
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3270,9 +3434,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , while the subscripts
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3287,9 +3451,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     ,
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3301,9 +3465,9 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
+    </inline-formula>
     , and
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3315,8 +3479,24 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    correspond to the nanofluid, base fluid, and nanoparticle, respectively. The Hamilton-Crosser model [36] was employed to determine the effective thermal conductivity of the spherically shaped nanofluid, this model has been adopted by many researchers [19,37,38]:
+    </inline-formula>
+    correspond to the nanofluid, base fluid, and nanoparticle, respectively. The Hamilton-Crosser model [
+    <xref ref-type="bibr" rid="ref-36">
+     36
+    </xref>
+    ] was employed to determine the effective thermal conductivity of the spherically shaped nanofluid, this model has been adopted by many researchers [
+    <xref ref-type="bibr" rid="ref-19">
+     19
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-37">
+     37
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-38">
+     38
+    </xref>
+    ]:
    </p>
    <disp-formula>
     <alternatives>
@@ -3538,7 +3718,7 @@
    </disp-formula>
    <p>
     The Brinkman model was used to calculate the effective dynamic viscosity of the nanofluid
-    <disp-formula>
+    <inline-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
@@ -3562,8 +3742,16 @@
        </math>
       </tex-math>
      </alternatives>
-    </disp-formula>
-    [35,39]:
+    </inline-formula>
+    [
+    <xref ref-type="bibr" rid="ref-35">
+     35
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-39">
+     39
+    </xref>
+    ]:
    </p>
    <disp-formula>
     <alternatives>
@@ -5245,7 +5433,11 @@
     </alternatives>
    </disp-formula>
    <p>
-    Some relationships are conducted to clarify how Rayleigh number, Prandtl number, and power-law index influence the Nusselt number for the model of power-law fluids [18].
+    Some relationships are conducted to clarify how Rayleigh number, Prandtl number, and power-law index influence the Nusselt number for the model of power-law fluids [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ].
    </p>
    <disp-formula>
     <alternatives>
@@ -6085,7 +6277,11 @@
     <xref ref-type="fig" rid="fig-2">
      Fig. 2
     </xref>
-    of the current work) with those reported by Ghasemi et al. [39] for a differentially heated enclosure without a fin, both in the presence and absence of magnetic fields (which are not presented here). The results of the current study align well with those of Ghasemi et al., with the highest deviation observed at 1.96% for
+    of the current work) with those reported by Ghasemi et al. [
+    <xref ref-type="bibr" rid="ref-39">
+     39
+    </xref>
+    ] for a differentially heated enclosure without a fin, both in the presence and absence of magnetic fields (which are not presented here). The results of the current study align well with those of Ghasemi et al., with the highest deviation observed at 1.96% for
     <disp-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
@@ -6169,7 +6365,11 @@
       </tex-math>
      </alternatives>
     </disp-formula>
-    is made among the current work and the one of Turan et al. [18] for various n and
+    is made among the current work and the one of Turan et al. [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ] for various n and
     <disp-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
@@ -6230,7 +6430,11 @@
     <xref ref-type="table" rid="table-3">
      Table 3
     </xref>
-    . The results agree well with those of Turan et al. [18], for the highest error of no more than 0.61% recorded for
+    . The results agree well with those of Turan et al. [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ], for the highest error of no more than 0.61% recorded for
     <disp-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
@@ -6397,7 +6601,11 @@
     </label>
     <caption>
      <title>
-      Comparison of the average Nu with previous study of Turan et al. [18] for various
+      Comparison of the average Nu with previous study of Turan et al. [
+      <xref ref-type="bibr" rid="ref-18">
+       18
+      </xref>
+      ] for various
       <disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
@@ -8722,7 +8930,11 @@
     raises with the enlargement of the fin dimension. This indicates a more vigorous and intensified flow within the cavity. A more intense flow, can contribute to a highly efficient exchange of heat among the fluid and the surfaces of the cavity.
    </p>
    <p>
-    It should be emphasized that the presence of the fin and its vertical positioning at the center significantly increases the rate of heat transport in the enclosure. This finding is in line with the research of Saravanan et al. [24] in the context of pure convection, where they compared the horizontal and vertical positions. This improvement of heat transfer is facilitated by the rise of the area surface provided by the fin, allowing for more contact between the fin and the surrounding fluid.
+    It should be emphasized that the presence of the fin and its vertical positioning at the center significantly increases the rate of heat transport in the enclosure. This finding is in line with the research of Saravanan et al. [
+    <xref ref-type="bibr" rid="ref-24">
+     24
+    </xref>
+    ] in the context of pure convection, where they compared the horizontal and vertical positions. This improvement of heat transfer is facilitated by the rise of the area surface provided by the fin, allowing for more contact between the fin and the surrounding fluid.
    </p>
    <p>
     The influence of the fin's dimensions and the index of power law on heat transport is more apparent in the results found in terms of
@@ -10940,15 +11152,15 @@
      <issue>
       1
      </issue>
-     <year>
-      2014 ,Feb. 5
-     </year>
      <fpage>
       304
      </fpage>
      <lpage>
       322
      </lpage>
+     <year>
+      2014 ,Feb. 5
+     </year>
      <pub-id>
       10.1016/j.applthermaleng.2013.10.065
      </pub-id>

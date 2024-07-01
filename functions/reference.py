@@ -63,7 +63,7 @@ def reference_text(xml_text,variables):
         print({'error': f'Request Exception: {str(e)}'})
     
     # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
-    print(references_json)
+    # print(references_json)
     if references_json and not xml_text.isspace():
         data = references_json[0]
 
@@ -71,7 +71,7 @@ def reference_text(xml_text,variables):
 
         ref_word += f'<label>{data["id"]}</label><mixed-citation publication-type="journal">'
 
-        tag_list = ["author","title","container-title","volume","issue","year","issued","page","DOI","doi_url","publisher"]
+        tag_list = ["author","title","container-title","volume","issue","page","year","issued","DOI","doi_url","publisher"]
 
         #Loop through the tag order
         for k in tag_list:
