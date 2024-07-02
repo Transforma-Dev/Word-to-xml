@@ -5,50 +5,8 @@ import json
 
 class TSP_styles:
 
-    def change_text(self, element):
-
-        #from journal load the json file
-        with open("json_folder/TSP_styles.json",'r') as file:
-            data = json.load(file)
-        # print(data)
-
-        #Find the article title tag inside the front tag and capitalie the article title text except remove conjuction and preposition
-        if element.find('./front//article-title') is not None:
-            alt_title = element.find('./front//article-title')
-            alt_title.text = ' '.join(word.lower() if word.lower() in data["skip_words"] else word.capitalize() for word in alt_title.text.split())
-        #Remove dot in end of affliation tag
-        if element.tag == "aff":
-            for child in element:
-                self.change_text(child)
-                #Replace text
-                for i in data["aff_replace_text"]:
-                    if child.text and i["text"] in child.text:
-                        child.text = child.text.replace(i["text"], i["replace"])
-                    
-            child.text = child.text.replace(".","")
-            # new_tag = ET.Element("new")
-            # new_tag.text = "mew"
-            # element.append(new_tag)
-        #Remove dot in end of kwd-group tag and change the first letter as capital others all are small
-        if element.tag == "kwd-group":
-            n=1
-            for child in element:
-                self.change_text(child)
-                if n==1 and child.text.strip():
-                    child.text = child.text.strip().capitalize()
-                    n+=1
-                else:
-                    child.text = child.text.lower()
-            child.text = child.text.replace(".","")
-        #Add 0 before single digit number
-        if element.tag == "day" and len(element.text.strip()) == 1:
-            element.text = "0" + element.text.strip()
-
-        if element.find('./table-wrap//title') is not None:
-            table_title = element.find('./table-wrap//title')
-            # print(table_title.text)
-
-
+    #Replace text or add space or remove space in this function
+    def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
         #Replace text
         for i in data["replace_text"]:
             if element.text and i["text"] in element.text:
@@ -61,16 +19,106 @@ class TSP_styles:
                 element.text = re.sub(pattern, f' {i} ', element.text)
 
         #Replace and remove space text
-        for i in data["space_remove_text"]:
+        for i in data["space_remove_text"]:     #https://github.com/Transforma-Dev/Word-to-xml/issues/21#issue-2385187570
             if element.text and i in element.text:
                 pattern = fr"\s*\{i}\s*"
                 element.text = re.sub(pattern, f'{i}', element.text)
 
-        #Replace and remove space text
+        #Replace and add space only before text
         for i in data["space_before_text"]:
             if element.text and i in element.text:
                 pattern = fr"\s*{i}\s*"
                 element.text = re.sub(pattern, f' {i}', element.text)
+
+    #Find the article title tag inside the front tag and capitalie the article title text except remove conjuction and preposition
+    def find_artitle(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
+        alt_title = element.find('./front//article-title')
+        alt_title.text = ' '.join(word.lower() if word.lower() in data["skip_words"] else word.capitalize() for word in alt_title.text.split())
+    
+    #Remove dot in end of affliation tag and replace the perticuler text
+    def find_aff(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/9#issue-2379911935
+        for child in element:
+            self.change_text(child)
+            #Replace text
+            for i in data["aff_replace_text"]:
+                if child.text and i["text"] in child.text:
+                    child.text = child.text.replace(i["text"], i["replace"])
+                    
+        if child.text.endswith('.'):
+            child.text = child.text[:-1]
+        # new_tag = ET.Element("new")
+        # new_tag.text = "mew"
+        # element.append(new_tag)
+
+    #Remove dot in end of kwd-group tag and change the first letter as capital others all are small
+    def find_key(self,element):     #https://github.com/Transforma-Dev/Word-to-xml/issues/14#issue-2385180471
+        n=1
+        for child in element:
+            self.change_text(child)
+            if n==1 and child.text.strip():
+                child.text = child.text.strip().capitalize()
+                n+=1
+            else:
+                child.text = child.text.lower()
+        if child.text.endswith('.'):
+            child.text = child.text[:-1]
+
+    def find_history(self,element):
+        tag = False
+        children_to_remove = []
+        for child in element:
+            for chil in child:
+                if chil.tag == "day":
+                    if chil.text.strip() == "0":
+                        tag = True
+                    elif len(element.text.strip()) == 1:
+                        chil.text = "0" + chil.text.strip()
+            if tag:
+                children_to_remove.append(child)
+                
+        for child in children_to_remove:
+            element.remove(child)
+        if tag:
+            new_tag = ET.Element("Query")
+            new_tag.text = "No History detail is there in the document"
+            element.append(new_tag)
+
+
+
+
+    #Find the tags in xml and replace the content
+    def change_text(self, element):
+
+        #from journal load the json file
+        with open("json_folder/TSP_styles.json",'r') as file:
+            data = json.load(file)
+        # print(data)
+
+        #Find the article title tag inside the front tag
+        if element.find('./front//article-title') is not None:
+            self.find_artitle(element,data)
+            
+        #Find the affliation tag
+        if element.tag == "aff":
+            self.find_aff(element,data)
+
+        #Find the kwd-group tag
+        if element.tag == "kwd-group":
+            self.find_key(element)
+
+        if element.tag == "history":
+            self.find_history(element)
+            
+        #Add 0 before single digit number
+        if element.tag == "day" and len(element.text.strip()) == 1:     #https://github.com/Transforma-Dev/Word-to-xml/issues/11#issue-2385178216
+            element.text = "0" + element.text.strip()
+
+        if element.find('./table-wrap//title') is not None:
+            table_title = element.find('./table-wrap//title')
+            # table_title.text = 
+
+        #Replace text or add or remove space in text
+        self.change_space_text(element,data)
 
         for child in element:
             self.change_text(child)
@@ -81,7 +129,6 @@ class TSP_styles:
         tree = ET.parse(input_file)
         root = tree.getroot()
 
-        #Replace 'dept' with 'department' in text
         self.change_text(root)
 
         #Save the modified XML to a new file
