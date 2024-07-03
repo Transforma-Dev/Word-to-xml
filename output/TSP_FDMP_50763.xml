@@ -207,10 +207,10 @@
    <history>
     <date date-type="received">
      <day>
-      0
+      17
      </day>
      <month>
-      0
+      2
      </month>
      <year>
       2024
@@ -218,10 +218,10 @@
     </date>
     <date date-type="accepted">
      <day>
-      0
+      17
      </day>
      <month>
-      0
+      5
      </month>
      <year>
       2024
@@ -551,7 +551,15 @@
     Introduction
    </title>
    <p>
-    Free convection heat transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
+    Free convection
+    <xref ref-type="appendix" rid="app">
+     appendix
+    </xref>
+    heat
+    <xref ref-type="formula" rid="for-1">
+     formula (1)
+    </xref>
+    transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
     <xref ref-type="bibr" rid="ref-1">
      1
     </xref>
@@ -6220,7 +6228,7 @@
          </disp-formula>
         </th>
         <th>
-         Grid type
+         grid type
         </th>
        </tr>
       </thead>
@@ -6468,140 +6476,24 @@
     </disp-formula>
     and
    </p>
-   <p>
-    <bold>
-     Figure 2:
-    </bold>
-    Streamlines (left) and the isotherms (right) of the current study for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo>
-         =
-        </mo>
-        <msup>
-         <mrow>
-          <mn>
-           1
-          </mn>
-          <mn>
-           0
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           5
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         φ
-        </mi>
-        <mo>
-         =
-        </mo>
-        <mn>
-         0.03
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         n
-        </mi>
-        <mo>
-         =
-        </mo>
-        <mn>
-         1
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         P
-        </mi>
-        <mi>
-         r
-        </mi>
-        <mo>
-         =
-        </mo>
-        <mn>
-         6.2
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         H
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo>
-         =
-        </mo>
-        <mn>
-         0
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    .
-   </p>
+   <fig id="fig-2">
+    <label>
+     Figure 2
+    </label>
+    <caption>
+     <title>
+      streamlines (left) and the isotherms (right) of the current study for.sfjghigu.gvug.12.4.ff.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <table-wrap id="table-3">
     <label>
      Table 3
     </label>
     <caption>
      <title>
-      Comparison of the average Nu with previous study of Turan et al. [
+      comparison of the average Nu with previous study of Turan et al. [
       <xref ref-type="bibr" rid="ref-18">
        18
       </xref>
@@ -7934,150 +7826,155 @@
      </table>
     </alternatives>
    </table-wrap>
-   <p>
-    <bold>
-     Figure 3:
-    </bold>
-    The
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <msub>
-         <mrow>
+   <fig id="fig-2">
+    <label>
+     Figure 3
+    </label>
+    <caption>
+     <title>
+      The
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mi>
+             u
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             m
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      number at
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
-           N
+           φ
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      : (a)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi>
+             A
+            </mi>
+            <mi>
+             l
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msub>
+          <msub>
+           <mrow>
+            <mi>
+             O
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             3
+            </mn>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , (b)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           T
+          </mi>
+          <mi>
+           i
+          </mi>
+          <msub>
+           <mrow>
+            <mi>
+             O
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and (c)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           C
           </mi>
           <mi>
            u
           </mi>
-         </mrow>
-         <mrow>
-          <mi>
-           m
-          </mi>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    number at
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         φ
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    : (a)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <msub>
-         <mrow>
-          <mi>
-           A
-          </mi>
-          <mi>
-           l
-          </mi>
-         </mrow>
-         <mrow>
-          <mn>
-           2
-          </mn>
-         </mrow>
-        </msub>
-        <msub>
-         <mrow>
-          <mi>
-           O
-          </mi>
-         </mrow>
-         <mrow>
-          <mn>
-           3
-          </mn>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , (b)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         T
-        </mi>
-        <mi>
-         i
-        </mi>
-        <msub>
-         <mrow>
-          <mi>
-           O
-          </mi>
-         </mrow>
-         <mrow>
-          <mn>
-           2
-          </mn>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and (c)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanoparticles.
-   </p>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanoparticles.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <p>
     The observations depicted in
     <xref ref-type="fig" rid="fig-4">
@@ -8362,218 +8259,223 @@
      </table>
     </alternatives>
    </table-wrap>
-   <p>
-    <bold>
-     Figure 4:
-    </bold>
-    The
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <msub>
-         <mrow>
+   <fig id="fig-2">
+    <label>
+     Figure 4
+    </label>
+    <caption>
+     <title>
+      The
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mi>
+             u
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             m
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      number at
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
-           N
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           φ
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      for
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo>
+           =
+          </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      : (a)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           A
+          </mi>
+          <mi>
+           l
+          </mi>
+          <mo>
+           ₂
+          </mo>
+          <mi>
+           O
+          </mi>
+          <mo>
+           ₃
+          </mo>
+          <mo>
+           −
+          </mo>
+          <mi>
+           w
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , (b)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           T
+          </mi>
+          <mi>
+           i
+          </mi>
+          <mi>
+           O
+          </mi>
+          <mn>
+           2
+          </mn>
+          <mo>
+           −
+          </mo>
+          <mi>
+           w
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and (c)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           C
           </mi>
           <mi>
            u
           </mi>
-         </mrow>
-         <mrow>
+          <mo>
+           −
+          </mo>
           <mi>
-           m
+           w
           </mi>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    number at
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         φ
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo>
-         =
-        </mo>
-        <msup>
-         <mrow>
-          <mn>
-           10
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    : (a)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         A
-        </mi>
-        <mi>
-         l
-        </mi>
-        <mo>
-         ₂
-        </mo>
-        <mi>
-         O
-        </mi>
-        <mo>
-         ₃
-        </mo>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , (b)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         T
-        </mi>
-        <mi>
-         i
-        </mi>
-        <mi>
-         O
-        </mi>
-        <mn>
-         2
-        </mn>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and (c)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanofluids.
-   </p>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanofluids.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <fig id="fig-2">
     <label>
      Figure 5
@@ -8583,10 +8485,10 @@
       Influence of nanoparticles on the
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <msub>
            <mrow>
             <mi>
@@ -8609,10 +8511,10 @@
       number for varied
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            φ
           </mi>
@@ -8623,10 +8525,10 @@
       , at fixed
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            R
           </mi>
@@ -8658,10 +8560,10 @@
       and
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            n
           </mi>
@@ -8689,10 +8591,10 @@
       Effect of nanoparticles on the
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <msub>
            <mrow>
             <mi>
@@ -8715,10 +8617,10 @@
       number at different
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            R
           </mi>
@@ -8732,10 +8634,10 @@
       , at fixed
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            φ
           </mi>
@@ -8752,10 +8654,10 @@
       and
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            n
           </mi>
@@ -9049,362 +8951,377 @@
     </disp-formula>
     , accentuating the most important enhancement of heat transfer.
    </p>
-   <p>
-    <bold>
-     Figure 7:
-    </bold>
-    Isotherms at various
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         A
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo>
-         =
-        </mo>
-        <msup>
-         <mrow>
-          <mn>
-           10
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         φ
-        </mi>
-        <mo>
-         =
-        </mo>
-        <mn>
-         0.2
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanofluid.
-   </p>
-   <p>
-    <bold>
-     Figure 8:
-    </bold>
-    Streamlines at various
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         A
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo>
-         =
-        </mo>
-        <msup>
-         <mrow>
-          <mn>
-           10
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         φ
-        </mi>
-        <mo>
-         =
-        </mo>
-        <mn>
-         0.2
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanofluid.
-   </p>
-   <p>
-    <bold>
-     Figure 9:
-    </bold>
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <msub>
-         <mrow>
+   <fig id="fig-4">
+    <label>
+     Figure 7
+    </label>
+    <caption>
+     <title>
+      Isotherms at various
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
-           N
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           A
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      for
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo>
+           =
+          </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           φ
+          </mi>
+          <mo>
+           =
+          </mo>
+          <mn>
+           0.2
+          </mn>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           C
           </mi>
           <mi>
            u
           </mi>
-         </mrow>
-         <mrow>
+          <mo>
+           −
+          </mo>
           <mi>
-           m
+           w
           </mi>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    number at various
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         φ
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         A
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , at
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
-      <tex-math>
-       
-       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo>
-         =
-        </mo>
-        <msup>
-         <mrow>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanofluid.
+     </title>
+    </caption>
+    No Image
+   </fig>
+   <fig id="fig-4">
+    <label>
+     Figure 8
+    </label>
+    <caption>
+     <title>
+      Streamlines at various
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           A
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      for
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo>
+           =
+          </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           φ
+          </mi>
+          <mo>
+           =
+          </mo>
           <mn>
-           10
+           0.2
           </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , for Cu-water nanofluid.
-   </p>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           C
+          </mi>
+          <mi>
+           u
+          </mi>
+          <mo>
+           −
+          </mo>
+          <mi>
+           w
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanofluid.
+     </title>
+    </caption>
+    No Image
+   </fig>
+   <fig id="fig-4">
+    <label>
+     Figure 9
+    </label>
+    <caption>
+     <title>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <msub>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mi>
+             u
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             m
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      number at various
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           φ
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           A
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , at
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
+        <tex-math>
+         
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo>
+           =
+          </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , for Cu-water nanofluid.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <p>
     <xref ref-type="fig" rid="fig-10">
      Fig. 10
@@ -9588,10 +9505,10 @@
      <title>
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <msub>
            <mrow>
             <mi>
@@ -9614,10 +9531,10 @@
       number at various
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            n
           </mi>
@@ -9628,10 +9545,10 @@
       ,
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            A
           </mi>
@@ -9645,10 +9562,10 @@
       , at
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            R
           </mi>
@@ -9677,10 +9594,10 @@
       ,
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            φ
           </mi>
@@ -9697,10 +9614,10 @@
       for
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif"/>
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            C
           </mi>

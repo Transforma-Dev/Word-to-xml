@@ -230,7 +230,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         xml_text = other_tags.funding_text(xml_text,variables)
 
     #Find figure caption in word document and change the tag into fig
-    elif (para.style.name.startswith("figure caption") or variables["image_next_para"]) and not re.search(r'^\d', para.text) and len(para.text)!=0:
+    elif (para.style.name.startswith("figure caption") or variables["image_next_para"] or re.search(r'^Figure \d+(\:|\.|\s)+', para.text)) and not re.search(r'^\d', para.text) and len(para.text)!=0:
         #print(xml_text)
         xml_text = image_table.image_caption(xml_text,variables)
 

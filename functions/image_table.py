@@ -4,19 +4,19 @@ import re
 #Define function to find the figure caption text
 def image_caption(xml_text,variables):
     # print(xml_text)
-    xml_text=xml_text.replace(":","")
+    # xml_text=xml_text.replace(":","")
     copy_text=xml_text
     xml_text = re.sub(r'<bold>|</bold>', '', xml_text, flags=re.IGNORECASE)
     path_image=re.findall(r'<graphic[^>]*>', variables["images_path"])
     count_graphic=variables["images_path"].count("graphic")
     text=""
     figure=xml_text
-
-    for i in range(count_graphic):
-        # if "<" in figure:
-        #     figure=figure.replace("<","&#60;")
+    # print(count_graphic)
+    # print(figure,"----")
+    if count_graphic == 0:
         pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|(\:|\s)*|\s)+)(.+)"
         match = re.match(pattern, figure.strip(),re.IGNORECASE)
+        # print(figure)
 
         if "<disp-formula" in xml_text:
             pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\:|\s)*|\s)+)(.+)"
@@ -24,8 +24,39 @@ def image_caption(xml_text,variables):
             part1 = match.group(1)
             if part1.strip()[-1]==".":
                 part1 = part1.strip()[:-1]
-
+            
             add_text = figure.replace(part1,"")
+            part1 = part1.replace(":","") 
+            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>No Image</fig>'    
+        else:
+            if match:
+                part1 = match.group(1)
+                if part1.strip()[-1]==".":
+                    part1 = part1.strip()[:-1]
+                part2 = match.group(7)
+                if part2 is None:
+                    part2 = match.group(8)
+                part2 = part2.replace(":","") 
+                
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>No Image</fig>'
+            else:
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>No Image</fig>{figure}'
+    for i in range(count_graphic):
+        # if "<" in figure:
+        #     figure=figure.replace("<","&#60;")
+        pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\.|\s)*|(\:|\s)*|\s)+)(.+)"
+        match = re.match(pattern, figure.strip(),re.IGNORECASE)
+        # print(figure)
+
+        if "<disp-formula" in xml_text:
+            pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\:|\s)*|\s)+)(.+)"
+            match = re.match(pattern, xml_text,re.IGNORECASE)
+            part1 = match.group(1)
+            if part1.strip()[-1]==".":
+                part1 = part1.strip()[:-1]
+            
+            add_text = figure.replace(part1,"")
+            part1 = part1.replace(":","") 
             text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>{path_image[i]}</fig>'    
         
         else:
@@ -36,6 +67,7 @@ def image_caption(xml_text,variables):
                 part2 = match.group(7)
                 if part2 is None:
                     part2 = match.group(8)
+                part2 = part2.replace(":","") 
                     
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}</fig>'
             else:

@@ -63,7 +63,8 @@ class TSP_styles:
         if child.text.endswith('.'):
             child.text = child.text[:-1]
 
-    def find_history(self,element):
+    #Find if date is not present in document then add query tag 
+    def find_history(self,element):     #https://github.com/Transforma-Dev/Word-to-xml/issues/11#issue-2385178216
         tag = False
         children_to_remove = []
         for child in element:
@@ -71,6 +72,7 @@ class TSP_styles:
                 if chil.tag == "day":
                     if chil.text.strip() == "0":
                         tag = True
+                    #Add 0 for single digit day value
                     elif len(element.text.strip()) == 1:
                         chil.text = "0" + chil.text.strip()
             if tag:
@@ -82,6 +84,20 @@ class TSP_styles:
             new_tag = ET.Element("Query")
             new_tag.text = "No History detail is there in the document"
             element.append(new_tag)
+
+    #Change the table title and figure title in sentance case.
+    def find_fig_title(self,image_title):
+        # title_text = ''.join(table_title.itertext())
+        split = image_title.text.strip().split(".")
+        caps = ''
+        for index,i in enumerate(split):
+            if index == 0:
+                caps += i.capitalize()
+            else:
+                caps += "." + i.capitalize()
+        image_title.text = caps
+        if image_title.text.endswith('.'):
+            image_title.text = image_title.text[:-1]
 
 
 
@@ -106,16 +122,26 @@ class TSP_styles:
         if element.tag == "kwd-group":
             self.find_key(element)
 
+        #Find the history tag
         if element.tag == "history":
             self.find_history(element)
-            
-        #Add 0 before single digit number
-        if element.tag == "day" and len(element.text.strip()) == 1:     #https://github.com/Transforma-Dev/Word-to-xml/issues/11#issue-2385178216
-            element.text = "0" + element.text.strip()
 
-        if element.find('./table-wrap//title') is not None:
-            table_title = element.find('./table-wrap//title')
-            # table_title.text = 
+        #Find the table title tag
+        for title in element.findall('./fig'):
+            image_title = title.find('.//title')
+            if image_title is not None:
+                self.find_fig_title(image_title)
+
+        #Find the table title tag
+        for title in element.findall('./table-wrap'):
+            table_title = title.find('.//title')
+            if table_title is not None:
+                self.find_fig_title(table_title)
+
+        #Find the th tag
+        for td in element.findall("./th"):
+            if td.text is not None:
+                self.find_fig_title(td)
 
         #Replace text or add or remove space in text
         self.change_space_text(element,data)

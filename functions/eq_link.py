@@ -342,7 +342,7 @@ def add_tag(xml_text):
         for i in match:
             xml_tex = i.split()
             xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
-    #Find fig and add tag
+    #Find Eqs and add tag
     pattern = r"Eqs\. \(\d+\s*?[-–]?\s*\d+\)"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:
@@ -359,7 +359,7 @@ def add_tag(xml_text):
                     no2 = 1
             xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{xml_tex[0]})</xref><xref ref-type='disp-formula' rid='eqn-{no2}'>({xml_tex[1]}</xref>")
             
-    #Find fig and add tag
+    #Find Eqs and add tag
     pattern = r"Eq\.\s*\(\d+\d*\)"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:
@@ -370,6 +370,39 @@ def add_tag(xml_text):
                 if j.isdigit():
                     no1 = 1
             xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{match[0]}</xref>")
+
+    #Find Section and add tag
+    pattern = r"Section\s\d\d*"
+    match = re.findall(pattern, xml_text,re.IGNORECASE)
+    if match:
+        match = set(match)
+        match = list(match)
+        for i in match:
+            for j in match[0]:
+                if j.isdigit():
+                    no1 = 1
+            xml_text = xml_text.replace(i,f"<xref ref-type='sec' rid='s-{no1}'>{match[0]}</xref>")
+
+    #Find Formula and add tag
+    pattern = r"Formula\s\(*\d\d*\)*"
+    match = re.findall(pattern, xml_text,re.IGNORECASE)
+    if match:
+        match = set(match)
+        match = list(match)
+        for i in match:
+            for j in match[0]:
+                if j.isdigit():
+                    no1 = 1
+            xml_text = xml_text.replace(i,f"<xref ref-type='formula' rid='for-{no1}'>{match[0]}</xref>")
+
+    #Find  and add tag
+    pattern = r"Appendix"
+    match = re.findall(pattern, xml_text,re.IGNORECASE)
+    if match:
+        match = set(match)
+        match = list(match)
+        for i in match:
+            xml_text = xml_text.replace(i,f"<xref ref-type='appendix' rid='app'>{match[0]}</xref>")
 
     return xml_text
 

@@ -201,7 +201,29 @@
     XX
    </lpage>
    <history>
-    <Query>No History detail is there in the document</Query></history>
+    <date date-type="received">
+     <day>
+      17
+     </day>
+     <month>
+      2
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      17
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
    <permissions>
     <copyright-statement>
      © 2024 M'hadbi et al.
@@ -515,7 +537,15 @@
     Introduction
    </title>
    <p>
-    Free convection heat transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
+    Free convection
+    <xref ref-type="appendix" rid="app">
+     appendix
+    </xref>
+    heat
+    <xref ref-type="formula" rid="for-1">
+     formula (1)
+    </xref>
+    transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
     <xref ref-type="bibr" rid="ref-1">
      1
     </xref>
@@ -1549,9 +1579,7 @@
      Figure 1
     </label>
     <caption>
-     <title>
-      Some functions of
-     </title>
+     <title>Some functions of</title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-1.jpg" />
    </fig>
@@ -3745,9 +3773,7 @@
      Table 1
     </label>
     <caption>
-     <title>
-      Thermophysical properties of pure water and nanoparticles .
-     </title>
+     <title>Thermophysical properties of pure water and nanoparticles </title>
     </caption>
     <alternatives>
      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-table-1.tif" />
@@ -3762,8 +3788,7 @@
       <thead>
        <tr>
         <th />
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -3806,8 +3831,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -3853,8 +3877,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -3902,8 +3925,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -5920,9 +5942,7 @@
      Table 2
     </label>
     <caption>
-     <title>
-      Grid test of
-      <disp-formula>
+     <title>Grid test of<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -6015,8 +6035,7 @@
       </colgroup>
       <thead>
        <tr>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6042,9 +6061,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         Grid type
-        </th>
+        <th>Grid type</th>
        </tr>
       </thead>
       <tbody>
@@ -6282,131 +6299,21 @@
     </disp-formula>
     and
    </p>
-   <p>
-    <bold>
-     Figure 2:
-    </bold>
-    Streamlines (left) and the isotherms (right) of the current study for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo> = </mo>
-        <msup>
-         <mrow>
-          <mn>
-           1
-          </mn>
-          <mn>
-           0
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           5
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         φ
-        </mi>
-        <mo> = </mo>
-        <mn>
-         0.03
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         n
-        </mi>
-        <mo> = </mo>
-        <mn>
-         1
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         P
-        </mi>
-        <mi>
-         r
-        </mi>
-        <mo> = </mo>
-        <mn>
-         6.2
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         H
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo> = </mo>
-        <mn>
-         0
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    .
-   </p>
+   <fig id="fig-2">
+    <label>
+     Figure 2
+    </label>
+    <caption>
+     <title>Streamlines (left) and the isotherms (right) of the current study for.Sfjghigu.Gvug.12.4.Ff</title>
+    </caption>
+    No Image
+   </fig>
    <table-wrap id="table-3">
     <label>
      Table 3
     </label>
     <caption>
-     <title>
-      Comparison of the average Nu with previous study of Turan et al. [
-      <xref ref-type="bibr" rid="ref-18">
+     <title>Comparison of the average nu with previous study of turan et al. [<xref ref-type="bibr" rid="ref-18">
        18
       </xref>
       ] for various
@@ -6494,14 +6401,11 @@
       </colgroup>
       <thead>
        <tr align="center">
-        <th>
-         <italic />
+        <th><italic />
         </th>
-        <th>
-         <italic />
+        <th><italic />
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6527,8 +6431,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6554,8 +6457,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7594,8 +7496,7 @@
       <thead>
        <tr align="center">
         <th />
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7613,8 +7514,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7632,8 +7532,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7700,150 +7599,153 @@
      </table>
     </alternatives>
    </table-wrap>
-   <p>
-    <bold>
-     Figure 3:
-    </bold>
-    The
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <msub>
-         <mrow>
+   <fig id="fig-2">
+    <label>
+     Figure 3
+    </label>
+    <caption>
+     <title>The<disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <msub>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mi>
+             u
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             m
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      number at
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
           <mi>
-           N
+           φ
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      : (a)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <msub>
+           <mrow>
+            <mi>
+             A
+            </mi>
+            <mi>
+             l
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msub>
+          <msub>
+           <mrow>
+            <mi>
+             O
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             3
+            </mn>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , (b)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           T
+          </mi>
+          <mi>
+           i
+          </mi>
+          <msub>
+           <mrow>
+            <mi>
+             O
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and (c)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           C
           </mi>
           <mi>
            u
           </mi>
-         </mrow>
-         <mrow>
-          <mi>
-           m
-          </mi>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    number at
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         φ
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    : (a)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <msub>
-         <mrow>
-          <mi>
-           A
-          </mi>
-          <mi>
-           l
-          </mi>
-         </mrow>
-         <mrow>
-          <mn>
-           2
-          </mn>
-         </mrow>
-        </msub>
-        <msub>
-         <mrow>
-          <mi>
-           O
-          </mi>
-         </mrow>
-         <mrow>
-          <mn>
-           3
-          </mn>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , (b)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         T
-        </mi>
-        <mi>
-         i
-        </mi>
-        <msub>
-         <mrow>
-          <mi>
-           O
-          </mi>
-         </mrow>
-         <mrow>
-          <mn>
-           2
-          </mn>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and (c)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanoparticles.
-   </p>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanoparticles.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <p>
     The observations depicted in
     <xref ref-type="fig" rid="fig-4">
@@ -8101,15 +8003,9 @@
       </colgroup>
       <thead>
        <tr align="center">
-        <th>
-         (a)
-        </th>
-        <th>
-         (b)
-        </th>
-        <th>
-         (c)
-        </th>
+        <th>(a)</th>
+        <th>(b)</th>
+        <th>(c)</th>
        </tr>
       </thead>
       <tbody>
@@ -8128,229 +8024,230 @@
      </table>
     </alternatives>
    </table-wrap>
-   <p>
-    <bold>
-     Figure 4:
-    </bold>
-    The
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <msub>
-         <mrow>
+   <fig id="fig-2">
+    <label>
+     Figure 4
+    </label>
+    <caption>
+     <title>The<disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <msub>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mi>
+             u
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             m
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      number at
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
           <mi>
-           N
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           φ
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      for
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo> = </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      : (a)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           A
+          </mi>
+          <mi>
+           l
+          </mi>
+          <mo>
+           ₂
+          </mo>
+          <mi>
+           O
+          </mi>
+          <mo>
+           ₃
+          </mo>
+          <mo>
+           −
+          </mo>
+          <mi>
+           w
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , (b)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           T
+          </mi>
+          <mi>
+           i
+          </mi>
+          <mi>
+           O
+          </mi>
+          <mn>
+           2
+          </mn>
+          <mo>
+           −
+          </mo>
+          <mi>
+           w
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      and (c)
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           C
           </mi>
           <mi>
            u
           </mi>
-         </mrow>
-         <mrow>
+          <mo>
+           −
+          </mo>
           <mi>
-           m
+           w
           </mi>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    number at
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         φ
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo> = </mo>
-        <msup>
-         <mrow>
-          <mn>
-           10
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    : (a)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         A
-        </mi>
-        <mi>
-         l
-        </mi>
-        <mo>
-         ₂
-        </mo>
-        <mi>
-         O
-        </mi>
-        <mo>
-         ₃
-        </mo>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , (b)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         T
-        </mi>
-        <mi>
-         i
-        </mi>
-        <mi>
-         O
-        </mi>
-        <mn>
-         2
-        </mn>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    and (c)
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanofluids.
-   </p>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanofluids.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <fig id="fig-2">
     <label>
      Figure 5
     </label>
     <caption>
-     <title>
-      Influence of nanoparticles on the
-      <disp-formula>
+     <title>Influence of nanoparticles on the<disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <msub>
            <mrow>
             <mi>
@@ -8373,10 +8270,10 @@
       number for varied
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            φ
           </mi>
@@ -8387,10 +8284,10 @@
       , at fixed
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            R
           </mi>
@@ -8420,10 +8317,10 @@
       and
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            n
           </mi>
@@ -8445,14 +8342,12 @@
      Figure 6
     </label>
     <caption>
-     <title>
-      Effect of nanoparticles on the
-      <disp-formula>
+     <title>Effect of nanoparticles on the<disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <msub>
            <mrow>
             <mi>
@@ -8475,10 +8370,10 @@
       number at different
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            R
           </mi>
@@ -8492,10 +8387,10 @@
       , at fixed
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            φ
           </mi>
@@ -8510,10 +8405,10 @@
       and
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            n
           </mi>
@@ -8799,352 +8694,362 @@
     </disp-formula>
     , accentuating the most important enhancement of heat transfer.
    </p>
-   <p>
-    <bold>
-     Figure 7:
-    </bold>
-    Isotherms at various
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         A
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo> = </mo>
-        <msup>
-         <mrow>
-          <mn>
-           10
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         φ
-        </mi>
-        <mo> = </mo>
-        <mn>
-         0.2
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanofluid.
-   </p>
-   <p>
-    <bold>
-     Figure 8:
-    </bold>
-    Streamlines at various
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         A
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    for
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo> = </mo>
-        <msup>
-         <mrow>
-          <mn>
-           10
-          </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         φ
-        </mi>
-        <mo> = </mo>
-        <mn>
-         0.2
-        </mn>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , and
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         C
-        </mi>
-        <mi>
-         u
-        </mi>
-        <mo>
-         −
-        </mo>
-        <mi>
-         w
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mi>
-         t
-        </mi>
-        <mi>
-         e
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    nanofluid.
-   </p>
-   <p>
-    <bold>
-     Figure 9:
-    </bold>
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <msub>
-         <mrow>
+   <fig id="fig-4">
+    <label>
+     Figure 7
+    </label>
+    <caption>
+     <title>Isotherms at various<disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
           <mi>
-           N
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           A
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      for
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo> = </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           φ
+          </mi>
+          <mo> = </mo>
+          <mn>
+           0.2
+          </mn>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           C
           </mi>
           <mi>
            u
           </mi>
-         </mrow>
-         <mrow>
+          <mo>
+           −
+          </mo>
           <mi>
-           m
+           w
           </mi>
-         </mrow>
-        </msub>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    number at various
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         φ
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         A
-        </mi>
-        <mi>
-         r
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    ,
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         n
-        </mi>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , at
-    <disp-formula>
-     <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
-      <tex-math>
-       
-       <math>
-        <mi>
-         R
-        </mi>
-        <mi>
-         a
-        </mi>
-        <mo> = </mo>
-        <msup>
-         <mrow>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanofluid.
+     </title>
+    </caption>
+    No Image
+   </fig>
+   <fig id="fig-4">
+    <label>
+     Figure 8
+    </label>
+    <caption>
+     <title>Streamlines at various<disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           A
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      for
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo> = </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           φ
+          </mi>
+          <mo> = </mo>
           <mn>
-           10
+           0.2
           </mn>
-         </mrow>
-         <mrow>
-          <mn>
-           6
-          </mn>
-         </mrow>
-        </msup>
-       </math>
-      </tex-math>
-     </alternatives>
-    </disp-formula>
-    , for Cu-water nanofluid.
-   </p>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , and
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           C
+          </mi>
+          <mi>
+           u
+          </mi>
+          <mo>
+           −
+          </mo>
+          <mi>
+           w
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mi>
+           t
+          </mi>
+          <mi>
+           e
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      nanofluid.
+     </title>
+    </caption>
+    No Image
+   </fig>
+   <fig id="fig-4">
+    <label>
+     Figure 9
+    </label>
+    <caption>
+     <title><disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <msub>
+           <mrow>
+            <mi>
+             N
+            </mi>
+            <mi>
+             u
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             m
+            </mi>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      number at various
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           φ
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           A
+          </mi>
+          <mi>
+           r
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      ,
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           n
+          </mi>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , at
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <tex-math>
+         
+         <math>
+          <mi>
+           R
+          </mi>
+          <mi>
+           a
+          </mi>
+          <mo> = </mo>
+          <msup>
+           <mrow>
+            <mn>
+             10
+            </mn>
+           </mrow>
+           <mrow>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </msup>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      , for Cu-water nanofluid.
+     </title>
+    </caption>
+    No Image
+   </fig>
    <p>
     <xref ref-type="fig" rid="fig-10">
      Fig. 10
@@ -9317,13 +9222,12 @@
      Figure 10
     </label>
     <caption>
-     <title>
-      <disp-formula>
+     <title><disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <msub>
            <mrow>
             <mi>
@@ -9346,10 +9250,10 @@
       number at various
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            n
           </mi>
@@ -9360,10 +9264,10 @@
       ,
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            A
           </mi>
@@ -9377,10 +9281,10 @@
       , at
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            R
           </mi>
@@ -9407,10 +9311,10 @@
       ,
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            φ
           </mi>
@@ -9425,10 +9329,10 @@
       for
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
          
-         <math xmlnsm="http//schemas.openxmlformats.org/officeDocument/2006/math" xmlnsmml="http//www.w3.org/1998/Math/MathML">
+         <math>
           <mi>
            C
           </mi>

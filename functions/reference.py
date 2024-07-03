@@ -135,7 +135,7 @@ def reference_text(xml_text,variables):
                         ref_word += f'<year>{date[0]}</year>'
 
         ref_word += f'</mixed-citation>'
-        print(ref_word)
+        # print(ref_word)
 
         #Split the reference text and find author name and year
         xml_text_split = xml_text.split(".")
