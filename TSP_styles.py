@@ -11,24 +11,73 @@ class TSP_styles:
         for i in data["replace_text"]:
             if element.text and i["text"] in element.text:
                 element.text = element.text.replace(i["text"], i["replace"])
+            if element.tail and i["text"] in element.tail:
+                element.tail = element.tail.replace(i["text"], i["replace"])
 
         #Replace and add space text
         for i in data["space_add_text"]:
             if element.text and i in element.text:
                 pattern = fr"\s*\{i}\s*"
                 element.text = re.sub(pattern, f' {i} ', element.text)
+            if element.tail and i in element.tail:
+                pattern = fr"\s*\{i}\s*"
+                element.tail = re.sub(pattern, f' {i} ', element.tail)
 
         #Replace and remove space text
         for i in data["space_remove_text"]:     #https://github.com/Transforma-Dev/Word-to-xml/issues/21#issue-2385187570
             if element.text and i in element.text:
                 pattern = fr"\s*\{i}\s*"
                 element.text = re.sub(pattern, f'{i}', element.text)
+            if element.tail and i in element.tail:
+                pattern = fr"\s*\{i}\s*"
+                element.tail = re.sub(pattern, f'{i}', element.tail)
 
         #Replace and add space only before text
         for i in data["space_before_text"]:
             if element.text and i in element.text:
                 pattern = fr"\s*{i}\s*"
                 element.text = re.sub(pattern, f' {i}', element.text)
+            if element.tail and i in element.tail:
+                pattern = fr"\s*{i}\s*"
+                element.tail = re.sub(pattern, f' {i}', element.tail)
+
+        #Find the continuous text and add "," and last will add "and" 
+        for symbol in data["add_and"]:
+            if element.text:
+                pattern = fr'\d+\.*\d*{symbol}(?:\s*,*\s*\d+\.*\d*{symbol}\.*)*'
+                result = re.findall(pattern,element.text,re.IGNORECASE)
+                if result:
+                    for i in result:
+                        if "," in i:
+                            split = i.split(",")
+                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1]
+                            element.text = re.sub(i,simple,element.text)
+            if element.tail:
+                pattern = fr'\d+\.*\d*{symbol}(?:\s*,*\s*\d+\.*\d*{symbol}\.*)*'
+                result = re.findall(pattern,element.tail,re.IGNORECASE)
+                if result:
+                    for i in result:
+                        if "," in i:
+                            split = i.split(",")
+                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1]
+                            element.tail = re.sub(i,simple,element.tail)
+
+        #Chnage the SI_unit minutes,seconds,hours with min,s,h
+        for si_unit in data["si_units"]:
+            if element.text and si_unit["text"] in element.text:
+                pattern = fr'\d+\s*{si_unit["text"]}[s]*'
+                result = re.findall(pattern, element.text,re.IGNORECASE)
+                if result:
+                    for i in result:
+                        new_text = i[0] + " " + si_unit["replace"]
+                        element.text = re.sub(i,new_text,element.text)
+            if element.tail and si_unit["text"] in element.tail:
+                pattern = fr'\d+\s*{si_unit["text"]}[s]*'
+                result = re.findall(pattern, element.tail,re.IGNORECASE)
+                if result:
+                    for i in result:
+                        new_text = i[0] + " " + si_unit["replace"]
+                        element.tail = re.sub(i,new_text,element.tail)
 
     #Find the article title tag inside the front tag and capitalie the article title text except remove conjuction and preposition
     def find_artitle(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
@@ -142,6 +191,15 @@ class TSP_styles:
         for td in element.findall("./th"):
             if td.text is not None:
                 self.find_fig_title(td)
+
+        #Find acknowledgement tag
+        if element.tag == "ack":
+            cloned_ack = ET.Element(element[0].tag)
+            cloned_ack.text = element[0].text
+            print(cloned_ack)
+
+        if element.tag == "fn-group":
+            element.append(cloned_ack)
 
         #Replace text or add or remove space in text
         self.change_space_text(element,data)
