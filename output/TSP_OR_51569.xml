@@ -1,0 +1,3802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    OR
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    OR
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    OR
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Oncology Research
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="ppub">
+    0965-0407
+   </issn>
+   <issn pub-type="epub">
+    1555-3906
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    51569
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604/or.2024.051569
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+     Hsa-miR-181a-5p inhibits glioblastoma development via the MAPK pathway:
+     <italic>
+      in-silico
+     </italic>
+     and
+     <italic>
+      in-vitro
+     </italic>
+     study
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     Hsa-miR-181a-5p inhibits glioblastoma development via the MAPK pathway:
+     <italic>
+      in-silico
+     </italic>
+     and
+     <italic>
+      in-vitro
+     </italic>
+     study
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     Hsa-miR-181a-5p inhibits glioblastoma development via the MAPK pathway:
+     <italic>
+      in-silico
+     </italic>
+     and
+     <italic>
+      in-vitro
+     </italic>
+     study
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Shadbad
+      </surname>
+      <given-names>
+       Mahdi Abdoli
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid"/>
+     <name name-style="western">
+      <surname>
+       Baradaran
+      </surname>
+      <given-names>
+       Behzad
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+     <mail>
+      ssss@email.com
+     </mail>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      <sup>
+       1
+      </sup>
+     </label>
+     <institution>
+      Student Research Committee  Tabriz University of Medical Sciences  Tabriz
+     </institution>
+     <country>
+      Iran
+     </country>
+    </aff>
+    <aff id="aff-2">
+     <institution>
+      2 Immunology Research Center  Tabriz University of Medical Sciences  Tabriz
+     </institution>
+     <country>
+      Iran
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     *Address correspondence to: Behzad Baradaran, Immunology Research Center, Tabriz University of Medical Sciences, Tabriz, Iran. Email: baradaranb@tbzmed.ac.ir
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      08
+     </day>
+     <month>
+      3
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      22
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024 Shadbad and Baradaran
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     Shadbad and Baradaran
+    </copyright-holder>
+    <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" xlink:href="TSP_OR_51569.pdf"/>
+   <abstract abstract-type="abstract">
+    <p>
+     <bold>
+      Background:
+     </bold>
+     Glioblastoma remains a highly invasive primary brain malignancy with an undesirable prognosis. Growing evidence has shed light on the importance of microRNAs (miRs), as small non-coding RNAs, in tumor development and progression. The present study leverages the
+     <italic>
+      in-silico
+     </italic>
+     and
+     <italic>
+      in-vitro
+     </italic>
+     techniques to investigate the significance of hsa-miR-181a-5p and the underlying hsa-miR-181a-5p-meidated signaling pathway in glioblastoma development.
+     <bold>
+      Materials and Methods:
+     </bold>
+     Bioinformatic studies were performed on GSE158284, GSE108474 (REMBRANDT study), TCGA-GTEx, CCLE, GeneMANIA, Reactome, WikiPathways, KEGG, miRDB, and microT-CDS to identify the significance of hsa-miR-181a-5p and its underlying target. Afterward, the U373 cell line was selected and transfected with hsa-miR-181a-5p mimics, and the cell viability, clonogenicity, migration, mRNA expression, apoptosis, and cell cycle were studied using the MTT assay, colony formation test, migration assay, qRT-PCR, and flow cytometry respectively.
+     <bold>
+      Results:
+     </bold>
+     hsa-miR-181a-5p expression is decreased in glioblastoma samples. The
+     <italic>
+      in-silico
+     </italic>
+     results have shown that hsa-miR-181a-5p could regulate the MAPK pathway by targeting
+     <italic>
+      AKT3
+     </italic>
+     . The experimental analyses have shown that hsa-miR-181a-5p decreases the migration of glioblastoma cells, arrests the cell cycle, and increases the apoptosis rate. Besides downregulating
+     <italic>
+      MMP9
+     </italic>
+     and upregulating
+     <italic>
+      BAX
+     </italic>
+     , hsa-miR-181a-5p downregulates
+     <italic>
+      MET
+     </italic>
+     ,
+     <italic>
+      MAP2K1
+     </italic>
+     ,
+     <italic>
+      MAPK1
+     </italic>
+     ,
+     <italic>
+      MAPK3
+     </italic>
+     , and
+     <italic>
+      AKT3
+     </italic>
+     expression in U373 cells. The
+     <italic>
+      in-vitro
+     </italic>
+     results were consistent with
+     <italic>
+      in-silico
+     </italic>
+     results regarding the regulatory effect of hsa-miR-181a-5p on the MAPK pathway, leading to tumor suppression in glioblastoma.
+     <bold>
+      Conclusions:
+     </bold>
+     hsa-miR-181a-5p inhibits glioblastoma development partially by regulating the signaling factors of the MAPK pathway.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+     Glioblastoma
+    </kwd>
+    <kwd>
+     Hsa-miR-181a-5p
+    </kwd>
+    <kwd>
+     MAPK
+    </kwd>
+    <kwd>
+     MicroRNAs
+    </kwd>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title>
+    Introduction
+   </title>
+   <p>
+    Glioblastoma is considered a brain malignancy with a poor prognosis. It has been reported that glioblastoma accounts for more than 61% of diagnosed glioma in the United States between 2000 and 2014 [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ]. Glioblastoma is a highly aggressive malignancy in which tumor relapse is almost inevitable, and there is no standard clinical treatment for recurrent glioblastoma [
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ]. Therefore, developing novel treatments for glioblastoma is an imperative matter; a better understanding of glioblastoma biology is essential to developing novel treatments for glioblastoma patients.
+   </p>
+   <p>
+    MicroRNAs (miRs) are single-stranded endogenous RNAs with a length of 22 nucleotides that post-transcriptionally regulate gene expression [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ]. It is estimated that miRs can regulate the expression of 90% of protein-coding genes, and one miR can regulate hundreds of genes' expression directly and indirectly [
+    <xref ref-type="bibr" rid="ref-4">
+     4
+    </xref>
+    ]. miRs combine with Argonaute and produce the miR-induced silencing complex that complementarily binds to the 3' untranslated regions of target mRNA; this leads to mRNA degradation [
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ]. Indeed, miRs have significant roles in regulating various signaling pathways [
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ]. miR-181a-5p has tumor-suppressive properties that are dysregulated in malignancies like non-small cell lung cancer, oral squamous cell carcinoma, retinoblastoma, and esophageal squamous cell carcinoma [
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ]. Besides, hsa-miR-181a-5p expression is decreased in glioblastoma tissues compared to non-tumoral brain tissues [
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ]. The comparable results regarding the downregulation of miR-181a in glioma have been reported by Ciafre et al. [
+    <xref ref-type="bibr" rid="ref-12">
+     12
+    </xref>
+    ]. The dysregulated expression level of hsa-miR-181a-5p has been associated with the clinical picture of patients with glioma as well; miR-181a-5p is upregulated in recurrent glioblastoma tissues compared to primary ones [
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ]. Besides, it has been demonstrated that there is a negative correlation between glioma grade with hsa-miR-181a-5p expression [
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ]. High expression of circulating miR-181a has been linked with improved overall survival of patients with high-grade gliomas undergoing total and partial resection [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ]. Huang et al. have shown that miR-181a is downregulated in glioblastoma tissues, and low expression of miR-181a is associated with poor overall survival of glioblastoma patients. Besides, increased expression of miR-181a-5p stimulates the apoptosis of glioblastoma cells [
+    <xref ref-type="bibr" rid="ref-16">
+     16
+    </xref>
+    ]. Chen et al. have shown that miR-181a enhances the chemosensivity of glioblastoma cells [
+    <xref ref-type="bibr" rid="ref-17">
+     17
+    </xref>
+    ]. Also, Marisetty et al. have shown that lipofectamine-mediated delivery of miR-181a-5p increases the survival of immunocompetent glioma models [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ]. There have been reports that miR-181a-5p overexpression inhibits the Wnt/b-catenin signaling pathway in colorectal cancer, TGF-b1/Smad pathway in hepatocellular carcinoma, and MAPK pathway in cutaneous squamous cell carcinoma [
+    <xref ref-type="bibr" rid="ref-19">
+     19
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-21">
+     21
+    </xref>
+    ]. Although the studies have reported anti-tumoral properties of hsa-miR-181a-5p in glioblastoma, its underlying mechanism is not well-established. Thus, there is a need to investigate the hsa-miR-181a-5p-mediated signaling pathway on glioblastoma development.
+   </p>
+   <p>
+    The advances in computational biology and RNA sequencing have brought ample opportunities for discovering dysregulated miRs in various human conditions development. Tumor bulk RNA studies between tumoral and non-tumoral tissues provide unprecedented data on the dysregulation patterns of mRNA and miRNAs, and bioinformatic prediction tools can predict and rank the interaction between miRNAs and mRNAs based on their sequences [
+    <xref ref-type="bibr" rid="ref-22">
+     22
+    </xref>
+    ]. In this regard, the application of bioinformatic tools along with experimental studies can further facilitate the development of novel anti-neoplastic treatments [
+    <xref ref-type="bibr" rid="ref-23">
+     23
+    </xref>
+    ]. In the current study, we leveraged bioinformatics to study the significance of hsa-miR-181a-5p in glioblastoma development. Also, the subsequent experimental analyses were performed to confirm the obtained
+    <italic>
+     in-silico
+    </italic>
+    results.
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title>
+    Materials and Methods
+   </title>
+   <p>
+    In this study, we employed
+    <italic>
+     in-silico
+    </italic>
+    and
+    <italic>
+     in-vitro
+    </italic>
+    approaches to study the significance of hsa-miR-181a-5p in glioblastoma development. Regarding the bioinformatics approaches, the GSE158284, GSE108474 (REMBRANDT study), TCGA-GTEx, CGGA, CCLE, GeneMANIA, Reactome, WikiPathways, KEGG, miRDB, and microT-CDS were leveraged to investigate the role of hsa-miR-181a-5p and its mediated signaling pathway in glioblastoma development. Also, the
+    <italic>
+     in-vitro
+    </italic>
+    assays, i.e., 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl-2H-tetrazolium bromide (MTT), annexin V/propidium iodide (PI), scratch, colony formation, qRT-PCR, and cell cycle assays, were performed to validate the
+    <italic>
+     in-silico
+    </italic>
+    results. This study was approved by the Ethics Committee of Tabriz University of Medical Sciences (IR.TBZMED.VCR.REC.1402.082).
+   </p>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title>
+    Tumor bulk RNA analysis
+   </title>
+   <p>
+    In the first step, we used system biology approaches to study miR-181a expression in glioblastoma and non-cancerous brain tissues. After searching the Gene Expression Omnibus (GEO) database, the GSE158284 and GSE108474 datasets were selected for this aim. The GSE158284 dataset used Agilent-021827 Human miRNA Microarray (V3) (Probe Name version) for sequencing the miR expression of 20 primary adult glioblastoma, 9 primary pediatric glioblastoma, and 11 non-tumoral brain tissues. The GSE108474 dataset used GPL570 for sequencing mRNA in 550 brain cancers and normal brain tissues. After logarithmically transforming the raw data and the quantile normalization of the expression values, the box plots of included samples were drawn using R software (version 4.3.2). Then, the clustering analyses and heatmaps were provided to examine the expression data of tissues. Finally, the provided annotation file was used to assign probes to miRs and mRNAs. The TCGA-GTEx dataset was retrieved with the use of GEPIA to perform a comparative study of
+    <italic>
+     AKT3
+    </italic>
+    expression in glioblastoma and normal brain tissues. Furthermore, the CCLE dataset was used to study miR-181a expression in A172 and U87MG cell lines.
+   </p>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title>
+    Identifying hsa-miR-181a-5p targets
+   </title>
+   <p>
+    To investigate the potential effect of hsa-miR-181a-5p ectopic expression on signaling pathways, we used the miRPathDB v2.0 database. In this database, we considered
+    <italic>
+     p
+    </italic>
+    -values less than 0.01 as significant, and we only included the findings based on "strong experimental" evidence. For external validation, the miRDB and microT-CDS databases were used to obtain the potential targets of hsa-miR-181a-5p with a target score of above 89.
+   </p>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title>
+    Cell culture
+   </title>
+   <p>
+    The U373 cell line was bought from the Pasture Institute's cell bank in Tehran, Iran. The cells were grown in RPMI-1640 supplemented with 10% fetal bovine serum (FBS) (GIBCO, Carlsbad, CA) and penicillin (100 IU/mL) streptomycin (100 ug/mL) (Sigma-Aldrich, St. Louis, MO, USA); they were then incubated at 37  in a 95% humidified incubator with 5% CO
+    <sub>
+     2
+    </sub>
+    .
+   </p>
+  </sec>
+  <sec id="s6">
+   <label>
+    6
+   </label>
+   <title>
+    Hsa-miR-181a-5p mimic transfection
+   </title>
+   <p>
+    U373 cells were subcultured when the confluency reached 80%. The number of cells was counted in the log phase of cell growth. The cells were suspended in a cool electroporation buffer for this purpose. A Gene Pulser Electroporation device and a 0.4 cm
+    <sup>
+     3
+    </sup>
+    Gene Pulser Cuvette (Bio-Rad, CA, USA) were utilized to transfect 20 pmol of hsa-miR-181a-5p (AACAUUCAACGCUGUCGGUGAGU) into 1x106 suspended cells.
+   </p>
+  </sec>
+  <sec id="s7">
+   <label>
+    7
+   </label>
+   <title>
+    Assessing gene expression by qRT-PCR
+   </title>
+   <p>
+    Consistent with our previous studies, total RNA was isolated from the cells after 48 hours of transfection using the RiboEX reagent (GeneAll Biotechnology, South Korea, Seoul) following the manufacturer's instructions [
+    <xref ref-type="bibr" rid="ref-24">
+     24
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-25">
+     25
+    </xref>
+    ]. The purity and concentration of the collected RNA were then evaluated using a NanoDrop spectrophotometer (Thermo Fisher Scientific, Lenexa, KS). The cDNA was synthesized from the RNA, utilizing an AddScript cDNA Synthesis Kit and a thermal cycler system (ADDBIO, South Korea). Then, the STEP ONE PLUS qRTPCR equipment (Applied Biosystems, Foster City, USA) was used to examine the mRNA expression of
+    <italic>
+     MAP2K1
+    </italic>
+    ,
+    <italic>
+     MET
+    </italic>
+    ,
+    <italic>
+     AKT3
+    </italic>
+    ,
+    <italic>
+     PIK3CA
+    </italic>
+    ,
+    <italic>
+     MAPK1
+    </italic>
+    ,
+    <italic>
+     MAPK3
+    </italic>
+    ,
+    <italic>
+     MMP9
+    </italic>
+    ,
+    <italic>
+     CASP9
+    </italic>
+    , and
+    <italic>
+     BAX
+    </italic>
+    , and the 2
+    <sup>
+     -DDCt
+    </sup>
+    technique was used for subsequent statistical analyses. The 18s gene was utilized as the housekeeping gene. Using the NCBI website, the all-pair primer sequences were examined (
+    <xref ref-type="table" rid="table-1">
+     Table. 1
+    </xref>
+    ).
+   </p>
+   <p>
+    <bold>
+     <xref ref-type="table" rid="table-1">
+      TABLE 1
+     </xref>
+    </bold>
+    The primer sequences of studied genes
+   </p>
+   <table-wrap id="table-1">
+    <alternatives>
+     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-table-1.tif"/>
+     <table>
+      <colgroup>
+       <col/>
+       <col/>
+       <col/>
+       <col/>
+       <col/>
+      </colgroup>
+      <thead>
+       <tr>
+        <th>
+         Gene
+        </th>
+        <th>
+         Forward primer
+        </th>
+        <th>
+         Reverse primer
+        </th>
+        <th>
+         Product length
+        </th>
+        <th>
+         Species
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         MAP2K1
+        </td>
+        <td>
+         CAATGGCGGTGTGGTGTTC
+        </td>
+        <td>
+         GATTGCGGGTTTGATCTCCAG
+        </td>
+        <td>
+         91
+        </td>
+        <td rowspan="10">
+         Homo sapiens
+        </td>
+       </tr>
+       <tr>
+        <td>
+         MET
+        </td>
+        <td>
+         GGACATCAGAGGGTCGCTTCA
+        </td>
+        <td>
+         TCTGGAGACACTGGATGGGAGT
+        </td>
+        <td>
+         100
+        </td>
+       </tr>
+       <tr>
+        <td>
+         AKT3
+        </td>
+        <td>
+         AGAACGACCAAAGCCAAACACA
+        </td>
+        <td>
+         AGTCTGTCTGCTACAGCCTGG
+        </td>
+        <td>
+         135
+        </td>
+       </tr>
+       <tr>
+        <td>
+         PIK3CA
+        </td>
+        <td>
+         GAAGCACCTGAATAGGCAAGTCG
+        </td>
+        <td>
+         GAGCATCCATGAAATCTGGTCGC
+        </td>
+        <td>
+         146
+        </td>
+       </tr>
+       <tr>
+        <td>
+         MAPK1
+        </td>
+        <td>
+         TCTGGAGCAGTATTACGACCC
+        </td>
+        <td>
+         CTGGCTGGAATCTAGCAGTCT
+        </td>
+        <td>
+         134
+        </td>
+       </tr>
+       <tr>
+        <td>
+         MAPK3
+        </td>
+        <td>
+         CGCTTCCGCCATGAGAATGT
+        </td>
+        <td>
+         GGTCAGTCTCCATCAGGTCC
+        </td>
+        <td>
+         106
+        </td>
+       </tr>
+       <tr>
+        <td>
+         MMP9
+        </td>
+        <td>
+         ACGACGTCTTCCAGTACCGA
+        </td>
+        <td>
+         TTGGTCCACCTGGTTCAACT
+        </td>
+        <td>
+         95
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CASP9
+        </td>
+        <td>
+         CTGTCTACGGCACAGATGGAT
+        </td>
+        <td>
+         GGGACTCGTCTTCAGGGGAA
+        </td>
+        <td>
+         177
+        </td>
+       </tr>
+       <tr>
+        <td>
+         BAX
+        </td>
+        <td>
+         ACCGCCTCACTCACCATCT
+        </td>
+        <td>
+         GACCACTCTTCCCCACACC
+        </td>
+        <td>
+         166
+        </td>
+       </tr>
+       <tr>
+        <td>
+         18s
+        </td>
+        <td>
+         ACCCGTTGAACCCCATTCGTGA
+        </td>
+        <td>
+         GCCTCACTAAACCATCCAATCGG
+        </td>
+        <td>
+         159
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </alternatives>
+   </table-wrap>
+  </sec>
+  <sec id="s8">
+   <label>
+    8
+   </label>
+   <title>
+    MTT assay
+   </title>
+   <p>
+    The effect of our transfection procedure and hsa-miR-181a-5p mimic on U373 cell viability was evaluated using the MTT test. Additionally, the MTT test was used to calculate the IC50 of temozolomide. In a nutshell, a 96-well plate was seeded with 12x10
+    <sup>
+     3
+    </sup>
+    U373 cells. After the first incubation time, each well received 50 mL of MTT (2 mg/mL), and the cells were incubated for an additional three hours (Sigma-Aldrich, M5655). In each well, DMSO  was administered after the medium had been removed, and the plate was then placed in the incubator for 30 minutes (Sigma-Aldrich, D4540). Using an ELISA reader, each well's optical density was evaluated at 570 nm after shaking for 10 minutes (Sunrise RC, Tecan, Switzerland).
+   </p>
+  </sec>
+  <sec id="s9">
+   <label>
+    9
+   </label>
+   <title>
+    Annexin V/PI assay
+   </title>
+   <p>
+    Two groups of U373 cells were subjected to the annexin V/PI test to measure their apoptosis rates. In a six-well plate, 2x10
+    <sup>
+     5
+    </sup>
+    transfected and untransfected U373 cells were planted in each well. The cells were stained with annexin V and PI following the manufacturer's instructions (EXBIO, Vestec, Czech Republic) after an additional 24 hours of incubation. After that, each group's apoptosis rates were evaluated utilizing flow cytometry (MiltenyBiotecTM FACS Quant 10; MiltenyBiotec, Germany). FlowJo software (Tree Star, San Carlos, CA) was used to evaluate the collected data.
+   </p>
+  </sec>
+  <sec id="s10">
+   <label>
+    10
+   </label>
+   <title>
+    Cell cycle assay
+   </title>
+   <p>
+    This assay's seeding procedure was like the annexin V/PI test. In a nutshell, the cells were trypsinized to produce single cells following the second 24-hour incubation period. Following fixation with 80% ethanol, the cells were placed at -20  overnight. The flow cytometry was utilized to assess the distribution of cells throughout the phases of the cell cycle after treatment with RNase and labeling with DAPI. The collected data were then analyzed using the FlowJo software (Tree Star, San Carlos, CA).
+   </p>
+  </sec>
+  <sec id="s11">
+   <label>
+    11
+   </label>
+   <title>
+    Migration assay
+   </title>
+   <p>
+    3x10
+    <sup>
+     5
+    </sup>
+    U373 cells were seeded in each well of a 24-well plate. Using a sterile 100 mL pipette tip, the cellular monolayer was scraped after the second 24 hours of incubation. Then, the cells were cultured for 0, 24, and 48 hours while an inverted microscope was utilized to capture the corresponding images (Optika, XDS-3, Italy).
+   </p>
+  </sec>
+  <sec id="s12">
+   <label>
+    12
+   </label>
+   <title>
+    Colony formation assay
+   </title>
+   <p>
+    In a six-well plate, 5x10
+    <sup>
+     3
+    </sup>
+    transfected and non-transfected cells were seeded. After a 12-day incubation period, the cells were treated with paraformaldehyde and stained with crystal violet. Using an inverted microscope, the colonies were captured on camera (Optika, XDS-3, Italy).
+   </p>
+  </sec>
+  <sec id="s13">
+   <label>
+    13
+   </label>
+   <title>
+    Statistical analysis
+   </title>
+   <p>
+    The analysis of the
+    <italic>
+     in-vitro
+    </italic>
+    data was conducted using GraphPad Prism software version 8.0 (GraphPad Prism; San Diego, CA). The unpaired student
+    <italic>
+     t
+    </italic>
+    -test was employed for statistical analysis comparing two groups, whereas the one-way ANOVA was utilized for comparing 2 &lt; groups. The Shapiro-Wilk test was utilized to study the normality of the data, and the F test was used to compare the variance of data in the unpaired student
+    <italic>
+     t
+    </italic>
+    -tests. The
+    <italic>
+     p
+    </italic>
+    -values below 0.05 were statistically significant. The tumor bulk RNA data obtained from the GEO database was processed using the "
+    <italic>
+     preprocessCore
+    </italic>
+    " package in R software (version 4.3.2); heatmap and dendrogram clustering methods were provided to detect and exclude the potential samples not appropriately sequenced. The GeneMANIA was leveraged to investigate the potential interactions between the studied genes with the "
+    <italic>
+     Max Resultant Genes
+    </italic>
+    " equal to zero.
+   </p>
+  </sec>
+  <sec id="s14">
+   <label>
+    14
+   </label>
+   <title>
+    Results
+   </title>
+  </sec>
+  <sec id="s15">
+   <label>
+    15
+   </label>
+   <title>
+    Predicting the targets of hsa-miR-181a-5p
+   </title>
+   <p>
+    Based on the miRPathDB v2.0 database, Reactome, WikiPathways, and KEGG datasets, hsa-miR-181a-5p can regulate the MAPK pathway (all
+    <italic>
+     p
+    </italic>
+    -values &lt; 0.01) (data are not shown). Based on these results, we attempted to identify which genes of the MAPK pathways can be targeted by hsa-miR-181a-5p; it has been found that hsa-miR-181a-5p can target
+    <italic>
+     AKT3
+    </italic>
+    expression (
+    <xref ref-type="fig" rid="fig-1">
+     Fig. 1
+    </xref>
+    A-B). According to GeneMANIA, there are considerable interactions between
+    <italic>
+     AKT3
+    </italic>
+    with the studied genes in the present study (
+    <xref ref-type="fig" rid="fig-1">
+     Fig. 1
+    </xref>
+    C).
+   </p>
+   <fig id="fig-1">
+    <label>
+     FIGURE 1
+    </label>
+    <caption>
+     <title>
+      Hsa-miR-181a-5p involvement in glioblastoma development. A) Identifying the potential target of hsa-miR-181a-5p. B) The interaction between hsa-miR-181a-5p and
+      <italic>
+       AKT3
+      </italic>
+      . C) The interaction between studied genes based on the GeneMANIA database.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-1.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s16">
+   <label>
+    16
+   </label>
+   <title>
+    Hsa-miR-181a-5p and AKT3 expression in glioblastoma tissues
+   </title>
+   <p>
+    After quantile normalization of expression values, it has been found that glioblastoma and non-tumoral tissues have distinct expression patterns (
+    <xref ref-type="fig" rid="fig-2">
+     Fig. 2
+    </xref>
+    A-F). hsa-miR-181a-5p is significantly downregulated in glioblastoma tissues compared to control (
+    <xref ref-type="fig" rid="fig-2">
+     Fig. 2
+    </xref>
+    G); however, there is no statistically significant difference between
+    <italic>
+     AKT3
+    </italic>
+    expression value between glioblastoma and non-tumoral tissues (
+    <xref ref-type="fig" rid="fig-2">
+     Fig. 2
+    </xref>
+    H-I).
+   </p>
+   <fig id="fig-2">
+    <label>
+     FIGURE 2
+    </label>
+    <caption>
+     <title>
+      Hsa-miR-181a-5p and
+      <italic>
+       AK3
+      </italic>
+      expression in glioblastoma and non-tumoral brain tissues. A) The box plot of the GSE158284 dataset. B) The cluster dendrogram of the GSE158284 dataset. C) The heatmap of the GSE158284 dataset. D) The box plot of the GSE108474 dataset. E) The cluster dendrogram of the GSE108474 dataset. F) The heatmap of the GSE108474 dataset. G) hsa-miR-181a-5p expression in glioblastoma based on the GSE158284 dataset. H)
+      <italic>
+       AKT3
+      </italic>
+      expression in glioblastoma based on the GSE108474 dataset. I)
+      <italic>
+       AKT3
+      </italic>
+      expression in glioblastoma based on the TCGA-GTEx dataset. Ns Not significant; *
+      <italic>
+       p
+      </italic>
+      &lt;0.05.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-2.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s17">
+   <label>
+    17
+   </label>
+   <title>
+    Hsa-miR-181a-5p mimic effect on the cell viability, chemo-sensitivity, and stemness of U373 cells
+   </title>
+   <p>
+    Based on the CCLE database, hsa-miR-181a-5p expression is lower in U87MG cells than in A172 cells (
+    <xref ref-type="fig" rid="fig-3">
+     Fig. 3
+    </xref>
+    A). Based on the study by Rezaei et al., hsa-miR-181a-5p is significantly lower in U373 cells than U87MG cells [
+    <xref ref-type="bibr" rid="ref-26">
+     26
+    </xref>
+    ]. Therefore, we selected the U373 cell line for subsequent assays.
+   </p>
+   <p>
+    With an R squared of 0.9516, our results have shown that the IC50 of temozolomide on U373 cells is 148.6 (ug/mL) (
+    <xref ref-type="fig" rid="fig-3">
+     Fig. 3
+    </xref>
+    B). To study the potential cytotoxicity of our transfection process, we performed the MTT assay on control, shock, and scramble groups. It has been found that the transfection process does not affect the cell viability of U373 cells (
+    <xref ref-type="fig" rid="fig-3">
+     Fig. 3
+    </xref>
+    C). In addition, hsa-miR-181a-5p mimics does not significantly affect the viability of U373 cells, nor does it increase the chemo-sensitivity of U373 cells to temozolomide (
+    <xref ref-type="fig" rid="fig-3">
+     Fig. 3
+    </xref>
+    D). Furthermore, hsa-miR-181a-5p does not considerably alter the clonogenicity of U373 cells (
+    <xref ref-type="fig" rid="fig-3">
+     Fig. 3
+    </xref>
+    E-F).
+   </p>
+   <fig id="fig-3">
+    <label>
+     FIGURE 3
+    </label>
+    <caption>
+     <title>
+      Hsa-miR-181a-5p significance in cell viability, chemo-sensitivity, and stemness of U373 cells. A) miR-181a expression in the U87MG and A172 cells based on the CCLE dataset. B) The IC50 of temozolomide on U373 cells. C) The effect of the transfection process on the cell viability of U373 cells. D) The effect of hsa-miR-181a-5p ectopic expression on the cell viability and chemosensivity of U373 cells. E and F) The effect of hsa-miR-181a-5p mimics on the stemness of U373 cells. Ns Not significant; **
+      <italic>
+       p
+      </italic>
+      &lt;0.01.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-3.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s18">
+   <label>
+    18
+   </label>
+   <title>
+    Hsa-miR-181a-5p mimic decreases the migration of U373 cells
+   </title>
+   <p>
+    According to the results of the migration assay, hsa-miR-181a-5p inhibits the migration of U373 cells by a significant margin (
+    <xref ref-type="fig" rid="fig-4">
+     Fig. 4
+    </xref>
+    A). Hsa-miR-181a-5p significantly downregulates
+    <italic>
+     MMP9
+    </italic>
+    expression of U373 cells as well (
+    <italic>
+     p
+    </italic>
+    -value = 0.0008) (
+    <xref ref-type="fig" rid="fig-4">
+     Fig. 4
+    </xref>
+    B).
+   </p>
+   <fig id="fig-4">
+    <label>
+     FIGURE 4
+    </label>
+    <caption>
+     <title>
+      The effect of the hsa-miR-181a-5p mimics on the migration of U373 cells. A) the migration assay, B)
+      <italic>
+       MMP9
+      </italic>
+      expression in the groups. ***
+      <italic>
+       p
+      </italic>
+      &lt;0.001.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-4.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s19">
+   <label>
+    19
+   </label>
+   <title>
+    Hsa-miR-181a-5p ectopic expression increases the apoptosis rate of U373 cells
+   </title>
+   <p>
+    It has been found that hsa-miR-181a-5p mimics increase the apoptosis rate of the malignant cells (
+    <italic>
+     p
+    </italic>
+    -value &lt; 0.0001) (
+    <xref ref-type="fig" rid="fig-5">
+     Fig. 5
+    </xref>
+    A-C). Although hsa-miR-181a-5p mimic does not significantly alter
+    <italic>
+     CASP9
+    </italic>
+    expression (
+    <italic>
+     p
+    </italic>
+    -value &gt; 0.05), it significantly upregulates
+    <italic>
+     BAX
+    </italic>
+    expression in U373 cells (
+    <xref ref-type="fig" rid="fig-5">
+     Fig. 5
+    </xref>
+    D-E).
+   </p>
+   <fig id="fig-5">
+    <label>
+     FIGURE 5
+    </label>
+    <caption>
+     <title>
+      The effect of hsa-miR-181a-5p mimics on the apoptosis rate of U373 cells. A) control group. B) hsa-miR-181a-5p group. C) Comparing the apoptosis rate of studied groups. D) The mRNA expression of
+      <italic>
+       BAX
+      </italic>
+      in the studied groups. E) The mRNA expression of
+      <italic>
+       CASP9
+      </italic>
+      in the studied groups. Ns Not significant; ***
+      <italic>
+       p
+      </italic>
+      &lt;0.001; ****
+      <italic>
+       p
+      </italic>
+      &lt;0.0001.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-5.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s20">
+   <label>
+    20
+   </label>
+   <title>
+    Hsa-miR-181a-5p mimic arrests the cell cycle of U373 cells at sub-G1
+   </title>
+   <p>
+    Afterward, we studied the effect of hsa-miR-181a-5p ectopic expression on the cell cycle of U373 cells. hsa-miR-181a-5p mimics arrest the cell cycle of U373 cells at the sub-G1 phase (
+    <italic>
+     p
+    </italic>
+    -value &lt; 0.0001) (
+    <xref ref-type="fig" rid="fig-6">
+     Fig. 6
+    </xref>
+    A-C).
+   </p>
+   <fig id="fig-6">
+    <label>
+     FIGURE 6
+    </label>
+    <caption>
+     <title>
+      The effect of the hsa-miR-181a-5p ectopic expression on the cell cycle phase distribution of U373 cells. A) Control group. B) Hsa-miR-181a-5p group. C) Comparing cell cycle phases' distribution among populations under study. ****
+      <italic>
+       p
+      </italic>
+      &lt;0.0001.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-6.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s21">
+   <label>
+    21
+   </label>
+   <title>
+    Hsa-miR-181a-5p and the MAPK pathway in U373 cells
+   </title>
+   <p>
+    In the next step, we examined the effect of hsa-miR-181a-5p ectopic expression on the MAPK and PI3KA/Akt pathways in U373 cells. hsa-miR-181a-5p ectopic expression significantly downregulates
+    <italic>
+     MET
+    </italic>
+    ,
+    <italic>
+     MAP2K1
+    </italic>
+    ,
+    <italic>
+     MAPK1
+    </italic>
+    ,
+    <italic>
+     MAPK3
+    </italic>
+    , and
+    <italic>
+     AKT3
+    </italic>
+    expression in U373 cells (
+    <xref ref-type="fig" rid="fig-7">
+     Fig. 7
+    </xref>
+    ). However, hsa-miR-181a-5p does not significantly alter
+    <italic>
+     PIK3CA
+    </italic>
+    expression (
+    <xref ref-type="fig" rid="fig-7">
+     Fig. 7
+    </xref>
+    ).
+   </p>
+   <fig id="fig-7">
+    <label>
+     FIGURE 7
+    </label>
+    <caption>
+     <title>
+      The effect of the hsa-miR-181a-5p mimics on the MAPK pathway of U373 cells. A) The mRNA expression of
+      <italic>
+       MET
+      </italic>
+      . B) The mRNA expression of
+      <italic>
+       MAP2K1
+      </italic>
+      . C) The mRNA expression of
+      <italic>
+       MAPK1
+      </italic>
+      . D) The mRNA expression of
+      <italic>
+       MAPK3
+      </italic>
+      . E) The mRNA expression of
+      <italic>
+       PIK3CA
+      </italic>
+      . F)
+      <italic>
+       AKT3
+      </italic>
+      mRNA expression in the groups. Ns Not significant; **
+      <italic>
+       p
+      </italic>
+      &lt;0.05; ***
+      <italic>
+       p
+      </italic>
+      &lt;0.001; ****
+      <italic>
+       p
+      </italic>
+      &lt;0.0001.
+     </title>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_OR_51569-fig-7.jpg"/>
+   </fig>
+  </sec>
+  <sec id="s22">
+   <label>
+    22
+   </label>
+   <title>
+    Discussion
+   </title>
+   <p>
+    Although there have been remarkable advances in understanding glioblastoma pathogenesis, the prognosis of glioblastoma patients is still undesirable. In light of the significant role of miRs in regulating various genes, tumor-suppressive miRs can be a promising targeted therapy for glioblastoma. Therefore, there is a need to identify tumor-suppressive miRs and their underlying cellular signalings and mechanisms in glioblastoma development. The present study has demonstrated that hsa-miR-181a-5p ectopic expression can regulate the MAPK pathway, increase the apoptosis rate, decrease the migration, and arrest the cell cycle of U373 cells at the sub-G1 phase. However, hsa-miR-181a-5p does not improve the chemo-sensitivity of U373 cells to temozolomide.
+   </p>
+   <p>
+    MiRs are non-coding, short RNA molecules with an average length of 22 nucleotides [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ]. The canonical miR biogenesis is the dominant pathway for miR biogenesis. In this pathway, the transcription of DNA sequences leads to primary miRs development. Then, the DGCR8 and Drosha-mediated processing of primary miRs produces precursor miRs; finally, the RNase III endonuclease Dicer-mediated processing of primary miRs produces mature miRs. The interaction of miRs with the 3' untranslated regions of mRNAs regulates the gene expression; however, miRs can also interact with the coding sequence and promoter of genes [
+    <xref ref-type="bibr" rid="ref-27">
+     27
+    </xref>
+    ]. Dysregulated miR expression is one of the culprits for glioblastoma development [
+    <xref ref-type="bibr" rid="ref-28">
+     28
+    </xref>
+    ]. Upregulated oncogenic miRs and downregulated tumor-suppressive miRs can liberate oncogene mRNA expression and decrease tumor-suppressive mRNA expression, leading to tumor growth. Since miRs can regulate a wide range of mRNA expression, they can be considered a promising targeted therapy approach [
+    <xref ref-type="bibr" rid="ref-29">
+     29
+    </xref>
+    ]. Therefore, identifying the role of dysregulated miRs and regulating their expression can be a promising therapeutic strategy. This approach might be upregulating tumor-suppressive miRs and/or downregulating oncogenic miRs. In this regard, the advances in tumor-bulk RNA sequencing and microarrays can have high value for identifying dysregulated genes.
+   </p>
+   <p>
+    hsa-miR-181a-5p, along with miR-181b, miR-181c, and miR-181d, belongs to the miR-181 family; hsa-miR-181a-5p is located in chromosome 1 [
+    <xref ref-type="bibr" rid="ref-30">
+     30
+    </xref>
+    ]. The anti-tumoral effects of hsa-miR-181a-5p have been noticed in cancers like esophageal adenocarcinoma [
+    <xref ref-type="bibr" rid="ref-31">
+     31
+    </xref>
+    ] , glioblastoma [
+    <xref ref-type="bibr" rid="ref-26">
+     26
+    </xref>
+    ], non-small cell lung cancer , and cervical cancer [
+    <xref ref-type="bibr" rid="ref-32">
+     32
+    </xref>
+    ]. Wen et al. have reported that the miR-181a-5p level is upregulated in relapsed glioblastoma compared to primary glioblastoma. Also, U251 cell migration and invasion are enhanced by an inhibitor of miR-181a-5p [
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ]. Compared to normal brain tissues and glial cell lines, miR-181a-5p is reduced in glioma tissues and cell lines; hsa-miR-181a-5p promotes apoptosis and inhibits the migration of U251 cells [
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ]. Moreover, Shi et al. have shown that miR-181a-5p can reduce the invasion of U87 cells and increase the apoptosis rate of TJ902, U87, and U251 cells [
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ]. Based on our results, hsa-miR-181a-5p increases apoptosis rate, decreases migration, and arrests the cell cycle at the sub-G1 phase in U373 cells. Despite the mentioned studies, there are insufficient studies investigating the effect of hsa-miR-181a-5p on the MAPK pathway, as a well-established oncogenic signaling pathway, in glioblastoma cells.
+   </p>
+   <p>
+    The Ras-Raf-MEK-ERK pathway is a well-studied oncogenic pathway stimulated in glioblastoma cells [
+    <xref ref-type="bibr" rid="ref-33">
+     33
+    </xref>
+    ]. Stimulating receptor tyrosine kinases, like HGFR/c-MET, activates the Ras-Raf-MEK-ERK signaling factors, which results in glioblastoma growth [
+    <xref ref-type="bibr" rid="ref-34">
+     34
+    </xref>
+    ]. In this regard, the phosphorylation of tyrosines Y1349 and Y1356 on the c-MET stimulates the MAPK pathway, which results in invasion and cell cycle progression in cancerous cells [
+    <xref ref-type="bibr" rid="ref-35">
+     35
+    </xref>
+    ]. Schafer et al. have shown that hsa-miR-181a-5p ectopic expression downregulates pERK1/2 in glioblastoma cells [
+    <xref ref-type="bibr" rid="ref-36">
+     36
+    </xref>
+    ]. Also, there is evidence that hsa-miR-181a-5p downregulates the expression of
+    <italic>
+     AKT1
+    </italic>
+    , a signaling factor of the MAPK pathway, in glioblastoma cells [
+    <xref ref-type="bibr" rid="ref-26">
+     26
+    </xref>
+    ]. Following extensive
+    <italic>
+     in-silico
+    </italic>
+    investigations, it has been found that hsa-miR-181a-5p can regulate the MAPK pathway via suppressing
+    <italic>
+     AKT3
+    </italic>
+    . It has been found that hsa-miR-181a-5p can decrease
+    <italic>
+     AKT3
+    </italic>
+    expression in U373 cells. Besides, hsa-miR-181a-5p downregulates the expression of
+    <italic>
+     MET
+    </italic>
+    ,
+    <italic>
+     MAP2K1
+    </italic>
+    (MEK1),
+    <italic>
+     MAPK1
+    </italic>
+    (ERK2), and
+    <italic>
+     MAPK3
+    </italic>
+    (ERK1), resulting in potential regulation of the MAPK pathway in U373 cells.
+   </p>
+   <p>
+    The current study has several strengths. First, extensive
+    <italic>
+     in-silico
+    </italic>
+    research was performed before the
+    <italic>
+     in-vitro
+    </italic>
+    study to investigate the hsa-miR-181a-5p-mediated pathway in glioblastoma. Second, a throughout literature review was performed to compare the obtained results with the current knowledge. However, there are also some limitations to this study. First, we could only study our research question on a single cell line, although we discussed the findings of other researchers who used other glioblastoma cell lines for miR-181a mimics. Second, we could not include Western blot assay to assess protein expression levels and phosphorylation states. Third, we could not perform
+    <italic>
+     in-vivo
+    </italic>
+    studies. Fourth, although multiple databases validated the
+    <italic>
+     in-silico
+    </italic>
+    results of this study, there is a likelihood of off-target effects, and we could not perform experiments like double luciferase assay to further validate the obtained results. Even though this study provides a valuable reference for future works regarding the significance of hsa-miR-181a-5p in glioblastoma development, the obtained results should be carefully interpreted with these potential biases. Further confirmatory studies in other glioblastoma cell lines are warranted. Also, validation research at the protein level and direct target interactions between miR-181a-5p and AKT3, a signaling factor of the MAPK pathway, via wet experiment techniques (e.g., double luciferase assay) are planned.
+   </p>
+  </sec>
+  <sec id="s23">
+   <label>
+    23
+   </label>
+   <title>
+    Conclusion
+   </title>
+   <p>
+    The
+    <italic>
+     in-silico
+    </italic>
+    studies show that miR-181a-5p is downregulated in glioblastoma tissues and can regulate the MAPK pathway. The in-vitro studies demonstrate that miR-181a-5p mimics decrease the migration, increase the apoptosis rate, and arrest the cell cycle at the sub-G1 phase in U373 cells. It has been found that miR-181a-5p can suppress the MAPK pathway via downregulating
+    <italic>
+     MET
+    </italic>
+    ,
+    <italic>
+     MAP2K1
+    </italic>
+    ,
+    <italic>
+     MAPK1
+    </italic>
+    ,
+    <italic>
+     MAPK3
+    </italic>
+    , and
+    <italic>
+     AKT3
+    </italic>
+    expression in U373 cells.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <p>
+    The research protocol was approved  supported by the Immunology Research Center, Tabriz University of Medical Sciences, Tabriz, Iran (grant number 71107). Also, the research protocol was approved  Supported by Student Research Committee, Tabriz University of Medical Sciences. This study is derived from the MD thesis of Dr. Mahdi Abdoli Shadbad.
+   </p>
+  </ack>
+  <fn-group>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Funding Statement
+     </bold>
+     The authors received no specific funding for this study.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Author Contribution
+     </bold>
+     <bold>
+      s
+     </bold>
+     The authors confirm their contribution to the paper as follows. MAS performed the
+     <italic>
+      in-silico
+     </italic>
+     studies and
+     <italic>
+      in-vitro
+     </italic>
+     assays, analyzed the data, reviewed the literature, and wrote the manuscript. BB reviewed and edited the manuscript and supervised the study. All authors reviewed the results and approved the final version of the manuscript.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     The datasets analyzed during the current study are available in the GSE158284 (https//www.ncbi.nlm.nih.gov/geo/), GSE108474 (https//www.ncbi.nlm.nih.gov/geo/), TCGA-GTEx (http//gepia.cancer-pku.cn/), and CCLE (https//sites.broadinstitute.org/ccle/).
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Ethics Approval
+     </bold>
+     This study was approved by the Ethics Committee of Tabriz University of Medical Sciences (IR.TBZMED.VCR.REC.1402.082).
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+  </fn-group>
+  <ref-list content-type="authoryear">
+   <title>
+    References
+   </title>
+   <ref id="ref-1">
+    <label>
+     1
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ostrom
+       </surname>
+       <given-names>
+        QT
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Cote
+       </surname>
+       <given-names>
+        DJ
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ascha
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kruchko
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Barnholtz-Sloan
+       </surname>
+       <given-names>
+        JS
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Adult Glioma Incidence and Survival by Race or Ethnicity in the United States From 2000 to 2014
+     </article-title>
+     <source>
+      JAMA Oncology
+     </source>
+     <volume>
+      4
+     </volume>
+     <issue>
+      9
+     </issue>
+     <fpage>
+      1254
+     </fpage>
+     <lpage>
+      62
+     </lpage>
+     <year>
+      2018
+     </year>
+     <pub-id>
+      https://doi.org/10.1001/jamaoncol.2018.2324
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-2">
+    <label>
+     2
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Vaz-Salgado
+       </surname>
+       <given-names>
+        MA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Villamayor
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Albarran
+       </surname>
+       <given-names>
+        V
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Alia
+       </surname>
+       <given-names>
+        V
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sotoca
+       </surname>
+       <given-names>
+        P
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Recurrent Glioblastoma: A Review of the Treatment Options
+     </article-title>
+     <source>
+      Cancers
+     </source>
+     <volume>
+      15
+     </volume>
+     <issue>
+      17
+     </issue>
+     <fpage>
+      4279
+     </fpage>
+     <year>
+      2023
+     </year>
+     <pub-id>
+      https://doi.org/10.3390/cancers15174279
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-3">
+    <label>
+     3
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Dastmalchi
+       </surname>
+       <given-names>
+        N
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Safaralizadeh
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Banan Khojasteh
+       </surname>
+       <given-names>
+        SM
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sam
+       </surname>
+       <given-names>
+        MR
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Latifi-Navid
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      An Updated Review of the Cross-talk Between MicroRNAs and Epigenetic Factors in Cancers
+     </article-title>
+     <source>
+      Current Medicinal Chemistry
+     </source>
+     <volume>
+      28
+     </volume>
+     <issue>
+      42
+     </issue>
+     <fpage>
+      8722
+     </fpage>
+     <lpage>
+      32
+     </lpage>
+     <year>
+      2021
+     </year>
+     <pub-id>
+      https://doi.org/10.2174/0929867328666210610153330
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-4">
+    <label>
+     4
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Fu
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        F
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Au-Yeung
+       </surname>
+       <given-names>
+        KK
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MicroRNA as an Important Target for Anticancer Drug Development
+     </article-title>
+     <source>
+      Frontiers in Pharmacology
+     </source>
+     <volume>
+      12
+     </volume>
+     <fpage>
+      736323
+     </fpage>
+     <year>
+      2021
+     </year>
+     <pub-id>
+      https://doi.org/10.3389/fphar.2021.736323
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-5">
+    <label>
+     5
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Jungers
+       </surname>
+       <given-names>
+        CF
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Djuranovic
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Modulation of miRISC-Mediated Gene Silencing in Eukaryotes
+     </article-title>
+     <source>
+      Frontiers in Molecular Biosciences
+     </source>
+     <volume>
+      9
+     </volume>
+     <fpage>
+      832916
+     </fpage>
+     <year>
+      2022
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-6">
+    <label>
+     6
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shen
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ding
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ji
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Jiang
+       </surname>
+       <given-names>
+        B
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        X
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Overcoming MTDH and MTDH-SND1 complex: driver and potential therapeutic target of cancer
+     </article-title>
+     <source>
+      Cancer Insight
+     </source>
+     <volume>
+      3
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      29
+     </fpage>
+     <year>
+      2023
+     </year>
+     <pub-id>
+      None
+     </pub-id>
+     <web-url>
+      None
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-7">
+    <label>
+     7
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ma
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Qiu
+       </surname>
+       <given-names>
+        X
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        D
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        B
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MiR-181a-5p inhibits cell proliferation and migration by targeting Kras in non-small cell lung cancer A549 cells
+     </article-title>
+     <source>
+      Acta Biochimica Et Biophysica Sinica
+     </source>
+     <volume>
+      47
+     </volume>
+     <issue>
+      8
+     </issue>
+     <fpage>
+      630
+     </fpage>
+     <lpage>
+      8
+     </lpage>
+     <year>
+      2015
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-8">
+    <label>
+     8
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Huang
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Gao
+       </surname>
+       <given-names>
+        W
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhu
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        F
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        et al.
+       </surname>
+      </string-name>
+     </person-group>
+     <article-title>
+      MicroRNA-181a-5p prevents the progression of esophageal squamous cell carcinoma
+      <i>
+       in vivo
+      </i>
+      and
+      <i>
+       in vitro
+      </i>
+      via the MEK1-mediated ERK-MMP signaling pathway
+     </article-title>
+     <source>
+      Aging
+     </source>
+     <volume>
+      14
+     </volume>
+     <issue>
+      8
+     </issue>
+     <fpage>
+      3540
+     </fpage>
+     <lpage>
+      53
+     </lpage>
+     <year>
+      2022
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-9">
+    <label>
+     9
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ouyang
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        G
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Xiong
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Rao
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MicroRNA-181a-5p impedes the proliferation, migration, and invasion of retinoblastoma cells by targeting the NRAS proto-oncogene
+     </article-title>
+     <source>
+      Clinics
+     </source>
+     <volume>
+      77
+     </volume>
+     <fpage>
+      100026
+     </fpage>
+     <year>
+      2022
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-10">
+    <label>
+     10
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Xu
+       </surname>
+       <given-names>
+        G
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Xiao
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        X
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Screening and identification of miR-181a-5p in oral squamous cell carcinoma and functional verification
+      <i>
+       in vivo
+      </i>
+      and
+      <i>
+       in vitro
+      </i>
+     </article-title>
+     <source>
+      BMC Cancer
+     </source>
+     <volume>
+      23
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      162
+     </fpage>
+     <year>
+      2023
+     </year>
+     <pub-id>
+      https://doi.org/10.1186/s12885-023-09643-4
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-11">
+    <label>
+     11
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Lei
+       </surname>
+       <given-names>
+        B
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Huang
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhou
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Thapa
+       </surname>
+       <given-names>
+        AJ
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Circular RNA hsa_circ_0076248 promotes oncogenesis of glioma by sponging miR-181a to modulate SIRT1 expression
+     </article-title>
+     <source>
+      Journal of Cellular Biochemistry
+     </source>
+     <volume>
+      120
+     </volume>
+     <issue>
+      4
+     </issue>
+     <fpage>
+      6698
+     </fpage>
+     <lpage>
+      708
+     </lpage>
+     <year>
+      2019
+     </year>
+     <pub-id>
+      https://doi.org/10.1002/jcb.28333
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-12">
+    <label>
+     12
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Ciafre
+       </surname>
+       <given-names>
+        SA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Galardi
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mangiola
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ferracin
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liu
+       </surname>
+       <given-names>
+        CG
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Extensive modulation of a set of microRNAs in primary glioblastoma
+     </article-title>
+     <source>
+      Biochemical and Biophysical Research Communications
+     </source>
+     <volume>
+      334
+     </volume>
+     <issue>
+      4
+     </issue>
+     <fpage>
+      1351
+     </fpage>
+     <lpage>
+      8
+     </lpage>
+     <year>
+      2005
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-13">
+    <label>
+     13
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Wen
+       </surname>
+       <given-names>
+        X
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Guo
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Liao
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      miR-181a-5p inhibits the proliferation and invasion of drug-resistant glioblastoma cells by targeting F-box protein 11 expression
+     </article-title>
+     <source>
+      Oncology letters
+     </source>
+     <volume>
+      20
+     </volume>
+     <issue>
+      5
+     </issue>
+     <fpage>
+      235
+     </fpage>
+     <year>
+      2020
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-14">
+    <label>
+     14
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shi
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Cheng
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        P
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Hsa-mir-181a and hsa-mir-181b function as tumor suppressors in human glioma cells
+     </article-title>
+     <source>
+      Brain Research
+     </source>
+     <volume>
+      1236
+     </volume>
+     <fpage>
+      185
+     </fpage>
+     <lpage>
+      93
+     </lpage>
+     <year>
+      2008
+     </year>
+     <pub-id>
+      https://doi.org/10.1016/j.brainres.2008.07.060
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-15">
+    <label>
+     15
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Wu
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Al-Zahrani
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Beylerli
+       </surname>
+       <given-names>
+        O
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Sufianov
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Talybov
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Circulating miRNAs as Diagnostic and Prognostic Biomarkers in High-Grade Gliomas
+     </article-title>
+     <source>
+      Frontiers in Oncology
+     </source>
+     <volume>
+      12
+     </volume>
+     <fpage>
+      898537
+     </fpage>
+     <year>
+      2022
+     </year>
+     <pub-id>
+      10.3389/fonc.2022.898537
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3389/fonc.2022.898537
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-16">
+    <label>
+     16
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Huang
+       </surname>
+       <given-names>
+        SX
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        ZY
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Weng
+       </surname>
+       <given-names>
+        GH
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        He
+       </surname>
+       <given-names>
+        XY
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wu
+       </surname>
+       <given-names>
+        CJ
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Upregulation of miR-181a suppresses the formation of glioblastoma stem cells by targeting the Notch2 oncogene and correlates with good prognosis in patients with glioblastoma multiforme
+     </article-title>
+     <source>
+      Biochemical and Biophysical Research Communications
+     </source>
+     <volume>
+      486
+     </volume>
+     <issue>
+      4
+     </issue>
+     <fpage>
+      1129
+     </fpage>
+     <lpage>
+      36
+     </lpage>
+     <year>
+      2017
+     </year>
+     <pub-id>
+      https://doi.org/10.1016/j.bbrc.2017.04.063
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-17">
+    <label>
+     17
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Chen
+       </surname>
+       <given-names>
+        G
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhu
+       </surname>
+       <given-names>
+        W
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Shi
+       </surname>
+       <given-names>
+        D
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lv
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MicroRNA-181a sensitizes human malignant glioma U87MG cells to radiation by targeting Bcl-2
+     </article-title>
+     <source>
+      Oncology Reports
+     </source>
+     <volume>
+      23
+     </volume>
+     <issue>
+      4
+     </issue>
+     <fpage>
+      997
+     </fpage>
+     <lpage>
+      1003
+     </lpage>
+     <year>
+      2010
+     </year>
+     <pub-id>
+      https://doi.org/10.3892/or_00000773
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-18">
+    <label>
+     18
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Marisetty
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wei
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Kong
+       </surname>
+       <given-names>
+        LY
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ott
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Fang
+       </surname>
+       <given-names>
+        D
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MiR-181 Family Modulates Osteopontin in Glioblastoma Multiforme
+     </article-title>
+     <source>
+      Cancers
+     </source>
+     <volume>
+      12
+     </volume>
+     <issue>
+      12
+     </issue>
+     <fpage>
+      3813
+     </fpage>
+     <year>
+      2020
+     </year>
+     <pub-id>
+      https://doi.org/10.3390/cancers12123813
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-19">
+    <label>
+     19
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Han
+       </surname>
+       <given-names>
+        P
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        JW
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        BM
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lv
+       </surname>
+       <given-names>
+        JC
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        YM
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      The lncRNA CRNDE promotes colorectal cancer cell proliferation and chemoresistance via miR-181a-5p-mediated regulation of Wnt/b-catenin signaling
+     </article-title>
+     <source>
+      Molecular Cancer
+     </source>
+     <volume>
+      16
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      9
+     </fpage>
+     <year>
+      2017
+     </year>
+     <pub-id>
+      https://doi.org/10.1186/s12943-017-0601-0
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-20">
+    <label>
+     20
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Bi
+       </surname>
+       <given-names>
+        JG
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zheng
+       </surname>
+       <given-names>
+        JF
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        Q
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Bao
+       </surname>
+       <given-names>
+        SY
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yu
+       </surname>
+       <given-names>
+        XF
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MicroRNA-181a-5p suppresses cell proliferation by targeting Egr1 and inhibiting Egr1/TGF-b/Smad pathway in hepatocellular carcinoma
+     </article-title>
+     <source>
+      The International Journal of Biochemistry  Cell Biology
+     </source>
+     <volume>
+      106
+     </volume>
+     <fpage>
+      107
+     </fpage>
+     <lpage>
+      16
+     </lpage>
+     <year>
+      2019
+     </year>
+     <pub-id>
+      https://doi.org/10.1016/j.biocel.2018.12.007
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-21">
+    <label>
+     21
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Neu
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Dziunycz
+       </surname>
+       <given-names>
+        PJ
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Dzung
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lefort
+       </surname>
+       <given-names>
+        K
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Falke
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MiR-181a decelerates proliferation in cutaneous squamous cell carcinoma by targeting the proto-oncogene KRAS
+     </article-title>
+     <source>
+      PloS one
+     </source>
+     <volume>
+      12
+     </volume>
+     <issue>
+      9
+     </issue>
+     <fpage>
+      e0185028
+     </fpage>
+     <year>
+      2017
+     </year>
+     <pub-id>
+      https://doi.org/10.1371/journal.pone.0185028
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-22">
+    <label>
+     22
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Abdoli Shadbad
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hemmat
+       </surname>
+       <given-names>
+        N
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Abdoli Shadbad
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Brunetti
+       </surname>
+       <given-names>
+        O
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Silvestris
+       </surname>
+       <given-names>
+        N
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      HSV1 microRNAs in glioblastoma development: an
+      <i>
+       in silico
+      </i>
+      study
+     </article-title>
+     <source>
+      Scientific Reports
+     </source>
+     <volume>
+      14
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      27
+     </fpage>
+     <year>
+      2024
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-23">
+    <label>
+     23
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Du
+       </surname>
+       <given-names>
+        W
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Elemento
+       </surname>
+       <given-names>
+        O
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Cancer systems biology: embracing complexity to develop better anticancer therapeutic strategies
+     </article-title>
+     <source>
+      Oncogene
+     </source>
+     <volume>
+      34
+     </volume>
+     <issue>
+      25
+     </issue>
+     <fpage>
+      3215
+     </fpage>
+     <lpage>
+      25
+     </lpage>
+     <year>
+      2015
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-24">
+    <label>
+     24
+    </label>
+    <mixed-citation publication-type="journal">
+     <article-title>
+      CD133 significance in glioblastoma development: in silico and
+      <i>
+       in vitro
+      </i>
+      study
+     </article-title>
+     <source>
+      European Journal of Medical Research
+     </source>
+     <volume>
+      29
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      154
+     </fpage>
+     <year>
+      2024
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-25">
+    <label>
+     25
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shadbad
+       </surname>
+       <given-names>
+        MA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Baghbanzadeh
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Baradaran
+       </surname>
+       <given-names>
+        B
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Hsa-miR-34a-5p enhances temozolomide anti-tumoral effects on glioblastoma:
+      <i>
+       in-silico
+      </i>
+      and
+      <i>
+       in-vitro
+      </i>
+      study
+     </article-title>
+     <source>
+      EXCLI Journal
+     </source>
+     <volume>
+      23
+     </volume>
+     <fpage>
+      384
+     </fpage>
+     <lpage>
+      400
+     </lpage>
+     <year>
+      2024
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-26">
+    <label>
+     26
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Rezaei
+       </surname>
+       <given-names>
+        T
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hejazi
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mansoori
+       </surname>
+       <given-names>
+        B
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Mohammadi
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Amini
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MicroRNA-181a mediates the chemo-sensitivity of glioblastoma to carmustine and regulates cell proliferation, migration, and apoptosis
+     </article-title>
+     <source>
+      European Journal of Pharmacology
+     </source>
+     <volume>
+      888
+     </volume>
+     <fpage>
+      173483
+     </fpage>
+     <year>
+      2020
+     </year>
+     <pub-id>
+      https://doi.org/10.1016/j.ejphar.2020.173483
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-27">
+    <label>
+     27
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        O'Brien
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hayder
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zayed
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Peng
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Overview of MicroRNA Biogenesis, Mechanisms of Actions, and Circulation
+     </article-title>
+     <source>
+      Frontiers in endocrinology
+     </source>
+     <volume>
+      9
+     </volume>
+     <fpage>
+      402
+     </fpage>
+     <year>
+      2018
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-28">
+    <label>
+     28
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Mafi
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Rahmati
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Babaei Aghdam
+       </surname>
+       <given-names>
+        Z
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Salami
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Salami
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Recent insights into the microRNA-dependent modulation of gliomas from pathogenesis to diagnosis and treatment
+     </article-title>
+     <source>
+      Cellular  Molecular Biology Letters
+     </source>
+     <volume>
+      27
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      65
+     </fpage>
+     <year>
+      2022
+     </year>
+     <pub-id>
+      https://doi.org/10.1186/s10195-022-00363-4
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-29">
+    <label>
+     29
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Shadbad
+       </surname>
+       <given-names>
+        MA
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ghorbaninezhad
+       </surname>
+       <given-names>
+        F
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hassanian
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Ahangar
+       </surname>
+       <given-names>
+        NK
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Hosseinkhani
+       </surname>
+       <given-names>
+        N
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      A scoping review on the significance of programmed death-ligand 1-inhibiting microRNAs in non-small cell lung treatment: A single-cell RNA sequencing-based study
+     </article-title>
+     <source>
+      Frontiers in medicine
+     </source>
+     <volume>
+      9
+     </volume>
+     <fpage>
+      1027758
+     </fpage>
+     <year>
+      2022
+     </year>
+     <pub-id>
+      10.3389/fmed.2022.1027758
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-30">
+    <label>
+     30
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Shen
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhao
+       </surname>
+       <given-names>
+        Y
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Du
+       </surname>
+       <given-names>
+        F
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Role of miR-181a-5p in cancer (Review)
+     </article-title>
+     <source>
+      International Journal of Oncology
+     </source>
+     <volume>
+      63
+     </volume>
+     <issue>
+      4
+     </issue>
+     <fpage>
+      108
+     </fpage>
+     <year>
+      2023
+     </year>
+     <pub-id>
+      None
+     </pub-id>
+     <web-url>
+      None
+     </web-url>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-31">
+    <label>
+     31
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        P
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Wang
+       </surname>
+       <given-names>
+        S
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Cong
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhang
+       </surname>
+       <given-names>
+        Q
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      miRNA-181a-5p Enhances the Sensitivity of Cells to Cisplatin in Esophageal Adenocarcinoma by Targeting CBLB
+     </article-title>
+     <source>
+      Cancer management and research
+     </source>
+     <volume>
+      12
+     </volume>
+     <fpage>
+      4981
+     </fpage>
+     <lpage>
+      90
+     </lpage>
+     <year>
+      2020
+     </year>
+     <pub-id>
+      https://doi.org/10.2147/CMAR.S263333
+     </pub-id>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-32">
+    <label>
+     32
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Luo
+       </surname>
+       <given-names>
+        C
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Qiu
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      MiR-181a Inhibits Cervical Cancer Development via Downregulating GRP78
+     </article-title>
+     <source>
+      Oncology Research
+     </source>
+     <volume>
+      25
+     </volume>
+     <issue>
+      8
+     </issue>
+     <fpage>
+      1341
+     </fpage>
+     <lpage>
+      8
+     </lpage>
+     <year>
+      2017
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-33">
+    <label>
+     33
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Pearson
+       </surname>
+       <given-names>
+        JRD
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Regad
+       </surname>
+       <given-names>
+        T
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Targeting cellular pathways in glioblastoma multiforme
+     </article-title>
+     <source>
+      Signal Transduction and Targeted Therapy
+     </source>
+     <volume>
+      2
+     </volume>
+     <fpage>
+      17040
+     </fpage>
+     <year>
+      2017
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-34">
+    <label>
+     34
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Mao
+       </surname>
+       <given-names>
+        H
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Lebrun
+       </surname>
+       <given-names>
+        DG
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Yang
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Zhu
+       </surname>
+       <given-names>
+        VF
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        M
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Deregulated signaling pathways in glioblastoma multiforme: molecular mechanisms and therapeutic targets
+     </article-title>
+     <source>
+      Cancer investigation
+     </source>
+     <volume>
+      30
+     </volume>
+     <issue>
+      1
+     </issue>
+     <fpage>
+      48
+     </fpage>
+     <lpage>
+      56
+     </lpage>
+     <year>
+      2012
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-35">
+    <label>
+     35
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Abounader
+       </surname>
+       <given-names>
+        R
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Laterra
+       </surname>
+       <given-names>
+        J
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      Scatter factor/hepatocyte growth factor in brain tumor growth and angiogenesis
+     </article-title>
+     <source>
+      Neuro-Oncology
+     </source>
+     <volume>
+      7
+     </volume>
+     <issue>
+      4
+     </issue>
+     <fpage>
+      436
+     </fpage>
+     <lpage>
+      51
+     </lpage>
+     <year>
+      2005
+     </year>
+    </mixed-citation>
+   </ref>
+   <ref id="ref-36">
+    <label>
+     36
+    </label>
+    <mixed-citation publication-type="journal">
+     <person-group person-group-type="author">
+      <string-name>
+       <surname>
+        Schafer
+       </surname>
+       <given-names>
+        A
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Evers
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Meier
+       </surname>
+       <given-names>
+        L
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Schlomann
+       </surname>
+       <given-names>
+        U
+       </given-names>
+      </string-name>
+      <string-name>
+       <surname>
+        Bopp
+       </surname>
+       <given-names>
+        MHA
+       </given-names>
+      </string-name>
+     </person-group>
+     <article-title>
+      The Metalloprotease-Disintegrin ADAM8 Alters the Tumor Suppressor miR-181a-5p Expression Profile in Glioblastoma Thereby Contributing to Its Aggressiveness
+     </article-title>
+     <source>
+      Frontiers in oncology
+     </source>
+     <fpage>
+      826273
+     </fpage>
+     <year>
+      2022
+     </year>
+     <pub-id>
+      10.3389/fonc.2022.826273
+     </pub-id>
+     <web-url>
+      https://doi.org/10.3389/fonc.2022.826273
+     </web-url>
+    </mixed-citation>
+   </ref>
+  </ref-list>
+ </back>
+</article>

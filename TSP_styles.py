@@ -191,15 +191,19 @@ class TSP_styles:
         for td in element.findall("./th"):
             if td.text is not None:
                 self.find_fig_title(td)
-
+        
         #Find acknowledgement tag
-        if element.tag == "ack":
-            cloned_ack = ET.Element(element[0].tag)
-            cloned_ack.text = element[0].text
-            print(cloned_ack)
+        # if element.tag == "ack":
+        #     cloned_ack = ET.Element(element[0].tag)
+        #     cloned_ack.text = element[0].text
+        #     print(cloned_ack)
 
-        if element.tag == "fn-group":
-            element.append(cloned_ack)
+        # for fn in element.findall("./fn"):
+        #     element.append(cloned_ack)
+            # for i in fn.findall("./p"):
+            #     for j in i.findall("./bold"):
+            #         print(i)
+            #         print(i.tail)
 
         #Replace text or add or remove space in text
         self.change_space_text(element,data)

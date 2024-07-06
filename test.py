@@ -8,14 +8,9 @@ class TSP_styles:
     # Change text content and tail in the XML tree
     def change_text(self, element):
         
-        #Find acknowledgement tag
-        if element.tag == "ack":
-            cloned_ack = ET.Element(element[0].tag)
-            cloned_ack.text = element[0].text
-            print(cloned_ack)
-
-        if element.tag == "fn-group":
-            element.append(cloned_ack)
+            
+        for child in element:
+            self.change_text(child)
 
     def modify_xml(self, input_file, output_file):
         # Load the XML file
