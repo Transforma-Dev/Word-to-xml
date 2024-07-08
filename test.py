@@ -1,14 +1,55 @@
 import xml.etree.ElementTree as ET
 import os
 import sys
+import json
 import re
 
 class TSP_styles:
 
     # Change text content and tail in the XML tree
     def change_text(self, element):
+
+        #from journal load the json file
+        with open("json_folder/TSP_styles.json",'r') as file:
+            data = json.load(file)
         
-            
+        fn_elements = element.findall(".//fn")
+        fn_group = element.find(".//fn-group")
+        
+        if fn_group is not None:
+            funding = availability = author = conflict = ethics = None
+            for fn in fn_elements:
+                bold = fn.find("./p/bold")
+                p = fn.find("./p")
+                if bold is not None and bold.text:
+                    if "Funding" in bold.text.strip():
+                        funding = fn
+                        # bold.tail = "kdngjsij byf"
+                    elif "Author" in bold.text.strip():
+                        author = fn
+                    elif "Availability" in bold.text.strip():
+                        availability = fn
+                    elif "Conflicts" in bold.text.strip():
+                        conflict = fn
+                    elif "Ethics" in bold.text.strip():
+                        ethics = fn
+                
+            if funding:
+                fn_group.remove(funding)
+                fn_group.append(funding)
+            if author:
+                fn_group.remove(author)
+                fn_group.append(author)
+            if availability:
+                fn_group.remove(availability)
+                fn_group.append(availability)
+            if conflict:
+                fn_group.remove(conflict)
+                fn_group.append(conflict)
+            if ethics:
+                fn_group.remove(ethics)
+                fn_group.append(ethics)
+
         for child in element:
             self.change_text(child)
 

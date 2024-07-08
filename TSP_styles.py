@@ -81,9 +81,8 @@ class TSP_styles:
 
     #Find the article title tag inside the front tag and capitalie the article title text except remove conjuction and preposition
     def find_artitle(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
-        alt_title = element.find('./front//article-title')
-        alt_title.text = ' '.join(word.lower() if word.lower() in data["skip_words"] else word.capitalize() for word in alt_title.text.split())
-    
+        element.text = ' '.join(word.lower() if word.lower() in data["skip_words"] else word.upper() if word.isupper() else word[0].upper()+word[1:] for word in element.text.split())
+
     #Remove dot in end of affliation tag and replace the perticuler text
     def find_aff(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/9#issue-2379911935
         for child in element:
@@ -140,13 +139,55 @@ class TSP_styles:
         split = image_title.text.strip().split(".")
         caps = ''
         for index,i in enumerate(split):
-            if index == 0:
-                caps += i.capitalize()
-            else:
-                caps += "." + i.capitalize()
+            split_i = i.split()
+            for id,j in enumerate(split_i):
+                if j.isupper():
+                    caps += " " + j 
+                elif id == 0:
+                    caps += j.capitalize()
+                else:
+                    caps += " " + j.capitalize()
+            if caps:
+                caps += "."
+        
         image_title.text = caps
         if image_title.text.endswith('.'):
             image_title.text = image_title.text[:-1]
+
+    #Correct the back matter order in fn-group tag
+    def back_order(self,fn_elements,fn_group):
+        funding = availability = author = conflict = ethics = None
+        for fn in fn_elements:
+            bold = fn.find("./p/bold")
+            p = fn.find("./p")
+            if bold is not None and bold.text:
+                if "Funding" in bold.text.strip():
+                    funding = fn
+                    # bold.tail = "kdngjsij byf"
+                elif "Author" in bold.text.strip():
+                    author = fn
+                elif "Availability" in bold.text.strip():
+                    availability = fn
+                elif "Conflicts" in bold.text.strip():
+                    conflict = fn
+                elif "Ethics" in bold.text.strip():
+                    ethics = fn
+        #Remove and append tag order
+        if funding:
+            fn_group.remove(funding)
+            fn_group.append(funding)
+        if author:
+            fn_group.remove(author)
+            fn_group.append(author)
+        if availability:
+            fn_group.remove(availability)
+            fn_group.append(availability)
+        if conflict:
+            fn_group.remove(conflict)
+            fn_group.append(conflict)
+        if ethics:
+            fn_group.remove(ethics)
+            fn_group.append(ethics)
 
 
 
@@ -161,7 +202,8 @@ class TSP_styles:
 
         #Find the article title tag inside the front tag
         if element.find('./front//article-title') is not None:
-            self.find_artitle(element,data)
+            alt_title = element.find('./front//article-title')
+            self.find_artitle(alt_title,data)
             
         #Find the affliation tag
         if element.tag == "aff":
@@ -191,19 +233,16 @@ class TSP_styles:
         for td in element.findall("./th"):
             if td.text is not None:
                 self.find_fig_title(td)
-        
-        #Find acknowledgement tag
-        # if element.tag == "ack":
-        #     cloned_ack = ET.Element(element[0].tag)
-        #     cloned_ack.text = element[0].text
-        #     print(cloned_ack)
 
-        # for fn in element.findall("./fn"):
-        #     element.append(cloned_ack)
-            # for i in fn.findall("./p"):
-            #     for j in i.findall("./bold"):
-            #         print(i)
-            #         print(i.tail)
+        #Find heading title in sec tag and change in title case(ULC)
+        for heading in element.findall("./sec/title"):
+            self.find_artitle(heading,data)
+
+        #Find the fn-group tag and change the order of fn group
+        fn_elements = element.findall(".//fn")
+        fn_group = element.find("./fn-group")
+        if fn_group is not None:
+            self.back_order(fn_elements,fn_group)        
 
         #Replace text or add or remove space in text
         self.change_space_text(element,data)

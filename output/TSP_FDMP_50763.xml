@@ -47,13 +47,13 @@
    </article-categories>
    <title-group>
     <article-title>
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convection of a power-law nanofluid in a square cavity with DMA a vertical fin
     </article-title>
     <alt-title alt-title-type="left-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convection of a power-law nanofluid in a square cavity with DMA a vertical fin
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convection of a power-law nanofluid in a square cavity with DMA a vertical fin
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">
@@ -1351,7 +1351,7 @@
     2
    </label>
    <title>
-    Modelling and mathematical formulation
+    Modelling and SOUND mathematical formulation
    </title>
    <p>
     The square cavity
@@ -1598,7 +1598,7 @@
     </label>
     <caption>
      <title>
-      Some functions of
+      Some functions DDA of
      </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_FDMP_50763-fig-1.jpg"/>
@@ -11000,6 +11000,14 @@
    <fn fn-type="other">
     <p>
      <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
       Availability of Data and Materials
      </bold>
      Should a request be made for data used in the study, the authors will endeavor to make the information available.
@@ -11011,14 +11019,6 @@
       Author Contributions
      </bold>
      The authors confirm contribution to the paper as follows study conception and design A. M'hadbi, H. Ben Hamed; numerical validation A. M'hadbi, K. Chtaibi; data collection A. M'hadbi; analysis and interpretation of results A. M'hadbi, M. El Ganaoui, A. Guizani; draft manuscript preparation A. M'hadbi. All authors reviewed the results and approved the final version of the manuscript.
-    </p>
-   </fn>
-   <fn fn-type="other">
-    <p>
-     <bold>
-      Conflicts of Interest
-     </bold>
-     The authors declare that they have no conflicts of interest to report regarding the present study.
     </p>
    </fn>
   </fn-group>

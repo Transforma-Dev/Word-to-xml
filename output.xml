@@ -36,7 +36,7 @@
     50763
    </article-id>
    <article-id pub-id-type="doi">
-    10.32604/fdmp.2024.050763
+    10.32604 / fdmp.2024.050763
    </article-id>
    <article-categories>
     <subj-group subj-group-type="heading">
@@ -46,14 +46,12 @@
     </subj-group>
    </article-categories>
    <title-group>
-    <article-title>
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
-    </article-title>
+    <article-title>Natural Convection of a Power-law Nanofluid in a Square Cavity with DMA a Vertical Fin</article-title>
     <alt-title alt-title-type="left-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convection of a power-law nanofluid in a square cavity with DMA a vertical fin
     </alt-title>
     <alt-title alt-title-type="right-running-head">
-     Natural convection of a power-law nanofluid in a square cavity with a vertical fin
+     Natural convection of a power-law nanofluid in a square cavity with DMA a vertical fin
     </alt-title>
    </title-group>
    <contrib-group content-type="authors">
@@ -175,9 +173,7 @@
    </contrib-group>
    <author-notes>
     <corresp id="cor1">
-     <label>
-      *
-     </label>
+     <label> * </label>
      Corresponding Author: Amira M'hadbi; Email: Amira.m-hadbi@univ-lorraine.fr
     </corresp>
    </author-notes>
@@ -326,9 +322,7 @@
          <mi>
           a
          </mi>
-         <mo>
-          =
-         </mo>
+         <mo> = </mo>
          <msup>
           <mrow>
            <mn>
@@ -370,9 +364,7 @@
          <mi>
           φ
          </mi>
-         <mo>
-          =
-         </mo>
+         <mo> = </mo>
          <mn>
           0
          </mn>
@@ -399,9 +391,7 @@
          <mi>
           n
          </mi>
-         <mo>
-          =
-         </mo>
+         <mo> = </mo>
          <mn>
           0.6
          </mn>
@@ -428,9 +418,7 @@
          <mi>
           r
          </mi>
-         <mo>
-          =
-         </mo>
+         <mo> = </mo>
          <mn>
           0.3
          </mn>
@@ -527,14 +515,12 @@
     </p>
    </abstract>
    <kwd-group kwd-group-type="author">
-    <kwd>
-     Heat transfer
-    </kwd>
+    <kwd>Heat transfer</kwd>
     <kwd>
      nanofluid
     </kwd>
     <kwd>
-     non-Newtonian fluid
+     non-newtonian fluid
     </kwd>
     <kwd>
      natural convection
@@ -547,9 +533,7 @@
    <label>
     1
    </label>
-   <title>
-    Introduction
-   </title>
+   <title>Introduction</title>
    <p>
     Free convection
     <xref ref-type="appendix" rid="app">
@@ -1350,9 +1334,7 @@
    <label>
     2
    </label>
-   <title>
-    Modelling and mathematical formulation
-   </title>
+   <title>Modelling and SOUND Mathematical Formulation</title>
    <p>
     The square cavity
     <xref ref-type="fig" rid="fig-1">
@@ -1394,9 +1376,7 @@
         <mi>
          r
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mfrac>
          <mrow>
           <mi>
@@ -1409,9 +1389,7 @@
           </mi>
          </mrow>
         </mfrac>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.3
         </mn>
@@ -1597,9 +1575,7 @@
      Figure 1
     </label>
     <caption>
-     <title>
-      Some functions of
-     </title>
+     <title>Some Functions DDA Of</title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-1.jpg" />
    </fig>
@@ -1632,9 +1608,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mfrac>
             <mrow>
              <mo>
@@ -1653,9 +1627,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mn>
             0
            </mn>
@@ -1710,9 +1682,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mi>
             V
            </mi>
@@ -1734,9 +1704,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mo>
@@ -1758,9 +1726,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -1850,9 +1816,7 @@
                </mfrac>
               </mrow>
              </mfenced>
-             <mo>
-              +
-             </mo>
+             <mo> + </mo>
              <mfrac>
               <mrow>
                <mo>
@@ -1917,9 +1881,7 @@
                    </mi>
                   </mrow>
                  </mfrac>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <mfrac>
                   <mrow>
                    <mo>
@@ -1998,9 +1960,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mi>
             V
            </mi>
@@ -2022,9 +1982,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mo>
@@ -2046,9 +2004,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2138,9 +2094,7 @@
                </mfrac>
               </mrow>
              </mfenced>
-             <mo>
-              +
-             </mo>
+             <mo> + </mo>
              <mfrac>
               <mrow>
                <mo>
@@ -2205,9 +2159,7 @@
                    </mi>
                   </mrow>
                  </mfrac>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <mfrac>
                   <mrow>
                    <mo>
@@ -2230,9 +2182,7 @@
                </mfenced>
               </mrow>
              </mfenced>
-             <mo>
-              +
-             </mo>
+             <mo> + </mo>
              <mi>
               P
              </mi>
@@ -2298,9 +2248,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mi>
             V
            </mi>
@@ -2322,9 +2270,7 @@
              </mi>
             </mrow>
            </mfrac>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mn>
@@ -2380,9 +2326,7 @@
                </msup>
               </mrow>
              </mfrac>
-             <mo>
-              +
-             </mo>
+             <mo> + </mo>
              <mfrac>
               <mrow>
                <msup>
@@ -2468,9 +2412,7 @@
            <mi>
             X
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2489,9 +2431,7 @@
            <mi>
             Y
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2510,9 +2450,7 @@
            <mi>
             U
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2561,9 +2499,7 @@
            <mi>
             V
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2612,9 +2548,7 @@
            <mi>
             P
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2673,9 +2607,7 @@
            <mi>
             Ѳ
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mi>
@@ -2811,9 +2743,7 @@
            <mi>
             a
            </mi>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <msub>
@@ -2933,9 +2863,7 @@
            </mtext>
            <mtext>
            </mtext>
-           <mtext>
-            =
-           </mtext>
+           <mtext> = </mtext>
            <mtext>
            </mtext>
            <mfrac>
@@ -3038,9 +2966,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfenced separators="|">
             <mrow>
              <mn>
@@ -3066,9 +2992,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mi>
             φ
            </mi>
@@ -3148,9 +3072,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfenced separators="|">
             <mrow>
              <mn>
@@ -3192,9 +3114,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mi>
             φ
            </mi>
@@ -3281,9 +3201,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfenced separators="|">
             <mrow>
              <mn>
@@ -3316,9 +3234,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mi>
             φ
            </mi>
@@ -3532,9 +3448,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <msub>
             <mrow>
              <mi>
@@ -3565,9 +3479,7 @@
                    </mi>
                   </mrow>
                  </msub>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <mn>
                   2
                  </mn>
@@ -3641,9 +3553,7 @@
                    </mi>
                   </mrow>
                  </msub>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <mn>
                   2
                  </mn>
@@ -3661,9 +3571,7 @@
                  </msub>
                 </mrow>
                </mfenced>
-               <mo>
-                +
-               </mo>
+               <mo> + </mo>
                <mi>
                 φ
                </mi>
@@ -3787,9 +3695,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <msub>
@@ -3863,9 +3769,7 @@
      Table 1
     </label>
     <caption>
-     <title>
-      Thermophysical properties of pure water and nanoparticles .
-     </title>
+     <title>Thermophysical Properties Of Pure Water And Nanoparticles.</title>
     </caption>
     <alternatives>
      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-table-1.tif" />
@@ -3880,8 +3784,7 @@
       <thead>
        <tr>
         <th />
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -3901,9 +3804,7 @@
                   g
                  </mi>
                 </mrow>
-                <mo>
-                 /
-                </mo>
+                <mo> / </mo>
                 <mrow>
                  <msup>
                   <mrow>
@@ -3926,8 +3827,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -3953,9 +3853,7 @@
                   J
                  </mi>
                 </mrow>
-                <mo>
-                 /
-                </mo>
+                <mo> / </mo>
                 <mrow>
                  <mi>
                   k
@@ -3975,8 +3873,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -4024,8 +3921,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -4042,9 +3938,7 @@
                   W
                  </mi>
                 </mrow>
-                <mo>
-                 /
-                </mo>
+                <mo> / </mo>
                 <mrow>
                  <mi>
                   m
@@ -4287,7 +4181,7 @@
     </alternatives>
    </table-wrap>
    <p>
-    The non- Newtonian fluid inside the cavity obeys the Ostwald-de Waele power law model, based on the shear stress tensor:
+    The non-Newtonian fluid inside the cavity obeys the Ostwald-de Waele power law model, based on the shear stress tensor:
    </p>
    <disp-formula>
     <alternatives>
@@ -4315,9 +4209,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mn>
             2
            </mn>
@@ -4402,9 +4294,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mn>
             2
            </mn>
@@ -4489,9 +4379,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <msub>
             <mrow>
              <mi>
@@ -4507,9 +4395,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <msub>
             <mrow>
              <mi>
@@ -4545,9 +4431,7 @@
                </mi>
               </mrow>
              </mfrac>
-             <mo>
-              +
-             </mo>
+             <mo> + </mo>
              <mfrac>
               <mrow>
                <mo>
@@ -4651,9 +4535,7 @@
              </mi>
             </mrow>
            </msub>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mi>
             M
            </mi>
@@ -4697,9 +4579,7 @@
                    </mn>
                   </mrow>
                  </msup>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <msup>
                   <mrow>
                    <mfenced separators="|">
@@ -4733,9 +4613,7 @@
                  </msup>
                 </mrow>
                </mfenced>
-               <mo>
-                +
-               </mo>
+               <mo> + </mo>
                <msup>
                 <mrow>
                  <mfenced separators="|">
@@ -4758,9 +4636,7 @@
                      </mi>
                     </mrow>
                    </mfrac>
-                   <mo>
-                    +
-                   </mo>
+                   <mo> + </mo>
                    <mfrac>
                     <mrow>
                      <mo>
@@ -4944,9 +4820,7 @@
              ¯
             </mo>
            </mover>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mi>
             M
            </mi>
@@ -4990,9 +4864,7 @@
                    </mn>
                   </mrow>
                  </msup>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <msup>
                   <mrow>
                    <mfenced separators="|">
@@ -5026,9 +4898,7 @@
                  </msup>
                 </mrow>
                </mfenced>
-               <mo>
-                +
-               </mo>
+               <mo> + </mo>
                <msup>
                 <mrow>
                  <mfenced separators="|">
@@ -5051,9 +4921,7 @@
                      </mi>
                     </mrow>
                    </mfrac>
-                   <mo>
-                    +
-                   </mo>
+                   <mo> + </mo>
                    <mfrac>
                     <mrow>
                      <mo>
@@ -5151,15 +5019,11 @@
                  <mi>
                   U
                  </mi>
-                 <mo>
-                  =
-                 </mo>
+                 <mo> = </mo>
                  <mi>
                   V
                  </mi>
-                 <mo>
-                  =
-                 </mo>
+                 <mo> = </mo>
                  <mn>
                   0
                  </mn>
@@ -5184,9 +5048,7 @@
                    </mi>
                   </mrow>
                  </mfrac>
-                 <mo>
-                  =
-                 </mo>
+                 <mo> = </mo>
                  <mn>
                   0
                  </mn>
@@ -5248,15 +5110,11 @@
                     <mi>
                      U
                     </mi>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <mi>
                      V
                     </mi>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <mn>
                      0
                     </mn>
@@ -5266,9 +5124,7 @@
                     <mi>
                      Ѳ
                     </mi>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <msub>
                      <mrow>
                       <mi>
@@ -5281,9 +5137,7 @@
                       </mi>
                      </mrow>
                     </msub>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <mn>
                      0
                     </mn>
@@ -5344,15 +5198,11 @@
                     <mi>
                      U
                     </mi>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <mi>
                      V
                     </mi>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <mn>
                      0
                     </mn>
@@ -5362,9 +5212,7 @@
                     <mi>
                      Ѳ
                     </mi>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <msub>
                      <mrow>
                       <mi>
@@ -5377,9 +5225,7 @@
                       </mi>
                      </mrow>
                     </msub>
-                    <mo>
-                     =
-                    </mo>
+                    <mo> = </mo>
                     <mn>
                      0
                     </mn>
@@ -5643,9 +5489,7 @@
            δ
           </mi>
          </mrow>
-         <mo>
-          /
-         </mo>
+         <mo> / </mo>
          <mrow>
           <msub>
            <mrow>
@@ -5826,9 +5670,7 @@
                  <mi>
                   n
                  </mi>
-                 <mo>
-                  +
-                 </mo>
+                 <mo> + </mo>
                  <mn>
                   1
                  </mn>
@@ -5922,9 +5764,7 @@
    <label>
     3
    </label>
-   <title>
-    Numerical methodology and validation
-   </title>
+   <title>Numerical Methodology and Validation</title>
    <p>
     Numerical solutions for the
     <xref ref-type="disp-formula" rid="eqn-1">
@@ -5985,9 +5825,7 @@
              </msup>
             </mrow>
            </mfrac>
-           <mo>
-            +
-           </mo>
+           <mo> + </mo>
            <mfrac>
             <mrow>
              <msup>
@@ -6024,9 +5862,7 @@
              </msup>
             </mrow>
            </mfrac>
-           <mo>
-            =
-           </mo>
+           <mo> = </mo>
            <mfrac>
             <mrow>
              <mo>
@@ -6100,9 +5936,7 @@
      Table 2
     </label>
     <caption>
-     <title>
-      Grid test of
-      <disp-formula>
+     <title>Grid Test Of<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" xlinkhref="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -6139,9 +5973,7 @@
             <mi>
              n
             </mi>
-            <mo>
-             =
-            </mo>
+            <mo> = </mo>
             <mn>
              0.6
             </mn>
@@ -6154,9 +5986,7 @@
             <mi>
              a
             </mi>
-            <mo>
-             =
-            </mo>
+            <mo> = </mo>
             <mn>
              10
             </mn>
@@ -6181,8 +6011,7 @@
           <mtext>
            φ
           </mtext>
-          <mtext>
-           = 0.02
+          <mtext> = 0.02
           </mtext>
          </math>
         </tex-math>
@@ -6200,8 +6029,7 @@
       </colgroup>
       <thead>
        <tr>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6227,9 +6055,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         grid type
-        </th>
+        <th>Grid Type</th>
        </tr>
       </thead>
       <tbody>
@@ -6304,9 +6130,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            10
           </mn>
@@ -6334,9 +6158,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          30
         </mn>
@@ -6404,8 +6226,7 @@
         <mtext>
          φ
         </mtext>
-        <mtext>
-         = 0
+        <mtext> = 0
         </mtext>
        </math>
       </tex-math>
@@ -6424,9 +6245,7 @@
         <mi>
          r
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          100
         </mn>
@@ -6457,9 +6276,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            10
           </mn>
@@ -6481,9 +6298,7 @@
      Figure 2
     </label>
     <caption>
-     <title>
-      streamlines (left) and the isotherms (right) of the current study for.sfjghigu.gvug.12.4.ff.
-     </title>
+     <title>Streamlines (left) And The Isotherms (right) Of The Current Study For.Sfjghigu.Gvug.12.4.Ff.</title>
     </caption>
     No Image
    </fig>
@@ -6492,9 +6307,7 @@
      Table 3
     </label>
     <caption>
-     <title>
-      comparison of the average Nu with previous study of Turan et al. [
-      <xref ref-type="bibr" rid="ref-18">
+     <title>Comparison Of The Average Nu With Previous Study Of Turan Et Al.[<xref ref-type="bibr" rid="ref-18">
        18
       </xref>
       ] for various
@@ -6538,9 +6351,7 @@
           <mi>
            φ
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0
           </mn>
@@ -6561,9 +6372,7 @@
           <mi>
            r
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            100
           </mn>
@@ -6586,14 +6395,11 @@
       </colgroup>
       <thead>
        <tr align="center">
-        <th>
-         <italic />
+        <th><italic />
         </th>
-        <th>
-         <italic />
+        <th><italic />
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6619,8 +6425,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6646,8 +6451,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -6693,9 +6497,7 @@
              <mi>
               n
              </mi>
-             <mo>
-              =
-             </mo>
+             <mo> = </mo>
              <mn>
               0.6
              </mn>
@@ -6714,9 +6516,7 @@
              <mi>
               n
              </mi>
-             <mo>
-              =
-             </mo>
+             <mo> = </mo>
              <mn>
               1
              </mn>
@@ -6735,9 +6535,7 @@
              <mi>
               n
              </mi>
-             <mo>
-              =
-             </mo>
+             <mo> = </mo>
              <mn>
               1.4
              </mn>
@@ -6766,9 +6564,7 @@
                <mi>
                 a
                </mi>
-               <mo>
-                =
-               </mo>
+               <mo> = </mo>
                <mn>
                 10
                </mn>
@@ -6810,9 +6606,7 @@
                <mi>
                 a
                </mi>
-               <mo>
-                =
-               </mo>
+               <mo> = </mo>
                <mn>
                 10
                </mn>
@@ -6857,9 +6651,7 @@
                <mi>
                 a
                </mi>
-               <mo>
-                =
-               </mo>
+               <mo> = </mo>
                <mn>
                 10
                </mn>
@@ -6901,9 +6693,7 @@
                <mi>
                 a
                </mi>
-               <mo>
-                =
-               </mo>
+               <mo> = </mo>
                <mn>
                 10
                </mn>
@@ -6938,9 +6728,7 @@
    <label>
     4
    </label>
-   <title>
-    Results and discussion
-   </title>
+   <title>Results and Discussion</title>
    <p>
     <xref ref-type="fig" rid="fig-3">
      Fig. 3
@@ -7126,9 +6914,7 @@
         <mi>
          n
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.6
         </mn>
@@ -7212,9 +6998,7 @@
         <mi>
          n
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          1.4
         </mn>
@@ -7235,9 +7019,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <msup>
          <mrow>
           <mn>
@@ -7333,9 +7115,7 @@
         <mi>
          n
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          1
         </mn>
@@ -7574,9 +7354,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <msup>
          <mrow>
           <mn>
@@ -7657,9 +7435,7 @@
         <mi>
          n
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.6
         </mn>
@@ -7680,9 +7456,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <msup>
          <mrow>
           <mn>
@@ -7714,8 +7488,7 @@
       <thead>
        <tr align="center">
         <th />
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7724,9 +7497,7 @@
              <mi>
               n
              </mi>
-             <mo>
-              =
-             </mo>
+             <mo> = </mo>
              <mn>
               0.6
              </mn>
@@ -7735,8 +7506,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7745,9 +7515,7 @@
              <mi>
               n
              </mi>
-             <mo>
-              =
-             </mo>
+             <mo> = </mo>
              <mn>
               1.0
              </mn>
@@ -7756,8 +7524,7 @@
           </alternatives>
          </disp-formula>
         </th>
-        <th>
-         <disp-formula>
+        <th><disp-formula>
           <alternatives>
            <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
            <tex-math>
@@ -7766,9 +7533,7 @@
              <mi>
               n
              </mi>
-             <mo>
-              =
-             </mo>
+             <mo> = </mo>
              <mn>
               1.4
              </mn>
@@ -7831,9 +7596,7 @@
      Figure 3
     </label>
     <caption>
-     <title>
-      The
-      <disp-formula>
+     <title>The<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -8232,15 +7995,9 @@
       </colgroup>
       <thead>
        <tr align="center">
-        <th>
-         (a)
-        </th>
-        <th>
-         (b)
-        </th>
-        <th>
-         (c)
-        </th>
+        <th>(a)</th>
+        <th>(b)</th>
+        <th>(c)</th>
        </tr>
       </thead>
       <tbody>
@@ -8264,9 +8021,7 @@
      Figure 4
     </label>
     <caption>
-     <title>
-      The
-      <disp-formula>
+     <title>The<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -8332,9 +8087,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <msup>
            <mrow>
             <mn>
@@ -8481,9 +8234,7 @@
      Figure 5
     </label>
     <caption>
-     <title>
-      Influence of nanoparticles on the
-      <disp-formula>
+     <title>Influence Of Nanoparticles On The<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -8535,9 +8286,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <msup>
            <mrow>
             <mn>
@@ -8567,9 +8316,7 @@
           <mi>
            n
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.6
           </mn>
@@ -8587,9 +8334,7 @@
      Figure 6
     </label>
     <caption>
-     <title>
-      Effect of nanoparticles on the
-      <disp-formula>
+     <title>Effect Of Nanoparticles On The<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -8641,9 +8386,7 @@
           <mi>
            φ
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.04
           </mn>
@@ -8661,9 +8404,7 @@
           <mi>
            n
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.6
           </mn>
@@ -8693,9 +8434,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <msup>
          <mrow>
           <mn>
@@ -8722,9 +8461,7 @@
         <mi>
          φ
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.2
         </mn>
@@ -8913,9 +8650,7 @@
         <mi>
          r
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.7
         </mn>
@@ -8956,9 +8691,7 @@
      Figure 7
     </label>
     <caption>
-     <title>
-      Isotherms at various
-      <disp-formula>
+     <title>Isotherms At Various<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -9001,9 +8734,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <msup>
            <mrow>
             <mn>
@@ -9030,9 +8761,7 @@
           <mi>
            φ
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.2
           </mn>
@@ -9085,9 +8814,7 @@
      Figure 8
     </label>
     <caption>
-     <title>
-      Streamlines at various
-      <disp-formula>
+     <title>Streamlines At Various<disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -9130,9 +8857,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <msup>
            <mrow>
             <mn>
@@ -9159,9 +8884,7 @@
           <mi>
            φ
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.2
           </mn>
@@ -9214,8 +8937,7 @@
      Figure 9
     </label>
     <caption>
-     <title>
-      <disp-formula>
+     <title><disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -9298,9 +9020,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <msup>
            <mrow>
             <mn>
@@ -9339,9 +9059,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <msup>
          <mrow>
           <mn>
@@ -9368,9 +9086,7 @@
         <mi>
          φ
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.04
         </mn>
@@ -9462,9 +9178,7 @@
         <mi>
          n
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.6
         </mn>
@@ -9485,9 +9199,7 @@
         <mi>
          r
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.7
         </mn>
@@ -9502,8 +9214,7 @@
      Figure 10
     </label>
     <caption>
-     <title>
-      <disp-formula>
+     <title><disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
         <tex-math>
@@ -9572,9 +9283,7 @@
           <mi>
            a
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <msup>
            <mrow>
             <mn>
@@ -9601,9 +9310,7 @@
           <mi>
            φ
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.04
           </mn>
@@ -9656,9 +9363,7 @@
    <label>
     5
    </label>
-   <title>
-    Conclusions
-   </title>
+   <title>Conclusions</title>
    <p>
     In the current study, heat transfer by free convection for
     <disp-formula>
@@ -9772,9 +9477,7 @@
         <mi>
          n
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.6
         </mn>
@@ -9801,9 +9504,7 @@
         <mi>
          a
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <msup>
          <mrow>
           <mn>
@@ -9835,7 +9536,7 @@
       </tex-math>
      </alternatives>
     </disp-formula>
-    , the volume fractions ("ph"=0-20% ) and the dimensions of the fin (
+    , the volume fractions ("ph" = 0-20% ) and the dimensions of the fin (
     <disp-formula>
      <alternatives>
       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
@@ -9848,9 +9549,7 @@
         <mi>
          r
         </mi>
-        <mo>
-         =
-        </mo>
+        <mo> = </mo>
         <mn>
          0.3,0
         </mn>
@@ -9963,9 +9662,7 @@
           <mi>
            n
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.6
           </mn>
@@ -10068,9 +9765,7 @@
             <mi>
              a
             </mi>
-            <mo>
-             =
-            </mo>
+            <mo> = </mo>
             <mn>
              10
             </mn>
@@ -10100,9 +9795,7 @@
           <mi>
            n
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            1
           </mn>
@@ -10125,9 +9818,7 @@
           <mi>
            n
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.6
           </mn>
@@ -10150,9 +9841,7 @@
             <mi>
              a
             </mi>
-            <mo>
-             =
-            </mo>
+            <mo> = </mo>
             <mn>
              10
             </mn>
@@ -10354,9 +10043,7 @@
           <mi>
            n
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.6
           </mn>
@@ -10377,9 +10064,7 @@
           <mi>
            r
           </mi>
-          <mo>
-           =
-          </mo>
+          <mo> = </mo>
           <mn>
            0.7
           </mn>
@@ -10513,8 +10198,7 @@
          </tex-math>
         </alternatives>
        </disp-formula>
-       Specific heat at constant pressure, *
-       <disp-formula>
+       Specific heat at constant pressure, * <disp-formula>
         <alternatives>
          <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
          <tex-math>
@@ -11000,17 +10684,17 @@
    <fn fn-type="other">
     <p>
      <bold>
-      Availability of Data and Materials
-     </bold>
-     Should a request be made for data used in the study, the authors will endeavor to make the information available.
-    </p>
-   </fn>
-   <fn fn-type="other">
-    <p>
-     <bold>
       Author Contributions
      </bold>
      The authors confirm contribution to the paper as follows study conception and design A. M'hadbi, H. Ben Hamed; numerical validation A. M'hadbi, K. Chtaibi; data collection A. M'hadbi; analysis and interpretation of results A. M'hadbi, M. El Ganaoui, A. Guizani; draft manuscript preparation A. M'hadbi. All authors reviewed the results and approved the final version of the manuscript.
+    </p>
+   </fn>
+  <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     Should a request be made for data used in the study, the authors will endeavor to make the information available.
     </p>
    </fn>
    <fn fn-type="other">
@@ -11021,7 +10705,7 @@
      The authors declare that they have no conflicts of interest to report regarding the present study.
     </p>
    </fn>
-  </fn-group>
+   </fn-group>
   <ref-list content-type="authoryear">
    <title>
     References
@@ -11079,13 +10763,13 @@
       2014 ,Feb. 5
      </year>
      <pub-id>
-      10.1016/j.applthermaleng.2013.10.065
+      10.1016 / j.applthermaleng.2013.10.065
      </pub-id>
      <web-url>
-      https://doi.org/10.1016/j.applthermaleng.2013.10.065
+      https: /  / doi.org / 10.1016 / j.applthermaleng.2013.10.065
      </web-url>
      <comment>
-      Elsevier Ltd
+      Elsevier Ltd.
      </comment>
     </mixed-citation>
    </ref>
