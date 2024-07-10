@@ -1,8 +1,11 @@
+#import neccessary libraries
 import xml.etree.ElementTree as ET
 import os,sys
 import re
 import json
+import spacy
 
+#Create class to apply TSP styles
 class TSP_styles:
 
     #Replace text or add space or remove space in this function
@@ -44,7 +47,7 @@ class TSP_styles:
         #Find the continuous text and add "," and last will add "and" 
         for symbol in data["add_and"]:
             if element.text:
-                pattern = fr'\d+\.*\d*{symbol}(?:\s*,*\s*\d+\.*\d*{symbol}\.*)*'
+                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*\d+\.*\d*\s*{symbol}\.*)*'
                 result = re.findall(pattern,element.text,re.IGNORECASE)
                 if result:
                     for i in result:
@@ -53,7 +56,7 @@ class TSP_styles:
                             simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1]
                             element.text = re.sub(i,simple,element.text)
             if element.tail:
-                pattern = fr'\d+\.*\d*{symbol}(?:\s*,*\s*\d+\.*\d*{symbol}\.*)*'
+                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*\d+\.*\d*\s*{symbol}\.*)*'
                 result = re.findall(pattern,element.tail,re.IGNORECASE)
                 if result:
                     for i in result:
@@ -61,6 +64,39 @@ class TSP_styles:
                             split = i.split(",")
                             simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1]
                             element.tail = re.sub(i,simple,element.tail)
+
+        #Find the repeated text with unit and get the same unit name remove them and add unit in last of the string
+        for symbol in data["add_all"]:
+            if element.text:
+                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*'
+                result = re.findall(pattern,element.text,re.IGNORECASE)
+                if result:
+                    for i in result:
+                        if "," in i or "and" in i:
+                            split = re.split(r'\s*,\s*|\s*and\s*', i)
+                            j = ''
+                            for sec in split:
+                                j += ''.join(k for k in sec if k.isalpha())
+                                if j:
+                                    break
+                            split = [sec.replace(j, '') for sec in split]
+                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1] + j
+                            element.text = element.text.replace(i,simple)
+            if element.tail:
+                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*' 
+                result = re.findall(pattern,element.tail,re.IGNORECASE)
+                if result:
+                    for i in result:
+                        if "," in i or "and" in i:
+                            split = re.split(r'\s*,\s*|\s*and\s*', i)
+                            j = ''
+                            for sec in split:
+                                j += ''.join(k for k in sec if k.isalpha())
+                                if j:
+                                    break
+                            split = [sec.replace(j, '') for sec in split]
+                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1] + j
+                            element.tail = element.tail.replace(i,simple)
 
         #Chnage the SI_unit minutes,seconds,hours with min,s,h
         for si_unit in data["si_units"]:
@@ -79,14 +115,27 @@ class TSP_styles:
                         new_text = i[0] + " " + si_unit["replace"]
                         element.tail = re.sub(i,new_text,element.tail)
 
-    #Find the article title tag inside the front tag and capitalie the article title text except remove conjuction and preposition
-    def find_artitle(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
-        element.text = ' '.join(word.lower() if word.lower() in data["skip_words"] else word.upper() if word.isupper() else word[0].upper()+word[1:] for word in element.text.split())
+        #Remove the ref or refs text present in middle of the paragraph
+        pattern = r"\w\sRefs*\s"    #https://github.com/Transforma-Dev/Word-to-xml/issues/20#issue-2385186827
+        if element.text is not None:
+            match = re.findall(pattern,element.text,re.IGNORECASE)
+            if match:   
+                element.text = re.sub(match[0],match[0][:2],element.text)
+        if element.tail is not None:
+            match = re.findall(pattern,element.tail,re.IGNORECASE)
+            if match:   
+                element.tail = re.sub(match[0],match[0][:2],element.tail)
 
+    #Find the article title,heading tag and capitalie the article title,heading text except remove conjuction and preposition
+    def find_artitle(self,element,data,nlp):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
+        doc = nlp(element.text)
+        for word in doc:
+            element.text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
+          
     #Remove dot in end of affliation tag and replace the perticuler text
-    def find_aff(self,element,data):    #https://github.com/Transforma-Dev/Word-to-xml/issues/9#issue-2379911935
+    def find_aff(self,element,data,nlp):    #https://github.com/Transforma-Dev/Word-to-xml/issues/9#issue-2379911935
         for child in element:
-            self.change_text(child)
+            self.change_text(child,nlp)
             #Replace text
             for i in data["aff_replace_text"]:
                 if child.text and i["text"] in child.text:
@@ -97,19 +146,6 @@ class TSP_styles:
         # new_tag = ET.Element("new")
         # new_tag.text = "mew"
         # element.append(new_tag)
-
-    #Remove dot in end of kwd-group tag and change the first letter as capital others all are small
-    def find_key(self,element):     #https://github.com/Transforma-Dev/Word-to-xml/issues/14#issue-2385180471
-        n=1
-        for child in element:
-            self.change_text(child)
-            if n==1 and child.text.strip():
-                child.text = child.text.strip().capitalize()
-                n+=1
-            else:
-                child.text = child.text.lower()
-        if child.text.endswith('.'):
-            child.text = child.text[:-1]
 
     #Find if date is not present in document then add query tag 
     def find_history(self,element):     #https://github.com/Transforma-Dev/Word-to-xml/issues/11#issue-2385178216
@@ -130,47 +166,71 @@ class TSP_styles:
             element.remove(child)
         if tag:
             new_tag = ET.Element("Query")
-            new_tag.text = "No History detail is there in the document"
+            new_tag.text = "No History details present in the document"
             element.append(new_tag)
 
+    #Remove dot in end of kwd-group tag and change the first letter as capital others all are small
+    def find_key(self,element,nlp):     #https://github.com/Transforma-Dev/Word-to-xml/issues/14#issue-2385180471
+        n=1
+        for child in element:
+            self.change_text(child,nlp)
+            doc = nlp(child.text)
+            if n==1 and child.text.strip():
+                child.text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                n+=1
+            else:
+                child.text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                # child.text = child.text.lower()
+        if child.text.endswith('.'):
+            child.text = child.text[:-1]
+
     #Change the table title and figure title in sentance case.
-    def find_fig_title(self,image_title):
-        # title_text = ''.join(table_title.itertext())
-        split = image_title.text.strip().split(".")
-        caps = ''
-        for index,i in enumerate(split):
-            split_i = i.split()
-            for id,j in enumerate(split_i):
-                if j.isupper():
-                    caps += " " + j 
-                elif id == 0:
-                    caps += j.capitalize()
-                else:
-                    caps += " " + j.capitalize()
-            if caps:
-                caps += "."
-        
-        image_title.text = caps
-        if image_title.text.endswith('.'):
-            image_title.text = image_title.text[:-1]
+    def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
+        doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
+        text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+        element.text = text.strip()[0].upper() + text.strip()[1:]
+        for child in element:
+            if child.text is not None:
+                nlp = spacy.load("en_core_web_sm")
+                doc = nlp(child.text)
+                child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                split = child_text.split(".")
+                for id,i in enumerate(split):
+                    if len(i.strip())!=0:
+                        if id == 0:
+                            child.text = i
+                        else:
+                            child.text += "." + i.strip()[0].upper() + i.strip()[1:]
+            if child.tail is not None:
+                doc = nlp(child.tail)
+                child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                split = child_tail.split(".")
+                for id,i in enumerate(split):
+                    if len(i.strip())!=0:
+                        if id == 0:
+                            child.tail = i
+                        else:
+                            child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
+        if element.text.endswith('.'):
+            element.text = element.text[:-1]
 
     #Correct the back matter order in fn-group tag
-    def back_order(self,fn_elements,fn_group):
+    def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
         funding = availability = author = conflict = ethics = None
         for fn in fn_elements:
             bold = fn.find("./p/bold")
             p = fn.find("./p")
             if bold is not None and bold.text:
-                if "Funding" in bold.text.strip():
+                if "fund" in bold.text.strip().lower():
                     funding = fn
                     # bold.tail = "kdngjsij byf"
-                elif "Author" in bold.text.strip():
+                elif "author" in bold.text.strip().lower():
                     author = fn
-                elif "Availability" in bold.text.strip():
+                elif "availability" in bold.text.strip().lower():
                     availability = fn
-                elif "Conflicts" in bold.text.strip():
+                elif "conflict" in bold.text.strip().lower():
                     conflict = fn
-                elif "Ethics" in bold.text.strip():
+                elif "ethics" in bold.text.strip().lower():
                     ethics = fn
         #Remove and append tag order
         if funding:
@@ -182,18 +242,19 @@ class TSP_styles:
         if availability:
             fn_group.remove(availability)
             fn_group.append(availability)
-        if conflict:
-            fn_group.remove(conflict)
-            fn_group.append(conflict)
         if ethics:
             fn_group.remove(ethics)
             fn_group.append(ethics)
+        if conflict:
+            fn_group.remove(conflict)
+            fn_group.append(conflict)
 
 
 
 
     #Find the tags in xml and replace the content
-    def change_text(self, element):
+    def change_text(self, element, nlp):
+
 
         #from journal load the json file
         with open("json_folder/TSP_styles.json",'r') as file:
@@ -203,40 +264,40 @@ class TSP_styles:
         #Find the article title tag inside the front tag
         if element.find('./front//article-title') is not None:
             alt_title = element.find('./front//article-title')
-            self.find_artitle(alt_title,data)
+            self.find_artitle(alt_title,data,nlp)
             
         #Find the affliation tag
         if element.tag == "aff":
-            self.find_aff(element,data)
+            self.find_aff(element,data,nlp)
 
         #Find the kwd-group tag
         if element.tag == "kwd-group":
-            self.find_key(element)
+            self.find_key(element,nlp)
 
         #Find the history tag
         if element.tag == "history":
             self.find_history(element)
 
+        #Find heading title in sec tag and change in title case(ULC)
+        for heading in element.findall("./sec/title"):
+            self.find_artitle(heading,data,nlp)
+
         #Find the table title tag
         for title in element.findall('./fig'):
             image_title = title.find('.//title')
             if image_title is not None:
-                self.find_fig_title(image_title)
+                self.find_fig_title(image_title,nlp)
 
         #Find the table title tag
         for title in element.findall('./table-wrap'):
             table_title = title.find('.//title')
             if table_title is not None:
-                self.find_fig_title(table_title)
+                self.find_fig_title(table_title,nlp)
 
         #Find the th tag
-        for td in element.findall("./th"):
-            if td.text is not None:
-                self.find_fig_title(td)
-
-        #Find heading title in sec tag and change in title case(ULC)
-        for heading in element.findall("./sec/title"):
-            self.find_artitle(heading,data)
+        for th in element.findall("./th"):
+            if th.text is not None:
+                self.find_fig_title(th,nlp)
 
         #Find the fn-group tag and change the order of fn group
         fn_elements = element.findall(".//fn")
@@ -248,7 +309,7 @@ class TSP_styles:
         self.change_space_text(element,data)
 
         for child in element:
-            self.change_text(child)
+            self.change_text(child,nlp)
 
     
     def modify_xml(self,input_file,output_file):
@@ -256,7 +317,9 @@ class TSP_styles:
         tree = ET.parse(input_file)
         root = tree.getroot()
 
-        self.change_text(root)
+        nlp = spacy.load("en_core_web_sm")
+
+        self.change_text(root,nlp)
 
         #Save the modified XML to a new file
         tree.write(output_file, encoding='utf-8', xml_declaration=True)

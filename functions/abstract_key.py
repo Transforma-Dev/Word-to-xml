@@ -84,7 +84,7 @@ def abstract(xml_text,variables,filename):
     return text
 
 
-#Define funcion to find keywords in document
+#Define function to find keywords in document
 def keyword_text(xml_text,variables):
     #Remove keyword text and bold tag in string
     xml_text = re.sub(r'keywords?:|key\s*words', '', xml_text, flags=re.IGNORECASE)

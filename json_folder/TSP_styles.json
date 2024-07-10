@@ -8,11 +8,13 @@
     
     "space_add_text" : ["+","-","*","/","="],
 
-    "space_remove_text" : ["-","—"],
+    "space_remove_text" : ["-","—","-"],
 
     "space_before_text" : ["cm"],
 
     "add_and" : ["%","°C"],
+
+    "add_all" : ["h","min","s"],
 
     "si_units" : [
             {"text" : "second","replace":"s"},
@@ -23,6 +25,5 @@
     "aff_replace_text" : [
             {"text":"People’s Republic of China","replace":"China"},
             {"text":"Dept","replace":"Department"}
-        ],
-    "skip_words" : ["and", "or", "but","so", "in", "on", "at", "for", "with", "to", "from","of","into","a"]
+        ]
 }
