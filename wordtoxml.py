@@ -24,7 +24,7 @@ import os
 from convertion import paragraph,table   #Import Functions from 'convertion.py' file
 from functions import eq_link
 #Tsp_styles.data
-from TSP_styles import TSP_styles
+from client_styles import TSP_styles,common_styles
 
 
 #Create XML header
@@ -157,9 +157,12 @@ def convert(input_file_name = None):
     with open(output_xml, 'w', encoding="utf-8") as file:
         file.write(pretty_xml)
 
-    # #Create object for class TSP_styles
-    # xml_modifier = TSP_styles()
-    # xml_modifier.modify_xml(output_xml, output_xml)
+    #Create object for class TSP_styles
+    xml_modifier = TSP_styles.TSP_styles()
+    xml_modifier.modify_xml(output_xml, output_xml)
+
+    xml_modifier = common_styles.Common_styles()
+    xml_modifier.modify_xml(output_xml, output_xml)
 
     return output_xml_name
 

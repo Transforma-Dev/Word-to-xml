@@ -65,76 +65,79 @@ def reference_text(xml_text,variables):
     # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
     # print(references_json)
     if references_json and not xml_text.isspace():
-        data = references_json[0]
+        try:
+            data = references_json[0]
 
-        ref_word = ''
+            ref_word = ''
 
-        ref_word += f'<label>{data["id"]}</label><mixed-citation publication-type="journal">'
+            ref_word += f'<label>{data["id"]}</label><mixed-citation publication-type="journal">'
 
-        tag_list = ["author","title","container-title","volume","issue","page","year","issued","DOI","doi_url","publisher"]
+            tag_list = ["author","title","container-title","volume","issue","page","year","issued","DOI","doi_url","publisher"]
 
-        #Loop through the tag order
-        for k in tag_list:
-            #Loop through parsed text in json
-            for j in data["parsed"]:
-                #Find author name
-                if j==k=="author":
-                    ref_word += f'<person-group person-group-type="author">'
-                    for i in data["parsed"]["author"]:
-                        if len(i)>1:
-                            ref_word += f'<string-name><surname>{i["family"]}</surname><given-names>{i["given"]}</given-names></string-name>'
+            #Loop through the tag order
+            for k in tag_list:
+                #Loop through parsed text in json
+                for j in data["parsed"]:
+                    #Find author name
+                    if j==k=="author":
+                        ref_word += f'<person-group person-group-type="author">'
+                        for i in data["parsed"]["author"]:
+                            if len(i)>1:
+                                ref_word += f'<string-name><surname>{i["family"]}</surname><given-names>{i["given"]}</given-names></string-name>'
+                            else:
+                                ref_word += f'<string-name><surname>{i["family"]}</surname></string-name>'
+                        ref_word += f'</person-group>'
+                    #Find article title
+                    elif j==k=="title":
+                        ref_word += f'<article-title>{data["parsed"]["title"]}</article-title>'
+                    #Find source
+                    elif j==k=="container-title":
+                        ref_word += f'<source>{data["parsed"]["container-title"]}</source>'
+                    #Find Volume
+                    elif j==k=="volume":
+                        ref_word += f'<volume>{data["parsed"]["volume"]}</volume>'
+                    #Find issue
+                    elif j==k=="issue":
+                        ref_word += f'<issue>{data["parsed"]["issue"]}</issue>'
+                    #Find page number
+                    elif j==k=="page":
+                        if "-" in data["parsed"]["page"]:
+                            split_page = data["parsed"]["page"].split("-")
+                            ref_word += f'<fpage>{split_page[0]}</fpage><lpage>{split_page[1]}</lpage>'
                         else:
-                            ref_word += f'<string-name><surname>{i["family"]}</surname></string-name>'
-                    ref_word += f'</person-group>'
-                #Find article title
-                elif j==k=="title":
-                    ref_word += f'<article-title>{data["parsed"]["title"]}</article-title>'
-                #Find source
-                elif j==k=="container-title":
-                    ref_word += f'<source>{data["parsed"]["container-title"]}</source>'
-                #Find Volume
-                elif j==k=="volume":
-                    ref_word += f'<volume>{data["parsed"]["volume"]}</volume>'
-                #Find issue
-                elif j==k=="issue":
-                    ref_word += f'<issue>{data["parsed"]["issue"]}</issue>'
-                #Find page number
-                elif j==k=="page":
-                    if "-" in data["parsed"]["page"]:
-                        split_page = data["parsed"]["page"].split("-")
-                        ref_word += f'<fpage>{split_page[0]}</fpage><lpage>{split_page[1]}</lpage>'
-                    else:
-                        ref_word += f'<fpage>{data["parsed"]["page"]}</fpage>'
-                #Find Year
-                elif j==k=="year":
-                    ref_word += f'<year>{data["parsed"]["year"]}</year>'
-                #Find DOI
-                elif j==k=="DOI":
-                    ref_word += f'<pub-id>{data["parsed"]["DOI"]}</pub-id>'
-                #Find publisher
-                elif j==k=="publisher":
-                    ref_word += f'<comment>{data["parsed"]["publisher"]}</comment>'
-                #Find doi_url
-                elif j==k=="doi_url":
-                    ref_word += f'<web-url>{data["parsed"]["doi_url"]}</web-url>'
-                #Find year
-                elif j==k=="issued":
-                    for d_name in data["parsed"]["issued"]:
-                        if d_name=="date-parts":
-                            date = data["parsed"]["issued"][d_name][0]
+                            ref_word += f'<fpage>{data["parsed"]["page"]}</fpage>'
+                    #Find Year
+                    elif j==k=="year":
+                        ref_word += f'<year>{data["parsed"]["year"]}</year>'
+                    #Find DOI
+                    elif j==k=="DOI":
+                        ref_word += f'<pub-id>{data["parsed"]["DOI"]}</pub-id>'
+                    #Find publisher
+                    elif j==k=="publisher":
+                        ref_word += f'<comment>{data["parsed"]["publisher"]}</comment>'
+                    #Find doi_url
+                    elif j==k=="doi_url":
+                        ref_word += f'<web-url>{data["parsed"]["doi_url"]}</web-url>'
+                    #Find year
+                    elif j==k=="issued":
+                        for d_name in data["parsed"]["issued"]:
+                            if d_name=="date-parts":
+                                date = data["parsed"]["issued"][d_name][0]
+                            else:
+                                date = []
+                                date.append(data["parsed"]["issued"][d_name])
+                            
+                        if len(date)>1:
+                            dates = calendar.month_name[date[1]]
+                            date[1] = ","+dates[:3]+"."
+                            
+                            ref_word += f'<year>{" ".join(map(str, date))}</year>'
                         else:
-                            date = []
-                            date.append(data["parsed"]["issued"][d_name])
-                        
-                    if len(date)>1:
-                        dates = calendar.month_name[date[1]]
-                        date[1] = ","+dates[:3]+"."
-                        
-                        ref_word += f'<year>{" ".join(map(str, date))}</year>'
-                    else:
-                        ref_word += f'<year>{date[0]}</year>'
+                            ref_word += f'<year>{date[0]}</year>'
 
-        ref_word += f'</mixed-citation>'
+            ref_word += f'</mixed-citation>'
+        except:
+            print("reference")
         # print(ref_word)
 
         #Split the reference text and find author name and year

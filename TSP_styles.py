@@ -1,11 +1,10 @@
-#import neccessary libraries
+#import neccessary librarys
 import xml.etree.ElementTree as ET
 import os,sys
 import re
 import json
 import spacy
 
-#Create class to apply TSP styles
 class TSP_styles:
 
     #Replace text or add space or remove space in this function
@@ -82,6 +81,7 @@ class TSP_styles:
                             split = [sec.replace(j, '') for sec in split]
                             simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1] + j
                             element.text = element.text.replace(i,simple)
+                            # element.text = [:-1]
             if element.tail:
                 pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*' 
                 result = re.findall(pattern,element.tail,re.IGNORECASE)
@@ -188,31 +188,32 @@ class TSP_styles:
     def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
         doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
         text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-        element.text = text.strip()[0].upper() + text.strip()[1:]
-        for child in element:
-            if child.text is not None:
-                nlp = spacy.load("en_core_web_sm")
-                doc = nlp(child.text)
-                child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                split = child_text.split(".")
-                for id,i in enumerate(split):
-                    if len(i.strip())!=0:
-                        if id == 0:
-                            child.text = i
-                        else:
-                            child.text += "." + i.strip()[0].upper() + i.strip()[1:]
-            if child.tail is not None:
-                doc = nlp(child.tail)
-                child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                split = child_tail.split(".")
-                for id,i in enumerate(split):
-                    if len(i.strip())!=0:
-                        if id == 0:
-                            child.tail = i
-                        else:
-                            child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
-        if element.text.endswith('.'):
-            element.text = element.text[:-1]
+        if len(element.text.strip())!=0:
+            element.text = text.strip()[0].upper() + text.strip()[1:]
+            for child in element:
+                if child.text is not None:
+                    nlp = spacy.load("en_core_web_sm")
+                    doc = nlp(child.text)
+                    child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                    split = child_text.split(".")
+                    for id,i in enumerate(split):
+                        if len(i.strip())!=0:
+                            if id == 0:
+                                child.text = i
+                            else:
+                                child.text += "." + i.strip()[0].upper() + i.strip()[1:]
+                if child.tail is not None:
+                    doc = nlp(child.tail)
+                    child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                    split = child_tail.split(".")
+                    for id,i in enumerate(split):
+                        if len(i.strip())!=0:
+                            if id == 0:
+                                child.tail = i
+                            else:
+                                child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
+            if element.text.endswith('.'):
+                element.text = element.text[:-1]
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765

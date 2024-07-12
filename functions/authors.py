@@ -95,8 +95,18 @@ def aff_para(xml_text,variables):
 
 #Define function to find coresponding author
 def corres_author(xml_text,variables):
+    
     #Replace specific HTML tags with appropriate XML tags for email and labels
     xml_text=xml_text.replace("<sup>","<label>").replace("</sup>","</label>").replace("<link>","<email>").replace("</link>","</email>")
+    
+    #Remove empty label tag
+    matches = re.findall(r'<label>(.*?)</label>', xml_text, re.DOTALL)
+    num = 0
+    for match in matches:
+        if len(match.strip())==0:
+            num += 1
+    if len(matches)!=0 and len(matches)==num:
+        xml_text = xml_text.replace("<label>","").replace("</label>","")
     
     if variables["para_count"]==3:
         text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}'
