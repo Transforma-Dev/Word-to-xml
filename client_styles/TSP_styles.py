@@ -259,7 +259,7 @@ class TSP_styles:
         #from journal load the json file
         with open("json_folder/TSP_styles.json",'r') as file:
             data = json.load(file)
-        print(data)
+        # print(data)
 
         #Find the article title tag inside the front tag
         if element.find('./front//article-title') is not None:

@@ -62,7 +62,7 @@ class TSP_styles:
         for child in element:
             self.change_text(child)
 
-    
+
     def modify_xml(self,input_file,output_file):
         #Load the XML file
         tree = ET.parse(input_file)

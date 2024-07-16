@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<article xmlns:ns0="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<article article-type="research-article" dtd-version="1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  <front>
   <journal-meta>
    <journal-id journal-id-type="pmc">
@@ -36,7 +36,7 @@
     50763
    </article-id>
    <article-id pub-id-type="doi">
-    10.32604 / fdmp.2024.050763
+    10.32604/fdmp.2024.050763
    </article-id>
    <article-categories>
     <subj-group subj-group-type="heading">
@@ -47,7 +47,7 @@
    </article-categories>
    <title-group>
     <article-title>
-      Natural Convection of a the Power-Law Nanofluid in a Square Cavity with a Vertical Fin 
+     Natural convection of a the power-law nanofluid in a square cavity with a vertical fin
     </article-title>
     <alt-title alt-title-type="left-running-head">
      Natural convection of a the power-law nanofluid in a square cavity with a vertical fin
@@ -58,7 +58,7 @@
    </title-group>
    <contrib-group content-type="authors">
     <contrib contrib-type="author" corresp="yes" id="author-1">
-     <contrib-id contrib-id-type="orcid" />
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        M'hadbi
@@ -78,7 +78,7 @@
      </mail>
     </contrib>
     <contrib contrib-type="author" id="author-2">
-     <contrib-id contrib-id-type="orcid" />
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Ganaoui
@@ -92,7 +92,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-3">
-     <contrib-id contrib-id-type="orcid" />
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Hamed
@@ -106,7 +106,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-4">
-     <contrib-id contrib-id-type="orcid" />
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Guizani
@@ -120,7 +120,7 @@
      </xref>
     </contrib>
     <contrib contrib-type="author" id="author-5">
-     <contrib-id contrib-id-type="orcid" />
+     <contrib-id contrib-id-type="orcid"/>
      <name name-style="western">
       <surname>
        Chtaibi
@@ -175,7 +175,9 @@
    </contrib-group>
    <author-notes>
     <corresp id="cor1">
-     <label> * </label>
+     <label>
+      *
+     </label>
      Corresponding Author: Amira M'hadbi; Email: Amira.m-hadbi@univ-lorraine.fr
     </corresp>
    </author-notes>
@@ -236,22 +238,22 @@
     <copyright-holder>
      M'hadbi et al.
     </copyright-holder>
-    <license ns0:href="https://creativecommons.org/licenses/by/4.0/">
+    <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
      <license-p>
       This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
      </license-p>
     </license>
    </permissions>
-   <self-uri content-type="pdf" ns0:href="TSP_FDMP_50763.pdf" />
+   <self-uri content-type="pdf" xlink:href="TSP_FDMP_50763.pdf"/>
    <abstract abstract-type="abstract">
     <p>
      The behavior of non-Newtonian power-law nanofluids under free convection heat transfer conditions in a cooled square enclosure equipped with a heated fin is investigated numerically. In particular, the impact of nanofluids, composed of water and
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           A
          </mi>
@@ -274,10 +276,10 @@
      ,
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           T
          </mi>
@@ -297,10 +299,10 @@
      , and
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           C
          </mi>
@@ -314,17 +316,19 @@
      nanoparticles, on heat transfer enhancement is examined. The aim of this research is also to analyze the influence of different parameters, including the Rayleigh number (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           R
          </mi>
          <mi>
           a
          </mi>
-         <mo> = </mo>
+         <mo>
+          =
+         </mo>
          <msup>
           <mrow>
            <mn>
@@ -359,14 +363,16 @@
      ), nanoparticle volume fraction (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           φ
          </mi>
-         <mo> = </mo>
+         <mo>
+          =
+         </mo>
          <mn>
           0
          </mn>
@@ -386,14 +392,16 @@
      ), non-Newtonian power-law indexes (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           n
          </mi>
-         <mo> = </mo>
+         <mo>
+          =
+         </mo>
          <mn>
           0.6
          </mn>
@@ -410,17 +418,19 @@
      ), and fin dimensions (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           A
          </mi>
          <mi>
           r
          </mi>
-         <mo> = </mo>
+         <mo>
+          =
+         </mo>
          <mn>
           0.3
          </mn>
@@ -431,10 +441,10 @@
      ,0.5, and 0.7). Streamlines and isotherms are used to depict flow and related heat transfer characteristics. Results indicate that thermal performance improves with increasing Rayleigh number, regardless of the nanoparticle type or nanofluid rheological behavior. This suggests that the buoyancy force has a significant impact on heat transfer, particularly near the heat source. The Nusselt number is more sensitive to variations in Cu nanoparticle volume fractions compared to
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           A
          </mi>
@@ -457,10 +467,10 @@
      and
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           T
          </mi>
@@ -480,14 +490,14 @@
      . Moreover, the average Nusselt numbers for power-law nanofluids with
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           n
          </mi>
-         <mo />
+         <mo/>
          <mn>
           1
          </mn>
@@ -498,14 +508,14 @@
      (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
        <tex-math>
         
-        <math>
+        <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
          <mi>
           n
          </mi>
-         <mo />
+         <mo/>
          <mn>
           1
          </mn>
@@ -518,16 +528,16 @@
    </abstract>
    <kwd-group kwd-group-type="author">
     <kwd>
-      Heat DDA transfer 
+     Heat DDA transfer
     </kwd>
     <kwd>
-      Nanofluid 
+     nanofluid
     </kwd>
     <kwd>
-      non-newtonian Fluid 
+     non-Newtonian fluid
     </kwd>
     <kwd>
-      natural DMA Convection 
+     natural DMA convection
     </kwd>
    </kwd-group>
   </article-meta>
@@ -538,22 +548,42 @@
     1
    </label>
    <title>
-     Introduction 
+    Introduction
    </title>
    <p>
-    Free 10 , 15 , 20 ,  and 25 s convection
-    <xref ref-type="appendix" rid="app">
-     appendix
+    Free
+    <xref ref-type="fig" rid="fig-7a">
+     Figs. 7a
+    </xref>
+    ,
+    <xref ref-type="fig" rid="fig-7aa">
+     7aa
+    </xref>
+    ,
+    <xref ref-type="fig" rid="fig-7ab">
+     7ab
+    </xref>
+    and
+    <xref ref-type="fig" rid="fig-7b">
+     7b
+    </xref>
+    convection
+    <xref ref-type="fig" rid="fig-3">
+     Figs. 3
+    </xref>
+    -
+    <xref ref-type="fig" rid="fig-5">
+     5
     </xref>
     heat
-    <xref ref-type="formula" rid="for-1">
-     formula (1)
+    <xref ref-type="fig" rid="fig-1">
+     Fig. 1
     </xref>
-    transfer in 10 , 15  and 20 min square 10 s enclosures is largely used in numerous 10  and 15 s engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
+    transfer in square enclosures is largely used in numerous engineering applications such as heat exchangers, buildings, built-in-storage solar collectors and thermal management of electronics [
     <xref ref-type="bibr" rid="ref-1">
      1
     </xref>
-    ].ref Researchers have expressed significant concern regarding the enhancement of heat transfer in free convection due to its inherently low heat transfer coefficient refs. Consequently, they actively explored diverse techniques and concepts to improve the heat transfer in this process. One of those techniques that researchers frequently focus on is adding nanoparticles to the conventional working fluid. The addition of nanoparticles enhances the thermophysical properties of the base fluid, particularly thermal conductivity, a pivotal parameter that improves the heat transfer mechanisms [
+    ].ref Researchers have expressed significant concern regarding the enhancement of heat transfer in free convection due to its inherently low heat transfer coefficient refs. Consequently, they actively explored diverse techniques and concepts to improve the ref heat transfer in this process. One of those techniques that researchers frequently focus on is adding nanoparticles to the conventional working fluid. The addition of nanoparticles enhances the thermophysical properties of the base fluid, particularly thermal conductivity, a pivotal parameter that improves the heat transfer mechanisms [
     <xref ref-type="bibr" rid="ref-2">
      2
     </xref>
@@ -589,7 +619,7 @@
     2
    </label>
    <title>
-     Modelling and Mathematical Formulation 
+    Modelling and mathematical formulation
    </title>
    <p>
     The square cavity
@@ -599,10 +629,10 @@
     is enclosed by two vertical walls cooled to a temperature of
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -622,17 +652,19 @@
     and two horizontal walls that are adiabatic. A heated fin with dimensionless variable length (
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          A
         </mi>
         <mi>
          r
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mfrac>
          <mrow>
           <mi>
@@ -645,7 +677,9 @@
           </mi>
          </mrow>
         </mfrac>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          0.3
         </mn>
@@ -671,10 +705,10 @@
     ) is vertically positioned at the cavity’s midpoint, kept at an elevated temperature
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -694,10 +728,10 @@
     . The enclosure contains water-based nanofluid incorporating nanoparticles of
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -732,10 +766,10 @@
     ,
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          T
         </mi>
@@ -761,10 +795,10 @@
     , or
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          C
         </mi>
@@ -778,10 +812,10 @@
     , assumed as a laminar and incompressible Boussinesq power law model, with a Prandtl number (
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          P
         </mi>
@@ -831,9 +865,11 @@
      Figure 1
     </label>
     <caption>
-     <title>Some Functions DDA of</title>
+     <title>
+      Some functions DDA of
+     </title>
     </caption>
-    <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-1.jpg" />
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_FDMP_50763-fig-1.jpg"/>
    </fig>
    <p>
     Some relationships are conducted to clarify how Rayleigh number, Prandtl number, and power-law index influence the Nusselt number for the model of power-law fluids [
@@ -846,10 +882,10 @@
     where the hydrodynamic and thermal boundary-layer thicknesses,
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          δ
         </mi>
@@ -860,10 +896,10 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -886,17 +922,19 @@
     , are related by this expression:
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mrow>
          <mrow>
           <mi>
            δ
           </mi>
          </mrow>
-         <mo> / </mo>
+         <mo>
+          /
+         </mo>
          <mrow>
           <msub>
            <mrow>
@@ -950,10 +988,10 @@
     in which
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          f
         </mi>
@@ -994,7 +1032,7 @@
     3
    </label>
    <title>
-     Numerical Methodology and Validation 
+    Numerical methodology and validation
    </title>
    <p>
     Numerical solutions for the
@@ -1010,10 +1048,10 @@
     Furthermore, another comparison of the
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -1040,10 +1078,10 @@
     ] for various n and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          R
         </mi>
@@ -1057,14 +1095,15 @@
     , at
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mtext>
          φ
         </mtext>
-        <mtext> = 0
+        <mtext>
+         = 0
         </mtext>
        </math>
       </tex-math>
@@ -1073,17 +1112,19 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          P
         </mi>
         <mi>
          r
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          100
         </mn>
@@ -1102,10 +1143,10 @@
     ], for the highest error of no more than 0.61% recorded for
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msup>
          <mrow>
           <mi>
@@ -1114,7 +1155,9 @@
           <mi>
            a
           </mi>
-          <mo> = </mo>
+          <mo>
+           =
+          </mo>
           <mn>
            10
           </mn>
@@ -1137,7 +1180,7 @@
     4
    </label>
    <title>
-     Results and Discussion 
+    Results and discussion
    </title>
    <p>
     <xref ref-type="fig" rid="fig-3">
@@ -1146,10 +1189,10 @@
     illustrates the changes of the mean Nusselt number (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -1172,10 +1215,10 @@
     ) with the volume fraction (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          φ
         </mi>
@@ -1186,10 +1229,10 @@
     ) of
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          T
         </mi>
@@ -1209,10 +1252,10 @@
     ,
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          A
         </mi>
@@ -1235,10 +1278,10 @@
     , and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          C
         </mi>
@@ -1252,10 +1295,10 @@
     nanoparticles, considering various values of Rayleigh number (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          R
         </mi>
@@ -1269,10 +1312,10 @@
     ) and power-law index (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          n
         </mi>
@@ -1283,10 +1326,10 @@
     ). The examination of this figures shows that for all nanoparticles types, the mean Nusselt number has an upward trend as the nanoparticle volume fraction increases, this trend can be caused by the fact that raising this parameter enhances the thermal fluid conductivity, thereby resulting in an improvement in the energy transported by the nanofluid. Additionally, it also improves with the rise in (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          R
         </mi>
@@ -1300,10 +1343,10 @@
     ) and a decrease in the (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          n
         </mi>
@@ -1321,10 +1364,10 @@
     that as the n value increases (decreases), the intensity
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -1356,17 +1399,19 @@
     shows that, at a constant
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          R
         </mi>
         <mi>
          a
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <msup>
          <mrow>
           <mn>
@@ -1386,14 +1431,16 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          φ
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          0.04
         </mn>
@@ -1404,10 +1451,10 @@
     , the
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -1430,10 +1477,10 @@
     reduces with a higher index of power law (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          n
         </mi>
@@ -1444,10 +1491,10 @@
     ) and smaller fin dimension (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          A
         </mi>
@@ -1461,10 +1508,10 @@
     ). The impact of the fin's dimension is more pronounced for shear-thinning nanofluids compared to Newtonian and even more so compared to shear-thickening nanofluids. The highest
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          N
         </mi>
@@ -1478,14 +1525,16 @@
     is seen for shear-thinning nanofluid
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          n
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          0.6
         </mn>
@@ -1496,17 +1545,19 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          A
         </mi>
         <mi>
          r
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          0.7
         </mn>
@@ -1521,12 +1572,14 @@
      Figure 10
     </label>
     <caption>
-     <title>The chennai DDA Bala<disp-formula>
+     <title>
+      the chennai DDA bala
+      <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math>
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <msub>
            <mrow>
             <mi>
@@ -1546,23 +1599,24 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       Number .The<italic>
-        DDA 
-      </italic>
-       in 
+      number. the
       <italic>
-        Bala 
+       DDA
       </italic>
-       at 
+      in
       <italic>
-        various 
+       bala
+      </italic>
+      at
+      <italic>
+       various
       </italic>
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math>
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            n
           </mi>
@@ -1570,13 +1624,13 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       , 
+      ,
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math>
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            A
           </mi>
@@ -1587,20 +1641,22 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       , at 
+      , at
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math>
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            R
           </mi>
           <mi>
            a
           </mi>
-          <mo> = </mo>
+          <mo>
+           =
+          </mo>
           <msup>
            <mrow>
             <mn>
@@ -1617,17 +1673,19 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       , 
+      ,
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math>
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            φ
           </mi>
-          <mo> = </mo>
+          <mo>
+           =
+          </mo>
           <mn>
            0.04
           </mn>
@@ -1635,13 +1693,13 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       for 
+      for
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
         <tex-math>
          
-         <math>
+         <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
           <mi>
            C
           </mi>
@@ -1670,9 +1728,10 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       Nanofluid </title>
+      nanofluid.
+     </title>
     </caption>
-    <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-2.jpg" />
+    <graphic mime-subtype="tif" mimetype="image" xlink:href="TSP_FDMP_50763-fig-2.jpg"/>
    </fig>
   </sec>
   <sec id="s5">
@@ -1680,16 +1739,16 @@
     5
    </label>
    <title>
-     Conclusions 
+    Conclusions
    </title>
    <p>
     In the current study, heat transfer by free convection for
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -1724,10 +1783,10 @@
     ,
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          T
         </mi>
@@ -1753,10 +1812,10 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          C
         </mi>
@@ -1788,14 +1847,16 @@
     power-law nanofluid in a square enclosure with the presence of a vertical fin was carried out. This study covered the relevant parameters within the following ranges: the index of power-law (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          n
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          0.6
         </mn>
@@ -1812,17 +1873,19 @@
     ),
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          R
         </mi>
         <mi>
          a
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <msup>
          <mrow>
           <mn>
@@ -1854,20 +1917,22 @@
       </tex-math>
      </alternatives>
     </disp-formula>
-    , the volume fractions ("ph" = 0-20% ) and the dimensions of the fin (
+    , the volume fractions ("ph"=0-20% ) and the dimensions of the fin (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          A
         </mi>
         <mi>
          r
         </mi>
-        <mo> = </mo>
+        <mo>
+         =
+        </mo>
         <mn>
          0.3,0
         </mn>
@@ -1893,10 +1958,10 @@
     In summary, the improvement of heat transport in the square enclosure is represented by the increment of the
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <msub>
          <mrow>
           <mi>
@@ -1919,10 +1984,10 @@
     . It enhances with the decrease for index of power law, which speeds up the flow because of the reduction of the viscosity of the fluid, the increase of
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
       <tex-math>
        
-       <math>
+       <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
         <mi>
          R
         </mi>
@@ -1948,10 +2013,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             A
            </mi>
@@ -1971,10 +2036,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             b
            </mi>
@@ -1991,10 +2056,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <msub>
             <mrow>
              <mi>
@@ -2011,12 +2076,13 @@
          </tex-math>
         </alternatives>
        </disp-formula>
-       Specific heat at constant pressure, * <disp-formula>
+       Specific heat at constant pressure, *
+       <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math />
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML"/>
          </tex-math>
         </alternatives>
        </disp-formula>
@@ -2029,10 +2095,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             g
            </mi>
@@ -2049,10 +2115,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             k
            </mi>
@@ -2069,10 +2135,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             L
            </mi>
@@ -2096,10 +2162,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             n
            </mi>
@@ -2123,10 +2189,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <msub>
             <mrow>
              <mi>
@@ -2297,10 +2363,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             δ
            </mi>
@@ -2354,10 +2420,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             c
            </mi>
@@ -2374,10 +2440,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             h
            </mi>
@@ -2394,10 +2460,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             e
            </mi>
@@ -2420,10 +2486,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             f
            </mi>
@@ -2440,10 +2506,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             p
            </mi>
@@ -2460,10 +2526,10 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" xlink:href="EJ-GEO_421-eqn-1.tif"/>
          <tex-math>
           
-          <math>
+          <math xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:mml="http://www.w3.org/1998/Math/MathML">
            <mi>
             n
            </mi>
@@ -2497,12 +2563,12 @@
    <fn fn-type="other">
     <p>
      <bold>
-      Author Contributions
+      Conflicts of Interest
      </bold>
-     The authors confirm contribution to the paper as follows study conception and design A. M'hadbi, H. Ben Hamed; numerical validation A. M'hadbi, K. Chtaibi; data collection A. M'hadbi; analysis and interpretation of results A. M'hadbi, M. El Ganaoui, A. Guizani; draft manuscript preparation A. M'hadbi. All authors reviewed the results and approved the final version of the manuscript.
+     The authors declare that they have no conflicts of interest to report regarding the present study.
     </p>
    </fn>
-  <fn fn-type="other">
+   <fn fn-type="other">
     <p>
      <bold>
       Availability of Data and Materials
@@ -2513,12 +2579,12 @@
    <fn fn-type="other">
     <p>
      <bold>
-      Conflicts of Interest
+      Author Contributions
      </bold>
-     The authors declare that they have no conflicts of interest to report regarding the present study.
+     The authors confirm contribution to the paper as follows study conception and design A. M'hadbi, H. Ben Hamed; numerical validation A. M'hadbi, K. Chtaibi; data collection A. M'hadbi; analysis and interpretation of results A. M'hadbi, M. El Ganaoui, A. Guizani; draft manuscript preparation A. M'hadbi. All authors reviewed the results and approved the final version of the manuscript.
     </p>
    </fn>
-   </fn-group>
+  </fn-group>
   <ref-list content-type="authoryear">
    <title>
     References
@@ -2573,13 +2639,13 @@
       2014 ,Feb. 5
      </year>
      <pub-id>
-      10.1016 / j.applthermaleng.2013.10.065
+      10.1016/j.applthermaleng.2013.10.065
      </pub-id>
      <web-url>
-      https: /  / doi.org / 10.1016 / j.applthermaleng.2013.10.065
+      https://doi.org/10.1016/j.applthermaleng.2013.10.065
      </web-url>
      <comment>
-      Elsevier Ltd..
+      Elsevier Ltd
      </comment>
     </mixed-citation>
    </ref>

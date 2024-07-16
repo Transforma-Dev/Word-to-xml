@@ -325,23 +325,55 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
 #Define function to find fig and table in paragraph nd add xref tag
 def add_tag(xml_text):
     #Find fig and add tag
-    pattern = r"Fig\.\s\d\d*"
+    pattern = r"Figs?\.\s\d+\w*(?:,\d\w+)*(?:(?: and |-)\d+\w*)?"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:
         match = set(match)
         match = list(match)
         for i in match:
-            xml_tex = i.split()
-            xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_tex[1]}'>Fig. {xml_tex[1]}</xref>")
+            if "-" in i:
+                xml_tex = i.split()
+                xml_1 = xml_tex[1].split("-")
+                xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='fig' rid='fig-{xml_1[1]}'>{xml_1[1]}</xref>")
+            elif " and " in i:
+                xml_tex = i.split()
+                xml_1 = xml_tex[1].split(",")
+                for id,j in enumerate(xml_1):
+                    if id == 0:
+                        rep = f"<xref ref-type='fig' rid='fig-{j}'>{xml_tex[0]} {j}</xref>,"
+                    else:
+                        rep += f"<xref ref-type='fig' rid='fig-{j}'>{j}</xref>,"
+                if rep.endswith(","):
+                    rep = rep[:-1]
+                xml_text = xml_text.replace(i,f"{rep} {xml_tex[2]} <xref ref-type='fig' rid='fig-{xml_tex[3]}'>{xml_tex[3]}</xref>")
+            else:
+                xml_tex = i.split()
+                xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_tex[1]}'>{xml_tex[0]} {xml_tex[1]}</xref>")
     #Find fig and add tag
-    pattern = r"Table\.*\s\d\d*"
+    pattern = r"Tables*\.*\s\d+(?:,\d+|-\d+)*(?: and \d+)*"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:
         match = set(match)
         match = list(match)
         for i in match:
-            xml_tex = i.split()
-            xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
+            if "-" in i:
+                xml_tex = i.split()
+                xml_1 = xml_tex[1].split("-")
+                xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='table' rid='table-{xml_1[1]}'>{xml_1[1]}</xref>")
+            elif "and" in i:
+                xml_tex = i.split()
+                xml_1 = xml_tex[1].split(",")
+                for id,j in enumerate(xml_1):
+                    if id == 0:
+                        rep = f"<xref ref-type='table' rid='table-{j}'>{xml_tex[0]} {j}</xref>,"
+                    else:
+                        rep += f"<xref ref-type='table' rid='table-{j}'>{j}</xref>,"
+                if rep.endswith(","):
+                    rep = rep[:-1]
+                xml_text = xml_text.replace(i,f"{rep} {xml_tex[2]} <xref ref-type='table' rid='table-{xml_tex[3]}'>{xml_tex[3]}</xref>")
+            else:
+                xml_tex = i.split()
+                xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
     #Find Eqs and add tag
     pattern = r"Eqs\. \(\d+\s*?[-–]?\s*\d+\)"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
@@ -395,7 +427,7 @@ def add_tag(xml_text):
                     no1 = 1
             xml_text = xml_text.replace(i,f"<xref ref-type='formula' rid='for-{no1}'>{match[0]}</xref>")
 
-    #Find  and add tag
+    #Find and add tag
     pattern = r"Appendix"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:
