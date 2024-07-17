@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 @app.post("/upload")
-def upload(file: UploadFile = File(...), origin: str | None = Header(default=None)):
+def upload(file: UploadFile = File(...)):
     try:
         contents = file.file.read()
         file_location = os.path.join("input", file.filename)

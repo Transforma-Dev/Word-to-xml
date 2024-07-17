@@ -158,11 +158,11 @@ def convert(input_file_name = None):
         file.write(pretty_xml)
 
     #Create object for class TSP_styles
-    # xml_modifier = TSP_styles.TSP_styles()
-    # xml_modifier.modify_xml(output_xml, output_xml)
+    xml_modifier = TSP_styles.TSP_styles()
+    xml_modifier.modify_xml(output_xml, output_xml)
 
-    # xml_modifier = common_styles.Common_styles()
-    # xml_modifier.modify_xml(output_xml, output_xml)
+    xml_modifier = common_styles.Common_styles()
+    xml_modifier.modify_xml(output_xml, output_xml)
 
     return output_xml_name
 
