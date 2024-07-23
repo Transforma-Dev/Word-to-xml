@@ -5,7 +5,7 @@ from wordtoxml import convert
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-# app.mount("/html", StaticFiles(directory="output", html = True), name="HTML OUTPUT")
+app.mount("/image", StaticFiles(directory="image", html = True), name="images")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
