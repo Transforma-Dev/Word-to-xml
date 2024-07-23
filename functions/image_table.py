@@ -6,8 +6,10 @@ def image_caption(xml_text,variables):
     # print(xml_text)
     # xml_text=xml_text.replace(":","")
     copy_text=xml_text
+    src = ""
     xml_text = re.sub(r'<bold>|</bold>', '', xml_text, flags=re.IGNORECASE)
     path_image=re.findall(r'<graphic[^>]*>', variables["images_path"])
+    src=re.findall(r'<img[^>]*>', variables["images_path"])
     count_graphic=variables["images_path"].count("graphic")
     text=""
     figure=xml_text
@@ -57,7 +59,7 @@ def image_caption(xml_text,variables):
             
             add_text = figure.replace(part1,"")
             part1 = part1.replace(":","") 
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>{path_image[i]}</fig>'    
+            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>{path_image[i]}{src[0]}</fig>'    
         
         else:
             if match:
@@ -69,9 +71,9 @@ def image_caption(xml_text,variables):
                     part2 = match.group(8)
                 part2 = part2.replace(":","") 
                     
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}</fig>'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}{src[0]}</fig>'
             else:
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}{src[0]}</fig>{figure}'
             
         #figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
         #figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)

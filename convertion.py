@@ -63,16 +63,16 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Find the square bracket text present in paragraph
     if "<w:sdt>" in xml:
-        box_text = eq_link.sq_text(root)
+        box_text = eq_link.sq_text(root,file_name,variables)
 
     #Check where the boxed text are present in paragraph
     if "<wps:txbx>" in xml:
-        box_text = eq_link.txbox(root)
+        box_text = eq_link.txbox(root,file_name,variables)
         
 
     #Check where the equation are present in paragraph
     if "<m:oMath" in xml:
-        values,xml_text,math_count = eq_link.eq(root,xml_text,para,math_count)
+        values,xml_text,math_count = eq_link.eq(root,xml_text,para,math_count,file_name,variables)
 
     #Check the paragraph to find the hyperlink
     if para.hyperlinks:
@@ -90,7 +90,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         # print(run.text,len(run.text))
         #Check if the paragraph contains math equations
         if '<m:oMath' in xml:
-            values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count)
+            values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count,file_name,variables)
 
         #Convert the run text in xml
         xmlstr = str(run._element.xml)
@@ -240,7 +240,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     
     #Find reference paragraph in word document and change the tag into ref
     elif variables["ref"] and para.text!="":
-        xml_text = reference.reference_text(xml_text,variables)
+        xml_text = reference.reference_temp(xml_text,variables)
 
     #Find the Nomenclature text in word document
     elif para.text.strip().lower().startswith("nomenclature"):

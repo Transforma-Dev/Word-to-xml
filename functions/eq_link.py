@@ -9,7 +9,7 @@ import base64
 import re
 
 #Define function to find the boxed text in the document
-def txbox(root):
+def txbox(root,file_name,variables):
     box_text=''
     # ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
     # for elem in root.iter():
@@ -65,12 +65,15 @@ def txbox(root):
                             transformed_tree = transformer(xml_doc)
                             transformed_tree = str(transformed_tree).replace("mml:", "")
                             mathml = f'{str(transformed_tree)}'
-                            box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
+                            #Filename with equation
+                            filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'  # You can use any filename format you prefer
+                            variables["eq_count"]+=1
+                            box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
     
     return box_text
 
 #Define function to find the boxed text in the document
-def sq_text(root):
+def sq_text(root,file_name,variables):
     box_text = ''
     ns = {
         "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
@@ -109,12 +112,15 @@ def sq_text(root):
                             transformed_tree = transformer(xml_doc)
                             transformed_tree = str(transformed_tree).replace("mml:", "")
                             mathml = f'{str(transformed_tree)}'
-                            box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
+                            #Filename with equation
+                            filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'  # You can use any filename format you prefer
+                            variables["eq_count"]+=1
+                            box_text+=f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
                             
     return box_text
 
 #Define function to find the equation in the document
-def eq(root,xml_text,para,math_count):
+def eq(root,xml_text,para,math_count,file_name,variables):
     ns = {
         "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
         "m": "http://schemas.openxmlformats.org/officeDocument/2006/math"
@@ -136,12 +142,12 @@ def eq(root,xml_text,para,math_count):
     #If the paragraph contain only one equation.
     if len(values)==1:
         #Call function to print equation
-        xml_text,math_count = print_equation(xml_text,para,math_count)
+        xml_text,math_count = print_equation(xml_text,para,math_count,file_name,variables)
 
     return values,xml_text,math_count
 
 #Define the function to find the para.run equation in document
-def run_eq(root,xml_text,para,run,values,math_count):
+def run_eq(root,xml_text,para,run,values,math_count,file_name,variables):
     stri = run.text
     try:
         
@@ -161,13 +167,13 @@ def run_eq(root,xml_text,para,run,values,math_count):
                 #Check the length of run object equal to zero
                 if len(run.text) != 0:
                     #Call function to print equation
-                    xml_text,math_count = print_equation(xml_text,para,math_count)
+                    xml_text,math_count = print_equation(xml_text,para,math_count,file_name,variables)
                     stri = run.text
 
                     if values[1]!=stri:
                         values=values[1:]
                         #Call function to print equation
-                        xml_text,math_count = print_equation(xml_text,para,math_count)
+                        xml_text,math_count = print_equation(xml_text,para,math_count,file_name,variables)
                     try:    
                         if values[1]==stri:
                             values=values[1:]
@@ -185,7 +191,8 @@ def run_eq(root,xml_text,para,run,values,math_count):
     return values,xml_text,math_count
 
 #Define function to print the equation in correct position
-def print_equation(xml_text,para,math_count):
+def print_equation(xml_text,para,math_count,file_name,variables):
+    # print("plo")
     ns = {'m': 'http://schemas.openxmlformats.org/officeDocument/2006/math', "mml": "http://www.w3.org/1998/Math/MathML"}
     math_xml = para._element.findall('.//m:oMath', namespaces = ns)     #Count mathml tag in paragraph
     if len(math_xml) > math_count:
@@ -206,8 +213,11 @@ def print_equation(xml_text,para,math_count):
         # transform = etree.XSLT(xslt)
         # transformed_tree = transform(dom)
         mathml =f'{str(transformed_tree)}'
+        #Filename with equation
+        filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'  # You can use any filename format you prefer
+        variables["eq_count"]+=1
         #Print the equation
-        xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="EJ-GEO_421-eqn-1.tif"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
+        xml_text+=f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
         
     return xml_text,math_count
 
@@ -304,7 +314,7 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
 
             #Encode the image
             encoded_image = base64.b64encode(image_path).decode('utf-8')
-
+            
             # Save the image to a file
             folder = f'{doc_filename}-fig-{variables["image_count"]}.jpg'  # You can use any folder format you prefer
             filenames = f'{file_name}-fig-{variables["image_count"]}.jpg'  # You can use any filename format you prefer
@@ -314,10 +324,10 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
 
             if variables["table_title"]==True:
                 #Construct HTML for the image
-                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
+                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{filenames}"/>'
             else:
                 #Construct HTML for the image
-                variables["images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/>'
+                variables["images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{filenames}"/>'
                 variables["image_find"]=True
 
     return xml_text

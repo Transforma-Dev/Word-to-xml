@@ -101,7 +101,8 @@ def convert(input_file_name = None):
     "noman_text": False,"noman_store": '',
     "ref_text_link":[],"ref_link_save":[],
     "recive":'',
-    "author_mail":True
+    "author_mail":True,
+    "eq_count":1
     }
 
     #Read the Word document and not present word document then thrown error
@@ -167,4 +168,4 @@ def convert(input_file_name = None):
     return output_xml_name
 
 
-# convert()
+convert()

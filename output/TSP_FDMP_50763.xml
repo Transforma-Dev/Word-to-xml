@@ -248,7 +248,7 @@
      The behavior of non-Newtonian power-law nanofluids under free convection heat transfer conditions in a cooled square enclosure equipped with a heated fin is investigated numerically. In particular, the impact of nanofluids, composed of water and
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-1.tif" />
        <tex-math>
         
         <math>
@@ -274,7 +274,7 @@
      ,
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-2.tif" />
        <tex-math>
         
         <math>
@@ -297,7 +297,7 @@
      , and
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-3.tif" />
        <tex-math>
         
         <math>
@@ -314,7 +314,7 @@
      nanoparticles, on heat transfer enhancement is examined. The aim of this research is also to analyze the influence of different parameters, including the Rayleigh number (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-4.tif" />
        <tex-math>
         
         <math>
@@ -359,7 +359,7 @@
      ), nanoparticle volume fraction (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-5.tif" />
        <tex-math>
         
         <math>
@@ -386,7 +386,7 @@
      ), non-Newtonian power-law indexes (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-6.tif" />
        <tex-math>
         
         <math>
@@ -410,7 +410,7 @@
      ), and fin dimensions (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-7.tif" />
        <tex-math>
         
         <math>
@@ -431,7 +431,7 @@
      ,0.5, and 0.7). Streamlines and isotherms are used to depict flow and related heat transfer characteristics. Results indicate that thermal performance improves with increasing Rayleigh number, regardless of the nanoparticle type or nanofluid rheological behavior. This suggests that the buoyancy force has a significant impact on heat transfer, particularly near the heat source. The Nusselt number is more sensitive to variations in Cu nanoparticle volume fractions compared to
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-8.tif" />
        <tex-math>
         
         <math>
@@ -457,7 +457,7 @@
      and
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-9.tif" />
        <tex-math>
         
         <math>
@@ -480,7 +480,7 @@
      . Moreover, the average Nusselt numbers for power-law nanofluids with
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-10.tif" />
        <tex-math>
         
         <math>
@@ -498,7 +498,7 @@
      (
      <inline-formula>
       <alternatives>
-       <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-11.tif" />
        <tex-math>
         
         <math>
@@ -617,7 +617,7 @@
     is enclosed by two vertical walls cooled to a temperature of
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-28.tif" />
       <tex-math>
        
        <math>
@@ -640,7 +640,7 @@
     and two horizontal walls that are adiabatic. A heated fin with dimensionless variable length (
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-29.tif" />
       <tex-math>
        
        <math>
@@ -689,7 +689,7 @@
     ) is vertically positioned at the cavity’s midpoint, kept at an elevated temperature
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-30.tif" />
       <tex-math>
        
        <math>
@@ -712,7 +712,7 @@
     . The enclosure contains water-based nanofluid incorporating nanoparticles of
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-31.tif" />
       <tex-math>
        
        <math>
@@ -750,7 +750,7 @@
     ,
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-32.tif" />
       <tex-math>
        
        <math>
@@ -779,7 +779,7 @@
     , or
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-33.tif" />
       <tex-math>
        
        <math>
@@ -796,7 +796,7 @@
     , assumed as a laminar and incompressible Boussinesq power law model, with a Prandtl number (
     <inline-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-34.tif" />
       <tex-math>
        
        <math>
@@ -852,6 +852,7 @@
      <title>Some Functions DDA of</title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-1.jpg" />
+    <img src="TSP_FDMP_50763-fig-1.jpg" />
    </fig>
    <p>
     Some relationships are conducted to clarify how Rayleigh number, Prandtl number, and power-law index influence the Nusselt number for the model of power-law fluids [
@@ -864,7 +865,7 @@
     where the hydrodynamic and thermal boundary-layer thicknesses,
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-42.tif" />
       <tex-math>
        
        <math>
@@ -878,7 +879,7 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-43.tif" />
       <tex-math>
        
        <math>
@@ -904,7 +905,7 @@
     , are related by this expression:
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-44.tif" />
       <tex-math>
        
        <math>
@@ -968,7 +969,7 @@
     in which
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-45.tif" />
       <tex-math>
        
        <math>
@@ -1028,7 +1029,7 @@
     Furthermore, another comparison of the
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-52.tif" />
       <tex-math>
        
        <math>
@@ -1058,7 +1059,7 @@
     ] for various n and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-53.tif" />
       <tex-math>
        
        <math>
@@ -1075,7 +1076,7 @@
     , at
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-54.tif" />
       <tex-math>
        
        <math>
@@ -1091,7 +1092,7 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-55.tif" />
       <tex-math>
        
        <math>
@@ -1120,7 +1121,7 @@
     ], for the highest error of no more than 0.61% recorded for
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-56.tif" />
       <tex-math>
        
        <math>
@@ -1164,7 +1165,7 @@
     illustrates the changes of the mean Nusselt number (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-57.tif" />
       <tex-math>
        
        <math>
@@ -1190,7 +1191,7 @@
     ) with the volume fraction (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-58.tif" />
       <tex-math>
        
        <math>
@@ -1204,7 +1205,7 @@
     ) of
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-59.tif" />
       <tex-math>
        
        <math>
@@ -1227,7 +1228,7 @@
     ,
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-60.tif" />
       <tex-math>
        
        <math>
@@ -1253,7 +1254,7 @@
     , and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-61.tif" />
       <tex-math>
        
        <math>
@@ -1270,7 +1271,7 @@
     nanoparticles, considering various values of Rayleigh number (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-62.tif" />
       <tex-math>
        
        <math>
@@ -1287,7 +1288,7 @@
     ) and power-law index (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-63.tif" />
       <tex-math>
        
        <math>
@@ -1301,7 +1302,7 @@
     ). The examination of this figures shows that for all nanoparticles types, the mean Nusselt number has an upward trend as the nanoparticle volume fraction increases, this trend can be caused by the fact that raising this parameter enhances the thermal fluid conductivity, thereby resulting in an improvement in the energy transported by the nanofluid. Additionally, it also improves with the rise in (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-64.tif" />
       <tex-math>
        
        <math>
@@ -1318,7 +1319,7 @@
     ) and a decrease in the (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-65.tif" />
       <tex-math>
        
        <math>
@@ -1339,7 +1340,7 @@
     that as the n value increases (decreases), the intensity
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-66.tif" />
       <tex-math>
        
        <math>
@@ -1374,7 +1375,7 @@
     shows that, at a constant
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-67.tif" />
       <tex-math>
        
        <math>
@@ -1404,7 +1405,7 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-68.tif" />
       <tex-math>
        
        <math>
@@ -1422,7 +1423,7 @@
     , the
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-69.tif" />
       <tex-math>
        
        <math>
@@ -1448,7 +1449,7 @@
     reduces with a higher index of power law (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-70.tif" />
       <tex-math>
        
        <math>
@@ -1462,7 +1463,7 @@
     ) and smaller fin dimension (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-71.tif" />
       <tex-math>
        
        <math>
@@ -1479,7 +1480,7 @@
     ). The impact of the fin's dimension is more pronounced for shear-thinning nanofluids compared to Newtonian and even more so compared to shear-thickening nanofluids. The highest
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-72.tif" />
       <tex-math>
        
        <math>
@@ -1496,7 +1497,7 @@
     is seen for shear-thinning nanofluid
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-73.tif" />
       <tex-math>
        
        <math>
@@ -1514,7 +1515,7 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-74.tif" />
       <tex-math>
        
        <math>
@@ -1541,7 +1542,7 @@
     <caption>
      <title>The chennai DDA Bala<disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-75.tif" />
         <tex-math>
          
          <math>
@@ -1577,7 +1578,7 @@
       </italic>
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-76.tif" />
         <tex-math>
          
          <math>
@@ -1591,7 +1592,7 @@
        , 
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-77.tif" />
         <tex-math>
          
          <math>
@@ -1608,7 +1609,7 @@
        , at 
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-78.tif" />
         <tex-math>
          
          <math>
@@ -1638,7 +1639,7 @@
        , 
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-79.tif" />
         <tex-math>
          
          <math>
@@ -1656,7 +1657,7 @@
        for 
       <disp-formula>
        <alternatives>
-        <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-80.tif" />
         <tex-math>
          
          <math>
@@ -1691,6 +1692,7 @@
        Nanofluid </title>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-2.jpg" />
+    <img src="TSP_FDMP_50763-fig-2.jpg" />
    </fig>
   </sec>
   <sec id="s5">
@@ -1704,7 +1706,7 @@
     In the current study, heat transfer by free convection for
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-81.tif" />
       <tex-math>
        
        <math>
@@ -1742,7 +1744,7 @@
     ,
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-82.tif" />
       <tex-math>
        
        <math>
@@ -1771,7 +1773,7 @@
     and
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-83.tif" />
       <tex-math>
        
        <math>
@@ -1806,7 +1808,7 @@
     power-law nanofluid in a square enclosure with the presence of a vertical fin was carried out. This study covered the relevant parameters within the following ranges: the index of power-law (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-84.tif" />
       <tex-math>
        
        <math>
@@ -1830,7 +1832,7 @@
     ),
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-85.tif" />
       <tex-math>
        
        <math>
@@ -1875,7 +1877,7 @@
     , the volume fractions ("ph" = 0-20% ) and the dimensions of the fin (
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-86.tif" />
       <tex-math>
        
        <math>
@@ -1911,7 +1913,7 @@
     In summary, the improvement of heat transport in the square enclosure is represented by the increment of the
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-87.tif" />
       <tex-math>
        
        <math>
@@ -1937,7 +1939,7 @@
     . It enhances with the decrease for index of power law, which speeds up the flow because of the reduction of the viscosity of the fluid, the increase of
     <disp-formula>
      <alternatives>
-      <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-88.tif" />
       <tex-math>
        
        <math>
@@ -1966,7 +1968,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-12.tif" />
          <tex-math>
           
           <math>
@@ -1989,7 +1991,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-13.tif" />
          <tex-math>
           
           <math>
@@ -2009,7 +2011,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-14.tif" />
          <tex-math>
           
           <math>
@@ -2031,7 +2033,7 @@
        </disp-formula>
        Specific heat at constant pressure, * <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-15.tif" />
          <tex-math>
           
           <math />
@@ -2047,7 +2049,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-16.tif" />
          <tex-math>
           
           <math>
@@ -2067,7 +2069,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-17.tif" />
          <tex-math>
           
           <math>
@@ -2087,7 +2089,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-18.tif" />
          <tex-math>
           
           <math>
@@ -2114,7 +2116,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-19.tif" />
          <tex-math>
           
           <math>
@@ -2141,7 +2143,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-20.tif" />
          <tex-math>
           
           <math>
@@ -2315,7 +2317,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-21.tif" />
          <tex-math>
           
           <math>
@@ -2372,7 +2374,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-22.tif" />
          <tex-math>
           
           <math>
@@ -2392,7 +2394,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-23.tif" />
          <tex-math>
           
           <math>
@@ -2412,7 +2414,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-24.tif" />
          <tex-math>
           
           <math>
@@ -2438,7 +2440,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-25.tif" />
          <tex-math>
           
           <math>
@@ -2458,7 +2460,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-26.tif" />
          <tex-math>
           
           <math>
@@ -2478,7 +2480,7 @@
       <p>
        <disp-formula>
         <alternatives>
-         <graphic mime-subtype="tif" mimetype="image" ns0:href="EJ-GEO_421-eqn-1.tif" />
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-27.tif" />
          <tex-math>
           
           <math>
@@ -2541,6 +2543,9 @@
    <title>
     References
    </title>
+   <ref id="ref-1">
+    {'id': '1', 'doi_metadata': ' @article{Ba_ri_2014, title = {A review on natural convection in enclosures for engineering applications. The particular case of the parallelogrammic diode cavity}, volume = {63}, ISSN = {1359-4311}, url = {http: /  / dx.doi.org / 10.1016 / j.applthermaleng.2013.10.065}, DOI = {10.1016 / j.applthermaleng.2013.10.065}, number = {1}, journal = {Applied Thermal Engineering}, publisher = {Elsevier BV}, author = {Baïri, A. and Zarco-Pernia, E. and García de María, J.-M.}, year = {2014}, month = feb, pages = {304–322} }\n'}
+   </ref>
   </ref-list>
  </back>
 </article>

@@ -47,7 +47,7 @@ def reference_text(xml_text,variables):
         ]
     }
 
-    api_endpoint = 'http://10.10.10.41:7878/'  #API url endpoint
+    api_endpoint = 'http://10.10.10.41:3333/'  #API url endpoint
     
     try:
         #Sending a POST request to the API endpoint with JSON data
@@ -65,9 +65,9 @@ def reference_text(xml_text,variables):
     # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
     # print(references_json)
     if references_json and not xml_text.isspace():
-        try:
+        
             data = references_json[0]
-
+            print(data)
             ref_word = ''
 
             ref_word += f'<label>{data["id"]}</label><mixed-citation publication-type="journal">'
@@ -136,9 +136,66 @@ def reference_text(xml_text,variables):
                             ref_word += f'<year>{date[0]}</year>'
 
             ref_word += f'</mixed-citation>'
-        except:
-            print("reference")
+       
         # print(ref_word)
+
+            #Split the reference text and find author name and year
+            xml_text_split = xml_text.split(".")
+            count = 1
+            #Find the author name and year in reference part
+            for i in xml_text_split:
+                matches = re.findall(r"\b\d{4}\b", i)
+                if count==1:
+                    auth_name = i.split(",")[0]
+                    count+=1
+                elif "&" in i:
+                    i = i[1:]
+                    auth_name += i.split(",")[0]
+                elif matches:
+                    if matches[0] in i:
+                        auth_name += ","+i
+                        break
+            
+            variables["ref_text_link"].append(auth_name)
+            # print(variables["ref_text_link"])
+
+            text=f'<ref id="ref-{variables["ref_id"]}">{ref_word}</ref>'
+            
+            variables["ref_id"]+=1
+        # print(text)
+    return text
+
+def reference_temp(xml_text,variables):
+    
+    text =''
+    
+    #Example usage:
+    references_data = {
+        "references": [
+            {
+                "id": f'{variables["ref_id"]}',
+                "reference": f"{xml_text}"
+            }
+        ]
+    }
+
+    api_endpoint = 'http://10.10.10.41:3333/'  #API url endpoint
+    references_json = ''
+    try:
+        #Sending a POST request to the API endpoint with JSON data
+        response = requests.post(api_endpoint, json=references_data)
+        
+        #Checking if the request was successful (status code 200)
+        if response.status_code == 200:
+            references_json = response.json()  #Assuming the response is JSON
+        else:
+            print({'error': f'API Error: {response.status_code}'})
+    
+    except requests.exceptions.RequestException as e:
+        print({'error': f'Request Exception: {str(e)}'})
+    # print(refereance_json[0])
+    if references_json:
+        data = data = references_json[0]
 
         #Split the reference text and find author name and year
         xml_text_split = xml_text.split(".")
@@ -156,12 +213,12 @@ def reference_text(xml_text,variables):
                 if matches[0] in i:
                     auth_name += ","+i
                     break
-        
+                
         variables["ref_text_link"].append(auth_name)
         # print(variables["ref_text_link"])
 
-        text=f'<ref id="ref-{variables["ref_id"]}">{ref_word}</ref>'
+        text=f'<ref id="ref-{variables["ref_id"]}">{data}</ref>'
         
         variables["ref_id"]+=1
-        # print(text)
+    # print(text)
     return text
