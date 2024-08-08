@@ -29,7 +29,7 @@ def image_caption(xml_text,variables):
             
             add_text = figure.replace(part1,"")
             part1 = part1.replace(":","") 
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>No Image</fig>'    
+            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{add_text}</title1></caption>No Image</fig>'    
         else:
             if match:
                 part1 = match.group(1)
@@ -40,9 +40,9 @@ def image_caption(xml_text,variables):
                     part2 = match.group(8)
                 part2 = part2.replace(":","") 
                 
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>No Image</fig>'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{part2}</title1></caption>No Image</fig>'
             else:
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>No Image</fig>{figure}'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title1></title1></caption>No Image</fig>{figure}'
     for i in range(count_graphic):
         # if "<" in figure:
         #     figure=figure.replace("<","&#60;")
@@ -59,7 +59,7 @@ def image_caption(xml_text,variables):
             
             add_text = figure.replace(part1,"")
             part1 = part1.replace(":","") 
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{add_text}</title></caption>{path_image[i]}{src[0]}</fig>'    
+            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{add_text}</title1></caption>{path_image[i]}{src[0]}</fig>'    
         
         else:
             if match:
@@ -71,16 +71,16 @@ def image_caption(xml_text,variables):
                     part2 = match.group(8)
                 part2 = part2.replace(":","") 
                     
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title>{part2}</title></caption>{path_image[i]}{src[0]}</fig>'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{part2}</title1></caption>{path_image[i]}{src[0]}</fig>'
             else:
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}{src[0]}</fig>{figure}'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig>{figure}'
             
         #figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
         #figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)
         # if ("fig" in copy_text.lower() or copy_text.lower().startswith("(")):
-        #     text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title>{figure}</title></caption>{path_image[i]}</fig>'
+        #     text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title1>{figure}</title1></caption>{path_image[i]}</fig>'
         # else:
-        #     text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title></title></caption>{path_image[i]}</fig>{figure}'
+        #     text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}</fig>{figure}'
         variables["fig_caption"]+=1
     variables["fig"]=False
     variables["images_path"]=""
@@ -99,7 +99,7 @@ def table_heading(xml_text,variables):
     xml_text = xml_text.split(match[0],1)
     xml_text = re.sub("(^\.|\:)+","",xml_text[1])
 
-    text=f'<table-wrap id="table-{variables["table_no"]}"><label>{match[0]}</label><caption><title>{xml_text}</title></caption>'
+    text=f'<table-wrap id="table-{variables["table_no"]}"><label>{match[0]}</label><caption><title1>{xml_text}</title1></caption>'
     
     variables["table_title"]=True
     #print(text)

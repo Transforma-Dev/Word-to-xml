@@ -4,11 +4,11 @@ import re
 #Define function to find abrevation paragraph
 def abbrevation(xml_text,variables):
     if variables["sec_3"]>1:
-        text=f'</sec></sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>{xml_text}</bold></title>'
+        text=f'</sec></sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title1><bold>{xml_text}</bold></title1>'
     elif variables["sec_2"]>1:
-        text=f'</sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>{xml_text}</bold></title>'
+        text=f'</sec></sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title1><bold>{xml_text}</bold></title1>'
     else:
-        text=f'</sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title><bold>{xml_text}</bold></title>'
+        text=f'</sec></body><back><glossary content-type="abbreviations" id="glossary-1"><title1><bold>{xml_text}</bold></title1>'
     variables["sec_1"]=1
     variables["back_start"]+="back"
     
@@ -65,7 +65,7 @@ def noman(xml_text,variables):
         variables["noman_store"] += f'{xml_text}'
         variables["noman_text"]=True
         return text
-    variables["noman_store"]+=f'<glossary content-type="abbreviations" id="glossary-1"><title>{xml_text}</title><def-list>'
+    variables["noman_store"]+=f'<glossary content-type="abbreviations" id="glossary-1"><title1>{xml_text}</title1><def-list>'
 
     variables["noman_text"]=True
     return text

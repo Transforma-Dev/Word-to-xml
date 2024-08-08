@@ -537,9 +537,9 @@
    <label>
     1
    </label>
-   <title>
-     Introduction 
-   </title>
+   <title1>
+    Introduction
+   </title1>
    <p>
     Free
     <xref ref-type="fig" rid="fig-7a">
@@ -606,9 +606,9 @@
    <label>
     2
    </label>
-   <title>
-     Modelling and Mathematical Formulation 
-   </title>
+   <title1>
+    Modelling and mathematical formulation
+   </title1>
    <p>
     The square cavity
     <xref ref-type="fig" rid="fig-1">
@@ -849,7 +849,9 @@
      Figure 1
     </label>
     <caption>
-     <title>Some Functions DDA of</title>
+     <title1>
+      Some functions DDA of
+     </title1>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-1.jpg" />
     <img src="TSP_FDMP_50763-fig-1.jpg" />
@@ -1012,9 +1014,9 @@
    <label>
     3
    </label>
-   <title>
-     Numerical Methodology and Validation 
-   </title>
+   <title1>
+    Numerical methodology and validation
+   </title1>
    <p>
     Numerical solutions for the
     <xref ref-type="disp-formula" rid="eqn-1">
@@ -1155,9 +1157,9 @@
    <label>
     4
    </label>
-   <title>
-     Results and Discussion 
-   </title>
+   <title1>
+    Results and discussion
+   </title1>
    <p>
     <xref ref-type="fig" rid="fig-3">
      Fig. 3
@@ -1540,7 +1542,9 @@
      Figure 10
     </label>
     <caption>
-     <title>The chennai DDA Bala<disp-formula>
+     <title1>
+      the chennai DDA bala
+      <disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-75.tif" />
         <tex-math>
@@ -1565,16 +1569,17 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       Number .The<italic>
-        DDA 
-      </italic>
-       in 
+      number. the
       <italic>
-        Bala 
+       DDA
       </italic>
-       at 
+      in
       <italic>
-        various 
+       bala
+      </italic>
+      at
+      <italic>
+       various
       </italic>
       <disp-formula>
        <alternatives>
@@ -1589,7 +1594,7 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       , 
+      ,
       <disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-77.tif" />
@@ -1606,7 +1611,7 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       , at 
+      , at
       <disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-78.tif" />
@@ -1636,7 +1641,7 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       , 
+      ,
       <disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-79.tif" />
@@ -1654,7 +1659,7 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       for 
+      for
       <disp-formula>
        <alternatives>
         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-eqn-80.tif" />
@@ -1689,7 +1694,8 @@
         </tex-math>
        </alternatives>
       </disp-formula>
-       Nanofluid </title>
+      nanofluid.
+     </title1>
     </caption>
     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_FDMP_50763-fig-2.jpg" />
     <img src="TSP_FDMP_50763-fig-2.jpg" />
@@ -1699,9 +1705,9 @@
    <label>
     5
    </label>
-   <title>
-     Conclusions 
-   </title>
+   <title1>
+    Conclusions
+   </title1>
    <p>
     In the current study, heat transfer by free convection for
     <disp-formula>
@@ -1959,9 +1965,9 @@
  </body>
  <back>
   <glossary content-type="abbreviations" id="glossary-1">
-   <title>
+   <title1>
     Nomenclature
-   </title>
+   </title1>
    <def-list>
     <def-item>
      <def>
