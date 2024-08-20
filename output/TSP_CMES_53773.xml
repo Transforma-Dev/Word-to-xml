@@ -332,19 +332,19 @@
    <p>
     The paper is structured as follows: The dynamic model is formulated in
     <xref ref-type="sec" rid="s-1">
-     Section 3
+     section 5
     </xref>
     .
     <xref ref-type="sec" rid="s-1">
-     Section 3
+     section 5
     </xref>
     proposes the SMC design with adaptive control law, where the system stability analysis is also provided. Comparative studies are discussed in
     <xref ref-type="sec" rid="s-1">
-     Section 3
+     section 5
     </xref>
     , where the superiority of the ABSMC is described in comparison to the other controllers. Finally, conclusions are drawn in
     <xref ref-type="sec" rid="s-1">
-     Section 3
+     section 5
     </xref>
     .
    </p>
@@ -806,11 +806,11 @@
     <p>
      Substituting
      <xref ref-type="disp-formula" rid="eqn-1">
-      Eq. (20)
+      Eq. (21)
      </xref>
      into
      <xref ref-type="disp-formula" rid="eqn-1">
-      Eq. (20)
+      Eq. (21)
      </xref>
      leads for
     </p>
