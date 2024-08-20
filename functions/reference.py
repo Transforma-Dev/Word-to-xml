@@ -10,23 +10,23 @@ def reference(xml_text,variables):
     #Chect "back" is already present in variable or not to open the back tag
     if "back" not in variables["back_start"]:
         if variables["sec_3"]>1:
-            text=f'</sec></sec></body><back><ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'</sec></sec></body><back><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         elif variables["sec_2"]>1:
-            text=f'</sec></sec></body><back><ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'</sec></sec></body><back><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         else:
-            text=f'</sec></body><back><ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'</sec></body><back><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         variables["ref"]=True
     elif "fn" in variables["back_start"]:   #fn is already is there then not anames back tag
-        text=f'</p></fn></fn-group><ref-list content-type="authoryear"><title>{xml_text}</title>'
+        text=f'</p></fn></fn-group><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
     else:
         if variables["sec_3"]>1:
-            text=f'</sec></sec><ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'</sec></sec><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         elif variables["sec_2"]>1:
-            text=f'</sec></sec><ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'</sec></sec><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         elif variables["sec_1"]>1:
-            text=f'</sec><ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'</sec><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         else:
-            text=f'<ref-list content-type="authoryear"><title>{xml_text}</title>'
+            text=f'<ref-list content-type="authoryear"><title1>{xml_text}</title1>'
 
     variables["fn_start"]=False
     variables["ref"]=True
@@ -63,7 +63,7 @@ def reference_text(xml_text,variables):
         print({'error': f'Request Exception: {str(e)}'})
     
     # xml_text = re.sub(r'^\[\d+\]', '', xml_text)
-    # print(references_json)
+    print(references_json)
     if references_json and not xml_text.isspace():
         
             data = references_json[0]
@@ -193,9 +193,9 @@ def reference_temp(xml_text,variables):
     
     except requests.exceptions.RequestException as e:
         print({'error': f'Request Exception: {str(e)}'})
-    # print(refereance_json[0])
+    # print(references_json)
     if references_json:
-        data = data = references_json[0]
+        data = references_json[0]
 
         #Split the reference text and find author name and year
         xml_text_split = xml_text.split(".")
@@ -220,5 +220,5 @@ def reference_temp(xml_text,variables):
         text=f'<ref id="ref-{variables["ref_id"]}">{data}</ref>'
         
         variables["ref_id"]+=1
-    # print(text)
+    # print(text,"---")
     return text

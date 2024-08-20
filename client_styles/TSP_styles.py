@@ -188,6 +188,8 @@ class TSP_styles:
     def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
         doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
         text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+        # print(text)
+        # print(element.text,"----")
         element.text = text.strip()[0].upper() + text.strip()[1:]
         for child in element:
             if child.text is not None:
@@ -285,24 +287,24 @@ class TSP_styles:
         #Find the table title tag
         for title in element.findall('./fig'):
             image_title = title.find('.//title')
-            if image_title is not None:
+            if image_title is not None and element.text.strip():
                 self.find_fig_title(image_title,nlp)
 
         #Find the table title tag
         for title in element.findall('./table-wrap'):
             table_title = title.find('.//title')
-            if table_title is not None:
+            if table_title is not None and element.text.strip():
                 self.find_fig_title(table_title,nlp)
 
         #Find the th tag
         for th in element.findall("./th"):
-            if th.text is not None:
+            if th.text is not None and element.text.strip():
                 self.find_fig_title(th,nlp)
 
         #Find the fn-group tag and change the order of fn group
         fn_elements = element.findall(".//fn")
         fn_group = element.find("./fn-group")
-        if fn_group is not None:
+        if fn_group is not None and element.text.strip():
             self.back_order(fn_elements,fn_group)        
 
         #Replace text or add or remove space in text

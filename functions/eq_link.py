@@ -359,7 +359,7 @@ def add_tag(xml_text):
             else:
                 xml_tex = i.split()
                 xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_tex[1]}'>{xml_tex[0]} {xml_tex[1]}</xref>")
-    #Find fig and add tag
+    #Find tables and add tag
     pattern = r"Tables*\.*\s\d+(?:,\d+|-\d+)*(?: and \d+)*"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:

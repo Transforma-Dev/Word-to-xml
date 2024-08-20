@@ -1,0 +1,4901 @@
+<?xml version='1.0' encoding='utf-8'?>
+<article xmlns:ns0="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.0">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    CMC
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Computers, Materials &amp; Continua
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    1546-2226
+   </issn>
+   <issn pub-type="ppub">
+    1546-2218
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    54886
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604 / cmc.2024.054886
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+      Machine Fault Diagnosis Using Audio Sensors Data and Explainable AI Techniques-LIME and Shapaniqua Nusrat Zereen 
+     <sup>
+      1
+     </sup>
+     , Abir Das
+     <sup>
+      2
+     </sup>
+     and Jia Uddin
+     <sup>
+      3
+     </sup>
+     <sup>
+      , * </sup>
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     Machine Fault Diagnosis Using Audio Sensors Data and Explainable AI Techniques-LIME and SHAPAniqua Nusrat Zereen
+     <sup>
+      1
+     </sup>
+     , Abir Das
+     <sup>
+      2
+     </sup>
+     and Jia Uddin
+     <sup>
+      3
+     </sup>
+     <sup>
+      , * </sup>
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     Machine Fault Diagnosis Using Audio Sensors Data and Explainable AI Techniques-LIME and SHAPAniqua Nusrat Zereen
+     <sup>
+      1
+     </sup>
+     , Abir Das
+     <sup>
+      2
+     </sup>
+     and Jia Uddin
+     <sup>
+      3
+     </sup>
+     <sup>
+      , * </sup>
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Data
+      </surname>
+      <given-names>
+       School of
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Sciences
+      </surname>
+      <given-names>
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-3">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       University
+      </surname>
+      <given-names>
+       Brac
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-4">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       1212
+      </surname>
+      <given-names>
+       Dhaka
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-5">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Bangladesh
+      </surname>
+      <given-names>
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-6">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Studies
+      </surname>
+      <given-names>
+       JW KIM College of Future
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-7">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       College
+      </surname>
+      <given-names>
+       Endicott
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-8">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       University
+      </surname>
+      <given-names>
+       Woosong
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-9">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Daejeon
+      </surname>
+      <given-names>
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-10">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       AI
+      </surname>
+      <given-names>
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-3">
+      3
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-11">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Department
+      </surname>
+      <given-names>
+       BigData
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-12">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       College
+      </surname>
+      <given-names>
+       Endicott
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-13">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       University
+      </surname>
+      <given-names>
+       Woosong
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-14">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Daejeon
+      </surname>
+      <given-names>
+      </given-names>
+     </name>
+    </contrib>
+    <contrib contrib-type="author" id="author-15">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       .
+      </surname>
+      <given-names>
+      </given-names>
+     </name>
+    </contrib>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <label> * </label>
+     Corresponding Author: Jia Uddin. Email:
+     <email>
+      jia.uddin@wsu.ac.kr
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      10
+     </day>
+     <month>
+      6
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      14
+     </day>
+     <month>
+      8
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024 Data et al.
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     Data et al.
+    </copyright-holder>
+    <license ns0:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" ns0:href="TSP_CMC_54886.pdf" />
+   <abstract abstract-type="abstract">
+    <p>
+     Machine fault diagnostics are essential for industrial operations, and advancements in machine learning have significantly advanced these systems by providing accurate predictions and expedited solutions. Machine learning models, especially those utilizing complex algorithms like deep learning, have demonstrated major potential in extracting important information from large operational datasets. Despite their efficiency, machine learning models face challenges, making Explainable AI (XAI) crucial for improving their understandability and fine-tuning. The importance of feature contribution and selection using XAI in the diagnosis of machine faults is examined in this study. The technique is applied to evaluate different machine-learning algorithms. Extreme Gradient Boosting, Support Vector Machine, Gaussian Naive Bayes, and Random Forest classifiers are used alongside Logistic Regression (LR) as a baseline model because their efficacy and simplicity are evaluated thoroughly with empirical analysis. The XAI is used as a targeted feature selection technique to select among 29 features of the time and frequency domain. The XAI approach is lightweight, trained with only targeted features, and achieved similar results as the traditional approach. The accuracy without XAI on baseline LR is 79.57%, whereas the approach with XAI on LR is 80.28%.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+      Explainable AI 
+    </kwd>
+    <kwd>
+      Feature Selection 
+    </kwd>
+    <kwd>
+      Machine Learning 
+    </kwd>
+    <kwd>
+      Machine Fault Diagnosis . 
+    </kwd>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title1>
+    Introduction
+   </title1>
+   <p>
+    Machine fault diagnostics are essential for industrial operations, and advancements in machine learning (ML) have significantly enhanced these systems by providing accurate predictions and expedited solutions. The models, particularly those employing deep learning (DL) methodologies, have demonstrated the ability to identify potential defects by analyzing data from various controllable variables, such as vibration, temperature, and acoustics. These developments are crucial for predicting faults before they occur, thereby preventing operational disruptions and minimizing costs [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ].
+   </p>
+   <p>
+    ML models, especially those utilizing complex algorithms like DL, have demonstrated major potential in extracting important information from large operational datasets [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ].
+   </p>
+   <p>
+    Recent studies have underscored the importance of incorporating Explainable AI (XAI) into machine fault diagnosis. Techniques such as shapley additive explanations (SHAP) and local interpretable model-agnostic explanations (LIME) are employed to elucidate the decision-making mechanisms utilized by models, enabling the recognition of crucial data features that can predict potential problems, therefore enhancing the understanding of the model's behavior [
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-8">
+     8
+    </xref>
+    ].
+   </p>
+   <p>
+    Feature selection is important in enhancing the performance and interpretability of ML models for fault diagnosis. By identifying the most relevant features, feature selection reduces data dimensionality and computational complexity. Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), and Recursive Feature Elimination (RFE) are prominent feature selection techniques used in machine fault diagnosis. The PCA reduces the dimensionality of datasets by transforming original variables into a set of new uncorrelated variables that maximize variance, thus simplifying data interpretation [
+    <xref ref-type="bibr" rid="ref-9">
+     9
+    </xref>
+    ]. The LDA improves class separability by finding a linear combination of features that best separates different classes, making it useful for distinguishing fault types [
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ]. The RFE is an iterative method that removes the least important features based on model performance, often using techniques like support vector machines (SVM) to rank feature importance, ensuring that only the most relevant features are retained [
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ]. Techniques similar to fault diagnosis in machines using image data play a vital role. Approach to diagnose high-impedance faults using a combination of semantic segmentation, signal envelope, and Hilbert marginal spectrum, utilizes 1D-UNet for transient process identification in zero-sequence voltage, enhancing the detection of fault inception. The integration of signal envelope and Hilbert marginal spectrum (HMS) and HMS features, transformed into images and analyzed with ResNet18, showcases superior performance in detecting high-impedance faults, particularly in resonant distribution networks. Another research introduces an innovative methodology combining adaptive transient process calibration with multiscale correlation analysis to enhance the accuracy of fault localization [
+    <xref ref-type="bibr" rid="ref-12">
+     12
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ]. Additionally, SHAP and LIME provide insights into model decision-making, enhancing interpretability and trust. The SHAP provides a global perspective by assigning importance values to each feature, revealing how changes in features like vibration or temperature influence the model's predictions. This clarity helps maintenance teams identify critical factors contributing to machine faults and enables preemptive actions. The LIME offers local interpretability by explaining individual predictions, and showing how specific instances of sensor readings lead to certain fault diagnoses. This detailed analysis aids engineers in validating and trusting model decisions on a case-by-case basis. Practical applications, such as pinpointing acoustic signals associated with bearing faults using SHAP or understanding combined temperature and vibration patterns through LIME, demonstrate how these techniques turn complex model outputs into actionable maintenance strategies.
+   </p>
+   <p>
+    The integration of ML with feature selection techniques in machine fault diagnostics indicates a synergy of technology, strategy, and user-centered design aimed at improving the reliability and efficiency of industrial processes. These technical developments are expected to usher in an era of transformative change in industrial maintenance, marked by major reductions in downtime and continual improvements in operational efficiency [
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ].
+   </p>
+   <p>
+    In the proposed methodology for machine fault diagnosis, feature selection is achieved using XAI coupled with Logistic Regression (LR). This process iteratively refines the set of features, enabling the identification and training of the most informative ones, thereby enhancing model accuracy and reducing unnecessary complexity. Initial results indicate that models trained with a targeted selection of three to five features yield the highest accuracy rates, underscoring the effectiveness of the feature selection strategy.
+   </p>
+   <p>
+    The approach extends to training various ML algorithms, including Extreme Gradient Boosting (XGBoost), Random Forest (RF), SVM, and LR. This study also explores the potential of other algorithms like Gaussian Naive Bayes (GaussianNB) and Neural Networks for comparative analysis. Crucially, the optimization of hyperparameters is emphasized to maximize each model's performance.
+   </p>
+   <p>
+    Further refinement is achieved through the application of SHAP to identify the most important features for fault diagnosis. This insight allows for the training of an LR model focused solely on these key features, enhancing diagnostic precision. This methodology is juxtaposed against a traditional approach, which utilizes a predefined set of classifiers evaluated independently. The structured and iterative method highlights the substantial benefits of strategic feature reduction and focused model training in improving fault diagnosis accuracy.
+   </p>
+   <p>
+    This paper introduces several contributions compared to prior AI-based methods in machine fault diagnosis:
+   </p>
+   <list list-type="unorder">
+    <list-item>
+     <p>
+      <italic>
+       Integration of XAI Techniques:
+      </italic>
+      Unlike previous works primarily focusing on black-box models, our study integrates SHAP and LIME to provide transparency in model decision-making. This integration allows operators to understand the rationale behind predictions, enhancing trust and facilitating model acceptance in industrial settings.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      <italic>
+       Comprehensive feature selection methods
+      </italic>
+      : We employ advanced feature selection techniques such as RFE, PCA, etc. These methods help in identifying the most relevant features, reducing dimensionality, and improving model performance and interpretability. This approach contrasts with earlier studies that may have relied on a limited set of feature selection methods.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      <italic>
+       Audio sensor data
+      </italic>
+      : The approach leverages audio sensor data for fault diagnosis, a relatively underexplored domain in comparison to traditional vibration or temperature data. This novel use of sound data opens new avenues for fault detection in scenarios where traditional sensors might be less effective.
+     </p>
+    </list-item>
+    <list-item>
+     <p>
+      <italic>
+       Enhanced comparative analysis
+      </italic>
+      : We conduct a thorough comparative analysis of state-of-art models and the proposed method, highlighting the performance improvements achieved through the proposed approach. The metrics, such as accuracy, F1 score, precision, and recall are deeply explored, providing a comprehensive evaluation of the model efficacy.
+     </p>
+    </list-item>
+   </list>
+   <p>
+    The rest of the paper is organized as follows: Section 2 provides an extensive review of previous works, Section 3 describes the proposed methodology, Section 4 discusses the results, and finally concludes the paper in Section 5.
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title1>
+    Literature Review
+   </title1>
+   <p>
+    The field of fault diagnosis is critical in maintaining the reliability and efficiency of industrial systems. Accurate fault detection and classification rely on the effective analysis of high-dimensional data, which can be complex and computationally intensive. Data compression techniques, such as PCA, LDA, and Partial Least Squares (PLS) are essential in fault diagnosis systems. The PCA reduces dimensionality, LDA finds linear combinations of features, and PLS identifies fundamental relations between predictors and responses, handling multicollinearity effectively [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ]. These techniques improve model performance by maintaining crucial information and enhancing feature space separability. However, PCA assumes linear relationships and may not capture nonlinear interactions, potentially leading to the loss of essential information. The LDA requires normally distributed features and might underperform with non-linear data. The PLS, while effective with multicollinearity, can become computationally intensive with very large datasets, impacting processing time and resource utilization. Computation increases with the increment of feature dimension. In the proposed approach, we extracted several features from a sample audio file and then we select only the best few features among them which makes the model less computationally burdened.
+   </p>
+   <p>
+    The XAI elucidates the complexity of diagnostic ML models [
+    <xref ref-type="bibr" rid="ref-16">
+     16
+    </xref>
+    ]. The XAI applications can justify AI-driven decisions in industrial environments. Complex models like SHAP and LIME predict behaviors, clarify decision-making, and ensure regulatory compliance. LIME is a prominent example of a surrogate model that provides local approximations to explain individual predictions of a black-box model. It involves generating perturbations of the input data and analyzing the resulting changes in predictions to identify which features are most influential. It helps users understand the decision-making process of complex models on a case-by-case basis [
+    <xref ref-type="bibr" rid="ref-17">
+     17
+    </xref>
+    ]. Mean Decrease Accuracy (MDA) is another popular method for feature selection, commonly used in conjunction with Random Forest models. The MDA measures the importance of each feature by assessing the decrease in model accuracy when the feature is permuted. This approach provides an intuitive measure of feature importance, as more critical features will cause a major drop in accuracy when altered [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ].
+   </p>
+   <p>
+    In [
+    <xref ref-type="bibr" rid="ref-19">
+     19
+    </xref>
+    ], impulse frequency response analysis-based method employs impulse frequency response analysis combined with image classification using ResNet18 and Smooth Grad-CAM +  + to diagnose winding short circuit faults in synchronous machines, achieving high diagnostic accuracy and providing enhanced model interpretability. It utilizes deep learning to analyze complex patterns in image data, making it highly effective for precise fault detection. It shows the importance of feature selection and explainability in ML models for fault diagnosis. However, it stands out for its high accuracy in detecting specific electrical faults using image data, while the proposed approach audio sensor-based, provides a comprehensive framework for fault diagnosis using sound data, supported by robust XAI techniques.
+   </p>
+   <p>
+    Researchers integrate wavelet weight initialization and adaptive threshold for robust and interpretable fault diagnosis in machines [
+    <xref ref-type="bibr" rid="ref-20">
+     20
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-21">
+     21
+    </xref>
+    ]. The methods leverage physics-informed models to enhance feature extraction and dynamically adjusts thresholds to improve fault detection accuracy. The studies focus on integrating domain knowledge with ML for better interpretability and robustness, particularly in varying operational conditions. In [
+    <xref ref-type="bibr" rid="ref-21">
+     21
+    </xref>
+    ], introduces the physics-informed wavelet domain adaptation network designed to improve cross-machine transfer diagnosis by integrating wavelet-based feature extraction with ML. It employs optimized wavelet weights in the first convolutional layer to enhance domain transferability and extract discriminative features. It shows significant performance improvements in challenging cross-machine diagnostic tasks, validating its efficacy across multiple datasets. However, emphasizing real-time audio-based monitoring and explainability is crucial in noisy industrial environments.
+   </p>
+   <p>
+    In conclusion, the implementation of ML models, multimodal data, and XAI methods in diagnostic and predictive maintenance systems indicates a significant transformation towards more effective and proactive industrial operations. Continuous research and development in these fields will have a major impact on the capabilities of fault diagnostics and predictive maintenance.
+    <xref ref-type="table" rid="table-1">
+     Table 1
+    </xref>
+    shows the summary of the state-of-the-art models in fault diagnostics.
+   </p>
+   <table-wrap id="table-1">
+    <label>
+     Table 1
+    </label>
+    <caption>
+     <title1>
+      Summary of state-of-the-art fault diagnostics models.
+     </title1>
+    </caption>
+    <alternatives>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-1.tif" />
+     <table>
+      <colgroup>
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+      </colgroup>
+      <thead>
+       <tr>
+        <th>
+         Reference
+        </th>
+        <th>
+         Contribution
+        </th>
+        <th>
+         Limitation
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         Al-Kaf et al. [
+         <xref ref-type="bibr" rid="ref-7">
+          7
+         </xref>
+         ]
+        </td>
+        <td>
+         SHAP and LIME for diagnosing open faults in NPC inverters, providing transparency in model decision-making, and enhancing the interpretability of complex ML models in energy conversion systems.
+        </td>
+        <td>
+         Computationally intensive, imposing remarkable processing power and time; specifically tailored to energy conversion applications, which may limit generalizability to other types of industrial systems.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Eriksson
+         <italic>
+          et al.
+         </italic>
+         [
+         <xref ref-type="bibr" rid="ref-8">
+          8
+         </xref>
+         ]
+        </td>
+        <td>
+         User-centric study on the implementation of SHAP and LIME for generating explainable alerts in security operation centers (SOC), highlighting the effectiveness of XAI techniques in improving user trust and understanding in critical security contexts.
+        </td>
+        <td>
+         Focuses primarily on security operation centers, potentially restricting the applicability of findings to other industrial environments; the approach may not directly address the unique challenges in different sectors.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Jolliffe
+         <italic>
+          et al.
+         </italic>
+         [
+         <xref ref-type="bibr" rid="ref-9">
+          9
+         </xref>
+         ]
+        </td>
+        <td>
+         Recent advancements and applications in reducing the dimensionality of high-dimensional datasets, which is crucial for simplifying data interpretation and improving model performance in various industrial applications.
+        </td>
+        <td>
+         Assumes linear relationships among variables, which may result in the loss of crucial information in datasets with nonlinear interactions; may not be suitable for all types of data.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Zhou
+         <italic>
+          et al.
+         </italic>
+         [
+         <xref ref-type="bibr" rid="ref-10">
+          10
+         </xref>
+         ]
+        </td>
+        <td>
+         Explanation of LDA for improving class separability in datasets.
+        </td>
+        <td>
+         Needs normally distributed features, which may limit performance with non-linear data; and may not handle complex, non-linear relationships as effectively as other techniques.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Das
+         <italic>
+          et al.
+         </italic>
+         [
+         <xref ref-type="bibr" rid="ref-11">
+          11
+         </xref>
+         ]
+        </td>
+        <td>
+         Application of RFE for identifying transformer faults.
+        </td>
+        <td>
+         The iterative nature of RFE can be computationally intensive and time-consuming, especially with large datasets; it relies heavily on the underlying model's performance, which can be a controlling factor.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Wold
+         <italic>
+          et al.
+         </italic>
+         [
+         <xref ref-type="bibr" rid="ref-15">
+          15
+         </xref>
+         ]
+        </td>
+        <td>
+         Introduction and application of PLS in handling multicollinearity.
+        </td>
+        <td>
+         Computationally intensive when applied to very large datasets, which can impact processing time and resource utilization; may need careful tuning and validation to ensure optimal performance.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Breiman
+         <italic>
+          et al.
+         </italic>
+         [
+         <xref ref-type="bibr" rid="ref-18">
+          18
+         </xref>
+         ]
+        </td>
+        <td>
+         Development of Random Forests for robust, ensemble-based ML.
+        </td>
+        <td>
+         Expects large amounts of data; may be computationally expensive.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </alternatives>
+   </table-wrap>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title1>
+    Methodology
+   </title1>
+   <p>
+    The proposed study integrates feature selection with traditional ML techniques, significantly enhancing the performance and interpretability of fault diagnosis models. Key innovations include the use of XAI methods, such as SHAP and LIME, to guide feature selection and provide insights into the decision-making processes of the models. This comprehensive and structured approach to model training focuses on the strategic reduction of features to enhance diagnostic accuracy. The integration of RFE with LR for feature selection stands out as a unique aspect. This method iteratively refines the feature set, enabling the identification of the most informative features, which are then used to train various ML models, including XGBoost, RF, SVM, and GaussianNB. This iterative process, validated through rigorous cross-validation and hyper-parameter tuning, underscores the effectiveness of the feature selection strategy.
+   </p>
+   <p>
+    We have divided the studies into two parts, which show the difference between the traditional approach and the proposed approach to diagnose faults in machines. We have prepared a specific dataset from the existing large dataset [
+    <xref ref-type="bibr" rid="ref-22">
+     22
+    </xref>
+    ]. The traditional approach involves feature extraction of the dataset and training the LR Model to classify faults in the machine, whereas the approach does similar feature extraction but chooses the most contributing features among all extracted features and trains the model to classify shown in Figure 1. This technique shows promising results, which also provide a lightweight model with better accuracy. We also have trained different ML models for comparative analysis, which are XGBoost, SVM, GaussianNB, and RF. The following sections describe the details of the dataset preparation and model training phases. The pseudocode of the proposed model is defined in Algorithm 1.
+   </p>
+   <fig id="fig-1">
+    <label>
+     Figure 1
+    </label>
+    <caption>
+     <title1>
+      Workflow of the proposed methodology.
+     </title1>
+    </caption>
+    <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-1.jpg" />
+    <img src="TSP_CMC_54886-fig-1.jpg" />
+   </fig>
+   <table-wrap id="table-2">
+    <alternatives>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-2.tif" />
+     <table>
+      <colgroup>
+       <col />
+      </colgroup>
+      <thead>
+       <tr>
+        <th>
+         Algorithm 1
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <italic>
+          Input:
+         </italic>
+         Audio data from sensors, labels (normal / abnormal)
+         <italic>
+          Output:
+         </italic>
+         Trained model, performance metrics, and explanations1: Load and preprocess audio data2: Initialize feature extraction functions3: Initialize classifiers: LR, XGBoost, SVC, GaussianNB, RF4: Initialize explainable AI tools: LIME, SHAP
+         <italic>
+          Feature Extraction:
+         </italic>
+         5: for each audio sample x in dataset do6:    time_features ← extract_time_domain_features(x)7:    freq_features ← extract_frequency_domain_features(x)8:    features ← time_features + freq_features9:    Append features to feature matrix X10:   Append label to label vector y11: end for
+         <italic>
+          Model Training and Evaluation:
+         </italic>
+         12: Split data into training set and test set13: Scale features using StandardScaler14: for each classifier in classifiers do15:     Train classifier on training set16:     Predict on test set17:     Calculate performance metrics: accuracy, F1 score, precision, recall18:     Plot confusion matrix19: end for
+         <italic>
+          ROC Curve:
+         </italic>
+         20: Plot ROC curves for all classifiers
+         <italic>
+          Explainable AI:
+         </italic>
+         21: Select an instance from test set for explanation22: LIME explanation ← explain_instance(LIME, instance, classifier)23: Display LIME explanation24: SHAP explanation ← SHAP values for X_test25: Plot SHAP summary26: Return trained models, performance metrics, LIME, and SHAP explanations
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </alternatives>
+   </table-wrap>
+   <sec id="s3_1">
+    <label>
+     3.1
+    </label>
+    <title1>
+     Data Collection and Preprocessing
+    </title1>
+    <p>
+     Data collection and preprocessing are critical steps in the methodology of this study, impacting the quality and reliability of the machine fault diagnosis models. The audio recordings used in this research were sourced from industrial fans, with the dataset comprising two distinct sound categories: 'normal' and 'abnormal' [
+     <xref ref-type="bibr" rid="ref-22">
+      22
+     </xref>
+     ]. This dataset was extracted from a larger repository of machine sounds, ensuring a comprehensive representation of operational conditions.
+    </p>
+    <p>
+     Each audio file in the dataset is 3 s long and saved in the waveform audio file (wav) format. The total dataset includes 1514 audio files, with 1107 classified as normal and 407 as abnormal. This distribution allows for a robust analysis of fault detection and diagnosis.
+    </p>
+    <p>
+     Preprocessing involves transforming raw audio signals into a set of 29 informative features, derived from both time and frequency domains. Time domain features include statistical measures like mean, median, variance, and standard deviation, which provide insights into the central tendency and dispersion of the audio signals. Additional metrics, such as skewness, kurtosis, and zero-cross rate offer further characterization of the signal distribution and oscillatory behavior.
+    </p>
+    <p>
+     In the frequency domain, features, such as spectral centroid, bandwidth, and spectral contrast are extracted, providing a detailed frequency analysis of the audio signals. This dual-domain approach ensures a comprehensive feature set that captures both temporal and spectral characteristics of the sound data.
+    </p>
+   </sec>
+   <sec id="s3_2">
+    <label>
+     3.2
+    </label>
+    <title1>
+     Feature Extraction
+    </title1>
+    <p>
+     Feature extraction is crucial in diagnosing machine faults using sound or vibration data. The approach transforms the raw audio signal into 29 informative features, both from time and frequency domains, as listed in
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     .
+    </p>
+    <sec id="s3_2_1">
+     <label>
+      3.2.1
+     </label>
+     <title1>
+      Time Domain Features
+     </title1>
+     <p>
+      The time domain features include statistical measures, such as the mean, median, variance, and standard deviation (Std_dev), which provide insights into the central tendency and dispersion of the audio signal. Additionally, skewness and kurtosis (Kurt) metrics capture the asymmetry and tailedness of the signal distribution, respectively. The Zero_cross_rate_value indicates the rate of sign changes in the audio signal, while num_waves and wave_duration quantify the oscillatory behavior and duration of waveforms. Instantaneous frequency (Inst_freq) and mobility reflect the rate of phase change and signal variation, whereas activity and energy denote the signal's total energy and variance-related energy. The complexity measure assesses the dynamic changes in the signal's frequency content, and the k-complex identifies specific waveform patterns.
+     </p>
+     <table-wrap id="table-3">
+      <label>
+       Table 2
+      </label>
+      <caption>
+       <title1>
+        Time domain and frequency domain features
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-3.tif" />
+       <table>
+        <colgroup>
+         <col align="center" />
+         <col align="center" />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Time domain features
+          </th>
+          <th>
+           Frequency domain features
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Mean
+          </td>
+          <td>
+           Mean_freq
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Median
+          </td>
+          <td>
+           Median_freq
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Variance
+          </td>
+          <td>
+           Variance_freq
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Std_dev
+          </td>
+          <td>
+           Std_dev_freq
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Skewness
+          </td>
+          <td>
+           Skewness_freq
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Kurt
+          </td>
+          <td>
+           Kurt_freq
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Zero_cross_rate_value
+          </td>
+          <td>
+           Delta
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Num_waves
+          </td>
+          <td>
+           Alpha
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Wave_duration
+          </td>
+          <td>
+           Beta
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Inst_freq
+          </td>
+          <td>
+           Gamma
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Mobility
+          </td>
+          <td>
+           Sigma
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Activity
+          </td>
+          <td>
+           Theta
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Complexity
+          </td>
+          <td>
+           Zero_a
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Energy
+          </td>
+          <td />
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+    <sec id="s3_2_2">
+     <label>
+      3.2.2
+     </label>
+     <title1>
+      Frequency Domain Features
+     </title1>
+     <p>
+      In the frequency domain, features such as mean frequency (Mean_freq), median frequency (Median_freq), variance frequency (Variance_freq), and Standard Deviation of Frequency (Std_dev_freq) offer a detailed understanding of the signal's frequency components. The Skewness_freq and Kurt_freq further characterize the distribution of these frequencies. Power or amplitude within specific frequency bands is quantified through features like delta, alpha, beta, gamma, sigma, and theta, each relevant to different operational states and potential fault conditions of the fan. The Zero_a feature represents the rate of zero crossings in the frequency domain, and the b_a ratio (beta to alpha power) provides additional insights into the operational health of the fan.
+     </p>
+     <p>
+      The following equations provide a detailed understanding of the features, helping in the accurate and interpretable diagnosis of machine faults [
+      <xref ref-type="bibr" rid="ref-23">
+       23
+      </xref>
+      ].
+     </p>
+     <table-wrap id="table-4">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-4.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-1.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                M
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </mfrac>
+               <mrow>
+                <msubsup>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   N
+                  </mi>
+                 </mrow>
+                </msubsup>
+                <mrow>
+                 <mi>
+                  x
+                 </mi>
+                 <mfenced close="]" open="[" separators="|">
+                  <mrow>
+                   <mi>
+                    i
+                   </mi>
+                  </mrow>
+                 </mfenced>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (1)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-5">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-5.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-2.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                M
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                d
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mo> = </mo>
+               <mi>
+                x
+               </mi>
+               <mfenced close="]" open="[" separators="|">
+                <mrow>
+                 <mfrac>
+                  <mrow>
+                   <mi>
+                    N
+                   </mi>
+                   <mo> + </mo>
+                   <mn>
+                    1
+                   </mn>
+                  </mrow>
+                  <mrow>
+                   <mn>
+                    2
+                   </mn>
+                  </mrow>
+                 </mfrac>
+                </mrow>
+               </mfenced>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (2)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-6">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-6.tif" />
+       <table>
+        <colgroup>
+         <col align="center" />
+         <col align="center" />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-3.tif" />
+             <tex-math>
+              
+              <math>
+               <mi mathvariant="normal">
+                V
+               </mi>
+               <mi mathvariant="normal">
+                a
+               </mi>
+               <mi mathvariant="normal">
+                r
+               </mi>
+               <mi mathvariant="normal">
+                i
+               </mi>
+               <mi mathvariant="normal">
+                a
+               </mi>
+               <mi mathvariant="normal">
+                n
+               </mi>
+               <mi mathvariant="normal">
+                c
+               </mi>
+               <mi mathvariant="normal">
+                e
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </mfrac>
+               <mrow>
+                <msubsup>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   N
+                  </mi>
+                 </mrow>
+                </msubsup>
+                <mrow>
+                 <msup>
+                  <mrow>
+                   <mfenced separators="|">
+                    <mrow>
+                     <mi>
+                      x
+                     </mi>
+                     <mfenced close="]" open="[" separators="|">
+                      <mrow>
+                       <mi>
+                        i
+                       </mi>
+                      </mrow>
+                     </mfenced>
+                     <mo>-</mo>
+                     <mi>
+                      M
+                     </mi>
+                     <mi>
+                      e
+                     </mi>
+                     <mi>
+                      a
+                     </mi>
+                     <mi>
+                      n
+                     </mi>
+                    </mrow>
+                   </mfenced>
+                  </mrow>
+                  <mrow>
+                   <mn>
+                    2
+                   </mn>
+                  </mrow>
+                 </msup>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (3)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-7">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-7.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-4.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                S
+               </mi>
+               <mi>
+                t
+               </mi>
+               <msub>
+                <mrow>
+                 <mi>
+                  d
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  d
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                  v
+                 </mi>
+                </mrow>
+               </msub>
+               <mo> = </mo>
+               <msqrt>
+                <mi>
+                 V
+                </mi>
+                <mi>
+                 a
+                </mi>
+                <mi>
+                 r
+                </mi>
+                <mi>
+                 i
+                </mi>
+                <mi>
+                 a
+                </mi>
+                <mi>
+                 n
+                </mi>
+                <mi>
+                 c
+                </mi>
+                <mi>
+                 e
+                </mi>
+               </msqrt>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (4)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-8">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-8.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-5.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                S
+               </mi>
+               <mi>
+                k
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                w
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </mfrac>
+               <mrow>
+                <munderover>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   N
+                  </mi>
+                 </mrow>
+                </munderover>
+                <mrow>
+                 <msup>
+                  <mrow>
+                   <mfenced separators="|">
+                    <mrow>
+                     <mfrac>
+                      <mrow>
+                       <mi>
+                        x
+                       </mi>
+                       <mfenced close="]" open="[" separators="|">
+                        <mrow>
+                         <mi>
+                          i
+                         </mi>
+                        </mrow>
+                       </mfenced>
+                       <mo>-</mo>
+                       <mi>
+                        M
+                       </mi>
+                       <mi>
+                        e
+                       </mi>
+                       <mi>
+                        a
+                       </mi>
+                       <mi>
+                        n
+                       </mi>
+                      </mrow>
+                      <mrow>
+                       <mi>
+                        S
+                       </mi>
+                       <mi>
+                        t
+                       </mi>
+                       <mi>
+                        d
+                       </mi>
+                       <mo>
+                        _
+                       </mo>
+                       <mi>
+                        d
+                       </mi>
+                       <mi>
+                        e
+                       </mi>
+                       <mi>
+                        v
+                       </mi>
+                      </mrow>
+                     </mfrac>
+                    </mrow>
+                   </mfenced>
+                  </mrow>
+                  <mrow>
+                   <mn>
+                    3
+                   </mn>
+                  </mrow>
+                 </msup>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (5)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-9">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-9.tif" />
+       <table>
+        <colgroup>
+         <col align="center" />
+         <col align="center" />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-6.tif" />
+             <tex-math>
+              
+              <math>
+               <mi mathvariant="normal">
+                K
+               </mi>
+               <mi mathvariant="normal">
+                u
+               </mi>
+               <mi mathvariant="normal">
+                r
+               </mi>
+               <mi mathvariant="normal">
+                t
+               </mi>
+               <mi mathvariant="normal">
+                o
+               </mi>
+               <mi mathvariant="normal">
+                s
+               </mi>
+               <mi mathvariant="normal">
+                i
+               </mi>
+               <mi mathvariant="normal">
+                s
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </mfrac>
+               <mrow>
+                <msubsup>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   N
+                  </mi>
+                 </mrow>
+                </msubsup>
+                <mrow>
+                 <msup>
+                  <mrow>
+                   <mfenced separators="|">
+                    <mrow>
+                     <mfrac>
+                      <mrow>
+                       <mi>
+                        x
+                       </mi>
+                       <mfenced close="]" open="[" separators="|">
+                        <mrow>
+                         <mi>
+                          i
+                         </mi>
+                        </mrow>
+                       </mfenced>
+                       <mo>-</mo>
+                       <mi>
+                        M
+                       </mi>
+                       <mi>
+                        e
+                       </mi>
+                       <mi>
+                        a
+                       </mi>
+                       <mi>
+                        n
+                       </mi>
+                      </mrow>
+                      <mrow>
+                       <mi>
+                        S
+                       </mi>
+                       <mi>
+                        t
+                       </mi>
+                       <mi>
+                        d
+                       </mi>
+                       <mo>
+                        _
+                       </mo>
+                       <mi>
+                        d
+                       </mi>
+                       <mi>
+                        e
+                       </mi>
+                       <mi>
+                        v
+                       </mi>
+                      </mrow>
+                     </mfrac>
+                    </mrow>
+                   </mfenced>
+                  </mrow>
+                  <mrow>
+                   <mn>
+                    4
+                   </mn>
+                  </mrow>
+                 </msup>
+                 <mo>-</mo>
+                 <mn>
+                  3
+                 </mn>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (6)
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-7.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                Z
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                c
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                r
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                v
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                l
+               </mi>
+               <mi>
+                u
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </mfrac>
+               <mrow>
+                <munderover>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   N
+                  </mi>
+                  <mo>-</mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                </munderover>
+                <mrow>
+                 <msub>
+                  <mrow>
+                   <mn>
+                    1
+                   </mn>
+                  </mrow>
+                  <mrow>
+                   <mo>
+                    {
+                   </mo>
+                   <mi>
+                    x
+                   </mi>
+                   <mfenced close="]" open="[" separators="|">
+                    <mrow>
+                     <mi>
+                      i
+                     </mi>
+                    </mrow>
+                   </mfenced>
+                   <mo>
+                    .
+                   </mo>
+                   <mi>
+                    x
+                   </mi>
+                   <mfenced close="]" open="[" separators="|">
+                    <mrow>
+                     <mi>
+                      i
+                     </mi>
+                     <mo> + </mo>
+                     <mn>
+                      1
+                     </mn>
+                    </mrow>
+                   </mfenced>
+                   <mo />
+                   <mn>
+                    0
+                   </mn>
+                   <mo>
+                    }
+                   </mo>
+                  </mrow>
+                 </msub>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </td>
+          <td>
+           (7)
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-10">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-10.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-8.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                N
+               </mi>
+               <mi>
+                u
+               </mi>
+               <mi>
+                m
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                w
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                v
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mo> = </mo>
+               <mi>
+                N
+               </mi>
+               <mi>
+                u
+               </mi>
+               <mi>
+                m
+               </mi>
+               <mi>
+                b
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mi>
+                f
+               </mi>
+               <mi>
+               </mi>
+               <mi>
+                Z
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mo>-</mo>
+               <mi>
+                c
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mi>
+                g
+               </mi>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (8)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-11">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-11.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-9.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                W
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                v
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                d
+               </mi>
+               <mi>
+                u
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mi>
+                  T
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  d
+                 </mi>
+                 <mi>
+                  u
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  f
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  s
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  g
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                 <mi>
+                  u
+                 </mi>
+                 <mi>
+                  m
+                 </mi>
+                 <mo>
+                  _
+                 </mo>
+                 <mi>
+                  w
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  v
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                  s
+                 </mi>
+                </mrow>
+               </mfrac>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (9)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-12">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-12.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-10.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                I
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mi>
+                s
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                f
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                q
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                 <mi>
+                  π
+                 </mi>
+                </mrow>
+               </mfrac>
+               <mfrac>
+                <mrow>
+                 <mi mathvariant="script">
+                  d
+                 </mi>
+                 <mi>
+                  ϕ
+                 </mi>
+                 <mo>
+                  (
+                 </mo>
+                 <mi>
+                  t
+                 </mi>
+                 <mo>
+                  )
+                 </mo>
+                </mrow>
+                <mrow>
+                 <mi mathvariant="script">
+                  d
+                 </mi>
+                 <mi mathvariant="script">
+                  t
+                 </mi>
+                </mrow>
+               </mfrac>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (10)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-13">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-13.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-11.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                M
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mi>
+                b
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                l
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mi>
+                y
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mi mathvariant="normal">
+                  S
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                  d
+                 </mi>
+                 <mo>
+                  _
+                 </mo>
+                 <mi mathvariant="normal">
+                  d
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                  v
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  o
+                 </mi>
+                 <mi mathvariant="normal">
+                  f
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                  h
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  f
+                 </mi>
+                 <mi mathvariant="normal">
+                  i
+                 </mi>
+                 <mi mathvariant="normal">
+                  r
+                 </mi>
+                 <mi mathvariant="normal">
+                  s
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  d
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                  r
+                 </mi>
+                 <mi mathvariant="normal">
+                  i
+                 </mi>
+                 <mi mathvariant="normal">
+                  v
+                 </mi>
+                 <mi mathvariant="normal">
+                  a
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                  i
+                 </mi>
+                 <mi mathvariant="normal">
+                  v
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  o
+                 </mi>
+                 <mi mathvariant="normal">
+                  f
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                  h
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  s
+                 </mi>
+                 <mi mathvariant="normal">
+                  i
+                 </mi>
+                 <mi mathvariant="normal">
+                  g
+                 </mi>
+                 <mi mathvariant="normal">
+                  n
+                 </mi>
+                 <mi mathvariant="normal">
+                  a
+                 </mi>
+                 <mi mathvariant="normal">
+                  l
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi mathvariant="normal">
+                  S
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                  d
+                 </mi>
+                 <mo>
+                  _
+                 </mo>
+                 <mi mathvariant="normal">
+                  d
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                  v
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  o
+                 </mi>
+                 <mi mathvariant="normal">
+                  f
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  t
+                 </mi>
+                 <mi mathvariant="normal">
+                  h
+                 </mi>
+                 <mi mathvariant="normal">
+                  e
+                 </mi>
+                 <mi mathvariant="normal">
+                 </mi>
+                 <mi mathvariant="normal">
+                  s
+                 </mi>
+                 <mi mathvariant="normal">
+                  i
+                 </mi>
+                 <mi mathvariant="normal">
+                  g
+                 </mi>
+                 <mi mathvariant="normal">
+                  n
+                 </mi>
+                 <mi mathvariant="normal">
+                  a
+                 </mi>
+                 <mi mathvariant="normal">
+                  l
+                 </mi>
+                </mrow>
+               </mfrac>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (11)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-14">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-14.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-12.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                A
+               </mi>
+               <mi>
+                c
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                v
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mi>
+                y
+               </mi>
+               <mo> = </mo>
+               <mi>
+                V
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                a
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mi>
+                c
+               </mi>
+               <mi>
+                e
+               </mi>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (12)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-15">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-15.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-13.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                C
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mi>
+                m
+               </mi>
+               <mi>
+                p
+               </mi>
+               <mi>
+                l
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                x
+               </mi>
+               <mi>
+                i
+               </mi>
+               <mi>
+                t
+               </mi>
+               <mi>
+                y
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mi>
+                  M
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  b
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  y
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  f
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  h
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  f
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                 <mi>
+                  s
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  d
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  v
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  v
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  f
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  h
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  s
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  g
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  M
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  b
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  y
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  f
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  h
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  s
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  g
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                </mrow>
+               </mfrac>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (13)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-16">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-16.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-14.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                E
+               </mi>
+               <mi>
+                n
+               </mi>
+               <mi mathvariant="normal">
+                e
+               </mi>
+               <mi mathvariant="normal">
+                r
+               </mi>
+               <mi mathvariant="normal">
+                g
+               </mi>
+               <mi mathvariant="normal">
+                y
+               </mi>
+               <mo> = </mo>
+               <mrow>
+                <munderover>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi mathvariant="normal">
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi mathvariant="normal">
+                   N
+                  </mi>
+                 </mrow>
+                </munderover>
+                <mrow>
+                 <msup>
+                  <mrow>
+                   <mi mathvariant="normal">
+                    x
+                   </mi>
+                   <mo>
+                    [
+                   </mo>
+                   <mi mathvariant="normal">
+                    i
+                   </mi>
+                   <mo>
+                    ]
+                   </mo>
+                  </mrow>
+                  <mrow>
+                   <mn>
+                    2
+                   </mn>
+                  </mrow>
+                 </msup>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (14)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-17">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-17.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-15.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                Z
+               </mi>
+               <mi>
+                e
+               </mi>
+               <mi>
+                r
+               </mi>
+               <mi>
+                o
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                a
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi mathvariant="normal">
+                  N
+                 </mi>
+                 <mo>-</mo>
+                 <mn>
+                  1
+                 </mn>
+                </mrow>
+               </mfrac>
+               <mrow>
+                <munderover>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   N
+                  </mi>
+                  <mo>-</mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                </munderover>
+                <mrow>
+                 <msub>
+                  <mrow>
+                   <mn>
+                    1
+                   </mn>
+                  </mrow>
+                  <mrow>
+                   <mo>
+                    {
+                   </mo>
+                   <mi>
+                    f
+                   </mi>
+                   <mfenced close="]" open="[" separators="|">
+                    <mrow>
+                     <mi>
+                      i
+                     </mi>
+                    </mrow>
+                   </mfenced>
+                   <mo>
+                    .
+                   </mo>
+                   <mi>
+                    f
+                   </mi>
+                   <mfenced close="]" open="[" separators="|">
+                    <mrow>
+                     <mi>
+                      i
+                     </mi>
+                     <mo> + </mo>
+                     <mn>
+                      1
+                     </mn>
+                    </mrow>
+                   </mfenced>
+                   <mo />
+                   <mn>
+                    0
+                   </mn>
+                   <mo>
+                    }
+                   </mo>
+                  </mrow>
+                 </msub>
+                </mrow>
+               </mrow>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (15)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+     <table-wrap id="table-18">
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-18.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           <disp-formula>
+            <alternatives>
+             <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-16.tif" />
+             <tex-math>
+              
+              <math>
+               <mi>
+                b
+               </mi>
+               <mo>
+                _
+               </mo>
+               <mi>
+                a
+               </mi>
+               <mo> = </mo>
+               <mfrac>
+                <mrow>
+                 <mi>
+                  P
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  w
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  b
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  b
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                  d
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  P
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  w
+                 </mi>
+                 <mi>
+                  e
+                 </mi>
+                 <mi>
+                  r
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  l
+                 </mi>
+                 <mi>
+                  p
+                 </mi>
+                 <mi>
+                  h
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                 </mi>
+                 <mi>
+                  b
+                 </mi>
+                 <mi>
+                  a
+                 </mi>
+                 <mi>
+                  n
+                 </mi>
+                 <mi>
+                  d
+                 </mi>
+                </mrow>
+               </mfrac>
+              </math>
+             </tex-math>
+            </alternatives>
+           </disp-formula>
+          </th>
+          <th>
+           (16)
+          </th>
+         </tr>
+        </thead>
+        <tbody />
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+   </sec>
+   <sec id="s3_3">
+    <label>
+     3.3
+    </label>
+    <title1>
+     Feature Scaling
+    </title1>
+    <p>
+     Before training the ML models, feature scaling was applied as a crucial pre-processing step to normalize the feature values and enhance the convergence properties of the learning algorithms. Standard scaling, also known as Z-score normalization, was employed for this purpose. We compute the mean and standard deviation of each feature of the training data and scale the features accordingly. We used the same steps for test data to ensure that the scaling parameters were consistent between the training and testing datasets.
+    </p>
+    <p>
+     We standardize the range of feature values using standard scaling which prevents features with larger magnitudes from dominating the learning algorithm during model training. Standard scaling involves transforming the feature values such that they have a mean of
+     <italic>
+      0
+     </italic>
+     and a standard deviation of
+     <italic>
+      1
+     </italic>
+     . This is achieved by subtracting the mean of each feature from its value and then dividing by the standard deviation of the feature. This ensures that all features contribute equally to the learning process, leading to more stable and efficient training of ML models. The formula for standard scaling is shown in Equation 17 as,
+    </p>
+    <table-wrap id="table-19">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-19.tif" />
+      <table>
+       <colgroup>
+        <col />
+        <col />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          <disp-formula>
+           <alternatives>
+            <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-17.tif" />
+            <tex-math>
+             
+             <math>
+              <mi>
+               X
+              </mi>
+              <mi>
+               s
+              </mi>
+              <mi>
+               c
+              </mi>
+              <mi>
+               a
+              </mi>
+              <mi>
+               l
+              </mi>
+              <mi>
+               e
+              </mi>
+              <mi>
+               d
+              </mi>
+              <mo> = </mo>
+              <mfrac>
+               <mrow>
+                <mi>
+                 x
+                </mi>
+                <mo>-</mo>
+                <mi>
+                 μ
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 σ
+                </mi>
+               </mrow>
+              </mfrac>
+             </math>
+            </tex-math>
+           </alternatives>
+          </disp-formula>
+         </th>
+         <th>
+          (17)
+         </th>
+        </tr>
+       </thead>
+       <tbody />
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     where
+     <italic>
+      x
+     </italic>
+     is the original value,
+     <italic>
+      m
+     </italic>
+     is the mean of the feature, and
+     <italic>
+      s
+     </italic>
+     is the standard deviation of the feature.
+    </p>
+   </sec>
+   <sec id="s3_4">
+    <label>
+     3.4
+    </label>
+    <title1>
+     Model Selection
+    </title1>
+    <p>
+     The methodology utilizes a multi-pronged approach, exploring the capabilities of different algorithms to identify the most effective model for the specific fault diagnosis task. A foundational aspect of this study is the selection of an appropriate baseline classifier, which serves as a reference for comparative analysis. We utilized LR for its inherent simplicity and effectiveness in binary classification problems. It provides a straightforward linear model that effectively captures the relationships between the extracted features and the target classes, making it a suitable choice for initial model evaluation and feature relevance analysis.
+    </p>
+    <p>
+     Beyond LR, a diverse array of classifiers, including XGBoost, SVM, GaussianNB, and RF, are evaluated. Each of these models offers unique advantages and complexities, ranging from the ensemble-based learning of RF to the kernel-based decision boundaries of SVM. XGBoost, known for its gradient-boosting framework, provides robust performance by combining the predictions of several weak models to produce a powerful ensemble. The SVM, with its capability to handle high-dimensional spaces and its versatility with different kernel functions, excels in scenarios where clear margin separation is crucial. GaussianNB, with its probabilistic approach, offers simplicity and computational efficiency, particularly effective when the assumption of feature independence holds true.
+    </p>
+    <p>
+     Through rigorous experimentation and cross-validation, these classifiers are trained using the 29 features derived from the training dataset, aiming to recognize their respective capabilities in classifying abnormal and normal machine operations. This traditional approach serves as a benchmark for evaluating the performance improvements achieved through feature selection techniques.
+    </p>
+    <p>
+     In the proposed approach, the entire process mentioned above is repeated but with an emphasis on using the most important features in the training phase. The important features are selected using RFE, a method that recursively removes the least significant features based on the model's performance until the optimal feature subset is identified. This targeted feature selection enhances the model's efficiency and accuracy by focusing on the most relevant data attributes.
+    </p>
+    <p>
+     To accurately assess the performance of the trained ML models, the dataset was carefully divided into separate training and testing subsets. For model training, we utilize 80% of the data, while the remaining 20% is used for model evaluation. To ensure reproducibility and robustness in the model evaluation process, a random seed is assigned as a deterministic factor that controls the pseudo-random division of the dataset. This ensures that the training and testing sets are consistently generated, allowing for reliable performance comparisons across different models and feature selection strategies.
+    </p>
+    <sec id="s3_4_1">
+     <label>
+      3.4.1
+     </label>
+     <title1>
+      Hyper-parameter Tuning
+     </title1>
+     <p>
+      Each chosen ML algorithm has its own set of hyper-parameters that control its learning behavior. We tuned the hyper-parameters of these models empirically to achieve better performance. In addition, we employ grid search or randomized search techniques to explore a predefined range of values for each hyper-parameter. To mitigate overfitting and ensure the model generalizes well to unseen data, we employ a cross-validation strategy.
+     </p>
+    </sec>
+    <sec id="s3_4_2">
+     <label>
+      3.4.2
+     </label>
+     <title1>
+      Feature Selection with Recursive Feature Elimination
+     </title1>
+     <p>
+      While we extract a comprehensive set of features, not all features may be equally important for accurate fault diagnosis. The RFE helps identify the most relevant features. We utilize LR as the base estimator for RFE. First, we train LR on the entire 29-feature set. Then the RFE iteratively removes the feature with the least contribution to the model's performance, as determined by the base estimator's feature importance scores. After that, we retrain the LR on the reduced feature set. Focusing on the most informative features can potentially lead to better classification accuracy and reduce the risk of over-fitting.
+     </p>
+     <p>
+      In addition, a smaller set of relevant features makes it easier to understand the model's decision-making process.
+     </p>
+    </sec>
+   </sec>
+   <sec id="s3_5">
+    <label>
+     3.5
+    </label>
+    <title1>
+     Evaluation Metrics
+    </title1>
+    <p>
+     We use a set of standard performance metrics to evaluate the classification effectiveness of the trained models. These metrics provide quantitative insights into the model's ability to accurately distinguish between normal and abnormal machine operations.
+    </p>
+    <p>
+     Accuracy measures the overall proportion of correct predictions made by the model, including both true positives and true negatives. The formula for accuracy is [
+     <xref ref-type="bibr" rid="ref-24">
+      24
+     </xref>
+     ]:
+    </p>
+    <table-wrap id="table-20">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-20.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          <disp-formula>
+           <alternatives>
+            <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-18.tif" />
+            <tex-math>
+             
+             <math>
+              <mi mathvariant="normal">
+               A
+              </mi>
+              <mi mathvariant="normal">
+               c
+              </mi>
+              <mi mathvariant="normal">
+               c
+              </mi>
+              <mi mathvariant="normal">
+               u
+              </mi>
+              <mi mathvariant="normal">
+               r
+              </mi>
+              <mi mathvariant="normal">
+               a
+              </mi>
+              <mi mathvariant="normal">
+               c
+              </mi>
+              <mi mathvariant="normal">
+               y
+              </mi>
+              <mo> = </mo>
+              <mfrac>
+               <mrow>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 F
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 F
+                </mi>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+              </mfrac>
+             </math>
+            </tex-math>
+           </alternatives>
+          </disp-formula>
+         </th>
+         <th>
+          (18)
+         </th>
+        </tr>
+       </thead>
+       <tbody />
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     where
+     <italic>
+      TP
+     </italic>
+     is True Positive,
+     <italic>
+      TN
+     </italic>
+     is True Negative,
+     <italic>
+      FP
+     </italic>
+     is False Positive, and
+     <italic>
+      FN
+     </italic>
+     is False Negative.
+    </p>
+    <p>
+     Precision assesses the accuracy of the positive predictions made by the model. The formula for precision is:
+    </p>
+    <table-wrap id="table-21">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-21.tif" />
+      <table>
+       <colgroup>
+        <col />
+        <col />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          <disp-formula>
+           <alternatives>
+            <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-19.tif" />
+            <tex-math>
+             
+             <math>
+              <mi mathvariant="normal">
+               P
+              </mi>
+              <mi mathvariant="normal">
+               r
+              </mi>
+              <mi mathvariant="normal">
+               e
+              </mi>
+              <mi mathvariant="normal">
+               c
+              </mi>
+              <mi mathvariant="normal">
+               i
+              </mi>
+              <mi mathvariant="normal">
+               s
+              </mi>
+              <mi mathvariant="normal">
+               i
+              </mi>
+              <mi mathvariant="normal">
+               o
+              </mi>
+              <mi mathvariant="normal">
+               n
+              </mi>
+              <mo> = </mo>
+              <mfrac>
+               <mrow>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 F
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+               </mrow>
+              </mfrac>
+             </math>
+            </tex-math>
+           </alternatives>
+          </disp-formula>
+         </th>
+         <th>
+          (19)
+         </th>
+        </tr>
+       </thead>
+       <tbody />
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     Recall measures the model's ability to detect all actual positives. The formula for the recall is:
+    </p>
+    <table-wrap id="table-22">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-22.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          <disp-formula>
+           <alternatives>
+            <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-20.tif" />
+            <tex-math>
+             
+             <math>
+              <mi mathvariant="normal">
+               R
+              </mi>
+              <mi mathvariant="normal">
+               e
+              </mi>
+              <mi mathvariant="normal">
+               c
+              </mi>
+              <mi mathvariant="normal">
+               a
+              </mi>
+              <mi mathvariant="normal">
+               l
+              </mi>
+              <mi mathvariant="normal">
+               l
+              </mi>
+              <mo> = </mo>
+              <mfrac>
+               <mrow>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 T
+                </mi>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 F
+                </mi>
+                <mi mathvariant="normal">
+                 N
+                </mi>
+               </mrow>
+              </mfrac>
+             </math>
+            </tex-math>
+           </alternatives>
+          </disp-formula>
+         </th>
+         <th>
+          (20)
+         </th>
+        </tr>
+       </thead>
+       <tbody />
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     The F1-score is the mean of precision and recall, providing a balance between the two. It is particularly useful when the class distribution is uneven. The formula for the F1-score is:
+    </p>
+    <table-wrap id="table-23">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-23.tif" />
+      <table>
+       <colgroup>
+        <col />
+        <col />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          <disp-formula>
+           <alternatives>
+            <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-eqn-21.tif" />
+            <tex-math>
+             
+             <math>
+              <mi mathvariant="normal">
+               F
+              </mi>
+              <mn>
+               1
+              </mn>
+              <mo>-</mo>
+              <mi mathvariant="normal">
+               s
+              </mi>
+              <mi mathvariant="normal">
+               c
+              </mi>
+              <mi mathvariant="normal">
+               o
+              </mi>
+              <mi mathvariant="normal">
+               r
+              </mi>
+              <mi mathvariant="normal">
+               e
+              </mi>
+              <mo> = </mo>
+              <mn>
+               2
+              </mn>
+              <mo>
+               ×
+              </mo>
+              <mfrac>
+               <mrow>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mi mathvariant="normal">
+                 r
+                </mi>
+                <mi mathvariant="normal">
+                 e
+                </mi>
+                <mi mathvariant="normal">
+                 c
+                </mi>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 s
+                </mi>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 o
+                </mi>
+                <mi mathvariant="normal">
+                 n
+                </mi>
+                <mo>
+                 ×
+                </mo>
+                <mi mathvariant="normal">
+                 R
+                </mi>
+                <mi mathvariant="normal">
+                 e
+                </mi>
+                <mi mathvariant="normal">
+                 c
+                </mi>
+                <mi mathvariant="normal">
+                 a
+                </mi>
+                <mi mathvariant="normal">
+                 l
+                </mi>
+                <mi mathvariant="normal">
+                 l
+                </mi>
+               </mrow>
+               <mrow>
+                <mi mathvariant="normal">
+                 P
+                </mi>
+                <mi mathvariant="normal">
+                 r
+                </mi>
+                <mi mathvariant="normal">
+                 e
+                </mi>
+                <mi mathvariant="normal">
+                 c
+                </mi>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 s
+                </mi>
+                <mi mathvariant="normal">
+                 i
+                </mi>
+                <mi mathvariant="normal">
+                 o
+                </mi>
+                <mi mathvariant="normal">
+                 n
+                </mi>
+                <mo> + </mo>
+                <mi mathvariant="normal">
+                 R
+                </mi>
+                <mi mathvariant="normal">
+                 e
+                </mi>
+                <mi mathvariant="normal">
+                 c
+                </mi>
+                <mi mathvariant="normal">
+                 a
+                </mi>
+                <mi mathvariant="normal">
+                 l
+                </mi>
+                <mi mathvariant="normal">
+                 l
+                </mi>
+               </mrow>
+              </mfrac>
+             </math>
+            </tex-math>
+           </alternatives>
+          </disp-formula>
+         </th>
+         <th>
+          (21)
+         </th>
+        </tr>
+       </thead>
+       <tbody />
+      </table>
+     </alternatives>
+    </table-wrap>
+   </sec>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title1>
+    Experimental Results Analysis
+   </title1>
+   <p>
+    In this section, we present the experimental results obtained from the machine fault diagnosis study using two distinct approaches: the proposed approach and the traditional approach to classifying instances of abnormal and normal machine operations based on extracted features.
+   </p>
+   <sec id="s4_1">
+    <label>
+     4.1
+    </label>
+    <title1>
+     Traditional Approach without XAI
+    </title1>
+    <p>
+     The traditional approach employs a set of predefined ML classifiers, including SVC, XGBoost, LR, and RF. Each classifier is trained on 29 features and evaluated independently, as shown in
+     <xref ref-type="table" rid="table-3">
+      Table 3
+     </xref>
+     . The SVC model achieved the highest recall at 100%, indicating its superior ability to identify all relevant cases. However, the RF model outperformed the others in terms of F1-, Precision, and Accuracy, with scores of 89.65% and  81.88%, and 82.04%, respectively, suggesting its overall effectiveness and balance in prediction accuracy and reliability among the evaluated models. The XGBoost and LR models showed competitive but slightly lower performance metrics in comparison.
+    </p>
+    <table-wrap id="table-24">
+     <label>
+      Table 3
+     </label>
+     <caption>
+      <title1>
+       Model Performance with the traditional approaches
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-24.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          Model
+         </th>
+         <th>
+          Recall
+         </th>
+         <th>
+          F1-core
+         </th>
+         <th>
+          Precision
+         </th>
+         <th>
+          Accuracy
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          XGBoost
+         </td>
+         <td>
+          97.32
+         </td>
+         <td>
+          88.54
+         </td>
+         <td>
+          80.00
+         </td>
+         <td>
+          80.63
+         </td>
+        </tr>
+        <tr>
+         <td>
+          SVC
+         </td>
+         <td>
+          100.00
+         </td>
+         <td>
+          88.12
+         </td>
+         <td>
+          78.02
+         </td>
+         <td>
+          79.93
+         </td>
+        </tr>
+        <tr>
+         <td>
+          LR
+         </td>
+         <td>
+          99.02
+         </td>
+         <td>
+          87.32
+         </td>
+         <td>
+          78.87
+         </td>
+         <td>
+          79.57
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RF
+         </td>
+         <td>
+          99.54
+         </td>
+         <td>
+          89.65
+         </td>
+         <td>
+          81.88
+         </td>
+         <td>
+          82.04
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+   </sec>
+   <sec id="s4_2">
+    <label>
+     4.2
+    </label>
+    <title1>
+     Proposed Approach with XAI
+    </title1>
+    <p>
+     As a base estimator, we use LR to determine the most important features contributing to the model. We utilize SHAP to show the distribution of SHAP values for each feature in the model. The features are listed on the y-axis, and the SHAP value distribution is shown on the x-axis. The color of the distribution indicates the impact of the feature on the model's output. Blue indicates a negative impact, and red indicates a positive impact. The force of the color indicates the magnitude of the impact shown in Figure 2.
+    </p>
+    <fig id="fig-2">
+     <label>
+      Figure 2
+     </label>
+     <caption>
+      <title1>
+       Visualization of the Impact of the Top Nine Features on a Logistic Regression Model using SHAP.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-2.jpg" />
+     <img src="TSP_CMC_54886-fig-2.jpg" />
+    </fig>
+    <p>
+     The features 'mean', 'skewness', 'wave_duration', and 'std_dev' all influence the model's predictions in different ways. The 'mean' has a positive effect, shown by its reddish color, but it's not as strong as the effect from 'num_waves'. The 'skewness' also has a positive effect but it's even weaker than the 'mean'. On the other hand, 'wave_duration' tends to lower the model's predictions, which is indicated by its blue color. The 'std_dev' also lowers predictions but not as much as 'wave_duration'. Some features do not impact the model's predictions much at all. These features show colors close to zero on the
+     <italic>
+      x
+     </italic>-axis, meaning they do not change the predictions much either way. The spread of colors for each feature tells us how consistently affected the model. The 'num_waves' has a narrow red spread, meaning it usually similarly increases predictions across different data points. The 'wave_duration' has a narrow blue spread, showing it consistently lowers predictions. However, 'mean' and 'skewness' have wider color spreads, meaning their effects on the predictions can vary a lot depending on the specific data point.
+    </p>
+    <p>
+     The proposed approach begins with feature selection using XAI in conjunction with LR. We iteratively select a varying number of the top nine contributing features and train LR models to evaluate their performance. The results of this experiment, summarized in
+     <xref ref-type="table" rid="table-4">
+      Table 4
+     </xref>
+     , demonstrate the accuracy of LR models trained with different numbers of selected features.
+    </p>
+    <table-wrap id="table-25">
+     <label>
+      Table 4
+     </label>
+     <caption>
+      <title1>
+       Accuracy based on number of selected features.
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-25.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          No of Features
+         </th>
+         <th>
+          3
+         </th>
+         <th>
+          4
+         </th>
+         <th>
+          5
+         </th>
+         <th>
+          6
+         </th>
+         <th>
+          7
+         </th>
+         <th>
+          8
+         </th>
+         <th>
+          9
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Model Accuracy
+         </td>
+         <td>
+          80.28
+         </td>
+         <td>
+          79.93
+         </td>
+         <td colspan="2">
+          80.28
+         </td>
+         <td colspan="3">
+          79.93
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <fig id="fig-3">
+     <label>
+      Figure 3
+     </label>
+     <caption>
+      <title1>
+       shows that adding more features usually improves an ML model's accuracy, but only up to a certain point. After this point, adding more features does not help and might even make the model less accurate. For this specific model, the graph indicates that the best performance happens when using six features. After adding more than six features, the accuracy drops. In addition, we utilize LIME to explain the prediction for a single instance of the model and consider all features that contribute to that prediction. Figure 4 shows how the features together contribute to the model's prediction for a particular instance. The instance is the result of the classification between abnormal and normal audio files. The model predicts with a 0.95 probability that the sound is abnormal. The feature influencing this classification the most is 'skewness_freq', with a value of 3.75. Similarly, the model predicts with a 0.05 probability that the sound is normal. The feature influencing this classification the most is 'kurt_freq', with a value of 4.17.
+      </title1>
+     </caption>
+     No Image
+    </fig>
+    <fig id="fig-3">
+     <label>
+      Figure 3
+     </label>
+     <caption>
+      <title1>
+       Accuracy curve of the model on a selected number of features.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-3.jpg" />
+     <img src="TSP_CMC_54886-fig-3.jpg" />
+    </fig>
+    <fig id="fig-4">
+     <label>
+      Figure 4
+     </label>
+     <caption>
+      <title1>
+       Visualization of the impact of the features on a single instance of the LR Model using LIME.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-4.jpg" />
+     <img src="TSP_CMC_54886-fig-4.jpg" />
+    </fig>
+    <p>
+     Following feature selection, we evaluate the performance of various ML algorithms, including XGBoost, SVC, GaussianNB, and RF.
+     <xref ref-type="table" rid="table-5">
+      Table 5
+     </xref>
+     shows the accuracy, F1 score, and confusion matrix for each model.
+    </p>
+    <table-wrap id="table-26">
+     <label>
+      Table 5
+     </label>
+     <caption>
+      <title1>
+       Model Performance on Selected Features.
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-26.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          Model
+         </th>
+         <th>
+          Recall
+         </th>
+         <th>
+          F1-</th>
+         <th>
+          Precision
+         </th>
+         <th>
+          Accuracy
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          XGBoost
+         </td>
+         <td>
+          81.33
+         </td>
+         <td>
+          79.24
+         </td>
+         <td>
+          81.72
+         </td>
+         <td>
+          81.33
+         </td>
+        </tr>
+        <tr>
+         <td>
+          SVC
+         </td>
+         <td>
+          71.47
+         </td>
+         <td>
+          59.94
+         </td>
+         <td>
+          79.64
+         </td>
+         <td>
+          71.47
+         </td>
+        </tr>
+        <tr>
+         <td>
+          GaussianNB
+         </td>
+         <td>
+          79.22
+         </td>
+         <td>
+          76.13
+         </td>
+         <td>
+          79.91
+         </td>
+         <td>
+          79.22
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RF
+         </td>
+         <td>
+          82.04
+         </td>
+         <td>
+          79.37
+         </td>
+         <td>
+          84.35
+         </td>
+         <td>
+          82.04
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     The XGBoost model exhibited the highest accuracy of 81.33% among all the algorithms tested. However, it is worth noting that the SVC model showed relatively lower accuracy compared to the other algorithms, achieving 71.48%. Overall, the proposed approach demonstrated competitive performance, particularly with the LR model and XGBoost classifier.
+    </p>
+    <p>
+     In the Receiver Operating Characteristic (ROC) curve, the x-axis represents the False Positive Rate (FPR), which is the proportion of negative instances incorrectly classified as positive. The y-axis represents the True Positive Rate (TPR), which is the proportion of positive instances correctly classified. A perfect classifier would classify all positive instances correctly (TPR = 1) and have no false positives (FPR = 0). This is represented by the top left corner of the graph. The diagonal line (dashed line in the image) represents a classifier with no discriminative power-it essentially guesses randomly. The area under the ROC curve (Area under the ROC Curve (AUC)) is a numerical measure of a classifier's performance. A larger AUC indicates better performance. In Figure 5, the RF classifier has the largest AUC (0.79) which means it has the best overall performance among the classifiers displayed.
+    </p>
+    <fig id="fig-5">
+     <label>
+      Figure 5
+     </label>
+     <caption>
+      <title1>
+       ROC curves of different classifiers.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-5.jpg" />
+     <img src="TSP_CMC_54886-fig-5.jpg" />
+    </fig>
+    <table-wrap id="table-27">
+     <label>
+      Table 6
+     </label>
+     <caption>
+      <title1>
+       Performance metrics of ML models trained with three feature selection techniques.
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-27.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          Model
+         </th>
+         <th>
+          Feature Selection
+         </th>
+         <th>
+          Precision (Class 0)
+         </th>
+         <th>
+          Recall (Class 0)
+         </th>
+         <th>
+          F1-score(Class 0)
+         </th>
+         <th>
+          Precision (Class 1)
+         </th>
+         <th>
+          Recall(Class 1)
+         </th>
+         <th>
+          F1-score(Class 1)
+         </th>
+         <th>
+          Accuracy
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td rowspan="3">
+          LR
+         </td>
+         <td>
+          PCA
+         </td>
+         <td>
+          0.93
+         </td>
+         <td rowspan="3">
+          0.32
+         </td>
+         <td rowspan="2">
+          0.47
+         </td>
+         <td rowspan="4">
+          0.78
+         </td>
+         <td rowspan="2">
+          0.99
+         </td>
+         <td rowspan="3">
+          0.87
+         </td>
+         <td>
+          0.80
+         </td>
+        </tr>
+        <tr>
+         <td>
+          LDA
+         </td>
+         <td>
+          0.90
+         </td>
+         <td rowspan="2">
+          0.79
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RFE
+         </td>
+         <td>
+          0.87
+         </td>
+         <td>
+          0.46
+         </td>
+         <td>
+          0.98
+         </td>
+        </tr>
+        <tr>
+         <td rowspan="3">
+          XGBoost
+         </td>
+         <td>
+          PCA
+         </td>
+         <td>
+          0.66
+         </td>
+         <td>
+          0.38
+         </td>
+         <td>
+          0.48
+         </td>
+         <td>
+          0.92
+         </td>
+         <td>
+          0.85
+         </td>
+         <td>
+          0.76
+         </td>
+        </tr>
+        <tr>
+         <td>
+          LDA
+         </td>
+         <td>
+          0.76
+         </td>
+         <td>
+          0.39
+         </td>
+         <td rowspan="2">
+          0.52
+         </td>
+         <td>
+          0.79
+         </td>
+         <td>
+          0.95
+         </td>
+         <td>
+          0.86
+         </td>
+         <td>
+          0.79
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RFE
+         </td>
+         <td>
+          0.64
+         </td>
+         <td>
+          0.44
+         </td>
+         <td>
+          0.80
+         </td>
+         <td>
+          0.90
+         </td>
+         <td>
+          0.85
+         </td>
+         <td>
+          0.77
+         </td>
+        </tr>
+        <tr>
+         <td rowspan="3">
+          SVC
+         </td>
+         <td>
+          PCA
+         </td>
+         <td rowspan="2">
+          1.00
+         </td>
+         <td>
+          0.30
+         </td>
+         <td rowspan="2">
+          0.47
+         </td>
+         <td rowspan="7">
+          0.78
+         </td>
+         <td rowspan="2">
+          1.00
+         </td>
+         <td rowspan="2">
+          0.88
+         </td>
+         <td rowspan="3">
+          0.80
+         </td>
+        </tr>
+        <tr>
+         <td>
+          LDA
+         </td>
+         <td>
+          0.32
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RFE
+         </td>
+         <td>
+          0.93
+         </td>
+         <td>
+          0.33
+         </td>
+         <td>
+          0.49
+         </td>
+         <td>
+          0.99
+         </td>
+         <td rowspan="2">
+          0.85
+         </td>
+        </tr>
+        <tr>
+         <td rowspan="3">
+          GaussianNB
+         </td>
+         <td>
+          PCA
+         </td>
+         <td>
+          0.68
+         </td>
+         <td>
+          0.34
+         </td>
+         <td>
+          0.46
+         </td>
+         <td>
+          0.94
+         </td>
+         <td>
+          0.76
+         </td>
+        </tr>
+        <tr>
+         <td>
+          LDA
+         </td>
+         <td rowspan="2">
+          0.76
+         </td>
+         <td>
+          0.32
+         </td>
+         <td>
+          0.45
+         </td>
+         <td rowspan="2">
+          0.96
+         </td>
+         <td rowspan="3">
+          0.86
+         </td>
+         <td>
+          0.77
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RFE
+         </td>
+         <td>
+          0.35
+         </td>
+         <td rowspan="3">
+          0.48
+         </td>
+         <td>
+          0.78
+         </td>
+        </tr>
+        <tr>
+         <td rowspan="3">
+          RF
+         </td>
+         <td>
+          PCA
+         </td>
+         <td>
+          0.80
+         </td>
+         <td>
+          0.33
+         </td>
+         <td>
+          0.97
+         </td>
+         <td>
+          0.79
+         </td>
+        </tr>
+        <tr>
+         <td>
+          LDA
+         </td>
+         <td colspan="3">
+          0.48
+         </td>
+         <td colspan="3" rowspan="2">
+          0.79
+         </td>
+         <td>
+          0.70
+         </td>
+        </tr>
+        <tr>
+         <td>
+          RFE
+         </td>
+         <td>
+          0.79
+         </td>
+         <td>
+          0.38
+         </td>
+         <td>
+          0.51
+         </td>
+         <td>
+          0.79
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     <xref ref-type="table" rid="table-6">
+      Table 6
+     </xref>
+     shows a summary of the performance metrics: precision, recall, and F1-score for different machine learning models trained with three feature selection techniques: PCA, LDA, and RFE.
+    </p>
+    <list list-type="unorder">
+     <list-item>
+      <p>
+       LR: Across all feature selection methods, LR consistently shows high precision and recall for class 1 (positive class), indicating robust classification performance.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       XGBoost: Generally, performs well with PCA and LDA, achieving balanced precision and recall metrics for both classes.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       SVC: Achieves perfect precision for class 0 with PCA and LDA, suggesting potential overfitting or high sensitivity to feature selection.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       GaussianNB: Shows balanced performance metrics across different feature selection methods, indicating robustness to varying feature subsets.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       RF: Demonstrates competitive performance, especially with RFE, which consistently improves recall for class 0 while maintaining high metrics for class 1.
+      </p>
+     </list-item>
+    </list>
+    <p>
+     While the current results highlight the impact of different feature selection techniques on model performance, integrating SHAP and LIME techniques could enhance model interpretability further. The SHAP and LIME provide insights into feature importance and local explanations, respectively, aiding in understanding model decisions and improving trustworthiness in practical applications.
+    </p>
+    <p>
+     In conclusion, leveraging advanced feature selection methods alongside SHAP and LIME techniques could lead to more interpretable and reliable ML models, facilitating informed decision-making in various domains.
+    </p>
+   </sec>
+   <sec id="s4_3">
+    <label>
+     4.3
+    </label>
+    <title1>
+     Comparative Analysis
+    </title1>
+    <p>
+     To provide a comprehensive comparison between the proposed and the traditional approaches, we evaluated the performance of the LR and XGBoost classifiers, which were common to both approaches. The LR model achieved an accuracy of 80.28% in the proposed approach, whereas the XGBoost classifier attained an accuracy of 80.63% in the traditional approach. Although the XGBoost classifier outperformed the LR model marginally, both approaches yielded comparable results, demonstrating the effectiveness of the LR model in feature selection. The proposed approach achieved an accuracy ranging from 71.47% to 82.04%, whereas the traditional approach achieved an accuracy ranging from 79.57% to 82.04%. The proposed approach demonstrates that selecting important features using XAI can achieve accuracy close to the traditional approach of selecting all features, which yields a lightweight model approach.
+    </p>
+    <table-wrap id="table-28">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-table-28.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-6.jpg" />
+          <img src="TSP_CMC_54886-fig-6.jpg" />
+          (a)
+         </th>
+         <th>
+          <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-7.jpg" />
+          <img src="TSP_CMC_54886-fig-7.jpg" />
+          (b)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-8.jpg" />
+          <img src="TSP_CMC_54886-fig-8.jpg" />
+          (c)
+         </td>
+         <td>
+          <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-9.jpg" />
+          <img src="TSP_CMC_54886-fig-9.jpg" />
+          (d)
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2">
+          <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-10.jpg" />
+          <img src="TSP_CMC_54886-fig-10.jpg" />
+          (e)
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <fig id="fig-6">
+     <label>
+      Figure 6
+     </label>
+     <caption>
+      <title1>
+       Confusion metric of (a) LR, (b) XGBoost, (c) SVC, (d) GaussianNB, and (e) RF.
+      </title1>
+     </caption>
+     No Image
+    </fig>
+    <p>
+     Building on the comparative analysis between the traditional approach and the proposed method, this section delves deeper into the performance metrics of the evaluated models. By analyzing the confusion matrices for each model (as shown in Figure 6), we can shed light on the reasons behind variations in accuracy, F1-score, precision, and recall.
+    </p>
+    <list list-type="unorder">
+     <list-item>
+      <p>
+       LR: While achieving a decent accuracy (0.796), the model struggles with false positives (56). This suggests the model might be overly sensitive and classify negative instances as positive.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       XGBoost: Similar to LR, XGBoost exhibits a high number of FP (49) despite acceptable accuracy (0.806). This indicates potential overfitting to the training data.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       SVM: Like the previous models, SVM has a high FP rate (57) with moderate accuracy (0.799). This suggests further optimization might be required to improve its ability to distinguish between positive and negative classes.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       GNB: The GNB model shows a balance between TP (29) and FP (53). However, its lower accuracy (0.771) compared to other models suggests room for improvement in overall classification performance.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       RF: The RF model demonstrates the best performance among the evaluated models with a high number of TP (32) and low FP (50). This translates to good accuracy (0.809) and balanced precision and recall.
+      </p>
+     </list-item>
+    </list>
+    <p>
+     The analysis of the metric variations is as follows
+    </p>
+    <list list-type="unorder">
+     <list-item>
+      <p>
+       Accuracy: While all models achieved moderate accuracy, RF emerged as the most accurate classifier. This suggests the effectiveness of the method (potentially used in RF) in achieving a better balance between TP and negatives.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       F1-score: The F1-score variations reflect the trade-off between precision and recall. RF again exhibits a superior F1-score (0.782), indicating a good balance between identifying true positives and avoiding FP.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       Precision: The high FP rates in LR, XGBoost, and SVM lead to lower precision compared to RF. This means these models classified many negative instances as positive, impacting the precision of their positive classifications.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       Recall: All models achieved acceptable recall, with RF having the highest (0.809). This indicates they were successful in identifying a good portion of the actual positive cases. However, models with high false positives might achieve high recall due to overclassifying negative instances as positive.
+      </p>
+     </list-item>
+    </list>
+    <p>
+     By analyzing the confusion matrices and performance metrics, we can see that the method, potentially implemented in the RF, offers a significant improvement in terms of reducing FP while maintaining good overall accuracy and balanced precision and recall. Further investigation into the specific techniques used in a method can be conducted to pinpoint the factors contributing to this superior performance.
+    </p>
+    <fig id="fig-6">
+     <label>
+      Figure 7
+     </label>
+     <caption>
+      <title1>
+       0 (blue) represents abnormal and 1 (green) represents normal
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_54886-fig-11.jpg" />
+     <img src="TSP_CMC_54886-fig-11.jpg" />
+    </fig>
+   </sec>
+   <sec id="s4_4">
+    <label>
+     4.4
+    </label>
+    <title1>
+     t-SNE Visualization of Test Data
+    </title1>
+    <p>
+     To gain deeper insights into the distribution and separability of the test data, we employed t-distributed Stochastic Neighbor Embedding (t-SNE), a powerful technique for visualizing high-dimensional data in a lower-dimensional space. The resultant t-SNE plot, as illustrated in Figure 7, demonstrates several noteworthy observations regarding the structure and class distribution of the dataset.
+    </p>
+    <p>
+     The t-SNE plot reveals the presence of distinct clusters within the data, indicating that t-SNE has effectively preserved the local and global structures during the dimensionality reduction process. These clusters suggest that the underlying features used in our model capture meaningful patterns and inherent groupings within the data. Notably, while some clusters exhibit clear boundaries, others display varying degrees of overlap, which may pose challenges for classification algorithms.
+    </p>
+    <p>
+     Data points in the t-SNE visualization are color-coded based on their respective classes, with class 0 represented in blue (abnormal) and class 1 in green (normal). This color-coding highlights several key aspects:
+    </p>
+    <list list-type="unorder">
+     <list-item>
+      <p>
+       Certain regions of the plot are dominated by a single class, suggesting that in these regions, the classifier can easily differentiate between the classes.
+      </p>
+     </list-item>
+     <list-item>
+      <p>
+       Conversely, there are areas with significant overlap between the two classes, indicating regions where the classifier may struggle to achieve high accuracy due to the similarity in feature space.
+      </p>
+     </list-item>
+    </list>
+    <p>
+     The t-SNE visualization serves as an intuitive tool for understanding the high-dimensional test data's structure and class separability. By reducing the dimensionality to two dimensions, t-SNE facilitates an accessible interpretation of the complex relationships between data points, aiding in diagnosing potential issues in both the data and the classification models. This visualization underscores the importance of feature selection and the potential need for more sophisticated models to address regions of class overlap.
+    </p>
+    <p>
+     The t-SNE plot provides valuable insights into the clustering tendencies and class distribution within the test dataset. This analysis is instrumental in understanding the strengths and limitations of the classification model, guiding further refinement of the feature selection and modeling strategies.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title1>
+    Conclusion
+   </title1>
+   <p>
+    The proposed study demonstrates the significant potential of integrating feature selection techniques with traditional ML methods, enhanced by XAI techniques such as SHAP and LIME, for machine fault diagnosis using audio sensor data. Our approach not only enhances diagnostic accuracy but also provides valuable insights into the decision-making processes of the models, thereby improving interpretability and trustworthiness. The utilization of audio sensor data for fault diagnosis presents a novel and complementary approach to traditional methods based on vibration or temperature data. However, the approach assumes high-quality input data with effective preprocessing and sufficient representative datasets for accurate model training. Limitations include potential challenges in environments with heavily contaminated audio data and the reliance on high-quality labeled data. The methodology is particularly suitable for industrial environments requiring continuous machinery monitoring and scenarios where understanding the model's decision-making process is critical. Moreover, the comparative analysis highlighted the trade-offs between different ML algorithms and the importance of selecting appropriate algorithms based on the specific features of the dataset.
+   </p>
+   <p>
+    In conclusion, the experimental results suggest that a systematic approach combining feature selection with ML algorithms can improve the accuracy and efficiency of machine fault diagnosis systems. Both the proposed and traditional approaches demonstrated effectiveness in machine fault diagnosis. Overall, while the traditional approach may provide slightly higher accuracy, the proposed approach provides a simpler and more interpretable solution, which could be advantageous in certain scenarios.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <p>
+    This research is funded by Woosong University Academic Research 2024.
+   </p>
+  </ack>
+  <fn-group>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Funding Statement
+     </bold>
+     This research is funded by Woosong University Academic Research 2024.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Author Contributions
+     </bold>
+     writing draft, visualization, coding, result analysis, visualization, supervisor, conceptual, review, fund acquisition.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     To validate the model, we used the following public dataset
+     <link>
+      https /  / zenodo.org / records / 4740355
+     </link>
+     ,
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Ethics Approval
+     </bold>
+     Not applicable
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+  </fn-group>
+  <ref-list content-type="authoryear">
+   <title1>
+    References
+   </title1>
+  </ref-list>
+ </back>
+</article>

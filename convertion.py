@@ -405,7 +405,7 @@ def table(table,doc,doc_filename,variables):
 
                 #Check where the equation are present in paragraph
                 if "<m:oMath" in xml:
-                    values,xml_text,math_count = eq_link.eq(root,xml_text,para,math_count)
+                    values,xml_text,math_count = eq_link.eq(root,xml_text,para,math_count,file_name,variables)
                 
                 #Iterate through the run object
                 for run in para.runs:
@@ -419,7 +419,7 @@ def table(table,doc,doc_filename,variables):
                     xml = para._element.xml    
                     #Check if the paragraph contains math equations
                     if '<m:oMath' in xml:
-                        values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count)
+                        values,xml_text,math_count = eq_link.run_eq(root,xml_text,para,run,values,math_count,file_name,variables)
                     
                     #Convert the run text into xml
                     xmlstr = str(run.element.xml) 

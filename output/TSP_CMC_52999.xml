@@ -1,0 +1,3446 @@
+<?xml version='1.0' encoding='utf-8'?>
+<article xmlns:ns0="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.0">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    CMC
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    CMC
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Computers, Materials &amp; Continua
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    1546-2226
+   </issn>
+   <issn pub-type="ppub">
+    1546-2218
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    52999
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604 / cmc.2024.052999
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+      Enhancing Network Design through Statistical Evaluation of MANET Routing Protocols 
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     Enhancing Network Design through Statistical Evaluation of MANET Routing Protocols
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     Enhancing Network Design through Statistical Evaluation of MANET Routing Protocols
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Alameri
+      </surname>
+      <given-names>
+       Ibrahim
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+     <email>
+      ib.alameri@jmu.edu.iq
+     </email>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Al-Hadhrami
+      </surname>
+      <given-names>
+       Tawfik
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-3">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Nazir
+      </surname>
+      <given-names>
+       Anjum
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-3">
+      3
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-4">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Yahya
+      </surname>
+      <given-names>
+       Abdulsamad Ebrahim
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-4">
+      4
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-5">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Gharbi
+      </surname>
+      <given-names>
+       Atef
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-5">
+      5
+     </xref>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      <sup>
+       1
+      </sup>
+     </label>
+     <institution>
+      Faculty of Medical Sciences  Jabir ibn Hayyan Medical University  Alkufa Qu  Najaf  54001
+     </institution>
+     <country>
+      Iraq
+     </country>
+    </aff>
+    <aff id="aff-2">
+     <label>
+      <sup>
+       2
+      </sup>
+     </label>
+     <institution>
+      Computer Science Department  School of Science and Technology  Nottingham Trent University  Nottingham  NG11 8NS
+     </institution>
+     <country>
+      UK
+     </country>
+    </aff>
+    <aff id="aff-3">
+     <label>
+      <sup>
+       3
+      </sup>
+     </label>
+     <institution>
+      Department of Computing  Faculty of Engineering Sciences  Technology (FEST) Hamdard University  Karachi  74600
+     </institution>
+     <country>
+      Pakistan
+     </country>
+    </aff>
+    <aff id="aff-4">
+     <label>
+      <sup>
+       4
+      </sup>
+     </label>
+     <institution>
+      Department of Information Technology  College of Computing and Information Technology  Northern Border University  Arar  91431
+     </institution>
+     <country>
+      Saudi Arabia
+     </country>
+    </aff>
+    <aff id="aff-5">
+     <label>
+      <sup>
+       5
+      </sup>
+     </label>
+     <institution>
+      Department of Information System  College of Computing and Information Technology  Northern Border University  Arar  91431
+     </institution>
+     <country>
+      Saudi Arabia
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <label> * </label>
+     <label>
+      Corresponding Author: Ibrahim Alameri. Email:
+     </label>
+     <email>
+      ib.alameri@jmu.edu.iq
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      22
+     </day>
+     <month>
+      4
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      27
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024.
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024 Alameri et al.
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     Alameri et al.
+    </copyright-holder>
+    <license ns0:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" ns0:href="TSP_CMC_52999.pdf" />
+   <abstract abstract-type="abstract">
+    <p>
+     This paper contributes a sophisticated statistical method for the assessment of performance in routing protocols salient Mobile Ad Hoc Network (MANET) routing protocols: Destination Sequenced Distance Vector (DSDV), Ad hoc On-Demand Distance Vector (AODV), Dynamic Source Routing (DSR), and Zone Routing Protocol (ZRP). In this paper, the evaluation will be carried out using complete sets of statistical tests such as Kruskal-Wallis, Mann-Whitney, and Friedman. It articulates a systematic evaluation of how the performance of the previous protocols varies with the number of nodes and the mobility patterns. The study is premised upon the Quality of Service (QoS) metrics of throughput, packet delivery ratio, and end-to-end delay to gain an adequate understanding of the operational efficiency of each protocol under different network scenarios. The findings explained significant differences in the performance of different routing protocols; as a result, decisions for the selection and optimization of routing protocols can be taken effectively according to different network requirements. This paper is a step forward in the general understanding of the routing dynamics of MANETs and contributes significantly to the strategic deployment of robust and efficient network infrastructures.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+      Routing Protocols 
+    </kwd>
+    <kwd>
+      statistical Approach 
+    </kwd>
+    <kwd>
+      Friedman 
+    </kwd>
+    <kwd>
+      MANET 
+    </kwd>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title1>
+    Introduction
+   </title1>
+   <p>
+    The utilization of wireless connectivity in the exchange of equipment information has revolutionized communication by eliminating the need for costly cable installations. Wireless networks, which can be categorized into infrastructure-based or infrastructure-less networks, offer distinct benefits but also present challenges Infrastructure networks, encompassing cellular networks and Wi-Fi Internet, rely on interconnected base stations or require internet access points. Conversely, infrastructure-less networks, such as MANET networks, provide versatile solutions for transient communication in various scenarios, including emergency response and military operations[
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ].
+   </p>
+   <p>
+    Despite their inherent advantages, both network categories confront distinct challenges. Infrastructure-based networks grapple with cost, scalability, privacy, and reliability issues, whereas infrastructure-less networks, such as MANET, navigate the complexities of security, network stability, and performance consistency.
+   </p>
+   <p>
+    The present situation highlights the requirements and limits of both network types. Based on the requirements, it will be capable of focusing on promoting the effectiveness and efficiency of wireless communication based on the discussion of the MANET networks, which have the capability of hopping communication. Henceforth, both networks are non-structured and would be designed to support a peer-to-peer distribution of computational resources. However, node mobility at MANET can bring up some network connectivity and stability issues, for which routing protocols have to navigate through the network topology [
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ], [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ].
+   </p>
+   <p>
+    Work in [
+    <xref ref-type="bibr" rid="ref-4">
+     4
+    </xref>
+    ]by Aakanksha Devrari et al. tackles the near-far effects problem in MANETs using Direct Sequence Spread Spectrum-Code Division Multiple Access (DSSS-CDMA) based systems implemented on Field-Programmable Gate Arrays (FPGAs). The DSSS-CDMA based model helps combat other related issues and improves even more consistency in the signal, which betters the network throughput. This paper demonstrates that aided with market tools such as Model Sim and Xilinx for simulation and synthesis operations, the system can handle simultaneous signals far more efficiently across the network. This technical solution will improve the reliability of the communication network in MANETs, and network scalability and efficiency could be interesting future research areas.
+   </p>
+   <p>
+    Bhupesh [
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ] performs a statistical evaluation of power-aware routing protocols for wireless networks, comparing their performance to aid researchers in choosing context-specific routing models. This empirical study focuses on enhancing network efficiency based on power consumption metrics.
+   </p>
+   <p>
+    The present study has stronger statistical analyses because of the use of tests such as Kruskal-Wallis, Mann-Whitney, and Friedman, among others. Such tests provide a robust measure for the protocols under various conditions, making the results more reliable, handling data variability, and increasing the practical significance of our results. Furthermore, our research places importance on Quality of Service (QoS), which is essential for dynamic network scenarios, such as disaster recovery or military operations. That aspect raises the practical network design enormously. The study by Singh [
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ] is more informational and, further, does not look into the QoS, which makes it of little use to scenarios where the quality of service is essential. The proposed paper, with its methodological density and emphasis on QoS, delivers a difference in performance, which is validated, and practical recommendations for network design, to ensure better service delivery in complex MANET environments.
+   </p>
+   <p>
+    In the work of [
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ], Performance Analysis of Routing Protocols in MANET, and performance comparison of different MANET routing protocols—DSDV, OLSR, AODV, AOMDV, and DSR—has been put forth by the simulations employing NS2. The focus is on assessing protocols across the metrics such as packet delivery ratio, delay, throughput, control overhead, and energy consumption. The study shows that reactive protocols, for example, AODV and DSR, behave better in high mobility; in other words, they will have lower control overhead and higher throughput, while proactive protocols like DSDV behave better at low mobility and traffic scenarios but with high energy and overhead costs.
+   </p>
+   <p>
+    While [
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ] makes a straightforward comparative analysis based on results derived from simulation, the proposed work is more valuable by having a statistical frame applied to confirm the reliability of the results and the significance of performance differences among the protocols. It may be a potential gap in the prior research itself, use of thoroughness fails to use advanced statistical techniques in validating its findings. The presented paper thus reaffirms or contradicts previous conclusions under different scenarios but strengthens the conclusion through statistically significant evidence in favor of network design and protocol selection based on network scenarios and requirements.
+   </p>
+   <p>
+    The need to address significant variances in the performance of routing protocols within MANETs under varying network conditions is the key point captured by the problem statement in the proposed work. Because the study is motivated by the challenges posed by node density and mobility, this has a significant impact on the effectiveness of routing protocols like DSDV, AODV, DSR, and ZRP. Consequently, this paper aims to develop a systematic, data-driven means of assessing these protocols to enhance network design and deployment strategies. This will be achieved by using advanced statistical tests, including Kruskal-Wallis, Mann-Whitney, and Friedman, to assess and compare the performance of the aforementioned protocols with respect to throughput, packet delivery ratio, and end-to-end delay as Quality of Service (QoS) metrics.
+   </p>
+   <p>
+    This study uses analysis to assess the performance of routing protocols in MANET networks and evaluates protocol performance supported by a comprehensive statistical framework using Network Simulator version 2 (NS-2) across node densities and routing protocols. Diving into the world of MANET routing protocols, this analysis pulls out all the stops with some slick ANOVA techniques, including the Kruskal Wallis and Mann-Whitney tests. Researching network protocols is a major challenge due to their mobility nature.
+   </p>
+   <p>
+    This paper evaluates several routing protocols on a rigorous basis of performance in a variety of network conditions, focusing on QoS metrics such as speed, reliability, and efficiency. It will explore how protocol effectiveness is affected by node density and mobility through the use of statistic analysis and programming as a means of identifying optimal strategies to enhance network performance in the context of mobile ad hoc networks. This thorough assessment aims to scrutinize routing protocols by analyzing their performance metrics within the non-parametric ANOVA framework. Using the Kruskal Wallis, Mann Whitney, and Friedman's tests, this study aims to identify the routing protocol through analysis, adding valuable insights to the field of wireless communication research.
+   </p>
+   <p>
+    The rest of the paper's content is organized into five sections.
+    <xref ref-type="sec" rid="s-1">
+     Section 3
+    </xref>
+    gives information on the conceptual overview of the routing protocols.
+    <xref ref-type="sec" rid="s-1">
+     Section 3
+    </xref>
+    briefly discusses the materials and methods of this study.
+    <xref ref-type="sec" rid="s-1">
+     Section 3
+    </xref>
+    describes the data collection methods of this paper. The Statistical Methodology approach is described in
+    <xref ref-type="sec" rid="s-1">
+     Section 3
+    </xref>
+    . The conclusion of this paper is presented in
+    <xref ref-type="sec" rid="s-1">
+     Section 3
+    </xref>
+    .
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title1>
+    Conceptual Overview
+   </title1>
+   <p>
+    MANETs are considered highly significant for creating modern network architectures due to their adaptability and flexibility [
+    <xref ref-type="bibr" rid="ref-8">
+     8
+    </xref>
+    ]. This paper analyzes the effectiveness and dependability of four existing MANET routing protocols: Ad-hoc On-Demand Distance Vector (AODV), Dynamic Source Routing (DSR), Destination-Sequenced Distance Vector (DSDV), and Zone Routing Protocol (ZRP) [
+    <xref ref-type="bibr" rid="ref-9">
+     9
+    </xref>
+    ] . Each protocol has specific benefits and challenges when used for dynamic and complex network topologies in order to provide data transmission and dependable connectivity [
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ], [
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ] .
+   </p>
+   <p>
+    AODV (Ad-hoc On-demand Distance Vector): AODV is also an on-demand routing protocol, meaning that it establishes a route only when needed [
+    <xref ref-type="bibr" rid="ref-12">
+     12
+    </xref>
+    ]. This minimizes the routing overhead, hence AODV is suitable for use by networks in which the topology changes very frequently. The protocol builds up communication routes on the fly. This provides for effective data delivery, where a system of route requests and route maintenance conserves network resources and quickly reacts to changes in the network [
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ], [
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ].
+   </p>
+   <p>
+    Dynamic Source Routing (DSR) source routing basically means that the data packets in this approach bear the whole routing information by themselves [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ]. This protocol is very adaptive to network changes and enjoys a caching mechanism that allows multiple routes to be stored within the intermediate nodes. The increase in the size of headers, though, with route information may affect the performance of the protocol adversely in low-bandwidth environments.
+   </p>
+   <p>
+    DSDV (Destination-Sequenced Distance Vector) is a proactive routing protocol in which every node maintains full routing tables and updates them periodically. DSDV uses sequence numbers in such a way that routing information is always fresh, and there are no routing loops. It always provides immediate route availability. However, this type of routing protocol may generate significant overhead when the network is very dynamic [
+    <xref ref-type="bibr" rid="ref-16">
+     16
+    </xref>
+    ], [
+    <xref ref-type="bibr" rid="ref-17">
+     17
+    </xref>
+    ]. Zone Routing Protocol (ZRP) combines the best features of proactive intra-zone routing maintenance and reactive inter-zone routing [
+    <xref ref-type="bibr" rid="ref-18">
+     18
+    </xref>
+    ], [
+    <xref ref-type="bibr" rid="ref-19">
+     19
+    </xref>
+    ]. This hybrid approach results in a reduction of the overhead and time required for route discovery, making ZRP adaptive for a wide range of network conditions, and particularly effective in networks broken down into zones [
+    <xref ref-type="bibr" rid="ref-20">
+     20
+    </xref>
+    ].
+   </p>
+   <p>
+    This paper introduces a novel way of carrying out statistical analysis on these protocols under a variety of network conditions using combined Kruskal-Wallis, Mann-Whitney, and Friedman tests for performance evaluation based on QoS metrics (throughput, packet delivery ratio, and end-to-end delay). The results of this test give a proper understanding of each operational strength and limitation of the protocols and an insight into the suitability of the protocols under various network scenarios.
+   </p>
+   <p>
+    The present paper, with enough comparative analysis at the theoretical level, supports the individual abilities of protocols and also aids in the conceptual understanding of their operational mechanisms within MANETs. The results are targeted to assist in the design and selection of an appropriate routing protocol tailor-made to the specific network requirements in light of the fact that adaptability and efficiency are most needed within the changing landscape of network technologies.
+   </p>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title1>
+    Materials and Methods
+   </title1>
+   <p>
+    This section explores the simulation configuration, data collection, and data analysis for MANET protocols in NS-2. NS-2 has been selected due to its being widely available open-source software. Similarly, NS2 has also adopted several MANET protocols, such as AODV, DSR, DSDV, and ZRP. However, the authors have implemented and configured the ZRP in NS2 because it is not installed by default. The most significant part of the simulator is written in the Object Tool Command Language (OTCL). OTCL is used to simulate a wireless network, so the MANET scenario includes routing protocol, traffic details, details of mobile nodes, output files represented in the network animator (NAM) and trace files, and topology layout made within OTCL. In the figure below, a network simulation is carried out according to NS-2. The Perl scripts are used to extract information from the trace files.
+   </p>
+   <p>
+    MATLAB is used to plot graphs. The result of the simulation process is conducted and analyzed within SPSS as it is a valuable statistical and powerful software application. The result of the simulation is conducted and analyzed. A trace file was created, which was used to evaluate the values of throughput, packet delivery ratio (PDR), normalized routing overhead (NRL), and end-to-end delay (E-2-E delay).
+   </p>
+   <sec id="s3_1">
+    <label>
+     3.1
+    </label>
+    <title1>
+     Simulation Implementation  Network Assumption
+    </title1>
+    <p>
+     The simulation process was critical in this study because it influenced the result of the experimental tests. To achieve this simulation, the current paper used 800 x 800 m as a coverage area; the Transportation protocol was (UDP). The packet size was 512 bytes, and the number of iterations for a parameter was 40 for every number of nodes. For each simulation scenario, 40 simulation iterations were performed. This repetitive exercise aims to reduce the statistical anomalies / discrepancies in the result. Therefore, 160 total rounds / iterations of the simulation are carried out during this investigation. The mobility of nodes affects the performance of a network drastically. The presented study used the Random Way Point (RWP) mobility model in this study. RWP is the most used movement pattern. The velocity (speed) of nodes also plays a crucial role. In this topology, all nodes can move up to (20 m / s) velocities. The network topology of the MANET, obtained from the NS-2 NAM, is shown in Figure 1. The number of nodes was various: 40, 60, 80, and 100 nodes.
+    </p>
+    <p>
+     Fig. (1) presents the network topology of the Network Animator (NAM) tool. This figure tableau brings to nodes densities and the ballet of mobility, underscoring their significant impact on network efficiency. Through detailed simulation and visual storytelling, this study aims to examine the protocols of MANET network behavior, shedding light on their adaptability and resilience in the face of change and their operation.
+    </p>
+    <p>
+     Figure 1, (top) 40 node instance topologies in environments with limited node densities show exactly how the routing protocols performed. When the distance between nodes increases, the effects of node mobility become more evident.
+    </p>
+    <p>
+     Figure 1, (bottom) is with a denser topology, having 100 nodes, to compare the scalability and efficiency of the protocols under more challenging and realistic conditions.
+    </p>
+    <p>
+     Both visualizations in Figure 1, show the routing protocol performance under dynamic scenarios, thus demonstrating that dynamism in MANETs requires adaptability and efficiency. Simulating network mobility through the Random Waypoint model with node speeds up to 20 m / s shows the performance drop that node mobility induces. This set of visual and numeric data gives the reader a good insight into protocol capabilities and limitations, contributing to the network design field.
+    </p>
+    <fig id="fig-1">
+     <label>
+      Figure 1
+     </label>
+     <caption>
+      <title1>
+       Network Topology of 40 Nodes (top) and Network Topology of 100 Nodes (bottom)
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-1.jpg" />
+     <img src="TSP_CMC_52999-fig-1.jpg" />
+    </fig>
+    <fig id="fig-2">
+     <label>
+      Figure 1
+     </label>
+     <caption>
+      <title1>
+       Network Topology of 40 Nodes (top) and Network Topology of 100 Nodes (bottom)
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-2.jpg" />
+     <img src="TSP_CMC_52999-fig-1.jpg" />
+    </fig>
+   </sec>
+   <sec id="s3_2">
+    <label>
+     3.2
+    </label>
+    <title1>
+     Evaluating the Efficacy of Routing Protocols
+    </title1>
+    <p>
+     Several software approaches, such as Perl language, were used in the data analysis to extract information from the trace file. Also, mathematical equations have been employed to calculate the metric performance. The paper evaluated and analyzed the output of AODV, DSR, DSDV, and ZRP with a variety number of nodes. The variety of node numbers in the MANET network affects the overall parameters and efficiency of a network.
+    </p>
+    <p>
+     Furthermore, as previously mentioned, the simulation was run 160 times with the number of nodes in each iteration changing. The simulation setup uses NS-2.35 and programming languages MATLAB, Perl, and OTCL. It runs 1 s in a 1000 m2 area, utilizing UDP for transport, CBR packets of 512 bytes, and routing protocols AODV, DSR, DSDV, and ZRP. Node configurations include 40, 60, 80, and 100 nodes with a Random Waypoint mobility model, omni-directional antennas, and a mobility speed of 20 m / s.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title1>
+    Data Collection Methods
+   </title1>
+   <p>
+    The study is based on two experimental environments which are conducted carefully in order to add informative insights to the current study. The two experiments shed light on Quality of Service (QoS) metrics. The purpose of conducting such experiments is to test various routing protocols handle efficiency and scalability, especially when there are changes in node densities.
+   </p>
+   <p>
+    The study concerns the set of factors that determine the performance of the network: from end-to-end delay to vital metrics in throughput--the rate at which data is transmitted and the packet delivery ratio (PDR) that can track the successful arrival of data packets.
+   </p>
+   <p>
+    This developed new approach aims to find the nuances of network performance and capabilities, which is a panoramic view of how networks can adapt themselves to increasing complexity and a higher density of nodes. This work integrates Quality of Service (QoS) metrics along with some statistical methods to prove the relationship of node density with network performance and how such elements work for the efficiency of the network.
+   </p>
+   <p>
+    Data for this study was collected from Network Simulator version 2 (NS-2) and the MANET network routing protocols. The routing protocols used in this study are AODV, DSR, DSDV, and ZRP, as previously stipulated. The data of such an investigation have been gathered following several network metrics, such as network throughput, normalized routing load (NRL), end-to-end delay (E-2-E delay), and packet delivery ratio.
+   </p>
+   <p>
+    <bold>
+     Network Throughput:
+    </bold>
+    As far as Network Throughput is concerned, every node throughput is traditionally defined as the time-averaged quantity of bits each node can transmit to its intended destination. The piling up of each node throughput throughout all nodes within a network forms the network's overall throughput in Eq (1), which is used for this purpose and is shown below.
+   </p>
+   <p>
+    <disp-formula>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-1.tif" />
+      <tex-math>
+       
+       <math>
+        <mtext>
+         Throughput
+        </mtext>
+        <mo> = </mo>
+        <mfrac>
+         <mrow>
+          <mtext>
+           Sum number of packets received
+          </mtext>
+         </mrow>
+         <mrow>
+          <mtext>
+           time
+          </mtext>
+         </mrow>
+        </mfrac>
+       </math>
+      </tex-math>
+     </alternatives>
+    </disp-formula>
+    (1)
+   </p>
+   <p>
+    <bold>
+     Packet Delivery Ratio (PDR):
+    </bold>
+    Comparing the total number of packets that the destination node has to the total amount of packets that the source node has sent, it is found that PDR is used to determine the transmission ratio's success and it is one of the quality of service (QoS) arguments. Here, PDR is utilized to calculate the results by Eq (2).
+   </p>
+   <p>
+    <disp-formula>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-2.tif" />
+      <tex-math>
+       
+       <math>
+        <mtext>
+         PDR
+        </mtext>
+        <mo> = </mo>
+        <mfrac>
+         <mrow>
+          <mtext>
+           Total Packets Received by Destination
+          </mtext>
+         </mrow>
+         <mrow>
+          <mtext>
+           Total packets sent by source
+          </mtext>
+         </mrow>
+        </mfrac>
+       </math>
+      </tex-math>
+     </alternatives>
+    </disp-formula>
+    (2)
+   </p>
+   <p>
+    <bold>
+     End-to-End Delay (E-2-E Delay):
+    </bold>
+    End-to-end delay (E-2-E delay) refers to the time required to transmit packets from the source to their destination through a series of nodes. Many elements could affect this delay such as congestion, overloaded networks, and the duration between network access points. E-2-E delay is viewed as a significant parameter for evaluating QoS. Eq (3), below, calculates it.
+   </p>
+   <p>
+    <disp-formula>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-3.tif" />
+      <tex-math>
+       
+       <math>
+        <msub>
+         <mrow>
+          <mi>
+           D
+          </mi>
+         </mrow>
+         <mrow>
+          <mtext>
+           avg
+          </mtext>
+         </mrow>
+        </msub>
+        <mo> = </mo>
+        <msub>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mtext>
+           r_avg
+          </mtext>
+         </mrow>
+        </msub>
+        <mo>
+         −
+        </mo>
+        <msub>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mtext>
+           S_avg
+          </mtext>
+         </mrow>
+        </msub>
+       </math>
+      </tex-math>
+     </alternatives>
+    </disp-formula>
+    (3)
+   </p>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title1>
+    Statistical Analysis and Comparative Discussion
+   </title1>
+   <p>
+    This section is pivotal and gives a comprehensive statistical analysis and comparatives in the discussion based on accuracy and an in-depth understanding of the performance of various routing protocols. Using advanced testing tools namely ANOVA, Kruskal-Wallis, and Friedman, this paper looks at how these protocols interact under a variety of conditions, therefore allowing the revelation of subtler details that might elude superficial analyses.
+   </p>
+   <p>
+    It goes with every measurement and analysis and heads for a better and more profound understanding of how this node density and dynamic changes in the network improve the quality and performance parameters. This section is more than a mere presentation of data. This section constitutes an exploratory journey into the world of networks, where we harmonize scientific rigor with in-depth analysis to provide insight that will contribute to and assist in shaping the future of the technology around networks.
+   </p>
+   <sec id="s5_1">
+    <label>
+     5.1
+    </label>
+    <title1>
+     Analysis of Variance ANOVA (Kruskal-Wallis test)
+    </title1>
+    <p>
+     Robust statistical analysis was performed so that our findings are pertinent, and the results have significance from a statistical point of view. We used the one-way Analysis of Variance (ANOVA) test to assess the significant difference in performance of all investigated protocols.
+    </p>
+    <p>
+     The study was subjected to statistical investigation in order to acquire sound results that are of statistical significance. Therefore, a one-way ANOVA test was carried out to test whether the differences in the performance of the protocols were significant. There are many methods to carry out statistical tests to analyze variance. However, The KRUSKAL-WALLIS test of the one-way ANOVA is the best method to analyze data obtained from the experimental works, and the data distribution is unknown. Regarding analyzing and understanding findings from multiple data groups, the non-parametric ANOVA test provides a powerful statistical decision. It breaks down the observations into various components and determines whether the results are substantial. In other words, it analyses the observations into multiple sources of heterogeneity and then computes a dispersion coefficient, revealing whether there are significant variations among the contributions.
+    </p>
+    <p>
+     In the same context, the Kruskal-Wallis test is efficient as it involves additional information other than the mediator. When there are two samples, the Kruskal-Wallis test is equivalent to the Mann-Whitney test.
+    </p>
+   </sec>
+   <sec id="s5_2">
+    <label>
+     5.2
+    </label>
+    <title1>
+     Hypothesis Validation
+    </title1>
+    <p>
+     To achieve accurate outcomes, the Kruskal-Wallis test must be applied to all conditions and valid. The conditions must be satisfied regarding measurements being independent and homoscedastic, and the data does not need to be generally distributed as mentioned in this test’s assumptions [
+     <xref ref-type="bibr" rid="ref-21">
+      21
+     </xref>
+     ], [
+     <xref ref-type="bibr" rid="ref-22">
+      22
+     </xref>
+     ].
+    </p>
+    <p>
+     Testing statistical hypotheses can be applied in various aspects of science, including economics, architecture, medical technology, chemistry, biology, and computer science, (for example MANET networks), to help prove a theory. For further investigation to ensure the results are robust, additional investigation has been conducted using the statistical hypothesis. The current project tries to address the question of whether the null hypothesis H0 is correct from a statistical point of view. It is rarely appropriate to contend that there is no alternative to the status quo unless a compelling counterexample is given. When the argument is accepted, the assertion is referred to as an alternative hypothesis and referred to as
+     <italic>
+      H1.
+     </italic>
+    </p>
+    <p>
+     When performing a statistical evaluation of a hypothesis, it is helpful first to accept or deny
+     <italic>
+      H0
+     </italic>
+     regarding the significant probability of the result. The standard distribution (Z) is carried out to test the proposed hypothesis and population distribution. The standard distribution (Z) has a known distribution, which is used to compare with the obtained results to make the correct statistical decision where, if the null hypothesis is true, the critical region (CR) is a subset of a set of values of test statistics whose probability is under the assumption of the validity of hypothesis so small that a random event that "a value of test statistics lies in a critical region" is supposed to be an impossible event. In the context of testing hypotheses, rejecting the null hypothesis indicates that the test results are significant when the p-value is less than 0.05. In contrast, if the p-value is higher than 0.05, the null hypothesis is not rejected.
+    </p>
+    <p>
+     Acceptance region (AR) is a set of test statistic values that don't lie in a critical region. Rejection point (RP)-partitions a critical region and an acceptance region. A significant level of the test is the probability of a critical region. The process of hypothesis testing:
+    </p>
+    <p>
+     noitemsep One concrete realization
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-4.tif" />
+       <tex-math>
+        
+        <math>
+         <mfenced separators="|">
+          <mrow>
+           <msub>
+            <mrow>
+             <mi>
+              x
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+           </msub>
+           <mo>
+            ,
+           </mo>
+           <msub>
+            <mrow>
+             <mi>
+              x
+             </mi>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msub>
+           <mo>
+            ,
+           </mo>
+           <mo>
+            …
+           </mo>
+           <mo>
+            ,
+           </mo>
+           <msub>
+            <mrow>
+             <mi>
+              x
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              n
+             </mi>
+            </mrow>
+           </msub>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     of a random sample is made.
+    </p>
+    <p>
+     noiitemsep the statistical test verifying the certain statistical
+     <italic>
+      H0
+     </italic>
+     with the relevant critical region is determined.
+    </p>
+    <p>
+     noiiitemsep the probability of significance level of the test is chosen, generally = 0.05. noivtemsep the value of test statistics is calculated.
+    </p>
+    <p>
+     novtemsep This paper determines whether the value of test statistics lies in the critical region (the acceptance region). By comparing the calculated value with the table Z value. When the value of the test statistics lies in the critical region, the hypothesis
+     <italic>
+      H0
+     </italic>
+     is rejected. When the value of the test statistics lies in the acceptance region, hypothesis
+     <italic>
+      H0
+     </italic>
+     isn't rejected.
+    </p>
+    <p>
+     The conditions must be satisfied with respect to measurements must be independent and homoscedastic.
+    </p>
+   </sec>
+   <sec id="s5_3">
+    <label>
+     5.3
+    </label>
+    <title1>
+     KRUSKAL-WALLIS ANOVA TEST
+    </title1>
+    <p>
+     The test under consideration serves as a non-parametric counterpart to the one-way analysis of variance, designed to evaluate the statistical equivalence of more than two distinct samples. Consider the scenario where we possess k independent random samples, each comprising
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-5.tif" />
+       <tex-math>
+        
+        <math>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          ,
+         </mo>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          ,
+         </mo>
+         <mo>
+          …
+         </mo>
+         <mo>
+          ,
+         </mo>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            k
+           </mi>
+          </mrow>
+         </msub>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     observations. These samples originate from populations characterized by continuous distribution functions
+     <italic>
+      Fi,
+     </italic>
+     where i spans from 1 to k.
+    </p>
+    <p>
+     The primary objective of this test is to examine the hypothesis asserting that all samples derive from a singular population, implying the uniformity of all distribution functions
+     <italic>
+      Fi
+     </italic>
+     for
+     <italic>
+      i
+     </italic>
+     ranging from 1 to k. Consequently, the null hypothesis is articulated as follows in Eq (4).
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-6.tif" />
+       <tex-math>
+        
+        <math>
+         <msub>
+          <mrow>
+           <mi>
+            H
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            0
+           </mn>
+          </mrow>
+         </msub>
+         <mo>
+          :
+         </mo>
+         <msub>
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </msub>
+         <mfenced separators="|">
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+         </mfenced>
+         <mo> = </mo>
+         <msub>
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msub>
+         <mfenced separators="|">
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+         </mfenced>
+         <mo> = </mo>
+         <mo>
+          ⋯
+         </mo>
+         <mo> = </mo>
+         <msub>
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            k
+           </mi>
+          </mrow>
+         </msub>
+         <mfenced separators="|">
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (4)
+    </p>
+    <p>
+     The alternative hypothesis
+     <italic>
+      H
+     </italic>
+     <italic>
+      1
+     </italic>
+     <italic>
+      is
+     </italic>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-7.tif" />
+       <tex-math>
+        
+        <math>
+         <msub>
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            i
+           </mi>
+           <mfenced separators="|">
+            <mrow>
+             <mi>
+              x
+             </mi>
+            </mrow>
+           </mfenced>
+          </mrow>
+         </msub>
+         <mo>
+          ≠
+         </mo>
+         <msub>
+          <mrow>
+           <mi>
+            F
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            j
+           </mi>
+          </mrow>
+         </msub>
+         <mfenced separators="|">
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     at least for one pair of indexes
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-8.tif" />
+       <tex-math>
+        
+        <math>
+         <mi>
+          i
+         </mi>
+         <mo>
+          ≠
+         </mo>
+         <mi>
+          j
+         </mi>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     <italic>
+      .
+     </italic>
+     The test criterion is the random variable as shown in Eq (5) below.
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-9.tif" />
+       <tex-math>
+        
+        <math>
+         <mi>
+          Q
+         </mi>
+         <mo> = </mo>
+         <mfrac>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+          <mrow>
+           <mn>
+            12
+           </mn>
+           <mfenced separators="|">
+            <mrow>
+             <mi>
+              n
+             </mi>
+             <mfenced separators="|">
+              <mrow>
+               <mi>
+                n
+               </mi>
+               <mo> + </mo>
+               <mn>
+                1
+               </mn>
+              </mrow>
+             </mfenced>
+            </mrow>
+           </mfenced>
+          </mrow>
+         </mfrac>
+         <mrow>
+          <msubsup>
+           <mo stretchy="false">
+            ∑
+           </mo>
+           <mrow>
+            <mi>
+             i
+            </mi>
+            <mo> = </mo>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             k
+            </mi>
+           </mrow>
+          </msubsup>
+          <mrow />
+         </mrow>
+         <mfenced separators="|">
+          <mrow>
+           <mfrac>
+            <mrow>
+             <msubsup>
+              <mrow>
+               <mi>
+                R
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                i
+               </mi>
+              </mrow>
+              <mrow>
+               <mn>
+                2
+               </mn>
+              </mrow>
+             </msubsup>
+            </mrow>
+            <mrow>
+             <msub>
+              <mrow>
+               <mi>
+                n
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                i
+               </mi>
+              </mrow>
+             </msub>
+            </mrow>
+           </mfrac>
+          </mrow>
+         </mfenced>
+         <mo>
+          −
+         </mo>
+         <mn>
+          3
+         </mn>
+         <mfenced separators="|">
+          <mrow>
+           <mi>
+            n
+           </mi>
+           <mo> + </mo>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (5)
+    </p>
+    <p>
+     where k is the number of observations for a variable,
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-10.tif" />
+       <tex-math>
+        
+        <math>
+         <mi>
+          n
+         </mi>
+         <mo> = </mo>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </msub>
+         <mo> + </mo>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msub>
+         <mo> + </mo>
+         <mo>
+          …
+         </mo>
+         <mo> + </mo>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            k
+           </mi>
+          </mrow>
+         </msub>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     is the total sample range,
+     <italic>
+      n
+     </italic>
+     <italic>
+      i
+     </italic>
+     is the number of observations in the
+     <italic>
+      i-th
+     </italic>
+     sample, and Ri is the sum of the orders of elements from the
+     <italic>
+      i-th
+     </italic>
+     sample.
+    </p>
+    <p>
+     Assuming the hypothesis
+     <italic>
+      H
+     </italic>
+     <italic>
+      0
+     </italic>
+     is valid, so random variable
+     <italic>
+      Q
+     </italic>
+     has asymptotically (for
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-11.tif" />
+       <tex-math>
+        
+        <math>
+         <msub>
+          <mrow>
+           <mi>
+            n
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            i
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          →
+         </mo>
+         <mi>
+          ∞
+         </mi>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     )
+     <italic>
+      kh2
+     </italic>
+     probability distribution with
+     <italic>
+      k-1
+     </italic>
+     degrees of freedom. The critical region calculated using equation 6:
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-12.tif" />
+       <tex-math>
+        
+        <math>
+         <mi>
+          W
+         </mi>
+         <mo> = </mo>
+         <mfenced close="}" open="{" separators="|">
+          <mrow>
+           <mi>
+            Q
+           </mi>
+           <mo>
+            ;
+           </mo>
+           <mi>
+            Q
+           </mi>
+           <mo />
+           <msubsup>
+            <mrow>
+             <mi>
+              χ
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              α
+             </mi>
+             <mo>
+              ,
+             </mo>
+             <mi>
+              k
+             </mi>
+             <mo>
+              −
+             </mo>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msubsup>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (6)
+    </p>
+    <p>
+     For a small number of factor levels and a small number of observations at individual variable levels
+     <italic>
+      (k &lt; = 3 and ni &lt; = 5),
+     </italic>
+     the
+     <italic>
+      kh
+     </italic>
+     <sup>
+      2
+     </sup>
+     probability distribution approximation is not appropriate. In this case, it is possible to use special tables constructed by Kruskal and Wallis.
+    </p>
+    <p>
+     Practical test application: All n values from the k-independent samples are rank-ordered from the lowest (rank 1) to the highest. The sum of the ranks in the
+     <italic>
+      j-th
+     </italic>
+     group (
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-13.tif" />
+       <tex-math>
+        
+        <math>
+         <mi>
+          j
+         </mi>
+         <mo> = </mo>
+         <mn>
+          1
+         </mn>
+         <mo>
+          ,
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mo>
+          ,
+         </mo>
+         <mo>
+          …
+         </mo>
+         <mo>
+          ,
+         </mo>
+         <mi>
+          k
+         </mi>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     ) is marked
+     <italic>
+      Rj
+     </italic>
+     as shown in Equations 7 and 8 as follows.
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-14.tif" />
+       <tex-math>
+        
+        <math>
+         <mtext>
+          Checking:
+         </mtext>
+         <msub>
+          <mrow>
+           <mi>
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </msub>
+         <mo> + </mo>
+         <msub>
+          <mrow>
+           <mi>
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msub>
+         <mo> + </mo>
+         <mo>
+          ⋯
+         </mo>
+         <mo> + </mo>
+         <msub>
+          <mrow>
+           <mi>
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            k
+           </mi>
+          </mrow>
+         </msub>
+         <mo> = </mo>
+         <mfrac>
+          <mrow>
+           <mi>
+            n
+           </mi>
+           <mfenced separators="|">
+            <mrow>
+             <mi>
+              n
+             </mi>
+             <mo> + </mo>
+             <mn>
+              1
+             </mn>
+            </mrow>
+           </mfenced>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </mfrac>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (7)
+    </p>
+    <p>
+     <disp-formula>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-15.tif" />
+       <tex-math>
+        
+        <math>
+         <mi>
+          Q
+         </mi>
+         <mo> = </mo>
+         <mfrac>
+          <mrow>
+           <mn>
+            1
+           </mn>
+          </mrow>
+          <mrow>
+           <mn>
+            12
+           </mn>
+           <mfenced separators="|">
+            <mrow>
+             <mi>
+              n
+             </mi>
+             <mfenced separators="|">
+              <mrow>
+               <mi>
+                n
+               </mi>
+               <mo> + </mo>
+               <mn>
+                1
+               </mn>
+              </mrow>
+             </mfenced>
+            </mrow>
+           </mfenced>
+          </mrow>
+         </mfrac>
+         <mrow>
+          <msubsup>
+           <mo stretchy="false">
+            ∑
+           </mo>
+           <mrow>
+            <mi>
+             i
+            </mi>
+            <mo> = </mo>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             k
+            </mi>
+           </mrow>
+          </msubsup>
+          <mrow />
+         </mrow>
+         <mfenced separators="|">
+          <mrow>
+           <mfrac>
+            <mrow>
+             <msubsup>
+              <mrow>
+               <mi>
+                R
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                i
+               </mi>
+              </mrow>
+              <mrow>
+               <mn>
+                2
+               </mn>
+              </mrow>
+             </msubsup>
+            </mrow>
+            <mrow>
+             <msub>
+              <mrow>
+               <mi>
+                n
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                i
+               </mi>
+              </mrow>
+             </msub>
+            </mrow>
+           </mfrac>
+          </mrow>
+         </mfenced>
+         <mo>
+          −
+         </mo>
+         <mn>
+          3
+         </mn>
+         <mfenced separators="|">
+          <mrow>
+           <mi>
+            n
+           </mi>
+           <mo> + </mo>
+           <mn>
+            1
+           </mn>
+          </mrow>
+         </mfenced>
+        </math>
+       </tex-math>
+      </alternatives>
+     </disp-formula>
+     (8)
+    </p>
+    <p>
+     When hypothesis H0 is rejected, it is necessary to find out which sample differs significantly from another, which causes the hypothesis to be rejected. Statistical analysis was executed employing SPSS software (version 25) for this issue.
+    </p>
+   </sec>
+   <sec id="s5_4">
+    <label>
+     5.4
+    </label>
+    <title1>
+     Throughput parameters
+    </title1>
+    <p>
+     The throughput could be defined as the total data received during the simulation time. Kruskal-Wallis test one-way ANOVA, revealed that the statistical results indicated that the current work rejects the null hypothesis., where the P &lt; 0.05 was considered significantly important as shown in
+     <xref ref-type="table" rid="table-1">
+      Table 1
+     </xref>
+     , consequently there are meaningful differences in terms of throughput efficiency (Asymp.Sig &gt; 0.05). The throughput analysis via a one-way Analysis of Variance (ANOVA) test offers profound insights into the efficacy of four distinct routing protocols: AODV, DSR, DSDV, and ZRP. An evaluation encompassing 160 observations for each protocol, resulting in a total dataset of 640 observations, determined that AODV surpasses its counterparts by achieving the highest mean throughput of 526.96. This superiority in performance, indicative of AODV's enhanced efficiency in network packet delivery, may be attributed to its dynamic approach to route establishment, which significantly improves path selection and reduces latency. Conversely, DSR demonstrates a moderate mean throughput of 324.92, situating it between AODV's superior performance and the lesser throughput achieved by DSDV and ZRP. The use of source routing in DSR, which necessitates the inclusion of the route within the packet header, potentially offers flexibility in routing and benefits from caching. However, this comes at the cost of an overhead that may adversely affect throughput.
+    </p>
+    <table-wrap id="table-1">
+     <label>
+      Table 1
+     </label>
+     <caption>
+      <title1>
+       ANOVA of Throughput
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-1.tif" />
+      <table>
+       <colgroup>
+        <col />
+        <col />
+        <col />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          Routing_Protocols
+         </th>
+         <th>
+          N
+         </th>
+         <th>
+          Mean Values
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          AODV
+         </td>
+         <td rowspan="4">
+          160
+         </td>
+         <td>
+          526.96
+         </td>
+        </tr>
+        <tr>
+         <td>
+          DSR
+         </td>
+         <td>
+          324.92
+         </td>
+        </tr>
+        <tr>
+         <td>
+          DSDV
+         </td>
+         <td>
+          218.90
+         </td>
+        </tr>
+        <tr>
+         <td>
+          ZRP
+         </td>
+         <td>
+          211.22
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Total
+         </td>
+         <td>
+          640
+         </td>
+         <td />
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     Furthermore, DSDV and ZRP exhibit comparatively lower mean throughputs of 218.90 and 211.22, respectively. The performance shortfall in DSDV can be ascribed to delays caused by periodic updates, a characteristic of table-driven routing protocols. In the case of ZRP, its endeavor to merge proactive and reactive routing strategies appears to compromise its throughput, possibly due to the inefficiencies of its hybrid mechanism or the impact of the chosen zone radius size. The rationale behind employing the one way ANOVA test is to verify the statistical significance of the variances observed in the mean throughput across the routing protocols.
+    </p>
+    <p>
+     A significant F-statistic resulting from the ANOVA and a p-value falling below the established threshold of significance would validate the hypothesis that the throughput performance of at least one protocol markedly differs from the rest. This finding is of paramount importance to network designers and researchers, as it informs the protocol selection process, considering the specific throughput requirements for diverse network scenarios and applications.
+    </p>
+    <p>
+     This thorough analysis accentuates the importance of choosing the appropriate protocol to optimize network throughput. While AODV is optimal for high-throughput scenarios, DSR offers a balanced alternative. Despite their lower throughput metrics, DSDV and ZRP remain viable options in contexts where scalability and network stability are prioritized over outright performance. Additional investigations, particularly posthoc analyses after the ANOVA, promise to provide a more granular comparative analysis of the protocols, elucidating their strengths and weaknesses.
+    </p>
+    <p>
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     summarizes the results from a Kruskal-Wallis H test, a non-parametric version of ANOVA, used to compare the throughput across four different routing protocols. The Kruskal-Wallis H statistic is 303.846, with 3 degrees of freedom (df), indicating the number of groups minus one. The asymptotic significance (Asymp. Sig.) value is 0.000, typically interpreted as p &lt; 0.001. This extremely low p-value suggests significant differences in throughput among the four routing protocols. In simpler terms, the test shows that not all routing protocols perform the same throughput, with the differences being statistically significant.
+    </p>
+    <table-wrap id="table-2">
+     <label>
+      Table 2
+     </label>
+     <caption>
+      <title1>
+       Kruskal-Wallis Test Results
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-2.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          Variable
+         </th>
+         <th>
+          Values
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Kruskal-Wallis H
+         </td>
+         <td>
+          303.846
+         </td>
+        </tr>
+        <tr>
+         <td>
+          df
+         </td>
+         <td>
+          3
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Asymp. Sig.
+         </td>
+         <td>
+          0.000
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     In this analysis, the Asymptotic Significance (Asymp. Sig.) value of 0.000 at the 5% significance level holds substantial importance. According to the Kruskal-Wallis test, a p-value less than or equal to the named significance level necessitates the rejection of the null hypothesis. This implies that the medians of the groups under consideration are not identical. The observed variance is significant and cannot be disregarded at this level of importance, underscored by an Asymp. Sig. Value of 0.000.
+    </p>
+    <p>
+     Consequently, further analysis was conducted through Non-parametric test, specifically the Mann-Whitney test, to discern which specific types of protocols exhibit this notable variance. The outcomes of this subsequent examination, detailed in
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     , elucidate the significant differences in performance between the AODV and DSR routing protocols. This stepwise approach, beginning with the Kruskal-Wallis test and progressing to the Mann-Whitney test, allows for precise identification of variations in protocol performance, thereby providing a comprehensive understanding of their comparative efficacy. This result led us to conclude which type of protocols had this significant value by using the Non-parametric Tests-Mann-Whitney t-test, as shown in
+     <xref ref-type="table" rid="table-3">
+      Table 3
+     </xref>
+     between the AODV and DSR routing protocols.
+    </p>
+    <sec id="s5_4_1">
+     <label>
+      5.4.1
+     </label>
+     <title1>
+      Mann-Whitney Test of AODV  DSR Throughput Term
+     </title1>
+     <p>
+      The Mann-Whitney test, alternatively recognized as the Wilcoxon Rank Sum Test, constitutes a non-parametric statistical methodology designed to compare two independent samples or groups. This test evaluates the likelihood that the two groups under consideration originate from the same distribution. It probes the hypothesis concerning the similarity in distribution shapes of the two populations, focusing on the variable of interest. The core inquiry facilitated by the Mann-Whitney test revolves around determining whether the observed groups derive from populations exhibiting distinct characteristics regarding the variable under scrutiny.
+      <xref ref-type="table" rid="table-3">
+       Table 3
+      </xref>
+      shows the statistics test results.
+     </p>
+     <p>
+      <xref ref-type="table" rid="table-3">
+       Table 3
+      </xref>
+      presents the outcomes of the Mann-Whitney test, offering a statistical comparison between two groups. The results are as follows: the Mann-Whitney value stands at 3599.000, the Wilcoxon W at 16479.000, and the Z-score at-11.127, with an Asymptotic Significance (Asymp. Sig.) of 0.000 on a two-tailed test. This Asymp. Sig. value, being less than 0.05, signifies that the findings are statistically significant at the 5% significance level. Consequently, this leads to the rejection of the null hypothesis, suggesting a notable difference between the groups under comparison.
+     </p>
+     <table-wrap id="table-3">
+      <label>
+       Table 3
+      </label>
+      <caption>
+       <title1>
+        Mann-Whitney of AODV  DSR Throughput Term
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-3.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Variable
+          </th>
+          <th>
+           Values
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Mann-Whitney
+          </td>
+          <td>
+           3599.000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Wilcoxon W
+          </td>
+          <td>
+           16479.000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Z
+          </td>
+          <td>-11.127
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Asymp. Sig. (2-tailed)
+          </td>
+          <td>
+           0.000
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      Conversely,
+      <xref ref-type="table" rid="table-4">
+       Table 4
+      </xref>
+      details the Mann-Whitney test results for the DSDV and ZRP protocols. The values reported are as follows: Mann-Whitney at 11622.500, Wilcoxon W at 24502.500, and Z-score at-1.423, with an Asymp. Sig. (2-tailed) of 0.155. The Asymp. Sig. value exceeding 0.05 indicates that there is no statistically significant difference between the DSDV and ZRP protocols, thereby not warranting the rejection of the null hypothesis in this instance.
+     </p>
+     <table-wrap id="table-4">
+      <label>
+       Table 4
+      </label>
+      <caption>
+       <title1>
+        Statistical Analysis of DSDV vs. ZRP Routing Protocols
+       </title1>
+      </caption>
+      <p>
+       Values
+      </p>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-4.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Mann-Whitney
+          </th>
+          <th>
+           11622.500
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Wilcoxon W
+          </td>
+          <td>
+           24502.500
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Z
+          </td>
+          <td>-1.423
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Asymp. Sig. (2-tailed)
+          </td>
+          <td>
+           0.155
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+    <sec id="s5_4_2">
+     <label>
+      5.4.2
+     </label>
+     <title1>
+      Evaluation of Throughput Variability in Routing Protocols
+     </title1>
+     <p>
+      Further analysis showed the standard deviation (SD) and the results are correct.
+      <xref ref-type="table" rid="table-5">
+       Table 5
+      </xref>
+      states the summary statistics for the standard deviation study of throughput for routing protocols--the suggested work calculated the cumulated standard deviation throughput for all four routing protocols testbeds. Standard deviation measures the amount of deviation from the Mean. The outcome of the standard deviation analysis is shown in
+      <xref ref-type="table" rid="table-5">
+       Table 5
+      </xref>
+      , below, and the experiment results were accurate.
+     </p>
+     <table-wrap id="table-5">
+      <label>
+       Table 5
+      </label>
+      <caption>
+       <title1>
+        Descriptive Statistics of Throughput Across Routing Protocols
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-5.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th />
+          <th>
+           N
+          </th>
+          <th>
+           Mean
+          </th>
+          <th>
+           Std.Deviation
+          </th>
+          <th>
+           Minimum
+          </th>
+          <th>
+           Maximum
+          </th>
+          <th>
+           Percentiles 25th
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Values
+          </td>
+          <td>
+           640
+          </td>
+          <td>
+           57.4562
+          </td>
+          <td>
+           29.80216
+          </td>
+          <td>
+           .00
+          </td>
+          <td>
+           92.71
+          </td>
+          <td>
+           36.1725
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Routing_Protocols
+          </td>
+          <td>
+           4
+          </td>
+          <td>
+           2.50
+          </td>
+          <td>
+           1.119
+          </td>
+          <td>
+           1
+          </td>
+          <td>
+           4
+          </td>
+          <td>
+           1.25
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      The PDR metric is greatly influenced by throughput. The results obtained from the ANOVA hypothesis analysis of the four routing protocols are summarized in
+      <xref ref-type="table" rid="table-6">
+       Table 6
+      </xref>
+      . The result proved the evidence to refute the null hypothesis.
+      <xref ref-type="table" rid="table-6">
+       Table 6
+      </xref>
+      , below, presents the vital difference in the PDR term.
+      <xref ref-type="table" rid="table-6">
+       Table 6
+      </xref>
+      presents the Kruskal-Wallis test one-way ANOVA to show the Sig value.
+     </p>
+     <table-wrap id="table-6">
+      <label>
+       Table 6
+      </label>
+      <caption>
+       <title1>
+        PDR Analysis Across Routing Protocols
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-6.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Groups
+          </th>
+          <th>
+           Count
+          </th>
+          <th>
+           Sum
+          </th>
+          <th>
+           Average
+          </th>
+          <th>
+           Variance
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           AODV
+          </td>
+          <td rowspan="4">
+           160
+          </td>
+          <td>
+           15652.25
+          </td>
+          <td>
+           97.82656
+          </td>
+          <td>
+           13.43278
+          </td>
+         </tr>
+         <tr>
+          <td>
+           DSR
+          </td>
+          <td>
+           12240.17
+          </td>
+          <td>
+           76.50106
+          </td>
+          <td>
+           1153.062
+          </td>
+         </tr>
+         <tr>
+          <td>
+           DSDV
+          </td>
+          <td>
+           8822.35
+          </td>
+          <td>
+           55.13969
+          </td>
+          <td>
+           342.9519
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ZRP
+          </td>
+          <td>
+           7586.34
+          </td>
+          <td>
+           47.41463
+          </td>
+          <td>
+           1378.52
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      This method stands as a reliable alternative to the conventional one-way Analysis of Variance (ANOVA), adept at handling data that doesn't fit the normal distribution assumptions required by ANOVA. This analytical approach is employed to rigorously assess the statistical significance of variance across multiple groups. The values presented in
+      <xref ref-type="table" rid="table-7">
+       Table 7
+      </xref>
+      include a Kruskal-Wallis H statistic of 260.416 with degrees of freedom (df) set at 3, alongside an Asymptotic Significance (Asymp. Sig.) of 0.000. This result unambiguously indicates a statistically significant difference among the groups under examination, substantiating the hypothesis that not all group medians are equivalent. The negligible Asymp. Sig. Value, effectively zero, underscores the high degree of confidence in these findings, reinforcing the pivotal role of the Kruskal-Wallis Test in identifying and validating significant variances within the data as shown in
+      <xref ref-type="table" rid="table-7">
+       Table 7
+      </xref>
+      .
+     </p>
+     <table-wrap id="table-7">
+      <label>
+       Table 7
+      </label>
+      <caption>
+       <title1>
+        Kruskal-Wallis Test Results for Routing Protocols
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-7.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th />
+          <th>
+           Values
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Kruskal-Wallis H
+          </td>
+          <td>
+           260.416
+          </td>
+         </tr>
+         <tr>
+          <td>
+           df
+          </td>
+          <td>
+           3
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Asymp. Sig.
+          </td>
+          <td>
+           0.000
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      <xref ref-type="table" rid="table-8">
+       Table 8
+      </xref>
+      confirms significant findings at the 0.05 level, indicating a departure from the null hypothesis due to Asymp. Sig. being less than 0.05. Employing the Mann-Whitney test, significant differences between AODV and DSDV routing protocols were identified, reinforcing the rejection of the null hypothesis, as detailed in
+      <xref ref-type="table" rid="table-8">
+       Table 8
+      </xref>
+      below.
+     </p>
+     <table-wrap id="table-8">
+      <label>
+       Table 8
+      </label>
+      <caption>
+       <title1>
+        Mann-Whitney Results for Comparing AODV and DSDV
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-8.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th />
+          <th>
+           Values
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Mann-Whitney
+          </td>
+          <td>
+           575.500
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Wilcoxon W
+          </td>
+          <td>
+           13455.500
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Z
+          </td>
+          <td>-14.773
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Asymp. Sig. (2-tailed)
+          </td>
+          <td>
+           0.000
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+   </sec>
+   <sec id="s5_5">
+    <label>
+     5.5
+    </label>
+    <title1>
+     E-2-E Delay Parameters
+    </title1>
+    <p>
+     The Friedman test, a non-parametric statistical analysis, is suitable for evaluating the end-to-end (E2-E) delay across various routing protocols under different testing conditions or time points. This test is particularly advantageous when the data deviates from the normal distribution, offering a robust alternative for related samples, akin to the Kruskal-Wallis test.
+    </p>
+    <p>
+     Within the framework of this study, should there be a collection of E-2-E delay measurements acquired under disparate conditions or across sequential time intervals for identical routing protocols, the Friedman test is instrumental in ascertaining whether the observed differences in E-2-E delays are statistically significant across these varied scenarios.
+    </p>
+    <p>
+     For example, in scenarios where the E-2-E delay has been quantified for each routing protocol subjected to diverse network densities or mobility patterns, the Friedman test can be employed to determine the significance of these delay variances. It achieves this by comparing the rank order of the E-2-E delay for each protocol under different conditions, thereby elucidating which specific conditions or protocols are associated with significant fluctuations in delay. This analysis provides critical insights into the dynamic performance characteristics of the routing protocols under examination.
+    </p>
+    <sec id="s5_5_1">
+     <label>
+      5.5.1
+     </label>
+     <title1>
+      Friedman's Test for Non-Parametric Analysis
+     </title1>
+     <p>
+      The Friedman's test is an extension of Wilcoxon's one-sample test to three or more samples. It is essentially a generalization of a two-factor analysis of variance with one observation in each subclass.
+     </p>
+     <p>
+      Null Hypothesis The null hypothesis
+      <italic>
+       H0
+      </italic>
+      is that the population probability distributions are identical across groups, specifically:
+     </p>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-16.tif" />
+        <tex-math>
+         
+         <math>
+          <msub>
+           <mrow>
+            <mi>
+             H
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+          </msub>
+          <mo>
+           :
+          </mo>
+          <msub>
+           <mrow>
+            <mi>
+             F
+            </mi>
+           </mrow>
+           <mrow>
+            <mfenced close="}" open="{" separators="|">
+             <mrow>
+              <mi>
+               i
+              </mi>
+              <mo>
+               ,
+              </mo>
+              <mi>
+               j
+              </mi>
+             </mrow>
+            </mfenced>
+           </mrow>
+          </msub>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      is independent of
+      <italic>
+       j
+      </italic>
+     </p>
+     <p>
+      Practical Application of the Friedman's Test
+     </p>
+     <list list-type="unorder">
+      <list-item>
+       <p>
+        Observation of each statistical unit is ranked from
+        <italic>
+         1 to J.
+        </italic>
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        Sum of ranks is calculated for each sample (factor), obtaining
+        <italic>
+         J
+        </italic>
+        sums of ranks
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        Check that as shown in 9 and 10:
+       </p>
+      </list-item>
+     </list>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-17.tif" />
+        <tex-math>
+         
+         <math>
+          <mrow>
+           <msub>
+            <mo stretchy="false">
+             ∑
+            </mo>
+            <mrow>
+             <mi>
+              i
+             </mi>
+            </mrow>
+           </msub>
+           <mrow />
+          </mrow>
+          <mrow>
+           <msub>
+            <mo stretchy="false">
+             ∑
+            </mo>
+            <mrow>
+             <mi>
+              j
+             </mi>
+            </mrow>
+           </msub>
+           <mrow />
+          </mrow>
+          <msub>
+           <mrow>
+            <mi>
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             i
+            </mi>
+            <mi>
+             j
+            </mi>
+           </mrow>
+          </msub>
+          <mo> = </mo>
+          <mfrac>
+           <mrow>
+            <mi>
+             I
+            </mi>
+            <mi>
+             J
+            </mi>
+            <mfenced separators="|">
+             <mrow>
+              <mi>
+               J
+              </mi>
+              <mo> + </mo>
+              <mn>
+               1
+              </mn>
+             </mrow>
+            </mfenced>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </mfrac>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      <sub>
+      </sub>
+      (9)
+     </p>
+     <list list-type="unorder">
+      <list-item>
+       <p>
+        The value
+        <italic>
+         Q
+        </italic>
+        is calculated as:
+       </p>
+      </list-item>
+      <p>
+       <disp-formula>
+        <alternatives>
+         <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-18.tif" />
+         <tex-math>
+          
+          <math>
+           <mi>
+            Q
+           </mi>
+           <mo> = </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              12
+             </mn>
+            </mrow>
+            <mrow>
+             <mi>
+              I
+             </mi>
+             <mi>
+              J
+             </mi>
+             <mfenced separators="|">
+              <mrow>
+               <mi>
+                J
+               </mi>
+               <mo> + </mo>
+               <mn>
+                1
+               </mn>
+              </mrow>
+             </mfenced>
+            </mrow>
+           </mfrac>
+           <mrow>
+            <msubsup>
+             <mo stretchy="false">
+              ∑
+             </mo>
+             <mrow>
+              <mi>
+               j
+              </mi>
+              <mo> = </mo>
+              <mn>
+               1
+              </mn>
+             </mrow>
+             <mrow>
+              <mi>
+               J
+              </mi>
+             </mrow>
+            </msubsup>
+            <mrow />
+           </mrow>
+           <msup>
+            <mrow>
+             <mfenced separators="|">
+              <mrow>
+               <mrow>
+                <msubsup>
+                 <mo stretchy="false">
+                  ∑
+                 </mo>
+                 <mrow>
+                  <mi>
+                   i
+                  </mi>
+                  <mo> = </mo>
+                  <mn>
+                   1
+                  </mn>
+                 </mrow>
+                 <mrow>
+                  <mi>
+                   I
+                  </mi>
+                 </mrow>
+                </msubsup>
+                <mrow />
+               </mrow>
+               <msub>
+                <mrow>
+                 <mi>
+                  R
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  i
+                 </mi>
+                 <mi>
+                  j
+                 </mi>
+                </mrow>
+               </msub>
+              </mrow>
+             </mfenced>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+           <mo>
+            −
+           </mo>
+           <mn>
+            3
+           </mn>
+           <mi>
+            I
+           </mi>
+           <mfenced separators="|">
+            <mrow>
+             <mi>
+              J
+             </mi>
+             <mo> + </mo>
+             <mn>
+              1
+             </mn>
+            </mrow>
+           </mfenced>
+          </math>
+         </tex-math>
+        </alternatives>
+       </disp-formula>
+       (10)
+      </p>
+      <list-item>
+       <p>
+        Decision about
+        <italic>
+         H
+        </italic>
+        <sub>
+         0
+        </sub>
+        is made:
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        <italic>
+         Q
+        </italic>
+        follows
+        <italic>
+         kh
+        </italic>
+        <sup>
+         2
+        </sup>
+        <sup>
+        </sup>
+        distribution with
+        <italic>
+         J-1
+        </italic>
+        degrees of freedom
+        <italic>
+         (for I,J &gt; 5).
+        </italic>
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        For small sample sizes, use the critical values for Friedman's test from tables.
+       </p>
+      </list-item>
+     </list>
+     <p>
+      Post-Hoc Analysis When
+      <italic>
+       H0
+      </italic>
+      is Rejected If the null hypothesis is rejected, further analysis is required, such as Nemenyi's method (balanced classification), which assesses the difference between rank sums for significance as shown in 11:
+     </p>
+     <p>
+      <disp-formula>
+       <alternatives>
+        <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-eqn-19.tif" />
+        <tex-math>
+         
+         <math>
+          <mfenced close="|" open="|" separators="|">
+           <mrow>
+            <msub>
+             <mrow>
+              <mi>
+               R
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               j
+              </mi>
+             </mrow>
+            </msub>
+            <mo>
+             −
+            </mo>
+            <msub>
+             <mrow>
+              <mi>
+               R
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msub>
+           </mrow>
+          </mfenced>
+          <mo />
+          <msub>
+           <mrow>
+            <mi>
+             q
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             J
+            </mi>
+            <mo>
+             ,
+            </mo>
+            <mi>
+             α
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ⋅
+          </mo>
+          <msqrt>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              12
+             </mn>
+            </mrow>
+           </mfrac>
+           <mi>
+            I
+           </mi>
+           <mi>
+            J
+           </mi>
+           <mfenced separators="|">
+            <mrow>
+             <mi>
+              J
+             </mi>
+             <mo> + </mo>
+             <mn>
+              1
+             </mn>
+            </mrow>
+           </mfenced>
+          </msqrt>
+         </math>
+        </tex-math>
+       </alternatives>
+      </disp-formula>
+      (11)
+     </p>
+    </sec>
+    <sec id="s5_5_2">
+     <label>
+      5.5.2
+     </label>
+     <title1>
+      Results Analysis and Discussion of the Friedman's Test
+     </title1>
+     <p>
+      SPSS was employed to analyze and evaluate the performance of the AODV, DSR, DSDV, and ZRP routing protocol. This evaluation was conducted to assess the results of the protocols for the E-2-E delay metrics, which are critical and fit the Friedman test.
+     </p>
+     <p>
+      <xref ref-type="table" rid="table-9">
+       Table 9
+      </xref>
+      contains descriptive statistics for four data sets, which represent the end-to-end delay times for four different protocols in communications networks: AODV, DSR, DSDV, and ZRP.
+      <xref ref-type="table" rid="table-9">
+       Table 9
+      </xref>
+      shows that the AODV (E-2-E_AODV) protocol has the lowest average end-to-end delay compared to other protocols. ZRP Protocol (E-2-E_ZRP) has the highest average delay and the highest dispersion (standard deviation), which indicates that performance can fluctuate significantly. DSR and DSDV protocols fall between AODV and ZRP in terms of average delay.
+     </p>
+     <table-wrap id="table-9">
+      <label>
+       Table 9
+      </label>
+      <caption>
+       <title1>
+        Descriptive Statistics Summary
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-9.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Measurement
+          </th>
+          <th>
+           Value
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           E2E_AODV Mean
+          </td>
+          <td>
+           0.0568125
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_AODV Std. Deviation
+          </td>
+          <td>
+           0.05034620
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSR Mean
+          </td>
+          <td>
+           0.0277500
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSR Std. Deviation
+          </td>
+          <td>
+           0.05251746
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSDV Mean
+          </td>
+          <td>
+           0.0126250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSDV Std. Deviation
+          </td>
+          <td>
+           0.01105135
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_ZRP Mean
+          </td>
+          <td>
+           3.9688750
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_ZRP Std. Deviation
+          </td>
+          <td>
+           6.36139696
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      According to the results presented in
+      <xref ref-type="table" rid="table-10">
+       Table 10
+      </xref>
+      , the significant statistic in the Friedman test indicates a statistically significant difference. The Chi-Square value is 386.575 with 3 degrees of freedom (df), and the Asymptotic Significance, also known as the p-value, is .000. This value signifies statistical significance at the conventional threshold of 0.05.
+     </p>
+     <p>
+      Therefore, this study rejects the null hypothesis H0 that posits no differences between groups. This analysis concludes that there are significant differences between the samples tested.
+     </p>
+     <table-wrap id="table-10">
+      <label>
+       Table 10
+      </label>
+      <caption>
+       <title1>
+        Friedman Test Statistics
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-10.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th />
+          <th>
+           N
+          </th>
+          <th>
+           Chi-Square
+          </th>
+          <th>
+           df
+          </th>
+          <th>
+           Asymp. Sig.
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Friedman Test
+          </td>
+          <td>
+           164
+          </td>
+          <td>
+           386.575
+          </td>
+          <td>
+           3
+          </td>
+          <td>
+           .000
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+    </sec>
+    <sec id="s5_5_3">
+     <label>
+      5.5.3
+     </label>
+     <title1>
+      Related-Samples Friedman's Two-Way Analysis of Variance
+     </title1>
+     <p>
+      This procedure was used to determine the differences in 5.5.2. This investigation concerned whether the differences above were between AODV and DSDV, AODV and DSR, or DSR and ZRP, or which types of protocols achieved the result above. This investigation uses this type of test to determine that.
+     </p>
+     <p>
+      <xref ref-type="table" rid="table-11">
+       Table 11
+      </xref>
+      , shown below, summarizes the results of hypothesis testing. The results indicate statistically significant differences. The Chi-Square is 386.575 with 3 degrees of freedom (df), and the Asymptotic Significance, also known as the p-value, is .000. This means that it is well below 0.05, which is generally considered the level of significance in statistical tests.
+     </p>
+     <p>
+      Accordingly, researchers can reject the null hypothesis (H0), which assumes no group differences. Instead, we conclude that there are significant differences between the samples tested. Applying the Friedman test for correlated samples and two-way analysis of variance by ranks, it was found that the end-to-end (E2E) time distributions of the AODV, DSR, DSDV, and ZRP routing protocols are not identical.
+     </p>
+     <table-wrap id="table-11">
+      <label>
+       Table 11
+      </label>
+      <caption>
+       <title1>
+        Hypothesis Test Summary
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-11.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Null Hypothesis
+          </th>
+          <th>
+           Test
+          </th>
+          <th>
+           Sig.
+          </th>
+          <th>
+           Decision
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           The distributions of E2E_AODV, E2E_DSR,E2E_DSDV, and	E2E_ZRP are the same.
+          </td>
+          <td>
+           Related-Samples Friedman’s Two-Way Analysis of Variance by Ranks
+          </td>
+          <td>
+           .000
+          </td>
+          <td>
+           Reject the null hypothesis.
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      <italic>
+       Asymptotic significances are presented. The significance level is .050.
+      </italic>
+     </p>
+     <p>
+      This shows that the performance of these protocols in terms of end-to-end delay varies significantly, meaning that at least one protocol shows significantly different performance compared to other protocols.
+     </p>
+     <p>
+      This result is of great interest to network designers and researchers in the field of communications because it helps determine the best protocols that can be utilized to enhance the overall performance of the network.
+     </p>
+     <p>
+      <xref ref-type="fig" rid="fig-2">
+       Fig. 2
+      </xref>
+      and
+      <xref ref-type="table" rid="table-12">
+       Table 12
+      </xref>
+      , present the results of pairwise comparisons between end-to-end delay time distributions for four different network protocols using a statistical test. Each row compares a pair of protocols to test the null-hypothesis that the distributions are similar between the two samples.
+     </p>
+     <fig id="fig-3">
+      <label>
+       Figure 2
+      </label>
+      <caption>
+       <title1>
+        Related-Samples Friedman's
+       </title1>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-3.jpg" />
+      <img src="TSP_CMC_52999-fig-3.jpg" />
+     </fig>
+     <p>
+      <xref ref-type="fig" rid="fig-2">
+       Fig. 2
+      </xref>
+      is used to compare the various protocols with respect to the frequency of rank occurrence. The number of times each of the ranks is observed has been charted along the horizontal axis 'Frequency', thus essentially showing the frequency a certain rank occurs for each protocol. The vertical axis shows the position of the rank, whereby lower ranks such as 1 and 2 are always better than other ranks, such as 4 and 5.
+     </p>
+     <p>
+      Asymptotic importance (two-sided tests) is shown. The statistical significance level is .05. The Bonferroni adaptation was used to alter the importance values for several tests.
+     </p>
+     <p>
+      By analyzing the values provided, the presented investigation observes the following:
+     </p>
+     <p>
+      There are no statistically significant differences between the E2E_DSDV and E2E_DSR protocols, as the significance value is higher than 0.05.
+     </p>
+     <table-wrap id="table-12">
+      <label>
+       Table 12
+      </label>
+      <caption>
+       <title1>
+        Pairwise Comparisons of Routing Protocols
+       </title1>
+      </caption>
+      <alternatives>
+       <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-table-12.tif" />
+       <table>
+        <colgroup>
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+         <col />
+        </colgroup>
+        <thead>
+         <tr>
+          <th>
+           Sample 1-Sample 2
+          </th>
+          <th>
+           Test Statistic
+          </th>
+          <th>
+           Std. Error
+          </th>
+          <th>
+           Std. Test Statistic
+          </th>
+          <th>
+           Sig.
+          </th>
+          <th>
+           Adj. Sig.a
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           E2E_DSDV-E2E_DSR
+          </td>
+          <td>
+           .107
+          </td>
+          <td rowspan="6">
+           .143
+          </td>
+          <td>
+           .748
+          </td>
+          <td>
+           .454
+          </td>
+          <td>
+           1.000
+          </td>
+         </tr>
+         <tr align="center">
+          <td>
+           E2E_DSDV-E2E_AODV
+          </td>
+          <td>
+           1.140
+          </td>
+          <td>
+           7.998
+          </td>
+          <td colspan="2" rowspan="5">
+           .000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSDV-E2E_ZRP
+          </td>
+          <td>-2.326
+          </td>
+          <td>-16.317
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSR-E2E_AODV
+          </td>
+          <td>
+           1.034
+          </td>
+          <td>
+           7.250
+          </td>
+          <td rowspan="3">
+           .000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_DSR-E2E_ZRP
+          </td>
+          <td>-2.220
+          </td>
+          <td>-15.568
+          </td>
+         </tr>
+         <tr>
+          <td>
+           E2E_AODV-E2E_ZRP
+          </td>
+          <td>-1.186
+          </td>
+          <td>-8.319
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </alternatives>
+     </table-wrap>
+     <p>
+      Every row examines the null hypothesis, which claims that the data from Sample 1 and Sample 2 are equal. There are no substantial statistical variations between E2E_DSDV and E2E_AODV, as well as between E2E_DSDV and E2E_ZRP, because the significance values are equal to .000, which is much less than 0.05.
+     </p>
+     <p>
+      Other comparisons also show similar statistically significant differences. Overall, the table indicates that the performance of the protocols varies significantly when it comes to end-to-end delay, and the results show which protocols have significantly different distributions.
+     </p>
+     <p>
+      Fig. (3) and (4) present end-to-end delay histograms for four routing protocols in telecommunications networks: AODV, DSR, DSDV, and ZRP. This investigation can observe the following issues.
+     </p>
+     <list list-type="order">
+      <list-item>
+       <p>
+        AODV Protocol: The delay distribution appears concentrated around the average value, with a relatively narrow spread that shows consistency in performance.
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        DSR protocol: Similar to AODV in terms of the general shape of the distribution but with a higher frequency of very short delays (near zero).
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        DSDV protocol: Shows a delay distribution characterized by a large concentration of lower values, indicating that most packets are delivered with little delay.
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        ZRP: Shows a significant variation in delays, with some packets arriving with extensive delays compared to other protocols.
+       </p>
+      </list-item>
+      <list-item>
+       <p>
+        These results conclude that there is a clear difference in the performance of these protocols regarding delay time. In these cases, the ZRP protocol can fail in quite a high number, and the result is a high delay. The DSDV protocol will have predictable performance since most packets come through with little delay. The DSR and AODV protocols give similar performance but with slightly different tolerances.
+       </p>
+      </list-item>
+     </list>
+     <p>
+      The horizontal axis is in unit measure (in milliseconds). It carries the normalized delay for the experiment on the end-to-end delays for all four routing protocols: AODV, DSR, DSDV, and ZRP. The vertical axis is denoted "Frequency," a dimensionless count of occurrences.
+     </p>
+     <fig id="fig-4">
+      <label>
+       Figure 3
+      </label>
+      <caption>
+       <title1>
+        Frequency Distribution of E2E Delay for AODV  DSR Protocols
+       </title1>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-4.jpg" />
+      <img src="TSP_CMC_52999-fig-4.jpg" />
+     </fig>
+     <fig id="fig-5">
+      <label>
+       Figure 3
+      </label>
+      <caption>
+       <title1>
+        Frequency Distribution of E2E Delay for AODV  DSR Protocols
+       </title1>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-5.jpg" />
+      <img src="TSP_CMC_52999-fig-4.jpg" />
+     </fig>
+     <fig id="fig-6">
+      <label>
+       Figure 4
+      </label>
+      <caption>
+       <title1>
+        Frequency Distribution of E2E Delay for DSDV ZRP Protocols
+       </title1>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-6.jpg" />
+      <img src="TSP_CMC_52999-fig-6.jpg" />
+     </fig>
+     <fig id="fig-7">
+      <label>
+       Figure 4
+      </label>
+      <caption>
+       <title1>
+        Frequency Distribution of E2E Delay for DSDV ZRP Protocols
+       </title1>
+      </caption>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_CMC_52999-fig-7.jpg" />
+      <img src="TSP_CMC_52999-fig-6.jpg" />
+     </fig>
+    </sec>
+   </sec>
+  </sec>
+  <sec id="s6">
+   <label>
+    6
+   </label>
+   <title1>
+    Conclusion
+   </title1>
+   <p>
+    Statistical analysis of the performance differences among these MANET routing protocols, through NS-2 simulation, provides valid in-depth information. This difference was statistically significant, as it was confirmed rigorously through robust confidence tests that there is indeed a difference in throughput from the null hypothesis. AODV has greater throughput at lower end-to-end delay and is hence a better option for those scenarios when the required levels of efficiency and reliability are high. From the other perspective, this fact can be considered to mean that the performance of DSDV and ZRP is preferable in the applications where the priority is granted to stability and predictability, rather than the need for high throughput. The results would highlight the need for an informed choice of the protocol based on the exact requirements of the network and the scenarios that could very well lead to future research on MANET and its practical implementations. Furthermore, these methodologies and resultant approaches of the study open the space for further research into MANET routing optimizations. In fact, the study results recommend that a more nuanced approach to the analysis and deployment of protocols is necessary for further advancements in mobile ad hoc networking technology.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <p>
+    The authors extend their appreciation to the Deanship of Scientific Research at Northern Border University, Arar, KSA for funding this research work through the project number "NBU-FFR-2024-2248-02".
+   </p>
+  </ack>
+  <fn-group>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Funding Statement
+     </bold>
+     This research was supported by Northern Border University, Arar, KSA, through the Project number "NBU-FFR-2024-2248-02".
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Author Contributions
+     </bold>
+     The specific contributions of each author are as followsThe Study conception and design Ibrahim Alameri, Tawfik Al-HadhramiData collection Ibrahim Alameri, Anjum Nazir, Abdulsamad Ebrahim YahyaAnalysis and interpretation of results Ibrahim Alameri, Anjum Nazir, Atef GharbiDraft manuscript preparation Ibrahim Alameri, Tawfik Al-Hadhrami, Abdulsamad Ebrahim Yahya, Atef GharbiAll authors reviewed the results and approved the final version of the manuscript.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     The corresponding author can provide data supporting the study's conclusions upon an adequate request.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+  </fn-group>
+  <ref-list content-type="authoryear">
+   <title1>
+    References
+   </title1>
+  </ref-list>
+ </back>
+</article>

@@ -2546,12 +2546,9 @@
    </fn>
    </fn-group>
   <ref-list content-type="authoryear">
-   <title>
+   <title1>
     References
-   </title>
-   <ref id="ref-1">
-    {'id': '1', 'doi_metadata': ' @article{Ba_ri_2014, title = {A review on natural convection in enclosures for engineering applications. The particular case of the parallelogrammic diode cavity}, volume = {63}, ISSN = {1359-4311}, url = {http: /  / dx.doi.org / 10.1016 / j.applthermaleng.2013.10.065}, DOI = {10.1016 / j.applthermaleng.2013.10.065}, number = {1}, journal = {Applied Thermal Engineering}, publisher = {Elsevier BV}, author = {Baïri, A. and Zarco-Pernia, E. and García de María, J.-M.}, year = {2014}, month = feb, pages = {304–322} }\n'}
-   </ref>
+   </title1>
   </ref-list>
  </back>
 </article>

@@ -1,0 +1,3674 @@
+<?xml version='1.0' encoding='utf-8'?>
+<article xmlns:ns0="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.0">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="pmc">
+    JRM
+   </journal-id>
+   <journal-id journal-id-type="nlm-ta">
+    JRM
+   </journal-id>
+   <journal-id journal-id-type="publisher-id">
+    JRM
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Journal of Renewable Materials
+    </journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2164-6341
+   </issn>
+   <publiher>
+    <publisher-name>
+     Tech Science Press
+    </publisher-name>
+    <publisher-loc>
+     USA
+    </publisher-loc>
+   </publiher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    46950
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.32604 / jrm.2024.046950
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      ARTICLE
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title>
+      Identification of Secondary Metabolites in Tunisian Tilia Platyphyllos Scop . Using MALDI-TOF and GC-MS 
+    </article-title>
+    <alt-title alt-title-type="left-running-head">
+     Identification of Secondary Metabolites in Tunisian Tilia platyphyllos Scop. using MALDI-TOF and GC-MS
+    </alt-title>
+    <alt-title alt-title-type="right-running-head">
+     Identification of Secondary Metabolites in Tunisian Tilia platyphyllos Scop. using MALDI-TOF and GC-MS
+    </alt-title>
+   </title-group>
+   <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes" id="author-1">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Khadhri
+      </surname>
+      <given-names>
+       Ayda
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-2">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Mendili
+      </surname>
+      <given-names>
+       Mohamed
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-3">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Bannour-Scharinger
+      </surname>
+      <given-names>
+       Marwa
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-4">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Masson
+      </surname>
+      <given-names>
+       Eric
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="author-5">
+     <contrib-id contrib-id-type="orcid" />
+     <name name-style="western">
+      <surname>
+       Pizzi
+      </surname>
+      <given-names>
+       Antonio
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="aff-2">
+      2
+     </xref>
+     <mail>
+      ssss@email.com
+     </mail>
+    </contrib>
+    <aff id="aff-1">
+     <label>
+      <sup>
+       1
+      </sup>
+     </label>
+     <institution>
+      University of El-Manar II  Faculty of Sciences  Plant  Soil  Environment Interactions Laboratory  Campus Academia  Tunis  2092
+     </institution>
+     <country>
+      Tunisia
+     </country>
+    </aff>
+    <aff id="aff-2">
+     <label>
+      <sup>
+       2
+      </sup>
+     </label>
+     <institution>
+      LERMAB  University of Lorraine  27 Rue Philippe Seguin  Epinal  88000
+     </institution>
+     <country>
+      France.
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="cor1">
+     <label> * </label>
+     Corresponding Author: Antonio Pizzi. Email: antonio.pizzi@univ-lorraine.fr
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" iso-8601-date="2024-00-00" pub-type="epub">
+    <day>
+     00
+    </day>
+    <month>
+     00
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    1
+   </volume>
+   <issue>
+    1
+   </issue>
+   <fpage>
+    1
+   </fpage>
+   <lpage>
+    XX
+   </lpage>
+   <history>
+    <date date-type="received">
+     <day>
+      20
+     </day>
+     <month>
+      10
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      12
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement>
+     © 2024 Khadhri et al.
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     Khadhri et al.
+    </copyright-holder>
+    <license ns0:href="https://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original source is cited.
+     </license-p>
+    </license>
+   </permissions>
+   <self-uri content-type="pdf" ns0:href="TSP_JRM_46950.pdf" />
+   <abstract abstract-type="abstract">
+    <p>
+     This study is the first to evaluate the phytochemical content and biological properties of Tunisian T. platyphyllos Scop. A total of 23 compounds of essential oils were identified by gas chromatography-mass spectrometry (GC-MS) analysis of bracts and fruit extracts. The results show that oxygenated monoterpenes were the dominant class of essential oils. The phenolic composition was investigated by matrix-assisted laser desorption / ionization-time of flight (MALDI-TOF). The analysis showed that the chemical profiles of the ethanolic extracts of bracts and fruits are substantially similar. The highest polyphenol content was found in the ethanolic extracts of the fruits (7.65 mg gallic acid equivalents (GAE).g-1 on dry weight (DW). As for the antioxidant capacity, it was recorded in the essential oils of the fruits (IC50 = 0.91 mg.mL-1). The results obtained showed that the antioxidant activity of the fruit essential oil was higher than that of the ethanol extract. The fruit essential oil was also found to have the highest reducing power (IC50 = 0.67 mg.mL-1). In terms of iron-chelating power, fruit essential oil has the highest chelating power (IC50 = 2.03 mg.mL-1). Compared to the ethanolic extract, the essential oil had the maximum antioxidant capacity. The enzymatic activity of acetylcholinesterase (AChE) inhibition of the essential oil from T. platyphyllos bracts had the most potent inhibitory effect (IC50 = 0.77 mg.mL-1), followed by the essential oil from the fruits (IC50 = 0.95 mg.mL-1). The results suggest that T. platyphyllos can be used as a potential source of naturally occurring bioactive compounds and antioxidants.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="author">
+    <kwd>
+      T. platyphyllos 
+    </kwd>
+    <kwd>
+      Antioxidant Activity 
+    </kwd>
+    <kwd>
+      Acetylcholinesterase Inhibition 
+    </kwd>
+    <kwd>
+      essential Oil 
+    </kwd>
+    <kwd>
+      MALDI-TOF 
+    </kwd>
+    <kwd>
+      GC-MS 
+    </kwd>
+   </kwd-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="s1">
+   <label>
+    1
+   </label>
+   <title1>
+    Introduction
+   </title1>
+   <p>
+    Herbal medicines are frequently used to treat a variety of illnesses, including colds, stomach issues, and skin problems [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-2">
+     2
+    </xref>
+    ]. Over centuries, many cultures have employed herbs to cure an array of ailments. Some people integrate herbal supplements into their wellness regimen to support their overall health [
+    <xref ref-type="bibr" rid="ref-3">
+     3
+    </xref>
+    ]. Among these, herbal teas have emerged as a favored method of ingesting medicinal herbs, with
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    , known as large-leaved linden or broad-leaved lime, holding a significant place in traditional herbal medicine [
+    <xref ref-type="bibr" rid="ref-4">
+     4
+    </xref>
+    ]. This plant has been associated with calming effects and is often utilized in teas to manage stress, anxiety, and sleep disorders [
+    <xref ref-type="bibr" rid="ref-5">
+     5
+    </xref>
+    ].
+   </p>
+   <p>
+    Various parts of the plant have been utilized to alleviate symptoms associated with inflammatory conditions such as colds and respiratory infections [
+    <xref ref-type="bibr" rid="ref-6">
+     6
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-7">
+     7
+    </xref>
+    ], offering relief for sore throats and reducing coughs.
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    contains bioactive compounds like flavonoids and phenolic acids, endowed with antioxidant properties that safeguard cells against damage induced by free radicals.
+   </p>
+   <p>
+    Additionally, traditional uses of linden include its diuretic properties, aiding in eliminating excess bodily fluids and supporting urinary health [
+    <xref ref-type="bibr" rid="ref-8">
+     8
+    </xref>
+    ]. Infusions derived from linden leaves, bracts, flowers, and fruits have been historically used to relieve digestive disorders such as flatulence and indigestion. In certain cultures, Linden tea is employed to reduce fever and lower body temperature during illness. However, it is crucial to note that white
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    holds a history of traditional use. Nevertheless, scientific research into its medicinal properties is ongoing, requiring further evidence to confirm its effects and establish recommended doses [
+    <xref ref-type="bibr" rid="ref-9">
+     9
+    </xref>
+    ].
+   </p>
+   <p>
+    European Medicinal Agency's recognition of lime as a traditional remedy for cold and stress symptoms further underscores its potential [
+    <xref ref-type="bibr" rid="ref-10">
+     10
+    </xref>
+    ]. Tilia species, including
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    , are rich in compounds like flavonoids and proanthocyanidins, known for their antioxidant benefits [
+    <xref ref-type="bibr" rid="ref-1">
+     1
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-11">
+     11
+    </xref>
+    ].
+   </p>
+   <p>
+    Recent studies have highlighted the plant's significant antioxidant capacity due to its anthocyanin and polyphenol contents [
+    <xref ref-type="bibr" rid="ref-12">
+     12
+    </xref>
+    ]. Terpenoids, present in some Tilia species, including
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    , might also contribute to its mild sedative properties [
+    <xref ref-type="bibr" rid="ref-13">
+     13
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-14">
+     14
+    </xref>
+    ]. Further investigations have unveiled the presence of various bioactive compounds in different parts of
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    , highlighting their antioxidant, anti-inflammatory, and even anti-tumor potential [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-16">
+     16
+    </xref>
+    ]. Studies exploring its toxicological effects and anti-tumor activities in specific models further add to its scientific intrigue [
+    <xref ref-type="bibr" rid="ref-16">
+     16
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-17">
+     17
+    </xref>
+    ].
+   </p>
+   <p>
+    Given the variability of secondary metabolites based on plant parts and environmental factors, our study aims to delve into the phytochemical composition of
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    bracts and fruits harvested from Tunisia. Through gas chromatography (GC-MS) and matrix-assisted laser desorption / ionization-time of flight (MALDI-TOF MS), we aim to identify essential oils and phenolic compounds, assessing their antioxidant and antiacetylcholinesterase activities. This study presents a novel exploration into the phytochemistry and biological potential of
+    <italic>
+     T.
+    </italic>
+    <italic>
+     platyphyllos
+    </italic>
+    from specific plant parts, providing valuable insights into its diverse medicinal properties.
+   </p>
+  </sec>
+  <sec id="s2">
+   <label>
+    2
+   </label>
+   <title1>
+    Materials and methods
+   </title1>
+   <sec id="s2_1">
+    <label>
+     2.1
+    </label>
+    <title1>
+     Chemicals
+    </title1>
+    <p>
+     All chemicals used were of analytical grade. 2,2-Diphenyl-1-picrylhydrazyl (DPPH), ferric chloride (FeCl
+     <sub>
+      2
+     </sub>
+     , 4H
+     <sub>
+      2
+     </sub>
+     O),  acetylcholinesterase (AChE) type VI-S, from electric eel 349 U / mg solid, 5,5-dithiobis[
+     <xref ref-type="bibr" rid="ref-2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="ref-nitrobenzoic acid">
+      nitrobenzoic acid
+     </xref>
+     ] (DTNB), acetylthiocholine iodide (AChI), aluminum chloride, Iron sulphate, ferrozine, gallic acid, catechin, quercetin, (C
+     <sub>
+      8
+     </sub>-C
+     <sub>
+      22
+     </sub>
+     )
+     <italic>
+      n
+     </italic>-alkanes and tris[hydroxymethyl]aminomethane (tris buffer), potassium ferricyanide, trchloroacetic acid, and Folin-Ciocalteu reagent were supplied from Sigma Aldrich (Steinheim, Germany). Acetone, butanol, methanol and ethanol were obtained from Merck (supplied by VWR, France), while 2,5-dihydroxy benzoic acid and red phosphorous were purchased from Laser Bio Labs (France) and Sodium chloride (NaCl) was obtained from Carlo Erba Reactifs (SDS) (France).
+    </p>
+   </sec>
+   <sec id="s2_2">
+    <label>
+     2.2
+    </label>
+    <title1>
+     Plant material
+    </title1>
+    <p>
+     In this study, the bracts and fruits of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     (Figure 1) were investigated. The plant material was collected in El Feidja National Park, located northwest of the town of Ghardimaou (Jendouba Governorate, Tunisia), at 36deg29'10 "N and 8deg18'55 "E. The samples were air-dried in the dark at room temperature for 7 days. Botanical identification was made by Pr. Ayda KHADHRI, Professor Associate at the Faculty of Sciences of Tunisia. A voucher specimen was deposited in the herbarium of Plant, Soil, Environment Interactions Laboratory, Department of Biology, Faculty of Sciences of Tunisia, under the registration number MALVACEAE-01.
+    </p>
+    <fig id="fig-1">
+     <label>
+      Figure 1
+     </label>
+     <caption>
+      <title1>
+       Entire plant, bracts and fruits of
+       <italic>
+        T.
+       </italic>
+       <italic>
+        platyphyllos
+       </italic>
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-1.jpg" />
+     <img src="TSP_JRM_46950-fig-1.jpg" />
+    </fig>
+    <fig id="fig-2">
+     <label>
+      Figure 1
+     </label>
+     <caption>
+      <title1>
+       Entire plant, bracts and fruits of
+       <italic>
+        T.
+       </italic>
+       <italic>
+        platyphyllos
+       </italic>
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-2.jpg" />
+     <img src="TSP_JRM_46950-fig-1.jpg" />
+    </fig>
+    <fig id="fig-3">
+     <label>
+      Figure 1
+     </label>
+     <caption>
+      <title1>
+       Entire plant, bracts and fruits of
+       <italic>
+        T.
+       </italic>
+       <italic>
+        platyphyllos
+       </italic>
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-3.jpg" />
+     <img src="TSP_JRM_46950-fig-1.jpg" />
+    </fig>
+   </sec>
+   <sec id="s2_3">
+    <label>
+     2.3
+    </label>
+    <title1>
+     Essential oil
+    </title1>
+    <p>
+     The essential oil (EO) was obtained by hydrodistillation of 100g of air-dried
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     bracts and fruits using a Clevenger apparatus as per European Pharmacopeia guidelines. Following distillation, the oil was immediately extracted and stored in amber glass bottles at 4degC.
+    </p>
+   </sec>
+   <sec id="s2_4">
+    <label>
+     2.4
+    </label>
+    <title1>
+     GC-MS analyses of the essential oils
+    </title1>
+    <p>
+     GC-MS analyses were conducted using an Agilent 6890 series gas chromatograph coupled with an Agilent 5973 N mass selective detector (Agilent Technologies, Little Falls, DE, USA). HP-5MS columns were employed for analysis, with helium as the carrier gas. The EO was diluted with n-hexane and injected into the GC-MS system. Identification of oil components was based on retention indices of n-alkanes (C
+     <sub>
+      8
+     </sub>-C
+     <sub>
+      22
+     </sub>
+     ), mass spectra comparison, and available literature [
+     <xref ref-type="bibr" rid="ref-18">
+      18
+     </xref>
+     ].
+    </p>
+   </sec>
+   <sec id="s2_5">
+    <label>
+     2.5
+    </label>
+    <title1>
+     Preparation of extracts
+    </title1>
+    <p>
+     In the current study, bracts and fruits of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     were dried at room temperature for 7 days before being ground separately in an ultra-centrifugal into powder using 0.2 mm particle size sieve. Ethanol extracts were prepared by shaking 100 g of each sample of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     in approximately 100 mL of ethanol for 72 h. The extracts were extracted at 4 degC under reduced pressure using a rotary evaporator after being filtered through Whatmann No.4 filter paper.
+    </p>
+   </sec>
+   <sec id="s2_6">
+    <label>
+     2.6
+    </label>
+    <title1>
+     Determination of the amounts of phenolic compounds
+    </title1>
+    <sec id="s2_6_1">
+     <label>
+      2.6.1
+     </label>
+     <title1>
+      Determination of total phenolic content
+     </title1>
+     <p>
+      According to Oktay et al. [
+      <xref ref-type="bibr" rid="ref-19">
+       19
+      </xref>
+      ], who used the Folin-Ciocalteu reagent to measure the total phenolic content and who were somewhat modified by Dewanto et al. [
+      <xref ref-type="bibr" rid="ref-20">
+       20
+      </xref>
+      ], the total phenolic content was determined by reducing a phosphotungstic acid-phosphomolybdate complex to blue reaction products. 500 uL of water, 125 uL of the Folin-Ciocalteu reagent, and 125 uL of the diluted sample extract (1 mg of extract diluted with one mL of ethanol) were combined. Before adding 1250 uL of Na
+      <sub>
+       2
+      </sub>
+      CO
+      <sub>
+       3
+      </sub>
+      (7%), the mixture was mixed and given a 5 min rest period. It was then carefully mixed with an aliquot of 1 mL of distilled water. The absorbance at 760 nm was measured against a prepared blank after 90 min of incubation in the dark. The gallic acid solutions were used to produce the standard curve (y = 0.0034x + 0.0287; R2 = 0.996). Using an equation derived from the standard gallic acid graph, the content of total phenolic content in the extracts was calculated as milligrams of gallic acid equivalents per gram of dry weight (mg GAE.g
+      <sup>-1
+      </sup>
+      DW). The average of three duplicate analyses was used to show the data.
+     </p>
+    </sec>
+    <sec id="s2_6_2">
+     <label>
+      2.6.2
+     </label>
+     <title1>
+      Determination of total flavonoids content
+     </title1>
+     <p>
+      According to the aluminum chloride colorimetric method, the total flavonoid content was identified [
+      <xref ref-type="bibr" rid="ref-21">
+       21
+      </xref>
+      ]. Each extract was dissolved in 1 mL of the proper solvent. This solution was combined with 2 % AlCl
+      <sub>
+       3
+      </sub>
+      methanolic solution in an amount of 1 mL. The absorbance at 430 nm was measured following a 15 min incubation at room temperature. The standard used was quercetin. The amounts of total flavonoid contents in each sample extract were ascertained in triplicate using a standard curve (y = 0.0031x + 0.0179; R2 = 0.992).). Total flavonoids were expressed as mg of quercetin equivalents per gram of dry weight (mg QE.g
+      <sup>-1
+      </sup>
+      DW).
+     </p>
+    </sec>
+    <sec id="s2_6_3">
+     <label>
+      2.6.3
+     </label>
+     <title1>
+      Determination of total proanthocyanidins content
+     </title1>
+     <p>
+      The butanol-HCl test was used to measure the concentration of proanthocyanidins [
+      <xref ref-type="bibr" rid="ref-22">
+       22
+      </xref>
+      ]. Iron sulphate (2 g per 100 mL) and butanol-HCl (95:5; v / v) were also added to the
+      <italic>
+       T.
+      </italic>
+      <italic>
+       platyphyllos
+      </italic>
+      extract, which was prepared in a volume of 0.5 mL. One hour of incubation at 90degC was given to the mixture. The absorbance at 550 nm was assessed following cooling. Catechin equivalents in mg per gram of dry weight (mg CE.g
+      <sup>-1
+      </sup>
+      DW) were used to express the proanthocyanidins content.
+     </p>
+    </sec>
+   </sec>
+   <sec id="s2_7">
+    <label>
+     2.7
+    </label>
+    <title1>
+     Antioxidant activity determination
+    </title1>
+    <p>
+     The antioxidant potential of ethanol extract and essential oils from
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     was assessed using three tests: the DPPH radical scavenging test, the iron chelating capacity, and the iron reducing capacity.
+    </p>
+   </sec>
+   <sec id="s2_7_1">
+    <label>
+     2.7.1
+    </label>
+    <title1>
+     DPPH assay
+    </title1>
+    <p>
+     The violet-colored solution was bleached with the method reported by Hanato et al. [
+     <xref ref-type="bibr" rid="ref-23">
+      23
+     </xref>
+     ], by using 1,1-diphenyl-2-picrylhydrazyl radical (DPPH) to test the ability of the obtained extracts to donate electrons. 1 ml of various doses of the extract were mixed with a 0.5 mL methanol solution of DPPH of 0.2 mM concentration. The absorbance was measured against a blank at 517 nm following a 30 min incubation period at room temperature. The calculation of the free DDPH radical inhibition percentage (PI %) was carried out as follows:
+    </p>
+    <p>
+     PI (%) = ((A
+     <sub>
+      blank
+     </sub>
+     <sub>
+     </sub>-A
+     <sub>
+      sample
+     </sub>
+     ) / A
+     <sub>
+      blank
+     </sub>
+     ) x100,
+    </p>
+    <p>
+     where A
+     <sub>
+      blank
+     </sub>
+     <sub>
+     </sub>
+     is the absorbance of the control reaction and A
+     <sub>
+      sample
+     </sub>
+     is the absorbance in the presence of plant extract. The regression equation created from the concentration of the extracts and the inhibition percentage was used to obtain the extract concentration providing 50 % inhibition (IC
+     <sub>
+      50
+     </sub>
+     ). Samples were analyzed in triplicate.
+    </p>
+   </sec>
+   <sec id="s2_7_2">
+    <label>
+     2.7.2
+    </label>
+    <title1>
+     Iron chelating
+    </title1>
+    <p>
+     The method of Decker and Welch [
+     <xref ref-type="bibr" rid="ref-24">
+      24
+     </xref>
+     ] was used, with minor modifications, to determine the chelation capacity of ferrous ions. 0.05 mL FeCl
+     <sub>
+      2
+     </sub>
+     , 4H
+     <sub>
+      2
+     </sub>
+     O (2 mM) were added to 0.1 mL of different concentrations of the extract and shaken vigorously for 5 min. After mixing with it a 0.1 mL at 5 mM solution of ferrozine added of distilled water at a level of 2.75 mL of distilled water. The solutions were then left standing at room temperature for 1 min after their thorough. After incubation, Their absorbance was determined at 562 nm and compared to a control not containing any ferrozine. A negative control in which methanol replaced the extract and an EDTA positive control was compared to the extract experimental results. Triplicate determinations were carried out for all cases. The determination of the ability for the ion chelation of the ferrous ion was obtained, as follows:
+    </p>
+    <p>
+     Iron chelating ability = (A
+     <sub>
+      control
+     </sub>-A
+     <sub>
+      extract
+     </sub>
+     <sub>
+     </sub> / A
+     <sub>
+      control
+     </sub>
+     ) x 100,
+    </p>
+    <p>
+     where, A
+     <sub>
+      control
+     </sub>
+     <sub>
+     </sub>
+     is the absorbance of control reaction and A
+     <sub>
+      extract
+     </sub>
+     is the absorbance of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     extract. A high antioxidant activity correlated with a low value of the IC
+     <sub>
+      50
+     </sub>
+     .
+    </p>
+   </sec>
+   <sec id="s2_7_3">
+    <label>
+     2.7.3
+    </label>
+    <title1>
+     Reducing power assay
+    </title1>
+    <p>
+     The Oyaizu [
+     <xref ref-type="bibr" rid="ref-25">
+      25
+     </xref>
+     ] approach was used to determine the reduction power. 500 uL of a sodium phosphate 200 mM buffer at pH 6.6, plus 2.5 mL potassium ferricyanide at 1% concentration were mixed with 200 uL of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     extracts in a variety of concentrations, the lot being incubated at 50degC for 20 min. The mixture was centrifuged at 650 rpm for 10 min after 2.5 mL of 10% trichloroacetic acid (w / v) was added. The absorbance at 700 nm was measured after mixing 500 uL of the upper layer with 100 uL of 0.1% ferric chloride and 500 uL of deionized water. The assays were performed three times, and the outcomes are shown as mean values less standard deviations. The graph of absorbance at 700 nm against extract concentration allowed for the calculation of the extract concentration that provided 0.5 absorbance (EC
+     <sub>
+      50
+     </sub>
+     ).
+    </p>
+   </sec>
+   <sec id="s2_8">
+    <label>
+     2.8
+    </label>
+    <title1>
+     Acetylcholinesterase inhibition
+    </title1>
+    <p>
+     The enzymatic activity of acetylcholinesterase in
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     was assessed using a modification of Ellman's method [
+     <xref ref-type="bibr" rid="ref-26">
+      26
+     </xref>
+     ]. 30 mL of sample, 98 uL of 50 mM tris-HCl buffer pH = 8, and 7.5 uL of the acetylcholinesterase solution containing 0.26 U.mL
+     <sup>-1
+     </sup>
+     were combined in an ELISA plate well and incubated for 15 min at 25degC. Then, 142 uL of 3 mM DTNB and 22.5 uL of an AChI solution were added. The absorbance was measured at 405 nm. A water control instead of the extract this having been assumed to be 100% active was carried out. The calculation of the percentage inhibition was carried out as follows and used for a control response.
+    </p>
+    <p>
+     I (%) = 100-((A
+     <sub>
+      sample
+     </sub> / A
+     <sub>
+      control
+     </sub>
+     )  100), where I is the percent inhibition of acetylcholinesterase, A
+     <sub>
+      sample
+     </sub>
+     <sub>
+     </sub>
+     is the absorbance of the extract containing reaction and A
+     <sub>
+      control
+     </sub>
+     is the absorbance of the reaction control. Tests were carried out in triplicate and a blank with Tris-HCl buffer instead of enzyme solution was used. Extract concentration providing 50% inhibition (IC
+     <sub>
+      50
+     </sub>
+     ) was obtained by plotting the inhibition percentage against extract concentrations.
+    </p>
+   </sec>
+   <sec id="s2_9">
+    <label>
+     2.9
+    </label>
+    <title1>
+     MALDI-TOF analysis
+    </title1>
+    <p>
+     Ethanol extracts of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     bracts and fruits were dissolved in acetone for analysis (4 mg.mL
+     <sup>-1
+     </sup>
+     , 50 / 50 volume), and the solutions were mixed with the matrix solution (10 mg.mL
+     <sup>-1
+     </sup>
+     in acetone). The matrix, which facilitates the deposition of the sample in the instrument, was 2,5-dihydroxy benzoic acid. Calibration was done with red phosphorous. Ion formation was enhanced by adding to the matrix a concentrated solution of sodium chloride (NaCl) (10 mg.mL
+     <sup>-1
+     </sup>
+     in distilled water). The mix used for examination consisted of 3 parts each of the samples and matrix solutions, added of 1 part NaCl solution. 0.5-1 uL of the mix so obtained and soluble in 98% acetone was then placed on the MALDI target. The residue remaining on the filter paper was further dissolved with water. Thus, a tannin so prepared was extracted in successive operations using ethyl acetate and 98 % acetone.
+    </p>
+   </sec>
+   <sec id="s2_10">
+    <label>
+     2.10
+    </label>
+    <title1>
+     Statistical analysis
+    </title1>
+    <p>
+     MS Excel and SPSS softwares were used for the relevant statistical analysis. Statistical test was investigated using IBM SPSS 20, and an interesting degree of significance (
+     <italic>
+      P
+     </italic>
+     &lt;0.05) was obtained. All the analyses were carried out in triplicates.
+    </p>
+   </sec>
+  </sec>
+  <sec id="s3">
+   <label>
+    3
+   </label>
+   <title1>
+    Results
+   </title1>
+   <sec id="s3_1">
+    <label>
+     3.1
+    </label>
+    <title1>
+     Chemical Composition of essential oils
+    </title1>
+    <p>
+     A total of 23 compounds were identified by chromatographic studies using GC-MS analysis of the essential oils of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     bracts and fruits (
+     <xref ref-type="table" rid="table-1">
+      Table 1
+     </xref>
+     ). According to their percentages and retention indices (RI), the components were determined with respect to (C
+     <sub>
+      8
+     </sub>-C
+     <sub>
+      22
+     </sub>
+     ) n-alkanes. They are presented in
+     <xref ref-type="table" rid="table-1">
+      Table 1
+     </xref>
+     in the order of their elution on the HP-5 column.
+    </p>
+    <p>
+     Different classes have been formed by dividing the identified compounds (
+     <xref ref-type="table" rid="table-1">
+      Table 1
+     </xref>
+     ). Oxygenated monoterpenes were the dominant class (77.79-90.64 %), with
+     <italic>
+      p
+     </italic>-menth-1-en-4-ol making up the majority of the Tilia fruits (66.05 %) and
+     <italic>
+      cis
+     </italic>-linalool oxide forming up the majority of the bracts (19.51 %). The hydrocarbon monoterpenes constituted the second class (8.14-8.46 %). Hydrocarbon sesquiterpenes, on the other hand, were minor substances with a mean proportion below 0.4 %.
+    </p>
+    <table-wrap id="table-1">
+     <label>
+      Table 1
+     </label>
+     <caption>
+      <title1>
+       Chemical composition of essential (%) of bracts and fruits from
+       <italic>
+        T.
+       </italic>
+       <italic>
+        platyphyllos
+       </italic>
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-table-1.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          RT
+         </th>
+         <th>
+          RI
+         </th>
+         <th>
+          Compounds
+         </th>
+         <th>
+          Bracts
+         </th>
+         <th>
+          Fruits
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          11.69
+         </td>
+         <td>
+          926
+         </td>
+         <td>
+          α-thujene
+         </td>
+         <td>
+          0.15±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+         <td rowspan="2">-</td>
+        </tr>
+        <tr>
+         <td>
+          11.88
+         </td>
+         <td>
+          933
+         </td>
+         <td>
+          α-pinene
+         </td>
+         <td>
+          0.24±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          12.96
+         </td>
+         <td>
+          974
+         </td>
+         <td>
+          Sabinen
+         </td>
+         <td>
+          1.37±0.04
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.24±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          13.39
+         </td>
+         <td>
+          990
+         </td>
+         <td>
+          β-myrcene
+         </td>
+         <td>
+          0.80±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.13±0.04
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          14.07
+         </td>
+         <td>
+          1018
+         </td>
+         <td>
+          2-carene
+         </td>
+         <td>
+          1.00±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.07±0.00
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          14.34
+         </td>
+         <td>
+          1030
+         </td>
+         <td>
+          <italic>
+           O
+          </italic>-cymene
+         </td>
+         <td>
+          2.36±0.07
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          6.84±0.08
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          14.40
+         </td>
+         <td>
+          1032
+         </td>
+         <td>
+          Limonene
+         </td>
+         <td>
+          0.71±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.60±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          14.48
+         </td>
+         <td>
+          1036
+         </td>
+         <td>
+          Cineol
+         </td>
+         <td>
+          4.47±0.03
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.66±0.04
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          15.06
+         </td>
+         <td>
+          1061
+         </td>
+         <td>
+          δ-terpinen
+         </td>
+         <td>
+          1.83±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.26±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          15.41
+         </td>
+         <td>
+          1076
+         </td>
+         <td>
+          <italic>
+           cis
+          </italic>-linalool oxide
+         </td>
+         <td>
+          19.51±0.04
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          1.55±0.05
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          16.10
+         </td>
+         <td>
+          1106
+         </td>
+         <td>
+          β-linalool
+         </td>
+         <td>
+          1.97±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          4.93±0.03
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          16.68
+         </td>
+         <td>
+          1134
+         </td>
+         <td>
+          β-terpineol
+         </td>
+         <td>
+          17.36±0.06
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          1.85±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          18.06
+         </td>
+         <td>
+          1201
+         </td>
+         <td>
+          <italic>
+           p
+          </italic>-menth-1-en-4-ol
+         </td>
+         <td>
+          8.78±0.09
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          66.05±0.07
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          18.28
+         </td>
+         <td>
+          1212
+         </td>
+         <td>
+          α-terpineol
+         </td>
+         <td>
+          4.99±0.05
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          11.83±0.05
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          18.38
+         </td>
+         <td>
+          1217
+         </td>
+         <td>
+          <italic>
+           t
+          </italic>
+          <italic>
+           rans
+          </italic>-piperitol
+         </td>
+         <td>
+          9.64±0.07
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.10±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          18.71
+         </td>
+         <td>
+          1234
+         </td>
+         <td>
+          Thymol methyl ether
+         </td>
+         <td>
+          3.59±0.04
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.64±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          19.07
+         </td>
+         <td>
+          1253
+         </td>
+         <td>
+          Linalyl
+         </td>
+         <td>
+          2.38±0.05
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.30±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          19.28
+         </td>
+         <td>
+          1264
+         </td>
+         <td>
+          Phenol, 2 ethyl 4,5 dimethyl
+         </td>
+         <td>
+          6.60±0.04
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.05±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          19.32
+         </td>
+         <td>
+          1266
+         </td>
+         <td>
+          Epoxy linalool oxide
+         </td>
+         <td>
+          0.46±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          1.98±0.03
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          19.94
+         </td>
+         <td>
+          1298
+         </td>
+         <td>
+          Carvacrol
+         </td>
+         <td>
+          6.54±0.06
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.95±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          20.15
+         </td>
+         <td>
+          1309
+         </td>
+         <td>
+          Biisobutenyl
+         </td>
+         <td>
+          4.40±0.04
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.69±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          21.06
+         </td>
+         <td>
+          1360
+         </td>
+         <td>
+          Nerol acetate
+         </td>
+         <td>
+          0.48±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.10±0.00
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          22.26
+         </td>
+         <td>
+          1429
+         </td>
+         <td>
+          β-caryophyllene
+         </td>
+         <td>
+          0.37±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.15±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Chemicals classes
+         </td>
+         <td />
+         <td />
+         <td />
+         <td />
+        </tr>
+        <tr>
+         <td>
+          Hydrocarbons Monoterpenes
+         </td>
+         <td />
+         <td />
+         <td>
+          8.46±0.07
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          8.14±0.09
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Oxygenated Montterpenes
+         </td>
+         <td />
+         <td />
+         <td>
+          77.79±0.13
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          90.64±0.17
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Hydrocarbons Sesquiterpenes
+         </td>
+         <td />
+         <td />
+         <td>
+          0.37±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.15±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Others
+         </td>
+         <td />
+         <td />
+         <td>
+          13.38±0.04
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          1.04±0.03
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     Compounds are listed in order of their elution from a HP-5MS column, RT: retention time (min), RI: retention index. Values with different superscripts (a-b) are significantly different at
+     <italic>
+      p
+     </italic>
+     &lt; 0.05.
+    </p>
+   </sec>
+   <sec id="s3_2">
+    <label>
+     3.2
+    </label>
+    <title1>
+     Phenolic Contents
+    </title1>
+    <p>
+     We measured the amounts of total polyphenols, flavonoids, and proanthocyanidins in ethanolic extracts of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     bracts and fruits.
+    </p>
+    <p>
+     A significant variance in the extracts' phenolic levels was found, as shown in
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     . In the fruit extract, polyphenols represented a high content (7.65 mg GAE.g
+     <sup>-1
+     </sup>
+     DW), while flavonoids and proanthocyanidins constituted the least amount (3.01 mg Q. g
+     <sup>-1
+     </sup>
+     DW and 1.11 mg CE. g
+     <sup>-</sup>
+     <sup>
+      1
+     </sup>
+     DW, respectively). Additionally, the fruit extract's total phenolic content was substantially higher than that of the bract extract (4.81 mg GAE.g
+     <sup>-1
+     </sup>
+     DW). These findings indicate that the concentration of phenolic chemicals varied considerably with the organs.
+    </p>
+    <p>
+     <bold>
+      <xref ref-type="table" rid="table-2">
+       Table 2
+      </xref>
+      .
+     </bold>
+     Phenolic compounds, antioxidant and acetylcholinesterase activities of the ethanolic extracts of fruits and bracts from
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     . The numbers shown are means of three experiments with their accompanying standard deviations.
+    </p>
+    <table-wrap id="table-2">
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-table-2.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th />
+         <th />
+         <th colspan="2">
+          Fruits
+         </th>
+         <th colspan="2">
+          Bracts
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td />
+         <td />
+         <td>
+          Extract
+         </td>
+         <td>
+          EO
+         </td>
+         <td>
+          Extract
+         </td>
+         <td>
+          EO
+         </td>
+        </tr>
+        <tr>
+         <td rowspan="3">
+          Phenolic compounds
+         </td>
+         <td>
+          Total phenolic content (mg GAE.g
+          <sup>-1
+          </sup>
+          DW)
+         </td>
+         <td>
+          7.65±0.03
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>-</td>
+         <td>
+          4.81±0.07
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>-</td>
+        </tr>
+        <tr>
+         <td>
+          Flavonoids content (mg QE.g
+          <sup>-1
+          </sup>
+          DW)
+         </td>
+         <td>
+          3.01±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+         <td rowspan="2">-</td>
+         <td>
+          1.61±0.02
+          <sup>
+           b
+          </sup>
+         </td>
+         <td rowspan="2">-</td>
+        </tr>
+        <tr>
+         <td>
+          Proanthocyanidins (mg CE.g
+          <sup>-1
+          </sup>
+          DW)
+         </td>
+         <td>
+          1.11±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          0.72±0.00
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td rowspan="3">
+          Antioxidant activity
+         </td>
+         <td>
+          DPPH test IC
+          <sub>
+           50
+          </sub>
+          (mg.mL
+          <sup>-1
+          </sup>
+          )
+         </td>
+         <td>
+          1.07±0.05
+          <sup>
+           c
+          </sup>
+         </td>
+         <td>
+          0.52±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          1.22±0.03
+          <sup>
+           d
+          </sup>
+         </td>
+         <td>
+          0.91±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Iron chelating IC
+          <sub>
+           50
+          </sub>
+          (mg.mL
+          <sup>-1
+          </sup>
+          )
+         </td>
+         <td>
+          1.29±0.04
+          <sup>
+           c
+          </sup>
+         </td>
+         <td>
+          0.67±0.00
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          1.82±0.01
+          <sup>
+           d
+          </sup>
+         </td>
+         <td>
+          1.01±0.01
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Reducing power EC
+          <sub>
+           50
+          </sub>
+          (mg.mL
+          <sup>-1
+          </sup>
+          )
+         </td>
+         <td>
+          2.03±0.01
+          <sup>
+           d
+          </sup>
+         </td>
+         <td>
+          0.73±0.01
+          <sup>
+           a
+          </sup>
+         </td>
+         <td>
+          1.54±0.04
+          <sup>
+           c
+          </sup>
+         </td>
+         <td>
+          1.33±0.03
+          <sup>
+           b
+          </sup>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Acetylcholinesterase activity
+         </td>
+         <td>
+          AChEIC
+          <sub>
+           50
+          </sub>
+          (mg.mL
+          <sup>-1
+          </sup>
+          )
+         </td>
+         <td>
+          1.23±0.03
+          <sup>
+           c
+          </sup>
+         </td>
+         <td>
+          0.95±0.03
+          <sup>
+           b
+          </sup>
+         </td>
+         <td>
+          1.39±0.05
+          <sup>
+           cd
+          </sup>
+         </td>
+         <td>
+          0.77±0.02
+          <sup>
+           a
+          </sup>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     Notes: EO: Essential oil; GAE: Gallic acid equivalents; DW: Dry weight; QE: Quercetin equivalents;
+    </p>
+    <p>
+     CE: ( + )-catechin equivalents. Means with different letters are different (P &lt; 0.05).
+    </p>
+   </sec>
+   <sec id="s3_3">
+    <label>
+     3.3
+    </label>
+    <title1>
+     Antioxidant activity
+    </title1>
+    <p>
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     shows the total antioxidant capacity of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     fruits, bracts, ethanolic extract, and essential oils. The variation of the concentration (IC
+     <sub>
+      50
+     </sub>
+     ) that causes 50 % inhibition is summarized in the results.
+    </p>
+    <p>
+     According to the organs (fruits and bracts),
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     ethanolic extract and essential oils showed a significant variance in their capacity to scavenge free radicals. The ethanolic extract's activity was found to be lowest in the bracts organs (1.22 mg.mL
+     <sup>-1
+     </sup>
+     ), and the highest was found in the essential oils of the fruits and bracts (0.52 mg.mL
+     <sup>-1
+     </sup>
+     and 0.91 mg.mL
+     <sup>-1
+     </sup>
+     , respectively).
+    </p>
+    <p>
+     It is possible to draw the conclusion that antiradical activity is influenced by the type of extract and organs based on the data obtained. The results obtained showed that the antioxidant activity of fruit essential oils is higher than that of ethanol extract.
+    </p>
+    <p>
+     The iron-reducing power was determined based on the effective concentration (EC
+     <sub>
+      50
+     </sub>
+     ). The linear regression line between the concentration and the related optical density is used to calculate the EC
+     <sub>
+      50
+     </sub>
+     values. The extract's low reduction power and high EC
+     <sub>
+      50
+     </sub>
+     value are related. Thus, it can be inferred from
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     that the essential oil of fruits has the highest reducing power (0.67 mg.mL
+     <sup>-1
+     </sup>
+     ).
+    </p>
+    <p>
+     The ability level for iron chelation was employed to evaluate the chelation capacity of metal ions by the plant extracts. Fruit essential oil has the strongest chelating power and the lowest IC
+     <sub>
+      50
+     </sub>
+     (2.03 mg.mL
+     <sup>-1
+     </sup>
+     ). In comparison to ethanolic extract, the essential oil had the maximum antioxidant capacity, according to the data. The high concentration of monoterpenes that have been hydrocarbonated and oxygenated may be the cause of the essential oil's potent antioxidant properties.
+    </p>
+   </sec>
+   <sec id="s3_4">
+    <label>
+     3.4
+    </label>
+    <title1>
+     Acetylcholinesterase inhibitory activity
+    </title1>
+    <p>
+     By inhibiting the enzyme acetylcholinesterase (AChE), which is the key for degrading acetylcholine, a variety of neurological illnesses, such as senile dementia, Alzheimer's, myasthenia gravis and ataxia, appear that can be treated [
+     <xref ref-type="bibr" rid="ref-27">
+      27
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="ref-28">
+      28
+     </xref>
+     ]. According to Howes and Houghton [
+     <xref ref-type="bibr" rid="ref-29">
+      29
+     </xref>
+     ], plants were previously utilized to improve cognitive performance and treat various symptoms of Alzheimer's disease. Galantamine, one of the enzyme inhibitors extracted from snowdrop extract, is utilized to make the majority of medications used in Alzheimer's therapy [
+     <xref ref-type="bibr" rid="ref-27">
+      27
+     </xref>
+     ]. The literature-recommended approach was modified to determine the level of AChE inhibition [
+     <xref ref-type="bibr" rid="ref-30">
+      30
+     </xref>
+     ].
+    </p>
+    <p>
+     The activity of ethanolic extracts of fruits and bracts from
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     ability to inhibit acetylcholinesterase was examined (
+     <xref ref-type="table" rid="table-2">
+      Table 2
+     </xref>
+     ). The results showed IC
+     <sub>
+      50
+     </sub>
+     values varying between 0.77 and 1.39 mg.mL
+     <sup>-1
+     </sup>
+     . These results show that all extracts have modest inhibitory efficacy and are comparable to those obtained with other aromatic and medicinal herbs [
+     <xref ref-type="bibr" rid="ref-31">
+      31
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="ref-34">
+      34
+     </xref>
+     ].
+    </p>
+    <p>
+     The essential oil from
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     bracts had the most potent inhibitory effect (IC
+     <sub>
+      50
+     </sub> = 0.77 mg.mL
+     <sup>-1
+     </sup>
+     ), followed by the essential oil from fruits (IC
+     <sub>
+      50
+     </sub> = 0.95 mg.mL
+     <sup>-1
+     </sup>
+     ). Results analysis reveals that these oils have a mild inhibitory effect on AChE. According to Orhan et al. [
+     <xref ref-type="bibr" rid="ref-28">
+      28
+     </xref>
+     ], the IC
+     <sub>
+      50
+     </sub>
+     value for the drug galantamine, which is utilized pharmacologically, is 1 mg.mL
+     <sup>-1
+     </sup>
+     . The monoterpenes molecule is responsible for this inhibitory effect because the extract has greater activity than the AChE inhibitor. The IC
+     <sub>
+      50
+     </sub>
+     values of ethanolic extracts from fruits and bracts are 1.23 mg.mL
+     <sup>-1
+     </sup>
+     and 1.39 mg.mL
+     <sup>-1
+     </sup>
+     , respectively.
+    </p>
+    <p>
+     From the known literature this appears to be the first time that inhibition of the AChE enzyme
+     <italic>
+      in vitro
+     </italic>
+     is reported by using essential oils and ethanolic extracts.
+    </p>
+   </sec>
+   <sec id="s3_5">
+    <label>
+     3.5
+    </label>
+    <title1>
+     MALDI-TOF analysis
+    </title1>
+    <p>
+     Based on the detection of MALDI-TOF spectra, it was shown that the bracts and fruit extracts of
+     <italic>
+      T.
+     </italic>
+     <italic>
+      platyphyllos
+     </italic>
+     included a range of phenolic compounds (
+     <xref ref-type="table" rid="table-3">
+      Table 3
+     </xref>
+     and Figures 2, 3). The chemical profiles of the ethanolic extracts of bracts and fruits are substantially similar, with a few small exceptions.
+    </p>
+    <table-wrap id="table-3">
+     <label>
+      Table 3
+     </label>
+     <caption>
+      <title1>
+       Compounds of ethanolic extract of
+       <italic>
+        T.
+       </italic>
+       <italic>
+        platyphyllos
+       </italic>
+       fruits and bracts
+      </title1>
+     </caption>
+     <alternatives>
+      <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-table-3.tif" />
+      <table>
+       <colgroup>
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+        <col align="center" />
+       </colgroup>
+       <thead>
+        <tr>
+         <th>
+          Compounds
+         </th>
+         <th>
+          Peak in Da
+         </th>
+         <th>
+          Fruits : With or without Na
+          <sup> + </sup>
+         </th>
+         <th>
+          Bracts : With or without Na
+          <sup> + </sup>
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <italic>
+           p
+          </italic>-Hydroxybenzoic acid
+         </td>
+         <td>
+          137.12
+         </td>
+         <td colspan="2">
+          Without
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Protocatechuic acid
+         </td>
+         <td>
+          176.03; 154.06-176.04
+         </td>
+         <td>
+          With
+         </td>
+         <td rowspan="2">
+          Without
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Esculetin deprotonated
+         </td>
+         <td>
+          177.07; 177.08
+         </td>
+         <td colspan="2" rowspan="4">
+          Without
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Esculetin
+         </td>
+         <td>
+          178.14
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Syringic acid
+         </td>
+         <td>
+          199.11
+         </td>
+         <td rowspan="2">
+          Without
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Fisetinidin deprotonated
+         </td>
+         <td>
+          273.14; 273.15
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Quercetin, or Ellagic acid protonated
+         </td>
+         <td>
+          326.40
+         </td>
+         <td>
+          With
+         </td>
+         <td>-</td>
+        </tr>
+        <tr>
+         <td>
+          Dimer of esculetin / deprotonated dimer of esculetin with glucose
+         </td>
+         <td>
+          360.16; 361.16
+         </td>
+         <td colspan="2">
+          Without                    And / o
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Gallic acid linked to a glucose dimer and with two Na + </td>
+         <td>
+          537.11 537.09-537.14
+         </td>
+         <td colspan="2">
+          With
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Fisetinidi-catechin dimer esterified by a protocatechuic acid
+         </td>
+         <td>
+          698.03 – 698.07
+         </td>
+         <td colspan="2" rowspan="2">
+          Without
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Fisetinidi-catechin dimer esterified by a protocatechuic acid  protonated
+         </td>
+         <td>
+          699.06-699.10
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Fisetinidin tetramer
+         </td>
+         <td>
+          1035.75-1036.71-1036.75
+         </td>
+         <td colspan="2">
+          Without
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </alternatives>
+    </table-wrap>
+    <p>
+     (a):
+    </p>
+    <p>
+     (b):
+    </p>
+    <fig id="fig-4">
+     <label>
+      Figure 2
+     </label>
+     <caption>
+      <title1>
+       Spectra of bract ethanol extracts of
+       <italic>
+        T. platyphyllos
+       </italic>
+       analyzed by matrix-assisted laser desorption ionization time-of-flight mass spectrometry (MALDI-TOF MS) (a) 100-1000 Da range; and (b) 400-1000 Da range. 1
+       <italic>
+        p
+       </italic>-Hydroxybenzoic acid; 2 Protocatechuic acid
+       <italic>
+        ;
+       </italic>
+       3 Esculetin deprotonated; 4 Syringic acid; 5 Fisetinidin deprotonated; 6 Dimer of esculetin; 7 Gallic acid linked to a glucose dimer and with two Na + ; 8 Fisetinidi-catechin dimer esterified by a protocatechuic acid protonated; 9 Fisetinidin tetramer.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-4.jpg" />
+     <img src="TSP_JRM_46950-fig-4.jpg" />
+    </fig>
+    <fig id="fig-5">
+     <label>
+      Figure 2
+     </label>
+     <caption>
+      <title1>
+       Spectra of bract ethanol extracts of
+       <italic>
+        T. platyphyllos
+       </italic>
+       analyzed by matrix-assisted laser desorption ionization time-of-flight mass spectrometry (MALDI-TOF MS) (a) 100-1000 Da range; and (b) 400-1000 Da range. 1
+       <italic>
+        p
+       </italic>-Hydroxybenzoic acid; 2 Protocatechuic acid
+       <italic>
+        ;
+       </italic>
+       3 Esculetin deprotonated; 4 Syringic acid; 5 Fisetinidin deprotonated; 6 Dimer of esculetin; 7 Gallic acid linked to a glucose dimer and with two Na + ; 8 Fisetinidi-catechin dimer esterified by a protocatechuic acid protonated; 9 Fisetinidin tetramer.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-5.jpg" />
+     <img src="TSP_JRM_46950-fig-4.jpg" />
+    </fig>
+    <p>
+     (a):
+    </p>
+    <p>
+     (b):
+    </p>
+    <fig id="fig-6">
+     <label>
+      Figure 3
+     </label>
+     <caption>
+      <title1>
+       Spectra of fruit ethanol extracts of
+       <italic>
+        T. platyphyllos
+       </italic>
+       analyzed by matrix-assisted laser desorption ionization time-of-flight mass spectrometry (MALDI-TOF MS) (a) 100-1000 Da range; and (b) 400-1000 Da range. 1
+       <italic>
+        p
+       </italic>-Hydroxybenzoic acid; 2 Protocatechuic acid
+       <italic>
+        ;
+       </italic>
+       3 Esculetin deprotonated; 4 Syringic acid; 5 Fisetinidin deprotonated; 6 Quercetin; 7 Dimer of esculetin; 8 Gallic acid linked to a glucose dimer and with two Na + ; 9 Fisetinidi-catechin dimer esterified by a protocatechuic acid protonated; 10 Fisetinidin tetramer.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-6.jpg" />
+     <img src="TSP_JRM_46950-fig-6.jpg" />
+    </fig>
+    <fig id="fig-7">
+     <label>
+      Figure 3
+     </label>
+     <caption>
+      <title1>
+       Spectra of fruit ethanol extracts of
+       <italic>
+        T. platyphyllos
+       </italic>
+       analyzed by matrix-assisted laser desorption ionization time-of-flight mass spectrometry (MALDI-TOF MS) (a) 100-1000 Da range; and (b) 400-1000 Da range. 1
+       <italic>
+        p
+       </italic>-Hydroxybenzoic acid; 2 Protocatechuic acid
+       <italic>
+        ;
+       </italic>
+       3 Esculetin deprotonated; 4 Syringic acid; 5 Fisetinidin deprotonated; 6 Quercetin; 7 Dimer of esculetin; 8 Gallic acid linked to a glucose dimer and with two Na + ; 9 Fisetinidi-catechin dimer esterified by a protocatechuic acid protonated; 10 Fisetinidin tetramer.
+      </title1>
+     </caption>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-fig-7.jpg" />
+     <img src="TSP_JRM_46950-fig-6.jpg" />
+    </fig>
+   </sec>
+  </sec>
+  <sec id="s4">
+   <label>
+    4
+   </label>
+   <title1>
+    Discussion
+   </title1>
+   <p>
+    Reactive oxygen species (ROS) can wreak havoc on various biological molecules, including DNA, essential proteins, and membrane lipids, triggering molecular and cellular dysfunction [
+    <xref ref-type="bibr" rid="ref-35">
+     35
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-36">
+     36
+    </xref>
+    ]. Plants produce secondary metabolites, particularly polyphenols, known for their anti-radical properties due to their capacity to transfer hydrogen atoms and electrons. This study aimed to assess phenolic components within the ethanolic extract and essential oil derived from T. platyphyllos fruits and bracts. The ethanolic extracts exhibited heightened concentrations of these constituents, notably in the fruits.
+   </p>
+   <p>
+    Specifically, the ethanolic extract from T. platyphyllos fruits displayed the highest content of polyphenols and flavonoids at 7.65 mg GAE.g-1 DW and 3.01 mg CE.g-1 DW, respectively.
+   </p>
+   <p>
+    Correspondingly, these same plant parts exhibited superior antioxidant capabilities against DPPH. Furthermore, there was a notable correlation (
+    <xref ref-type="table" rid="table-4">
+     Table 4
+    </xref>
+    ) between the phenolic content of the ethanolic extract and its DPPH antioxidant activity, reflected in a Pearson's coefficient of 0.72 (
+    <italic>
+     p
+    </italic>
+    &lt; 0.01).
+   </p>
+   <table-wrap id="table-4">
+    <label>
+     Table 4
+    </label>
+    <caption>
+     <title1>
+      The correlation coefficient between phenolic compound and biological activities of ethanolic extracts from
+      <italic>
+       T.
+      </italic>
+      <italic>
+       platyphyllos
+      </italic>
+     </title1>
+    </caption>
+    <alternatives>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-table-4.tif" />
+     <table>
+      <colgroup>
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+       <col align="center" />
+      </colgroup>
+      <thead>
+       <tr>
+        <th />
+        <th>
+         Total phenolic content
+        </th>
+        <th>
+         Flavonoids content
+        </th>
+        <th>
+         Proanthocyanidins
+        </th>
+        <th>
+         DPPH Test
+        </th>
+        <th>
+         Iron chelating
+        </th>
+        <th>
+         Reducing power
+        </th>
+        <th>
+         AChE
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         Total phenolic content
+        </td>
+        <td>
+         1
+        </td>
+        <td>
+         0.996
+         <sup> *  * </sup>
+        </td>
+        <td>
+         1.000
+         <sup> *  * </sup>
+        </td>
+        <td>
+         0.722
+        </td>
+        <td>
+         0.671
+        </td>
+        <td>
+         0.884
+        </td>
+        <td>
+         0.818
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Flavonoids content
+        </td>
+        <td />
+        <td>
+         1
+        </td>
+        <td>
+         0.994
+         <sup> *  * </sup>
+        </td>
+        <td>
+         0.677
+        </td>
+        <td>
+         0.605
+        </td>
+        <td>
+         0.890
+        </td>
+        <td>
+         0.767
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Proanthocyanidins
+        </td>
+        <td />
+        <td />
+        <td>
+         1
+        </td>
+        <td>
+         0.730
+        </td>
+        <td>
+         0.684
+        </td>
+        <td>
+         0.882
+        </td>
+        <td>
+         0.828
+        </td>
+       </tr>
+       <tr>
+        <td>
+         DPPH test
+        </td>
+        <td />
+        <td />
+        <td />
+        <td>
+         1
+        </td>
+        <td>
+         0.941
+        </td>
+        <td>
+         0.832
+        </td>
+        <td>
+         0.679
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Iron chelating
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+         1
+        </td>
+        <td>
+         0.652
+        </td>
+        <td>
+         0.823
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Reducing power
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+         1
+        </td>
+        <td>
+         0.549
+        </td>
+       </tr>
+       <tr>
+        <td>
+         AChE
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+         1
+        </td>
+       </tr>
+       <tr>
+        <td colspan="8"> *  * . Correlation is significant at the 0.01 level (2-tailed).
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </alternatives>
+   </table-wrap>
+   <p>
+    The extract obtained from
+    <italic>
+     T. platyphyllos
+    </italic>
+    appears to boast a rich concentration of phenolic compounds, including total phenolics, flavonoids, and proanthocyanidins, attributing to its diverse biological activities such as antioxidant effects and acetylcholinesterase inhibition. These findings align with prior research on
+    <italic>
+     T. platyphyllos
+    </italic>
+    , emphasizing the prominence of phenolics and flavonoids within these plants [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-37">
+     37
+    </xref>
+    ]. Phenolic compounds, acknowledged for their antioxidant potential through metal ion chelation and free radical scavenging, contribute significantly to these properties [
+    <xref ref-type="bibr" rid="ref-37">
+     37
+    </xref>
+    ]. Notably, Szucs et al. [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ] highlighted the bract's abundance in bioactive phenolics, potentially explaining the antioxidant and anti-cholinesterase activities observed in the ethanolic extract and essential oil (EO) from fruits and bracts of
+    <italic>
+     T. platyphyllos
+    </italic>
+    .
+   </p>
+   <p>
+    Various methods, including DPPH, chelating, and reducing power assays, are frequently employed to gauge antioxidant capacities in plant extracts and essential oils [
+    <xref ref-type="bibr" rid="ref-38">
+     38
+    </xref>
+    ]. Our study affirms the significant antioxidant potential evident in all the ethanolic extracts and EOs from
+    <italic>
+     T. platyphyllos
+    </italic>
+    fruits and bracts.
+   </p>
+   <p>
+    While our findings resonate with related studies on
+    <italic>
+     T. platyphyllos
+    </italic>
+    and Tilia species, the variations among species, plant parts, and environmental factors emphasize the distinctiveness and relevance of our investigation [
+    <xref ref-type="bibr" rid="ref-39">
+     39
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-40">
+     40
+    </xref>
+    ]. The bioactive compounds derived from
+    <italic>
+     T. platyphyllos
+    </italic>
+    present promising therapeutic avenues for diverse ailments [
+    <xref ref-type="bibr" rid="ref-36">
+     36
+    </xref>
+    ].
+   </p>
+   <p>
+    Previous research underscores its toxicological, anti-tumor, antioxidant, and anti-inflammatory capacities [
+    <xref ref-type="bibr" rid="ref-15">
+     15
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-36">
+     36
+    </xref>
+    ]. Correlations between proanthocyanidins, flavonoids, total phenolics, and antioxidant capacities align with prior studies linking higher phenolic abundance with enhanced antioxidant effects [
+    <xref ref-type="bibr" rid="ref-41">
+     41
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-42">
+     42
+    </xref>
+    ].
+   </p>
+   <p>
+    Traditional uses of plants, including enhancing cognitive function and managing Alzheimer's symptoms, align with contemporary research [
+    <xref ref-type="bibr" rid="ref-29">
+     29
+    </xref>
+    ]. Some Alzheimer's therapies involve enzyme inhibitors like galantamine, derived from natural sources like snowdrop extracts [
+    <xref ref-type="bibr" rid="ref-27">
+     27
+    </xref>
+    ]. Our study reveals uncharted territory regarding the AChE inhibitory activity of essential oils and ethanolic extracts from
+    <italic>
+     T. platyphyllos
+    </italic>
+    bracts and fruits.
+   </p>
+   <p>
+    Notably, the bract's essential oil exhibited substantial inhibitory effects (IC
+    <sub>
+     50
+    </sub> = 0.77 mg.mL-1), albeit milder than the pharmacologically used galantamine (IC
+    <sub>
+     50
+    </sub> = 1 mg.mL-1) [
+    <xref ref-type="bibr" rid="ref-28">
+     28
+    </xref>
+    ]. Previous studies have identified chemical compositions in Tilia species, revealing various compounds like protocatechuic acid, procyanidin oligomers, catechin, epicatechin, flavonoid hexosides, and deoxyhexosides [
+    <xref ref-type="bibr" rid="ref-43">
+     43
+    </xref>
+    ,
+    <xref ref-type="bibr" rid="ref-45">
+     45
+    </xref>
+    ].
+    <italic>
+     T. platyphyllos
+    </italic>
+    specifically exhibited kaempferol monoglycosides and both monoglycosides and diglycosides of flavonoids such as quercetin catechin, epicatechin, and oligomers of procyanidins [
+    <xref ref-type="bibr" rid="ref-37">
+     37
+    </xref>
+    ].
+   </p>
+  </sec>
+  <sec id="s5">
+   <label>
+    5
+   </label>
+   <title1>
+    Conclusion
+   </title1>
+   <p>
+    Our investigation presents the first analysis of antioxidant potential and acetylcholinesterase inhibition properties within the ethanolic extract and essential oil derived from Tunisian
+    <italic>
+     T. platyphyllos
+    </italic>
+    . Our findings emphasize the therapeutic promise of this plant species, highlighting a direct correlation between its abundance in phenolic compounds and terpenoids and its antioxidant and anti-AChE activities. These outcomes suggest potential applications in healthcare and medicine. Recent research has highlighted the significance of anti-AChE activity in addressing neurodegenerative disorders, while the antioxidant properties hold promise in mitigating diseases associated with oxidative stress.
+   </p>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <p>
+    One of the authors thanks Mr. Akram Khazri for his help in collecting the plant material.
+   </p>
+  </ack>
+  <fn-group>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Funding Statement
+     </bold>
+     The authors acknowledge funding supported by Campus France as part of the Scientific Stay at High Level received by AK and supported by CRITTBois and LERMAB of University of Lorraine, Epinal, France.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Author Contribution
+     </bold>
+     <bold>
+      Statement
+     </bold>
+     The authors confirm contribution to the paper as follows AK Conceived and designed the experiments; performed the experiments; analyzed and interpreted the data; wrote and edited the article. MM and MBS Conducted statistical analysis and contributed to the drafting. EM Provided reagents, GC-MS materials, and analysis tools. AP Analyzed MALDI-TOF data, edited the article, and provided supervision. All authors reviewed the results and approved the final version of the manuscript.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Availability of Data and Materials
+     </bold>
+     The data that support the findings of this study are available from the corresponding author upon reasonable request.
+    </p>
+   </fn>
+   <fn fn-type="other">
+    <p>
+     <bold>
+      Conflicts of Interest
+     </bold>
+     The authors declare that they have no conflicts of interest to report regarding the present study.
+    </p>
+   </fn>
+  </fn-group>
+  <ref-list content-type="authoryear">
+   <title1>
+    References
+   </title1>
+   <table-wrap id="table-5">
+    <alternatives>
+     <graphic mime-subtype="tif" mimetype="image" ns0:href="TSP_JRM_46950-table-5.tif" />
+     <table>
+      <colgroup>
+       <col />
+       <col />
+      </colgroup>
+      <thead>
+       <tr align="center">
+        <th>
+         Ventura-Martinez, R., Mares-Sánchez, J.J., Avilés-Herrera, J., Ángeles-López, G.E., Déciga-Campos, M. et al. (2021). Antinociceptive synergy between metamizole and hesperidin in a model of visceral pain in mice
+         <italic>
+          . Archives of Medical Research, 52
+         </italic>
+         , 389-396.
+        </th>
+        <th />
+       </tr>
+      </thead>
+      <tbody>
+       <tr align="center">
+        <td />
+        <td>
+         Ekor, M. (2014). The growing use of herbal medicines: Issues relating to adverse reactions and challenges in monitoring safety.
+         <italic>
+          Frontiers in Pharmacology, 4
+         </italic>
+         , 1-10.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Certo, G., Costa, R., D'Angelo, V., Russo, M., Albergamo, A. et al. (2017). Anti-angiogenic activity and phytochemical screening of fruit fractions from
+         <italic>
+          Vitex agnus castus
+         </italic>
+         .
+         <italic>
+          Natural Products Research, 31
+         </italic>
+         , 2850-2856.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Wissam, Z., Nour, A.A., Bushra, J., Zein, N., Saleh, D. (2017). Extracting and studying the antioxidant capacity of polyphenols in dry linden leaves (
+         <italic>
+          Tilia
+         </italic>
+         <italic>
+          cordata
+         </italic>
+         ). Journal of
+         <italic>
+          Pharmacognosy and Phytochemistry, 6
+         </italic>
+         , 258-262.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Yayalaci, Y., Celik, I., Bati, B. (2014). Hepatoprotective and antioxidant activity of linden (
+         <italic>
+          Tilia
+         </italic>
+         <italic>
+          platyphyllos
+         </italic>
+         L.) infusion against ethanol-induced oxidative stress in rats.
+         <italic>
+          Journal of Membrane Biology. 247(2),
+         </italic>
+         181-188.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Delnavazi, M.R., Shahabi, M., Yassa, N. (2015). Flavonoids from the leaves of Iranian Linden;
+         <italic>
+          Tilia rubra
+         </italic>
+         subsp, Caucasica.
+         <italic>
+          Research Journal of Pharmacognosy, 2(3),
+         </italic>
+         17-22.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Negri, G., Santi, D., Tabach, R. (2013). Flavonol glycosides found in hydroethanolic extracts from
+         <italic>
+          Tilia cordata
+         </italic>
+         , a species utilized as anxiolytics.
+         <italic>
+          The Revista Brasileira de Plantas Medicinais, 15(2),
+         </italic>
+         217-224.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Dündar, Y., Aslan, R. (2000). Antioxidative Stress.
+         <italic>
+          Eastern Journal of Medicine, 5(2)
+         </italic>
+         , 45-47.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Şeker, M. (2011). Healing in plants, Ekin Publishing, 1st Edition, Bursa, pp. 440.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Committee on Herbal Medicinal Products. (2020). HMPC assessment report Tiliae flos-Assessment report on
+         <italic>
+          Tilia cordata
+         </italic>
+         Miller,
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         Scop., Tilia × vulgaris Heyne or their mixtures, flos. EMA / HMPC / 337067 / 2011. Accessed August 6, 2020 at:
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Majer, P., Neugart, S., Krumbein, A., Schreiner, M., Hideg, E. (2014). Singlet oxygen scavenging by leaf flavonoids contributes to sunlight acclimation in
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         .
+         <italic>
+          Environmental and Experimental Botany, 100
+         </italic>
+         , 1-9.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Guedes, L.M., Sanhueza, C., Torres, S., Figueroa, C., Gavilán, E. et al. (2023). Gall-inducing
+         <italic>
+          Eriophyes tiliae
+         </italic>
+         stimulates the metabolism of
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         leaves towards oxidative protection.
+         <italic>
+          Plant Physiology and Biochemistry, 195
+         </italic>
+         , 25-36.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Kirci, D., Öztürk, G., Demirci, B. (2022). Volatile compositions of
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         Scop. infusions by headspace-solid-phase microextraction (HS-SPME), antioxidant activity.
+         <italic>
+          European Journal of Life Sciences, 1,
+         </italic>
+         107-111.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Toker, G., Baser, K.H.C., Kürkçüoğlu, M., Özek, T. (1999). The composition of essential oils from Tilia L. species growing in Turkey.
+         <italic>
+          Journal Essential Oil Research, 11(3),
+         </italic>
+         369-374.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Szűcs, Z., Cziáky, Z., Kiss-Szikszai A., Sinka L., Vasas, G. et al. (2019) Comparative metabolomics of
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         Scop. bracts during phenological development.
+         <italic>
+          Phytochemistry, 167,
+         </italic>
+         1120.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Ferreira, T., Nascimento-Gonçalves, E., Macedo, S., Borges, I., Gama, A. et al. (2021). Toxicological and anti-tumor effects of a linden extract (
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         Scop.) in a HPV16-transgenic mouse model.
+         <italic>
+          Food and Function, 12(9)
+         </italic>
+         , 4005-4014.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Kelmendi, N., Mustafa, B., Zahiri, F., Nebija, D., Hajdari, A. (2020). Essential oil composition of
+         <italic>
+          Tilia
+         </italic>
+         <italic>
+          platyphyllos
+         </italic>
+         Scop., collected from different regions of Kosovo.
+         <italic>
+          Records of Natural Products, 14
+         </italic>
+         , 366-371.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Adams, R.P. (2001). Identification of essential oils components by Gas Chromatography / quadrupole Mass Spectroscopy. Carol Stream, IL, USA: Allured Publishing Corporation.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Oktay, M., Gulcin, I., Kufrevioglu, O.I. (2003). Determination of in vitro antioxidant activity of fennel (
+         <italic>
+          Foeniculum
+         </italic>
+         <italic>
+          vulgare
+         </italic>
+         ) seed extracts.
+         <italic>
+          LWT-Food Science and Technology
+         </italic>
+         ,
+         <italic>
+          36,
+         </italic>
+         263-271.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Dewanto, V., Wu, X., Adom, K.K., Liu, R.H. (2002). Thermal processing enhances the nutritional value of tomatoes by increasing total antioxidant activity.
+         <italic>
+          Journal of Agricultural and Food Chemistry, 50(10),
+         </italic>
+         3010-3014.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Djeridane, A., Yousfi, M., Nadjemi, B., Boutassouna, D., Stocker, P. et al. (2006). Antioxidant activity of some Algerian medicinal plants extracts containing phenolic compounds.
+         <italic>
+          Food Chemistry
+         </italic>
+         ,
+         <italic>
+          97 (4),
+         </italic>
+         654-660.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Maksimovic, Z., Malencic, D., Kovacevic, N. (2005). Polyphenol contents and antioxidant activity of
+         <italic>
+          Maydis
+         </italic>
+         <italic>
+          stigma
+         </italic>
+         extracts.
+         <italic>
+          Bioresource Technology, 96(8),
+         </italic>
+         873-877.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Hatano, T., Kagawa, H., Yasuhara, T., Okuda, T. (1988). Two new flavonoids and other constituents in licorice root their relative astringency and radical scavenging effect.
+         <italic>
+          Chemical and Pharmaceutical Bulletin
+         </italic>
+         ,
+         <italic>
+          36(6),
+         </italic>
+         2090-2097.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Decker, E.A., Welch, B. (1990). Role of ferritin as lipid oxidation catalyst in muscle.
+         <italic>
+          Journal of Agricultural and Food Chemistry, 38(3),
+         </italic>
+         674-677.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Oyaizu, M. (1986). Studies on products of the browning reaction prepared from glucose amine.
+         <italic>
+          Japanese
+         </italic>
+         <italic>
+          Journal of Nutrition and Dietetics, 44(6),
+         </italic>
+         307-315.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Khadhri, A., Neffati, M., Smiti, S., Falé, P., Lino, A.R.L. et al. (2010). Antioxidant, antiacetylcholinesterase and antimicrobial activities of
+         <italic>
+          Cymbopogon schoenanthus
+         </italic>
+         L. Spreng (lemon grass) from Tunisia.
+         <italic>
+          LWT-Food Science and Technology, 43,
+         </italic>
+         331-336.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Mukherjee, P. K., Kumar, V., Mal, M., Houghton, P. J. (2007). Acetylcholinesterase inhibitors from plants.
+         <italic>
+          Phytomedicine, 14(4),
+         </italic>
+         289-300.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Orhan, G., Orhan, I., Sener, B. (2006). Recent developments in natural and synthetic drug research for Alzheimer's disease.
+         <italic>
+          Letters in Drug Design  Discovery, 3(4),
+         </italic>
+         268-274.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Howes, M. R., Houghton, P. J. (2003). Plants used in Chinese and Indian traditional medicine for improvement of memory and cognitive function.
+         <italic>
+          Pharmacology, Biochemistry and Behavior, 75(3),
+         </italic>
+         513-527.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Ferreira, A., Proença, C., Serralheiro, M. L. M., Araújo, M. E. M. (2006). The in vitro screening for acetylcholinesterase inhibition and antioxidant activity of medicinal plants from Portugual.
+         <italic>
+          Journal of
+         </italic>
+         <italic>
+          Ethnopharmacology, 108(1),
+         </italic>
+         31-37.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Mendili, M., Smach, M.A., Husein, N., Khadhri, A. (2020). Comparison of antioxidant and antiacetylcholinesterase activities in vitro and in vivo of different extracts of Tunisia
+         <italic>
+          Maclura pomifera
+         </italic>
+         Raf. (Schneid) fruits.
+         <italic>
+          Avicenna Journal of Medical Biochemistry, 8(2):
+         </italic>
+         64-73.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Khadhri, A., Bouali, I., Belkhir, S., Smiti, S., Falé, P. et al. (2017). In vitro digestion, antioxidant and antiacetylcholinesterase activities of two species of Ruta:
+         <italic>
+          Ruta chalepensis
+         </italic>
+         and
+         <italic>
+          Ruta montana
+         </italic>
+         .
+         <italic>
+          Pharmaceutical Biology, 55(1):
+         </italic>
+         101-107.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Khadhri, A., Serralheiro, M. L. M., Nogueira, J. M. F., Neffati, M., Smiti, S. et al. (2008). Antioxidant and antiacetylcholinesterase activities of essential oils from
+         <italic>
+          Cymbopogon schoenanthus
+         </italic>
+         L. Spreng. Determination of chemical composition by GC-Mass Spectrometry and 13C-NMR.
+         <italic>
+          Food Chemistry
+         </italic>
+         ,
+         <italic>
+          109(3),
+         </italic>
+         630-637.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Mata, A. T., Proença, C., Ferreira, A. R., Serralheiro, M. L. M., Nogueira, J. M. F. et al. (2007). Antioxidant and antiacetylcholinesterase activities of five plants used as Portuguese food spices.
+         <italic>
+          Food Chemistry, 103(3),
+         </italic>
+         778-786.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Newman, D. J. (2022). Natural products and drug discovery.
+         <italic>
+          National Science Review, 9(11).
+         </italic>
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Najmi, A., Javed, S. A., Al Bratty, M., Alhazmi, H. A. (2022). Modern Approaches in the Discovery and Development of Plant-Based Natural Products and Their Analogues as Potential Therapeutic Agents.
+         <italic>
+          Molecules, 27(2),
+         </italic>
+         349.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Jabeur, I., Martins, N., Barros, L., Calhelha, R. C., Vaz, J. et al. (2017). Contribution of the phenolic composition to the antioxidant, anti-inflammatory and anti-tumor potential of
+         <italic>
+          Equisetum giganteum
+         </italic>
+         L. and
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         Scop.
+         <italic>
+          Food  Function, 8(3),
+         </italic>
+         975-984.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Shahidi, F., Zhong, Y. (2015). Measurement of antioxidant activity.
+         <italic>
+          Journal of Functional Foods, 18,
+         </italic>
+         757-781.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Quinto-Ortiz, Y. E., González-Trujano, M. E., Sánchez-Jaramillo, E., Moreno-Pérez, G. F., Jacinto-Gutiérrez, S. et al. (2022). Pharmacological Interaction of Quercetin Derivatives of
+         <italic>
+          Tilia americana
+         </italic>
+         and Clinical Drugs in Experimental Fibromyalgia.
+         <italic>
+          Metabolites
+         </italic>
+         ,
+         <italic>
+          12(10),
+         </italic>
+         916.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Siger, A., Antkowiak, W., Dwiecki, K., Rokosik, E., Rudzińska, M. (2021). Nutlets of
+         <italic>
+          Tilia cordata
+         </italic>
+         Mill. and
+         <italic>
+          Tilia platyphyllos
+         </italic>
+         Scop.-Source of bioactive compounds.
+         <italic>
+          Food Chemistry, 346
+         </italic>
+         , 128888.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Kędzierska-Matysek, M., Stryjecka, M., Teter, A., Skałecki, P., Domaradzki, P. et al. (2021). Relationships between the Content of Phenolic Compounds and the Antioxidant Activity of Polish Honey Varieties as a Tool for Botanical Discrimination.
+         <italic>
+          Molecules, 26(6),
+         </italic>
+         1810.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Muflihah, Y. M., Gollavelli, G., Ling, Y.-C. (2021). Correlation Study of Antioxidant Activity with Phenolic and Flavonoid Compounds in 12 Indonesian Indigenous Herbs. Antioxidants, 10(10), 1530.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Karioti, A., Chiarabini, L., Alachkar, A., Chehna, M.F., Vincieri, F.F. et al. (2014). HPLC-DAD and HPLC-ESI-MS analyses of
+         <italic>
+          Tiliae flos
+         </italic>
+         and its preparations.
+         <italic>
+          Journal of Pharmaceutical and Biomedical Analysis, 100,
+         </italic>
+         205-214.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Aguirre-Hernandez, E., Gonzalez-Trujano, M.E., Martinez, A.L., et al. (2010). HPLC / MS analysis and anxiolytic-like effect of quercetin and kaempferol flavonoids from
+         <italic>
+          Tilia
+         </italic>
+         <italic>
+          americana
+         </italic>
+         var. mexicana.
+         <italic>
+          Journal of Ethnopharmacoogyl, 127(1),
+         </italic>
+         91-97.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+        <td />
+       </tr>
+       <tr align="center">
+        <td />
+        <td>
+         Pérez-Ortega, G., Guevara-Fefer, P., Chávez, M., Herrera, J., Martínez, A. et al. (2008). Sedative and anxiolytic efficacy of Tilia americana var. mexicana inflorescences used traditionally by communities of state of Michoacan, Mexico.
+         <italic>
+          Journal of Ethnopharmacology, 116,
+         </italic>
+         461-468.
+        </td>
+       </tr>
+       <tr align="center">
+        <td />
+       </tr>
+      </tbody>
+     </table>
+    </alternatives>
+   </table-wrap>
+  </ref-list>
+ </back>
+</article>
