@@ -3,3 +3,4 @@ __pycache__/
 
 #Not commit output folder
 /output/
+/image/
