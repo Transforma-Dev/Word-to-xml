@@ -21,7 +21,7 @@ import re
 import sys
 import os
 
-from convertion import paragraph,table   #Import Functions from 'convertion.py' file
+from convertion import paragraph,table,image   #Import Functions from 'convertion.py' file
 from functions import eq_link
 #Tsp_styles.data
 from client_styles import TSP_styles,common_styles
@@ -113,11 +113,11 @@ def convert(input_file_name = None):
         return ''
 
     # Add css style in xml file
-    # xml+=f'<?xml-stylesheet type="text/css" href="/home/user2/python/wordtoxml/convertion/styles.css"?>'
+    xml+=f'<?xml-stylesheet href="/media/user/daecfb15-4cb5-43c2-a390-112ab6fc48dd/Siva/python/wordtoxml/convertion/styles.css" ?>'
     
     #Add nessaccery tags
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
-
+    # print(xml)
     #Check the word document and separate them in paragraph,tables and inline shapes
     for para_num,para in enumerate(iter_block_items(doc)):
         """
@@ -131,7 +131,7 @@ def convert(input_file_name = None):
             xml += table(para, doc,doc_filename,variables)
 
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
-            xml+=image(para,doc)
+            xml += image(para,doc)
 
         #Change the email in author name 
         if "</contrib-group>" in xml and variables["author_mail"]:
@@ -165,7 +165,10 @@ def convert(input_file_name = None):
     xml_modifier = common_styles.Common_styles()
     xml_modifier.modify_xml(output_xml, output_xml)
 
+    # with open(output_xml,"r") as ff:
+    #     print(ff.read())
+
     return output_xml_name
 
 
-# convert()
+convert()

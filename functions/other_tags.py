@@ -96,6 +96,7 @@ def noman_para(xml_text,variables):
 
 #Define function to find funding statement text
 def funding_text(xml_text,variables):
+    # print(xml_text)
     xml_text = xml_text.replace(":","")
     variables["back_start"] += "fn"
     if xml_text[:10]=="<fn-group>":

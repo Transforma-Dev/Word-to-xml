@@ -1,29 +1,31 @@
 {
-    "replace_text" : [
-            {"text":"i.e.","replace":"i.e.,"},
-            {"text":"e.g.","replace":"e.g.,"},
-            {"text":"Ltd","replace":"Ltd."},
-            {"text":"versus","replace":"vs."}
-        ],
-    
-    "space_add_text" : ["+","-","*","/","="],
+  "replace_text": [
+    { "text": "i.e.", "replace": "i.e.," },
+    { "text": "e.g.", "replace": "e.g.," },
+    { "text": "Ltd", "replace": "Ltd." },
+    { "text": "versus", "replace": "vs." }
+  ],
 
-    "space_remove_text" : ["-","—","-"],
+  "space_add_text": ["*", "/", "=", "+", "-"],
 
-    "space_before_text" : ["cm"],
+  "space_remove_text": ["-", "—", "-"],
 
-    "add_and" : ["%","°C"],
+  "space_before_text": ["cm", "m", "K", "kg"],
 
-    "add_all" : ["h","min","s"],
+  "space_after_text": ["no."],
 
-    "si_units" : [
-            {"text" : "second","replace":"s"},
-            {"text" : "minute","replace":"min"},
-            {"text" : "hour","replace":"h"}
-        ],
+  "add_and": ["%", "°C"],
 
-    "aff_replace_text" : [
-            {"text":"People’s Republic of China","replace":"China"},
-            {"text":"Dept","replace":"Department"}
-        ]
+  "add_all": ["h", "min", "s"],
+
+  "si_units": [
+    { "text": "second", "replace": "s" },
+    { "text": "minute", "replace": "min" },
+    { "text": "hour", "replace": "h" }
+  ],
+
+  "aff_replace_text": [
+    { "text": "People’s Republic of China", "replace": "China" },
+    { "text": "Dept", "replace": "Department" }
+  ]
 }

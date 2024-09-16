@@ -192,7 +192,8 @@ def reference_temp(xml_text,variables):
             print({'error': f'API Error: {response.status_code}'})
     
     except requests.exceptions.RequestException as e:
-        print({'error': f'Request Exception: {str(e)}'})
+        pass
+        # print({'error': f'Request Exception: {str(e)}'})
     # print(references_json)
     if references_json:
         data = references_json[0]

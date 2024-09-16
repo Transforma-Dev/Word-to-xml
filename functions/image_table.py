@@ -29,6 +29,7 @@ def image_caption(xml_text,variables):
             
             add_text = figure.replace(part1,"")
             part1 = part1.replace(":","") 
+            # print(part1)
             text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{add_text}</title1></caption>No Image</fig>'    
         else:
             if match:
@@ -39,10 +40,10 @@ def image_caption(xml_text,variables):
                 if part2 is None:
                     part2 = match.group(8)
                 part2 = part2.replace(":","") 
-                
+                # print(part1)
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{part2}</title1></caption>No Image</fig>'
             else:
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title1></title1></caption>No Image</fig>{figure}'
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>No Image</fig>{figure}'
     for i in range(count_graphic):
         # if "<" in figure:
         #     figure=figure.replace("<","&#60;")
@@ -59,6 +60,7 @@ def image_caption(xml_text,variables):
             
             add_text = figure.replace(part1,"")
             part1 = part1.replace(":","") 
+            # print(part1)
             text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{add_text}</title1></caption>{path_image[i]}{src[0]}</fig>'    
         
         else:
@@ -70,10 +72,14 @@ def image_caption(xml_text,variables):
                 if part2 is None:
                     part2 = match.group(8)
                 part2 = part2.replace(":","") 
-                    
+                # print(part1)
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{part2}</title1></caption>{path_image[i]}{src[0]}</fig>'
+            elif figure.strip().startswith(":"):
+                figure1 = figure.strip()[1:]
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1>{figure1}</title1></caption>{path_image[i]}{src[0]}</fig>'
             else:
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Fig.{variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig>{figure}'
+                # print(figure)
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig>{figure}'
             
         #figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
         #figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)

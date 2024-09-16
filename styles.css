@@ -1,177 +1,255 @@
-article { 
+article {
   padding-left: 20px;
   padding-top: 20px;
 }
+
 title1 {
   display: contents;
 }
+
 italic {
   font-style: italic;
 }
+
 bold {
   font-weight: bold;
 }
+
 sub {
   vertical-align: sub;
 }
+
 sup {
   vertical-align: super;
 }
-journal-id,publisher-name,publisher-loc,article-id,subject,issn,front article-title,alt-title,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list,ref label,ref person-group,ref article-title,ref source,ref year,ref volume,ref issue,ref fpage,ref lpage,ref pub-id,ref commend,ref year,ref issue,ref lpage,ref comment,ref web-url {
+
+journal-id,
+publisher-name,
+publisher-loc,
+article-id,
+subject,
+issn,
+front article-title,
+alt-title,
+aff,
+author-notes,
+history date,
+permissions,
+abstract p,
+kwd-group,
+sec,
+fig,
+table-wrap,
+ref,
+fn,
+fn p bold,
+ref-list,
+ref label,
+ref person-group,
+ref article-title,
+ref source,
+ref year,
+ref volume,
+ref issue,
+ref fpage,
+ref lpage,
+ref pub-id,
+ref commend,
+ref year,
+ref issue,
+ref lpage,
+ref comment,
+ref web-url {
   display: block;
 }
+
 journal-id::before {
   content: "Journal ID :";
   font-weight: bold;
 }
+
 journal-title::before {
   content: "Jounal title : ";
   font-weight: bold;
 }
+
 issn::before {
   content: "ISSN: ";
   font-weight: bold;
 }
+
 publisher-name::before {
   content: "Publiher Name : ";
   font-weight: bold;
 }
+
 publisher-loc::before {
   content: "Publiher Location : ";
   font-weight: bold;
 }
+
 article-id::before {
   content: "Article ID : ";
   font-weight: bold;
 }
+
 subject::before {
   content: "SUBJECT : ";
   font-weight: bold;
 }
+
 alt-title::before {
   content: "Alternative title : ";
   font-weight: bold;
 }
+
 contrib-group::before {
   content: "Contributors : ";
   font-weight: bold;
 }
-contrib::after {
+
+contrib:not(:last-of-type)::after {
   content: " , ";
 }
+
 aff::before {
   content: "Affiliation : ";
   font-weight: bold;
 }
+
 author-notes::before {
   content: "Author's Notes : ";
   font-weight: bold;
 }
-history date[ date-type="received" ]::before {
+
+history date[ date-type="received"]::before {
   content: "Received Date : ";
   font-weight: bold;
 }
-history date[ date-type="accepted" ]::before {
+
+history date[ date-type="accepted"]::before {
   content: "Accepted Date : ";
   font-weight: bold;
 }
+
 abstract p::before {
   content: "ABSTRACT : ";
   font-weight: bold;
   font-size: 20px;
   color: #0f60efcc;
 }
+
 kwd-group::before {
   content: "KEYWORDS : ";
   font-weight: bold;
   font-size: 20px;
   color: #0f60efcc;
 }
-kwd::after {
+
+kwd:not(:last-child)::after {
   content: ",";
 }
-table-wrap > label::after {
+
+table-wrap>label::after {
   content: " : ";
 }
+
 fig label::after {
   content: " : ";
 }
+
 pub-date::before {
   content: " Publication Date : ";
   font-weight: bold;
 }
+
 permissions::before {
   content: " Permissions : ";
   font-weight: bold;
 }
+
 ack p::before {
   content: " Acknowledgement : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 label::after {
   content: " ";
 }
+
 ref label::before {
   content: "Reference Number : ";
   font-weight: bold;
   font-size: 20px;
 }
+
 person-group::before {
   content: "Author Group : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref article-title::before {
   content: "Article title : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref source::before {
   content: "Journal title : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref year::before {
   content: "Year : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref volume::before {
   content: "Volume Number : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref issue::before {
   content: "Issue Number : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref fpage::before {
   content: "First Page : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref lpage::before {
   content: "Last Page : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref pub-id::before {
   content: "DOI Number : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref comment::before {
   content: "Commend  : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref web-url::before {
   content: "Web Url  : ";
   font-weight: bold;
   font-size: 18px;
 }
+
 ref mixed-citation::before {
   content: "Cross Ref DATA : ";
   display: block;
@@ -185,20 +263,51 @@ ref mixed-citation::before {
 
 
 
-journal-id,publisher-name,publisher-loc,article-id,subject,issn,article-title,alt-title,contrib,aff,author-notes,history date,permissions,abstract p,kwd-group,sec,fig,table-wrap,ref,fn,fn p bold,ref-list {
+journal-id,
+publisher-name,
+publisher-loc,
+article-id,
+subject,
+issn,
+article-title,
+alt-title,
+contrib,
+aff,
+author-notes,
+history date,
+permissions,
+abstract p,
+kwd-group,
+sec,
+fig,
+table-wrap,
+ref,
+fn,
+fn p bold,
+ref-list {
   margin: 8px 0px 8px 0px;
 }
 
-person-group,ref article-title,ref volume,ref source,ref year,ref issue,ref fpage,ref lpage,ref pub-id,ref comment,ref web-url {
+person-group,
+ref article-title,
+ref volume,
+ref source,
+ref year,
+ref issue,
+ref fpage,
+ref lpage,
+ref pub-id,
+ref comment,
+ref web-url {
   margin: 8px 0px 8px 10px;
   font-size: 16px;
 }
 
-front article-title{
+front article-title {
   font-size: 30px;
   text-align: center;
-  font-weight: bold;   
-  width: 100%; 
+  font-weight: bold;
+  width: 100%;
   margin: 10px 0px 10px 0px;
 }
 
@@ -222,6 +331,12 @@ kwd-group {
   color: saddlebrown;
 }
 
+link {
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
+}
+
 email {
   text-decoration: underline;
   color: blue;
@@ -236,28 +351,32 @@ sec {
   margin: 25px 0px 20px 0px;
 }
 
-sec > label,sec > title1 { 
+sec>label,
+sec>title1 {
   font-size: 25px;
   font-weight: bold;
   color: #0f60efcc;
 }
 
-sec > sec > label,sec > sec > title1 {
+sec>sec>label,
+sec>sec>title1 {
   font-size: 20px;
   font-weight: bold;
   color: #EF5151;
 }
-ref string-name {
-  background-color: yellow;
-}
 
-sec > sec > sec > label,sec > sec > sec > title1 {
+sec>sec>sec>label,
+sec>sec>sec>title1 {
   font-size: 17px;
   font-weight: bold;
   color: green;
 }
 
-table-wrap > label {
+ref string-name {
+  background-color: yellow;
+}
+
+table-wrap>label {
   font-weight: bold;
   color: #0f60efcc;
 }
@@ -277,7 +396,8 @@ table {
   margin-right: auto;
 }
 
-thead,tbody {
+thead,
+tbody {
   display: table-header-group;
 }
 
@@ -319,8 +439,8 @@ ref {
 }
 
 ref label {
- font-weight: bold; 
- font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 mixed-citation {
@@ -361,10 +481,15 @@ fig title1 {
   font-weight: normal;
 }
 
+xref {
+  color: blue;
+  /* text-decoration: underline; */
+}
+
 back glossary title1 {
   font-size: 20px;
   font-weight: bold;
-  display: block  ;
+  display: block;
 }
 
 p {

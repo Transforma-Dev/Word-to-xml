@@ -42,7 +42,7 @@ def heading(para,space_strip,xml_text,variables):
         variables["noman_store"]+="</def-list></glossary>"
     #print(text)
     variables["noman_text"]=False
-    #print(text)
+    # print(text,"===")
     return text
 
 
@@ -100,6 +100,7 @@ def sub_heading(para,xml_text,variables,space_strip,all_bold):
         xml_text = re.sub('^[\d\.\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
         text += f'</sec><sec id="s{variables["secid"]}_{variables["sec_3_id"]}_{variables["inner_3_id"]}"><label>{variables["secid"]}.{variables["sec_3_id"]}.{variables["inner_3_id"]}</label><title1>{xml_text}</title1>'
         variables["inner_3_id"]+=1
+        # print(text)
 
     elif para.alignment==0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+\.*\)*\s*'   , para.text.strip()):
         xml_text = re.sub('^[\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
@@ -110,7 +111,7 @@ def sub_heading(para,xml_text,variables,space_strip,all_bold):
             text += f'</sec></sec><sec id="s{variables["secid"]}_{variables["sec_2_id"]}"><label>{variables["secid"]}.{variables["sec_2_id"]}</label><title1>{xml_text}</title1>'
         else:
             text += f'</sec><sec id="s{variables["secid"]}_{variables["sec_2_id"]}"><label>{variables["secid"]}.{variables["sec_2_id"]}</label><title1>{xml_text}</title1>'
-    
+        # print(text)
         #Update the dictionary variable values
         variables.update(sec_3_id=variables["sec_2_id"], sec_2_id=variables["sec_2_id"] + 1, inner_3_id=1, sec_3=1,sec_2=variables["sec_2"] + 1)
     
@@ -130,5 +131,5 @@ def sub_heading(para,xml_text,variables,space_strip,all_bold):
         text = f'<p>{xml_text}</p>'
     
         
-    #print(text)
+    # print(text,"---")
     return text

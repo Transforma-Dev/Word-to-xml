@@ -7,8 +7,25 @@ import spacy
 
 class TSP_styles:
 
+    def __init__(self):
+        self.article_tit = False
+
     #Replace text or add space or remove space in this function
     def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
+        """<xref ref-type="bibr" rid="ref-3">3</xref>], [<xref ref-type="bibr" rid="ref-4">4</xref>"""
+        # print(element.text)
+        # print(element.tail)
+        # if element.text:
+        #     pattern = fr'<xref ref-type="bibr" rid="ref-3">3</xref>\], \[<xref ref-type="bibr" rid="ref-4">4</xref>'
+        #     matchs = re.findall(pattern, element.text,re.IGNORECASE)
+        #     if matchs:
+        #         print(matchs)
+        # if element.tail:
+        #     pattern = fr'<xref ref-type="bibr" rid="ref-3">3</xref>\], \[<xref ref-type="bibr" rid="ref-4">4</xref>'
+        #     matchs = re.findall(pattern, element.tail,re.IGNORECASE)
+        #     if matchs:
+        #         print(matchs)
+
         #Replace text
         for i in data["replace_text"]:
             if element.text and i["text"] in element.text:
@@ -19,8 +36,9 @@ class TSP_styles:
         #Replace and add space text
         for i in data["space_add_text"]:
             if element.text and i in element.text:
-                pattern = fr"\s*\{i}\s*"
-                element.text = re.sub(pattern, f' {i} ', element.text)
+                    pattern = fr"\s*\{i}\s*"
+                    element.text = re.sub(pattern, f' {i} ', element.text)
+                    
             if element.tail and i in element.tail:
                 pattern = fr"\s*\{i}\s*"
                 element.tail = re.sub(pattern, f' {i} ', element.tail)
@@ -36,12 +54,44 @@ class TSP_styles:
 
         #Replace and add space only before text
         for i in data["space_before_text"]:
-            if element.text and i in element.text:
-                pattern = fr"\s*{i}\s*"
-                element.text = re.sub(pattern, f' {i}', element.text)
-            if element.tail and i in element.tail:
-                pattern = fr"\s*{i}\s*"
-                element.tail = re.sub(pattern, f' {i}', element.tail)
+            if element.text and i in element.text.lower():
+                # print(element.text)
+                pattern = fr"\d\s*{i}"
+                matchs = re.findall(pattern, element.text,re.IGNORECASE)
+                if matchs:
+                    for match in matchs:
+                        match1 = match[0]
+                        match2 = match[1:]
+                        element.text = element.text.replace(match, f'{match1} {match2.strip()}')
+    
+            if element.tail and i in element.tail.lower():
+                pattern = fr"\d\s*{i}"
+                matchs = re.findall(pattern, element.tail,re.IGNORECASE)
+                if matchs:
+                    for match in matchs:
+                        match1 = match[0]
+                        match2 = match[1:]
+                        element.tail = element.tail.replace(match, f'{match1} {match2.strip()}')
+
+        #Replace and add space only after text
+        for i in data["space_after_text"]:
+            if element.text and i in element.text.lower():
+                pattern = fr"{i}\s*\d"     #r"\bno\.\d+"
+                matchs = re.findall(pattern, element.text,re.IGNORECASE)
+                if matchs:
+                    for match in matchs:
+                        match1 = match[0]
+                        match2 = match[1:]
+                        element.text = element.text.replace(match, f'{match1} {match2.strip()}')
+    
+            if element.tail and i in element.tail.lower():
+                pattern = fr"{i}\s*\d"
+                matchs = re.findall(pattern, element.tail,re.IGNORECASE)
+                if matchs:
+                    for match in matchs:
+                        match1 = match[:-1]
+                        match2 = match[-1]
+                        element.tail = element.tail.replace(match, f'{match1} {match2.strip()}')
 
         #Find the continuous text and add "," and last will add "and" 
         for symbol in data["add_and"]:
@@ -128,9 +178,18 @@ class TSP_styles:
 
     #Find the article title,heading tag and capitalie the article title,heading text except remove conjuction and preposition
     def find_artitle(self,element,data,nlp):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
-        doc = nlp(element.text)
-        for word in doc:
-            element.text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
+        if element.text.strip():
+            # print(element.text)
+            doc = nlp(element.text)
+            # for word in doc:
+            text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
+            element.text = text.strip()[0].upper() + text.strip()[1:]
+
+        if element.tail.strip():
+            doc = nlp(element.tail)
+            # for word in doc:
+            text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
+            element.tail = " " + text.strip()[0].upper() + text.strip()[1:]
           
     #Remove dot in end of affliation tag and replace the perticuler text
     def find_aff(self,element,data,nlp):    #https://github.com/Transforma-Dev/Word-to-xml/issues/9#issue-2379911935
@@ -141,7 +200,7 @@ class TSP_styles:
                 if child.text and i["text"] in child.text:
                     child.text = child.text.replace(i["text"], i["replace"])
                     
-        if child.text.endswith('.'):
+        if child.text.strip().endswith('.'):
             child.text = child.text[:-1]
         # new_tag = ET.Element("new")
         # new_tag.text = "mew"
@@ -173,48 +232,70 @@ class TSP_styles:
     def find_key(self,element,nlp):     #https://github.com/Transforma-Dev/Word-to-xml/issues/14#issue-2385180471
         n=1
         for child in element:
-            self.change_text(child,nlp)
-            doc = nlp(child.text)
-            if n==1 and child.text.strip():
-                child.text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                n+=1
-            else:
-                child.text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                # child.text = child.text.lower()
-        if child.text.endswith('.'):
-            child.text = child.text[:-1]
+            if child.text!=None:
+                self.change_text(child,nlp)
+                docs = nlp(child.text)
+                child_text = " ".join([word.text if word.text.isupper() else word.text.lower() for word in docs])
+                doc = nlp(child_text)
+                if n==1 and child.text.strip():
+                    child_ext = ' '.join([word.text.capitalize() if word.pos_ == 'PROPN' else word.text if not word.text.isupper() else word.text for word in doc])
+                    child.text = " " + child_ext.strip().capitalize() + " "
+                    n+=1
+                else:
+                    child.text = ' '.join([word.text.capitalize() if word.pos_ == 'PROPN' else word.text if not word.text.isupper() else word.text for word in doc])
+
+                    # child.text = child.text.lower()
+        if child.text!=None:
+            if child.text.strip().endswith('.'):
+                child.text = " " + child.text.strip()[:-1]
 
     #Change the table title and figure title in sentance case.
     def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
-        doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
-        text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-        # print(text)
-        # print(element.text,"----")
-        element.text = text.strip()[0].upper() + text.strip()[1:]
-        for child in element:
-            if child.text is not None:
-                nlp = spacy.load("en_core_web_sm")
-                doc = nlp(child.text)
-                child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                split = child_text.split(".")
-                for id,i in enumerate(split):
-                    if len(i.strip())!=0:
-                        if id == 0:
-                            child.text = i
-                        else:
-                            child.text += "." + i.strip()[0].upper() + i.strip()[1:]
-            if child.tail is not None:
-                doc = nlp(child.tail)
-                child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                split = child_tail.split(".")
-                for id,i in enumerate(split):
-                    if len(i.strip())!=0:
-                        if id == 0:
-                            child.tail = i
-                        else:
-                            child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
-        if element.text.endswith('.'):
-            element.text = element.text[:-1]
+        if element.text:
+            doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
+            text = ' '.join([word.text if word.text.isupper() else word.text.lower() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+            # print(text)
+            # print(element.text,"----")
+            text_1 = text.split(".")
+            # print(text.strip().capitalize())
+            text = ''
+            for k in text_1:
+                text += k.strip().capitalize() + "."
+            
+            text = text[:-1]
+            element.text = text.strip()[0].upper() + text.strip()[1:]
+            # print(element.text,"----")
+            for child in element:
+                if child.text is not None:
+                    nlp = spacy.load("en_core_web_sm")
+                    doc = nlp(child.text)
+                    child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                    split = child_text.split(".")
+                    for id,i in enumerate(split):
+                        if len(i.strip())!=0:
+                            if id == 0:
+                                child.text = i
+                            else:
+                                child.text += "." + i.strip()[0].upper() + i.strip()[1:]
+                if child.tail is not None:
+                    doc = nlp(child.tail)
+                    child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                    split = child_tail.split(".")
+                    for id,i in enumerate(split):
+                        if len(i.strip())!=0:
+                            if id == 0:
+                                child.tail = i
+                            else:
+                                child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
+            if element.text.strip().endswith('.'):
+                element.text = " " + element.text[:-1]
+
+    def find_xref(self,element):
+        if element.text:
+            if "-" in element.text.lower() or "and" in element.text.lower():
+                element.text = element.text.lower().replace("figures","Figs.",)
+            elif "figure" in element.text.lower():
+                element.text = element.text.lower().replace("figure","Fig.",)
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
@@ -230,25 +311,23 @@ class TSP_styles:
                     author = fn
                 elif "availability" in bold.text.strip().lower():
                     availability = fn
-                elif "conflict" in bold.text.strip().lower():
-                    conflict = fn
                 elif "ethics" in bold.text.strip().lower():
                     ethics = fn
+                elif "conflict" in bold.text.strip().lower():
+                    conflict = fn
+
+        fn_group.clear()
+
         #Remove and append tag order
         if funding:
-            fn_group.remove(funding)
             fn_group.append(funding)
         if author:
-            fn_group.remove(author)
             fn_group.append(author)
         if availability:
-            fn_group.remove(availability)
             fn_group.append(availability)
         if ethics:
-            fn_group.remove(ethics)
             fn_group.append(ethics)
         if conflict:
-            fn_group.remove(conflict)
             fn_group.append(conflict)
 
 
@@ -256,7 +335,7 @@ class TSP_styles:
 
     #Find the tags in xml and replace the content
     def change_text(self, element, nlp):
-
+        # print(element.text,"----",element.tail,element)
 
         #from journal load the json file
         with open("json_folder/TSP_styles.json",'r') as file:
@@ -264,9 +343,14 @@ class TSP_styles:
         # print(data)
 
         #Find the article title tag inside the front tag
-        if element.find('./front//article-title') is not None:
-            alt_title = element.find('./front//article-title')
-            self.find_artitle(alt_title,data,nlp)
+        if element.tag == "article-title" or self.article_tit:
+            # alt_title = element.find('./front//article-title')
+            self.find_artitle(element,data,nlp)
+            self.article_tit = False
+            for child in element:
+                self.article_tit = True
+                self.change_text(child,nlp)
+                # self.find_artitle(child,data,nlp)
             
         #Find the affliation tag
         if element.tag == "aff":
@@ -281,20 +365,24 @@ class TSP_styles:
             self.find_history(element)
 
         #Find heading title in sec tag and change in title case(ULC)
-        for heading in element.findall("./sec/title"):
+        for heading in element.findall("./sec/title1"):
             self.find_artitle(heading,data,nlp)
 
         #Find the table title tag
         for title in element.findall('./fig'):
-            image_title = title.find('.//title')
-            if image_title is not None and element.text.strip():
+            image_title = title.find('.//title1')
+            if image_title is not None:
                 self.find_fig_title(image_title,nlp)
 
         #Find the table title tag
         for title in element.findall('./table-wrap'):
-            table_title = title.find('.//title')
-            if table_title is not None and element.text.strip():
+            table_title = title.find('.//title1')
+            if table_title is not None:
                 self.find_fig_title(table_title,nlp)
+
+        #Find the xref tag and change it
+        if element.tag == "xref":
+            self.find_xref(element)
 
         #Find the th tag
         for th in element.findall("./th"):
@@ -304,7 +392,7 @@ class TSP_styles:
         #Find the fn-group tag and change the order of fn group
         fn_elements = element.findall(".//fn")
         fn_group = element.find("./fn-group")
-        if fn_group is not None and element.text.strip():
+        if fn_group is not None:
             self.back_order(fn_elements,fn_group)        
 
         #Replace text or add or remove space in text
