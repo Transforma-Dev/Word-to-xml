@@ -1,3 +1,4 @@
+from functions import eq_link
 import re
 
 
@@ -43,7 +44,8 @@ def image_caption(xml_text,variables):
                 # print(part1)
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{part2}</title1></caption>No Image</fig>'
             else:
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>No Image</fig>{figure}'
+                figure = eq_link.add_tag(figure)
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>No Image</fig><p>{figure}</p>'
     for i in range(count_graphic):
         # if "<" in figure:
         #     figure=figure.replace("<","&#60;")
@@ -54,14 +56,23 @@ def image_caption(xml_text,variables):
         if "<disp-formula" in xml_text:
             pattern = r"^((Fig|Figure)((\.|\s)*|\s)+\d+((\:|\s)*|\s)+)(.+)"
             match = re.match(pattern, xml_text,re.IGNORECASE)
-            part1 = match.group(1)
-            if part1.strip()[-1]==".":
-                part1 = part1.strip()[:-1]
-            
-            add_text = figure.replace(part1,"")
-            part1 = part1.replace(":","") 
-            # print(part1)
-            text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{add_text}</title1></caption>{path_image[i]}{src[0]}</fig>'    
+            # print(figure,"---")
+            if match:
+                part1 = match.group(1)
+                if part1.strip()[-1]==".":
+                    part1 = part1.strip()[:-1]
+                
+                add_text = figure.replace(part1,"")
+                part1 = part1.replace(":","") 
+                # print(part1)
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>{part1}</label><caption><title1>{add_text}</title1></caption>{path_image[i]}{src[0]}</fig>'    
+            elif figure.strip().startswith(":"):
+                figure1 = figure.strip()[1:]
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1>{figure1}</title1></caption>{path_image[i]}{src[0]}</fig>'
+            else:
+                # print(figure)
+                figure = eq_link.add_tag(figure)
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig><p>{figure}</p>'
         
         else:
             if match:
@@ -79,7 +90,8 @@ def image_caption(xml_text,variables):
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1>{figure1}</title1></caption>{path_image[i]}{src[0]}</fig>'
             else:
                 # print(figure)
-                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig>{figure}'
+                figure = eq_link.add_tag(figure)
+                text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig><p>{figure}</p>'
             
         #figure=figure.replace("Figure","").replace(str(variables["fig_caption"]),"").replace("Fig","").replace(".","")
         #figure = re.sub(r'^\s*\d\d*', '',figure,flags=re.IGNORECASE)

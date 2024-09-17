@@ -55,7 +55,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     
     #Find the all bold paragraph
     all_bold = all(run.bold for run in para.runs if run.text.strip()!='')
-    # print(para.text)
+    # print(para.text,"----")
     #Convert the pargaraph into xml
     xml=para._element.xml
     # print(xml)
@@ -134,7 +134,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
 
-
+    # print(xml_text,"----")
     
     #Find the title of the document
     if (variables["para_count"]==1 or (variables["para_count"]==2 and all_bold and not para.style.name.startswith("author") and "," not in para.text)) and len(para.text)!=0:
@@ -200,6 +200,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     #Find acknowledgment paragraph in word document and change the tag into ack and p
     elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', variables["previous_text"].strip(),flags=re.IGNORECASE):
         xml_text = other_tags.ack_text(xml_text,variables)
+        # print(xml_text)
 
     #Find acknowledgment in word document and skip this
     elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', para.text.strip(),flags=re.IGNORECASE):
@@ -232,7 +233,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Find figure caption in word document and change the tag into fig
     elif (para.style.name.startswith("figure caption") or variables["image_next_para"] or re.search(r'^Figure \d+(\:|\.|\s)+', para.text)) and not re.search(r'^\d', para.text) and len(para.text)!=0:
-        #print(xml_text)
+        # print(xml_text)
         xml_text = image_table.image_caption(xml_text,variables)
 
     #Find table title in word document and change the tag into table-wrap
@@ -249,7 +250,6 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Change noman tag text
     elif variables["noman_text"] and not "introduction" in space_strip.lower() and len(para.text)!=0:
-        
         xml_text = other_tags.noman_para(xml_text,variables)
         # print(xml_text)
 
@@ -274,20 +274,22 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     elif box_text:
         xml_text = eq_link.add_tag(box_text)
-        xml_text=f'<p>{xml_text}</p>' 
+        xml_text = f'<p>{xml_text}</p>' 
         box_text = ''
 
     #Else print p tag
     elif len(para.text)!=0 and not para.text.isspace():
         xml_text = eq_link.add_tag(xml_text)
-        xml_text=f'<p>{xml_text}</p>' 
+        xml_text = f'<p>{xml_text}</p>' 
 
     #Find the image caption or next paragraph of image
     if variables["image_find"]:
-        variables["image_next_para"]=True
+        variables["image_next_para"] = True
 
     if len(para.text)!=0:
-        variables["previous_text"]=para.text
+        variables["previous_text"] = para.text
+
+    # print(xml_text)
 
     return xml_text
 

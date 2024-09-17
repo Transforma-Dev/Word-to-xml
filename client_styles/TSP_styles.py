@@ -252,21 +252,35 @@ class TSP_styles:
     #Change the table title and figure title in sentance case.
     def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
         if element.text:
+            # print(element.text)
             doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
             text = ' '.join([word.text if word.text.isupper() else word.text.lower() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
             # print(text)
             # print(element.text,"----")
-            text_1 = text.split(".")
-            # print(text.strip().capitalize())
-            text = ''
-            for k in text_1:
-                text += k.strip().capitalize() + "."
-            
-            text = text[:-1]
-            element.text = text.strip()[0].upper() + text.strip()[1:]
+            #Remove space before and after special character
+            special = [".","-"]
+            for sp in special:
+                if sp:
+                    text_1 = text.split(sp)
+                    text = text.replace(sp,"")
+                    for id,k in enumerate(text_1):
+                        if id==len(text_1) - 1:
+                            if sp == ".":
+                                rep = k.strip()[0].upper() + k.strip()[1:]
+                            else:
+                                rep = k.strip()
+                            text = text.replace(k,rep)
+                        else:
+                            if sp == ".":
+                                rep = k.strip()[0].upper() + k.strip()[1:] + sp
+                            else:
+                                rep = k.strip() + sp
+                            text = text.replace(k,rep) 
+            # text = text[:-1]
+            element.text = text
             # print(element.text,"----")
             for child in element:
-                if child.text is not None:
+                if child.text.strip():
                     nlp = spacy.load("en_core_web_sm")
                     doc = nlp(child.text)
                     child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
@@ -366,6 +380,7 @@ class TSP_styles:
 
         #Find heading title in sec tag and change in title case(ULC)
         for heading in element.findall("./sec/title1"):
+            # print(heading.text)
             self.find_artitle(heading,data,nlp)
 
         #Find the table title tag

@@ -397,21 +397,18 @@ def add_tag(xml_text):
                 xml_tex = i.split()
                 xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
     #Find Eqs and add tag
-    pattern = r"Eqs\. \(\d+\s*?[-–]?\s*\d+\)"
+    pattern = r"Eqs\.\s\(*\d+\s*?[-–]?\s*\d+\)*"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
     if match:
         match = set(match)
         match = list(match)
         for i in match:
-            xml_tex = i.split("-")
-            xml_tex = i.split("-")
-            for j in xml_tex[0]:
-                if j.isdigit():
-                    no1 = 1
-            for j in xml_tex[1]:
-                if j.isdigit():
-                    no2 = 1
-            xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{xml_tex[0]})</xref><xref ref-type='disp-formula' rid='eqn-{no2}'>({xml_tex[1]}</xref>")
+            if "-" in i:
+                xml_tex = i.split()
+                xml_1 = xml_tex[1].split("-")
+                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{xml_1[0]}'>Eqs. {xml_1[0]}</xref>-<xref ref-type='disp-formula' rid='eqn-{xml_1[1]}'>{xml_1[1]}</xref>")
+            # print(no2)
+            # xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{xml_tex[0]})</xref><xref ref-type='disp-formula' rid='eqn-{no2}'>({xml_tex[1]}</xref>")
             
     #Find Eqs and add tag
     pattern = r"Eq\.\s*\(*\d+\d*\)*"
@@ -477,7 +474,7 @@ def add_ref_tag(xml,variables):
         p_pattern = r'(?:\[\d+\]\s*,\s*)+\[\d+\]'
         matchs = re.findall(p_pattern, xml[0],re.IGNORECASE)
         if matchs:
-            # print(matchs)
+            print(matchs)
             for match in matchs:
                 sp = match.split(",")
                 if len(sp) == 2:
@@ -492,10 +489,10 @@ def add_ref_tag(xml,variables):
         parentheses_text = re.findall(r'\[(.*?)\]',xml[0])
         # print(parentheses_text)
         for num in parentheses_text:
-            if not "close" in num and not ">" in num:
+            if not "close" in num and not ">" in num and not "mask" in num:
                 # print(num,"---")
                 if num.isdigit() or "," in num or "-" in num and "xref" not in num:
-                    check_digit = False
+                    # check_digit = False
 
                     if "-" in num:
                         # Split the num by commas
@@ -505,13 +502,29 @@ def add_ref_tag(xml,variables):
 
                     #Check digit or not
                     if "," in num:
-                        
                         if len(split_i) == 2:
                             add_xref = f'[<xref ref-type="bibr" rid="ref-{split_i[0]}">{split_i[0]}</xref>,<xref ref-type="bibr" rid="ref-{split_i[1]}">{split_i[1]}</xref>]'
                         else:
                             first = split_i[0].strip().replace("[","").replace("]","")
                             last = split_i[-1].strip().replace("[","").replace("]","")
-                            add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                            for id,each in enumerate(split_i):
+                                if int(each) == int(first):
+                                    order_num = True
+                                    first = int(first) + 1
+                                else:
+                                    order_num =False
+                            if order_num:
+                                add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                            else:
+                                add_xref = '['
+                                for i, ref in enumerate(split_i):
+                                    # Add xref tags to each reference
+                                    add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
+                                    # Add comma separator if not the last reference
+                                    if i < len(split_i) - 1:
+                                        add_xref += ','
+                                # Close the num
+                                add_xref += ']'
                         xml[0] = xml[0].replace(f"[{num}]", add_xref)
 
                     else:
