@@ -113,12 +113,14 @@ def table_heading(xml_text,variables):
     xml_text=xml_text.replace("<bold>","").replace("</bold>","")
 
     match = re.findall("^Table\s*\w+",xml_text,re.IGNORECASE)
-
-    xml_text = xml_text.split(match[0],1)
-    xml_text = re.sub("(^\.|\:)+","",xml_text[1])
-
-    text=f'<table-wrap id="table-{variables["table_no"]}"><label>{match[0]}</label><caption><title1>{xml_text}</title1></caption>'
-    
+    if match:
+        xml_text = xml_text.split(match[0],1)
+        xml_text = re.sub("(^\.|\:)+","",xml_text[1])
+        # print(match[0])
+        text=f'<table-wrap id="table-{variables["table_no"]}"><label>{match[0]}</label><caption><title1>{xml_text}</title1></caption>'
+        
+    # else:
+    #     text=f'<table-wrap id="table-{variables["table_no"]}"><label>"Table" {variables["table_no"]}:</label><caption><title1>{xml_text}</title1></caption>'
     variables["table_title"]=True
     #print(text)
     return text

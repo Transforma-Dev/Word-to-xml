@@ -237,7 +237,8 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         xml_text = image_table.image_caption(xml_text,variables)
 
     #Find table title in word document and change the tag into table-wrap
-    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text)<=150 and len(para.text)!=0:
+    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text)!=0:
+        # print(para.text)
         xml_text = image_table.table_heading(xml_text,variables)
     
     #Find reference paragraph in word document and change the tag into ref
@@ -319,7 +320,12 @@ def table(table,doc,doc_filename,variables):
         for cell in row.cells:
             if cell.text.strip():  
                 empty_table = True
-                
+    # xml_text = image_table.table_heading(xml_text,variables)
+    # print(variables["previous_text"])  
+    # if "Corresponding" not in variables["previous_text"] or "table-wrap" not in variables["previous_text"]:
+    #     print(variables["previous_text"])
+    #     print(xml_text,"---")
+    #     xml_text = image_table.table_heading(variables["previous_text"],variables)
 
     if not empty_table:
         return xml_text

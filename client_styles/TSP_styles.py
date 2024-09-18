@@ -238,11 +238,11 @@ class TSP_styles:
                 child_text = " ".join([word.text if word.text.isupper() else word.text.lower() for word in docs])
                 doc = nlp(child_text)
                 if n==1 and child.text.strip():
-                    child_ext = ' '.join([word.text.capitalize() if word.pos_ == 'PROPN' else word.text if not word.text.isupper() else word.text for word in doc])
+                    child_ext = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
                     child.text = " " + child_ext.strip().capitalize() + " "
                     n+=1
                 else:
-                    child.text = ' '.join([word.text.capitalize() if word.pos_ == 'PROPN' else word.text if not word.text.isupper() else word.text for word in doc])
+                    child.text = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
 
                     # child.text = child.text.lower()
         if child.text!=None:
@@ -251,58 +251,62 @@ class TSP_styles:
 
     #Change the table title and figure title in sentance case.
     def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
-        if element.text:
-            # print(element.text)
-            doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
-            text = ' '.join([word.text if word.text.isupper() else word.text.lower() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-            # print(text)
-            # print(element.text,"----")
-            #Remove space before and after special character
-            special = [".","-"]
-            for sp in special:
-                if sp:
-                    text_1 = text.split(sp)
-                    text = text.replace(sp,"")
-                    for id,k in enumerate(text_1):
-                        if id==len(text_1) - 1:
-                            if sp == ".":
-                                rep = k.strip()[0].upper() + k.strip()[1:]
-                            else:
-                                rep = k.strip()
-                            text = text.replace(k,rep)
-                        else:
-                            if sp == ".":
-                                rep = k.strip()[0].upper() + k.strip()[1:] + sp
-                            else:
-                                rep = k.strip() + sp
-                            text = text.replace(k,rep) 
-            # text = text[:-1]
-            element.text = text
-            # print(element.text,"----")
-            for child in element:
-                if child.text.strip():
-                    nlp = spacy.load("en_core_web_sm")
-                    doc = nlp(child.text)
-                    child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                    split = child_text.split(".")
-                    for id,i in enumerate(split):
-                        if len(i.strip())!=0:
-                            if id == 0:
-                                child.text = i
-                            else:
-                                child.text += "." + i.strip()[0].upper() + i.strip()[1:]
-                if child.tail is not None:
-                    doc = nlp(child.tail)
-                    child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                    split = child_tail.split(".")
-                    for id,i in enumerate(split):
-                        if len(i.strip())!=0:
-                            if id == 0:
-                                child.tail = i
-                            else:
-                                child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
-            if element.text.strip().endswith('.'):
-                element.text = " " + element.text[:-1]
+        try:
+            if element.text and element.text.strip():
+                # print(element.text)
+                doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
+                text = ' '.join([word.text if word.text.isupper() else word.text.lower() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                # print(text)
+                # print(element.text,"----")
+                #Remove space before and after special character
+                special = [".","-"]
+                for sp in special:
+                    if sp:
+                        text_1 = text.split(sp)
+                        text = text.replace(sp,"")
+                        for id,k in enumerate(text_1):
+                            if k.strip():
+                                if id==len(text_1) - 1:
+                                    if sp == ".":
+                                        rep = k.strip()[0].upper() + k.strip()[1:]
+                                    else:
+                                        rep = k.strip()
+                                    text = text.replace(k,rep)
+                                else:
+                                    if sp == ".":
+                                        rep = k.strip()[0].upper() + k.strip()[1:] + sp
+                                    else:
+                                        rep = k.strip() + sp
+                                    text = text.replace(k,rep) 
+                # text = text[:-1]
+                element.text = text
+                # print(element.text,"----")
+                for child in element:
+                    if child.text.strip():
+                        nlp = spacy.load("en_core_web_sm")
+                        doc = nlp(child.text)
+                        child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                        split = child_text.split(".")
+                        for id,i in enumerate(split):
+                            if len(i.strip())!=0:
+                                if id == 0:
+                                    child.text = i
+                                else:
+                                    child.text += "." + i.strip()[0].upper() + i.strip()[1:]
+                    if child.tail is not None:
+                        doc = nlp(child.tail)
+                        child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                        split = child_tail.split(".")
+                        for id,i in enumerate(split):
+                            if len(i.strip())!=0:
+                                if id == 0:
+                                    child.tail = i
+                                else:
+                                    child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
+                if element.text.strip().endswith('.'):
+                    element.text = " " + element.text[:-1]
+        except:
+            print("error in find_fig_title")
 
     def find_xref(self,element):
         if element.text:

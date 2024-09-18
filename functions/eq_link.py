@@ -527,6 +527,12 @@ def add_ref_tag(xml,variables):
                                 add_xref += ']'
                         xml[0] = xml[0].replace(f"[{num}]", add_xref)
 
+                    elif "-" in num:
+                        add_xref = f"[<xref ref-type='bibr' rid='ref-{split_i[0]}'>{split_i[0]}</xref>-<xref ref-type='bibr' rid='ref-{split_i[1]}'>{split_i[1]}</xref>]"
+                        # print(add_xref)
+                        # print
+                        xml[0] = xml[0].replace(f"[{num}]", add_xref)
+
                     else:
                         #Initialize the replacement string
                         add_xref = '['
