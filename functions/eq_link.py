@@ -379,22 +379,31 @@ def add_tag(xml_text):
                 xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='table' rid='table-{xml_1[1]}'>{xml_1[1]}</xref>")
             elif "and" in i:
                 xml_tex = i.split("and")
-                xml_1 = xml_tex[0].split(",")
-                xml_1.append(xml_tex[-1])
-                len_xml = len(xml_1)
-                # print(len_xml)
-                for id,j in enumerate(xml_1):
-                    if id == 0:
-                        rep = f"<xref ref-type='table' rid='table-{j.strip()[-1]}'>Tables {j.strip()[-1]}</xref>,"
-                    elif len_xml == id+1:
-                        rep = rep[:-1]    
-                        rep += f" and <xref ref-type='table' rid='table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>"
-                    else:
-                        rep += f"<xref ref-type='table' rid='table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>,"
-                xml_text = xml_text.replace(i,f"{rep}")
+                if "," in xml_tex:
+                    xml_1 = xml_tex[0].split(",")
+                    xml_1.append(xml_tex[-1])
+                    len_xml = len(xml_1)
+                    # print(len_xml)
+                    for id,j in enumerate(xml_1):
+                        if id == 0:
+                            rep = f"<xref ref-type='table' rid='table-{j.strip()[-1]}'>Tables {j.strip()[-1]}</xref>,"
+                        elif len_xml == id+1:
+                            rep = rep[:-1]    
+                            rep += f" and <xref ref-type='table' rid='table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>"
+                        else:
+                            rep += f"<xref ref-type='table' rid='table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>,"
+                    xml_text = xml_text.replace(i,f"{rep}")
+                else:
+                    xml_tex = i.split("and")
+                    first = "".join([di for di in xml_tex[0] if di.isdigit()])
+                    last = "".join([di for di in xml_tex[1] if di.isdigit()])
+                    rep = f"<xref ref-type='table' rid='table-{first}'>Table {first}</xref> and <xref ref-type='table' rid='table-{last}'>Table {last}</xref>"
+                    xml_text = xml_text.replace(i,f"{rep}")
                 # print(xml_text)
             else:
                 xml_tex = i.split()
+                xml_tex[1] = "".join([di for di in xml_tex[1] if di.isdigit()])
+                i = i.replace(":","")
                 xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
     #Find Eqs and add tag
     pattern = r"Eqs\.\s\(*\d+\s*?[-–]?\s*\d+\)*"
@@ -404,7 +413,7 @@ def add_tag(xml_text):
         match = list(match)
         for i in match:
             if "-" in i:
-                xml_tex = i.split()
+                xml_tex = i.split("Eqs.")
                 xml_1 = xml_tex[1].split("-")
                 xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{xml_1[0]}'>Eqs. {xml_1[0]}</xref>-<xref ref-type='disp-formula' rid='eqn-{xml_1[1]}'>{xml_1[1]}</xref>")
             # print(no2)
@@ -474,11 +483,14 @@ def add_ref_tag(xml,variables):
         p_pattern = r'(?:\[\d+\]\s*,\s*)+\[\d+\]'
         matchs = re.findall(p_pattern, xml[0],re.IGNORECASE)
         if matchs:
-            print(matchs)
+            # print(matchs)
             for match in matchs:
                 sp = match.split(",")
                 if len(sp) == 2:
-                    add_xref = match
+                    first = sp[0].strip().replace("[","").replace("]","")
+                    last = sp[-1].strip().replace("[","").replace("]","")
+                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>,<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                    
                 else:
                     first = sp[0].strip().replace("[","").replace("]","")
                     last = sp[-1].strip().replace("[","").replace("]","")
@@ -502,35 +514,49 @@ def add_ref_tag(xml,variables):
 
                     #Check digit or not
                     if "," in num:
-                        if len(split_i) == 2:
-                            add_xref = f'[<xref ref-type="bibr" rid="ref-{split_i[0]}">{split_i[0]}</xref>,<xref ref-type="bibr" rid="ref-{split_i[1]}">{split_i[1]}</xref>]'
-                        else:
-                            first = split_i[0].strip().replace("[","").replace("]","")
-                            last = split_i[-1].strip().replace("[","").replace("]","")
-                            for id,each in enumerate(split_i):
-                                if int(each) == int(first):
-                                    order_num = True
-                                    first = int(first) + 1
-                                else:
-                                    order_num =False
-                            if order_num:
-                                add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                            # print(num)
+                        # try:
+                            if len(split_i) == 2:
+                                add_xref = f'[<xref ref-type="bibr" rid="ref-{split_i[0]}">{split_i[0]}</xref>,<xref ref-type="bibr" rid="ref-{split_i[1]}">{split_i[1]}</xref>]'
                             else:
-                                add_xref = '['
-                                for i, ref in enumerate(split_i):
-                                    # Add xref tags to each reference
-                                    add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
-                                    # Add comma separator if not the last reference
-                                    if i < len(split_i) - 1:
-                                        add_xref += ','
-                                # Close the num
-                                add_xref += ']'
-                        xml[0] = xml[0].replace(f"[{num}]", add_xref)
+                                first = split_i[0].strip().replace("[","").replace("]","")
+                                last = split_i[-1].strip().replace("[","").replace("]","")
+                                check = 0
+                                for ea in split_i:
+                                    if ea.strip().isdigit():
+                                        check += 1
+                                if len(split_i) == check:
+                                    # print(split_i)
+                                    for id,each in enumerate(split_i):
+                                        if int(each) == int(first):
+                                            order_num = True
+                                            first = int(first) + 1
+                                        else:
+                                            order_num =False
+                                else:
+                                    order_num = False
+                                if order_num:
+                                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                                else:
+                                    add_xref = '['
+                                    for i, ref in enumerate(split_i):
+                                        # Add xref tags to each reference
+                                        add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
+                                        # Add comma separator if not the last reference
+                                        if i < len(split_i) - 1:
+                                            add_xref += ','
+                                    # Close the num
+                                    add_xref += ']'
+                            # print(add_xref,"---")
+                            # print(f"[{num}]","---")
+                            xml[0] = xml[0].replace(f"[{num}]", add_xref)
+                        # except Exception as e:
+                        #     print("Error in add_xref_tag in eq_link", e)
 
                     elif "-" in num:
                         add_xref = f"[<xref ref-type='bibr' rid='ref-{split_i[0]}'>{split_i[0]}</xref>-<xref ref-type='bibr' rid='ref-{split_i[1]}'>{split_i[1]}</xref>]"
                         # print(add_xref)
-                        # print
+                        # print(f"[{num}]")
                         xml[0] = xml[0].replace(f"[{num}]", add_xref)
 
                     else:
@@ -574,7 +600,7 @@ def add_ref_tag(xml,variables):
         #             # print(i)
         #             # print(j)
         #             xml[0] = xml[0].replace(i,j)
-
+    
     xml=xml[0]+"<ref-list"+xml[1]
     # print(xml)
     return xml

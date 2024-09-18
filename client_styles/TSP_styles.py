@@ -178,14 +178,14 @@ class TSP_styles:
 
     #Find the article title,heading tag and capitalie the article title,heading text except remove conjuction and preposition
     def find_artitle(self,element,data,nlp):    #https://github.com/Transforma-Dev/Word-to-xml/issues/8#issue-2379909859
-        if element.text.strip():
+        if element.text and element.text.strip():
             # print(element.text)
             doc = nlp(element.text)
             # for word in doc:
             text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
             element.text = text.strip()[0].upper() + text.strip()[1:]
 
-        if element.tail.strip():
+        if element.tail and element.tail.strip():
             doc = nlp(element.tail)
             # for word in doc:
             text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
@@ -199,8 +199,8 @@ class TSP_styles:
             for i in data["aff_replace_text"]:
                 if child.text and i["text"] in child.text:
                     child.text = child.text.replace(i["text"], i["replace"])
-                    
-        if child.text.strip().endswith('.'):
+        
+        if child.text and child.text.strip().endswith('.'):
             child.text = child.text[:-1]
         # new_tag = ET.Element("new")
         # new_tag.text = "mew"
@@ -230,24 +230,27 @@ class TSP_styles:
 
     #Remove dot in end of kwd-group tag and change the first letter as capital others all are small
     def find_key(self,element,nlp):     #https://github.com/Transforma-Dev/Word-to-xml/issues/14#issue-2385180471
-        n=1
-        for child in element:
-            if child.text!=None:
-                self.change_text(child,nlp)
-                docs = nlp(child.text)
-                child_text = " ".join([word.text if word.text.isupper() else word.text.lower() for word in docs])
-                doc = nlp(child_text)
-                if n==1 and child.text.strip():
-                    child_ext = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
-                    child.text = " " + child_ext.strip().capitalize() + " "
-                    n+=1
-                else:
-                    child.text = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
+        try:
+            n=1
+            for child in element:
+                if child.text!=None:
+                    self.change_text(child,nlp)
+                    docs = nlp(child.text)
+                    child_text = " ".join([word.text if word.text.isupper() else word.text.lower() for word in docs])
+                    doc = nlp(child_text)
+                    if n==1 and child.text.strip():
+                        child_ext = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
+                        child.text = " " + child_ext.strip().capitalize() + " "
+                        n+=1
+                    else:
+                        child.text = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
 
-                    # child.text = child.text.lower()
-        if child.text!=None:
-            if child.text.strip().endswith('.'):
-                child.text = " " + child.text.strip()[:-1]
+                        # child.text = child.text.lower()
+            if child.text!=None:
+                if child.text.strip().endswith('.'):
+                    child.text = " " + child.text.strip()[:-1]
+        except Exception as e:
+            print("Error in find_key in tsp_styles.", e)
 
     #Change the table title and figure title in sentance case.
     def find_fig_title(self,element,nlp):       #https://github.com/Transforma-Dev/Word-to-xml/issues/17#issue-2385183456
@@ -282,7 +285,7 @@ class TSP_styles:
                 element.text = text
                 # print(element.text,"----")
                 for child in element:
-                    if child.text.strip():
+                    if child.text and child.text.strip():
                         nlp = spacy.load("en_core_web_sm")
                         doc = nlp(child.text)
                         child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
@@ -293,7 +296,7 @@ class TSP_styles:
                                     child.text = i
                                 else:
                                     child.text += "." + i.strip()[0].upper() + i.strip()[1:]
-                    if child.tail is not None:
+                    if child.tail is not None and child.tail.strip():
                         doc = nlp(child.tail)
                         child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
                         split = child_tail.split(".")
@@ -303,13 +306,13 @@ class TSP_styles:
                                     child.tail = i
                                 else:
                                     child.tail += "." + i.strip()[0].upper() + i.strip()[1:]
-                if element.text.strip().endswith('.'):
+                if element.text and element.text.strip().endswith('.'):
                     element.text = " " + element.text[:-1]
         except:
-            print("error in find_fig_title")
+            print("error in find_fig_title in tsp_style")
 
     def find_xref(self,element):
-        if element.text:
+        if element.text and element.text.strip():
             if "-" in element.text.lower() or "and" in element.text.lower():
                 element.text = element.text.lower().replace("figures","Figs.",)
             elif "figure" in element.text.lower():

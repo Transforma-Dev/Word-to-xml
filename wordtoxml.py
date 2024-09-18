@@ -113,7 +113,7 @@ def convert(input_file_name = None):
         return ''
 
     # Add css style in xml file
-    xml+=f'<?xml-stylesheet href="/media/user/daecfb15-4cb5-43c2-a390-112ab6fc48dd/Siva/python/wordtoxml/convertion/styles.css" ?>'
+    # xml+=f'<?xml-stylesheet href="/media/user/daecfb15-4cb5-43c2-a390-112ab6fc48dd/Siva/python/wordtoxml/convertion/styles.css" ?>'
     
     #Add nessaccery tags
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"

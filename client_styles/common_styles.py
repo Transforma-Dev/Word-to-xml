@@ -10,19 +10,19 @@ class Common_styles:
     #Replace text or add space or remove space in this function
     def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
         
-        if element.text:
-            pattern = fr"\],\s*\["
-            matchs = re.findall(pattern, element.text,re.IGNORECASE)
-            if matchs:
-                for match in matchs:
-                    element.text = element.text.replace(match, " , ")
-                    # print(element.text)
-        if element.tail:
-            pattern = fr"\],\s*\["
-            matchs = re.findall(pattern, element.tail,re.IGNORECASE)
-            if matchs:
-                for match in matchs:
-                    element.tail = element.tail.replace(match, " , ")
+        # if element.text:
+        #     pattern = fr"\],\s*\["
+        #     matchs = re.findall(pattern, element.text,re.IGNORECASE)
+        #     if matchs:
+        #         for match in matchs:
+        #             element.text = element.text.replace(match, " , ")
+        #             # print(element.text)
+        # if element.tail:
+        #     pattern = fr"\],\s*\["
+        #     matchs = re.findall(pattern, element.tail,re.IGNORECASE)
+        #     if matchs:
+        #         for match in matchs:
+        #             element.tail = element.tail.replace(match, " , ")
 
         #Replace text
         for i in data["replace_text"]:
@@ -61,12 +61,12 @@ class Common_styles:
                         element.text = element.text.replace(match, f'{match1} {match2.strip()}')
             if element.tail and i in element.tail:
                 pattern = fr"\d\s*{i}"
-                matchs = re.findall(pattern, element.text,re.IGNORECASE)
+                matchs = re.findall(pattern, element.tail,re.IGNORECASE)
                 if matchs:
                     for match in matchs:
                         match1 = match[0]
                         match2 = match[1:]
-                        element.text = element.text.replace(match, f'{match1} {match2.strip()}')
+                        element.tail = element.tail.replace(match, f'{match1} {match2.strip()}')
 
         #Find the continuous text and add "," and last will add "and" 
         for symbol in data["add_and"]:

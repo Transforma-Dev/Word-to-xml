@@ -70,7 +70,7 @@ def image_caption(xml_text,variables):
                 figure1 = figure.strip()[1:]
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1>{figure1}</title1></caption>{path_image[i]}{src[0]}</fig>'
             else:
-                # print(figure)
+                variables["fig_caption"] = variables["fig_caption"] - 1
                 figure = eq_link.add_tag(figure)
                 text+=f'<fig id="fig-{variables["fig_caption"]}"><label>Figure {variables["fig_caption"]}</label><caption><title1></title1></caption>{path_image[i]}{src[0]}</fig><p>{figure}</p>'
         
@@ -129,27 +129,27 @@ def table_heading(xml_text,variables):
 #Find row span and colspan in table
 def row_col_span(r,c,row,cell,table,li,tt,tr,xml_text):
             
-    try:
-        #Find the rowspan
-        rowspan, colspan = 1, 1
-        for merge in range(r + 1, len(table.rows)):
+    
+    #Find the rowspan
+    rowspan, colspan = 1, 1
+    for merge in range(r + 1, len(table.rows)):
             if table.rows[merge].cells[c].text == cell.text and cell.text!="" :
                 rowspan += 1
                 tt=True
                 li.append((merge,c))
             else:
                 break
-
-        #Find the columnspan
-        for merge in range(c + 1, len(row.cells)):
+        
+    #Find the columnspan
+    for merge in range(c + 1, len(row.cells)):
             if row.cells[merge].text == cell.text and cell.text!="" :
                 colspan += 1
                 tr=True
                 li.append((r, merge))
             else:
                 break            
-        #Find the total number of merged cell and append in list for skip the cell
-        if tt and tr:
+    #Find the total number of merged cell and append in list for skip the cell
+    if tt and tr:
             oo,pp,rr,cc=r,c,rowspan-1,colspan-1
             for k in range(rr):
                 th=True
@@ -159,10 +159,8 @@ def row_col_span(r,c,row,cell,table,li,tt,tr,xml_text):
                         th=False
                     pp+=1
                     li.append((oo, pp))
-        tt=False
-        tr=False
-    except:
-        print("row_col_span")
+    tt=False
+    tr=False
 
     #Present first row in th tag other present in td tag
     tag = "th" if r == 0 else "td"

@@ -111,9 +111,9 @@ def corres_author(xml_text,variables):
     if variables["para_count"]==3:
         text=f'</contrib-group><author-notes><corresp id="cor1">{xml_text}'
     elif ".com" in xml_text:
-        text = f'{xml_text}'
+        text=f'</corresp></author-notes><author-notes><corresp id="cor2">{xml_text}'
     else:
-        text=f'</corresp></author-notes><author-notes><corresp id="cor1">{xml_text}'
+        text=f'</corresp></author-notes><author-notes><corresp id="cor2">{xml_text}'
     
     variables["para_count"]+=1
     variables["aff_tag"]=False

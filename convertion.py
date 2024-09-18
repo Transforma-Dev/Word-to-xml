@@ -410,6 +410,7 @@ def table(table,doc,doc_filename,variables):
 
                 #Convert the pargaraph into xml
                 xml=para._element.xml
+                # print(xml)
                 root = ET.fromstring(xml)
 
                 #Check where the equation are present in paragraph
