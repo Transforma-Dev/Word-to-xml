@@ -16,18 +16,19 @@ def author_name(xml_text,variables):
             matches.append(numbers.strip())     #It holds the numbers
     else:
         xml_t = re.split(r',\s*[A-Za-z]| and |;\s*', xml_text)
-        pattern = re.compile(r'<sup>(.*?)</sup>')
+        pattern = re.compile(r'<sup>(.*?)</sup>(\*)?')
         matches = []
         for i in xml_t:
             i = i+"</sup>"
             matche = pattern.findall(i)     #Get superscipt tag text
             add = ''
             for j in matche:
-                add += j
+                j,i = j
+                add += j+i
             matches.append(add)
         string = re.sub(pattern, '', xml_text)  #Get non superscript text
         split_string = re.split(r',\s*| and |;\s*', string)
-    # print(split_string)
+
     text=f'''</article-title>
                     <alt-title alt-title-type="left-running-head">{variables["noman_store"]}</alt-title>
                     <alt-title alt-title-type="right-running-head">{variables["noman_store"]}</alt-title>
@@ -49,7 +50,6 @@ def author_name(xml_text,variables):
             if matches and matches!=",":
                 mat=matches[0]
                 mat = mat.replace(",","")
-                # print(mat)
                 matches=matches[1:]
                 for j in mat:
                     if j.strip()=="":
@@ -57,7 +57,8 @@ def author_name(xml_text,variables):
                     if j and j != "*":
                         text += f'<xref ref-type="aff" rid="aff-{j}">{j}</xref>'
                     elif j == "*":
-                        text += '<mail>ssss@email.com</mail>'
+                        text += '<mail>demo@email.com</mail>'
+                # print(text)
             text+=f'</contrib>'
 
     variables["noman_store"] = ""

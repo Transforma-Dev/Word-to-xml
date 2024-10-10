@@ -218,8 +218,9 @@ def reference_temp(xml_text,variables):
         variables["ref_text_link"].append(auth_name)
         # print(variables["ref_text_link"])
 
-        text=f'<ref id="ref-{variables["ref_id"]}">{data}</ref>'
+    text=f'<ref id="ref-{variables["ref_id"]}">{xml_text}</ref>'
         
-        variables["ref_id"]+=1
+    variables["ref_id"]+=1
     # print(text,"---")
+    # print(variables["ref_id"],"---")
     return text

@@ -76,6 +76,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Check the paragraph to find the hyperlink
     if para.hyperlinks:
+        # print(para.text)
         siva,text,address,font,p = eq_link.hyper(root,para)
 
     #Iterate through each run in the paragraph
@@ -102,11 +103,14 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         #Print the hyperlink present in paragraph
         if para.hyperlinks:
             siva,p,xml_text,text,address,font = eq_link.print_hyper(run,para,siva,p,xml_text,text,address,font)
+            
+        if "°" not in run.text and "℃" not in run.text:
+            run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
 
-        run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
+        # run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
 
         run.text=run.text.replace("<","&#60;").replace("<<","&#60;&#60;")   #Replace the '<' symbol in string format
-
+        
         #Find superscript text
         if run.font.superscript and len(para.text)!=0:
             xml_text+=f'<sup>{run.text}</sup>'
@@ -133,6 +137,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     #Print the link text at end of the paragraph
     if para.hyperlinks and len(text)!=0:
         xml_text+=f'<email>{text[0]}</email>'
+        # print(xml_text)
 
     # print(xml_text,"----")
     
@@ -232,7 +237,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         xml_text = other_tags.funding_text(xml_text,variables)
 
     #Find figure caption in word document and change the tag into fig
-    elif (para.style.name.startswith("figure caption") or variables["image_next_para"] or re.search(r'^Figure \d+(\:|\.|\s)+', para.text)) and not re.search(r'^\d', para.text) and len(para.text)!=0:
+    elif (para.style.name.startswith("figure caption") or variables["image_next_para"] or re.search(r'^Figure \d+(\:|\.)+', para.text)) and not re.search(r'^\d', para.text) and len(para.text)!=0:
         # print(xml_text)
         xml_text = image_table.image_caption(xml_text,variables)
 

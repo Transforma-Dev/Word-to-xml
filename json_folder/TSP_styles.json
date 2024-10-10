@@ -14,6 +14,8 @@
 
   "space_after_text": ["no."],
 
+  "space_remove_before_text": ["℃", "°"],
+
   "add_and": ["%", "°C"],
 
   "add_all": ["h", "min", "s"],

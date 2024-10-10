@@ -68,6 +68,27 @@ class Common_styles:
                         match2 = match[1:]
                         element.tail = element.tail.replace(match, f'{match1} {match2.strip()}')
 
+        #Replace and remove space only before text
+        for i in data["space_remove_before_text"]:
+            if element.text:
+                pattern = fr"\d\s*{i}"
+                matchs = re.findall(pattern, element.text,re.IGNORECASE)
+                if matchs:
+                    print(element.text)
+                    for match in matchs:
+                        match1 = match[0]
+                        match2 = match[1:]
+                        element.text = element.text.replace(match, f'{match1}{match2.strip()}')
+            if element.tail:
+                pattern = fr"\d\s*{i}"
+                matchs = re.findall(pattern, element.tail,re.IGNORECASE)
+                if matchs:
+                    print(element.tail)
+                    for match in matchs:
+                        match1 = match[0]
+                        match2 = match[1:]
+                        element.tail = element.tail.replace(match, f'{match1}{match2.strip()}')
+
         #Find the continuous text and add "," and last will add "and" 
         for symbol in data["add_and"]:
             if element.text:

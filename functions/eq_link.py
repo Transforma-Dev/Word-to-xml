@@ -223,6 +223,9 @@ def print_equation(xml_text,para,math_count,file_name,variables):
 
 #Define the function to find the hyperlinks in the paragraph
 def hyper(root,para):
+    # print(para.text)
+    # if not para.text.strip() or re.match(r'^\d', para.text.strip()):
+    #     print(para.text)
     ns = {
             "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
             "m": "http://schemas.openxmlformats.org/officeDocument/2006/math"
@@ -397,7 +400,7 @@ def add_tag(xml_text):
                     xml_tex = i.split("and")
                     first = "".join([di for di in xml_tex[0] if di.isdigit()])
                     last = "".join([di for di in xml_tex[1] if di.isdigit()])
-                    rep = f"<xref ref-type='table' rid='table-{first}'>Table {first}</xref> and <xref ref-type='table' rid='table-{last}'>Table {last}</xref>"
+                    rep = f"<xref ref-type='table' rid='table-{first}'>Tables {first}</xref> and <xref ref-type='table' rid='table-{last}'>{last}</xref>"
                     xml_text = xml_text.replace(i,f"{rep}")
                 # print(xml_text)
             else:

@@ -138,7 +138,7 @@ def convert(input_file_name = None):
             if "<email>" in xml:
                 match = re.search(r'<email>.*</email>', xml, re.IGNORECASE)
                 match = match.group() if match else None
-                xml = xml.replace("<mail>ssss@email.com</mail>",match)
+                xml = xml.replace("<mail>demo@email.com</mail>",match)
                 variables["author_mail"] = False
 
     #Call function to solve the xref tag for references

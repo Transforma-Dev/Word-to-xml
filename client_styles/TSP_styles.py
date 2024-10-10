@@ -1,9 +1,11 @@
 #import neccessary librarys
 import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
 import os,sys
 import re
 import json
 import spacy
+import index
 
 class TSP_styles:
 
@@ -12,19 +14,6 @@ class TSP_styles:
 
     #Replace text or add space or remove space in this function
     def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
-        """<xref ref-type="bibr" rid="ref-3">3</xref>], [<xref ref-type="bibr" rid="ref-4">4</xref>"""
-        # print(element.text)
-        # print(element.tail)
-        # if element.text:
-        #     pattern = fr'<xref ref-type="bibr" rid="ref-3">3</xref>\], \[<xref ref-type="bibr" rid="ref-4">4</xref>'
-        #     matchs = re.findall(pattern, element.text,re.IGNORECASE)
-        #     if matchs:
-        #         print(matchs)
-        # if element.tail:
-        #     pattern = fr'<xref ref-type="bibr" rid="ref-3">3</xref>\], \[<xref ref-type="bibr" rid="ref-4">4</xref>'
-        #     matchs = re.findall(pattern, element.tail,re.IGNORECASE)
-        #     if matchs:
-        #         print(matchs)
 
         #Replace text
         for i in data["replace_text"]:
@@ -38,7 +27,7 @@ class TSP_styles:
             if element.text and i in element.text:
                     pattern = fr"\s*\{i}\s*"
                     element.text = re.sub(pattern, f' {i} ', element.text)
-                    
+
             if element.tail and i in element.tail:
                 pattern = fr"\s*\{i}\s*"
                 element.tail = re.sub(pattern, f' {i} ', element.tail)
@@ -63,7 +52,7 @@ class TSP_styles:
                         match1 = match[0]
                         match2 = match[1:]
                         element.text = element.text.replace(match, f'{match1} {match2.strip()}')
-    
+
             if element.tail and i in element.tail.lower():
                 pattern = fr"\d\s*{i}"
                 matchs = re.findall(pattern, element.tail,re.IGNORECASE)
@@ -83,7 +72,7 @@ class TSP_styles:
                         match1 = match[0]
                         match2 = match[1:]
                         element.text = element.text.replace(match, f'{match1} {match2.strip()}')
-    
+
             if element.tail and i in element.tail.lower():
                 pattern = fr"{i}\s*\d"
                 matchs = re.findall(pattern, element.tail,re.IGNORECASE)
@@ -258,37 +247,19 @@ class TSP_styles:
             if element.text and element.text.strip():
                 # print(element.text)
                 doc = nlp(element.text)                 #https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
-                text = ' '.join([word.text if word.text.isupper() else word.text.lower() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
-                # print(text)
-                # print(element.text,"----")
-                #Remove space before and after special character
-                special = [".","-"]
-                for sp in special:
-                    if sp:
-                        text_1 = text.split(sp)
-                        text = text.replace(sp,"")
-                        for id,k in enumerate(text_1):
-                            if k.strip():
-                                if id==len(text_1) - 1:
-                                    if sp == ".":
-                                        rep = k.strip()[0].upper() + k.strip()[1:]
-                                    else:
-                                        rep = k.strip()
-                                    text = text.replace(k,rep)
-                                else:
-                                    if sp == ".":
-                                        rep = k.strip()[0].upper() + k.strip()[1:] + sp
-                                    else:
-                                        rep = k.strip() + sp
-                                    text = text.replace(k,rep) 
-                # text = text[:-1]
-                element.text = text
+                text = ' '.join([word.text if word.text.isupper() else word.text.lower() for word in doc])
+
+                #Remove extra spaces around commas and inside parentheses
+                text = re.sub(r'\s+([,.])', r'\1', text)  # Remove space before commas and periods
+                text = re.sub(r'\(\s*', '(', text)     # Remove space after opening parenthesis
+                text = re.sub(r'\s*\)', ')', text)     # Remove space before closing parenthesis                
+                element.text = text.strip()[0].upper() + text.strip()[1:]
                 # print(element.text,"----")
                 for child in element:
                     if child.text and child.text.strip():
                         nlp = spacy.load("en_core_web_sm")
                         doc = nlp(child.text)
-                        child_text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                        child_text = ' '.join([word.text if word.text.isupper() else word.text.lower() for word in doc])
                         split = child_text.split(".")
                         for id,i in enumerate(split):
                             if len(i.strip())!=0:
@@ -298,7 +269,7 @@ class TSP_styles:
                                     child.text += "." + i.strip()[0].upper() + i.strip()[1:]
                     if child.tail is not None and child.tail.strip():
                         doc = nlp(child.tail)
-                        child_tail = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ == 'NOUN' or word.pos_ == 'PROPN' else word.text.lower() for word in doc])
+                        child_tail = ' '.join([word.text if word.text.isupper() else word.text.lower() for word in doc])
                         split = child_tail.split(".")
                         for id,i in enumerate(split):
                             if len(i.strip())!=0:
@@ -317,6 +288,24 @@ class TSP_styles:
                 element.text = element.text.lower().replace("figures","Figs.",)
             elif "figure" in element.text.lower():
                 element.text = element.text.lower().replace("figure","Fig.",)
+
+    def find_reference(self, element):
+        if element.text:
+            change_ref = index.TSP_ref(element.get('id'), element.text, "ieee")
+            # print(f"Changed Reference: {change_ref}")
+            # print(change_ref)
+            print(change_ref)
+            soup = ET.fromstring(change_ref)
+            element.clear()
+            element.append(soup)
+            # for child in soup.find_all(True):  # Finds all the tags in the parsed XML
+            #     print(child)
+            #     # element.append(child)
+            #     # print(child)
+            # pretty_xml = element.prettify()
+            # element.text = pretty_xml
+        # print(element.text)
+        # print(type(element.text))
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
@@ -415,7 +404,11 @@ class TSP_styles:
         fn_elements = element.findall(".//fn")
         fn_group = element.find("./fn-group")
         if fn_group is not None:
-            self.back_order(fn_elements,fn_group)        
+            self.back_order(fn_elements,fn_group) 
+
+        #Find the reference text in ref tag
+        if element.tag == "ref":
+            self.find_reference(element)
 
         #Replace text or add or remove space in text
         self.change_space_text(element,data)
