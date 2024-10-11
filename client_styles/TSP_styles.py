@@ -292,20 +292,11 @@ class TSP_styles:
     def find_reference(self, element):
         if element.text:
             change_ref = index.TSP_ref(element.get('id'), element.text, "ieee")
-            # print(f"Changed Reference: {change_ref}")
-            # print(change_ref)
-            print(change_ref)
+
             soup = ET.fromstring(change_ref)
-            element.clear()
+            element.text = None
             element.append(soup)
-            # for child in soup.find_all(True):  # Finds all the tags in the parsed XML
-            #     print(child)
-            #     # element.append(child)
-            #     # print(child)
-            # pretty_xml = element.prettify()
-            # element.text = pretty_xml
-        # print(element.text)
-        # print(type(element.text))
+        print(element)
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
@@ -339,6 +330,7 @@ class TSP_styles:
             fn_group.append(ethics)
         if conflict:
             fn_group.append(conflict)
+
 
 
 

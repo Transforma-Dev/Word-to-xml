@@ -48,6 +48,11 @@
           }
         },
         {
+          "issue": {
+            "value": "issue"
+          }
+        },
+        {
           "year": {
             "value": "issued.\"date-parts\"[0][0]"
           }

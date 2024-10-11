@@ -20,7 +20,8 @@ def Add_tag(res, style):
         if "child" in k[xml_tag]:
             for child_item in k[xml_tag]["child"]:
                 child_tag = func(child_item)
-                mix.append(child_tag)
+                if child_tag:
+                    mix.append(child_tag)
 
             # Set value if "value" exists
         if "value" in k[xml_tag]:
@@ -30,39 +31,35 @@ def Add_tag(res, style):
                     xml_text = jmespath.search(csl_value, csl_json)
                     if xml_text is not None:
                         mix.string = str(xml_text)
-                    else:
-                        mix.string = str(csl_value)
+
                 else:
                     xml_text = csl_json.get(csl_value)
                     if xml_text is not None:
                         mix.string = str(xml_text)
-                    else:
-                        mix.string = str(csl_value)
 
         # Add attributes if present
         if "attributes" in k[xml_tag]:
             for attribute in k[xml_tag]["attributes"]:
                 for attr_key, attr_value in attribute.items():
-                    mix[attr_key] = attr_value["value"]
-                    xml_text = csl_json.get(attr_value["value"])
-                    if xml_text is not None:
-                        if attr_value["value"] == "URL":
-                            mix[attr_key] = csl_json[attr_value["value"]]
+                    # print(attr_value["value"])
+                    if attr_value["value"] == "URL":
+                        if attr_value["value"] in csl_json:
+                            mix[attr_key] = attr_value["value"]
+                    else:
+                        mix[attr_key] = attr_value["value"]
         
-        return mix
+        if mix.string or mix.contents:
+            return mix
+        else:
+            return None  
 
     soup = BeautifulSoup(features='xml')
     for k in ieee_config:
         root_tag = func(k)
-        soup.append(root_tag)
+        if root_tag:
+            soup.append(root_tag)
 
-    lpage_tag = soup.find('lpage')
-
-    #If the <lpage> tag exists and its value is lpage string, remove it
-    if lpage_tag.string == "lpage":
-        lpage_tag.decompose()
-
-    print(soup.prettify())
+    # print(soup.prettify())
     return soup.prettify()
         # tag = list(i.keys())[0]
         # # print(tag)

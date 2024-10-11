@@ -134,7 +134,7 @@ def TSP_ref(id, xml_text, style):
                 # Queue is empty, break the loop
                 lock.release()
                 break
-            print(type(work_queue))
+            # print(type(work_queue))
             # Get the next work item from the queue
             work_item = work_queue.pop(0)
             lock.release()
@@ -151,8 +151,8 @@ def TSP_ref(id, xml_text, style):
         else:
             debug("DOI Found in Google")
             parsed = ask_google(reference["reference"])
-            res["doi_metadata"] = parsed
-            res["parsed"] = False
+            res["parsed"] = parsed
+            res["doi_metadata"] = False
             # res["style"] = reference["style"]
         return res
 
@@ -178,7 +178,7 @@ def TSP_ref(id, xml_text, style):
             thread.join()
 
         # Print the collected results from the output queue
-        print("All work completed. Results:")
+        # print("All work completed. Results:")
         output = []
         while not output_queue.empty():
             output.append(output_queue.get())
@@ -198,23 +198,33 @@ def TSP_ref(id, xml_text, style):
 
     # print(inp)
     res = process_requests(inp)
-    
-    #Separate the page number and add first, last tag
-    if "-" in res[0]["doi_metadata"]["page"]:
-        split_page = res[0]["doi_metadata"]["page"].split("-")
-        res[0]["doi_metadata"]["fpage"] = split_page[0]
-        res[0]["doi_metadata"]["lpage"] = split_page[1]
+    print(res)
+    doi = res[0]["doi_metadata"]
+
+    if doi:
+        ref = res[0]["doi_metadata"]
     else:
-        res[0]["doi_metadata"]["fpage"] += res[0]["doi_metadata"]["page"]
+        ref = res[0]["parsed"]
+
+    page_value = ref.get("page") or ref.get("first-page")
+    print(page_value)
+    #Separate the page number and add first, last tag
+    if page_value:
+        if "-" in page_value:
+            split_page = ref["page"].split("-")
+            ref["fpage"] = split_page[0]
+            ref["lpage"] = split_page[1]
+        else:
+            ref["fpage"] = page_value
 
     try:
         #Change the dates
-        date = (res[0]["doi_metadata"]["issued"])
+        date = (ref["issued"])
     except:
         date = ""
     if date:
         for d_name in date:
-            print(d_name,"---")
+            # print(d_name,"---")
             if d_name=="date-parts":
                 date = date[d_name][0]
             else:
@@ -225,9 +235,9 @@ def TSP_ref(id, xml_text, style):
             dates = calendar.month_name[date[1]]
             da = str(date[0]) + " ," + dates[:3] + "."
             
-            res[0]["doi_metadata"]["dates"] = str(da)
+            ref["dates"] = str(da)
         else:
-            res[0]["doi_metadata"]["dates"] = date[0]
+            ref["dates"] = date[0]
     # print(res[0]["doi_metadata"]["dates"])
 
     return index.Add_tag(res, style)
