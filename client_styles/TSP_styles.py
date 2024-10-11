@@ -5,7 +5,8 @@ import os,sys
 import re
 import json
 import spacy
-import index
+# import index
+import requests
 
 class TSP_styles:
 
@@ -291,12 +292,43 @@ class TSP_styles:
 
     def find_reference(self, element):
         if element.text:
-            change_ref = index.TSP_ref(element.get('id'), element.text, "ieee")
+            attributes = element.attrib
+            text = "".join(text.strip() for text in element.itertext())
+            #Example usage:
+            references_data = {
+                "references": [
+                    {
+                        "id": element.get('id'),
+                        "reference": text,
+                        "style": "ieee"
+                    }
+                ]
+            }
 
-            soup = ET.fromstring(change_ref)
-            element.text = None
-            element.append(soup)
-        print(element)
+            api_endpoint = 'http://127.0.0.1:8000/'  #API url endpoint
+            change_ref = ''
+            try:
+                #Sending a POST request to the API endpoint with JSON data
+                response = requests.post(api_endpoint, json=references_data)
+                
+                #Checking if the request was successful (status code 200)
+                if response.status_code == 200:
+                    change_ref = response.json()  #Assuming the response is JSON
+                else:
+                    print({'error': f'API Error: {response.status_code}'})
+            
+            except requests.exceptions.RequestException as e:
+                pass
+            # change_ref = index.TSP_ref(element.get('id'), element.text, "ieee")
+            # print(str(change_ref),"---")
+            # sp = change_ref.split("<volume>")
+            # change_ref = sp[0] + ", vol. <volume>" + sp[1]
+            if change_ref:
+                soup = ET.fromstring(change_ref)
+                element.clear()
+                element.attrib.update(attributes)
+                element.append(soup)
+
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765

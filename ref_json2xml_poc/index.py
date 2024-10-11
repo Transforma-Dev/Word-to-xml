@@ -2,17 +2,21 @@ from configparser import ConfigParser
 from bs4 import BeautifulSoup
 import json
 import jmespath
-ieee_config = json.load(open("ref_json2xml_poc/config_ieee.json"))
+# ieee_config = json.load(open("config_ieee.json"))
 # csl_json = json.load(open("inp.json"))
 
 def Add_tag(res, style):
+    file = "styles_json/config_" + style + ".json"
+    # print(file)
+    ieee_config = json.load(open(file))
     doi = res[0]["doi_metadata"]
 
     if doi:
         ref = res[0]["doi_metadata"]
     else:
         ref = res[0]["parsed"]
-    not_in_json = []
+    
+    # print(ref,"---")
     csl_json = ref
     def func(k):
         xml_tag = list(k.keys())[0]
@@ -44,7 +48,7 @@ def Add_tag(res, style):
                     # print(attr_value["value"])
                     if attr_value["value"] == "URL":
                         if attr_value["value"] in csl_json:
-                            mix[attr_key] = attr_value["value"]
+                            mix[attr_key] = csl_json.get(attr_value["value"])
                     else:
                         mix[attr_key] = attr_value["value"]
         
@@ -59,8 +63,12 @@ def Add_tag(res, style):
         if root_tag:
             soup.append(root_tag)
 
-    # print(soup.prettify())
-    return soup.prettify()
+    print(soup.prettify())
+    # texted = ["<volume>", "<issue>", "<fpage>", ""]
+    # sp = str(soup).split("<volume>")
+    # change_ref = sp[0] + ", vol. <volume>" + sp[1]
+    # print(change_ref)
+    return str(soup)
         # tag = list(i.keys())[0]
         # # print(tag)
         # label = soup.new_tag(tag)
