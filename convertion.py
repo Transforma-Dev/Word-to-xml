@@ -175,9 +175,10 @@ def paragraph(para,doc,doc_filename,variables,para_num):
 
     #Check the paragraph was starts with abstract text
     elif para.text.strip().lower().startswith("abstract") or "abstract" in box_text.lower():
+        # print(para.text,"---")
         if box_text:
-            xml_text=box_text
-            box_text=''
+            xml_text = box_text
+            box_text = ''
         xml_text = abstract_key.abstract(xml_text,variables,filename)
 
     #Check the resume and mots cell in document
@@ -186,17 +187,22 @@ def paragraph(para,doc,doc_filename,variables,para_num):
     
     #Check para.text is keyword then skip them
     elif para.text.strip().lower()=="keywords":
-        variables["previous_text"]=para.text.strip()
-        xml_text=''
+        # print(para.text)
+        variables["previous_text"] = para.text.strip()
+        xml_text = ''
         return xml_text
-
+    
     #Check previous text was equal to keyword
     elif variables["previous_text"].lower()=="keywords":
-        xml_text=abstract_key.keyword_text(xml_text,variables)
+        # print(para.text)
+        xml_text = abstract_key.keyword_text(xml_text,variables)
 
     #Check the paragraph was starts with keyword text
-    elif para.text.strip().lower().startswith("keyword") or para.text.strip().lower().startswith("key words"):
-        xml_text=abstract_key.keyword_text(xml_text,variables)
+    elif para.text.strip().lower().startswith("keyword") or para.text.strip().lower().startswith("key words") or box_text.strip().lower().startswith("keyword"):
+        if box_text:
+            xml_text = box_text
+            box_text = ''
+        xml_text = abstract_key.keyword_text(xml_text,variables)
 
     #Find paragraph between author and mail and apply tag aff
     elif variables["aff_tag"] and variables["para_count"]>2 and len(para.text)!=0 and not para.text.isspace():

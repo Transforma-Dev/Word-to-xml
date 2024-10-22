@@ -25,21 +25,19 @@ class TSP_styles:
 
         #Replace and add space text
         for i in data["space_add_text"]:
+            pattern = fr"\s*\{i}\s*"
             if element.text and i in element.text:
-                    pattern = fr"\s*\{i}\s*"
-                    element.text = re.sub(pattern, f' {i} ', element.text)
+                element.text = re.sub(pattern, f' {i} ', element.text)
 
             if element.tail and i in element.tail:
-                pattern = fr"\s*\{i}\s*"
                 element.tail = re.sub(pattern, f' {i} ', element.tail)
 
         #Replace and remove space text
         for i in data["space_remove_text"]:     #https://github.com/Transforma-Dev/Word-to-xml/issues/21#issue-2385187570
+            pattern = fr"\s*\{i}\s*"
             if element.text and i in element.text:
-                pattern = fr"\s*\{i}\s*"
                 element.text = re.sub(pattern, f'{i}', element.text)
             if element.tail and i in element.tail:
-                pattern = fr"\s*\{i}\s*"
                 element.tail = re.sub(pattern, f'{i}', element.tail)
 
         #Replace and add space only before text
@@ -140,15 +138,14 @@ class TSP_styles:
 
         #Chnage the SI_unit minutes,seconds,hours with min,s,h
         for si_unit in data["si_units"]:
+            pattern = fr'\d+\s*{si_unit["text"]}[s]*'
             if element.text and si_unit["text"] in element.text:
-                pattern = fr'\d+\s*{si_unit["text"]}[s]*'
                 result = re.findall(pattern, element.text,re.IGNORECASE)
                 if result:
                     for i in result:
                         new_text = i[0] + " " + si_unit["replace"]
                         element.text = re.sub(i,new_text,element.text)
             if element.tail and si_unit["text"] in element.tail:
-                pattern = fr'\d+\s*{si_unit["text"]}[s]*'
                 result = re.findall(pattern, element.tail,re.IGNORECASE)
                 if result:
                     for i in result:
@@ -171,13 +168,11 @@ class TSP_styles:
         if element.text and element.text.strip():
             # print(element.text)
             doc = nlp(element.text)
-            # for word in doc:
             text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
             element.text = text.strip()[0].upper() + text.strip()[1:]
 
         if element.tail and element.tail.strip():
             doc = nlp(element.tail)
-            # for word in doc:
             text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP","DET","CCONJ"] else word.text.lower() for word in doc])
             element.tail = " " + text.strip()[0].upper() + text.strip()[1:]
           
@@ -315,53 +310,61 @@ class TSP_styles:
                 if response.status_code == 200:
                     change_ref = response.json()  #Assuming the response is JSON
                 else:
-                    print({'error': f'API Error: {response.status_code}'})
+                    print({'error': f'API Error: {response.json()}'})
             
             except requests.exceptions.RequestException as e:
+                print("Error in reference api", e)
                 pass
-            # change_ref = index.TSP_ref(element.get('id'), element.text, "ieee")
-            # print(str(change_ref),"---")
-            # sp = change_ref.split("<volume>")
-            # change_ref = sp[0] + ", vol. <volume>" + sp[1]
+
             if change_ref:
                 soup = ET.fromstring(change_ref)
                 element.clear()
                 element.attrib.update(attributes)
                 element.append(soup)
+            # else:
+            #     print("Error in reference")
 
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
-        funding = availability = author = conflict = ethics = None
+        order_map = {"fund": None, "author": None, "availability": None, "ethics": None, "conflict": None}
+        # funding = availability = author = conflict = ethics = None
         for fn in fn_elements:
             bold = fn.find("./p/bold")
-            p = fn.find("./p")
             if bold is not None and bold.text:
-                if "fund" in bold.text.strip().lower():
-                    funding = fn
-                    # bold.tail = "kdngjsij byf"
-                elif "author" in bold.text.strip().lower():
-                    author = fn
-                elif "availability" in bold.text.strip().lower():
-                    availability = fn
-                elif "ethics" in bold.text.strip().lower():
-                    ethics = fn
-                elif "conflict" in bold.text.strip().lower():
-                    conflict = fn
+                text_lower = bold.text.strip().lower()
+                for key in order_map:
+                    if key in text_lower:
+                        order_map[key] = fn
+                        break
+                # if "fund" in bold.text.strip().lower():
+                #     funding = fn
+                # elif "author" in bold.text.strip().lower():
+                #     author = fn
+                # elif "availability" in bold.text.strip().lower():
+                #     availability = fn
+                # elif "ethics" in bold.text.strip().lower():
+                #     ethics = fn
+                # elif "conflict" in bold.text.strip().lower():
+                #     conflict = fn
 
         fn_group.clear()
 
+        for key in ["fund", "author", "availability", "ethics", "conflict"]:
+            if order_map[key]:
+                fn_group.append(order_map[key])
+
         #Remove and append tag order
-        if funding:
-            fn_group.append(funding)
-        if author:
-            fn_group.append(author)
-        if availability:
-            fn_group.append(availability)
-        if ethics:
-            fn_group.append(ethics)
-        if conflict:
-            fn_group.append(conflict)
+        # if funding:
+        #     fn_group.append(funding)
+        # if author:
+        #     fn_group.append(author)
+        # if availability:
+        #     fn_group.append(availability)
+        # if ethics:
+        #     fn_group.append(ethics)
+        # if conflict:
+        #     fn_group.append(conflict)
 
 
 

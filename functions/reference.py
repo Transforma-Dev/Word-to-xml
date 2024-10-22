@@ -67,7 +67,7 @@ def reference_text(xml_text,variables):
     if references_json and not xml_text.isspace():
         
             data = references_json[0]
-            print(data)
+            # print(data)
             ref_word = ''
 
             ref_word += f'<label>{data["id"]}</label><mixed-citation publication-type="journal">'

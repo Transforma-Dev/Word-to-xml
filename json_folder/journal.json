@@ -62,6 +62,15 @@
     "subject": "ARTICLE"
   },
 
+  "CHD": {
+    "journal_title": "Congenital Heart Disease",
+    "issn_no": "<issn pub-type='epub'>1747-079X</issn><issn pub-type='ppub'>1747-0803</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/chd.2024.0",
+    "subject": "ARTICLE"
+  },
+
   "CMC": {
     "journal_title": "Computers, Materials &#x0026; Continua",
     "issn_no": "<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1546-2218</issn>",
@@ -98,12 +107,48 @@
     "subject": "ARTICLE"
   },
 
+  "EE": {
+    "journal_title": "Energy Engineering",
+    "issn_no": "<issn pub-type='epub'>0199-8595</issn><issn pub-type='ppub'>1546-0118</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/ee.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "FDMP": {
+    "journal_title": "Fluid Dynamics &#x0026; Materials Processing",
+    "issn_no": "<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1555-2578</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/fdmp.2024.0",
+    "subject": "ARTICLE"
+  },
+
   "FHMT": {
     "journal_title": "Frontiers in Heat and Mass Transfer",
     "issn_no": "<issn pub-type='epub'>2151-8629</issn>",
     "publisher_name": "Tech Science Press",
     "publisher_loc": "USA",
     "article_id": "10.32604/fhmt.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "IASC": {
+    "journal_title": "Intelligent Automation & Soft Computing",
+    "issn_no": "<issn pub-type='epub'>1079-8587</issn><issn pub-type='ppub'>2326-005X</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/iasc.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "ICCES": {
+    "journal_title": "The International Conference on Computational & Experimental Engineering and Sciences",
+    "issn_no": "<issn pub-type='epub'>1933-2815</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/icces.2024.0",
     "subject": "ARTICLE"
   },
 
@@ -125,12 +170,102 @@
     "subject": "ARTICLE"
   },
 
+  "JBD": {
+    "journal_title": "Journal on Big Data",
+    "issn_no": "<issn pub-type='epub'>2579-0048</issn><issn pub-type='ppub'>2579-0056</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jbd.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JBIC": {
+    "journal_title": "Journal of Blockchain and Intelligent Computing",
+    "issn_no": "<issn pub-type='epub'></issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jbic.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JCS": {
+    "journal_title": "Journal of Cyber Security",
+    "issn_no": "<issn pub-type='epub'>2579-0072</issn><issn pub-type='ppub'>2579-0064</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jcs.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JIHPP": {
+    "journal_title": "Journal of Information Hiding and Privacy Protection",
+    "issn_no": "<issn pub-type='epub'>2637-4234</issn><issn pub-type='ppub'>2637-4226</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jihpp.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JIMH": {
+    "journal_title": "Journal of Intelligent Medicine and Healthcare",
+    "issn_no": "<issn pub-type='epub'>2837-6331</issn><issn pub-type='ppub'>2837-634X</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jimh.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JIOT": {
+    "journal_title": "Journal on Internet of Things",
+    "issn_no": "<issn pub-type='epub'>2579-0099</issn><issn pub-type='ppub'>2579-0080</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jiot.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JNM": {
+    "journal_title": "Journal of New Media",
+    "issn_no": "<issn pub-type='epub'>2579-0110</issn><issn pub-type='ppub'>2579-0129</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jnm.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JPM": {
+    "journal_title": "Journal of Polymer Materials",
+    "issn_no": "<issn pub-type='epub'>0973-8622</issn><issn pub-type='ppub'>0976-3449</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jpm.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "JQC": {
+    "journal_title": "Journal of Quantum Computing",
+    "issn_no": "<issn pub-type='epub'>2579-0137</issn><issn pub-type='ppub'>2579-0145</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/jqc.2024.0",
+    "subject": "ARTICLE"
+  },
+
   "JRM": {
     "journal_title": "Journal of Renewable Materials",
     "issn_no": "<issn pub-type='epub'>2164-6341</issn>",
     "publisher_name": "Tech Science Press",
     "publisher_loc": "USA",
     "article_id": "10.32604/jrm.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "MCB": {
+    "journal_title": "Molecular & Cellular Biomechanics",
+    "issn_no": "<issn pub-type='epub'>1556-5297</issn><issn pub-type='ppub'>1556-5300</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/mcb.2024.0",
     "subject": "ARTICLE"
   },
 
@@ -161,30 +296,39 @@
     "subject": "COMMENTARY"
   },
 
-  "FDMP": {
-    "journal_title": "Fluid Dynamics &#x0026; Materials Processing",
-    "issn_no": "<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1555-2578</issn>",
+  "RIG": {
+    "journal_title": "Revue Internationale de Géomatique",
+    "issn_no": "<issn pub-type='epub'>1260-5875</issn><issn pub-type='ppub'>2116-7060</issn>",
     "publisher_name": "Tech Science Press",
     "publisher_loc": "USA",
-    "article_id": "10.32604/fdmp.2024.0",
+    "article_id": "10.32604/rig.2024.0",
+    "subject": "ARTICLE"
+  },
+
+  "RIMNI": {
+    "journal_title": "Revista Internacional de Métodos Numéricos para Cálculo y Diseño en Ingeniería An International Journal of Numerical Methods for Calculation and Design in Engineering",
+    "issn_no": "<issn pub-type='epub'>0213-1315</issn><issn pub-type='ppub'>1886-158X</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/j.rimni.2024.0",
     "subject": "ARTICLE"
   },
 
   "SDHM": {
-    "journal_title": "Fluid Dynamics &#x0026; Materials Processing",
-    "issn_no": "<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1555-2578</issn>",
+    "journal_title": "Structural Durability & Health Monitoring",
+    "issn_no": "<issn pub-type='epub'>1930-2983</issn><issn pub-type='ppub'>1930-2991</issn>",
     "publisher_name": "Tech Science Press",
     "publisher_loc": "USA",
-    "article_id": "10.32604/fdmp.2024.0",
+    "article_id": "10.32604/sdhm.2024.0",
     "subject": "ARTICLE"
   },
 
-  "EE": {
-    "journal_title": "Fluid Dynamics &#x0026; Materials Processing",
-    "issn_no": "<issn pub-type='epub'>1546-2226</issn><issn pub-type='ppub'>1555-2578</issn>",
+  "S&V": {
+    "journal_title": "Sound & Vibration",
+    "issn_no": "<issn pub-type='epub'>1541-0161</issn><issn pub-type='ppub'>2693-1443</issn>",
     "publisher_name": "Tech Science Press",
     "publisher_loc": "USA",
-    "article_id": "10.32604/fdmp.2024.0",
+    "article_id": "10.32604/sv.2024.0",
     "subject": "ARTICLE"
   }
 }

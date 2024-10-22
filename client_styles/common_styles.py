@@ -9,20 +9,6 @@ class Common_styles:
 
     #Replace text or add space or remove space in this function
     def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
-        
-        # if element.text:
-        #     pattern = fr"\],\s*\["
-        #     matchs = re.findall(pattern, element.text,re.IGNORECASE)
-        #     if matchs:
-        #         for match in matchs:
-        #             element.text = element.text.replace(match, " , ")
-        #             # print(element.text)
-        # if element.tail:
-        #     pattern = fr"\],\s*\["
-        #     matchs = re.findall(pattern, element.tail,re.IGNORECASE)
-        #     if matchs:
-        #         for match in matchs:
-        #             element.tail = element.tail.replace(match, " , ")
 
         #Replace text
         for i in data["replace_text"]:
@@ -33,26 +19,24 @@ class Common_styles:
 
         #Replace and add space text
         for i in data["space_add_text"]:
+            pattern = fr"\s*\{i}\s*"
             if element.text and i in element.text:
-                pattern = fr"\s*\{i}\s*"
                 element.text = re.sub(pattern, f' {i} ', element.text)
             if element.tail and i in element.tail:
-                pattern = fr"\s*\{i}\s*"
                 element.tail = re.sub(pattern, f' {i} ', element.tail)
 
         #Replace and remove space text
         for i in data["space_remove_text"]:     #https://github.com/Transforma-Dev/Word-to-xml/issues/21#issue-2385187570
+            pattern = fr"\s*\{i}\s*"
             if element.text and i in element.text:
-                pattern = fr"\s*\{i}\s*"
                 element.text = re.sub(pattern, f'{i}', element.text)
             if element.tail and i in element.tail:
-                pattern = fr"\s*\{i}\s*"
                 element.tail = re.sub(pattern, f'{i}', element.tail)
 
         #Replace and add space only before text
         for i in data["space_before_text"]:
+            pattern = fr"\d\s*{i}"
             if element.text and i in element.text:
-                pattern = fr"\d\s*{i}"
                 matchs = re.findall(pattern, element.text,re.IGNORECASE)
                 if matchs:
                     for match in matchs:
@@ -60,7 +44,6 @@ class Common_styles:
                         match2 = match[1:]
                         element.text = element.text.replace(match, f'{match1} {match2.strip()}')
             if element.tail and i in element.tail:
-                pattern = fr"\d\s*{i}"
                 matchs = re.findall(pattern, element.tail,re.IGNORECASE)
                 if matchs:
                     for match in matchs:
@@ -70,20 +53,19 @@ class Common_styles:
 
         #Replace and remove space only before text
         for i in data["space_remove_before_text"]:
+            pattern = fr"\d\s*{i}"
             if element.text:
-                pattern = fr"\d\s*{i}"
                 matchs = re.findall(pattern, element.text,re.IGNORECASE)
                 if matchs:
-                    print(element.text)
+                    # print(element.text)
                     for match in matchs:
                         match1 = match[0]
                         match2 = match[1:]
                         element.text = element.text.replace(match, f'{match1}{match2.strip()}')
             if element.tail:
-                pattern = fr"\d\s*{i}"
                 matchs = re.findall(pattern, element.tail,re.IGNORECASE)
                 if matchs:
-                    print(element.tail)
+                    # print(element.tail)
                     for match in matchs:
                         match1 = match[0]
                         match2 = match[1:]
