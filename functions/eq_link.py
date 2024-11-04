@@ -322,16 +322,21 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
             # Save the image to a file
             folder = f'{doc_filename}-fig-{variables["image_count"]}.jpg'  # You can use any folder format you prefer
             filenames = f'{file_name}-fig-{variables["image_count"]}.jpg'  # You can use any filename format you prefer
+            
             variables["image_count"]+=1
+            #Save the image in perticuler folder
             with open(folder, 'wb') as f:
                 f.write(image_path)
+            #Get the image as base64 value
+            with open(folder, "rb") as f:
+                base64_content = base64.b64encode(f.read()).decode('utf-8')
 
             if variables["table_title"]==True:
                 #Construct HTML for the image
-                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{filenames}"/>'
+                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{base64_content}" filename="{filenames}"/>'
             else:
                 #Construct HTML for the image
-                variables["images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{filenames}"/>'
+                variables["images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{base64_content}" filename="{filenames}"/>'
                 variables["image_find"]=True
 
     return xml_text

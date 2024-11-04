@@ -5,6 +5,7 @@ import os,sys
 import re
 import json
 import spacy
+from lxml import etree
 # import index
 import requests
 
@@ -12,6 +13,7 @@ class TSP_styles:
 
     def __init__(self):
         self.article_tit = False
+        self.references = []
 
     #Replace text or add space or remove space in this function
     def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
@@ -179,7 +181,7 @@ class TSP_styles:
     #Remove dot in end of affliation tag and replace the perticuler text
     def find_aff(self,element,data,nlp):    #https://github.com/Transforma-Dev/Word-to-xml/issues/9#issue-2379911935
         for child in element:
-            self.change_text(child,nlp)
+            self.change_text(child, nlp)
             #Replace text
             for i in data["aff_replace_text"]:
                 if child.text and i["text"] in child.text:
@@ -289,41 +291,27 @@ class TSP_styles:
         if element.text:
             attributes = element.attrib
             text = "".join(text.strip() for text in element.itertext())
-            #Example usage:
-            references_data = {
-                "references": [
-                    {
-                        "id": element.get('id'),
-                        "reference": text,
-                        "style": "ieee"
-                    }
-                ]
+            # print(text)
+            # Ensure the element is an lxml element
+            if isinstance(element, etree._Element):
+                lxml_element = element  # already an lxml element
+            else:
+                # If it's an xml.etree.ElementTree.Element, convert it to lxml
+                element_str = ET.tostring(element, encoding='unicode', method='xml')
+                lxml_element = etree.fromstring(element_str)
+            tt = etree.tostring(lxml_element, encoding='unicode', method='xml')
+            tt = re.sub(r"</?ref[^>]*>", "", tt)
+            tt = re.sub(r"\s*\n\s*", " ", tt).strip()
+            # print((tt))
+
+            data = {
+                "id": element.get('id'),
+                "reference": tt,
+                "style": "ieee"
             }
 
-            api_endpoint = 'http://127.0.0.1:8000/'  #API url endpoint
-            change_ref = ''
-            try:
-                #Sending a POST request to the API endpoint with JSON data
-                response = requests.post(api_endpoint, json=references_data)
-                
-                #Checking if the request was successful (status code 200)
-                if response.status_code == 200:
-                    change_ref = response.json()  #Assuming the response is JSON
-                else:
-                    print({'error': f'API Error: {response.json()}'})
+            self.references.append(data)
             
-            except requests.exceptions.RequestException as e:
-                print("Error in reference api", e)
-                pass
-
-            if change_ref:
-                soup = ET.fromstring(change_ref)
-                element.clear()
-                element.attrib.update(attributes)
-                element.append(soup)
-            # else:
-            #     print("Error in reference")
-
 
     #Correct the back matter order in fn-group tag
     def back_order(self,fn_elements,fn_group):      #https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
@@ -371,7 +359,7 @@ class TSP_styles:
 
 
     #Find the tags in xml and replace the content
-    def change_text(self, element, nlp):
+    def change_text(self, element, nlp, refere = None):
         # print(element.text,"----",element.tail,element)
 
         #from journal load the json file
@@ -435,23 +423,73 @@ class TSP_styles:
 
         #Find the reference text in ref tag
         if element.tag == "ref":
+            refere = True
             self.find_reference(element)
 
         #Replace text or add or remove space in text
-        self.change_space_text(element,data)
+        if not refere:
+            self.change_space_text(element, data)
 
         for child in element:
-            self.change_text(child,nlp)
+            self.change_text(child, nlp, refere)
 
-    
+
+
+    #Order the reference part
+    def order_reference(self, element, change_ref):
+        if element.text:
+            attributes = element.attrib
+            for i in change_ref:
+                if i["id"] == attributes["id"] and i["value"]:
+                    soup = ET.fromstring(i["value"])
+                    element.clear()
+                    element.attrib.update(attributes)
+                    element.append(soup)
+        # print(element.text)
+
+    def add_reference(self, element, nlp, change_ref):
+        
+        #Find the reference text in ref tag
+        if element.tag == "ref":
+            # print(element.text)
+            self.order_reference(element, change_ref)
+
+        for child in element:
+            self.add_reference(child, nlp, change_ref)
+
     def modify_xml(self,input_file,output_file):
         #Load the XML file
         tree = ET.parse(input_file)
         root = tree.getroot()
 
         nlp = spacy.load("en_core_web_sm")
+        #Variable to find reference then stop the add,remove space 
+        refere = False
+        self.change_text(root, nlp, refere)
 
-        self.change_text(root,nlp)
+
+        #Send the references to api and get response
+        references_data = {"references": self.references}
+
+        api_endpoint = 'http://127.0.0.1:8000/'  #API url endpoint
+        change_ref = ''
+        try:
+            #Sending a POST request to the API endpoint with JSON data
+            response = requests.post(api_endpoint, json=references_data)
+            
+            #Checking if the request was successful (status code 200)
+            if response.status_code == 200:
+                change_ref = response.json()  #Assuming the response is JSON
+            else:
+                print({'error': f'API Error: {response.json()}'})
+        
+        except requests.exceptions.RequestException as e:
+            print("Error in reference api", e)
+            pass
+
+        if change_ref:
+            # print(change_ref)
+            self.add_reference(root, nlp, change_ref)
 
         #Save the modified XML to a new file
         tree.write(output_file, encoding='utf-8', xml_declaration=True)

@@ -146,7 +146,7 @@ class Common_styles:
              
 
     #Find the tags in xml and replace the content
-    def change_text(self, element, nlp):
+    def change_text(self, element, nlp, refere):
 
 
         #from journal load the json file
@@ -154,11 +154,16 @@ class Common_styles:
             data = json.load(file)
         # print(data)
 
+        #Find the reference text in ref tag
+        if element.tag == "ref":
+            refere = True
+
         #Replace text or add or remove space in text
-        self.change_space_text(element,data)
+        if not refere:
+            self.change_space_text(element, data)
 
         for child in element:
-            self.change_text(child,nlp)
+            self.change_text(child, nlp, refere)
 
     
     def modify_xml(self,input_file,output_file):
@@ -168,7 +173,9 @@ class Common_styles:
 
         nlp = spacy.load("en_core_web_sm")
 
-        self.change_text(root,nlp)
+        refere = False
+
+        self.change_text(root, nlp, refere)
 
         #Save the modified XML to a new file
         tree.write(output_file, encoding='utf-8', xml_declaration=True)
