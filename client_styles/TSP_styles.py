@@ -442,9 +442,12 @@ class TSP_styles:
             for i in change_ref:
                 if i["id"] == attributes["id"] and i["value"]:
                     soup = ET.fromstring(i["value"])
+                    new_tag = ET.Element("reference-text")
+                    new_tag.text = "".join(text.strip() for text in element.itertext())
                     element.clear()
                     element.attrib.update(attributes)
                     element.append(soup)
+                    element.append(new_tag)
         # print(element.text)
 
     def add_reference(self, element, nlp, change_ref):
@@ -466,7 +469,7 @@ class TSP_styles:
         #Variable to find reference then stop the add,remove space 
         refere = False
         self.change_text(root, nlp, refere)
-
+        
 
         #Send the references to api and get response
         references_data = {"references": self.references}

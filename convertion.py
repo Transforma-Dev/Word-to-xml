@@ -193,8 +193,8 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         return xml_text
     
     #Check previous text was equal to keyword
-    elif variables["previous_text"].lower()=="keywords":
-        # print(para.text)
+    elif variables["previous_text"].lower()=="keywords" and para.text.strip() != "":
+        # print(para.text,"---")
         xml_text = abstract_key.keyword_text(xml_text,variables)
 
     #Check the paragraph was starts with keyword text
@@ -248,7 +248,7 @@ def paragraph(para,doc,doc_filename,variables,para_num):
         xml_text = image_table.image_caption(xml_text,variables)
 
     #Find table title in word document and change the tag into table-wrap
-    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text)!=0:
+    elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text)!=0 and (re.search(r'^Table \d+(\:|\.)+', para.text) and len(para.text)<=300):
         # print(para.text)
         xml_text = image_table.table_heading(xml_text,variables)
     

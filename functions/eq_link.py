@@ -231,6 +231,7 @@ def hyper(root,para):
             "m": "http://schemas.openxmlformats.org/officeDocument/2006/math"
         }
     siva = []
+    # print(root)
     for elem in root.iter():
         if elem.tag.endswith("r"):      #Find normal text in paragraph
             tex = ""
@@ -239,7 +240,7 @@ def hyper(root,para):
                     tex += t_elem.text if t_elem.text else ""
             if tex!="":
                 siva.append(tex) 
-
+    # print(siva)
     #Initialize an empty list to store hyperlink text,address,font size
     text=[]
     address=[]
@@ -275,8 +276,14 @@ def print_hyper(run,para,siva,p,xml_text,text,address,font):
             if siva[0]=="<":
                 a=1
                 siva=siva[1:]
-            if len(siva)>1:
+            if len(siva)>1 and "".join(siva[0].split()) == "".join(run.text.split()):
                 siva=siva[1:]
+            else:
+                pass
+                # print(run.text,"-=-=-=")
+                # print(siva,"====")
+                # print(p,"---")
+                # print(xml_text)
     except Exception as e:
         print(f"An error occurred: {e}")
 
@@ -328,15 +335,15 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
             with open(folder, 'wb') as f:
                 f.write(image_path)
             #Get the image as base64 value
-            with open(folder, "rb") as f:
-                base64_content = base64.b64encode(f.read()).decode('utf-8')
+            # with open(folder, "rb") as f:
+            #     base64_content = base64.b64encode(f.read()).decode('utf-8')
 
             if variables["table_title"]==True:
                 #Construct HTML for the image
-                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{base64_content}" filename="{filenames}"/>'
+                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="image/{filenames}" />'
             else:
                 #Construct HTML for the image
-                variables["images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="{base64_content}" filename="{filenames}"/>'
+                variables["images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="image/{filenames}" />'
                 variables["image_find"]=True
 
     return xml_text
