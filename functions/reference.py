@@ -179,7 +179,7 @@ def reference_temp(xml_text,variables):
         ]
     }
 
-    api_endpoint = 'http://10.10.10.41:3333/'  #API url endpoint
+    api_endpoint = 'http://192.168.1.13:3333/'  #API url endpoint
     references_json = ''
     try:
         #Sending a POST request to the API endpoint with JSON data
