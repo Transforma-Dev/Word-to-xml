@@ -23,7 +23,7 @@ import os
 
 from convertion import paragraph,table,image   #Import Functions from 'convertion.py' file
 from functions import eq_link
-#Tsp_styles.data
+#Import the styles
 from client_styles import TSP_styles,common_styles
 
 
@@ -51,19 +51,19 @@ def iter_block_items(parent):
 
 #Define funcion to create xml
 def convert(input_file_name = None):
-    #Get the directory of the file
+    #Get the file name in command line argument.
     if input_file_name == None:
         input_file_name = (sys.argv[1])
         input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else input_file_name
     
-    #Get the directory of the python file
+    #Get the path of the python file
     script_path = os.path.abspath(__file__)
     
     #Get the directory of the script
     script_directory = os.path.dirname(script_path)
    
-    #Check command line argument was present in input folder
-    input_path=script_directory+"/input/"+input_file_name
+    #Check document was present in the input folder
+    input_path = script_directory + "/input/" + input_file_name
     xml = pre_xml
 
     #Define the name of the output folder and Check if the output folder exists, if not, create it
@@ -72,13 +72,13 @@ def convert(input_file_name = None):
         os.makedirs(output_folder)
 
     #Separate the file name and extension of the document
-    filename,extension=os.path.splitext(input_file_name)
+    filename,extension = os.path.splitext(input_file_name)
 
     #Define the name of the Image folder and Check if the image folder exists, if not, create it
     image_folder = os.path.join(script_directory, "image")
     if not os.path.exists(image_folder):
         os.makedirs(image_folder)
-    doc_filename=image_folder+"/"+filename
+    doc_filename = image_folder + "/" + filename
 
     #Construct the output file in output folder in html extension
     output_xml_name = filename + '.xml'
@@ -117,7 +117,7 @@ def convert(input_file_name = None):
     
     #Add nessaccery tags
     xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
-    # print(xml)
+
     #Check the word document and separate them in paragraph,tables and inline shapes
     for para_num,para in enumerate(iter_block_items(doc)):
         """

@@ -55,7 +55,7 @@ def author_name(xml_text,variables):
                     if j.strip()=="":
                         continue
                     if j and j != "*":
-                        text += f'<xref ref-type="aff" rid="aff-{j}">{j}</xref>'
+                        text += f'<xref ref-type="aff" rid="aff-{j}" href="#aff-{j}">{j}</xref>'
                     elif j == "*":
                         text += '<mail>demo@email.com</mail>'
                 # print(text)

@@ -7,6 +7,9 @@ from xml.etree import ElementTree as ET
 from io import StringIO
 import base64    
 import re
+from PIL import Image
+import io
+
 
 #Define function to find the boxed text in the document
 def txbox(root,file_name,variables):
@@ -320,8 +323,8 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
             #Find the image width and height from the XML
             cx = pic.find(".//a:xfrm/a:ext", my_namespaces).get('cx')
             cy = pic.find(".//a:xfrm/a:ext", my_namespaces).get('cy')
-            width = int(cx) / 914400 * 96  
-            height = int(cy) / 914400 * 96  
+            # width = int(cx) / 914400 * 96  
+            # height = int(cy) / 914400 * 96  
 
             #Encode the image
             encoded_image = base64.b64encode(image_path).decode('utf-8')
@@ -331,9 +334,43 @@ def inline_image(doc,doc_filename,file_name,xmlstr,variables,xml_text):
             filenames = f'{file_name}-fig-{variables["image_count"]}.jpg'  # You can use any filename format you prefer
             
             variables["image_count"]+=1
+
+            # Increase the max image pixel limit
+            Image.MAX_IMAGE_PIXELS = None
+
+            image = Image.open(io.BytesIO(image_path))
+
+            import math
+
+            width, height = image.size
+
+            # Calculate the original resolution (diagonal size in pixels)
+            original_resolution = math.sqrt(width**2 + height**2)
+
+            # Determine the scale factor to get the desired resolution in the range of 400-500
+            target_resolution = 1000 + (1200 - 1000) * (original_resolution / (original_resolution + 1))
+
+            if original_resolution > 4000:
+
+                # Calculate the new width and height based on the target resolution
+                scale_factor = target_resolution / original_resolution
+                
+                new_width = int(width * scale_factor)
+                new_height = int(height * scale_factor)
+
+                # Resize the image
+                resized_image = image.resize((new_width, new_height))
+
+                # Save the resized image
+                resized_image.save(folder)
+            else:
+                image.save(folder)
+            # image.save(folder, format="JPEG", quality=100, dpi=(300, 300))
+
+
             #Save the image in perticuler folder
-            with open(folder, 'wb') as f:
-                f.write(image_path)
+            # with open(folder, 'wb') as f:
+            #     f.write(image_path)
             #Get the image as base64 value
             # with open(folder, "rb") as f:
             #     base64_content = base64.b64encode(f.read()).decode('utf-8')
@@ -360,27 +397,27 @@ def add_tag(xml_text):
             if "-" in i:
                 xml_tex = i.split()
                 xml_1 = xml_tex[1].split("-")
-                xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='fig' rid='fig-{xml_1[1]}'>{xml_1[1]}</xref>")
+                xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_1[0]}' href='#fig-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='fig' rid='fig-{xml_1[1]}' href='#fig-{xml_1[1]}'>{xml_1[1]}</xref>")
             elif " and " in i and "," in i:
                 xml_tex = i.split()
                 xml_1 = xml_tex[1].split(",")
                 for id,j in enumerate(xml_1):
                     if id == 0:
-                        rep = f"<xref ref-type='fig' rid='fig-{j}'>{xml_tex[0]} {j}</xref>,"
+                        rep = f"<xref ref-type='fig' rid='fig-{j}' href='#fig-{j}'>{xml_tex[0]} {j}</xref>,"
                     else:
-                        rep += f"<xref ref-type='fig' rid='fig-{j}'>{j}</xref>,"
+                        rep += f"<xref ref-type='fig' rid='fig-{j}' href='#fig-{j}'>{j}</xref>,"
                 if rep.endswith(","):
                     rep = rep[:-1]
-                xml_text = xml_text.replace(i,f"{rep} {xml_tex[2]} <xref ref-type='fig' rid='fig-{xml_tex[3]}'>{xml_tex[3]}</xref>")
+                xml_text = xml_text.replace(i,f"{rep} {xml_tex[2]} <xref ref-type='fig' rid='fig-{xml_tex[3]}' href='#fig-{xml_tex[3]}'>{xml_tex[3]}</xref>")
             else:
                 if "and" in i:
                     split_t = i.split("and")
                     first = "".join([di if di.isdigit() else "" for di in split_t[0]])
                     end = "".join([di if di.isdigit() else "" for di in split_t[1]])
-                    xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{first}'>Figs. {first}</xref> and <xref ref-type='fig' rid='fig-{end}'>{end}</xref>")
+                    xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{first}' href='#fig-{first}'>Figs. {first}</xref> and <xref ref-type='fig' rid='fig-{end}' href='#fig-{end}'>{end}</xref>")
                 else:
                     xml_tex = i.split()
-                    xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_tex[1]}'>{xml_tex[0]} {xml_tex[1]}</xref>")
+                    xml_text = xml_text.replace(i,f"<xref ref-type='fig' rid='fig-{xml_tex[1]}' href='#fig-{xml_tex[1]}'>{xml_tex[0]} {xml_tex[1]}</xref>")
     #Find tables and add tag
     pattern = r"Tables*\.*\s\d+:*(?:,\d+|-\d+)*(?: and (?:Tables*)\s*\d+:*)*"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
@@ -391,7 +428,7 @@ def add_tag(xml_text):
             if "-" in i:
                 xml_tex = i.split()
                 xml_1 = xml_tex[1].split("-")
-                xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='table' rid='table-{xml_1[1]}'>{xml_1[1]}</xref>")
+                xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_1[0]}' href='#table-{xml_1[0]}'>{xml_tex[0]} {xml_1[0]}</xref>-<xref ref-type='table' rid='table-{xml_1[1]}' href='#table-{xml_1[1]}'>{xml_1[1]}</xref>")
             elif "and" in i:
                 xml_tex = i.split("and")
                 if "," in xml_tex:
@@ -401,25 +438,25 @@ def add_tag(xml_text):
                     # print(len_xml)
                     for id,j in enumerate(xml_1):
                         if id == 0:
-                            rep = f"<xref ref-type='table' rid='table-{j.strip()[-1]}'>Tables {j.strip()[-1]}</xref>,"
+                            rep = f"<xref ref-type='table' rid='table-{j.strip()[-1]}' href='#table-{j.strip()[-1]}'>Tables {j.strip()[-1]}</xref>,"
                         elif len_xml == id+1:
                             rep = rep[:-1]    
-                            rep += f" and <xref ref-type='table' rid='table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>"
+                            rep += f" and <xref ref-type='table' rid='table-{j.strip()[-1]}' href='#table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>"
                         else:
-                            rep += f"<xref ref-type='table' rid='table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>,"
+                            rep += f"<xref ref-type='table' rid='table-{j.strip()[-1]}' href='#table-{j.strip()[-1]}'>{j.strip()[-1]}</xref>,"
                     xml_text = xml_text.replace(i,f"{rep}")
                 else:
                     xml_tex = i.split("and")
                     first = "".join([di for di in xml_tex[0] if di.isdigit()])
                     last = "".join([di for di in xml_tex[1] if di.isdigit()])
-                    rep = f"<xref ref-type='table' rid='table-{first}'>Tables {first}</xref> and <xref ref-type='table' rid='table-{last}'>{last}</xref>"
+                    rep = f"<xref ref-type='table' rid='table-{first}' href='#table-{first}'>Tables {first}</xref> and <xref ref-type='table' rid='table-{last}' href='#table-{last}'>{last}</xref>"
                     xml_text = xml_text.replace(i,f"{rep}")
                 # print(xml_text)
             else:
                 xml_tex = i.split()
                 xml_tex[1] = "".join([di for di in xml_tex[1] if di.isdigit()])
                 i = i.replace(":","")
-                xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}'>{i}</xref>")
+                xml_text = xml_text.replace(i,f"<xref ref-type='table' rid='table-{xml_tex[1]}' href='#table-{xml_tex[1]}'>{i}</xref>")
     #Find Eqs and add tag
     pattern = r"Eqs\.\s\(*\d+\s*?[-–]?\s*\d+\)*"
     match = re.findall(pattern, xml_text,re.IGNORECASE)
@@ -430,9 +467,9 @@ def add_tag(xml_text):
             if "-" in i:
                 xml_tex = i.split("Eqs.")
                 xml_1 = xml_tex[1].split("-")
-                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{xml_1[0]}'>Eqs. {xml_1[0]}</xref>-<xref ref-type='disp-formula' rid='eqn-{xml_1[1]}'>{xml_1[1]}</xref>")
+                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{xml_1[0]}' href='#eqn-{xml_1[0]}'>Eqs. {xml_1[0]}</xref>-<xref ref-type='disp-formula' rid='eqn-{xml_1[1]}' href='#eqn-{xml_1[1]}'>{xml_1[1]}</xref>")
             # print(no2)
-            # xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{xml_tex[0]})</xref><xref ref-type='disp-formula' rid='eqn-{no2}'>({xml_tex[1]}</xref>")
+            # xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}' href='#eqn-{no1}'>{xml_tex[0]})</xref><xref ref-type='disp-formula' rid='eqn-{no2}' href='#eqn-{no2}'>({xml_tex[1]}</xref>")
             
     #Find Eqs and add tag
     pattern = r"Eq\.\s*\(*\d+\d*\)*"
@@ -446,13 +483,13 @@ def add_tag(xml_text):
                 for j in i:
                     if j.isdigit():
                         no1 = 1
-                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{match[0]}</xref>")
+                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}' href='#eqn-{no1}'>{match[0]}</xref>")
             else:
                 for j in i:
                     if j.isdigit():
                         no1 += str(j)
                 replace = i.replace(no1,"("+no1+")")
-                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}'>{replace}</xref>")
+                xml_text = xml_text.replace(i,f"<xref ref-type='disp-formula' rid='eqn-{no1}' href='#eqn-{no1}'>{replace}</xref>")
 
     #Find Section and add tag
     pattern = r"Section\s\d\d*"
@@ -464,7 +501,7 @@ def add_tag(xml_text):
             for j in match[0]:
                 if j.isdigit():
                     no1 = 1
-            xml_text = xml_text.replace(i,f"<xref ref-type='sec' rid='s-{no1}'>{match[0]}</xref>")
+            xml_text = xml_text.replace(i,f"<xref ref-type='sec' rid='s-{no1}' href='#s-{no1}'>{match[0]}</xref>")
 
     #Find Formula and add tag
     pattern = r"Formula\s\(*\d\d*\)*"
@@ -476,7 +513,7 @@ def add_tag(xml_text):
             for j in match[0]:
                 if j.isdigit():
                     no1 = 1
-            xml_text = xml_text.replace(i,f"<xref ref-type='formula' rid='for-{no1}'>{match[0]}</xref>")
+            xml_text = xml_text.replace(i,f"<xref ref-type='formula' rid='for-{no1}' href='#for-{no1}'>{match[0]}</xref>")
 
     #Find and add tag
     pattern = r"Appendix"
@@ -485,7 +522,7 @@ def add_tag(xml_text):
         match = set(match)
         match = list(match)
         for i in match:
-            xml_text = xml_text.replace(i,f"<xref ref-type='appendix' rid='app'>{match[0]}</xref>")
+            xml_text = xml_text.replace(i,f"<xref ref-type='appendix' rid='app' href='#app'>{match[0]}</xref>")
 
     return xml_text
 
@@ -504,12 +541,12 @@ def add_ref_tag(xml,variables):
                 if len(sp) == 2:
                     first = sp[0].strip().replace("[","").replace("]","")
                     last = sp[-1].strip().replace("[","").replace("]","")
-                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>,<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first} href="#ref-{first}">{first}</xref>,<xref ref-type="bibr" rid="ref-{last}" href="#ref-{last}">{last}</xref>]'
                     
                 else:
                     first = sp[0].strip().replace("[","").replace("]","")
                     last = sp[-1].strip().replace("[","").replace("]","")
-                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}" href="#ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}" href="#ref-{last}">{last}</xref>]'
                 xml[0] = xml[0].replace(match, add_xref)
                 # print(xml[0])
 
@@ -532,7 +569,7 @@ def add_ref_tag(xml,variables):
                             # print(num)
                         # try:
                             if len(split_i) == 2:
-                                add_xref = f'[<xref ref-type="bibr" rid="ref-{split_i[0]}">{split_i[0]}</xref>,<xref ref-type="bibr" rid="ref-{split_i[1]}">{split_i[1]}</xref>]'
+                                add_xref = f'[<xref ref-type="bibr" rid="ref-{split_i[0]}" href="#ref-{split_i[0]}">{split_i[0]}</xref>,<xref ref-type="bibr" rid="ref-{split_i[1]}" href="#ref-{split_i[1]}">{split_i[1]}</xref>]'
                             else:
                                 first = split_i[0].strip().replace("[","").replace("]","")
                                 last = split_i[-1].strip().replace("[","").replace("]","")
@@ -551,12 +588,12 @@ def add_ref_tag(xml,variables):
                                 else:
                                     order_num = False
                                 if order_num:
-                                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}">{last}</xref>]'
+                                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}" href="#ref-{first}">{first}</xref>-<xref ref-type="bibr" rid="ref-{last}" href="#ref-{last}">{last}</xref>]'
                                 else:
                                     add_xref = '['
                                     for i, ref in enumerate(split_i):
                                         # Add xref tags to each reference
-                                        add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
+                                        add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}" href="ref-{ref.strip()}">{ref.strip()}</xref>'
                                         # Add comma separator if not the last reference
                                         if i < len(split_i) - 1:
                                             add_xref += ','
@@ -569,7 +606,7 @@ def add_ref_tag(xml,variables):
                         #     print("Error in add_xref_tag in eq_link", e)
 
                     elif "-" in num:
-                        add_xref = f"[<xref ref-type='bibr' rid='ref-{split_i[0]}'>{split_i[0]}</xref>-<xref ref-type='bibr' rid='ref-{split_i[1]}'>{split_i[1]}</xref>]"
+                        add_xref = f"[<xref ref-type='bibr' rid='ref-{split_i[0]}' href='#ref-{split_i[0]}'>{split_i[0]}</xref>-<xref ref-type='bibr' rid='ref-{split_i[1]}' href='#ref-{split_i[1]}'>{split_i[1]}</xref>]"
                         # print(add_xref)
                         # print(f"[{num}]")
                         xml[0] = xml[0].replace(f"[{num}]", add_xref)
@@ -579,7 +616,7 @@ def add_ref_tag(xml,variables):
                         add_xref = '['
                         for i, ref in enumerate(split_i):
                             # Add xref tags to each reference
-                            add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}">{ref.strip()}</xref>'
+                            add_xref += f'<xref ref-type="bibr" rid="ref-{ref.strip()}" href="#ref-{ref.strip()}">{ref.strip()}</xref>'
                             # Add comma separator if not the last reference
                             if i < len(split_i) - 1:
                                 add_xref += ','
@@ -605,7 +642,7 @@ def add_ref_tag(xml,variables):
 
         #Replace refereance text in xml
         for j,index in variables["ref_link_save"]:
-            add_xref = f'<xref ref-type="bibr" rid="ref-{index+1}">{j}</xref>'
+            add_xref = f'<xref ref-type="bibr" rid="ref-{index+1}" href="#ref-{index+1}">{j}</xref>'
             xml[0] = xml[0].replace(j,add_xref)
 
         # for i in variables["ref_text_link"]:

@@ -1,6 +1,5 @@
 #import neccessary librarys
 import xml.etree.ElementTree as ET
-from bs4 import BeautifulSoup
 import os,sys
 import re
 import json
@@ -8,6 +7,11 @@ import spacy
 from lxml import etree
 # import index
 import requests
+import sys
+
+#Import the config file
+sys.path.append("../")
+import config
 
 class TSP_styles:
 
@@ -474,11 +478,10 @@ class TSP_styles:
         #Send the references to api and get response
         references_data = {"references": self.references}
 
-        api_endpoint = 'http://127.0.0.1:8000/'  #API url endpoint
         change_ref = ''
         try:
             #Sending a POST request to the API endpoint with JSON data
-            response = requests.post(api_endpoint, json=references_data)
+            response = requests.post(config.api_endpoint, json=references_data)
             
             #Checking if the request was successful (status code 200)
             if response.status_code == 200:
