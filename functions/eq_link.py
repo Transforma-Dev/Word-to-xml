@@ -331,6 +331,10 @@ def inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text):
             Image.MAX_IMAGE_PIXELS = None
 
             image = Image.open(io.BytesIO(image_path))
+            
+            if image.mode == 'RGBA':
+                # Convert RGBA to RGB before saving as JPEG
+                image = image.convert('RGB')
 
             import math
 

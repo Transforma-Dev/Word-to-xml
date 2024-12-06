@@ -230,6 +230,10 @@ def paragraph(para, doc, doc_filename, variables, para_num):
     #Find table title in word document and change the tag into table-wrap
     elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text) != 0 and (re.search(r'^Table \d+(\:|\.)+', para.text) and len(para.text) <= 300):
         xml_text = image_table.table_heading(xml_text, variables)
+    
+    #Find reference paragraph in word document and change the tag into ref
+    elif variables["ref"] and para.text != "":
+        xml_text = reference.reference_temp(xml_text, variables)
 
     #Find the Nomenclature text in word document
     elif para.text.strip().lower().startswith("nomenclature"):
