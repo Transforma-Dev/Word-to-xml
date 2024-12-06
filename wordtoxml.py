@@ -9,17 +9,10 @@ from docx.oxml.shape import CT_Inline
 from docx.shape import InlineShape
 from bs4 import BeautifulSoup
 
-#Import additional module
-import base64
-from lxml import etree
-from xml.etree import ElementTree
-from xml.etree import ElementTree as ET
-from io import StringIO
-import re
-
 #Get the directory of the script file
 import sys
 import os
+import re
 
 from convertion import paragraph,table,image   #Import Functions from 'convertion.py' file
 from functions import eq_link
@@ -72,7 +65,7 @@ def convert(input_file_name = None):
         os.makedirs(output_folder)
 
     #Separate the file name and extension of the document
-    filename,extension = os.path.splitext(input_file_name)
+    filename, extension = os.path.splitext(input_file_name)
 
     #Define the name of the Image folder and Check if the image folder exists, if not, create it
     image_folder = os.path.join(script_directory, "image")
@@ -116,35 +109,35 @@ def convert(input_file_name = None):
     # xml+=f'<?xml-stylesheet href="/media/user/daecfb15-4cb5-43c2-a390-112ab6fc48dd/Siva/python/wordtoxml/convertion/styles.css" ?>'
     
     #Add nessaccery tags
-    xml+=f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
+    xml += f"<article xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:mml='http://www.w3.org/1998/Math/MathML' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' article-type='research-article' dtd-version='1.0'>"
 
     #Check the word document and separate them in paragraph,tables and inline shapes
-    for para_num,para in enumerate(iter_block_items(doc)):
+    for para_num, para in enumerate(iter_block_items(doc)):
         """
         Parameters:
             para (object): The element (paragraph, table, or inline shape) from the Word document.
         """
         if isinstance(para, Paragraph):   #Word contain a paragraph
-            xml += paragraph(para, doc,doc_filename,variables,para_num)
+            xml += paragraph(para, doc, doc_filename, variables, para_num)
 
         elif isinstance(para, Table):    #Word contain a table
-            xml += table(para, doc,doc_filename,variables)
+            xml += table(para, doc, doc_filename, variables)
 
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
-            xml += image(para,doc)
+            xml += image(para, doc)
 
         #Change the email in author name 
         if "</contrib-group>" in xml and variables["author_mail"]:
             if "<email>" in xml:
                 match = re.search(r'<email>.*</email>', xml, re.IGNORECASE)
                 match = match.group() if match else None
-                xml = xml.replace("<mail>demo@email.com</mail>",match)
+                xml = xml.replace("<mail>demo@email.com</mail>", match)
                 variables["author_mail"] = False
 
     #Call function to solve the xref tag for references
-    xml = eq_link.add_ref_tag(xml,variables)
+    xml = eq_link.add_ref_tag(xml, variables)
 
-    xml+=f"</article>"
+    xml += f"</article>"
 
     #Parse the HTML with BeautifulSoup for pretty-printing
     soup = BeautifulSoup(xml, 'xml')
@@ -165,10 +158,7 @@ def convert(input_file_name = None):
     xml_modifier = common_styles.Common_styles()
     xml_modifier.modify_xml(output_xml, output_xml)
 
-    # with open(output_xml,"r") as ff:
-    #     print(ff.read())
-
     return output_xml_name
 
 
-convert()
+#convert()

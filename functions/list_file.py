@@ -18,7 +18,7 @@ def list_para(xml_text,variables,xml,root):
     
     variables["list_end"]=True
     variables["list_count"]+=1
-    #print(text)
+
     return text
 
 #Define function to find the last list pragraph

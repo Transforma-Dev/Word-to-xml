@@ -8,7 +8,7 @@ import spacy
 class Common_styles:
 
     #Replace text or add space or remove space in this function
-    def change_space_text(self,element,data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
+    def change_space_text(self, element, data):   #https://github.com/Transforma-Dev/Word-to-xml/issues/22#issue-2385189744
 
         #Replace text
         for i in data["replace_text"]:
@@ -57,7 +57,6 @@ class Common_styles:
             if element.text:
                 matchs = re.findall(pattern, element.text,re.IGNORECASE)
                 if matchs:
-                    # print(element.text)
                     for match in matchs:
                         match1 = match[0]
                         match2 = match[1:]
@@ -65,7 +64,6 @@ class Common_styles:
             if element.tail:
                 matchs = re.findall(pattern, element.tail,re.IGNORECASE)
                 if matchs:
-                    # print(element.tail)
                     for match in matchs:
                         match1 = match[0]
                         match2 = match[1:]
@@ -109,7 +107,6 @@ class Common_styles:
                             split = [sec.replace(j, '') for sec in split]
                             simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1] + j
                             element.text = element.text.replace(i,simple)
-                            # element.text = [:-1]
             if element.tail:
                 pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*' 
                 result = re.findall(pattern,element.tail,re.IGNORECASE)
@@ -152,7 +149,6 @@ class Common_styles:
         #from journal load the json file
         with open("json_folder/TSP_styles.json",'r') as file:
             data = json.load(file)
-        # print(data)
 
         #Find the reference text in ref tag
         if element.tag == "ref":

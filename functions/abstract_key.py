@@ -3,14 +3,14 @@ from datetime import datetime
 
 
 #Define function to find abstract paragraph in document
-def abstract(xml_text,variables,filename):
+def abstract(xml_text, variables, filename):
     try:
-        copy_xml=xml_text
+        copy_xml = xml_text
         res = ''
         #print copyright statement
-        ss=variables["copyright_state"].count("and")
-        if ss>3:
-            variables["copyright_state"]=variables["copyright_state"].split("and")
+        ss = variables["copyright_state"].count("and")
+        if ss > 3:
+            variables["copyright_state"] = variables["copyright_state"].split("and")
             variables["copyright_state"] = variables["copyright_state"][0]+"et al."
         else:
             variables["copyright_state"] = variables["copyright_state"].strip()[:-3]
@@ -21,9 +21,9 @@ def abstract(xml_text,variables,filename):
             res = f'<abstract><p>{variables["noman_store"][0]}</p></abstract>'
 
         if "keyword" in xml_text.lower():
-            split_xml = re.split(r'keyword\s*', xml_text, flags=re.IGNORECASE)
-            split_xml[1]="KEYWORD"+split_xml[1]
-            xml_text=split_xml[0]
+            split_xml = re.split(r'keyword\s*', xml_text, flags = re.IGNORECASE)
+            split_xml[1] = "KEYWORD"+split_xml[1]
+            xml_text = split_xml[0]
 
         #Find the recived date in document
         d1 = d2 = 00
@@ -36,10 +36,9 @@ def abstract(xml_text,variables,filename):
             for find in date:
                 if find.strip().lower() in ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]:
                     mon.append(datetime.strptime(find, "%B").month)
-            d1,m1,y1,d2,m2,y2 = date[0],mon[0],date[2],date[3],mon[1],date[5]
-            # print(d1,m1,y1,d2,m2,y2)
+            d1, m1, y1, d2, m2, y2 = date[0], mon[0], date[2], date[3], mon[1], date[5]
 
-        xml_text = re.sub(r'<bold>.*?abstract:.*?</bold>|abstract:', '', xml_text,flags=re.IGNORECASE)
+        xml_text = re.sub(r'<bold>.*?abstract:.*?</bold>|abstract:', '', xml_text, flags=re.IGNORECASE)
         text = f'''</corresp></author-notes>
                     <pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                         <day>00</day>
@@ -78,7 +77,7 @@ def abstract(xml_text,variables,filename):
         if variables["noman_store"]:
             variables["noman_text"] = False
             text += keyword_text(variables["noman_store"][1],variables)
-            text = text.replace("</article-meta></front><body>","")
+            text = text.replace("</article-meta></front><body>", "")
 
         if variables["key_store"]:
             text += f'{variables["key_store"]}'  
@@ -87,7 +86,7 @@ def abstract(xml_text,variables,filename):
     except Exception as e:
         print("Error in abstract_key function.", e)
         text = ""
-    #print(text)
+
     return text
 
 
@@ -96,22 +95,22 @@ def keyword_text(xml_text,variables):
     try:
         #Remove keyword text and bold tag in string
         xml_text = re.sub(r'keywords?:|key\s*words', '', xml_text, flags=re.IGNORECASE)
-        xml_text= re.sub(r'<bold>.*?</bold>', '', xml_text)
-        xml_text=xml_text.replace(":","").replace(";", ",")
+        xml_text = re.sub(r'<bold>.*?</bold>', '', xml_text)
+        xml_text = xml_text.replace(":", "").replace(";", ",")
         
         #Split the string into individual keywords
         xml_text = [keyword for keyword in xml_text.split(",") if "keyword" not in keyword.lower()]
         if variables["noman_text"]:
-            text=f'<kwd-group kwd-group-type="author">'
+            text = f'<kwd-group kwd-group-type="author">'
             for i in xml_text:
-                text+=f'<kwd>{i}</kwd>'
-            text+=f'</kwd-group></article-meta></front><body>'
+                text += f'<kwd>{i}</kwd>'
+            text += f'</kwd-group></article-meta></front><body>'
             variables["noman_text"] = False
         else:
-            text=f'</abstract><kwd-group kwd-group-type="author">'
+            text = f'</abstract><kwd-group kwd-group-type="author">'
             for i in xml_text:
-                text+=f'<kwd>{i}</kwd>'
-            text+=f'</kwd-group></article-meta></front><body>'
+                text += f'<kwd>{i}</kwd>'
+            text += f'</kwd-group></article-meta></front><body>'
 
             if variables["noman_store"]:
                 variables["noman_text"] = True
@@ -126,5 +125,4 @@ def keyword_text(xml_text,variables):
         print("Error in abstract_key function.", e)
         text = ""
 
-    #print(text)
     return text
