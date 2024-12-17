@@ -11,7 +11,7 @@ def abstract(xml_text, variables, filename):
         ss = variables["copyright_state"].count("and")
         if ss > 3:
             variables["copyright_state"] = variables["copyright_state"].split("and")
-            variables["copyright_state"] = variables["copyright_state"][0]+"et al."
+            variables["copyright_state"] = variables["copyright_state"][0] + "et al."
         else:
             variables["copyright_state"] = variables["copyright_state"].strip()[:-3]
 

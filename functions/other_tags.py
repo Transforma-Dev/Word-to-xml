@@ -48,9 +48,7 @@ def ack_text(xml_text, variables):
     else:
         text = f'</sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
     
-    variables["sec_1"] = 1
-    variables["sec_2"] = 1
-    variables["sec_3"] = 1
+    variables["sec_1"] = variables["sec_2"] = variables["sec_3"] = 1
     variables["back_start"] += "back"
 
     return text
@@ -63,9 +61,8 @@ def noman(xml_text, variables):
     xml_text = xml_text.replace("<bold>", "").replace("</bold>", "")
     if "resume" in xml_text.lower():
         variables["noman_store"] += f'{xml_text}'
-        variables["noman_text"] = True
-        return text
-    variables["noman_store"] += f'<glossary content-type="abbreviations" id="glossary-1"><title1>{xml_text}</title1><def-list>'
+    else:
+        variables["noman_store"] += f'<glossary content-type="abbreviations" id="glossary-1"><title1>{xml_text}</title1><def-list>'
 
     variables["noman_text"] = True
 

@@ -4,8 +4,7 @@ import re
 
 # Define function to find the figure caption text
 def image_caption(xml_text, variables):
-    copy_text = xml_text
-    src = ""
+    
     xml_text = re.sub(r'<bold>|</bold>', '', xml_text, flags=re.IGNORECASE)
     path_image = re.findall(r'<graphic[^>]*>', variables["images_path"])
     src = re.findall(r'<img[^>]*>', variables["images_path"])

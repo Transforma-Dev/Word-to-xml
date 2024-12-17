@@ -5,9 +5,7 @@ def reference(xml_text, variables):
     xml_text = xml_text.replace("<bold>","").replace("</bold>","")
     #Chect "back" is already present in variable or not to open the back tag
     if "back" not in variables["back_start"]:
-        if variables["sec_3"] > 1:
-            text = f'</sec></sec></body><back><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
-        elif variables["sec_2"] > 1:
+        if variables["sec_3"] > 1 or variables["sec_2"] > 1:
             text = f'</sec></sec></body><back><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         else:
             text = f'</sec></body><back><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
@@ -15,9 +13,7 @@ def reference(xml_text, variables):
     elif "fn" in variables["back_start"]:   #fn is already is there then not anames back tag
         text = f'</p></fn></fn-group><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
     else:
-        if variables["sec_3"] > 1:
-            text = f'</sec></sec><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
-        elif variables["sec_2"] > 1:
+        if variables["sec_3"] > 1 or variables["sec_2"] > 1:
             text = f'</sec></sec><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         elif variables["sec_1"] > 1:
             text = f'</sec><ref-list content-type="authoryear"><title1>{xml_text}</title1>'
@@ -30,7 +26,7 @@ def reference(xml_text, variables):
 
 def reference_temp(xml_text, variables):
     
-    text =''
+    text = ''
 
     text = f'<ref id="ref-{variables["ref_id"]}">{xml_text}</ref>'
         

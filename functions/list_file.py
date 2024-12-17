@@ -25,11 +25,10 @@ def list_para(xml_text,variables,xml,root):
 def list_close(xml_text,variables,para):
     if len(para.text)!=0:
         xml_text=f'</list><p>{xml_text}</p>'
-        variables["list_end"]=False
-        variables["list_count"]=1
     else:
         xml_text+=f'</list>'
-        variables["list_end"]=False
-        variables["list_count"]=1    
+        
+    variables["list_end"]=False
+    variables["list_count"]=1
 
     return xml_text

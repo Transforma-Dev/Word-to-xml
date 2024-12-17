@@ -42,7 +42,7 @@ def author_name(xml_text, variables):
             else:
                 text += f'<contrib id="author-{variables["author_id"]}" contrib-type="author"><contrib-id contrib-id-type="orcid"></contrib-id><name name-style="western"><surname>{auth[-1]}</surname><given-names>'
             variables["author_id"] += 1
-            variables["copyright_state"] += auth[-1]+" and "
+            variables["copyright_state"] += auth[-1] + " and "
             auth = auth[:-1]
             #Print all text except last in given names tag
             text += ' '.join(i for i in auth if i!="and") + ' '

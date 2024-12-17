@@ -1,6 +1,4 @@
 # Import nesseccary packages
-from xml.etree import ElementTree
-from xml.etree import ElementTree as ET
 from lxml import etree
 from xml.etree import ElementTree
 from xml.etree import ElementTree as ET
@@ -541,7 +539,7 @@ def add_ref_tag(xml, variables):
                 if len(sp) == 2:
                     first = sp[0].strip().replace("[", "").replace("]", "")
                     last = sp[-1].strip().replace("[", "").replace("]", "")
-                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first} href="#ref-{first}">{first}</xref>,<xref ref-type="bibr" rid="ref-{last}" href="#ref-{last}">{last}</xref>]'
+                    add_xref = f'[<xref ref-type="bibr" rid="ref-{first}" href="#ref-{first}">{first}</xref>,<xref ref-type="bibr" rid="ref-{last}" href="#ref-{last}">{last}</xref>]'
 
                 else:
                     first = sp[0].strip().replace("[", "").replace("]", "")

@@ -1,7 +1,6 @@
 # import neccessary librarys
 import config
 import xml.etree.ElementTree as ET
-import os
 import sys
 import re
 import json
@@ -29,6 +28,7 @@ class TSP_styles:
         for i in data["replace_text"]:
             if element.text and i["text"] in element.text:
                 element.text = element.text.replace(i["text"], i["replace"])
+                
             if element.tail and i["text"] in element.tail:
                 element.tail = element.tail.replace(i["text"], i["replace"])
 
@@ -47,126 +47,102 @@ class TSP_styles:
             pattern = fr"\s*\{i}\s*"
             if element.text and i in element.text:
                 element.text = re.sub(pattern, f'{i}', element.text)
+                
             if element.tail and i in element.tail:
                 element.tail = re.sub(pattern, f'{i}', element.tail)
 
         # Replace and add space only before text
         for i in data["space_before_text"]:
-            if element.text and i in element.text.lower():
+            def func1(elem):
                 pattern = fr"\d\s*{i}"
-                matchs = re.findall(pattern, element.text, re.IGNORECASE)
+                matchs = re.findall(pattern, elem, re.IGNORECASE)
                 if matchs:
                     for match in matchs:
-                        match1 = match[0]
-                        match2 = match[1:]
-                        element.text = element.text.replace(
-                            match, f'{match1} {match2.strip()}')
+                        elem = elem.replace(match, f'{match[0]} {match[1:].strip()}')
+                return elem 
+                
+            if element.text and i in element.text.lower():
+                element.text = func1(element.text)
 
             if element.tail and i in element.tail.lower():
-                pattern = fr"\d\s*{i}"
-                matchs = re.findall(pattern, element.tail, re.IGNORECASE)
-                if matchs:
-                    for match in matchs:
-                        match1 = match[0]
-                        match2 = match[1:]
-                        element.tail = element.tail.replace(
-                            match, f'{match1} {match2.strip()}')
+                element.tail = func1(element.tail)
 
         # Replace and add space only after text
         for i in data["space_after_text"]:
-            if element.text and i in element.text.lower():
+            def func2(elem):
                 pattern = fr"{i}\s*\d"  # r"\bno\.\d+"
-                matchs = re.findall(pattern, element.text, re.IGNORECASE)
+                matchs = re.findall(pattern, elem, re.IGNORECASE)
                 if matchs:
                     for match in matchs:
-                        match1 = match[0]
-                        match2 = match[1:]
-                        element.text = element.text.replace(
-                            match, f'{match1} {match2.strip()}')
+                        elem = elem.replace(match, f'{match[0]} {match[1:].strip()}')
+                return elem 
+            
+            if element.text and i in element.text.lower():
+                element.text = func2(element.text)
 
             if element.tail and i in element.tail.lower():
-                pattern = fr"{i}\s*\d"
-                matchs = re.findall(pattern, element.tail, re.IGNORECASE)
-                if matchs:
-                    for match in matchs:
-                        match1 = match[:-1]
-                        match2 = match[-1]
-                        element.tail = element.tail.replace(
-                            match, f'{match1} {match2.strip()}')
+                element.tail = func2(element.tail)
 
         # Find the continuous text and add "," and last will add "and"
         for symbol in data["add_and"]:
+            def func3(elem):
+                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*\d+\.*\d*\s*{symbol}\.*)*'
+                result = re.findall(pattern, elem, re.IGNORECASE)
+                if result:
+                    for i in result:
+                        if "," in i:
+                            split = i.split(",")
+                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1]
+                            elem = re.sub(i, simple, elem)
+                return elem 
+            
             if element.text:
-                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*\d+\.*\d*\s*{symbol}\.*)*'
-                result = re.findall(pattern, element.text, re.IGNORECASE)
-                if result:
-                    for i in result:
-                        if "," in i:
-                            split = i.split(",")
-                            simple = split[0] + (", " + ", ".join(split[1:-1])
-                                                 if len(split) > 2 else "") + " and " + split[-1]
-                            element.text = re.sub(i, simple, element.text)
+                element.text = func3(element.text)
+                
             if element.tail:
-                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*\d+\.*\d*\s*{symbol}\.*)*'
-                result = re.findall(pattern, element.tail, re.IGNORECASE)
-                if result:
-                    for i in result:
-                        if "," in i:
-                            split = i.split(",")
-                            simple = split[0] + (", " + ", ".join(split[1:-1])
-                                                 if len(split) > 2 else "") + " and " + split[-1]
-                            element.tail = re.sub(i, simple, element.tail)
+                element.tail = func3(element.tail)
 
         # Find the repeated text with unit and get the same unit name remove them and add unit in last of the string
         for symbol in data["add_all"]:
+            def func4(elem):
+                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*'
+                result = re.findall(pattern, elem, re.IGNORECASE)
+                if result:
+                    for i in result:
+                        if "," in i or "and" in i:
+                            split = re.split(r'\s*,\s*|\s*and\s*', i)
+                            j = ''
+                            for sec in split:
+                                j += ''.join(k for k in sec if k.isalpha())
+                                if j:
+                                    break
+                            split = [sec.replace(j, '') for sec in split]
+                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(split) > 2 else "") + " and " + split[-1] + j
+                            elem = elem.replace(i, simple)
+                return elem
+            
             if element.text:
-                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*'
-                result = re.findall(pattern, element.text, re.IGNORECASE)
-                if result:
-                    for i in result:
-                        if "," in i or "and" in i:
-                            split = re.split(r'\s*,\s*|\s*and\s*', i)
-                            j = ''
-                            for sec in split:
-                                j += ''.join(k for k in sec if k.isalpha())
-                                if j:
-                                    break
-                            split = [sec.replace(j, '') for sec in split]
-                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(
-                                split) > 2 else "") + " and " + split[-1] + j
-                            element.text = element.text.replace(i, simple)
+                element.text = func4(element.text)
+                
             if element.tail:
-                pattern = fr'\d+\.*\d*\s*{symbol}(?:\s*,*\s*a*n*d*\s*\d+\.*\d*\s*{symbol}\.*)*'
-                result = re.findall(pattern, element.tail, re.IGNORECASE)
-                if result:
-                    for i in result:
-                        if "," in i or "and" in i:
-                            split = re.split(r'\s*,\s*|\s*and\s*', i)
-                            j = ''
-                            for sec in split:
-                                j += ''.join(k for k in sec if k.isalpha())
-                                if j:
-                                    break
-                            split = [sec.replace(j, '') for sec in split]
-                            simple = split[0] + (", " + ", ".join(split[1:-1]) if len(
-                                split) > 2 else "") + " and " + split[-1] + j
-                            element.tail = element.tail.replace(i, simple)
+                element.tail = func4(element.tail)
 
         # Chnage the SI_unit minutes,seconds,hours with min,s,h
         for si_unit in data["si_units"]:
-            pattern = fr'\d+\s*{si_unit["text"]}[s]*'
+            def func5(elem):
+                pattern = fr'\d+\s*{si_unit["text"]}[s]*'    
+                result = re.findall(pattern, elem, re.IGNORECASE)
+                if result:
+                    for i in result:
+                        new_text = i[0] + " " + si_unit["replace"]
+                        elem = re.sub(i, new_text, elem)
+                return elem
+            
             if element.text and si_unit["text"] in element.text:
-                result = re.findall(pattern, element.text, re.IGNORECASE)
-                if result:
-                    for i in result:
-                        new_text = i[0] + " " + si_unit["replace"]
-                        element.text = re.sub(i, new_text, element.text)
+                element.text = func5(element.text)
+                
             if element.tail and si_unit["text"] in element.tail:
-                result = re.findall(pattern, element.tail, re.IGNORECASE)
-                if result:
-                    for i in result:
-                        new_text = i[0] + " " + si_unit["replace"]
-                        element.tail = re.sub(i, new_text, element.tail)
+                element.tail = func5(element.tail)
 
         # Remove the ref or refs text present in middle of the paragraph
         # https://github.com/Transforma-Dev/Word-to-xml/issues/20#issue-2385186827
@@ -185,14 +161,12 @@ class TSP_styles:
     def find_artitle(self, element, data, nlp):
         if element.text and element.text.strip():
             doc = nlp(element.text)
-            text = ' '.join([word.text if word.text.isupper() else word.text.capitalize(
-            ) if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+            text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
             element.text = text.strip()[0].upper() + text.strip()[1:]
 
         if element.tail and element.tail.strip():
             doc = nlp(element.tail)
-            text = ' '.join([word.text if word.text.isupper() else word.text.capitalize(
-            ) if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+            text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
             element.tail = " " + text.strip()[0].upper() + text.strip()[1:]
 
     # Remove dot in end of affliation tag and replace the perticuler text
@@ -204,6 +178,8 @@ class TSP_styles:
             for i in data["aff_replace_text"]:
                 if child.text and i["text"] in child.text:
                     child.text = child.text.replace(i["text"], i["replace"])
+                if child.tail and i["text"] in child.tail:
+                    child.tail = child.tail.replace(i["text"], i["replace"])
 
         if child.text and child.text.strip().endswith('.'):
             child.text = child.text[:-1]
@@ -240,17 +216,14 @@ class TSP_styles:
                 if child.text != None:
                     self.change_text(child, nlp)
                     docs = nlp(child.text)
-                    child_text = " ".join(
-                        [word.text if word.text.isupper() else word.text.lower() for word in docs])
+                    child_text = " ".join([word.text if word.text.isupper() else word.text.lower() for word in docs])
                     doc = nlp(child_text)
                     if n == 1 and child.text.strip():
-                        child_ext = ' '.join(
-                            [word.text if not word.text.isupper() else word.text for word in doc])
+                        child_ext = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
                         child.text = " " + child_ext.strip().capitalize() + " "
                         n += 1
                     else:
-                        child.text = ' '.join(
-                            [word.text if not word.text.isupper() else word.text for word in doc])
+                        child.text = ' '.join([word.text if not word.text.isupper() else word.text for word in doc])
 
             if child.text != None:
                 if child.text.strip().endswith('.'):
@@ -265,8 +238,7 @@ class TSP_styles:
             if element.text and element.text.strip():
                 # https://github.com/Transforma-Dev/Word-to-xml/issues/18#issue-2385184522
                 doc = nlp(element.text)
-                text = ' '.join([word.text if word.text.isupper()
-                                else word.text.lower() for word in doc])
+                text = ' '.join([word.text if word.text.isupper() else word.text.lower() for word in doc])
 
                 # Remove extra spaces around commas and inside parentheses
                 # Remove space before commas and periods
@@ -278,31 +250,25 @@ class TSP_styles:
                 element.text = text.strip()[0].upper() + text.strip()[1:]
 
                 for child in element:
-                    if child.text and child.text.strip():
+                    def func_fig1(ch):
                         nlp = spacy.load("en_core_web_sm")
-                        doc = nlp(child.text)
-                        child_text = ' '.join(
-                            [word.text if word.text.isupper() else word.text.lower() for word in doc])
+                        doc = nlp(ch)
+                        child_text = ' '.join([word.text if word.text.isupper() else word.text.lower() for word in doc])
                         split = child_text.split(".")
                         for id, i in enumerate(split):
                             if len(i.strip()) != 0:
                                 if id == 0:
-                                    child.text = i
+                                    ch = i
                                 else:
-                                    child.text += "." + \
-                                        i.strip()[0].upper() + i.strip()[1:]
+                                    ch += "." + i.strip()[0].upper() + i.strip()[1:]
+                        return ch
+                        
+                    if child.text and child.text.strip():
+                        child.text = func_fig1(child.text)
+                        
                     if child.tail is not None and child.tail.strip():
-                        doc = nlp(child.tail)
-                        child_tail = ' '.join(
-                            [word.text if word.text.isupper() else word.text.lower() for word in doc])
-                        split = child_tail.split(".")
-                        for id, i in enumerate(split):
-                            if len(i.strip()) != 0:
-                                if id == 0:
-                                    child.tail = i
-                                else:
-                                    child.tail += "." + \
-                                        i.strip()[0].upper() + i.strip()[1:]
+                        child.tail = func_fig1(child.tail)
+                        
                 if element.text and element.text.strip().endswith('.'):
                     element.text = " " + element.text[:-1]
         except:
@@ -343,8 +309,7 @@ class TSP_styles:
     # Correct the back matter order in fn-group tag
     # https://github.com/Transforma-Dev/Word-to-xml/issues/24#issue-2397382765
     def back_order(self, fn_elements, fn_group):
-        order_map = {"fund": None, "author": None,
-                     "availability": None, "ethics": None, "conflict": None}
+        order_map = {"fund": None, "author": None, "availability": None, "ethics": None, "conflict": None}
         # funding = availability = author = conflict = ethics = None
         for fn in fn_elements:
             bold = fn.find("./p/bold")
@@ -439,10 +404,13 @@ class TSP_styles:
                 if i["id"] == attributes["id"] and i["value"]:
                     soup = ET.fromstring(i["value"])
                     new_tag = ET.Element("reference-text")
-                    new_tag.text = "".join(text.strip()
-                                           for text in element.itertext())
+                    new_tag.text = "".join(text.strip() for text in element.itertext())
+                    #create label tag
+                    label_tag = ET.Element("label")
+                    label_tag.text = "".join(ii for ii in i["id"] if ii.isdigit()) + "."
                     element.clear()
                     element.attrib.update(attributes)
+                    element.append(label_tag)
                     element.append(soup)
                     element.append(new_tag)
 
