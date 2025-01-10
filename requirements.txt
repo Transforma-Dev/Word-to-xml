@@ -1,0 +1,7 @@
+uvicorn
+fastapi
+python-docx
+bs4
+unidecode
+spacy
+python-multipart
