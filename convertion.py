@@ -11,7 +11,7 @@ from functions import title, authors, abstract_key, heading, list_file, image_ta
 
 
 #Define the function to convert a paragraph from word document
-def paragraph(para, doc, doc_filename, variables, para_num):
+def paragraph(para, doc, doc_filename, variables, para_num, logger):
 
     """
     Convert a paragraph from a Word document into XML format.
@@ -57,15 +57,15 @@ def paragraph(para, doc, doc_filename, variables, para_num):
 
     #Find the square bracket text present in paragraph
     if "<w:sdt>" in xml:
-        box_text = eq_link.sq_text(root, file_name, variables)
+        box_text = eq_link.sq_text(root, file_name, variables, logger)
 
     #Check where the boxed text are present in paragraph
     if "<wps:txbx>" in xml:
-        box_text = eq_link.txbox(root, file_name, variables)
+        box_text = eq_link.txbox(root, file_name, variables, logger)
         
     #Check where the equation are present in paragraph
     if "<m:oMath" in xml:
-        values, xml_text, math_count = eq_link.eq(root, xml_text, para, math_count, file_name, variables)
+        values, xml_text, math_count = eq_link.eq(root, xml_text, para, math_count, file_name, variables, logger)
 
     #Check the paragraph to find the hyperlink
     if para.hyperlinks:
@@ -80,20 +80,20 @@ def paragraph(para, doc, doc_filename, variables, para_num):
             i (Run): The Run object representing a portion of the paragraph text.
         """
         
-        #Check if the paragraph contains math equations
+        #Check if the paragraph contains inline math equations
         if '<m:oMath' in xml:
-            values, xml_text, math_count = eq_link.run_eq(root, xml_text, para, run, values, math_count, file_name, variables)
+            values, xml_text, math_count = eq_link.run_eq(root, xml_text, para, run, values, math_count, file_name, variables, logger)
 
         #Convert the run text in xml
         xmlstr = str(run._element.xml)
 
         #Check if the run contain an inline image image
         if 'pic:pic' in xmlstr:
-            xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text)
+            xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text, logger)
 
         #Print the hyperlink present in paragraph
         if para.hyperlinks:
-            siva, p, xml_text, text, address, font = eq_link.print_hyper(run, para, siva, p, xml_text, text, address, font)
+            siva, p, xml_text, text, address, font = eq_link.print_hyper(run, para, siva, p, xml_text, text, address, font, logger)
             
         if "°" not in run.text and "℃" not in run.text:
             run.text = unidecode(run.text)    #Convert all non-ascii characters to the closest ascii character
@@ -232,7 +232,7 @@ def paragraph(para, doc, doc_filename, variables, para_num):
         xml_text = image_table.table_heading(xml_text, variables)
     
     #Find reference paragraph in word document and change the tag into ref
-    elif variables["ref"] and para.text != "":
+    elif variables["ref"] and len(para.text.strip()) >= 5:
         xml_text = reference.reference_temp(xml_text, variables)
 
     #Find the Nomenclature text in word document
@@ -280,7 +280,7 @@ def paragraph(para, doc, doc_filename, variables, para_num):
 
 
 #Define function to find the table in word document
-def table(table, doc, doc_filename, variables):
+def table(table, doc, doc_filename, variables, logger):
 
     """
     Convert a table from a Word document into HTML format.
@@ -457,7 +457,7 @@ def table(table, doc, doc_filename, variables):
 
 
 
-def image(image, doc):
+def image(image, doc, logger):
     """
     Convert an inline shape from a Word document into HTML format.
 

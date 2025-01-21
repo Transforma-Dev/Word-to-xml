@@ -13,11 +13,82 @@ from bs4 import BeautifulSoup
 import sys
 import os
 import re
+import xml.etree.ElementTree as ET
+import spacy
+import json
 
 from convertion import paragraph,table,image   #Import Functions from 'convertion.py' file
 from functions import eq_link
-#Import the styles
-from client_styles import TSP_styles,common_styles
+from logger import setup_logger
+
+import configparser
+import importlib
+
+#Add client styles for the document
+def add_styles(output_xml, client):
+
+    # Initialize the config parser
+    config = configparser.ConfigParser()
+    config.read(f'client_styles/config/{client}_config.ini')
+
+    section = config[client]
+    
+    #Parse the xml file
+    tree = ET.parse(output_xml)
+    root = tree.getroot()
+    
+    nlp = spacy.load("en_core_web_sm")
+    
+    # from journal load the json file
+    with open("json_folder/TSP_styles.json", 'r') as file:
+        data = json.load(file)
+
+    for key, value in section.items():
+        try:
+            # Split module and function name (e.g., TSP_styles.find_reference)
+            module_name, func_name = value.rsplit('.', 1)
+            
+            #Add Common styles
+            if "common" in module_name:
+                # Dynamically import the submodule
+                module = importlib.import_module(f"client_styles.{module_name}")
+
+                # Get the function from the resolved module
+                function_to_call = getattr(module, "change_text")
+                refere = False
+
+                if callable(function_to_call):
+                    # Call the function with arguments
+                    root = function_to_call(root, refere, func_name, data)
+                else:
+                    print(f"'{func_name}' is not callable in module '{module_name}'.")
+            #Add perticuler client styles
+            else:
+                # Dynamically import the submodule
+                module = importlib.import_module(f"client_styles.{module_name}")
+
+                # Get the function from the resolved module
+                function_to_call = getattr(module, func_name)
+
+                if callable(function_to_call):
+                    # Call the function with arguments
+                    root = function_to_call(root, nlp, data)
+                else:
+                    print(f"'{func_name}' is not callable in module '{module_name}'.")
+            
+        except (ImportError, AttributeError, ValueError) as e:
+            print(f"Error resolving function '{value}': {e}")
+            
+    #Save the modified XML to a new file
+    tree.write(output_xml, encoding='utf-8', xml_declaration=True)
+
+    #Apply all common styles
+    # xml_modifier = common_styles.Common_styles()
+    # xml_modifier.modify_xml(output_xml, output_xml)
+    
+    # #Create object for class TSP_styles
+    # xml_modifier = TSP_styles.TSP_styles()
+    # xml_modifier.modify_xml(output_xml, output_xml)
 
 
 #Create XML header
@@ -58,6 +129,12 @@ def convert(input_file_name = None):
     #Check document was present in the input folder
     input_path = script_directory + "/input/" + input_file_name
     xml = pre_xml
+    
+    #Define the name of the logs folder and Check if the logs folder exists, if not, create it
+    log_path = os.path.join(script_directory, "logs")
+    if not os.path.exists(log_path):
+        os.makedirs(log_path)
+    logger = setup_logger(os.path.join(log_path, os.path.splitext(input_file_name)[0]))
 
     #Define the name of the output folder and Check if the output folder exists, if not, create it
     output_folder = os.path.join(script_directory, "output")
@@ -101,7 +178,9 @@ def convert(input_file_name = None):
     #Read the Word document and not present word document then thrown error
     try:
         doc = Document(input_path)
+        logger.info("Document upload successfully.")
     except ValueError as e:
+        logger.error("There was an error accure in the document Error opening the document")
         print(f"Error opening the document: {e}")
         return ''
 
@@ -118,13 +197,13 @@ def convert(input_file_name = None):
             para (object): The element (paragraph, table, or inline shape) from the Word document.
         """
         if isinstance(para, Paragraph):   #Word contain a paragraph
-            xml += paragraph(para, doc, doc_filename, variables, para_num)
+            xml += paragraph(para, doc, doc_filename, variables, para_num, logger)
 
         elif isinstance(para, Table):    #Word contain a table
-            xml += table(para, doc, doc_filename, variables)
+            xml += table(para, doc, doc_filename, variables, logger)
 
         elif isinstance(para, InlineShape):     #Word contain a Inline shape
-            xml += image(para, doc)
+            xml += image(para, doc, logger)
 
         #Change the email in author name 
         if "</contrib-group>" in xml and variables["author_mail"]:
@@ -134,7 +213,7 @@ def convert(input_file_name = None):
                 xml = xml.replace("<mail>demo@email.com</mail>", match)
                 variables["author_mail"] = False
 
-    #Call function to solve the xref tag for references
+    #Call function to solve the xref tag for references, reference number citation
     xml = eq_link.add_ref_tag(xml, variables)
 
     xml += f"</article>"
@@ -150,15 +229,11 @@ def convert(input_file_name = None):
     #Write the HTML content to a file
     with open(output_xml, 'w', encoding="utf-8") as file:
         file.write(pretty_xml)
-
-    #Create object for class TSP_styles
-    xml_modifier = TSP_styles.TSP_styles()
-    xml_modifier.modify_xml(output_xml, output_xml)
-
-    xml_modifier = common_styles.Common_styles()
-    xml_modifier.modify_xml(output_xml, output_xml)
+        
+    #Apply styles
+    add_styles(output_xml, "TSP")
 
     return output_xml_name
 
 
-# convert()
+convert()

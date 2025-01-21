@@ -7,10 +7,13 @@ import base64
 import re
 from PIL import Image
 import io
+import subprocess
+import os
+import math
 
 
 # Define function to find the boxed text in the document
-def txbox(root, file_name, variables):
+def txbox(root, file_name, variables, logger):
     box_text = ''
     ns = {
         "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
@@ -18,17 +21,73 @@ def txbox(root, file_name, variables):
         'mml': 'http://www.w3.org/1998/Math/MathML'
     }
 
-    for elem in root.iter():
-        math_count = 0
-        if elem.tag.endswith("txbx"):  # Check if the element is a textbox
-            # Check if it contains a text box content
-            text_box = elem.find(".//w:txbxContent", namespaces=ns)
-            if text_box is not None:
-                box_text = ""
-                for sub_elem in text_box.iter():
+    try:
+        for elem in root.iter():
+            math_count = 0
+            if elem.tag.endswith("txbx"):  # Check if the element is a textbox
+                # Check if it contains a text box content
+                text_box = elem.find(".//w:txbxContent", namespaces=ns)
+                if text_box is not None:
+                    box_text = ""
+                    for sub_elem in text_box.iter():
 
-                    # Find normal text in paragraph
-                    if sub_elem.tag.endswith("r"):
+                        # Find normal text in paragraph
+                        if sub_elem.tag.endswith("r"):
+                            text = ""
+                            for t_elem in sub_elem.findall(".//w:t", namespaces = ns):
+                                text = t_elem.text if t_elem.text else ""
+                            # Look for bold property inside the run
+                            bold = sub_elem.find(".//w:b", namespaces = ns)
+                            if bold is not None and text:
+                                box_text += f"{text}:"
+                            else:
+                                box_text += f'{text}'
+                        if sub_elem.tag.endswith("oMath"):
+                            # Find all OMML tags in paragraph
+                            math_xml = elem.findall('.//m:oMath', namespaces = ns)
+
+                            if len(math_xml) > math_count:
+                                cur_math = math_xml[math_count]
+                                math_str = str(ET.tostring(
+                                    cur_math, method='xml', encoding="unicode"))
+                                math_count = math_count + 1
+                                # Transform OMML to MML
+                                xslt_file = "config/omml2mml.xsl"
+                                xslt_doc = etree.parse(xslt_file)
+                                transformer = etree.XSLT(xslt_doc)
+                                xml_doc = etree.fromstring(math_str)
+                                transformed_tree = transformer(xml_doc)
+                                transformed_tree = str(
+                                    transformed_tree).replace("mml:", "")
+                                mathml = f'{str(transformed_tree)}'
+                                # Filename with equation
+                                # You can use any filename format you prefer
+                                filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'
+                                variables["eq_count"] += 1
+                                box_text += f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
+    except Exception as e :
+        print(f"Error accure in eq_link txbox function{e}")
+        logger.error(f"Error accure in eq_link txbox function{e}")
+
+    return box_text
+
+# Define function to find the boxed text in the document
+def sq_text(root, file_name, variables, logger):
+    box_text = ''
+    ns = {
+        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        'mml': 'http://www.w3.org/1998/Math/MathML'
+    }
+
+    try:
+        for elem in root.iter():
+            math_count = 0
+            if elem.tag.endswith("p"):  # Check if the element is a textbox
+                box_text = ""
+                for sub_elem in elem.iter():
+
+                    if sub_elem.tag.endswith("r"):  # Find normal text in paragraph
                         text = ""
                         for t_elem in sub_elem.findall(".//w:t", namespaces = ns):
                             text = t_elem.text if t_elem.text else ""
@@ -61,93 +120,47 @@ def txbox(root, file_name, variables):
                             filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'
                             variables["eq_count"] += 1
                             box_text += f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
-
-    return box_text
-
-# Define function to find the boxed text in the document
-def sq_text(root, file_name, variables):
-    box_text = ''
-    ns = {
-        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
-        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
-        'mml': 'http://www.w3.org/1998/Math/MathML'
-    }
-
-    for elem in root.iter():
-        math_count = 0
-        if elem.tag.endswith("p"):  # Check if the element is a textbox
-            box_text = ""
-            for sub_elem in elem.iter():
-
-                if sub_elem.tag.endswith("r"):  # Find normal text in paragraph
-                    text = ""
-                    for t_elem in sub_elem.findall(".//w:t", namespaces = ns):
-                        text = t_elem.text if t_elem.text else ""
-                    # Look for bold property inside the run
-                    bold = sub_elem.find(".//w:b", namespaces = ns)
-                    if bold is not None and text:
-                        box_text += f"{text}:"
-                    else:
-                        box_text += f'{text}'
-                if sub_elem.tag.endswith("oMath"):
-                    # Find all OMML tags in paragraph
-                    math_xml = elem.findall('.//m:oMath', namespaces = ns)
-
-                    if len(math_xml) > math_count:
-                        cur_math = math_xml[math_count]
-                        math_str = str(ET.tostring(
-                            cur_math, method='xml', encoding="unicode"))
-                        math_count = math_count + 1
-                        # Transform OMML to MML
-                        xslt_file = "config/omml2mml.xsl"
-                        xslt_doc = etree.parse(xslt_file)
-                        transformer = etree.XSLT(xslt_doc)
-                        xml_doc = etree.fromstring(math_str)
-                        transformed_tree = transformer(xml_doc)
-                        transformed_tree = str(
-                            transformed_tree).replace("mml:", "")
-                        mathml = f'{str(transformed_tree)}'
-                        # Filename with equation
-                        # You can use any filename format you prefer
-                        filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'
-                        variables["eq_count"] += 1
-                        box_text += f'<inline-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></inline-formula>'
+    except Exception as e:
+        print(f"Error accure in eq_link sq_text function{e}")
+        logger.error(f"Error accure in eq_link sq_text function{e}")
 
     return box_text
 
 # Define function to find the equation in the document
-def eq(root, xml_text, para, math_count, file_name, variables):
+def eq(root, xml_text, para, math_count, file_name, variables, logger):
     ns = {
         "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
         "m": "http://schemas.openxmlformats.org/officeDocument/2006/math"
     }
     values = []  # Define the empty list for store the equation paragraph
-    for elem in root.iter():
-        if elem.tag.endswith("Math"):  # Find math equation text in paragraph
-            text = ""
-            for t_elem in elem.findall(".//m:t", namespaces = ns):
-                text += t_elem.text if t_elem.text else ""
-            if text != "":
-                values.append(text)
-        if elem.tag.endswith("r"):  # Find normal text in paragraph
-            tex = ""
-            for t_elem in elem.findall(".//w:t", namespaces = ns):
-                tex += t_elem.text if t_elem.text else ""
-            if tex != "":
-                values.append(tex)
-    # If the paragraph contain only one equation.
-    if len(values) == 1:
-        # Call function to print equation
-        xml_text, math_count = print_equation(
-            xml_text, para, math_count, file_name, variables)
+    try:
+        for elem in root.iter():
+            if elem.tag.endswith("Math"):  # Find math equation text in paragraph
+                text = ""
+                for t_elem in elem.findall(".//m:t", namespaces = ns):
+                    text += t_elem.text if t_elem.text else ""
+                if text != "":
+                    values.append(text)
+            if elem.tag.endswith("r"):  # Find normal text in paragraph
+                tex = ""
+                for t_elem in elem.findall(".//w:t", namespaces = ns):
+                    tex += t_elem.text if t_elem.text else ""
+                if tex != "":
+                    values.append(tex)
+        # If the paragraph contain only one equation.
+        if len(values) == 1:
+            # Call function to print equation
+            xml_text, math_count = print_equation(xml_text, para, math_count, file_name, variables, logger)
+    except Exception as e:
+        print(f"Error accure in eq_link eq function{e}")
+        logger.error(f"Error accure in eq_link eq function{e}")
 
     return values, xml_text, math_count
 
 # Define the function to find the para.run equation in document
-def run_eq(root, xml_text, para, run, values, math_count, file_name, variables):
+def run_eq(root, xml_text, para, run, values, math_count, file_name, variables, logger):
     stri = run.text
     try:
-
         if values[0] != stri:
             if values[0] == "[":
                 num = 0
@@ -164,15 +177,13 @@ def run_eq(root, xml_text, para, run, values, math_count, file_name, variables):
                 # Check the length of run object equal to zero
                 if len(run.text) != 0:
                     # Call function to print equation
-                    xml_text, math_count = print_equation(
-                        xml_text, para, math_count, file_name, variables)
+                    xml_text, math_count = print_equation(xml_text, para, math_count, file_name, variables, logger)
                     stri = run.text
 
                     if values[1] != stri:
                         values = values[1:]
                         # Call function to print equation
-                        xml_text, math_count = print_equation(
-                            xml_text, para, math_count, file_name, variables)
+                        xml_text, math_count = print_equation(xml_text, para, math_count, file_name, variables, logger)
                     try:
                         if values[1] == stri:
                             values = values[1:]
@@ -184,38 +195,45 @@ def run_eq(root, xml_text, para, run, values, math_count, file_name, variables):
         else:
             values = values[1:]
 
-    except:
+    except Exception as e:
+        print(f"Error accure in eq_link run_eq function{e}")
+        logger.error(f"Error accure in eq_link run_eq function{e}")
         pass
 
     return values, xml_text, math_count
 
 # Define function to print the equation in correct position
-def print_equation(xml_text, para, math_count, file_name, variables):
+def print_equation(xml_text, para, math_count, file_name, variables, logger):
 
     ns = {'m': 'http://schemas.openxmlformats.org/officeDocument/2006/math',
           "mml": "http://www.w3.org/1998/Math/MathML"}
-    # Count mathml tag in paragraph
-    math_xml = para._element.findall('.//m:oMath', namespaces=ns)
-    if len(math_xml) > math_count:
-        cur_math = math_xml[math_count]
-        math_str = str(ElementTree.tostring(
-            cur_math, method='xml', encoding="unicode"))
-        math_count = math_count + 1
-        from lxml import etree  # Change omml to mml format
-        xslt_file = "config/omml2mml.xsl"
-        xslt_doc = etree.parse(xslt_file)
-        transformer = etree.XSLT(xslt_doc)
-        xml_doc = etree.fromstring(math_str)
-        transformed_tree = transformer(xml_doc)
-        transformed_tree = str(transformed_tree).replace("mml:", "")
+    
+    try:
+        # Count mathml tag in paragraph
+        math_xml = para._element.findall('.//m:oMath', namespaces=ns)
+        if len(math_xml) > math_count:
+            cur_math = math_xml[math_count]
+            math_str = str(ElementTree.tostring(
+                cur_math, method='xml', encoding="unicode"))
+            math_count = math_count + 1
+            from lxml import etree  # Change omml to mml format
+            xslt_file = "config/omml2mml.xsl"
+            xslt_doc = etree.parse(xslt_file)
+            transformer = etree.XSLT(xslt_doc)
+            xml_doc = etree.fromstring(math_str)
+            transformed_tree = transformer(xml_doc)
+            transformed_tree = str(transformed_tree).replace("mml:", "")
 
-        mathml = f'{str(transformed_tree)}'
-        # Filename with equation
-        # You can use any filename format you prefer
-        filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'
-        variables["eq_count"] += 1
-        # Print the equation
-        xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
+            mathml = f'{str(transformed_tree)}'
+            # Filename with equation
+            # You can use any filename format you prefer
+            filenames = f'{file_name}-eqn-{variables["eq_count"]}.tif'
+            variables["eq_count"] += 1
+            # Print the equation
+            xml_text += f'<disp-formula><alternatives><graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><tex-math>{mathml}</tex-math></alternatives></disp-formula>'
+    except Exception as e:
+        print(f"Error accure in eq_link print_equation function{e}")
+        logger.error(f"Error accure in eq_link print_equation function{e}")
 
     return xml_text, math_count
 
@@ -225,7 +243,7 @@ def hyper(root, para):
         "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
         "m": "http://schemas.openxmlformats.org/officeDocument/2006/math"
     }
-    siva = []
+    full_text = []
 
     for elem in root.iter():
         if elem.tag.endswith("r"):  # Find normal text in paragraph
@@ -234,7 +252,7 @@ def hyper(root, para):
                 if t_elem.text is not None:
                     tex += t_elem.text if t_elem.text else ""
             if tex != "":
-                siva.append(tex)
+                full_text.append(tex)
 
     # Initialize an empty list to store hyperlink text,address,font size
     text = []
@@ -254,17 +272,17 @@ def hyper(root, para):
         link_text = hyperlink.text
         if link_text in para.text:
             if hyperlink.address:
-                for i in range(len(siva)):
-                    if siva[i] == link_text:
-                        siva[i] = "<"
-                p = ''.join(siva)
+                for i in range(len(full_text)):
+                    if full_text[i] == link_text:
+                        full_text[i] = "<"
+                p = ''.join(full_text)
                 text.append(link_text)
                 address.append(link_address)
 
-    return siva, text, address, font, p
+    return full_text, text, address, font, p
 
 # Define function to print the hyperlink text
-def print_hyper(run, para, siva, p, xml_text, text, address, font):
+def print_hyper(run, para, siva, p, xml_text, text, address, font, logger):
     try:
         # Find the hyperlink in paragraph
         a = 2
@@ -278,6 +296,7 @@ def print_hyper(run, para, siva, p, xml_text, text, address, font):
                 pass
     except Exception as e:
         print(f"An error occurred: {e}")
+        logger.error(f"Error accure in eq_link print_hyper function{e}")
 
     # hyperlink paragraph
     if a == 1:
@@ -293,82 +312,99 @@ def print_hyper(run, para, siva, p, xml_text, text, address, font):
     return siva, p, xml_text, text, address, font
 
 # Define the function to find the inline image in the document
-def inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text):
+def inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text, logger):
     my_namespaces = dict([node for _, node in ElementTree.iterparse(
         StringIO(xmlstr), events=['start-ns'])])
     ro = ET.fromstring(xmlstr)
+    try:
+        for pic in ro.findall('.//pic:pic', my_namespaces):
+            # Find cNvPr in pic:pic for find image id
+            cNvPr = pic.find('.//pic:cNvPr', my_namespaces)
+            id_attribute = cNvPr.get("id")
 
-    for pic in ro.findall('.//pic:pic', my_namespaces):
-        # Find cNvPr in pic:pic for find image id
-        cNvPr = pic.find('.//pic:cNvPr', my_namespaces)
-        id_attribute = cNvPr.get("id")
+            # Extract the image data if it exists
+            blip_elem = pic.find(".//a:blip", my_namespaces)
+            if blip_elem is not None:
+                embed_attr = blip_elem.get(
+                    "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed")
+                rel = doc.part.rels[embed_attr]
+                image_path = rel.target_part.blob
 
-        # Extract the image data if it exists
-        blip_elem = pic.find(".//a:blip", my_namespaces)
-        if blip_elem is not None:
-            embed_attr = blip_elem.get(
-                "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed")
-            rel = doc.part.rels[embed_attr]
-            image_path = rel.target_part.blob
+                # Find the image width and height from the XML
+                cx = pic.find(".//a:xfrm/a:ext", my_namespaces).get('cx')
+                cy = pic.find(".//a:xfrm/a:ext", my_namespaces).get('cy')
 
-            # Find the image width and height from the XML
-            cx = pic.find(".//a:xfrm/a:ext", my_namespaces).get('cx')
-            cy = pic.find(".//a:xfrm/a:ext", my_namespaces).get('cy')
+                # Encode the image
+                encoded_image = base64.b64encode(image_path).decode('utf-8')
 
-            # Encode the image
-            encoded_image = base64.b64encode(image_path).decode('utf-8')
+                # You can use any folder format you prefer
+                folder = f'{doc_filename}-fig-{variables["image_count"]}.jpg'
+                # You can use any filename format you prefer
+                filenames = f'{file_name}-fig-{variables["image_count"]}.jpg'
 
-            # You can use any folder format you prefer
-            folder = f'{doc_filename}-fig-{variables["image_count"]}.jpg'
-            # You can use any filename format you prefer
-            filenames = f'{file_name}-fig-{variables["image_count"]}.jpg'
+                variables["image_count"] += 1
 
-            variables["image_count"] += 1
+                # Increase the max image pixel limit
+                Image.MAX_IMAGE_PIXELS = None
 
-            # Increase the max image pixel limit
-            Image.MAX_IMAGE_PIXELS = None
+                image = Image.open(io.BytesIO(image_path))
+                
+                #Convert WMF format to jpg format.
+                if image.format == "WMF":
+                    tmp_wmf_path = 'tmp_image.wmf'
+                    with open(tmp_wmf_path, 'wb') as f:
+                        f.write(image_path)
+                        
+                    png_path = tmp_wmf_path.replace('.wmf', '.png')
+                    subprocess.run(['unoconv', '-f', 'png', tmp_wmf_path])
+                    image = Image.open(png_path)
+                
+                if image.mode in ("RGBA", "LA", "P"):
+                    # Convert RGBA to RGB before saving as JPEG
+                    image = image.convert('RGB')
 
-            image = Image.open(io.BytesIO(image_path))
-            
-            if image.mode == 'RGBA':
-                # Convert RGBA to RGB before saving as JPEG
-                image = image.convert('RGB')
+                width, height = image.size
 
-            import math
+                # Calculate the original resolution (diagonal size in pixels)
+                original_resolution = math.sqrt(width**2 + height**2)
 
-            width, height = image.size
+                # Determine the scale factor to get the desired resolution in the range of 400-500
+                target_resolution = 1000 + \
+                    (1200 - 1000) * (original_resolution / (original_resolution + 1))
 
-            # Calculate the original resolution (diagonal size in pixels)
-            original_resolution = math.sqrt(width**2 + height**2)
+                if original_resolution > 4000:
 
-            # Determine the scale factor to get the desired resolution in the range of 400-500
-            target_resolution = 1000 + \
-                (1200 - 1000) * (original_resolution / (original_resolution + 1))
+                    # Calculate the new width and height based on the target resolution
+                    scale_factor = target_resolution / original_resolution
 
-            if original_resolution > 4000:
+                    new_width = int(width * scale_factor)
+                    new_height = int(height * scale_factor)
 
-                # Calculate the new width and height based on the target resolution
-                scale_factor = target_resolution / original_resolution
+                    # Resize the image
+                    resized_image = image.resize((new_width, new_height))
 
-                new_width = int(width * scale_factor)
-                new_height = int(height * scale_factor)
+                    # Save the resized image
+                    resized_image.save(folder, "JPEG")
+                else:
+                    image.save(folder, "JPEG")
 
-                # Resize the image
-                resized_image = image.resize((new_width, new_height))
-
-                # Save the resized image
-                resized_image.save(folder)
-            else:
-                image.save(folder)
-
-            if variables["table_title"] == True:
-                # Construct HTML for the image
-                xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="image/{filenames}" />'
-            else:
-                # Construct HTML for the image
-                variables[
-                    "images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="image/{filenames}" />'
-                variables["image_find"] = True
+                if variables["table_title"] == True:
+                    # Construct HTML for the image
+                    xml_text += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="image/{filenames}" />'
+                else:
+                    # Construct HTML for the image
+                    variables[
+                        "images_path"] += f'<graphic mimetype="image" mime-subtype="tif" xlink:href="{filenames}"/><img src="image/{filenames}" />'
+                    variables["image_find"] = True
+                
+                # Delete the tmp_image
+                if os.path.exists("tmp_image.wmf"):
+                    os.remove("tmp_image.wmf")
+                    os.remove("tmp_image.png")
+                    
+    except Exception as e:
+        print(f"Error in image save(inline_image function) (eq_link.py)-file {e}")
+        logger.error(f"Error in image save(inline_image function) (eq_link.py)-file {e}")
 
     return xml_text
 
