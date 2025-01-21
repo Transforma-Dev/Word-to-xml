@@ -89,7 +89,10 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
 
         #Check if the run contain an inline image image
         if 'pic:pic' in xmlstr:
-            xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text, logger)
+            try:
+                xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text)
+            except Exception as e:
+                xml_text = ""
 
         #Print the hyperlink present in paragraph
         if para.hyperlinks:
