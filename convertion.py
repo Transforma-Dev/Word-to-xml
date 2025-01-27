@@ -90,7 +90,7 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
         #Check if the run contain an inline image image
         if 'pic:pic' in xmlstr:
             try:
-                xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text)
+                xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text, logger)
             except Exception as e:
                 xml_text = ""
 
@@ -132,15 +132,15 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
     
     #Find the title of the document
     if (variables["para_count"] == 1 or (variables["para_count"] == 2 and all_bold and not para.style.name.startswith("author") and "," not in para.text)) and len(para.text) != 0:
-        xml_text = title.title(para, xml_text, variables, data, journal, file_name)
+        xml_text = title.title(para, xml_text, variables, data, journal, file_name, logger)
 
     #Find author name in word document
     elif (para.style.name.startswith("Authors") or variables["para_count"] == 2) and len(para.text) != 0:
-        xml_text = authors.author_name(xml_text, variables)
+        xml_text = authors.author_name(xml_text, variables, logger)
         
     #Find corresponding author text in paragraph in word document and change the tag into author-notes
     elif ("corresponding author" in para.text.lower() or ".com" in para.text.lower() or para.text.strip().lower().startswith(("e-mail", "*", "email"))) and not "Materials" in para.text and not "doi" in para.text and para_num < 25 and len(para.text) != 0:
-        xml_text = authors.corres_author(xml_text, variables)
+        xml_text = authors.corres_author(xml_text, variables, logger)
 
     #Find the recived text paragraph in document
     elif (para.text.strip().lower().startswith("received")):
@@ -150,7 +150,7 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
 
     #Find the next paragraph is abstract paragraph
     elif variables["previous_text"].strip().lower() in ["abstract","abstract:"] and len(para.text) != 0:
-        xml_text = abstract_key.abstract(xml_text, variables, filename)
+        xml_text = abstract_key.abstract(xml_text, variables, filename, logger)
 
     #Find abstract in word document and skip this
     elif para.text.strip().lower() in ["abstract", "abstract:"] and len(para.text) != 0:       
@@ -166,11 +166,11 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
         if box_text:
             xml_text = box_text
             box_text = ''
-        xml_text = abstract_key.abstract(xml_text, variables, filename)
+        xml_text = abstract_key.abstract(xml_text, variables, filename, logger)
 
     #Check the resume and mots cell in document
     elif "resume" in para.text.lower():
-        xml_text = other_tags.noman(xml_text, variables)
+        xml_text = other_tags.noman(xml_text, variables, logger)
     
     #Check para.text is keyword then skip them
     elif para.text.strip().lower() == "keywords":
@@ -180,96 +180,96 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
     
     #Check previous text was equal to keyword
     elif variables["previous_text"].lower() == "keywords" and para.text.strip() != "":
-        xml_text = abstract_key.keyword_text(xml_text, variables)
+        xml_text = abstract_key.keyword_text(xml_text, variables, logger)
 
     #Check the paragraph was starts with keyword text
     elif para.text.strip().lower().startswith("keyword") or para.text.strip().lower().startswith("key words") or box_text.strip().lower().startswith("keyword"):
         if box_text:
             xml_text = box_text
             box_text = ''
-        xml_text = abstract_key.keyword_text(xml_text, variables)
+        xml_text = abstract_key.keyword_text(xml_text, variables, logger)
 
     #Find paragraph between author and mail and apply tag aff
     elif variables["aff_tag"] and variables["para_count"] > 2 and len(para.text) != 0 and not para.text.isspace():
-        xml_text = authors.aff_para(xml_text, variables)
+        xml_text = authors.aff_para(xml_text, variables, logger)
 
     #Find acknowledgment paragraph in word document and change the tag into ack and p
     elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', variables["previous_text"].strip(),flags = re.IGNORECASE):
-        xml_text = other_tags.ack_text(xml_text,variables)
+        xml_text = other_tags.ack_text(xml_text, variables, logger)
 
     #Find acknowledgment in word document and skip this
     elif re.fullmatch(r'\backnowledg[e]*(?:ment|ments)?\b\:*', para.text.strip(),flags = re.IGNORECASE):
-        xml_text = other_tags.ack_para(xml_text, variables,para)
+        xml_text = other_tags.ack_para(xml_text, variables, para, logger)
 
     #Find acknowledgment in word document and skip this
     elif para.text.strip().lower().startswith("acknowledg") and not re.search(r'^Acknowledging', para.text,re.IGNORECASE):
-        xml_text = other_tags.ack_text(xml_text, variables)
+        xml_text = other_tags.ack_text(xml_text, variables, logger)
 
     #Find funding statement in word document
     elif para.text.strip().lower().startswith("funding"):
         xml_text = "<fn-group>" + xml_text
-        xml_text = other_tags.funding_text(xml_text, variables)
+        xml_text = other_tags.funding_text(xml_text, variables, logger)
 
     #Print abbrevation contents
     elif space_strip.lower() == "abbreviations":
-        xml_text = other_tags.abbrevation(xml_text, variables)
+        xml_text = other_tags.abbrevation(xml_text, variables, logger)
     
     #Print abbrevation contents
     elif variables["abbre"] and len(space_strip) != 0:
-        xml_text = other_tags.abbrev_text(xml_text, variables)
+        xml_text = other_tags.abbrev_text(xml_text, variables, logger)
 
     #Find references in word document and change the tag into back,ref-list,title
     elif space_strip.strip().lower().startswith(("references","reference","bibliographie")) and len(para.text) != 0:
-        xml_text = reference.reference(xml_text, variables)
+        xml_text = reference.reference(xml_text, variables, logger)
 
     #Find the fn tag 
     elif variables["fn_start"] and len(para.text) != 0:
-        xml_text = other_tags.funding_text(xml_text, variables)
+        xml_text = other_tags.funding_text(xml_text, variables, logger)
 
     #Find figure caption in word document and change the tag into fig
     elif (para.style.name.startswith("figure caption") or variables["image_next_para"] or re.search(r'^Figure \d+(\:|\.)+', para.text)) and not re.search(r'^\d', para.text) and len(para.text) != 0:
-        xml_text = image_table.image_caption(xml_text, variables)
+        xml_text = image_table.image_caption(xml_text, variables, logger)
 
     #Find table title in word document and change the tag into table-wrap
     elif (para.style.name.startswith("Table Title") or re.search(r'^Table \d+(\:|\.|\s)+', para.text)) and len(para.text) != 0 and (re.search(r'^Table \d+(\:|\.)+', para.text) and len(para.text) <= 300):
-        xml_text = image_table.table_heading(xml_text, variables)
+        xml_text = image_table.table_heading(xml_text, variables, logger)
     
     #Find reference paragraph in word document and change the tag into ref
     elif variables["ref"] and len(para.text.strip()) >= 5:
-        xml_text = reference.reference_temp(xml_text, variables)
+        xml_text = reference.reference_temp(xml_text, variables, logger)
 
     #Find the Nomenclature text in word document
     elif para.text.strip().lower().startswith("nomenclature"):
-        xml_text = other_tags.noman(xml_text, variables)
+        xml_text = other_tags.noman(xml_text, variables, logger)
 
     #Change noman tag text
     elif variables["noman_text"] and not "introduction" in space_strip.lower() and len(para.text) != 0:
-        xml_text = other_tags.noman_para(xml_text, variables)
+        xml_text = other_tags.noman_para(xml_text, variables, logger)
 
     #Find heading in word document and change the tags into sec
     elif ((((para.alignment == 1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.lower() == "introduction" or space_strip.strip().lower().startswith("conflict") or re.search(r'^((\d+\.*\)*\s*|\w+\.+\s*))(\w+)', para.text)) and (variables["sec_1"] == 1)) or (((para.alignment == 0 and all_bold) or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+(\.*|\s)+.*$', para.text)) and (variables["sec_2"] == 1)) or ((para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text)) and len(para.text.split()) < 20 and variables["sec_3"] == 1)) and (not space_strip.lower().startswith("conclusion")) and len(para.text.strip()) != 0:
-        xml_text = heading.heading(para, space_strip, xml_text, variables)
+        xml_text = heading.heading(para, space_strip, xml_text, variables, logger)
 
     #Find heading in word document and change the tags sec
     elif (((para.alignment == 1 and all_bold) or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith(("conflict","discussion","conclusion","materials"))) or ((para.alignment == 0 and all_bold)  or para.style.name.startswith("Heading 2")) or (para.style.name.startswith("Heading 3") or re.search(r'^((\b[IVX]+\.\s*|\d+(\.|\)|\s)+))(\w+)', para.text) or (all_bold and len(para.text.strip().split()) < 15))) and not re.search(r'^(Note:|Figure \d)', para.text.strip(),re.IGNORECASE) and len(para.text.split()) < 18 and len(para.text.strip()) != 0:
-        xml_text = heading.sub_heading(para, xml_text, variables, space_strip, all_bold)
+        xml_text = heading.sub_heading(para, xml_text, variables, space_strip, all_bold, logger)
 
     #Find List in word document and change the tag into list-item and p
     elif (para.style.name.startswith("List Paragraph") or "<w:numPr>" in xml) and not all_bold and len(para.text) != 0:
-        xml_text = list_file.list_para(xml_text, variables, xml, root)
+        xml_text = list_file.list_para(xml_text, variables, xml, root, logger)
 
     #Close the list tag
     elif variables["list_end"]:
-        xml_text = list_file.list_close(xml_text, variables, para)  
+        xml_text = list_file.list_close(xml_text, variables, para, logger)
 
     elif box_text:
-        xml_text = eq_link.add_tag(box_text)
+        xml_text = eq_link.add_tag(box_text, logger)
         xml_text = f'<p>{xml_text}</p>' 
         box_text = ''
 
     #Else print p tag
     elif len(para.text) != 0 and not para.text.isspace():
-        xml_text = eq_link.add_tag(xml_text)
+        xml_text = eq_link.add_tag(xml_text, logger)
         xml_text = f'<p>{xml_text}</p>' 
 
     #Find the image caption or next paragraph of image
@@ -382,7 +382,7 @@ def table(table, doc, doc_filename, variables, logger):
                 continue 
 
             #Call functio to fin no of rowspan and colspan
-            r, c, row, cell, table, li, tt, tr, xml_text = image_table.row_col_span(r, c, row, cell, table, li, tt, tr, xml_text)
+            r, c, row, cell, table, li, tt, tr, xml_text = image_table.row_col_span(r, c, row, cell, table, li, tt, tr, xml_text, logger)
            
             #Iterate through the cell text
             for para in cell.paragraphs:  
@@ -395,7 +395,7 @@ def table(table, doc, doc_filename, variables, logger):
 
                 #Check where the equation are present in paragraph
                 if "<m:oMath" in xml:
-                    values, xml_text, math_count = eq_link.eq(root, xml_text, para, math_count, file_name, variables)
+                    values, xml_text, math_count = eq_link.eq(root, xml_text, para, math_count, file_name, variables, logger)
                 
                 #Iterate through the run object
                 for run in para.runs:
@@ -409,14 +409,14 @@ def table(table, doc, doc_filename, variables, logger):
                     xml = para._element.xml    
                     #Check if the paragraph contains math equations
                     if '<m:oMath' in xml:
-                        values, xml_text, math_count = eq_link.run_eq(root, xml_text, para, run, values, math_count, file_name, variables)
+                        values, xml_text, math_count = eq_link.run_eq(root, xml_text, para, run, values, math_count, file_name, variables, logger)
                     
                     #Convert the run text into xml
                     xmlstr = str(run.element.xml) 
 
                     #Check if the run contain an image
                     if 'pic:pic' in xmlstr:
-                        xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text)
+                        xml_text = eq_link.inline_image(doc, doc_filename, file_name, xmlstr, variables, xml_text, logger)
 
                     #If keyword present in run.text the skip this
                     if "keyword" in run.text.lower():

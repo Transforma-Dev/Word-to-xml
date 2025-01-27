@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 #Define function to find abstract paragraph in document
-def abstract(xml_text, variables, filename):
+def abstract(xml_text, variables, filename, logger):
     try:
         copy_xml = xml_text
         res = ''
@@ -71,27 +71,32 @@ def abstract(xml_text, variables, filename):
                     </permissions>
                     <self-uri content-type="pdf" xlink:href="{filename}"></self-uri>{res}<abstract abstract-type="abstract"><p>{xml_text}</p>'''
         if "keyword" in copy_xml.lower():
-            text += keyword_text(split_xml[1],variables)
+            text += keyword_text(split_xml[1], variables, logger)
 
         #Find the contend in resume in TSP_PO_49526.docx
         if variables["noman_store"]:
             variables["noman_text"] = False
-            text += keyword_text(variables["noman_store"][1],variables)
+            text += keyword_text(variables["noman_store"][1], variables, logger)
             text = text.replace("</article-meta></front><body>", "")
 
         if variables["key_store"]:
             text += f'{variables["key_store"]}'  
 
         variables["key_first"] = False  
+        
+        #Success log message
+        logger.info(f"Successfully created the abstract tag from (abstract function) (abstract_key.py)-file")
     except Exception as e:
         print("Error in abstract_key function.", e)
+        #Error log message
+        logger.error(f"Error in (abstract function) (abstract_key.py)-file {e}")
         text = ""
 
     return text
 
 
 #Define function to find keywords in document
-def keyword_text(xml_text,variables):
+def keyword_text(xml_text, variables, logger):
     try:
         #Remove keyword text and bold tag in string
         xml_text = re.sub(r'keywords?:|key\s*words', '', xml_text, flags=re.IGNORECASE)
@@ -121,8 +126,13 @@ def keyword_text(xml_text,variables):
         if variables["key_first"]:
             variables["key_store"] = text
             text = ''
+            
+        #Success log message
+        logger.info(f"Successfully created the keyword tag from (keyword_text function) (abstract_key.py)-file")
     except Exception as e:
         print("Error in abstract_key function.", e)
         text = ""
+        #Error log message
+        logger.error(f"Error in (keyword_text function) (abstract_key.py)-file {e}")
 
     return text

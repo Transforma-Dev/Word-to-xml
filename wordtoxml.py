@@ -25,7 +25,7 @@ import configparser
 import importlib
 
 #Add client styles for the document
-def add_styles(output_xml, client):
+def add_styles(output_xml, client, logger):
 
     # Initialize the config parser
     config = configparser.ConfigParser()
@@ -40,7 +40,7 @@ def add_styles(output_xml, client):
     nlp = spacy.load("en_core_web_sm")
     
     # from journal load the json file
-    with open("json_folder/TSP_styles.json", 'r') as file:
+    with open(f"json_folder/{client}_styles.json", 'r') as file:
         data = json.load(file)
 
     for key, value in section.items():
@@ -59,7 +59,9 @@ def add_styles(output_xml, client):
 
                 if callable(function_to_call):
                     # Call the function with arguments
-                    root = function_to_call(root, refere, func_name, data)
+                    root = function_to_call(root, refere, func_name, data, logger)
+                    #Success log message
+                    logger.info(f"Successfully add all {func_name} styles from ({func_name} function) (wordtoxml.py)-file")
                 else:
                     print(f"'{func_name}' is not callable in module '{module_name}'.")
             #Add perticuler client styles
@@ -72,7 +74,7 @@ def add_styles(output_xml, client):
 
                 if callable(function_to_call):
                     # Call the function with arguments
-                    root = function_to_call(root, nlp, data)
+                    root = function_to_call(root, nlp, data, logger)
                 else:
                     print(f"'{func_name}' is not callable in module '{module_name}'.")
             
@@ -118,23 +120,31 @@ def convert(input_file_name = None):
     #Get the file name in command line argument.
     if input_file_name == None:
         input_file_name = (sys.argv[1])
+        in_file = input_file_name
         input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else input_file_name
     
     #Get the path of the python file
     script_path = os.path.abspath(__file__)
     
     #Get the directory of the script
-    script_directory = os.path.dirname(script_path)
-   
-    #Check document was present in the input folder
-    input_path = script_directory + "/input/" + input_file_name
-    xml = pre_xml
+    script_directory = os.path.dirname(script_path)    
     
     #Define the name of the logs folder and Check if the logs folder exists, if not, create it
     log_path = os.path.join(script_directory, "logs")
     if not os.path.exists(log_path):
         os.makedirs(log_path)
     logger = setup_logger(os.path.join(log_path, os.path.splitext(input_file_name)[0]))
+    
+    #Check document was present in the input folder
+    input_path = script_directory + "/input/" + input_file_name
+    with open(in_file, "rb")as f:
+        with open(input_path, "wb")as ff:
+            ff.write(f.read())
+    if not os.path.exists(input_path):
+        print(f"File not exists.")
+        logger.error(f"File not exists.")
+        return ''
+    xml = pre_xml
 
     #Define the name of the output folder and Check if the output folder exists, if not, create it
     output_folder = os.path.join(script_directory, "output")
@@ -197,7 +207,7 @@ def convert(input_file_name = None):
             para (object): The element (paragraph, table, or inline shape) from the Word document.
         """
         if isinstance(para, Paragraph):   #Word contain a paragraph
-            xml += paragraph(para, doc, doc_filename, variables, para_num, logger)
+            xml += paragraph(para, doc, doc_filename, variables, para_num, logger) or ""
 
         elif isinstance(para, Table):    #Word contain a table
             xml += table(para, doc, doc_filename, variables, logger)
@@ -214,7 +224,7 @@ def convert(input_file_name = None):
                 variables["author_mail"] = False
 
     #Call function to solve the xref tag for references, reference number citation
-    xml = eq_link.add_ref_tag(xml, variables)
+    xml = eq_link.add_ref_tag(xml, variables, logger)
 
     xml += f"</article>"
 
@@ -231,9 +241,12 @@ def convert(input_file_name = None):
         file.write(pretty_xml)
         
     #Apply styles
-    add_styles(output_xml, "TSP")
+    add_styles(output_xml, "TSP", logger)
 
+    #Success log message
+    logger.info(f"File converted Successfully.")
+        
     return output_xml_name
 
 
-# convert()
+convert()
