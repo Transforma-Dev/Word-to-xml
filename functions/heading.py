@@ -13,7 +13,7 @@ def heading(para, space_strip, xml_text, variables, logger):
             return text
 
         #Determine the heading type based on paragraph alignment, style, or content
-        if para.alignment == 1 or para.style.name.startswith("Heading 1") or space_strip.lower() == "introduction" or re.search(r'(^\d\.*\s|^\w\.*\s+)', para.text) or space_strip.strip().lower().startswith("conflict"):
+        if para.alignment == 1 or re.search(r"Heading\s*1", para.style.name) or space_strip.lower() == "introduction" or re.search(r'(^\d\.*\s|^\w\.*\s+)', para.text) or space_strip.strip().lower().startswith("conflict"):
             xml_text = re.sub('^[\d.\s*]+', '', xml_text)   #Remove numbers before string
             if variables["abs_para"]:
                 text = f'</abstract></article-meta></front><body><sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title1>{xml_text}</title1>'
@@ -23,7 +23,7 @@ def heading(para, space_strip, xml_text, variables, logger):
             #Update the dictionary variable values
             variables.update(secid = variables["sec_1_id"], sec_1_id = variables["sec_1_id"] + 1, sec_2 = 1, sec_2_id = 1, sec_3 = 1)
 
-        elif para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text):
+        elif re.search(r"Heading\s*3", para.style.name) or re.search(r'^\d+\.\d+\.\d+\s.*$', para.text):
             xml_text = re.sub('^[\d\.\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
             text = f'<sec id="s{variables["secid"]}_{variables["sec_3_id"]}_{variables["inner_3_id"]}"><label>{variables["secid"]}.{variables["sec_3_id"]}.{variables["inner_3_id"]}</label><title1>{xml_text}</title1>'
 
@@ -31,7 +31,7 @@ def heading(para, space_strip, xml_text, variables, logger):
             variables["inner_3_id"] += 1
             variables["sec_3"] += 1
 
-        elif para.alignment == 0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\..*', para.text):
+        elif para.alignment == 0 or re.search(r"Heading\s*2", para.style.name) or re.search(r'^\d+\..*', para.text):
             xml_text = re.sub('^[\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
             text = f'<sec id="s{variables["secid"]}_{variables["sec_2_id"]}"><label>{variables["secid"]}.{variables["sec_2_id"]}</label><title1>{xml_text}</title1>'
 
@@ -75,7 +75,7 @@ def sub_heading(para, xml_text, variables, space_strip, all_bold, logger):
         
         xml_text = re.sub(r'^[\d.]+|^\w+\.', '', xml_text)
         
-        if para.alignment == 1 or para.style.name.startswith("Heading 1") or space_strip.strip().lower().startswith(("conflict","discussion","conclusion","materials")) or re.search(r'^\d(\.|\s)+[A-Za-z]|^\b[IVX]+\.\s*', para.text):
+        if para.alignment == 1 or re.search(r"Heading\s*1", para.style.name) or space_strip.strip().lower().startswith(("conflict","discussion","conclusion","materials")) or re.search(r'^\d(\.|\s)+[A-Za-z]|^\b[IVX]+\.\s*', para.text):
             if  space_strip.strip().lower().startswith("conflict"):
                 if "back" not in variables["back_start"]:
                     if variables["sec_3"] > 1:
@@ -108,13 +108,13 @@ def sub_heading(para, xml_text, variables, space_strip, all_bold, logger):
                 #Update the dictionary variable values
                 variables.update(secid = variables["sec_1_id"], sec_1_id = variables["sec_1_id"] + 1, sec_2_id = 1, sec_2 = 1, sec_3 = 1)
 
-        elif para.style.name.startswith("Heading 3") or re.search(r'^\d+\.\d+\.\d+\.*\s.*$', para.text):
+        elif re.search(r"Heading\s*3", para.style.name) or re.search(r'^\d+\.\d+\.\d+\.*\s.*$', para.text):
             
             xml_text = re.sub('^[\d\.\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
             text += f'</sec><sec id="s{variables["secid"]}_{variables["sec_3_id"]}_{variables["inner_3_id"]}"><label>{variables["secid"]}.{variables["sec_3_id"]}.{variables["inner_3_id"]}</label><title1>{xml_text}</title1>'
             variables["inner_3_id"] += 1
 
-        elif para.alignment == 0 or para.style.name.startswith("Heading 2") or re.search(r'^\d+\.\d+\.*\)*\s*', para.text.strip()):
+        elif para.alignment == 0 or re.search(r"Heading\s*2", para.style.name) or re.search(r'^\d+\.\d+\.*\)*\s*', para.text.strip()):
             xml_text = re.sub('^[\d\.\d\.*\s*]+', '', xml_text)   #Remove numbers before string
             if "<disp-formula>" in xml_text:
                 text += f'<p>{xml_text}</p>'
