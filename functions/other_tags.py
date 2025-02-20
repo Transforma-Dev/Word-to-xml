@@ -56,12 +56,15 @@ def ack_text(xml_text, variables, logger):
         #Remove the acknowledgement and ':' in string
         xml_text = re.sub(r'<bold>.*?Acknowledgement.*?</bold>|<bold>.*?:.*?</bold>', '', xml_text, flags=re.IGNORECASE)
         xml_text = xml_text.replace(":", "")
-        if variables["sec_3"] > 1:
-            text = f'</sec></sec></sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
-        elif variables["sec_2"] > 1:
-            text = f'</sec></sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
+        if "back" in variables["back_start"]:
+            text = f'{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
         else:
-            text = f'</sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
+            if variables["sec_3"] > 1:
+                text = f'</sec></sec></sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
+            elif variables["sec_2"] > 1:
+                text = f'</sec></sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
+            else:
+                text = f'</sec></body><back>{variables["noman_store"]}<ack><p>{xml_text}</p></ack>'
         
         variables["sec_1"] = variables["sec_2"] = variables["sec_3"] = 1
         variables["back_start"] += "back"

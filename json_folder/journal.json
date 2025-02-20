@@ -330,5 +330,14 @@
     "publisher_loc": "USA",
     "article_id": "10.32604/sv.2024.0",
     "subject": "ARTICLE"
+  },
+
+  "JRNL1": {
+    "journal_title": "Sound & Vibration",
+    "issn_no": "<issn pub-type='epub'>1541-0161</issn><issn pub-type='ppub'>2693-1443</issn>",
+    "publisher_name": "Tech Science Press",
+    "publisher_loc": "USA",
+    "article_id": "10.32604/sv.2024.0",
+    "subject": "ARTICLE"
   }
 }

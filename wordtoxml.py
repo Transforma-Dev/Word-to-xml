@@ -137,9 +137,11 @@ def convert(input_file_name = None):
     
     #Check document was present in the input folder
     input_path = script_directory + "/input/" + input_file_name
-    with open(in_file, "rb")as f:
-        with open(input_path, "wb")as ff:
-            ff.write(f.read())
+    
+    if not os.path.exists(input_path):
+        with open(in_file, "rb")as f:
+            with open(input_path, "wb")as ff:
+                ff.write(f.read())
     if not os.path.exists(input_path):
         print(f"File not exists.")
         logger.error(f"File not exists.")
@@ -166,6 +168,7 @@ def convert(input_file_name = None):
 
     #Define all neccessary variables in dictionary
     variables = {"previous_text": "","para_count": 1,"key_first":True,"key_store":'',
+    "abs_para": False,
     "sec_1": 1,"sec_2": 1,"sec_3": 1,
     "secid": 0,"inner_3_id": 1,
     "sec_1_id": 1,"sec_2_id": 1,"sec_3_id": 1,
@@ -249,4 +252,4 @@ def convert(input_file_name = None):
     return output_xml_name
 
 
-convert()
+# convert()

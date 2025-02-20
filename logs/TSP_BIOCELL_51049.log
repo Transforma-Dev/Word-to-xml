@@ -1,100 +1,100 @@
-2025-01-27 17:44:29,073 - root - INFO - Document upload successfully.
-2025-01-27 17:44:29,080 - root - INFO - Successfully created the title tag in (title.py)-file
-2025-01-27 17:44:29,096 - root - INFO - Successfully created the author name tag in (author_name function) in (authors.py)-file
-2025-01-27 17:44:29,101 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:44:29,107 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:44:29,110 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:44:29,115 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
-2025-01-27 17:44:29,119 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
-2025-01-27 17:44:29,124 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
-2025-01-27 17:44:29,132 - root - INFO - Successfully created the keyword tag from (keyword_text function) (abstract_key.py)-file
-2025-01-27 17:44:29,141 - root - INFO - Successfully created the abstract tag from (abstract function) (abstract_key.py)-file
-2025-01-27 17:44:29,144 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:44:29,231 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,234 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:44:29,249 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,261 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,275 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,301 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,327 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,335 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,342 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,360 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,371 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,386 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,397 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,412 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,422 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,437 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,468 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,480 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,498 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,502 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:44:29,517 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,525 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,565 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,573 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,623 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,636 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,689 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,699 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,753 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,762 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,806 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,817 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:29,948 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:29,956 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:30,252 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:30,261 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:30,522 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:30,530 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:30,743 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:44:30,753 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:31,153 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:44:31,161 - root - INFO - Successfully created the acknowledgement tag from (ack_para function) (other_tags.py)-file
-2025-01-27 17:44:31,163 - root - INFO - Successfully created the acknowledgement tag from (ack_text function) (other_tags.py)-file
-2025-01-27 17:44:31,167 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,169 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,171 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,172 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,177 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,179 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,186 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,198 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,204 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,205 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:44:31,210 - root - INFO - Successfully created the ref tag from (reference function) (reference.py)-file
-2025-01-27 17:44:31,214 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:44:31,216 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:44:31,220 - root - INFO - Successfully created the ref-list tag from (add_ref_tag function) (eq_link.py)-file
-2025-01-27 17:44:31,756 - root - INFO - Successfully change the article-title tag style from (find_article function) (TSP_styles.py)-file
-2025-01-27 17:44:31,767 - root - INFO - Successfully change the alt tag style from (find_alt_title function) (TSP_styles.py)-file
-2025-01-27 17:44:31,767 - root - INFO - Successfully change the affliation tag style from (find_aff function) (TSP_styles.py)-file
-2025-01-27 17:44:31,806 - root - INFO - Successfully change the keyword style from (find_key function) (TSP_styles.py)-file
-2025-01-27 17:44:31,806 - root - INFO - Successfully change the history tag style from (find_history function) (TSP_styles.py)-file
-2025-01-27 17:44:31,952 - root - INFO - Successfully change the heading style from (find_sec_title function) (TSP_styles.py)-file
-2025-01-27 17:44:31,957 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:35,747 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:37,571 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:42,243 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:42,263 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:43,417 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:44,583 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:47,556 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:49,559 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:52,527 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:44:52,528 - root - INFO - Successfully add the xref style from (find_xref function) (TSP_styles.py)-file
-2025-01-27 17:44:52,528 - root - INFO - Successfully change the back order from (back_order function) (TSP_styles.py)-file
-2025-01-27 17:45:09,727 - root - INFO - API Successfully running(find_reference function) (TSP_styles.py)-file
-2025-01-27 17:45:09,728 - root - INFO - Successfully add reference style(find_reference function) (TSP_styles.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all replace_text styles from (replace_text function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all space_add_text styles from (space_add_text function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all space_remove_text styles from (space_remove_text function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all space_before_text styles from (space_before_text function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all space_after_text styles from (space_after_text function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all remove_space_before_text styles from (remove_space_before_text function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all add_and styles from (add_and function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all add_all styles from (add_all function) (wordtoxml.py)-file
-2025-01-27 17:45:09,734 - root - INFO - Successfully add all si_units styles from (si_units function) (wordtoxml.py)-file
-2025-01-27 17:45:09,735 - root - INFO - Successfully add all remove_ref styles from (remove_ref function) (wordtoxml.py)-file
-2025-01-27 17:45:09,739 - root - INFO - File converted Successfully.
+2025-02-20 16:04:09,876 - root - INFO - Document upload successfully.
+2025-02-20 16:04:09,883 - root - INFO - Successfully created the title tag in (title.py)-file
+2025-02-20 16:04:09,897 - root - INFO - Successfully created the author name tag in (author_name function) in (authors.py)-file
+2025-02-20 16:04:09,902 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:04:09,906 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:04:09,909 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:04:09,913 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
+2025-02-20 16:04:09,916 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
+2025-02-20 16:04:09,921 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
+2025-02-20 16:04:09,928 - root - INFO - Successfully created the keyword tag from (keyword_text function) (abstract_key.py)-file
+2025-02-20 16:04:09,935 - root - INFO - Successfully created the abstract tag from (abstract function) (abstract_key.py)-file
+2025-02-20 16:04:09,938 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:04:10,014 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,017 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:04:10,034 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,046 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,060 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,086 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,108 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,114 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,121 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,138 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,149 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,163 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,172 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,187 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,198 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,212 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,243 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,255 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,273 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,276 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:04:10,291 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,298 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,333 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,340 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,389 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,402 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,438 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,445 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,484 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,491 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,524 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,531 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,640 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,647 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:10,861 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:10,868 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:11,054 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:11,061 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:11,214 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:04:11,220 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:11,545 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:04:11,553 - root - INFO - Successfully created the acknowledgement tag from (ack_para function) (other_tags.py)-file
+2025-02-20 16:04:11,554 - root - INFO - Successfully created the acknowledgement tag from (ack_text function) (other_tags.py)-file
+2025-02-20 16:04:11,559 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,561 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,563 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,565 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,569 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,571 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,577 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,589 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,594 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,596 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:04:11,601 - root - INFO - Successfully created the ref tag from (reference function) (reference.py)-file
+2025-02-20 16:04:11,604 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:04:11,606 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:04:11,610 - root - INFO - Successfully created the ref-list tag from (add_ref_tag function) (eq_link.py)-file
+2025-02-20 16:04:12,106 - root - INFO - Successfully change the article-title tag style from (find_article function) (TSP_styles.py)-file
+2025-02-20 16:04:12,117 - root - INFO - Successfully change the alt tag style from (find_alt_title function) (TSP_styles.py)-file
+2025-02-20 16:04:12,117 - root - INFO - Successfully change the affliation tag style from (find_aff function) (TSP_styles.py)-file
+2025-02-20 16:04:12,161 - root - INFO - Successfully change the keyword style from (find_key function) (TSP_styles.py)-file
+2025-02-20 16:04:12,162 - root - INFO - Successfully change the history tag style from (find_history function) (TSP_styles.py)-file
+2025-02-20 16:04:12,329 - root - INFO - Successfully change the heading style from (find_sec_title function) (TSP_styles.py)-file
+2025-02-20 16:04:12,335 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:16,007 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:17,727 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:21,861 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:21,883 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:22,747 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:23,754 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:26,415 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:28,112 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:30,916 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:04:30,917 - root - INFO - Successfully add the xref style from (find_xref function) (TSP_styles.py)-file
+2025-02-20 16:04:30,917 - root - INFO - Successfully change the back order from (back_order function) (TSP_styles.py)-file
+2025-02-20 16:04:44,705 - root - INFO - API Successfully running(find_reference function) (TSP_styles.py)-file
+2025-02-20 16:04:44,706 - root - INFO - Successfully add reference style(find_reference function) (TSP_styles.py)-file
+2025-02-20 16:04:44,713 - root - INFO - Successfully add all replace_text styles from (replace_text function) (wordtoxml.py)-file
+2025-02-20 16:04:44,713 - root - INFO - Successfully add all space_add_text styles from (space_add_text function) (wordtoxml.py)-file
+2025-02-20 16:04:44,713 - root - INFO - Successfully add all space_remove_text styles from (space_remove_text function) (wordtoxml.py)-file
+2025-02-20 16:04:44,713 - root - INFO - Successfully add all space_before_text styles from (space_before_text function) (wordtoxml.py)-file
+2025-02-20 16:04:44,713 - root - INFO - Successfully add all space_after_text styles from (space_after_text function) (wordtoxml.py)-file
+2025-02-20 16:04:44,713 - root - INFO - Successfully add all remove_space_before_text styles from (remove_space_before_text function) (wordtoxml.py)-file
+2025-02-20 16:04:44,714 - root - INFO - Successfully add all add_and styles from (add_and function) (wordtoxml.py)-file
+2025-02-20 16:04:44,714 - root - INFO - Successfully add all add_all styles from (add_all function) (wordtoxml.py)-file
+2025-02-20 16:04:44,714 - root - INFO - Successfully add all si_units styles from (si_units function) (wordtoxml.py)-file
+2025-02-20 16:04:44,714 - root - INFO - Successfully add all remove_ref styles from (remove_ref function) (wordtoxml.py)-file
+2025-02-20 16:04:44,719 - root - INFO - File converted Successfully.

@@ -6,4 +6,4 @@ __pycache__/
 /image/
 /input/
 config.py
-/log/
+/logs/

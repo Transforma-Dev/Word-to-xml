@@ -5,6 +5,7 @@ from datetime import datetime
 #Define function to find abstract paragraph in document
 def abstract(xml_text, variables, filename, logger):
     try:
+        variables["abs_para"] = True
         copy_xml = xml_text
         res = ''
         #print copyright statement
@@ -82,12 +83,12 @@ def abstract(xml_text, variables, filename, logger):
         if variables["key_store"]:
             text += f'{variables["key_store"]}'  
 
-        variables["key_first"] = False  
+        variables["key_first"] = False
         
         #Success log message
         logger.info(f"Successfully created the abstract tag from (abstract function) (abstract_key.py)-file")
     except Exception as e:
-        print("Error in abstract_key function.", e)
+        print("Error in abstract_key file abstract function.", e)
         #Error log message
         logger.error(f"Error in (abstract function) (abstract_key.py)-file {e}")
         text = ""
@@ -98,6 +99,7 @@ def abstract(xml_text, variables, filename, logger):
 #Define function to find keywords in document
 def keyword_text(xml_text, variables, logger):
     try:
+        variables["abs_para"] = False
         #Remove keyword text and bold tag in string
         xml_text = re.sub(r'keywords?:|key\s*words', '', xml_text, flags=re.IGNORECASE)
         xml_text = re.sub(r'<bold>.*?</bold>', '', xml_text)
@@ -130,7 +132,7 @@ def keyword_text(xml_text, variables, logger):
         #Success log message
         logger.info(f"Successfully created the keyword tag from (keyword_text function) (abstract_key.py)-file")
     except Exception as e:
-        print("Error in abstract_key function.", e)
+        print("Error in abstract_key file keyword_text function.", e)
         text = ""
         #Error log message
         logger.error(f"Error in (keyword_text function) (abstract_key.py)-file {e}")

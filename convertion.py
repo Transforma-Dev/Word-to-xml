@@ -215,7 +215,7 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
         xml_text = other_tags.abbrevation(xml_text, variables, logger)
     
     #Print abbrevation contents
-    elif variables["abbre"] and len(space_strip) != 0:
+    elif variables["abbre"] and len(space_strip) != 0 and "refere" not in para.text.lower():
         xml_text = other_tags.abbrev_text(xml_text, variables, logger)
 
     #Find references in word document and change the tag into back,ref-list,title
@@ -295,6 +295,7 @@ def table(table, doc, doc_filename, variables, logger):
     Returns:
         str: The HTML representation of the table.
     """
+    variables["ref"] = False
     empty_table = False
     xml_text = ''
 

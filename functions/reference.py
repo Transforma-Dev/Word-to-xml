@@ -22,6 +22,7 @@ def reference(xml_text, variables, logger):
                 text = f'<ref-list content-type="authoryear"><title1>{xml_text}</title1>'
         variables["fn_start"] = False
         variables["ref"] = True
+        variables["abbre"] = False
         
         #Success log message
         logger.info(f"Successfully created the ref tag from (reference function) (reference.py)-file")

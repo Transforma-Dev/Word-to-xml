@@ -1,226 +1,213 @@
-2025-01-27 17:51:33,090 - root - INFO - Document upload successfully.
-2025-01-27 17:51:33,098 - root - INFO - Successfully created the title tag in (title.py)-file
-2025-01-27 17:51:33,115 - root - INFO - Successfully created the author name tag in (author_name function) in (authors.py)-file
-2025-01-27 17:51:33,118 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,121 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,123 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,126 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,128 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,130 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,133 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,135 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,137 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,139 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
-2025-01-27 17:51:33,143 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
-2025-01-27 17:51:33,147 - root - INFO - Successfully created the keyword tag from (keyword_text function) (abstract_key.py)-file
-2025-01-27 17:51:33,147 - root - INFO - Successfully created the abstract tag from (abstract function) (abstract_key.py)-file
-2025-01-27 17:51:33,150 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:51:33,326 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
-2025-01-27 17:51:33,330 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
-2025-01-27 17:51:33,334 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
-2025-01-27 17:51:33,339 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
-2025-01-27 17:51:33,343 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
-2025-01-27 17:51:33,347 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
-2025-01-27 17:51:33,351 - root - INFO - Successfully created the list tag from (list_close function) (list_file.py)-file
-2025-01-27 17:51:33,356 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:33,681 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:33,688 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:51:33,757 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:51:33,783 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:33,955 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:33,966 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:51:34,176 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:34,274 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:34,288 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:34,562 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:34,677 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:51:34,968 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:51:34,978 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:34,988 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:35,004 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:51:36,465 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:51:37,579 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:51:41,541 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:51:41,557 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:41,592 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:51:51,596 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:51:51,612 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:51,638 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:51:51,710 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:51:51,717 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
-2025-01-27 17:52:00,499 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:00,514 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:52:00,602 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:00,728 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:00,874 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:00,887 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:00,897 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:52:01,062 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:01,210 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:01,333 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:01,347 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:01,358 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:52:01,555 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:01,678 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:01,841 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:01,856 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:01,866 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:52:01,982 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:02,089 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
-2025-01-27 17:52:02,221 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:02,234 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
-2025-01-27 17:52:02,239 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
-2025-01-27 17:52:02,256 - root - INFO - Successfully created the acknowledgement tag from (ack_text function) (other_tags.py)-file
-2025-01-27 17:52:02,259 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:52:02,264 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:52:02,267 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:52:02,270 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
-2025-01-27 17:52:02,272 - root - INFO - Successfully created the ref tag from (reference function) (reference.py)-file
-2025-01-27 17:52:02,280 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,285 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,290 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,295 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,299 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,304 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,308 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,314 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,319 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,323 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,327 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,332 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,336 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,342 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,347 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,352 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,356 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,361 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,367 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,375 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,380 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,385 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,390 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,395 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,400 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,404 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,409 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,414 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,419 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,425 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,429 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,434 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,439 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,443 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,448 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,452 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,457 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,461 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,466 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,476 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,485 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,490 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,496 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,500 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,505 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,510 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,515 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,519 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,524 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,529 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,533 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,538 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,542 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,547 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,555 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,560 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,566 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,570 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,575 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,580 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,586 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,591 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,595 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,600 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,605 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,609 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,614 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,618 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,623 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,628 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,631 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,635 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,639 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,648 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,654 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,657 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,665 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,668 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,675 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,677 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,684 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,686 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,694 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,696 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,704 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,706 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,713 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,716 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,724 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,726 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,734 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,736 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,743 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,746 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,753 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,756 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,762 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,765 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,771 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,774 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
-2025-01-27 17:52:02,799 - root - INFO - Successfully created the ref-list tag from (add_ref_tag function) (eq_link.py)-file
-2025-01-27 17:52:03,773 - root - INFO - Successfully change the article-title tag style from (find_article function) (TSP_styles.py)-file
-2025-01-27 17:52:03,784 - root - INFO - Successfully change the alt tag style from (find_alt_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,785 - root - INFO - Successfully change the affliation tag style from (find_aff function) (TSP_styles.py)-file
-2025-01-27 17:52:03,848 - root - INFO - Successfully change the keyword style from (find_key function) (TSP_styles.py)-file
-2025-01-27 17:52:03,849 - root - INFO - Successfully change the history tag style from (find_history function) (TSP_styles.py)-file
-2025-01-27 17:52:03,946 - root - INFO - Successfully change the heading style from (find_sec_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,946 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,952 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,959 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,964 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,969 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,973 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,978 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,983 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,987 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,992 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:03,997 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,002 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,007 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,012 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,016 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,021 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,026 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,031 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,036 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,041 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,046 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,050 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,055 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,060 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,065 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,069 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
-2025-01-27 17:52:04,070 - root - INFO - Successfully add the xref style from (find_xref function) (TSP_styles.py)-file
-2025-01-27 17:52:04,071 - root - INFO - Successfully change the back order from (back_order function) (TSP_styles.py)-file
-2025-01-27 17:55:08,403 - root - INFO - API Successfully running(find_reference function) (TSP_styles.py)-file
-2025-01-27 17:55:08,407 - root - INFO - Successfully add reference style(find_reference function) (TSP_styles.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all replace_text styles from (replace_text function) (wordtoxml.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all space_add_text styles from (space_add_text function) (wordtoxml.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all space_remove_text styles from (space_remove_text function) (wordtoxml.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all space_before_text styles from (space_before_text function) (wordtoxml.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all space_after_text styles from (space_after_text function) (wordtoxml.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all remove_space_before_text styles from (remove_space_before_text function) (wordtoxml.py)-file
-2025-01-27 17:55:08,450 - root - INFO - Successfully add all add_and styles from (add_and function) (wordtoxml.py)-file
-2025-01-27 17:55:08,451 - root - INFO - Successfully add all add_all styles from (add_all function) (wordtoxml.py)-file
-2025-01-27 17:55:08,451 - root - INFO - Successfully add all si_units styles from (si_units function) (wordtoxml.py)-file
-2025-01-27 17:55:08,451 - root - INFO - Successfully add all remove_ref styles from (remove_ref function) (wordtoxml.py)-file
-2025-01-27 17:55:08,479 - root - INFO - File converted Successfully.
+2025-02-20 16:21:41,514 - root - INFO - Document upload successfully.
+2025-02-20 16:21:41,521 - root - INFO - Successfully created the title tag in (title.py)-file
+2025-02-20 16:21:41,536 - root - INFO - Successfully created the author name tag in (author_name function) in (authors.py)-file
+2025-02-20 16:21:41,540 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,542 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,545 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,547 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,550 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,552 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,554 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,556 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,559 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,561 - root - INFO - Successfully created the aff tag from (aff_para function) (authors.py)-file
+2025-02-20 16:21:41,565 - root - INFO - Successfully created the corres_author tag from (corres_author function) in (authors.py)-file
+2025-02-20 16:21:41,569 - root - INFO - Successfully created the keyword tag from (keyword_text function) (abstract_key.py)-file
+2025-02-20 16:21:41,569 - root - INFO - Successfully created the abstract tag from (abstract function) (abstract_key.py)-file
+2025-02-20 16:21:41,573 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:21:41,739 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
+2025-02-20 16:21:41,742 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
+2025-02-20 16:21:41,746 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
+2025-02-20 16:21:41,749 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
+2025-02-20 16:21:41,753 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
+2025-02-20 16:21:41,757 - root - INFO - Successfully created the list-item tag from (list_para function) (list_file.py)-file
+2025-02-20 16:21:41,760 - root - INFO - Successfully created the list tag from (list_close function) (list_file.py)-file
+2025-02-20 16:21:41,764 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,091 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,098 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:21:42,169 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:21:42,197 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,370 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,382 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:21:42,580 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,684 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,697 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:42,972 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:43,086 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:21:43,373 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:21:43,383 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:43,392 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:43,408 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:21:44,882 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:21:46,013 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:21:50,035 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:21:50,050 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:50,085 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:21:58,791 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:21:58,806 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:58,832 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:21:58,905 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:21:58,915 - root - INFO - Successfully created the sec tag from (heading function) (heading.py)-file
+2025-02-20 16:22:07,298 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:07,313 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:22:07,400 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:07,528 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:07,660 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:07,674 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:07,684 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:22:07,845 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:07,992 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:08,117 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:08,131 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:08,142 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:22:08,343 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:08,470 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:08,631 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:08,646 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:08,658 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:22:08,771 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:08,877 - root - INFO - Successfully created the table-wrap tag from (table_heading function) (image_table.py)-file
+2025-02-20 16:22:09,019 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:09,032 - root - INFO - Successfully created the fig tag from (image_caption function) (image_table.py)-file
+2025-02-20 16:22:09,037 - root - INFO - Successfully created the inner sec tag from (sub_heading function) (heading.py)-file
+2025-02-20 16:22:09,054 - root - INFO - Successfully created the acknowledgement tag from (ack_text function) (other_tags.py)-file
+2025-02-20 16:22:09,057 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:22:09,062 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:22:09,066 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:22:09,069 - root - INFO - Successfully created the fn tag from (funding_text function) (other_tags.py)-file
+2025-02-20 16:22:09,071 - root - INFO - Successfully created the ref tag from (reference function) (reference.py)-file
+2025-02-20 16:22:09,079 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,085 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,090 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,094 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,099 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,103 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,108 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,114 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,119 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,123 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,128 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,132 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,137 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,143 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,148 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,153 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,158 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,162 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,169 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,176 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,181 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,187 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,191 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,196 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,200 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,204 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,209 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,213 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,218 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,224 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,228 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,233 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,238 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,244 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,249 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,255 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,260 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,265 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,272 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,280 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,289 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,295 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,300 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,305 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,310 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,315 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,319 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,324 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,329 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,334 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,338 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,343 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,348 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,352 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,360 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,365 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,371 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,375 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,380 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,384 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,392 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,398 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,404 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,410 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,415 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,422 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,427 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,433 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,440 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,445 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,449 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,454 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,461 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,473 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,481 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,486 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,496 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,501 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,512 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,515 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,525 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,528 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,538 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,541 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,551 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,554 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,564 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,567 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,577 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,580 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,592 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,595 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,605 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,608 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,619 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,623 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,633 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,637 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,646 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,649 - root - INFO - Successfully created the ref tag from (reference_temp function) (reference.py)-file
+2025-02-20 16:22:09,682 - root - INFO - Successfully created the ref-list tag from (add_ref_tag function) (eq_link.py)-file
+2025-02-20 16:22:10,640 - root - INFO - Successfully change the article-title tag style from (find_article function) (TSP_styles.py)-file
+2025-02-20 16:22:10,652 - root - INFO - Successfully change the alt tag style from (find_alt_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,653 - root - INFO - Successfully change the affliation tag style from (find_aff function) (TSP_styles.py)-file
+2025-02-20 16:22:10,714 - root - INFO - Successfully change the keyword style from (find_key function) (TSP_styles.py)-file
+2025-02-20 16:22:10,715 - root - INFO - Successfully change the history tag style from (find_history function) (TSP_styles.py)-file
+2025-02-20 16:22:10,823 - root - INFO - Successfully change the heading style from (find_sec_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,824 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,831 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,838 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,844 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,850 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,855 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,861 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,866 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,872 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,878 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,884 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,890 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,896 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,902 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,907 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,913 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,918 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,923 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,929 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,935 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,940 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,946 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,951 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,957 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,962 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,968 - root - INFO - Successfully change figure and table title style from (find_fig_title function) (TSP_styles.py)-file
+2025-02-20 16:22:10,968 - root - INFO - Successfully add the xref style from (find_xref function) (TSP_styles.py)-file
+2025-02-20 16:22:10,969 - root - INFO - Successfully change the back order from (back_order function) (TSP_styles.py)-file

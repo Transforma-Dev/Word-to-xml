@@ -15,7 +15,10 @@ def heading(para, space_strip, xml_text, variables, logger):
         #Determine the heading type based on paragraph alignment, style, or content
         if para.alignment == 1 or para.style.name.startswith("Heading 1") or space_strip.lower() == "introduction" or re.search(r'(^\d\.*\s|^\w\.*\s+)', para.text) or space_strip.strip().lower().startswith("conflict"):
             xml_text = re.sub('^[\d.\s*]+', '', xml_text)   #Remove numbers before string
-            text = f'<sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title1>{xml_text}</title1>'
+            if variables["abs_para"]:
+                text = f'</abstract></article-meta></front><body><sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title1>{xml_text}</title1>'
+            else:
+                text = f'<sec id="s{variables["sec_1_id"]}"><label>{variables["sec_1_id"]}</label><title1>{xml_text}</title1>'
 
             #Update the dictionary variable values
             variables.update(secid = variables["sec_1_id"], sec_1_id = variables["sec_1_id"] + 1, sec_2 = 1, sec_2_id = 1, sec_3 = 1)
