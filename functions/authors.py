@@ -96,7 +96,7 @@ def aff_para(xml_text, variables, logger):
             if matches:
                 text += f'<label>{matches[0]}</label>'
             #Add all text except last one
-            institution_text = " ".join(run_text[:-1])
+            institution_text = ",".join(run_text[:-1])
             #Add the institution and country information
             text += f'<institution>{institution_text}</institution><country>{run_text[-1]}</country></aff>'
             variables["aff_id"] += 1

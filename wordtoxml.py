@@ -39,6 +39,10 @@ def add_styles(output_xml, client, logger):
     
     nlp = spacy.load("en_core_web_sm")
     
+    #Load the common_styles json file
+    with open(f"json_folder/common_styles.json", 'r') as file:
+        com_data = json.load(file)
+        
     # from journal load the json file
     with open(f"json_folder/{client}_styles.json", 'r') as file:
         data = json.load(file)
@@ -59,7 +63,7 @@ def add_styles(output_xml, client, logger):
 
                 if callable(function_to_call):
                     # Call the function with arguments
-                    root = function_to_call(root, refere, func_name, data, logger)
+                    root = function_to_call(root, refere, func_name, com_data, logger)
                     #Success log message
                     logger.info(f"Successfully add all {func_name} styles from ({func_name} function) (wordtoxml.py)-file")
                 else:
@@ -122,6 +126,9 @@ def convert(input_file_name = None):
         input_file_name = (sys.argv[1])
         in_file = input_file_name
         input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else input_file_name
+        
+    #Get the client name from argument
+    client_name = sys.argv[2]
     
     #Get the path of the python file
     script_path = os.path.abspath(__file__)
@@ -244,7 +251,7 @@ def convert(input_file_name = None):
         file.write(pretty_xml)
         
     #Apply styles
-    add_styles(output_xml, "TSP", logger)
+    add_styles(output_xml, client_name, logger)
 
     #Success log message
     logger.info(f"File converted Successfully.")

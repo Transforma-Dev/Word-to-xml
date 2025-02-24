@@ -1,0 +1,30 @@
+{
+  "replace_text": [
+    { "text": "i.e.", "replace": "i.e.," },
+    { "text": "e.g.", "replace": "e.g.," },
+    { "text": "Ltd", "replace": "Ltd." },
+    { "text": "versus", "replace": "vs." }
+  ],
+
+  "space_add_text": ["*", "/", "=", "+", "-"],
+
+  "space_remove_text": ["-", "—", "-"],
+
+  "space_before_text": ["cm", "m", "K", "kg"],
+
+  "space_after_text": ["no."],
+
+  "space_remove_before_text": ["℃", "°"],
+
+  "add_and": ["%", "°C"],
+
+  "add_all": ["h", "min", "s"],
+
+  "si_units": [
+    { "text": "second", "replace": "s" },
+    { "text": "minute", "replace": "min" },
+    { "text": "hour", "replace": "h" }
+  ],
+
+  "space_remove_dot": [".", ","]
+}

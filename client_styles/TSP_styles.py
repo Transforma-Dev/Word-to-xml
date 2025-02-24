@@ -1,16 +1,67 @@
 # import neccessary librarys
-import config
 import xml.etree.ElementTree as ET
-import sys
+from lxml import etree
 import re
 import spacy
-from lxml import etree
-# import index
-import requests
-import sys
 
-# Import the config file
-sys.path.append("../")
+
+def add_spaces(reference, incorrect):
+    corrected = []
+    j = 0  # Pointer for incorrect string
+    for char in reference:
+        if j < len(incorrect) and char.lower() == incorrect[j].lower():
+            corrected.append(incorrect[j])
+            j += 1
+        else:
+            corrected.append(' ')  # Add space if the reference has one
+    return ''.join(corrected)
+
+#MARK: Remove dot
+# Remove dot in end of the sentence
+def remove_dot(element):
+    if isinstance(element, etree._Element):
+        lxml_element = element  # already an lxml element
+    else:
+        # If it's an xml.etree.ElementTree.Element, convert it to lxml
+        element_str = ET.tostring(
+            element, encoding='unicode', method='xml')
+        lxml_element = etree.fromstring(element_str)
+    
+    tt = etree.tostring(lxml_element, encoding='unicode', method='xml')
+    if "<article-title>" in tt:
+        tag_name = "article-title"
+    else:
+        tag_name = "title1"
+    tt = tt.replace(f"<{tag_name}>", "").replace(f"</{tag_name}>", "").strip()
+    if tt.endswith("."):
+        tt = tt[:-1]
+    tt = "<ttt>" + tt  + "</ttt>"
+    element.clear()
+    element.append(ET.fromstring(tt))
+    for child in list(element):
+        if child.tag == "ttt":
+            element.text = child.text  # Preserve text inside <ttt>
+            element.extend(child)  # Move <ttt>'s children to parent
+            element.remove(child)  # Remove <ttt> itself
+    # print(element.text)
+    # print("Final XML:", ET.tostring(element, encoding="unicode", method="xml"))
+    return element
+
+#Remove dot in end of the sentence
+def remove_dot(element):
+    if isinstance(element, etree._Element):
+        lxml_element = element  # already an lxml element
+    else:
+        # If it's an xml.etree.ElementTree.Element, convert it to lxml
+        element_str = ET.tostring(
+            element, encoding='unicode', method='xml')
+        lxml_element = etree.fromstring(element_str)
+    tt = etree.tostring(lxml_element, encoding='unicode', method='xml')
+    if tt.endswith("."):
+        tt = tt.replace("<title1>", "").replace("</title1>", "").strip()
+        tt = "<title1>" + tt[:-1] + "</title1>"
+    tt_elem = etree.fromstring(tt)
+    return tt_elem
 
 #MARK: Article title
 # Find the article title,heading tag and capitalie the article title,heading text except remove conjuction and preposition
@@ -20,16 +71,19 @@ def find_article(root, nlp, data, logger):
     try:
         # Find the article title tag inside the front tag
         for element in root.findall(".//article-title"):
+            remove_dot(element)  # Remove dot from title
             def ar_func(element):
                 if element.text and element.text.strip():
                     element.text = element.text.strip()
                     doc = nlp(element.text)
-                    text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = ''.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = add_spaces(element.text, text)
                     element.text = text.strip()[0].upper() + text.strip()[1:]
 
                 if element.tail and element.tail.strip():
                     doc = nlp(element.tail)
-                    text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = ''.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = add_spaces(element.tail, text)
                     element.tail = " " + text.strip()[0].upper() + text.strip()[1:]
             if element is not None:
                 ar_func(element)
@@ -52,15 +106,18 @@ def find_alt_title(root, nlp, data, logger):
 
     try:
         for element in root.findall(".//alt-title"):
+            remove_dot(element)  # Remove dot from title
             def alt_func(element):
                 if element.text and element.text.strip():
                     doc = nlp(element.text)
-                    text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = ''.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = add_spaces(element.text, text)
                     element.text = text.strip()[0].upper() + text.strip()[1:]
 
                 if element.tail and element.tail.strip():
                     doc = nlp(element.tail)
-                    text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = ''.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = add_spaces(element.tail, text)
                     element.tail = " " + text.strip()[0].upper() + text.strip()[1:]
             if element is not None:
                 alt_func(element)
@@ -85,18 +142,22 @@ def find_aff(root, nlp, data, logger):
     try:
         # Find the affliation tag
         for element in root.findall(".//aff"):
+            def aff_func(elem, data):
+                # Replace text
+                for i in data["aff_replace_text"]:
+                    if elem.text and i["text"] in elem.text:
+                        elem.text = elem.text.replace(i["text"], i["replace"])
+                    if elem.tail and i["text"] in elem.tail:
+                        elem.tail = elem.tail.replace(i["text"], i["replace"])
+                
             if element is not None:
+                aff_func(element, data)
                 for child in element:
-                    # Replace text
-                    for i in data["aff_replace_text"]:
-                        if child.text and i["text"] in child.text:
-                            child.text = child.text.replace(i["text"], i["replace"])
-                        if child.tail and i["text"] in child.tail:
-                            child.tail = child.tail.replace(i["text"], i["replace"])
+                    aff_func(child, data)
 
-                if child.text and child.text.strip().endswith('.'):
-                    child.text = child.text[:-1]
-                    
+                # if child.text and child.text.strip().endswith('.'):
+                #     child.text = child.text[:-1]
+            
         #Success log message
         logger.info(f"Successfully change the affliation tag style from (find_aff function) (TSP_styles.py)-file")
     except Exception as e:
@@ -191,12 +252,14 @@ def find_sec_title(root, nlp, data, logger):
                 if element.text and element.text.strip():
                     element.text = element.text.strip()
                     doc = nlp(element.text)
-                    text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = ''.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = add_spaces(element.text, text)
                     element.text = text.strip()[0].upper() + text.strip()[1:]
 
                 if element.tail and element.tail.strip():
                     doc = nlp(element.tail)
-                    text = ' '.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = ''.join([word.text if word.text.isupper() else word.text.capitalize() if word.pos_ not in ["ADP", "DET", "CCONJ"] else word.text.lower() for word in doc])
+                    text = add_spaces(element.text, text)
                     element.tail = " " + text.strip()[0].upper() + text.strip()[1:]
             if element is not None:
                 ar_func(element)
@@ -337,91 +400,91 @@ def back_order(root, nlp, data, logger):
     
     
 #MARK: Reference
-def find_reference(root, nlp, data, logger):
+# def find_reference(root, nlp, data, logger):
 
-    try:
-        references = []
-        # Find the reference text in ref tag
-        for element in root.findall(".//ref"):
-            if element.text:
-                attributes = element.attrib
-                text = "".join(text.strip() for text in element.itertext())
+#     try:
+#         references = []
+#         # Find the reference text in ref tag
+#         for element in root.findall(".//ref"):
+#             if element.text:
+#                 attributes = element.attrib
+#                 text = "".join(text.strip() for text in element.itertext())
 
-                # Ensure the element is an lxml element
-                if isinstance(element, etree._Element):
-                    lxml_element = element  # already an lxml element
-                else:
-                    # If it's an xml.etree.ElementTree.Element, convert it to lxml
-                    element_str = ET.tostring(
-                        element, encoding='unicode', method='xml')
-                    lxml_element = etree.fromstring(element_str)
-                tt = etree.tostring(lxml_element, encoding='unicode', method='xml')
-                tt = re.sub(r"</?ref[^>]*>", "", tt)
-                tt = re.sub(r"\s*\n\s*", " ", tt).strip()
+#                 # Ensure the element is an lxml element
+#                 if isinstance(element, etree._Element):
+#                     lxml_element = element  # already an lxml element
+#                 else:
+#                     # If it's an xml.etree.ElementTree.Element, convert it to lxml
+#                     element_str = ET.tostring(
+#                         element, encoding='unicode', method='xml')
+#                     lxml_element = etree.fromstring(element_str)
+#                 tt = etree.tostring(lxml_element, encoding='unicode', method='xml')
+#                 tt = re.sub(r"</?ref[^>]*>", "", tt)
+#                 tt = re.sub(r"\s*\n\s*", " ", tt).strip()
 
-                #Remove the unwanted tags like link, email
-                tt = re.sub(r"<(link|email)>", "", tt)
-                tt = re.sub(r"\s*</(link|email)>\s*", "", tt)
-                tt = re.sub(r"\s*<(link|email)/>\s*", "", tt)
+#                 #Remove the unwanted tags like link, email
+#                 tt = re.sub(r"<(link|email)>", "", tt)
+#                 tt = re.sub(r"\s*</(link|email)>\s*", "", tt)
+#                 tt = re.sub(r"\s*<(link|email)/>\s*", "", tt)
 
-                data = {
-                    "id": element.get('id'),
-                    "reference": tt,
-                    "style": "ieee"
-                }
+#                 data = {
+#                     "id": element.get('id'),
+#                     "reference": tt,
+#                     "style": "ieee"
+#                 }
 
-                references.append(data)
-        # Send the references to api and get response
-        references_data = {"references": references}
+#                 references.append(data)
+#         # Send the references to api and get response
+#         references_data = {"references": references}
         
-        change_ref = ''
-        try:
-            # Sending a POST request to the API endpoint with JSON data
-            response = requests.post('http://127.0.0.1:8000/', json=references_data)
+#         change_ref = ''
+#         try:
+#             # Sending a POST request to the API endpoint with JSON data
+#             response = requests.post('http://127.0.0.1:8000/', json=references_data)
 
-            # Checking if the request was successful (status code 200)
-            if response.status_code == 200:
-                change_ref = response.json()  # Assuming the response is JSON
-                #Success log message
-                logger.info(f"API Successfully running(find_reference function) (TSP_styles.py)-file")
-            else:
-                print({'error': f'reference API Error: {response.json()}'})
-                #Error log message
-                logger.error(f"reference API Error in reference api (find_reference function) (TSP_styles.py)-file {e}")
+#             # Checking if the request was successful (status code 200)
+#             if response.status_code == 200:
+#                 change_ref = response.json()  # Assuming the response is JSON
+#                 #Success log message
+#                 logger.info(f"API Successfully running(find_reference function) (TSP_styles.py)-file")
+#             else:
+#                 print({'error': f'reference API Error: {response.json()}'})
+#                 #Error log message
+#                 logger.error(f"reference API Error in reference api (find_reference function) (TSP_styles.py)-file {e}")
 
-        except requests.exceptions.RequestException as e:
-            print(f"Error in reference api (find_reference function) (TSP_styles.py)-file {e}")
-            #Error log message
-            logger.error(f"Error in reference api (find_reference function) (TSP_styles.py)-file {e}")
-            pass
+#         except requests.exceptions.RequestException as e:
+#             print(f"Error in reference api (find_reference function) (TSP_styles.py)-file {e}")
+#             #Error log message
+#             logger.error(f"Error in reference api (find_reference function) (TSP_styles.py)-file {e}")
+#             pass
 
-        if change_ref:
-            # Find the reference text in ref tag
-            for element in root.findall(".//ref"):
-                if element.text:
-                    attributes = element.attrib
-                    for i in change_ref:
-                        if i["id"] == attributes["id"] and i["value"]:
-                            soup = ET.fromstring(i["value"])
-                            new_tag = ET.Element("reference-text")
-                            new_tag.text = "".join(text.strip() for text in element.itertext())
-                            #create label tag
-                            label_tag = ET.Element("label")
-                            label_tag.text = "".join(ii for ii in i["id"] if ii.isdigit()) + "."
-                            element.clear()
-                            element.attrib.update(attributes)
-                            element.append(label_tag)
-                            element.append(soup)
-                            element.append(new_tag)
+#         if change_ref:
+#             # Find the reference text in ref tag
+#             for element in root.findall(".//ref"):
+#                 if element.text:
+#                     attributes = element.attrib
+#                     for i in change_ref:
+#                         if i["id"] == attributes["id"] and i["value"]:
+#                             soup = ET.fromstring(i["value"])
+#                             new_tag = ET.Element("reference-text")
+#                             new_tag.text = "".join(text.strip() for text in element.itertext())
+#                             #create label tag
+#                             label_tag = ET.Element("label")
+#                             label_tag.text = "".join(ii for ii in i["id"] if ii.isdigit()) + "."
+#                             element.clear()
+#                             element.attrib.update(attributes)
+#                             element.append(label_tag)
+#                             element.append(soup)
+#                             element.append(new_tag)
                     
-        #Success log message
-        logger.info(f"Successfully add reference style(find_reference function) (TSP_styles.py)-file")
-    except Exception as e:
-        print(f"Error in (find_reference function) (TSP_styles.py)-file {e}")
-        #Error log message
-        logger.error(f"Error in (find_reference function) (TSP_styles.py)-file {e}")
+#         #Success log message
+#         logger.info(f"Successfully add reference style(find_reference function) (TSP_styles.py)-file")
+#     except Exception as e:
+#         print(f"Error in (find_reference function) (TSP_styles.py)-file {e}")
+#         #Error log message
+#         logger.error(f"Error in (find_reference function) (TSP_styles.py)-file {e}")
         
-    return root
+#     return root
                 
     
 
