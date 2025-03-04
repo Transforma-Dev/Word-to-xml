@@ -24,7 +24,8 @@ def upload(file: UploadFile = File(...)):
         file_location = os.path.join("input", file.filename)
         with open(file_location, 'wb') as f:
             f.write(contents)
-        res = convert(file.filename)
+        client_name = "TSP"
+        res = convert(file.filename, client_name)
         with open(os.path.join("output", res), 'r') as f:
             return {"xml": f.read()}
     except Exception as e:

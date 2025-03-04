@@ -120,15 +120,16 @@ def iter_block_items(parent):
 
 
 #Define funcion to create xml
-def convert(input_file_name = None):
+def convert(input_file_name = None, client_name = None):
     #Get the file name in command line argument.
     if input_file_name == None:
         input_file_name = (sys.argv[1])
         in_file = input_file_name
         input_file_name = os.path.basename(input_file_name) if "/" in input_file_name else input_file_name
-        
-    #Get the client name from argument
-    client_name = sys.argv[2]
+    
+    if client_name == None:
+        #Get the client name from argument
+        client_name = sys.argv[2]
     
     #Get the path of the python file
     script_path = os.path.abspath(__file__)
