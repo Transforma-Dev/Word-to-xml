@@ -219,7 +219,7 @@ def paragraph(para, doc, doc_filename, variables, para_num, logger):
         xml_text = other_tags.abbrev_text(xml_text, variables, logger)
 
     #Find references in word document and change the tag into back,ref-list,title
-    elif space_strip.strip().lower().startswith(("references","reference","bibliographie")) and len(para.text) != 0:
+    elif space_strip.strip().lower().startswith(("references","reference","bibliograph")) and len(para.text) != 0:
         xml_text = reference.reference(xml_text, variables, logger)
 
     #Find the fn tag 

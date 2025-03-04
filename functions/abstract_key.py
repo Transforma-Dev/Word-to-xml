@@ -40,8 +40,12 @@ def abstract(xml_text, variables, filename, logger):
             d1, m1, y1, d2, m2, y2 = date[0], mon[0], date[2], date[3], mon[1], date[5]
 
         xml_text = re.sub(r'<bold>.*?abstract:.*?</bold>|abstract:', '', xml_text, flags=re.IGNORECASE)
-        text = f'''</corresp></author-notes>
-                    <pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
+        if not variables["corr_auth"]:
+            text = f""
+        else:
+            text = f"</corresp></author-notes>"
+        
+        text += f'''<pub-date pub-type="epub" date-type="pub" iso-8601-date="2024-00-00">
                         <day>00</day>
                         <month>00</month>
                         <year>2024</year>

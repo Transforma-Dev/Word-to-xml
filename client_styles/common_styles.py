@@ -379,7 +379,7 @@ def find_reference(root, logger):
                                 structure_query_tag = ET.Element("query")
                                 structure_query_tag.text = "This reference was unstructured"
                                 element.append(structure_query_tag)
-                            if ar_title_element is not None and ar_title_element.text:
+                            if doi_element is None and ar_title_element is not None and ar_title_element.text:
                                 if ar_title_element.text not in article_title_store:
                                     article_title_store.append(ar_title_element.text)
                                 else:

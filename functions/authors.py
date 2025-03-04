@@ -61,7 +61,7 @@ def author_name(xml_text, variables, logger):
                             text += '<mail>demo@email.com</mail>'
 
                 text += f'</contrib>'
-
+    
         variables["noman_store"] = ""
         variables["para_count"] += 1
         
@@ -136,6 +136,7 @@ def corres_author(xml_text, variables, logger):
         
         variables["para_count"] += 1
         variables["aff_tag"] = False
+        variables["corr_auth"] = True
 
         #Success log message
         logger.info(f"Successfully created the corres_author tag from (corres_author function) in (authors.py)-file")

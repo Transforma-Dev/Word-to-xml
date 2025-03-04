@@ -175,7 +175,7 @@ def convert(input_file_name = None):
 
     #Define all neccessary variables in dictionary
     variables = {"previous_text": "","para_count": 1,"key_first":True,"key_store":'',
-    "abs_para": False,
+    "abs_para": False, "corr_auth": False,
     "sec_1": 1,"sec_2": 1,"sec_3": 1,
     "secid": 0,"inner_3_id": 1,
     "sec_1_id": 1,"sec_2_id": 1,"sec_3_id": 1,
@@ -259,4 +259,4 @@ def convert(input_file_name = None):
     return output_xml_name
 
 
-# convert()
+convert()

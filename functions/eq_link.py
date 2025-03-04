@@ -678,7 +678,10 @@ def add_ref_tag(xml, variables, logger):
                 add_xref = f'<xref ref-type="bibr" rid="ref-{index+1}" href="#ref-{index+1}">{j}</xref>'
                 xml[0] = xml[0].replace(j, add_xref)
 
-        xml = xml[0]+"<ref-list"+xml[1]
+        if len(xml) == 1:
+            xml = xml[0]
+        else:
+            xml = xml[0]+"<ref-list"+xml[1]
         
         #Success log message
         logger.info(f"Successfully created the ref-list tag from (add_ref_tag function) (eq_link.py)-file")
